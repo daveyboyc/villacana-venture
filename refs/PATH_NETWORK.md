@@ -11,8 +11,8 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 - sourceObservations: 59
 - sourcePixelTraces: 57
 - sourcePixelLocators: 32
-- sources: 532
-- uninspectedSources: 462
+- sources: 533
+- uninspectedSources: 463
 - routes: 24
 - segments: 181
 - tracedSides: 0
@@ -25,11 +25,11 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 | Area | Sources / uninspected | Routes | Tunnel candidates | Coverage |
 | --- | --- | --- | --- | --- |
 | North pool | 20 / 20 | 0 | 0 | uninspected |
-| Middle pool | 42 / 42 | 0 | 0 | uninspected |
+| Middle pool | 43 / 43 | 0 | 0 | uninspected |
 | South pool | 26 / 26 | 0 | 0 | uninspected |
 | Main pool | 35 / 35 | 0 | 0 | uninspected |
-| Calle Elena | 112 / 73 | 2 | 2 | partial |
-| Calle Miguel de Cervantes | 74 / 46 | 1 | 1 | partial |
+| Calle Elena | 113 / 74 | 2 | 2 | partial |
+| Calle Miguel de Cervantes | 75 / 47 | 1 | 1 | partial |
 | Calle Pintor Dalí | 60 / 60 | 3 | 0 | uninspected |
 | Pintor Picasso and the car park | 4 / 4 | 2 | 0 | uninspected |
 | Loira, Bolivia, Alberto and Isabel | 2 / 2 | 4 | 6 | uninspected |

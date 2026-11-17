@@ -3880,6 +3880,38 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude"
+  },
+  {
+   "id": "elena-junction-lawns-roof",
+   "area": "elena",
+   "priority": 1,
+   "kind": "layout",
+   "title": "Elena south from the Elena 24 roof: lawns, west wall and the patio below the camera",
+   "photos": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
+   ],
+   "build": "Dave, 17 November 2026, sending ELENA-ROOF-2026-11-17.jpg: this angle on Elena leading to the middle pool still needs work. Solve the photo's camera, compare the model through it in Inspect (Layout and Show details) and correct the structure it measures: the two junction lawns, the white wall with two doors on their west side, the cross path, and any generated filler in the way. Record what the view shows but does not settle.",
+   "avoid": "No change to Walk. No detail on structure that has not passed review. Far-end depths (22-40 m) are not measured by this camera alone.",
+   "accept": [
+    "Visible in Inspect in Layout and with Show details through the solved camera",
+    "Measured residuals reported (scripts/measure_elena_junction_lawns.py) and a second-agent measured approval in data/placement_reviews.json",
+    "check_lane_walls, check_door_sills, check_junction_lawns, check_ground_plan pass; production build and layout browser test"
+   ],
+   "features": [
+    "frontage_divisions.json:cervantes-elena-lawn-1",
+    "frontage_divisions.json:cervantes-elena-lawn-2",
+    "frontage_divisions.json:cervantes-lawn-door-path",
+    "lane_walls.json:elena-south-lawn-west-wall",
+    "door_sills.json:elena-lawn-door-sill",
+    "door_sills.json:elena-bed-door-sill",
+    "plain_fronts.json:elena-24-south-patio"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude",
+   "notes": "17 November 2026: camera solved; lawns, west wall (refitted after a rejected first fit), sills, cross path and the porch roof over the Elena 24 patio done and approved with limits by a second agent (docs/reviews/elena-junction-lawns-roof/REVIEW.md). Open: the far cypress wall, its gate and the far length's depth (photo request elena-south-cypress-wall-gate), the CALLE ELENA door wall at the Cervantes end, the east-side beds and lamp post, and the planting detail."
   }
  ]
 }

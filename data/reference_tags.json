@@ -7867,5 +7867,25 @@
    222.2
   ],
   "subject": "beach and shoreline east of the camera"
+ },
+ "ELENA-ROOF-2026-11-17.jpg": {
+  "shows": [
+   "elena",
+   "cervantes",
+   "middle-pool"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "planting",
+   "facades",
+   "materials"
+  ],
+  "note": "Roof shot from the south parapet of Elena 24, the same spot as IMG_2358/IMG_2367 (solved camera within 0.5 m of IMG_2358's). Sent in chat on 17 November 2026 without location data. The far end (cypress wall, gate to the middle pool) is 22-40 m out, where one camera does not fix depth.",
+  "looksAt": [
+   -151.0,
+   66.0
+  ],
+  "subject": "The two junction lawns, the Elena south lane and the west patio walls, down to the middle pool gate"
  }
 }

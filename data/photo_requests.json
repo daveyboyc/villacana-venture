@@ -802,6 +802,24 @@
       "since": "2026-11-16",
       "status": "open",
       "note": "16 November 2026: IMG_2973 is taken from the Elena garden looking at the foot of the garden wall (clivia and monstera bed, planter boxes and a balcony rail above the wall top). It does not show the patios east of the wall, their dividing walls, doors or the cane pergola, so this stays open."
+    },
+    {
+      "id": "elena-south-cypress-wall-gate",
+      "area": "elena",
+      "at": [
+        -148.0,
+        70.0
+      ],
+      "look": [
+        -146.5,
+        77.0
+      ],
+      "ask": "Standing on the cross path between the two Elena south lawns, one photo looking south at the far wall with the two cypresses, taking in where it meets the lane and the gate onto the middle pool lawn; then one from the lane beside the far lawn looking west along that wall.",
+      "why": "elena-junction-far-end: the roof view shows the wall and gate 22-40 m out, too far to fix their position",
+      "priority": 2,
+      "radius": 5,
+      "since": "2026-11-17",
+      "status": "open"
     }
   ]
 }

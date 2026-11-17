@@ -49,6 +49,14 @@ truth as the garden end did, so a wall at 111.1 m would cut the first entrance o
 IMG_2230 shows it leading into. Which is wrong is recorded as discrepancy `jorge-planter-gaps-vs-aerial`
 (photo request `jorge-east-square-on`).
 
+**Elena, measured 17 November 2026** (task `elena-junction-lawns-roof`, `docs/reviews/elena-junction-lawns-roof`).
+A new roof photo from Elena 24 (`ELENA-ROOF-2026-11-17.jpg`) and IMG_2358, both with solved cameras, show the
+wall foot running straight from the Cervantes south wall for about 8.6 m past the bed door. The line above stood
+1.1-1.4 m too far west, with a jog the photos do not show. The wall is now that straight run, then the existing far length to
+the cypress wall; the bed door and its sill sit on the run, the lawn door where the cross path ends. The lawns
+now run from the lane kerb to a 0.35 m shrub strip at the wall foot. Measured points fit at 0.10 m rms (worst
+0.19 m); the far length is about 0.3 m off two held-out points 20-24 m out.
+
 ## What was looked at and not built
 
 - **Calle Jorge 56-86 m.** The aerial shows open front lawns with Y-shaped tiled paths up to the house
@@ -67,7 +75,7 @@ IMG_2230 shows it leading into. Which is wrong is recorded as discrepancy `jorge
 
 ## Limits
 
-- No camera is solved. Positions come from the door sills, the registry corners, photo pins and the
+- No camera is solved for Calle Jorge (the Elena wall's line is now measured, above). Positions come from the door sills, the registry corners, photo pins and the
   aerial, and are good to about 1 m; heights are read by eye against doors and planters.
 - These are photographic and aerial readings, not placement approval (`docs/PLACEMENT_VERIFICATION.md`).
 - The walls have no texture of their own beyond the shared plaster, no bougainvillea and no lantern or

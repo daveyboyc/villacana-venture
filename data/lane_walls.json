@@ -10,28 +10,16 @@
       "area": "elena",
       "points": [
         [
-          -159.09,
-          62.06
+          -157.968,
+          61.397
         ],
         [
-          -157.42,
-          64.88
+          -153.268,
+          68.61
         ],
         [
-          -155.22,
-          66.36
-        ],
-        [
-          -153.3,
-          69.98
-        ],
-        [
-          -153.65,
-          70.17
-        ],
-        [
-          -149.94,
-          77.13
+          -149.02,
+          76.58
         ]
       ],
       "height": 2.2,
@@ -41,8 +29,8 @@
         {
           "id": "elena-south-bed-door",
           "at": [
-            -154.22,
-            67.98
+            -154.009,
+            67.244
           ],
           "width": 0.95,
           "height": 2.0
@@ -50,8 +38,8 @@
         {
           "id": "elena-south-lawn-door",
           "at": [
-            -153.26,
-            70.64
+            -152.341,
+            70.092
           ],
           "width": 1.05,
           "height": 2.0
@@ -61,9 +49,10 @@
         "IMG_2261.jpg",
         "IMG_2358.jpg",
         "IMG_2260.jpg",
-        "IMG_2330.jpg"
+        "IMG_2330.jpg",
+        "ELENA-ROOF-2026-11-17.jpg"
       ],
-      "basis": "IMG_2261 and IMG_2260 look south down the Elena lawns and IMG_2358 looks down on them from a roof north of Cervantes: a plain white wall about 2.2 m high, a little taller than its two brown doors, runs along the whole west side of both lawns behind a narrow bed with trained bougainvillea, from the Cervantes corner to the wall with the cypresses at the far end, which the model draws as the north face of registry 6265801UF1366N_part5. One door is at the end of the tiled cross-path between the lawns and the other in the bed a few metres north; IMG_2330 shows both from the lane. The doors stand where the red-tread sills of data/door_sills.json already are (elena-lawn-door-sill, elena-bed-door-sill), and the wall's outer face runs through them, with the lawn door about 0.4 m further back as the far door in IMG_2261 is set in. North of the bed door the wall keeps about 0.6 m outside the traced edge of lawn 1 (data/frontage_divisions.json) and meets the existing Cervantes south patio wall (data/cervantes_patio_walls.json, cervantes-patio-south-2). Heights by eye against the doors; the line is about 1 m."
+      "basis": "IMG_2261 and IMG_2260 look south down the Elena lawns and IMG_2358 looks down on them from a roof north of Cervantes: a plain white wall about 2.2 m high, a little taller than its two brown doors, runs along the whole west side of both lawns behind a narrow bed with trained bougainvillea, from the Cervantes corner to the wall with the cypresses at the far end, which the model draws as the north face of registry 6265801UF1366N_part5. One door is at the end of the tiled cross-path between the lawns and the other in the bed a few metres north; IMG_2330 shows both from the lane. The doors stand where the red-tread sills of data/door_sills.json already are (elena-lawn-door-sill, elena-bed-door-sill), and the wall's outer face runs through them, with the lawn door about 0.4 m further back as the far door in IMG_2261 is set in. North of the bed door the wall keeps about 0.6 m outside the traced edge of lawn 1 (data/frontage_divisions.json) and meets the existing Cervantes south patio wall (data/cervantes_patio_walls.json, cervantes-patio-south-2). Heights by eye against the doors; the line is about 1 m. 17 November 2026 (task elena-junction-lawns-roof, refitted after review): measured through two solved roof cameras, ELENA-ROOF-2026-11-17.jpg and IMG_2358 re-solved with its parapet, and checked on the Esri aerial. The photographed wall foot runs straight from the Cervantes south wall for about 8.6 m past the bed door (ten foot points from both cameras on one line, 0.09 m rms); the first trace had it 1.4 m further west at the north end with a 1.1 m jog. The wall is now that straight run, ending on the Cervantes south wall line, then the existing far length to the cypress wall (registry 6265801UF1366N_part5); the bed door and its sill sit on the straight run where both photos put the door, and the lawn door stays where the cross path ends. Foot, kerb and path points fit at 0.10 m rms (worst 0.19 m); the two held-out points on the far length, 20-24 m out, are 0.28 and 0.34 m on the lawn side, left open. See docs/reviews/elena-junction-lawns-roof."
     },
     {
       "id": "elena-south-mouth-patio-wall",

@@ -2025,6 +2025,33 @@
      "ref": "building:6265601UF1366N_part1:3:corner",
      "use": "control",
      "note": "north-west corner of building 39 at the lane"
+    },
+    {
+     "pixel": [
+      60,
+      1531
+     ],
+     "ref": "building:6265201UF1366N_part4:22-23:top",
+     "use": "control",
+     "note": "near parapet of the camera's own roof (Elena 24) across the bottom of the photo; added 17 Nov 2026"
+    },
+    {
+     "pixel": [
+      600,
+      1527
+     ],
+     "ref": "building:6265201UF1366N_part4:22-23:top",
+     "use": "control",
+     "note": "near parapet of the camera's own roof (Elena 24) across the bottom of the photo; added 17 Nov 2026"
+    },
+    {
+     "pixel": [
+      1140,
+      1519
+     ],
+     "ref": "building:6265201UF1366N_part4:22-23:top",
+     "use": "control",
+     "note": "near parapet of the camera's own roof (Elena 24) across the bottom of the photo; added 17 Nov 2026"
     }
    ],
    "initial": {
@@ -2086,179 +2113,200 @@
    },
    "solved": {
     "pose": {
-     "x": -158.365,
-     "y": 8.744,
-     "z": 49.849,
-     "yaw": 146.645,
-     "pitch": -42.254,
-     "roll": -2.005,
-     "f": 1254.725
+     "x": -156.741,
+     "y": 8.77,
+     "z": 51.871,
+     "yaw": 147.343,
+     "pitch": -42.1,
+     "roll": -1.979,
+     "f": 1251.863
     },
     "sigma": {
-     "x": 1.642,
-     "y": 0.298,
-     "z": 2.01,
-     "f": 35.814,
-     "yaw": 1.381,
-     "pitch": 1.036,
-     "roll": 0.693
+     "x": 0.247,
+     "y": 0.297,
+     "z": 0.253,
+     "f": 35.086,
+     "yaw": 1.02,
+     "pitch": 0.828,
+     "roll": 0.672
     },
-    "rmsControlPx": 10.82,
-    "rmsCheckPx": 149.22,
-    "rmsCheckM": 1.27,
+    "rmsControlPx": 13.93,
+    "rmsCheckPx": 73.46,
+    "rmsCheckM": 0.45,
     "residuals": [
      {
       "ref": "road:elena-south:left",
       "use": "control",
-      "px": 26.9,
-      "m": 0.3,
-      "depth": 13.9
+      "px": 43.2,
+      "m": 0.48,
+      "depth": 14.0
      },
      {
       "ref": "road:elena-south:left",
       "use": "control",
-      "px": 17.2,
-      "m": 0.22,
+      "px": 28.0,
+      "m": 0.37,
+      "depth": 16.5
+     },
+     {
+      "ref": "road:elena-south:left",
+      "use": "control",
+      "px": 18.5,
+      "m": 0.3,
+      "depth": 20.4
+     },
+     {
+      "ref": "road:elena-south:left",
+      "use": "control",
+      "px": 14.2,
+      "m": 0.29,
+      "depth": 25.6
+     },
+     {
+      "ref": "road:elena-south:left",
+      "use": "control",
+      "px": 9.9,
+      "m": 0.24,
+      "depth": 30.0
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 14.4,
+      "m": 0.16,
+      "depth": 13.8
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 3.1,
+      "m": 0.04,
       "depth": 16.3
      },
      {
-      "ref": "road:elena-south:left",
-      "use": "control",
-      "px": 13.6,
-      "m": 0.22,
-      "depth": 20.2
-     },
-     {
-      "ref": "road:elena-south:left",
-      "use": "control",
-      "px": 14.3,
-      "m": 0.29,
-      "depth": 25.2
-     },
-     {
-      "ref": "road:elena-south:left",
-      "use": "control",
-      "px": 13.0,
-      "m": 0.3,
-      "depth": 29.5
-     },
-     {
       "ref": "road:elena-south:right",
       "use": "control",
-      "px": 0.2,
-      "m": 0.0,
-      "depth": 13.5
-     },
-     {
-      "ref": "road:elena-south:right",
-      "use": "control",
-      "px": 6.3,
-      "m": 0.08,
-      "depth": 16.0
-     },
-     {
-      "ref": "road:elena-south:right",
-      "use": "control",
-      "px": 8.9,
-      "m": 0.13,
-      "depth": 18.3
-     },
-     {
-      "ref": "road:elena-south:right",
-      "use": "control",
-      "px": 10.0,
-      "m": 0.17,
-      "depth": 21.3
-     },
-     {
-      "ref": "road:elena-south:right",
-      "use": "control",
-      "px": 10.6,
-      "m": 0.21,
-      "depth": 25.0
-     },
-     {
-      "ref": "road:elena-south:right",
-      "use": "control",
-      "px": 13.3,
-      "m": 0.31,
-      "depth": 28.9
-     },
-     {
-      "ref": "pool:middle",
-      "use": "control",
-      "px": 2.4,
-      "m": 0.08,
-      "depth": 40.7
-     },
-     {
-      "ref": "pool:middle",
-      "use": "control",
-      "px": 2.2,
-      "m": 0.07,
-      "depth": 40.9
-     },
-     {
-      "ref": "vertical",
-      "use": "control",
-      "px": 6.6
-     },
-     {
-      "ref": "vertical",
-      "use": "control",
-      "px": 1.9
-     },
-     {
-      "ref": "vertical",
-      "use": "control",
-      "px": 2.6
-     },
-     {
-      "ref": "vertical",
-      "use": "control",
-      "px": 0.5
-     },
-     {
-      "ref": "edge:cervantes-garden-door-door-frame",
-      "use": "check",
-      "px": 107.8,
-      "m": 0.92,
-      "depth": 10.7
-     },
-     {
-      "ref": "edge:cervantes-garden-door-door-frame",
-      "use": "check",
-      "px": 230.8,
-      "m": 1.96,
-      "depth": 10.7
-     },
-     {
-      "ref": "edge:cervantes-garden-door-door-frame",
-      "use": "check",
-      "px": 139.3,
-      "m": 1.18,
-      "depth": 10.6
-     },
-     {
-      "ref": "edge:cervantes-garden-door-door-frame",
-      "use": "check",
-      "px": 69.1,
-      "m": 0.59,
-      "depth": 10.6
-     },
-     {
-      "ref": "building:6265601UF1366N_part1:3:corner",
-      "use": "control",
-      "px": 7.9,
-      "m": 0.08,
-      "depth": 12.7
-     },
-     {
-      "ref": "building:6265601UF1366N_part1:3:corner",
-      "use": "control",
-      "px": 3.4,
+      "px": 2.8,
       "m": 0.04,
-      "depth": 13.9
+      "depth": 18.6
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 7.2,
+      "m": 0.12,
+      "depth": 21.5
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 11.0,
+      "m": 0.22,
+      "depth": 25.1
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 17.0,
+      "m": 0.4,
+      "depth": 29.4
+     },
+     {
+      "ref": "pool:middle",
+      "use": "control",
+      "px": 1.1,
+      "m": 0.04,
+      "depth": 41.8
+     },
+     {
+      "ref": "pool:middle",
+      "use": "control",
+      "px": 0.9,
+      "m": 0.03,
+      "depth": 41.7
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 6.5
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 2.0
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 2.7
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 0.7
+     },
+     {
+      "ref": "edge:cervantes-garden-door-door-frame",
+      "use": "check",
+      "px": 31.4,
+      "m": 0.19,
+      "depth": 7.5
+     },
+     {
+      "ref": "edge:cervantes-garden-door-door-frame",
+      "use": "check",
+      "px": 12.4,
+      "m": 0.08,
+      "depth": 8.2
+     },
+     {
+      "ref": "edge:cervantes-garden-door-door-frame",
+      "use": "check",
+      "px": 122.9,
+      "m": 0.75,
+      "depth": 7.6
+     },
+     {
+      "ref": "edge:cervantes-garden-door-door-frame",
+      "use": "check",
+      "px": 73.1,
+      "m": 0.44,
+      "depth": 7.5
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:3:corner",
+      "use": "control",
+      "px": 12.8,
+      "m": 0.11,
+      "depth": 10.3
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:3:corner",
+      "use": "control",
+      "px": 1.2,
+      "m": 0.01,
+      "depth": 11.4
+     },
+     {
+      "ref": "building:6265201UF1366N_part4:22-23:top",
+      "use": "control",
+      "px": 6.6,
+      "m": 0.01,
+      "depth": 1.5
+     },
+     {
+      "ref": "building:6265201UF1366N_part4:22-23:top",
+      "use": "control",
+      "px": 4.9,
+      "m": 0.01,
+      "depth": 1.4
+     },
+     {
+      "ref": "building:6265201UF1366N_part4:22-23:top",
+      "use": "control",
+      "px": 0.7,
+      "m": 0.0,
+      "depth": 1.4
      }
     ]
    },
@@ -3837,6 +3885,505 @@
     "f": 1201.8
    },
    "initialBasis": "photo content: on the pink path (its edge and a bollard in the foreground, the service lid at right), looking east across the big lawn to Barraka; the pin (+-10.8 m) is on the lawn. Heading kept, tilted 12 degrees down, eye 1.5 m above the ground; 2026-11-14."
+  },
+  "ELENA-ROOF-2026-11-17.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "initial": {
+    "x": -158.0,
+    "y": 8.75,
+    "z": 49.5,
+    "yaw": 152.0,
+    "pitch": -30.0,
+    "roll": 0.0,
+    "f": 1250.0
+   },
+   "initialBasis": "seeded from the IMG_2358 solve on the same roof; yaw and pitch set by eye from the lane and the middle pool",
+   "heightPrior": [
+    8.79,
+    0.3
+   ],
+   "heightPriorBasis": "roof of Elena 24 (east end of 6265201UF1366N_part4), model top 7.19 m, plus 1.6 m eye height; LiDAR puts that roof at 6.9-7.1 m",
+   "regionPrior": {
+    "polygon": [
+     [
+      -154.8,
+      40.4
+     ],
+     [
+      -152.1,
+      44.6
+     ],
+     [
+      -152.5,
+      44.7
+     ],
+     [
+      -150.0,
+      48.7
+     ],
+     [
+      -153.8,
+      51.0
+     ],
+     [
+      -154.2,
+      51.0
+     ],
+     [
+      -157.8,
+      53.1
+     ],
+     [
+      -158.4,
+      52.2
+     ],
+     [
+      -162.0,
+      44.5
+     ]
+    ],
+    "sigma": 0.3,
+    "basis": "Dave (25 Oct 2026): taken from the roof of Elena 24, the east end of registry block 6265201UF1366N_part4 at the lane junction, the end with the door (circled on the game map; phone pins about (-155.7, 50.1)). Polygon is that block's footprint up to its second facade step, about 9 m along the block; possibly different spots on that roof, so each photo is solved alone."
+   },
+   "points": [
+    {
+     "pixel": [
+      182,
+      700
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge of the Elena south lane against the lawn kerb (photo left of centre)"
+    },
+    {
+     "pixel": [
+      217,
+      800
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge of the Elena south lane against the lawn kerb (photo left of centre)"
+    },
+    {
+     "pixel": [
+      260,
+      900
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge of the Elena south lane against the lawn kerb (photo left of centre)"
+    },
+    {
+     "pixel": [
+      297,
+      1000
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge of the Elena south lane against the lawn kerb (photo left of centre)"
+    },
+    {
+     "pixel": [
+      330,
+      1100
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge of the Elena south lane against the lawn kerb (photo left of centre)"
+    },
+    {
+     "pixel": [
+      360,
+      1200
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge of the Elena south lane against the lawn kerb (photo left of centre)"
+    },
+    {
+     "pixel": [
+      380,
+      1260
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge of the Elena south lane against the lawn kerb (photo left of centre)"
+    },
+    {
+     "pixel": [
+      90,
+      530
+     ],
+     "ref": "pool:middle",
+     "use": "control",
+     "note": "near water edge of the middle pool, seen through the gate at the end of the lane"
+    },
+    {
+     "pixel": [
+      115,
+      527
+     ],
+     "ref": "pool:middle",
+     "use": "control",
+     "note": "near water edge of the middle pool, seen through the gate at the end of the lane"
+    },
+    {
+     "vertical": [
+      [
+       95,
+       1090
+      ],
+      [
+       122,
+       1240
+      ]
+     ],
+     "use": "control",
+     "note": "lamp post beside the lane"
+    },
+    {
+     "vertical": [
+      [
+       633,
+       381
+      ],
+      [
+       633,
+       440
+      ]
+     ],
+     "use": "control",
+     "note": "left jamb of the arched upper window, house south-west of the lawns"
+    },
+    {
+     "vertical": [
+      [
+       607,
+       300
+      ],
+      [
+       601,
+       470
+      ]
+     ],
+     "use": "control",
+     "note": "corner where the blank gable wall turns, house beyond the far lawn"
+    },
+    {
+     "pixel": [
+      1000,
+      1590
+     ],
+     "ref": "building:6265201UF1366N_part4:22-23:top",
+     "use": "control",
+     "note": "near parapet of the camera's own roof (Elena 24), blurred at the bottom-right corner"
+    },
+    {
+     "pixel": [
+      1080,
+      1555
+     ],
+     "ref": "building:6265201UF1366N_part4:22-23:top",
+     "use": "control",
+     "note": "near parapet of the camera's own roof (Elena 24), blurred at the bottom-right corner"
+    },
+    {
+     "pixel": [
+      1160,
+      1510
+     ],
+     "ref": "building:6265201UF1366N_part4:22-23:top",
+     "use": "control",
+     "note": "near parapet of the camera's own roof (Elena 24), blurred at the bottom-right corner"
+    },
+    {
+     "pixel": [
+      268,
+      900
+     ],
+     "ref": "edge:cervantes-elena-lawn-1",
+     "use": "check",
+     "note": "near lawn, white kerb along the lane"
+    },
+    {
+     "pixel": [
+      305,
+      1000
+     ],
+     "ref": "edge:cervantes-elena-lawn-1",
+     "use": "check",
+     "note": "near lawn, white kerb along the lane"
+    },
+    {
+     "pixel": [
+      338,
+      1100
+     ],
+     "ref": "edge:cervantes-elena-lawn-1",
+     "use": "check",
+     "note": "near lawn, white kerb along the lane"
+    },
+    {
+     "pixel": [
+      368,
+      1200
+     ],
+     "ref": "edge:cervantes-elena-lawn-1",
+     "use": "check",
+     "note": "near lawn, white kerb along the lane"
+    },
+    {
+     "pixel": [
+      227,
+      820
+     ],
+     "ref": "edge:cervantes-elena-lawn-1",
+     "use": "check",
+     "note": "near lawn, north kerb along the cross path"
+    },
+    {
+     "pixel": [
+      300,
+      806
+     ],
+     "ref": "edge:cervantes-elena-lawn-1",
+     "use": "check",
+     "note": "near lawn, north kerb along the cross path"
+    },
+    {
+     "pixel": [
+      380,
+      791
+     ],
+     "ref": "edge:cervantes-elena-lawn-1",
+     "use": "check",
+     "note": "near lawn, north kerb along the cross path"
+    },
+    {
+     "pixel": [
+      460,
+      775
+     ],
+     "ref": "edge:cervantes-elena-lawn-1",
+     "use": "check",
+     "note": "near lawn, north kerb along the cross path"
+    },
+    {
+     "pixel": [
+      400,
+      762
+     ],
+     "ref": "edge:cervantes-elena-lawn-2",
+     "use": "check",
+     "note": "far lawn, south kerb along the cross path"
+    },
+    {
+     "pixel": [
+      460,
+      751
+     ],
+     "ref": "edge:cervantes-elena-lawn-2",
+     "use": "check",
+     "note": "far lawn, south kerb along the cross path"
+    }
+   ],
+   "solved": {
+    "pose": {
+     "x": -156.402,
+     "y": 8.784,
+     "z": 51.476,
+     "yaw": 173.098,
+     "pitch": -24.333,
+     "roll": 1.974,
+     "f": 1165.897
+    },
+    "sigma": {
+     "x": 0.514,
+     "y": 0.295,
+     "z": 0.55,
+     "f": 67.858,
+     "yaw": 2.479,
+     "pitch": 0.73,
+     "roll": 0.936
+    },
+    "rmsControlPx": 3.48,
+    "rmsCheckPx": 29.44,
+    "rmsCheckM": 0.36,
+    "residuals": [
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 1.5,
+      "m": 0.03,
+      "depth": 23.4
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 1.0,
+      "m": 0.02,
+      "depth": 19.2
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 6.0,
+      "m": 0.08,
+      "depth": 16.1
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 6.1,
+      "m": 0.07,
+      "depth": 13.8
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 0.1,
+      "m": 0.0,
+      "depth": 11.9
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 5.7,
+      "m": 0.05,
+      "depth": 10.7
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 7.2,
+      "m": 0.06,
+      "depth": 10.1
+     },
+     {
+      "ref": "pool:middle",
+      "use": "control",
+      "px": 0.2,
+      "m": 0.01,
+      "depth": 40.8
+     },
+     {
+      "ref": "pool:middle",
+      "use": "control",
+      "px": 0.4,
+      "m": 0.02,
+      "depth": 41.3
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 0.3
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 2.4
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 0.7
+     },
+     {
+      "ref": "building:6265201UF1366N_part4:22-23:top",
+      "use": "control",
+      "px": 0.8,
+      "m": 0.0,
+      "depth": 1.9
+     },
+     {
+      "ref": "building:6265201UF1366N_part4:22-23:top",
+      "use": "control",
+      "px": 3.3,
+      "m": 0.01,
+      "depth": 1.9
+     },
+     {
+      "ref": "building:6265201UF1366N_part4:22-23:top",
+      "use": "control",
+      "px": 1.6,
+      "m": 0.0,
+      "depth": 1.9
+     },
+     {
+      "ref": "edge:cervantes-elena-lawn-1",
+      "use": "check",
+      "px": 27.7,
+      "m": 0.39,
+      "depth": 16.5
+     },
+     {
+      "ref": "edge:cervantes-elena-lawn-1",
+      "use": "check",
+      "px": 27.0,
+      "m": 0.33,
+      "depth": 14.1
+     },
+     {
+      "ref": "edge:cervantes-elena-lawn-1",
+      "use": "check",
+      "px": 32.7,
+      "m": 0.34,
+      "depth": 12.1
+     },
+     {
+      "ref": "edge:cervantes-elena-lawn-1",
+      "use": "check",
+      "px": 62.0,
+      "m": 0.6,
+      "depth": 11.3
+     },
+     {
+      "ref": "edge:cervantes-elena-lawn-1",
+      "use": "check",
+      "px": 42.7,
+      "m": 0.68,
+      "depth": 18.5
+     },
+     {
+      "ref": "edge:cervantes-elena-lawn-1",
+      "use": "check",
+      "px": 9.9,
+      "m": 0.16,
+      "depth": 18.7
+     },
+     {
+      "ref": "edge:cervantes-elena-lawn-1",
+      "use": "check",
+      "px": 11.4,
+      "m": 0.19,
+      "depth": 19.1
+     },
+     {
+      "ref": "edge:cervantes-elena-lawn-1",
+      "use": "check",
+      "px": 13.6,
+      "m": 0.23,
+      "depth": 19.5
+     },
+     {
+      "ref": "edge:cervantes-elena-lawn-2",
+      "use": "check",
+      "px": 1.4,
+      "m": 0.03,
+      "depth": 20.6
+     },
+     {
+      "ref": "edge:cervantes-elena-lawn-2",
+      "use": "check",
+      "px": 4.3,
+      "m": 0.08,
+      "depth": 21.2
+     }
+    ]
+   }
   }
  }
 }

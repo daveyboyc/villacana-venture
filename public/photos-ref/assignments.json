@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "3972b1e6ae1390ba105fb3dd393525d207bc6cccf0756e5dc805fb457a766b2c",
+ "inputDigest": "b0a6654702b758e41fd431190d46f822712f6eda7d7508975c6df492700c9fd1",
  "summary": {
   "unplaced": 3,
+  "needs-review": 232,
   "suggested": 267,
-  "needs-review": 231,
-  "photos": 501,
-  "features": 494,
-  "photosCitedByModel": 210,
-  "modelFeaturesWithPhotoCitations": 238
+  "photos": 502,
+  "features": 495,
+  "photosCitedByModel": 211,
+  "modelFeaturesWithPhotoCitations": 239
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -44,6 +44,43 @@
    "inViewCandidates": [],
    "citedBy": [],
    "geometryReview": "observed; unplaced (no GPS)"
+  },
+  {
+   "file": "ELENA-ROOF-2026-11-17.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 24.8,
+     "angleOffset": 24.5
+    },
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 39.6,
+     "angleOffset": 30.7
+    }
+   ],
+   "citedBy": [
+    "frontage_divisions.json:cervantes-elena-lawn-1",
+    "frontage_divisions.json:cervantes-elena-lawn-2",
+    "frontage_divisions.json:cervantes-lawn-door-path",
+    "lane_walls.json:elena-south-lawn-west-wall",
+    "plain_fronts.json:elena-24-south-patio"
+   ],
+   "geometryReview": "observed",
+   "camera": {
+    "x": -156.5,
+    "z": 48.5,
+    "basis": "checked against photo content",
+    "reportedAccuracy": 4.0,
+    "heading": 155,
+    "headingBasis": "read from the photo: looks down Calle Elena south to the middle pool, as IMG_2358/IMG_2367"
+   }
   },
   {
    "file": "IMG_2182.jpg",
@@ -5709,7 +5746,8 @@
     "junction_lawns.json:junction-pollarded-3",
     "lane_walls.json:elena-south-lawn-west-wall",
     "lane_walls.json:elena-south-mouth-patio-wall",
-    "cervantes_garden_door.json:cervantes-junction-north-patio"
+    "cervantes_garden_door.json:cervantes-junction-north-patio",
+    "plain_fronts.json:elena-24-south-patio"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -6062,7 +6100,8 @@
     "junction_lawns.json:junction-pollarded-1",
     "junction_lawns.json:junction-pollarded-2",
     "junction_lawns.json:junction-pollarded-3",
-    "cervantes_garden_door.json:cervantes-junction-north-patio"
+    "cervantes_garden_door.json:cervantes-junction-north-patio",
+    "plain_fronts.json:elena-24-south-patio"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {

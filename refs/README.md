@@ -9,11 +9,11 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 | Area | References | Reviewed | Brief |
 | --- | --- | --- | --- |
 | North pool | 20 | 20 | [areas/north-pool.md](areas/north-pool.md) |
-| Middle pool | 42 | 42 | [areas/middle-pool.md](areas/middle-pool.md) |
+| Middle pool | 43 | 43 | [areas/middle-pool.md](areas/middle-pool.md) |
 | South pool | 26 | 26 | [areas/south-pool.md](areas/south-pool.md) |
 | Main pool | 35 | 35 | [areas/main-pool.md](areas/main-pool.md) |
-| Calle Elena | 112 | 112 | [areas/elena.md](areas/elena.md) |
-| Calle Miguel de Cervantes | 74 | 74 | [areas/cervantes.md](areas/cervantes.md) |
+| Calle Elena | 113 | 113 | [areas/elena.md](areas/elena.md) |
+| Calle Miguel de Cervantes | 75 | 75 | [areas/cervantes.md](areas/cervantes.md) |
 | Calle Pintor Dalí | 60 | 60 | [areas/dali.md](areas/dali.md) |
 | Pintor Picasso and the car park | 4 | 4 | [areas/picasso.md](areas/picasso.md) |
 | Loira, Bolivia, Alberto and Isabel | 2 | 2 | [areas/north-lanes.md](areas/north-lanes.md) |
@@ -25,11 +25,11 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 
 | Topic | Reviewed references | Brief |
 | --- | --- | --- |
-| Layout | 436 | [topics/layout.md](topics/layout.md) |
+| Layout | 437 | [topics/layout.md](topics/layout.md) |
 | Levels and slopes | 91 | [topics/levels.md](topics/levels.md) |
-| Facades and roofs | 236 | [topics/facades.md](topics/facades.md) |
-| Materials | 345 | [topics/materials.md](topics/materials.md) |
-| Planting | 256 | [topics/planting.md](topics/planting.md) |
+| Facades and roofs | 237 | [topics/facades.md](topics/facades.md) |
+| Materials | 346 | [topics/materials.md](topics/materials.md) |
+| Planting | 257 | [topics/planting.md](topics/planting.md) |
 | Signs | 71 | [topics/signage.md](topics/signage.md) |
 | Views | 90 | [topics/view.md](topics/view.md) |
 
@@ -38,11 +38,11 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 Use the canonical app root (`/?view=map`) and search a photo ID, place or visible subject. The same complete index, including unbundled `reference/` and unplaced sources, is `public/reference-index.json`. Agents can run `python3 scripts/find_reference.py boat` or `python3 scripts/find_reference.py --area north-pool --json`. Each entry gives a stable map link, source path, camera uncertainty, separate subject context, citations and current checks. Open full images before editing; images in `reference/` are not bundled in the deployed site.
 
 
-532 references: 532 reviewed, 0 with areas suggested only from the camera position.
+533 references: 533 reviewed, 0 with areas suggested only from the camera position.
 
 Here “reviewed references” means content/area tags were inspected; it does not certify model placement. Placement approval is separate from photo diagnostics: see [graph.json](graph.json) v2, [placement records](../data/placement_reviews.json) and [placement policy](../docs/PLACEMENT_VERIFICATION.md). Citation links and software results do not grant placement approval. Open discrepancies block it.
 
-Photo checks (`data/photo_checks.json`): 169 photo-check records, 55 match, 42 differ. 28 of 41 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).
+Photo checks (`data/photo_checks.json`): 171 photo-check records, 55 match, 44 differ. 28 of 41 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).
 
 Continuous build/validation work and scoped evidence requests: [LOOP.md](LOOP.md).
 

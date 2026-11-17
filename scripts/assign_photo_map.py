@@ -74,7 +74,7 @@ def features(s):
             # Passages refer to an existing registry part rather than a second footprint.
             id='building:'+f['id'] if key=='passages' else filename+':'+f['id']
             existing=next((r for r in result if r['id']==id),None)
-            evidence=re.findall(r'IMG_\d+\.jpg',json.dumps(f.get('evidence',[])))
+            evidence=re.findall(r'[A-Za-z0-9][A-Za-z0-9_-]*\.jpg',json.dumps(f.get('evidence',[])))
             if existing:existing.update(name=f['name'],evidence=evidence)
             else:add(id,f['name'],'reference feature','authored photo/map interpretation',evidence=evidence,**{k:f[k] for k in ('ring','points') if k in f})
     def paseo_station(along,inland):
@@ -261,7 +261,7 @@ def features(s):
     add('dali_street.json:'+dali_street['fence']['id'],dali_street['fence']['name'],'reference feature',dali_street['fence']['trust'],points=dressed,evidence=dali_street['fence']['evidence'])
     add('dali_street.json:'+dali_street['hedge']['id'],dali_street['hedge']['name'],'reference feature',dali_street['hedge']['trust'],points=dressed,evidence=dali_street['hedge']['evidence'])
     add('dali_street.json:'+dali_street['lanterns']['id'],dali_street['lanterns']['name'],'reference feature',dali_street['lanterns']['trust'],points=dali_street['lanterns']['points'],evidence=dali_street['lanterns']['evidence'])
-    for r in s['boundaryReference'].get('ramps',[]):add('ramp:'+r['id'],r['name'],'reference feature','authored photo/map interpretation',points=r['points'],evidence=re.findall(r'IMG_\d+\.jpg',json.dumps(r['evidence'])))
+    for r in s['boundaryReference'].get('ramps',[]):add('ramp:'+r['id'],r['name'],'reference feature','authored photo/map interpretation',points=r['points'],evidence=re.findall(r'[A-Za-z0-9][A-Za-z0-9_-]*\.jpg',json.dumps(r['evidence'])))
     coastal=json.loads((ROOT/'data/coastal_gate.json').read_text())['gate']
     add('gate:'+coastal['id'],coastal['name'],'reference feature','authored photo/map interpretation',points=coastal['points'],evidence=coastal['evidence'])
     # Issue #57: door sills, the kerbed Dalí footpath and the south Dalí approach (data/door_sills.json).

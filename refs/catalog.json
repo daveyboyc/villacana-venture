@@ -60,6 +60,55 @@
   "citedBy": []
  },
  {
+  "id": "ELENA-ROOF-2026-11-17.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/ELENA-ROOF-2026-11-17.jpg",
+  "title": "Roof by Elena: morning view down Elena south and the junction lawns to the middle pool",
+  "shows": [
+   "elena",
+   "cervantes",
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "planting",
+   "facades",
+   "materials"
+  ],
+  "note": "Roof shot from the south parapet of Elena 24, the same spot as IMG_2358/IMG_2367 (solved camera within 0.5 m of IMG_2358's). Sent in chat on 17 November 2026 without location data. The far end (cypress wall, gate to the middle pool) is 22-40 m out, where one camera does not fix depth.",
+  "observation": "From the Elena 24 roof, looking south-south-east in low morning sun. Left: the tiled Elena south lane between a white kerb and planted house fronts, with the lamp post, running to the middle pool (water visible top left beyond a white wall and gate). Centre: the two kerbed junction lawns, the near one with a manhole and a clipped standard tree, a tiled cross path to the west wall, the far one with two clipped domes and two cypresses against its end wall. Right: tall white patio walls with bougainvillea and doors along the west side of the lawns, with private patios, a parasol and houses behind (timber balcony with tiled roof, pergola, iron balcony). Foreground: the garden wall with a closed brown door and painted plate, and the blue-patterned tiled patio below the camera.",
+  "taken": null,
+  "originalUrl": null,
+  "camera": {
+   "x": -156.5,
+   "z": 48.5,
+   "heading": 155,
+   "accuracy": 4.0,
+   "trust": "checked against photo content"
+  },
+  "citedBy": [
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "frontage_divisions.json:cervantes-elena-lawn-2",
+   "frontage_divisions.json:cervantes-lawn-door-path",
+   "lane_walls.json:elena-south-lawn-west-wall",
+   "plain_fronts.json:elena-24-south-patio"
+  ],
+  "looksAt": [
+   -151.0,
+   66.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south"
+  ],
+  "subject": "The two junction lawns, the Elena south lane and the west patio walls, down to the middle pool gate"
+ },
+ {
   "id": "IMG_2182.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2182.jpg",
@@ -657,10 +706,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "plain_fronts.json:elena-24-south-patio",
    "cervantes_garden_door.json:cervantes-garden-door",
    "cervantes_garden_door.json:cervantes-junction-north-patio",
-   "cervantes_garden_door.json:cervantes-junction-east-planter",
-   "cervantes_garden_door.json:cervantes-junction-north-bed"
+   "cervantes_garden_door.json:cervantes-junction-east-planter"
   ],
   "subject": "The brown garden door, its pilaster frame and curved coping, and the three-riser flight up to it"
  },
@@ -2971,8 +3020,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "lane_walls.json:elena-south-lawn-west-wall",
    "backdrop.json:aerial-trees",
+   "lane_walls.json:elena-south-lawn-west-wall",
    "frontage_divisions.json:cervantes-elena-lawn-1",
    "frontage_divisions.json:cervantes-lawn-door-path"
   ],
@@ -3998,10 +4047,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "plain_fronts.json:elena-24-south-patio",
    "cervantes_garden_door.json:cervantes-garden-door",
    "cervantes_garden_door.json:cervantes-junction-north-patio",
-   "cervantes_garden_door.json:cervantes-junction-east-planter",
-   "cervantes_garden_door.json:cervantes-junction-north-bed"
+   "cervantes_garden_door.json:cervantes-junction-east-planter"
   ],
   "subject": "The brown garden door and its three-riser flight between the west hedge bed and the east planter"
  },
@@ -4542,7 +4591,7 @@
    "cervantes_garden_door.json:cervantes-junction-north-bed",
    "backdrop.json:aerial-trees",
    "cervantes_garden_door.json:cervantes-garden-door",
-   "cervantes_garden_door.json:cervantes-junction-north-patio"
+   "plain_fronts.json:elena-24-south-patio"
   ],
   "subject": "The garden-door steps: two red treads and the threshold, the west bed's rounded end and the east planter"
  },
@@ -4630,7 +4679,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "frontage_divisions.json:cervantes-elena-lawn-1",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "lane_walls.json:elena-south-lawn-west-wall"
   ]
  },
  {
@@ -5685,7 +5735,8 @@
    "junction_lawns.json:junction-pollarded-3",
    "lane_walls.json:elena-south-lawn-west-wall",
    "lane_walls.json:elena-south-mouth-patio-wall",
-   "cervantes_garden_door.json:cervantes-junction-north-patio"
+   "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "plain_fronts.json:elena-24-south-patio"
   ],
   "looksAt": [
    -151.0,
@@ -5739,6 +5790,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
+   "plain_fronts.json:elena-24-south-patio",
    "cervantes_north_patios.json:cervantes-north-partition-middle"
   ],
   "subject": "The walled patios along Cervantes"
@@ -6089,7 +6141,8 @@
    "junction_lawns.json:junction-pollarded-1",
    "junction_lawns.json:junction-pollarded-2",
    "junction_lawns.json:junction-pollarded-3",
-   "cervantes_garden_door.json:cervantes-junction-north-patio"
+   "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "plain_fronts.json:elena-24-south-patio"
   ],
   "looksAt": [
    -151.5,
@@ -6144,7 +6197,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "cervantes_north_patios.json:cervantes-north-partition-middle"
+   "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "plain_fronts.json:elena-24-south-patio"
   ],
   "subject": "The walled patios north of Cervantes"
  },
@@ -6189,7 +6243,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "cervantes_north_patios.json:cervantes-north-partition-middle"
+   "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "plain_fronts.json:elena-24-south-patio"
   ],
   "subject": "The walled patios north of Cervantes"
  },
@@ -6695,6 +6750,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "plain_fronts.json:elena-24-south-patio",
    "backdrop.json:aerial-trees",
    "cervantes_north_patios.json:cervantes-north-partition-east",
    "cervantes_garden_door.json:cervantes-junction-north-patio"
@@ -6778,10 +6834,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "plain_fronts.json:elena-24-south-patio",
    "cervantes_garden_door.json:cervantes-junction-north-patio",
    "backdrop.json:aerial-trees",
-   "cervantes_north_patios.json:cervantes-north-partition-east",
-   "cervantes_garden_door.json:cervantes-garden-door"
+   "cervantes_north_patios.json:cervantes-north-partition-east"
   ],
   "subject": "North-side white bed, garden door and Calle de Elena plaque at the junction"
  },
@@ -7034,6 +7090,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "plain_fronts.json:elena-24-south-patio",
    "backdrop.json:aerial-trees",
    "cervantes_north_patios.json:cervantes-north-partition-east"
   ]
@@ -7072,6 +7129,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
+   "plain_fronts.json:elena-24-south-patio",
    "cervantes_garden_door.json:cervantes-junction-north-patio",
    "cervantes_north_patios.json:cervantes-north-partition-east"
   ]
@@ -7112,10 +7170,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "plain_fronts.json:elena-24-south-patio",
    "cervantes_garden_door.json:cervantes-garden-door",
    "cervantes_garden_door.json:cervantes-junction-east-planter",
-   "cervantes_garden_door.json:cervantes-junction-north-patio",
-   "cervantes_north_patios.json:cervantes-north-partition-east"
+   "cervantes_garden_door.json:cervantes-junction-north-patio"
   ],
   "subject": "Garden door, hedge bed and steps at the Elena junction"
  },
@@ -8953,7 +9011,7 @@
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
    "backdrop.json:aerial-trees",
-   "lane_walls.json:elena-south-mouth-patio-wall"
+   "frontage_divisions.json:cervantes-elena-lawn-1"
   ]
  },
  {
@@ -8995,7 +9053,7 @@
    "street:cervantes",
    "backdrop.json:aerial-trees",
    "cervantes_patio_walls.json:cervantes-patio-south-2",
-   "cervantes_patio_walls.json:cervantes-patio-north-1"
+   "frontage_divisions.json:cervantes-elena-lawn-1"
   ],
   "subject": "Steps and ramp at the Elena/Cervantes junction"
  },
@@ -9459,7 +9517,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "plain_fronts.json:elena-24-south-patio"
   ]
  },
  {
@@ -9494,6 +9553,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "plain_fronts.json:elena-24-south-patio",
    "backdrop.json:aerial-trees",
    "cervantes_north_patios.json:cervantes-north-partition-east",
    "cervantes_garden_door.json:cervantes-junction-north-patio"
@@ -9736,6 +9796,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "plain_fronts.json:elena-24-south-patio",
    "backdrop.json:aerial-trees"
   ]
  },

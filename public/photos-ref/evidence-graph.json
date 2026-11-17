@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "3972b1e6ae1390ba105fb3dd393525d207bc6cccf0756e5dc805fb457a766b2c",
+ "inputDigest": "b0a6654702b758e41fd431190d46f822712f6eda7d7508975c6df492700c9fd1",
  "summary": {
   "unplaced": 3,
+  "needs-review": 232,
   "suggested": 267,
-  "needs-review": 231,
-  "photos": 501,
-  "features": 494,
-  "photosCitedByModel": 210,
-  "modelFeaturesWithPhotoCitations": 238
+  "photos": 502,
+  "features": 495,
+  "photosCitedByModel": 211,
+  "modelFeaturesWithPhotoCitations": 239
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -1992,7 +1992,8 @@
     "IMG_2329.jpg",
     "IMG_2342.jpg",
     "IMG_2358.jpg",
-    "IMG_2367.jpg"
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg"
    ]
   },
   {
@@ -2006,7 +2007,8 @@
     "IMG_2329.jpg",
     "IMG_2342.jpg",
     "IMG_2358.jpg",
-    "IMG_2367.jpg"
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg"
    ]
   },
   {
@@ -2037,7 +2039,8 @@
    "evidence": [
     "IMG_2260.jpg",
     "IMG_2261.jpg",
-    "IMG_2330.jpg"
+    "IMG_2330.jpg",
+    "ELENA-ROOF-2026-11-17.jpg"
    ]
   },
   {
@@ -3479,7 +3482,8 @@
     "IMG_2261.jpg",
     "IMG_2358.jpg",
     "IMG_2260.jpg",
-    "IMG_2330.jpg"
+    "IMG_2330.jpg",
+    "ELENA-ROOF-2026-11-17.jpg"
    ]
   },
   {
@@ -4233,6 +4237,17 @@
    ]
   },
   {
+   "id": "plain_fronts.json:elena-24-south-patio",
+   "name": "elena 24 south patio",
+   "kind": "reference feature",
+   "source": "The camera of ELENA-ROOF-2026-11-17.jpg and IMG_2358 stands at the south parapet of Elena 24 (east end of 6265201UF1366N_part4) and looks straight down into the patio in front of this face: open blue-patterned terracotta tiles, a tiled bench, a planter and a parasol, and no porch roof or balcony (IMG_2367 the same). The generated tiled porch roof stood over that patio and hid the lane and lawns from the roof. Openings on the face itself are not seen and are left as generated.",
+   "evidence": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
+   ]
+  },
+  {
    "id": "plain_fronts.json:north-pool-gated-patio-walls",
    "name": "north pool gated patio walls",
    "kind": "reference feature",
@@ -4493,6 +4508,13 @@
    "name": "Beach: pebbles on sand at the water line",
    "file": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
    "status": "unplaced"
+  },
+  {
+   "id": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "kind": "photo",
+   "name": "Roof by Elena: morning view down Elena south and the junction lawns to the middle pool",
+   "file": "ELENA-ROOF-2026-11-17.jpg",
+   "status": "needs-review"
   },
   {
    "id": "photo:IMG_2182.jpg",
@@ -8017,6 +8039,50 @@
   }
  ],
  "edges": [
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 24.8,
+   "angleOffset": 24.5
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 39.6,
+   "angleOffset": 30.7
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "frontage_divisions.json:cervantes-lawn-door-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "lane_walls.json:elena-south-lawn-west-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "plain_fronts.json:elena-24-south-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
   {
    "from": "photo:IMG_2182.jpg",
    "to": "street:jorge",
@@ -13447,6 +13513,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2358.jpg",
+   "to": "plain_fronts.json:elena-24-south-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2359.jpg",
    "to": "building:6265201UF1366N_part4",
    "relation": "possibly-in-view",
@@ -13784,6 +13856,12 @@
   {
    "from": "photo:IMG_2367.jpg",
    "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "plain_fronts.json:elena-24-south-patio",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

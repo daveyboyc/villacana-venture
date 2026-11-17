@@ -31,8 +31,8 @@ Cervantes, the straight tiled lane across the block from Pintor Dalí to the Pic
 
 ## Coverage
 
-Layout: 68, Levels and slopes: 24, Facades and roofs: 32, Materials: 25, Planting: 45, Signs: 17, Views: 5
-74 reviewed, 0 suggested only by camera position.
+Layout: 69, Levels and slopes: 24, Facades and roofs: 33, Materials: 26, Planting: 46, Signs: 17, Views: 5
+75 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -169,7 +169,7 @@ graph LR
   F24 --> PIMG_2273_jpg(["IMG_2273"])
   F24 --> PIMG_2274_jpg(["IMG_2274"])
   F24 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F25["Cervantes · south patio wall 2 · unreviewed"]
+  A --> F25["Cervantes · south patio wall 2 · disputed"]
   F25 --> PIMG_2263_jpg(["IMG_2263"])
   F25 --> PIMG_2264_jpg(["IMG_2264"])
   F25 --> PIMG_2265_jpg(["IMG_2265"])
@@ -193,7 +193,8 @@ graph LR
   A --> F29["Elena east patios · white wall behind the plumbago bed on Cervantes · unreviewed"]
   F29 --> PIMG_2197_jpg(["IMG_2197"])
   F29 --> PIMG_2356_jpg(["IMG_2356"])
-  A --> F30["Cervantes / Elena · front lawn 1 · unreviewed"]
+  A --> F30["Cervantes / Elena · front lawn 1 · disputed"]
+  F30 --> PELENA_ROOF_2026_11_17_jpg(["ELENA-ROOF-2026-11-17"])
   F30 --> PIMG_2260_jpg(["IMG_2260"])
   F30 --> PIMG_2261_jpg(["IMG_2261"])
   F30 --> PIMG_2263_jpg(["IMG_2263"])
@@ -201,7 +202,8 @@ graph LR
   F30 --> PIMG_2342_jpg(["IMG_2342"])
   F30 --> PIMG_2358_jpg(["IMG_2358"])
   F30 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F31["Cervantes / Elena · front lawn 2 · unreviewed"]
+  A --> F31["Cervantes / Elena · front lawn 2 · disputed"]
+  F31 --> PELENA_ROOF_2026_11_17_jpg(["ELENA-ROOF-2026-11-17"])
   F31 --> PIMG_2260_jpg(["IMG_2260"])
   F31 --> PIMG_2261_jpg(["IMG_2261"])
   F31 --> PIMG_2329_jpg(["IMG_2329"])
@@ -211,7 +213,8 @@ graph LR
   A --> F32["Cervantes / Elena · paved front enclosure · unreviewed"]
   F32 --> PIMG_2260_jpg(["IMG_2260"])
   F32 --> PIMG_2261_jpg(["IMG_2261"])
-  A --> F33["Front-door approach between lawns · unreviewed"]
+  A --> F33["Front-door approach between lawns · disputed"]
+  F33 --> PELENA_ROOF_2026_11_17_jpg(["ELENA-ROOF-2026-11-17"])
   F33 --> PIMG_2260_jpg(["IMG_2260"])
   F33 --> PIMG_2261_jpg(["IMG_2261"])
   F33 --> PIMG_2330_jpg(["IMG_2330"])
@@ -234,23 +237,18 @@ graph LR
   F37 --> PIMG_2450_jpg(["IMG_2450"])
   F37 --> PIMG_2794_jpg(["IMG_2794"])
   F37 --> PIMG_2795_jpg(["IMG_2795"])
-  A --> F38["Elena south · white wall with two brown doors west of the junction lawns · unreviewed"]
-  F38 --> PIMG_2260_jpg(["IMG_2260"])
-  F38 --> PIMG_2261_jpg(["IMG_2261"])
-  F38 --> PIMG_2330_jpg(["IMG_2330"])
-  F38 --> PIMG_2358_jpg(["IMG_2358"])
-  A --> F39["Cervantes / Elena ramp · disputed"]
-  F39 --> PIMG_2262_jpg(["IMG_2262"])
-  F39 --> PIMG_2265_jpg(["IMG_2265"])
-  F39 --> PIMG_2286_jpg(["IMG_2286"])
-  A --> F40["Cervantes / Alberto · two steps beside the ramp · unreviewed"]
-  F40 --> PIMG_2448_jpg(["IMG_2448"])
-  F40 --> PIMG_2449_jpg(["IMG_2449"])
-  A --> F41["Cervantes / Elena · steps beside the ramp · disputed"]
-  F41 --> PIMG_2262_jpg(["IMG_2262"])
-  F41 --> PIMG_2286_jpg(["IMG_2286"])
-  F41 --> PIMG_2328_jpg(["IMG_2328"])
-  F41 --> PIMG_2355_jpg(["IMG_2355"])
+  A --> F38["Cervantes / Elena ramp · disputed"]
+  F38 --> PIMG_2262_jpg(["IMG_2262"])
+  F38 --> PIMG_2265_jpg(["IMG_2265"])
+  F38 --> PIMG_2286_jpg(["IMG_2286"])
+  A --> F39["Cervantes / Alberto · two steps beside the ramp · unreviewed"]
+  F39 --> PIMG_2448_jpg(["IMG_2448"])
+  F39 --> PIMG_2449_jpg(["IMG_2449"])
+  A --> F40["Cervantes / Elena · steps beside the ramp · disputed"]
+  F40 --> PIMG_2262_jpg(["IMG_2262"])
+  F40 --> PIMG_2286_jpg(["IMG_2286"])
+  F40 --> PIMG_2328_jpg(["IMG_2328"])
+  F40 --> PIMG_2355_jpg(["IMG_2355"])
 ```
 
 ## Placement evidence
@@ -284,20 +282,19 @@ graph LR
 | `cervantes_patio_walls.json:cervantes-patio-north-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_patio_walls.json:cervantes-patio-north-east` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_patio_walls.json:cervantes-patio-south-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `cervantes_patio_walls.json:cervantes-patio-south-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_patio_walls.json:cervantes-patio-south-2` | disputed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy elena-junction-cervantes-door-wall |
 | `cervantes_patio_walls.json:cervantes-patio-south-3` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `door_sills.json:elena-bed-door-sill` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `door_sills.json:elena-lawn-door-sill` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `elena_east_patios.json:elena-east-patios-cervantes-wall` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `frontage_divisions.json:cervantes-elena-lawn-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `frontage_divisions.json:cervantes-elena-lawn-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `frontage_divisions.json:cervantes-elena-lawn-1` | disputed | differs | open discrepancy photo-discrepancy:e633823b86a8e2cd; open model-loop discrepancy elena-junction-west-wall-position |
+| `frontage_divisions.json:cervantes-elena-lawn-2` | disputed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy elena-junction-west-wall-position; open model-loop discrepancy elena-junction-far-end |
 | `frontage_divisions.json:cervantes-front-patio` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `frontage_divisions.json:cervantes-lawn-door-path` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `frontage_divisions.json:cervantes-lawn-door-path` | disputed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy elena-junction-west-wall-position |
 | `frontage_divisions.json:cervantes-west-planting` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `junction_lawns.json:junction-pollarded-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `lane_walls.json:cervantes-north-garden-wall-west` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `lane_walls.json:cervantes-south-garden-wall-alberto` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `lane_walls.json:elena-south-lawn-west-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `ramp:cervantes-elena-ramp` | disputed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy cervantes-elena-steps-position |
 | `steps:cervantes-alberto-steps` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `steps:cervantes-elena-steps` | disputed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy cervantes-elena-steps-position |
@@ -383,8 +380,9 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2266.jpg](../../public/photos-ref/IMG_2266.jpg) | ground | layout | Calle Cervantes exit onto Pintor Dalí: planter and opposite hedge |
 | [IMG_2445.jpg](../../public/photos-ref/IMG_2445.jpg) | ground | materials | Octagonal terracotta paving close-up on Cervantes **Note:** Camera looks down at the floor so only the pattern is usable; heading 240 (along the lane) comes from the pin metadata. Octagon pattern here (about 0.4 m octagons) differs from the square tiles used west of Elena. |
 | [IMG_2462.jpg](../../public/photos-ref/IMG_2462.jpg) | ground | planting | Bougainvillea over a white wall above a plumbago and clipped hedge, Elena junction **Note:** Close planting shot at the junction; heading 289 points at the white garden wall near the brown door (IMG_2196), but the location within the junction is not established. |
-| [IMG_2358.jpg](../../public/photos-ref/IMG_2358.jpg) | roof | layout, planting | Roof by Elena: looking down on Elena south and the junction lawns **Looks at:** The junction lawns south of Cervantes. **Note:** Roof shot: the pin is the roof. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, lane_walls.json:elena-south-lawn-west-wall, lane_walls.json:elena-south-mouth-patio-wall, cervantes_garden_door.json:cervantes-junction-north-patio._ |
-| [IMG_2367.jpg](../../public/photos-ref/IMG_2367.jpg) | roof | layout, planting | Roof by Elena: looking south over the Cervantes/Elena junction **Looks at:** The Cervantes/Elena junction. **Note:** Roof shot: the pin is the roof. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, cervantes_garden_door.json:cervantes-junction-north-patio._ |
+| [IMG_2358.jpg](../../public/photos-ref/IMG_2358.jpg) | roof | layout, planting | Roof by Elena: looking down on Elena south and the junction lawns **Looks at:** The junction lawns south of Cervantes. **Note:** Roof shot: the pin is the roof. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, lane_walls.json:elena-south-lawn-west-wall, lane_walls.json:elena-south-mouth-patio-wall, cervantes_garden_door.json:cervantes-junction-north-patio, plain_fronts.json:elena-24-south-patio._ |
+| [IMG_2367.jpg](../../public/photos-ref/IMG_2367.jpg) | roof | layout, planting | Roof by Elena: looking south over the Cervantes/Elena junction **Looks at:** The Cervantes/Elena junction. **Note:** Roof shot: the pin is the roof. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, cervantes_garden_door.json:cervantes-junction-north-patio, plain_fronts.json:elena-24-south-patio._ |
+| [ELENA-ROOF-2026-11-17.jpg](../../public/photos-ref/ELENA-ROOF-2026-11-17.jpg) | roof | layout, planting, facades, materials | Roof by Elena: morning view down Elena south and the junction lawns to the middle pool **Looks at:** The two junction lawns, the Elena south lane and the west patio walls, down to the middle pool gate. **Note:** Roof shot from the south parapet of Elena 24, the same spot as IMG_2358/IMG_2367 (solved camera within 0.5 m of IMG_2358's). Sent in chat on 17 November 2026 without location data. The far end (cypress wall, gate to the middle pool) is 22-40 m out, where one camera does not fix depth. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-lawn-door-path, lane_walls.json:elena-south-lawn-west-wall, plain_fronts.json:elena-24-south-patio._ |
 | [IMG_2196.jpg](../../public/photos-ref/IMG_2196.jpg) | ground | facades, planting, levels | Elena junction: private brown door up tiled steps, bougainvillea **Looks at:** The brown garden door, its pilaster frame and curved coping, and the three-riser flight up to it. **Note:** Door-steps detail recheck 27 October: three white risers (lane, two red treads of two small quarry-tile rows each, then a threshold tread at the door), the bottom step wider with rounded ends, the upper flight between the west hedge bed's rounded end and a low east planter set back from the bottom step. _Used by: cervantes_garden_door.json:cervantes-garden-door, cervantes_garden_door.json:cervantes-junction-north-bed, cervantes_garden_door.json:cervantes-junction-east-planter._ |
 | [IMG_2287.jpg](../../public/photos-ref/IMG_2287.jpg) | ground | facades, planting, levels | Elena junction: private doorway and planting **Looks at:** The brown garden door and its three-riser flight between the west hedge bed and the east planter. **Note:** Door-steps detail recheck 27 October: three white risers; the bottom step is wider than the flight with rounded ends, and the east planter's front stands about 0.2-0.3 m behind it (base lines compared with the west bed's). _Used by: cervantes_garden_door.json:cervantes-garden-door, cervantes_garden_door.json:cervantes-junction-north-bed, cervantes_garden_door.json:cervantes-junction-east-planter._ |
 | [IMG_2286.jpg](../../public/photos-ref/IMG_2286.jpg) | ground | levels, layout, signage | Elena junction: side-by-side ramp and steps **Looks at:** The steps beside the Cervantes ramp. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
