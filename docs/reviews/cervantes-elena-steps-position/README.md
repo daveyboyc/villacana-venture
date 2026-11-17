@@ -27,3 +27,13 @@ Open discrepancy `cervantes-elena-steps-position`. Task `elena-junction-lawns-ro
 - Not a measured placement: no ground camera at the junction is solved (IMG_2262's lean and the corner geometry defeated a quick solve). The positions are good to about 0.3-0.5 m.
 - Still different: the 0.65 m white wall between the ramp and the lawn is a low rounded kerb in IMG_2262, IMG_2286 and IMG_2328 (`cervantes-kerb-walls-height`, open).
 - Checks: check_terrain, check_cervantes_garden_door, check_cervantes_lane_edges, check_lane_walls, check_levels, check_boundary_reference and the junction-lawn checks pass. check_cervantes_east_hedge, check_cervantes_north_patios, check_cervantes_patio_walls and check_dali_threshold fail on unchanged main as well.
+
+## Review
+
+Second agent (`REVIEW.md`): approved as an estimated correction, not a measured placement. Its own readings: drain
+1.1 m from the door's bottom step and 1.65-1.7 m from the door centre in IMG_2196 (model 1.12 and 1.72); roof
+cameras 0.6-0.75 m for the door (door 1.0 m accepted at about ±0.4 m); LiDAR 2021 puts the foot 2.0-2.5 m west, 2015
+1.0-1.5 m. Open, not blocking: the lawn's north kerb counts 10-10.5 tile rows (4.0-4.3 m) against 4.6 m in the model;
+the door looks 1.3-1.6 times too wide from the roof; the grid cell at (-152, 54) went from 0.59 to 0.87 m once the
+moved patio no longer holds it. That cell is in Elena 24's patio east of the door (raised about 0.45 m above the
+0.53 m lane), not on the lane.
