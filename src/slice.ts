@@ -64,6 +64,7 @@ import { addLoweredLanes, laneDrop, loweredRoads, onLoweredLane } from "./lowere
 import { addSeafrontFence, seafrontFenceRings } from "./seafront-fence";
 import { addPicassoLawnWall, picassoLawnWallRings } from "./picasso-lawn-wall";
 import { addLaneWalls, laneWallRings } from "./lane-walls";
+import { addCervantesLaneEdges, addCervantesLaneEdgePlanting, cervantesLaneEdgeRings } from "./cervantes-lane-edges";
 import { addMainPoolLawn, inLawnPlainFront, lawnSolidRings, PLAIN_LAWN_BUILDINGS } from "./main-pool-lawn";
 import { addGroundPlan, groundPlanSolidRings, paintGroundPlan } from "./ground-plan";
 import { bareGardenWall, plainForOpenings, plainForPorches } from "./plain-fronts";
@@ -336,7 +337,9 @@ async function boot(): Promise<void> {
   addAlbertoPassage(scene);
   addSouthPoolPassage(scene);
   addJorgeLane(scene);
-  addLaneWalls(scene); // garden and patio walls along Calle Elena and Calle Jorge (data/lane_walls.json)
+  addLaneWalls(scene); // garden and patio walls along Calle Elena, Calle Jorge and Calle Cervantes (data/lane_walls.json)
+  addCervantesLaneEdges(scene); // Cervantes beds and hedge planters along the lane (data/cervantes_lane_edges.json)
+  if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addCervantesLaneEdgePlanting(into,keep)});
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   addMiddleSwGateway(scene);
   addNorthWestCanopies(scene,skeleton.buildings);
@@ -350,6 +353,7 @@ async function boot(): Promise<void> {
   fenceRings.push(...elenaEastPatioRings()); // issue #38: photographed patio enclosure walls are solid
   fenceRings.push(...evaWallRings());
   fenceRings.push(...laneWallRings()); // Calle Elena and Calle Jorge garden and patio walls, doors closed
+  fenceRings.push(...cervantesLaneEdgeRings()); // Cervantes beds and hedge planters
   fenceRings.push(...picassoServiceRings());
   fenceRings.push(...raisedTerraceRings()); // terrace faces and stair cheeks; openings stay open
   fenceRings.push(...middleSwRings(),...middleSouthRings(),...middlePoolRings()); // traced middle pool gateway and planter are solid

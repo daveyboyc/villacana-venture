@@ -645,7 +645,7 @@
         "photo:IMG_2265.jpg",
         "photo:IMG_2286.jpg"
       ],
-      "trust": "Slope, white edges and foot drain confirmed by reference photos; IMG_2286 and IMG_2262 show three steps beside it on the north side taking the same rise. The rise is part of the ground (data/terrain.json): 0.5 m per Dave, over about 3 m here, estimated from tile and tread sizes"
+      "trust": "Slope, white edges and foot drain confirmed by reference photos; IMG_2286 and IMG_2262 show three steps beside it on the north side taking the same rise. The rise is part of the ground (data/terrain.json): 0.6 m over about 3 m here, the laser survey's drop (+0.53 to +1.13 m), which the three riser faces measured against the 0.4 m tiles in IMG_2286 agree with (about 0.2 m each; first judged 0.5 m by eye)"
     }
   ]
 }

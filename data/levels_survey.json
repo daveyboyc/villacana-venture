@@ -3,7 +3,7 @@
   "checkedAt": "2026-10-15",
   "findings": {
     "housesMostlyAtLaneLevel": "On Cervantes, Elena south and the pool lanes the house floors sit at lane level or one sill (0.1-0.15 m) above it; no flights of steps up to front doors were seen. What is raised is the ground in front of some houses: walled patios and terraces, reached by one to six steps, and the west side of the resort.",
-    "westSideHigher": "The 0.5 m rise towards Pintor Dalí shows in three places: the Cervantes ramp and steps at Elena, Calle Eva near the Dalí car park, and the stone steps and ramp at the middle pool's south-west corner. The terrain foot line passes 6 m west of the last one, so the model has the middle pool's south-west lane flat.",
+    "westSideHigher": "The 0.5 m rise towards Pintor Dalí shows in three places: the Cervantes ramp and steps at Elena, Calle Eva near the Dalí car park, and the stone steps and ramp at the middle pool's south-west corner. The terrain foot line passes 6 m west of the last one, so the model has the middle pool's south-west lane flat. Laser survey along Cervantes (16 November 2026): +1.15-1.2 m from the Dalí exit to the Elena junction, a 0.6 m drop at the Elena steps, level at +0.53-0.57 m to Calle Alberto, a 0.27 m drop at the two steps just west of the Alberto crossing, then level at +0.2-0.25 m to the Picasso end.",
     "noSecondRiseAtDali": "Where Cervantes meets Pintor Dalí there is no step: a tiled apron with a slot drain meets the road flush. Upper Cervantes is level or falls too gently to see (under about 2%).",
     "seaFall": "Inside the resort no steady fall towards the sea is visible between the pools; every change seen is a local step. The fall to the sea is at the seafront: south lawn, about 1 m down to the paseo, then the beach sloping to the water.",
     "notVisible": "Whether the south pool lawn is lower than the middle and north pools; the patio floor levels on the north side of upper Cervantes; the south-side front patios on Cervantes; any ramp further along Cervantes."
@@ -15,8 +15,8 @@
       "type": "ramp",
       "from": "the drain at the junction",
       "rise": [
-        0.4,
-        0.5
+        0.55,
+        0.65
       ],
       "confidence": "medium",
       "run": [
@@ -39,15 +39,15 @@
       "model": "built",
       "compare": {
         "low": [
-          -152.0,
-          56.5
+          -152.01,
+          56.82
         ],
         "high": [
-          -155.8,
-          59.1
+          -158.54,
+          60.72
         ]
       },
-      "note": "South half of the lane, the lawn kerb on its south edge. The white side face of the steps tapers out 8-9 tile rows above the drain."
+      "note": "South half of the lane, the lawn kerb on its south edge. The white side face of the steps tapers out 8-9 tile rows above the drain. 16 November 2026: rise re-read as 0.55-0.65 m with the steps beside it (riser faces against the tiles, and the laser survey's 0.6 m drop)."
     },
     {
       "id": "cervantes-elena-steps",
@@ -55,8 +55,8 @@
       "type": "steps",
       "from": "the drain at the junction",
       "rise": [
-        0.4,
-        0.5
+        0.55,
+        0.65
       ],
       "confidence": "high",
       "risers": 3,
@@ -75,15 +75,15 @@
       "task": "cervantes-steps-treads",
       "compare": {
         "low": [
-          -152.41,
-          57.06
+          -152.01,
+          56.82
         ],
         "high": [
-          -154.99,
-          58.6
+          -158.54,
+          60.72
         ]
       },
-      "note": "North half of the lane. Bottom riser one tile row up from the drain; each tread one tile plus a grey stone nosing, 0.45-0.55 m. Risers at about 0.4, 0.92 and 1.45 m from the drain. Built: data/cervantes_elena_steps.json has risers at 0.4, 0.92 and 1.45 m; the ramp beside them keeps its 3 m local run (data/terrain.json) and stays below every tread."
+      "note": "North half of the lane. Bottom riser one tile row up from the drain; each tread one tile plus a grey stone nosing, 0.45-0.55 m. Risers at about 0.4, 0.92 and 1.45 m from the drain. 16 November 2026 recheck: measured against the 0.4 m tread tiles in full-size IMG_2286 the three riser faces read about 0.2 m each (0.55-0.65 m together), not the 0.4-0.5 m first judged by eye; the laser survey has the lane at +0.53 m below the flight and +1.13-1.17 m above it, a 0.6 m drop. The earlier survey figure of 0.21 m came from comparison points 3 m apart that did not span the drop; the pair now straddles it (49.6 m and 42 m along the lane). Built: data/cervantes_elena_steps.json has risers at 0.4, 0.92 and 1.45 m; the ramp beside them keeps its 3 m local run (data/terrain.json) and stays below every tread. Open: the survey's drop is centred about 2 m further west than the photo-placed flight (discrepancy cervantes-elena-steps-position)."
     },
     {
       "id": "cervantes-junction-door-steps",
@@ -210,6 +210,40 @@
         ]
       },
       "note": "From the top of the ramp to the Dalí apron the lane recedes straight with no break, step or drain: level, or a grade under about 2%. South-side house sills at lane level or one sill above."
+    },
+    {
+      "id": "cervantes-alberto-steps",
+      "area": "cervantes",
+      "type": "steps",
+      "from": "the Calle Alberto crossing",
+      "rise": [
+        0.22,
+        0.32
+      ],
+      "confidence": "high",
+      "risers": 2,
+      "at": [
+        -115.08,
+        34.81
+      ],
+      "atAccuracy": 1.0,
+      "photos": [
+        "IMG_2448.jpg",
+        "IMG_2449.jpg"
+      ],
+      "model": "built",
+      "task": "cervantes-lane-edges",
+      "compare": {
+        "low": [
+          -113.36,
+          33.78
+        ],
+        "high": [
+          -116.97,
+          35.94
+        ]
+      },
+      "note": "Two white-faced risers with aggregate nosings on the north half of the lane just west of the Alberto crossing, a smooth tiled ramp on the south half; the lane climbs towards Dalí. The laser survey has +0.54 m west of 91 m along the lane and +0.27 m east of 93.6 m: 0.27 m. Built from data/cervantes_alberto_steps.json and the terrain flight of the same name."
     },
     {
       "id": "dali-cervantes-apron",

@@ -114,6 +114,21 @@ for i, end in enumerate(tread['risers'][1:] + [tread['end']]):
     for across in tread['across']:
         p = [sf[0] + up[0] * end - up[1] * across, sf[1] + up[1] * end + up[0] * across]
         assert site_y(p) <= site_y(sf) + steps['rise'] * (i + 1) / len(tread['risers']) + 0.005, f'Cervantes steps: tread {i + 1} below the ramp'
+# Just west of the Calle Alberto crossing (IMG_2448, IMG_2449) the lane climbs again: two steps beside a ramp,
+# the laser survey's 0.27 m, every tread above the ramp beside it and the lane level on either side.
+ab = json.loads((ROOT / 'data/cervantes_alberto_steps.json').read_text())
+af, at_ = ab['foot'], ab['toward']
+aup = [(at_[0] - af[0]) / math.dist(af, at_), (at_[1] - af[1]) / math.dist(af, at_)]
+alb = flights['cervantes-alberto-steps']
+assert abs(site_y(at_) - site_y(af) - alb['rise']) < 0.01 and alb['photoRise'][0] <= alb['rise'] <= alb['photoRise'][1], 'Ground does not climb at the Alberto steps'
+assert len(ab['risers']) == 2 and all(.45 <= b - a <= .55 for a, b in zip(ab['risers'], ab['risers'][1:])), 'Alberto steps: treads not one tile plus nosing'
+for i, end in enumerate(ab['risers'][1:] + [ab['end']]):
+    for across in ab['across']:
+        p = [af[0] + aup[0] * end - aup[1] * across, af[1] + aup[1] * end + aup[0] * across]
+        assert site_y(p) <= site_y(af) + alb['rise'] * (i + 1) / len(ab['risers']) + 0.005, f'Alberto steps: tread {i + 1} below the ramp'
+for d in (4.0, 6.0):
+    assert abs(site_y([af[0] - aup[0] * d, af[1] - aup[1] * d]) - alb['base']) < 0.06, 'Cervantes east of the Alberto steps is not level'
+    assert abs(site_y([at_[0] + aup[0] * d, at_[1] + aup[1] * d]) - alb['base'] - alb['rise']) < 0.08, 'Cervantes west of the Alberto steps is not level'
 # Calle Eva climbs out of the middle pool courtyard at the stone steps (IMG_2333) and runs on up towards Dalí.
 eva = roads['eva']['points']
 assert site_y(eva[0]) - site_y(eva[2]) >= 0.5 and abs(site_y(eva[3]) - grid['decks']['middle']) < 0.1, 'Calle Eva does not climb towards Dalí'
