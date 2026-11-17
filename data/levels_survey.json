@@ -25,8 +25,8 @@
       ],
       "falls": "east-north-east to the full-width drain",
       "at": [
-        -153.7,
-        57.8
+        -155.417,
+        58.825
       ],
       "atAccuracy": 1.5,
       "photos": [
@@ -61,8 +61,8 @@
       "confidence": "high",
       "risers": 3,
       "at": [
-        -153.7,
-        57.4
+        -155.417,
+        58.425
       ],
       "atAccuracy": 1.5,
       "photos": [
@@ -98,8 +98,8 @@
       "confidence": "medium",
       "risers": 3,
       "at": [
-        -152.5,
-        55.5
+        -153.359,
+        56.013
       ],
       "atAccuracy": 1.5,
       "photos": [
@@ -124,8 +124,8 @@
       ],
       "confidence": "low",
       "at": [
-        -153.5,
-        53.5
+        -154.359,
+        54.013
       ],
       "atAccuracy": 3,
       "photos": [
@@ -150,8 +150,8 @@
       ],
       "confidence": "medium",
       "at": [
-        -154.0,
-        56.2
+        -155.288,
+        56.969
       ],
       "atAccuracy": 2,
       "photos": [

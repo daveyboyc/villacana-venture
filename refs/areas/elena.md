@@ -26,6 +26,7 @@ Calle Elena, north and south sections, from the north pool to the middle pool, i
 - 16 November 2026: IMG_2968 looks north-north-west up Calle Elena: square terracotta tiles between white kerbs and hedged beds, two pollarded trees, a white wall with a louvred door and an arch at the north end. IMG_2973 shows a clivia and monstera bed at the foot of the garden wall, seen from the garden side.
 - 16 November 2026 (lane-walls-jorge-elena): the white wall with two brown doors along the west side of the Elena south lawns is built (IMG_2261, IMG_2260, IMG_2330, IMG_2358), its doors on the existing sills, 2.2 m high, from the Cervantes south wall to the cypress wall; so is the low patio wall on the east side of the lane mouth (IMG_2358). Lawn 2's traced north-west corner moved 0.69 m to sit inside the wall. See docs/LANE_WALLS.md.
 - 17 November 2026 (task elena-junction-lawns-roof, docs/reviews/elena-junction-lawns-roof): Dave sent ELENA-ROOF-2026-11-17.jpg, a morning view from the Elena 24 roof down Elena south to the middle pool. Its camera and IMG_2358's are solved from the near parapet. Measured through both: the west wall with two doors stood 1.1-1.4 m too far west with a jog the photos do not show, and both lawns stopped short of the lane kerb and the wall; wall refitted to the photographed straight foot, bed door, sills, lawns and cross path moved (0.10 m rms; the first fit was rejected in review and redone). The generated tiled porch roof over the open patio below the camera is off. Open: the far cypress wall and the gate to the middle pool (photo request elena-south-cypress-wall-gate), the tall door wall with the CALLE ELENA sign at the Cervantes end, the east-side beds and the clipped trees.
+- 17 November 2026: the Cervantes ramp and three steps at the Elena junction, with their foot drain, moved 2.0 m west and the Elena 24 garden door with its steps 1.0 m west (Dave: they were not in the right place). IMG_2262 shows the drain at the near lawn's north-east kerb corner; the 2020-21 laser survey and IMG_2196 agree. Not yet measured through a solved ground camera (docs/reviews/cervantes-elena-steps-position). The 0.65 m wall between the ramp and the lawn is a low kerb in the photos (open: cervantes-kerb-walls-height).
 
 ## Read first
 
@@ -96,7 +97,7 @@ graph LR
   F6 --> PIMG_2197_jpg(["IMG_2197"])
   F6 --> PIMG_2360_jpg(["IMG_2360"])
   F6 --> PIMG_2366_jpg(["IMG_2366"])
-  A --> F7["Cervantes junction · raised garden door and private patio · disputed"]
+  A --> F7["Cervantes junction · raised garden door and private patio · unreviewed"]
   F7 --> PIMG_2196_jpg(["IMG_2196"])
   F7 --> PIMG_2287_jpg(["IMG_2287"])
   F7 --> PIMG_2327_jpg(["IMG_2327"])
@@ -248,7 +249,7 @@ graph LR
 | `cervantes_east_south_patios.json:cervantes-east-south-shrub-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_east_south_patios.json:cervantes-east-south-shrub-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_east_south_patios.json:cervantes-east-south-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `cervantes_garden_door.json:cervantes-garden-door` | disputed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy cervantes-elena-steps-position |
+| `cervantes_garden_door.json:cervantes-garden-door` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_garden_door.json:cervantes-junction-east-planter` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_garden_door.json:cervantes-junction-north-patio` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `door_sills.json:elena-bed-door-sill` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
