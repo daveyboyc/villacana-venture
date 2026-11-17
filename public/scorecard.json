@@ -431,18 +431,22 @@
     }
    },
    "photos": {
-    "count": 41,
-    "tagged": 41,
-    "placed": 34,
+    "count": 42,
+    "tagged": 42,
+    "placed": 35,
     "checks": {
      "matches": 4,
-     "differs": 2,
+     "differs": 3,
      "not-comparable": 13
     },
-    "camerasSolved": 0,
-    "stationsHolding": [],
+    "camerasSolved": 1,
+    "stationsHolding": [
+     "ELENA-ROOF-2026-11-17.jpg"
+    ],
     "stationsFailing": [],
-    "heldOutMisfitM": []
+    "heldOutMisfitM": [
+     0.36
+    ]
    },
    "facades": {
     "traced": 0,
@@ -494,7 +498,7 @@
    "status": [
     "Ground: 91% of open ground within 0.25 m of the laser survey.",
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 41, 34 placed; no camera solved.",
+    "Photos: 42, 35 placed; 1 cameras solved, 1 station holding.",
     "Facades: 0 of 40 kit parts traced from photos.",
     "How sure: 9 photographed, 15 estimated, 2 inferred, 1 known gap.",
     "Placement: 0 of 26 features verified, 5 open discrepancies.",
@@ -1097,24 +1101,27 @@
     }
    },
    "photos": {
-    "count": 112,
-    "tagged": 112,
-    "placed": 112,
+    "count": 113,
+    "tagged": 113,
+    "placed": 113,
     "checks": {
      "matches": 4,
-     "differs": 2,
+     "differs": 4,
      "not-comparable": 16
     },
-    "camerasSolved": 3,
-    "stationsHolding": [],
+    "camerasSolved": 4,
+    "stationsHolding": [
+     "ELENA-ROOF-2026-11-17.jpg",
+     "IMG_2358.jpg"
+    ],
     "stationsFailing": [
      "IMG_2220.jpg",
-     "IMG_2358.jpg",
      "IMG_2360.jpg"
     ],
     "heldOutMisfitM": [
-     0.76,
-     1.27
+     0.36,
+     0.45,
+     0.76
     ]
    },
    "facades": {
@@ -1122,9 +1129,9 @@
     "generated": 71
    },
    "placement": {
-    "features": 39,
+    "features": 41,
     "verified": 0,
-    "disputed": 3
+    "disputed": 5
    },
    "discrepancies": [
     {
@@ -1134,11 +1141,15 @@
     {
      "id": "photo-discrepancy:9e5aa174efadfeb8",
      "feature": "elena_walkway.json:elena-walkway-floor"
+    },
+    {
+     "id": "photo-discrepancy:f6d49220c6e1793b",
+     "feature": "lane_walls.json:elena-south-lawn-west-wall"
     }
    ],
    "tasks": {
     "open": 7,
-    "inProgress": 5,
+    "inProgress": 6,
     "titles": [
      "Elena: register both physical path edges and finite ground boundaries",
      "Elena: register both portals and reconcile second tunnel candidate",
@@ -1146,8 +1157,8 @@
     ]
    },
    "confidence": {
-    "photographed": 12,
-    "estimated": 23,
+    "photographed": 15,
+    "estimated": 22,
     "inferred": 3,
     "registry": 1,
     "gaps": 4
@@ -1155,18 +1166,18 @@
    "status": [
     "Ground: 97% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 97% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 112, 112 placed; 3 cameras solved, none holding.",
+    "Photos: 113, 113 placed; 4 cameras solved, 2 stations holding.",
     "Facades: 0 of 71 kit parts traced from photos.",
-    "How sure: 12 photographed, 23 estimated, 3 inferred, 4 known gaps.",
-    "Placement: 0 of 39 features verified, 2 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 1 still open; 4 evidence requests. This is not whole-area acceptance."
+    "How sure: 15 photographed, 22 estimated, 3 inferred, 4 known gaps.",
+    "Placement: 0 of 41 features verified, 3 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 6 still open; 5 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 1,
+     "ready": 5,
      "needs-evidence": 0,
      "needs-source-access": 0,
-     "awaiting-review": 0,
+     "awaiting-review": 1,
      "accepted": 0
     },
     "requests": [
@@ -1226,13 +1237,26 @@
       "features": [],
       "tasks": [],
       "state": "received"
+     },
+     {
+      "id": "photo-elena-south-cypress-wall-gate",
+      "area": "elena",
+      "kind": "photo",
+      "ask": "Standing on the cross path between the two Elena south lawns, one photo looking south at the far wall with the two cypresses, taking in where it meets the lane and the gate onto the middle pool lawn; then one from the lane beside the far lawn looking west along that wall.",
+      "why": "elena-junction-far-end: the roof view shows the wall and gate 22-40 m out, too far to fix their position",
+      "photoRequest": "elena-south-cypress-wall-gate",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
+      "state": "open"
      }
     ],
     "readyTasks": 6
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 2 spots",
+    "headline": "Photos needed: 3 spots",
     "requests": [
      {
       "id": "elena-25-far-end",
@@ -1262,6 +1286,22 @@
       ],
       "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
       "why": "task elena-25-passage: register the portal on the lane",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "elena-south-cypress-wall-gate",
+      "at": [
+       -148.0,
+       70.0
+      ],
+      "look": [
+       -146.5,
+       77.0
+      ],
+      "ask": "Standing on the cross path between the two Elena south lawns, one photo looking south at the far wall with the two cypresses, taking in where it meets the lane and the gate onto the middle pool lawn; then one from the lane beside the far lawn looking west along that wall.",
+      "why": "elena-junction-far-end: the roof view shows the wall and gate 22-40 m out, too far to fix their position",
       "priority": 2,
       "state": "open",
       "photos": []
@@ -1339,23 +1379,26 @@
     }
    },
    "photos": {
-    "count": 74,
-    "tagged": 74,
-    "placed": 74,
+    "count": 75,
+    "tagged": 75,
+    "placed": 75,
     "checks": {
      "matches": 0,
-     "differs": 0,
+     "differs": 2,
      "not-comparable": 6
     },
-    "camerasSolved": 3,
-    "stationsHolding": [],
+    "camerasSolved": 4,
+    "stationsHolding": [
+     "ELENA-ROOF-2026-11-17.jpg",
+     "IMG_2358.jpg"
+    ],
     "stationsFailing": [
-     "IMG_2358.jpg",
      "IMG_2359.jpg",
      "IMG_2360.jpg"
     ],
     "heldOutMisfitM": [
-     1.27
+     0.36,
+     0.45
     ]
    },
    "facades": {
@@ -1363,11 +1406,16 @@
     "generated": 147
    },
    "placement": {
-    "features": 42,
+    "features": 41,
     "verified": 0,
-    "disputed": 3
+    "disputed": 6
    },
-   "discrepancies": [],
+   "discrepancies": [
+    {
+     "id": "photo-discrepancy:e633823b86a8e2cd",
+     "feature": "frontage_divisions.json:cervantes-elena-lawn-1"
+    }
+   ],
    "tasks": {
     "open": 4,
     "inProgress": 2,
@@ -1379,7 +1427,7 @@
    },
    "confidence": {
     "photographed": 13,
-    "estimated": 27,
+    "estimated": 26,
     "inferred": 2,
     "registry": 0,
     "gaps": 7
@@ -1387,10 +1435,10 @@
    "status": [
     "Ground: 99% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.2 m.",
-    "Photos: 74, 74 placed; 3 cameras solved, none holding.",
+    "Photos: 75, 75 placed; 4 cameras solved, 2 stations holding.",
     "Facades: 0 of 147 kit parts traced from photos.",
-    "How sure: 13 photographed, 27 estimated, 2 inferred, 7 known gaps.",
-    "Placement: 0 of 42 features verified.",
+    "How sure: 13 photographed, 26 estimated, 2 inferred, 7 known gaps.",
+    "Placement: 0 of 41 features verified, 1 open discrepancy.",
     "Model loop: 0 tracked findings accepted, 2 still open; 3 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -2967,29 +3015,31 @@
     }
    },
    "photos": {
-    "count": 517,
-    "tagged": 517,
-    "placed": 498,
+    "count": 518,
+    "tagged": 518,
+    "placed": 499,
     "checks": {
      "matches": 55,
-     "differs": 42,
+     "differs": 44,
      "not-comparable": 63
     },
-    "camerasSolved": 7,
+    "camerasSolved": 8,
     "stationsHolding": [
+     "ELENA-ROOF-2026-11-17.jpg",
+     "IMG_2358.jpg",
      "north-pool-south-upper"
     ],
     "stationsFailing": [
      "IMG_2220.jpg",
-     "IMG_2358.jpg",
      "IMG_2359.jpg",
      "IMG_2360.jpg"
     ],
     "heldOutMisfitM": [
+     0.36,
+     0.45,
      0.76,
      0.79,
-     1.09,
-     1.27
+     1.09
     ]
    },
    "facades": {
@@ -2997,9 +3047,9 @@
     "generated": 2452
    },
    "placement": {
-    "features": 494,
+    "features": 495,
     "verified": 0,
-    "disputed": 41
+    "disputed": 46
    },
    "discrepancies": [
     {
@@ -3197,11 +3247,19 @@
     {
      "id": "photo-discrepancy:0ba723fbc4929bdf",
      "feature": "plain_fronts.json:north-pool-isabel-east-block"
+    },
+    {
+     "id": "photo-discrepancy:e633823b86a8e2cd",
+     "feature": "frontage_divisions.json:cervantes-elena-lawn-1"
+    },
+    {
+     "id": "photo-discrepancy:f6d49220c6e1793b",
+     "feature": "lane_walls.json:elena-south-lawn-west-wall"
     }
    ],
    "tasks": {
     "open": 52,
-    "inProgress": 56,
+    "inProgress": 57,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -3209,8 +3267,8 @@
     ]
    },
    "confidence": {
-    "photographed": 78,
-    "estimated": 168,
+    "photographed": 80,
+    "estimated": 167,
     "inferred": 16,
     "registry": 232,
     "gaps": 38
@@ -3218,18 +3276,18 @@
    "status": [
     "Ground: 95% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 517, 498 placed; 7 cameras solved, 1 station holding.",
+    "Photos: 518, 499 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 78 photographed, 168 estimated, 16 inferred, 38 known gaps.",
-    "Placement: 0 of 494 features verified, 49 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 14 still open; 43 evidence requests. This is not whole-area acceptance."
+    "How sure: 80 photographed, 167 estimated, 16 inferred, 38 known gaps.",
+    "Placement: 0 of 495 features verified, 51 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 19 still open; 44 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 9,
+     "ready": 13,
      "needs-evidence": 4,
      "needs-source-access": 0,
-     "awaiting-review": 1,
+     "awaiting-review": 2,
      "accepted": 0
     },
     "requests": [
@@ -3842,13 +3900,26 @@
       "features": [],
       "tasks": [],
       "state": "received"
+     },
+     {
+      "id": "photo-elena-south-cypress-wall-gate",
+      "area": "elena",
+      "kind": "photo",
+      "ask": "Standing on the cross path between the two Elena south lawns, one photo looking south at the far wall with the two cypresses, taking in where it meets the lane and the gate onto the middle pool lawn; then one from the lane beside the far lawn looking west along that wall.",
+      "why": "elena-junction-far-end: the roof view shows the wall and gate 22-40 m out, too far to fix their position",
+      "photoRequest": "elena-south-cypress-wall-gate",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
+      "state": "open"
      }
     ],
     "readyTasks": 40
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 33 spots",
+    "headline": "Photos needed: 34 spots",
     "requests": [
      {
       "id": "alberto",
@@ -4118,6 +4189,22 @@
       ],
       "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
       "why": "task elena-25-passage: register the portal on the lane",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "elena-south-cypress-wall-gate",
+      "at": [
+       -148.0,
+       70.0
+      ],
+      "look": [
+       -146.5,
+       77.0
+      ],
+      "ask": "Standing on the cross path between the two Elena south lawns, one photo looking south at the far wall with the two cypresses, taking in where it meets the lane and the gate onto the middle pool lawn; then one from the lane beside the far lawn looking west along that wall.",
+      "why": "elena-junction-far-end: the roof view shows the wall and gate 22-40 m out, too far to fix their position",
       "priority": 2,
       "state": "open",
       "photos": []

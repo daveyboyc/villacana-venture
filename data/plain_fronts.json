@@ -141,6 +141,27 @@
    "evidence": [
     "IMG_2205.jpg"
    ]
+  },
+  {
+   "id": "elena-24-south-patio",
+   "box": [
+    -159.5,
+    49.5,
+    -152.5,
+    55.0
+   ],
+   "facing": [
+    0.52,
+    0.85
+   ],
+   "noPorches": true,
+   "noOpenings": false,
+   "trust": "The camera of ELENA-ROOF-2026-11-17.jpg and IMG_2358 stands at the south parapet of Elena 24 (east end of 6265201UF1366N_part4) and looks straight down into the patio in front of this face: open blue-patterned terracotta tiles, a tiled bench, a planter and a parasol, and no porch roof or balcony (IMG_2367 the same). The generated tiled porch roof stood over that patio and hid the lane and lawns from the roof. Openings on the face itself are not seen and are left as generated.",
+   "evidence": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
+   ]
   }
  ],
  "parapets": [

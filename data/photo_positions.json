@@ -224,5 +224,14 @@
   },
   "heading": 203,
   "headingBasis": "Set from photo content on 18 Oct (EXIF compass read 189)"
+ },
+ "ELENA-ROOF-2026-11-17.jpg": {
+  "x": -156.5,
+  "z": 48.5,
+  "accuracy": 4.0,
+  "heading": 155,
+  "headingBasis": "read from the photo: looks down Calle Elena south to the middle pool, as IMG_2358/IMG_2367",
+  "trust": "checked against photo content",
+  "locationBasis": "Sent by Dave in chat on 17 November 2026 without location data. Same roof as IMG_2358 and IMG_2367 (Elena 24, east end of 6265201UF1366N_part4): the same lamp post, lawns, garden door with the painted plate and blue-tiled patio below, seen from a little further west."
  }
 }

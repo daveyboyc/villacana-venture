@@ -1870,6 +1870,29 @@
    "result": "differs",
    "followUp": "north-pool-station-details",
    "notes": "The east block's face along Calle Isabel is now plain as photographed, and the paving runs up to the iron gate without the generated low wall, hedge and arched gate. Still different: the feathery tree and the yucca in front of it are not drawn (route-clearance guard), and the archway into the block is a generated opening. Rendered with Show details through the solved station camera (data/photo_poses.json). A photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "elena-junction-lawns-roof",
+   "checked": "2026-11-17",
+   "by": "Claude",
+   "feature": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "photo": "ELENA-ROOF-2026-11-17.jpg",
+   "render": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-after-details.png",
+   "before": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-before-details.png",
+   "result": "differs",
+   "followUp": "elena-junction-lawns-roof",
+   "notes": "Rendered through the solved camera (Layout and Show details). Now matching: the open patio below the camera (no generated porch roof), both lawns from the lane kerb to the west wall foot, the cross path and its door, and the west wall's line and height. Still different: no tall door wall with the CALLE ELENA sign at the Cervantes end, the far wall with cypresses and the gate to the middle pool, the east-side beds and lamp post, and the clipped trees (discrepancies elena-junction-*). A photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "elena-junction-lawns-roof",
+   "checked": "2026-11-17",
+   "by": "Claude",
+   "feature": "lane_walls.json:elena-south-lawn-west-wall",
+   "photo": "IMG_2358.jpg",
+   "render": "docs/reviews/elena-junction-lawns-roof/IMG_2358-after.png",
+   "result": "differs",
+   "followUp": "elena-junction-lawns-roof",
+   "notes": "Camera re-solved with the near parapet (0.25 m). The lawns, lane kerb and west wall foot line up with the photo (traced overlay IMG_2358-traced-after.jpg); the clipped trees, cypresses and the bougainvillea are not drawn."
   }
  ],
  "legacyUnchecked": [

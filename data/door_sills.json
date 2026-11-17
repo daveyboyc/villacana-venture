@@ -9,8 +9,8 @@
       "id": "elena-lawn-door-sill",
       "name": "Elena south · sill at the door at the end of the lawn path",
       "door": [
-        -153.26,
-        70.64
+        -152.341,
+        70.092
       ],
       "outward": [
         0.883,
@@ -25,7 +25,7 @@
         "IMG_2261.jpg",
         "IMG_2330.jpg"
       ],
-      "trust": "Red tread with a white riser where the tiled path between the two lawns meets a brown door in the white wall on their west side. Door placed just past the traced end of cervantes-lawn-door-path, facing back along it; IMG_2330 puts it at bearing 182 deg against 184 deg here. Height 0.12 m and size estimated.",
+      "trust": "Red tread with a white riser where the tiled path between the two lawns meets a brown door in the white wall on their west side. Door placed just past the traced end of cervantes-lawn-door-path, facing back along it; IMG_2330 puts it at bearing 182 deg against 184 deg here. Height 0.12 m and size estimated. Moved 17 November 2026 with the wall it belongs to (data/lane_walls.json elena-south-lawn-west-wall): 1.07 m along the Cervantes wall line, measured through two solved roof cameras.",
       "photoBearings": {
         "IMG_2330.jpg": 182,
         "IMG_2261.jpg": 168
@@ -36,8 +36,8 @@
       "id": "elena-bed-door-sill",
       "name": "Elena south · sill at the second door, north along the same wall",
       "door": [
-        -154.22,
-        67.98
+        -153.301,
+        67.432
       ],
       "outward": [
         0.883,
@@ -51,7 +51,7 @@
         "IMG_2261.jpg",
         "IMG_2330.jpg"
       ],
-      "trust": "Red sill under a brown door set in a slightly projecting length of the same wall, about 2.8 m north of the first, with shrubs in front (IMG_2261). IMG_2330 puts it at bearing 195 deg against 190 deg here. Spacing, projection and height estimated.",
+      "trust": "Red sill under a brown door set in a slightly projecting length of the same wall, about 2.8 m north of the first, with shrubs in front (IMG_2261). IMG_2330 puts it at bearing 195 deg against 190 deg here. Spacing, projection and height estimated. Moved 17 November 2026 with the wall it belongs to (data/lane_walls.json elena-south-lawn-west-wall): 1.07 m along the Cervantes wall line, measured through two solved roof cameras.",
       "photoBearings": {
         "IMG_2330.jpg": 195,
         "IMG_2261.jpg": 179

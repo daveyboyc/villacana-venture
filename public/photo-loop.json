@@ -462,6 +462,11 @@
    "requests": [],
    "cameras": [
     {
+     "photo": "ELENA-ROOF-2026-11-17.jpg",
+     "state": "solved",
+     "station": null
+    },
+    {
      "photo": "IMG_2189.jpg",
      "state": "needs-solving",
      "station": null
@@ -1183,10 +1188,10 @@
    "id": "elena",
    "name": "Calle Elena",
    "counts": {
-    "ready": 1,
+    "ready": 5,
     "needs-evidence": 0,
     "needs-source-access": 0,
-    "awaiting-review": 0,
+    "awaiting-review": 1,
     "accepted": 0
    },
    "discrepancies": [
@@ -1201,6 +1206,125 @@
      ],
      "features": [],
      "task": "elena-east-patios",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "elena-junction-west-wall-position",
+     "area": "elena",
+     "kind": "placement",
+     "description": "The white wall with two doors along the west side of the junction lawns stood 1.07 m too far west (wall-foot points 1.01 m rms off its face) and both lawns stopped 0.4-0.5 m short of the lane kerb and well short of the wall, leaving a paved band the photos show as lawn. 17 November 2026: wall, doors, sills, lawns and cross path moved to the measured lines (0.19 m rms over 21 points, worst 0.55 m; far held-out points 0.28 and 0.34 m). Fixed pending the second-agent measured approval.",
+     "sources": [
+      "ELENA-ROOF-2026-11-17.jpg",
+      "IMG_2358.jpg",
+      "map:ground"
+     ],
+     "features": [
+      "lane_walls.json:elena-south-lawn-west-wall",
+      "frontage_divisions.json:cervantes-elena-lawn-1",
+      "frontage_divisions.json:cervantes-elena-lawn-2",
+      "frontage_divisions.json:cervantes-lawn-door-path"
+     ],
+     "task": "elena-junction-lawns-roof",
+     "status": "fixed",
+     "requests": [],
+     "state": "awaiting-review",
+     "blockers": [
+      "a different reviewer must inspect the actual sources and comparisons",
+      "review needs date, accepted decision and notes",
+      "review packet digest missing or changed; independent reviewer must attest this exact packet",
+      "review must inspect every declared source at full size",
+      "acceptance snapshot missing or stale; re-render and re-review",
+      "render: file paths must be relative to the public repository",
+      "comparison: file paths must be relative to the public repository",
+      "overlay: file paths must be relative to the public repository",
+      "lane_walls.json:elena-south-lawn-west-wall: current placement approval is required",
+      "lane_walls.json:elena-south-lawn-west-wall: no placement review IDs",
+      "frontage_divisions.json:cervantes-elena-lawn-1: current placement approval is required",
+      "frontage_divisions.json:cervantes-elena-lawn-1: no placement review IDs",
+      "frontage_divisions.json:cervantes-elena-lawn-2: current placement approval is required",
+      "frontage_divisions.json:cervantes-elena-lawn-2: no placement review IDs",
+      "frontage_divisions.json:cervantes-lawn-door-path: current placement approval is required",
+      "frontage_divisions.json:cervantes-lawn-door-path: no placement review IDs",
+      "lane_walls.json:elena-south-lawn-west-wall: placement tolerance exceeds 0.3 m or is absent",
+      "frontage_divisions.json:cervantes-elena-lawn-1: placement tolerance exceeds 0.3 m or is absent",
+      "frontage_divisions.json:cervantes-elena-lawn-2: placement tolerance exceeds 0.3 m or is absent",
+      "frontage_divisions.json:cervantes-lawn-door-path: placement tolerance exceeds 0.3 m or is absent"
+     ]
+    },
+    {
+     "id": "elena-junction-far-end",
+     "area": "elena",
+     "kind": "completeness",
+     "description": "From the Elena 24 roof (ELENA-ROOF-2026-11-17.jpg) the far lawn ends at a white wall with two cypresses that runs from the west wall to the lane, and the lane passes its east end through a gate with a metal frame onto the middle pool lawn. The model ends the far lawn at the north face of registry 6265801UF1366N_part5, which stops at x = -148.5, and leaves open paving from there to the lane and the pool. At 22-40 m the roof camera cannot fix the wall's depth to better than about 1 m, and its photographed base runs nearly square to the view where the registry face is 30 degrees off it. Photo request elena-south-cypress-wall-gate asks for the ground views.",
+     "sources": [
+      "ELENA-ROOF-2026-11-17.jpg",
+      "IMG_2358.jpg",
+      "IMG_2367.jpg"
+     ],
+     "features": [
+      "frontage_divisions.json:cervantes-elena-lawn-2"
+     ],
+     "task": "elena-junction-lawns-roof",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "elena-junction-cervantes-door-wall",
+     "area": "elena",
+     "kind": "completeness",
+     "description": "North end of the west wall: ELENA-ROOF-2026-11-17.jpg shows a tall white wall facing Cervantes with a brown door and the CALLE ELENA tile sign at its corner, enclosing the patio (parasol) west of the near lawn. The model has the 0.65 m cervantes-patio-south-2 there and no door (see also cervantes-kerb-walls-height).",
+     "sources": [
+      "ELENA-ROOF-2026-11-17.jpg",
+      "IMG_2367.jpg"
+     ],
+     "features": [
+      "cervantes_patio_walls.json:cervantes-patio-south-2"
+     ],
+     "task": "elena-junction-lawns-roof",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "elena-junction-planting-detail",
+     "area": "elena",
+     "kind": "appearance",
+     "description": "Detail for after the structure review: the three lawn trees are generic trees where the photos show clipped domes and a clipped standard; the two cypresses against the far wall, the shrubs at the west wall foot, the bougainvillea on the walls and the lamp post are not drawn. The tree positions are estimates (their trunk bases are hidden in the roof views).",
+     "sources": [
+      "ELENA-ROOF-2026-11-17.jpg",
+      "IMG_2358.jpg",
+      "IMG_2367.jpg"
+     ],
+     "features": [
+      "junction_lawns.json:junction-pollarded-1",
+      "junction_lawns.json:junction-pollarded-2",
+      "junction_lawns.json:junction-pollarded-3"
+     ],
+     "task": "elena-junction-lawns-roof",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "elena-south-east-beds",
+     "area": "elena",
+     "kind": "completeness",
+     "description": "East side of Elena south between Cervantes and the far wall: ELENA-ROOF-2026-11-17.jpg and IMG_2358 show planted beds with bougainvillea and a lamp post between the lane tiles and the front patio walls of the houses; the model has the lane against white walls with a grey margin and no beds.",
+     "sources": [
+      "ELENA-ROOF-2026-11-17.jpg",
+      "IMG_2358.jpg"
+     ],
+     "features": [
+      "elena_lane_paving.json:elena-south-three-column"
+     ],
+     "task": "elena-junction-lawns-roof",
      "status": "open",
      "requests": [],
      "state": "ready",
@@ -1264,9 +1388,27 @@
      "features": [],
      "tasks": [],
      "state": "received"
+    },
+    {
+     "id": "photo-elena-south-cypress-wall-gate",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "Standing on the cross path between the two Elena south lawns, one photo looking south at the far wall with the two cypresses, taking in where it meets the lane and the gate onto the middle pool lawn; then one from the lane beside the far lawn looking west along that wall.",
+     "why": "elena-junction-far-end: the roof view shows the wall and gate 22-40 m out, too far to fix their position",
+     "photoRequest": "elena-south-cypress-wall-gate",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
     }
    ],
    "cameras": [
+    {
+     "photo": "ELENA-ROOF-2026-11-17.jpg",
+     "state": "solved",
+     "station": null
+    },
     {
      "photo": "IMG_2196.jpg",
      "state": "needs-solving",
@@ -1983,6 +2125,11 @@
     }
    ],
    "cameras": [
+    {
+     "photo": "ELENA-ROOF-2026-11-17.jpg",
+     "state": "solved",
+     "station": null
+    },
     {
      "photo": "IMG_2196.jpg",
      "state": "needs-solving",
@@ -5001,10 +5148,10 @@
    "id": "whole-resort",
    "name": "The whole resort",
    "counts": {
-    "ready": 9,
+    "ready": 13,
     "needs-evidence": 4,
     "needs-source-access": 0,
-    "awaiting-review": 1,
+    "awaiting-review": 2,
     "accepted": 0
    },
    "discrepancies": [
@@ -5291,6 +5438,125 @@
       "cervantes_lane_edges.json:cervantes-north-bed-west"
      ],
      "task": "cervantes-lane-edges",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "elena-junction-west-wall-position",
+     "area": "elena",
+     "kind": "placement",
+     "description": "The white wall with two doors along the west side of the junction lawns stood 1.07 m too far west (wall-foot points 1.01 m rms off its face) and both lawns stopped 0.4-0.5 m short of the lane kerb and well short of the wall, leaving a paved band the photos show as lawn. 17 November 2026: wall, doors, sills, lawns and cross path moved to the measured lines (0.19 m rms over 21 points, worst 0.55 m; far held-out points 0.28 and 0.34 m). Fixed pending the second-agent measured approval.",
+     "sources": [
+      "ELENA-ROOF-2026-11-17.jpg",
+      "IMG_2358.jpg",
+      "map:ground"
+     ],
+     "features": [
+      "lane_walls.json:elena-south-lawn-west-wall",
+      "frontage_divisions.json:cervantes-elena-lawn-1",
+      "frontage_divisions.json:cervantes-elena-lawn-2",
+      "frontage_divisions.json:cervantes-lawn-door-path"
+     ],
+     "task": "elena-junction-lawns-roof",
+     "status": "fixed",
+     "requests": [],
+     "state": "awaiting-review",
+     "blockers": [
+      "a different reviewer must inspect the actual sources and comparisons",
+      "review needs date, accepted decision and notes",
+      "review packet digest missing or changed; independent reviewer must attest this exact packet",
+      "review must inspect every declared source at full size",
+      "acceptance snapshot missing or stale; re-render and re-review",
+      "render: file paths must be relative to the public repository",
+      "comparison: file paths must be relative to the public repository",
+      "overlay: file paths must be relative to the public repository",
+      "lane_walls.json:elena-south-lawn-west-wall: current placement approval is required",
+      "lane_walls.json:elena-south-lawn-west-wall: no placement review IDs",
+      "frontage_divisions.json:cervantes-elena-lawn-1: current placement approval is required",
+      "frontage_divisions.json:cervantes-elena-lawn-1: no placement review IDs",
+      "frontage_divisions.json:cervantes-elena-lawn-2: current placement approval is required",
+      "frontage_divisions.json:cervantes-elena-lawn-2: no placement review IDs",
+      "frontage_divisions.json:cervantes-lawn-door-path: current placement approval is required",
+      "frontage_divisions.json:cervantes-lawn-door-path: no placement review IDs",
+      "lane_walls.json:elena-south-lawn-west-wall: placement tolerance exceeds 0.3 m or is absent",
+      "frontage_divisions.json:cervantes-elena-lawn-1: placement tolerance exceeds 0.3 m or is absent",
+      "frontage_divisions.json:cervantes-elena-lawn-2: placement tolerance exceeds 0.3 m or is absent",
+      "frontage_divisions.json:cervantes-lawn-door-path: placement tolerance exceeds 0.3 m or is absent"
+     ]
+    },
+    {
+     "id": "elena-junction-far-end",
+     "area": "elena",
+     "kind": "completeness",
+     "description": "From the Elena 24 roof (ELENA-ROOF-2026-11-17.jpg) the far lawn ends at a white wall with two cypresses that runs from the west wall to the lane, and the lane passes its east end through a gate with a metal frame onto the middle pool lawn. The model ends the far lawn at the north face of registry 6265801UF1366N_part5, which stops at x = -148.5, and leaves open paving from there to the lane and the pool. At 22-40 m the roof camera cannot fix the wall's depth to better than about 1 m, and its photographed base runs nearly square to the view where the registry face is 30 degrees off it. Photo request elena-south-cypress-wall-gate asks for the ground views.",
+     "sources": [
+      "ELENA-ROOF-2026-11-17.jpg",
+      "IMG_2358.jpg",
+      "IMG_2367.jpg"
+     ],
+     "features": [
+      "frontage_divisions.json:cervantes-elena-lawn-2"
+     ],
+     "task": "elena-junction-lawns-roof",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "elena-junction-cervantes-door-wall",
+     "area": "elena",
+     "kind": "completeness",
+     "description": "North end of the west wall: ELENA-ROOF-2026-11-17.jpg shows a tall white wall facing Cervantes with a brown door and the CALLE ELENA tile sign at its corner, enclosing the patio (parasol) west of the near lawn. The model has the 0.65 m cervantes-patio-south-2 there and no door (see also cervantes-kerb-walls-height).",
+     "sources": [
+      "ELENA-ROOF-2026-11-17.jpg",
+      "IMG_2367.jpg"
+     ],
+     "features": [
+      "cervantes_patio_walls.json:cervantes-patio-south-2"
+     ],
+     "task": "elena-junction-lawns-roof",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "elena-junction-planting-detail",
+     "area": "elena",
+     "kind": "appearance",
+     "description": "Detail for after the structure review: the three lawn trees are generic trees where the photos show clipped domes and a clipped standard; the two cypresses against the far wall, the shrubs at the west wall foot, the bougainvillea on the walls and the lamp post are not drawn. The tree positions are estimates (their trunk bases are hidden in the roof views).",
+     "sources": [
+      "ELENA-ROOF-2026-11-17.jpg",
+      "IMG_2358.jpg",
+      "IMG_2367.jpg"
+     ],
+     "features": [
+      "junction_lawns.json:junction-pollarded-1",
+      "junction_lawns.json:junction-pollarded-2",
+      "junction_lawns.json:junction-pollarded-3"
+     ],
+     "task": "elena-junction-lawns-roof",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "elena-south-east-beds",
+     "area": "elena",
+     "kind": "completeness",
+     "description": "East side of Elena south between Cervantes and the far wall: ELENA-ROOF-2026-11-17.jpg and IMG_2358 show planted beds with bougainvillea and a lamp post between the lane tiles and the front patio walls of the houses; the model has the lane against white walls with a grey margin and no beds.",
+     "sources": [
+      "ELENA-ROOF-2026-11-17.jpg",
+      "IMG_2358.jpg"
+     ],
+     "features": [
+      "elena_lane_paving.json:elena-south-three-column"
+     ],
+     "task": "elena-junction-lawns-roof",
      "status": "open",
      "requests": [],
      "state": "ready",
@@ -5907,6 +6173,19 @@
      "features": [],
      "tasks": [],
      "state": "received"
+    },
+    {
+     "id": "photo-elena-south-cypress-wall-gate",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "Standing on the cross path between the two Elena south lawns, one photo looking south at the far wall with the two cypresses, taking in where it meets the lane and the gate onto the middle pool lawn; then one from the lane beside the far lawn looking west along that wall.",
+     "why": "elena-junction-far-end: the roof view shows the wall and gate 22-40 m out, too far to fix their position",
+     "photoRequest": "elena-south-cypress-wall-gate",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
     }
    ],
    "cameras": [
@@ -5923,6 +6202,11 @@
     {
      "photo": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
      "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ELENA-ROOF-2026-11-17.jpg",
+     "state": "solved",
      "station": null
     },
     {

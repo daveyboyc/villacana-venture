@@ -483,6 +483,73 @@
      "ofChange": "Pump box o4 moved from (-172.66, 20.19) to (-171.37, 19.45) and turned 52.6 degrees (new optional `turn` on pump boxes in src/slice.ts)."
     }
    ]
+  },
+  {
+   "id": "measured-elena-junction-lawns-west-wall",
+   "feature": [
+    "lane_walls.json:elena-south-lawn-west-wall",
+    "door_sills.json:elena-lawn-door-sill",
+    "door_sills.json:elena-bed-door-sill",
+    "frontage_divisions.json:cervantes-elena-lawn-1",
+    "frontage_divisions.json:cervantes-elena-lawn-2",
+    "frontage_divisions.json:cervantes-lawn-door-path"
+   ],
+   "task": "elena-junction-lawns-roof",
+   "author": {
+    "kind": "agent",
+    "id": "claude-session-01Qg1RhN2Bu7ogH7FNHYQ1a5"
+   },
+   "date": "2026-11-17",
+   "frame": "map-metres-east-south",
+   "rule": "Measured approval (Dave, 2026-11-01): changed points against at least two solved photo cameras, rms 0.3 m or less, worst and held-out reported, reviewed by a second agent.",
+   "tolerance": 0.3,
+   "change": "West wall with its two doors and sills moved 1.07 m along the Cervantes south wall line (0.919 m east, 0.548 m north); lawn 1 and 2 lane edges to the photographed kerb, their west edges to 0.35 m from the moved wall, lawn 1's cross-path edge to the path kerb and its north edge along the Cervantes wall; cross path carried from the kerb to the moved lawn door.",
+   "measurements": {
+    "method": "scripts/measure_elena_junction_lawns.py: pixel picks cast through the solved cameras of ELENA-ROOF-2026-11-17.jpg and IMG_2358.jpg onto the model ground and compared with the edges they belong on",
+    "cameras": [
+     "ELENA-ROOF-2026-11-17.jpg",
+     "IMG_2358.jpg"
+    ],
+    "aerial": "public/map/ground.json (Esri zoom 19): lawn extent and west limit, see aerial-plan-after.jpg",
+    "residualM": {
+     "rms": 0.19,
+     "worst": 0.55,
+     "points": 21
+    },
+    "heldOut": {
+     "points": 2,
+     "rms": 0.31,
+     "worst": 0.34,
+     "what": "far lawn wall foot 20 and 24.5 m out"
+    }
+   },
+   "limitations": "Both cameras stand at the same parapet within 0.5 m, so their depth errors are not independent; the aerial supports the lawn extent but not kerb or wall-face lines. Beyond about 20 m (far wall, gate) depth is not measured. The lawn north edge is hidden in both photos and follows the aerial. Ground height under the lawns is the model's terrain.",
+   "artifacts": [
+    {
+     "path": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-overlay.jpg",
+     "sha256": "a0f19576a9b3644143095cf7ee2654ed89f815ace0e08ca5fd1f6a55fd01bb4a"
+    },
+    {
+     "path": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-traced-after.jpg",
+     "sha256": "d375d91e1b9f335dfd7abad2bd47601bf317ed81e113a55301ce68ff518bd589"
+    },
+    {
+     "path": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-traced-before.jpg",
+     "sha256": "57f2c07699e155ce86ce73253f2db1a211e6995eed1a2de2b88ec52ea66c1f3e"
+    },
+    {
+     "path": "docs/reviews/elena-junction-lawns-roof/IMG_2358-traced-after.jpg",
+     "sha256": "44a764eb712796154c527adac6f3b4d598bb8a8a2dea953a8bb571110c728acc"
+    },
+    {
+     "path": "docs/reviews/elena-junction-lawns-roof/aerial-plan-after.jpg",
+     "sha256": "48d6fb3fd716bc5dd8fc1cbee087453b1c1050c08f0f7efe04c87b9e6e415775"
+    },
+    {
+     "path": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-after-details.png",
+     "sha256": "d8fe7758e70a266885672e25497b9d662e5e0bc77b98ac13d0ea570368c65c53"
+    }
+   ]
   }
  ]
 }

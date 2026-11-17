@@ -6,8 +6,16 @@
       "area": "north-pool",
       "kind": "placement",
       "description": "Compare the current water/construction/deck edges separately, including the squared deck tongue east of the steps. The approved loop PRD records this difference; measure the current model before correcting it.",
-      "sources": ["IMG_2204.jpg", "IMG_2205.jpg", "IMG_2206.jpg", "map:ground"],
-      "features": ["pool_decks.json:north-deck", "pool:north"],
+      "sources": [
+        "IMG_2204.jpg",
+        "IMG_2205.jpg",
+        "IMG_2206.jpg",
+        "map:ground"
+      ],
+      "features": [
+        "pool_decks.json:north-deck",
+        "pool:north"
+      ],
       "task": "pool-deck-outline",
       "status": "fixed",
       "requests": [],
@@ -18,7 +26,11 @@
       "area": "north-pool",
       "kind": "completeness",
       "description": "Inventory and compare the white pool-side box, parasols, plants and trees against the current Inspect Details render. Record individual missing or misplaced items before building; split this finding by feature as needed.",
-      "sources": ["IMG_2204.jpg", "IMG_2205.jpg", "IMG_2206.jpg"],
+      "sources": [
+        "IMG_2204.jpg",
+        "IMG_2205.jpg",
+        "IMG_2206.jpg"
+      ],
       "features": [],
       "task": "loop-north-pool-fixes",
       "status": "open",
@@ -29,29 +41,47 @@
       "area": "north-pool",
       "kind": "placement",
       "description": "Resolve the northwest terrace/stair position and visible floor limits. Existing records flag uncertain concealed ends and a possible eastward offset; do not treat these as a measured correction.",
-      "sources": ["IMG_2204.jpg", "IMG_2206.jpg", "IMG_2208.jpg", "map:ground"],
-      "features": ["raised_terraces.json:north-pool-west-terrace"],
+      "sources": [
+        "IMG_2204.jpg",
+        "IMG_2206.jpg",
+        "IMG_2208.jpg",
+        "map:ground"
+      ],
+      "features": [
+        "raised_terraces.json:north-pool-west-terrace"
+      ],
       "task": "north-pool-unresolved-plan",
       "status": "open",
-      "requests": ["north-west-stair-views"]
+      "requests": [
+        "north-west-stair-views"
+      ]
     },
     {
       "id": "north-pool-hidden-ground-boundaries",
       "area": "north-pool",
       "kind": "placement",
       "description": "Keep concealed patio ground edges and Isabel-side access widths unresolved until ground corners can be identified independently. This does not block visible pool, deck or facade corrections.",
-      "sources": ["IMG_2204.jpg", "IMG_2205.jpg", "IMG_2363.jpg", "map:ground"],
+      "sources": [
+        "IMG_2204.jpg",
+        "IMG_2205.jpg",
+        "IMG_2363.jpg",
+        "map:ground"
+      ],
       "features": [],
       "task": "north-pool-unresolved-plan",
       "status": "open",
-      "requests": ["north-pool-ground-boundaries"]
+      "requests": [
+        "north-pool-ground-boundaries"
+      ]
     },
     {
       "id": "north-pool-station-notch-corner",
       "area": "north-pool",
       "kind": "placement",
       "description": "Registry part3's notch corner (-179.4, 33.7) projects about 40 px (0.4-0.5 m at 12 m) east of the near block's edge in IMG_2206 through the solved station camera, and the block's top reads about 1 m higher in the photo than the two-storey model. One camera only: not a measured correction until a second solved camera or the lidar confirms it.",
-      "sources": ["IMG_2206.jpg"],
+      "sources": [
+        "IMG_2206.jpg"
+      ],
       "features": [],
       "task": "north-pool-station-details",
       "status": "open",
@@ -62,19 +92,31 @@
       "area": "north-pool",
       "kind": "completeness",
       "description": "IMG_2206 and IMG_2208 show white patio walls about 1.8 m high with curved cappings and brown plank doors south of the west path; the model has 1 m generated garden walls there, in the right place but without height, cappings or doors. Door feet are hidden by planting.",
-      "sources": ["IMG_2206.jpg", "IMG_2208.jpg"],
-      "features": ["plain_fronts.json:north-pool-gated-patio-walls"],
+      "sources": [
+        "IMG_2206.jpg",
+        "IMG_2208.jpg"
+      ],
+      "features": [
+        "plain_fronts.json:north-pool-gated-patio-walls"
+      ],
       "task": "north-pool-station-details",
       "status": "open",
-      "requests": ["north-pool-gated-patio-gates"]
+      "requests": [
+        "north-pool-gated-patio-gates"
+      ]
     },
     {
       "id": "north-pool-ladder-recess",
       "area": "north-pool",
       "kind": "completeness",
       "description": "The south-west deck tongue's north edge has a recess about 0.5-0.6 m wide where the ladder stands (IMG_2205 x 48-100, IMG_2206 x 1475-1510); the corrected ring runs straight across it. Two held-out picks in the ring measurement were interpolated across it (without them held-out is 0.17 m rms, n=7).",
-      "sources": ["IMG_2205.jpg", "IMG_2206.jpg"],
-      "features": ["pool:north"],
+      "sources": [
+        "IMG_2205.jpg",
+        "IMG_2206.jpg"
+      ],
+      "features": [
+        "pool:north"
+      ],
       "task": "pool-deck-outline",
       "status": "open",
       "requests": []
@@ -84,8 +126,13 @@
       "area": "north-pool",
       "kind": "appearance",
       "description": "The pool ladders render as small arcs barely above the coping; IMG_2204 and IMG_2205 show tall goose-neck stainless rails anchored on the deck. Positions now match the photos; the fitting's size or height (pool_ladder in src/slice.ts and src/pool-kit.ts) does not.",
-      "sources": ["IMG_2204.jpg", "IMG_2205.jpg"],
-      "features": ["pool:north"],
+      "sources": [
+        "IMG_2204.jpg",
+        "IMG_2205.jpg"
+      ],
+      "features": [
+        "pool:north"
+      ],
       "task": "pool-deck-outline",
       "status": "open",
       "requests": []
@@ -95,7 +142,10 @@
       "area": "north-pool",
       "kind": "appearance",
       "description": "The pump box (o4) is now placed and turned as photographed, but the model draws louvres on all four sides where IMG_2204 and IMG_2205 show them on the front-right face only, and it is 1.1 m long against about 1.2 m. The shower post beside it is not modelled.",
-      "sources": ["IMG_2204.jpg", "IMG_2205.jpg"],
+      "sources": [
+        "IMG_2204.jpg",
+        "IMG_2205.jpg"
+      ],
       "features": [],
       "task": "pool-deck-outline",
       "status": "open",
@@ -106,18 +156,29 @@
       "area": "north-pool",
       "kind": "placement",
       "description": "Near the north row's house fronts the roof station cannot fix depth: furniture, door feet and awning attachments cast 1-3 m from the registry fronts (some behind them), and the two station cameras differ by 0.6-1.6 m in depth at the patio front. The laser survey's roof fit moves the resort's footprints about 1.5 m north, but barely improves. The re-traced north patios, path and lawn edge use IMG_2205; furniture and awnings are placed relative to the registry fronts. A second camera station (ground level, from the lawn) would allow a measured correction of the patio front and test the registry fronts.",
-      "sources": ["IMG_2204.jpg", "IMG_2205.jpg", "map:ground"],
-      "features": ["raised_terraces.json:north-pool-north-patios"],
+      "sources": [
+        "IMG_2204.jpg",
+        "IMG_2205.jpg",
+        "map:ground"
+      ],
+      "features": [
+        "raised_terraces.json:north-pool-north-patios"
+      ],
       "task": "north-pool-north-frontage",
       "status": "open",
-      "requests": ["north-pool-north-row-ground"]
+      "requests": [
+        "north-pool-north-row-ground"
+      ]
     },
     {
       "id": "elena-east-pergola-divider",
       "area": "elena",
       "kind": "placement",
       "description": "IMG_2199 shows the patio pergola's beam on the garden wall starting at the closed door's raised coping, which puts the beam end at or just south of the aerial-inferred dividing wall; the pergola is drawn against the north side of that wall. Which patio the pergola belongs to, and whether the divider meets the garden wall where inferred, needs a view from inside the patios.",
-      "sources": ["IMG_2199.jpg", "IMG_2200.jpg"],
+      "sources": [
+        "IMG_2199.jpg",
+        "IMG_2200.jpg"
+      ],
       "features": [],
       "task": "elena-east-patios",
       "status": "open",
@@ -144,8 +205,16 @@
       "area": "cervantes",
       "kind": "placement",
       "description": "The laser survey (PNOA-LiDAR 2020-21, 1 m ground model, sampled every 0.5 m along the Cervantes centreline) has the lane level at +0.53 m from 47.5 m along it eastwards and at +1.13-1.17 m from 42.5 m westwards: the 0.6 m drop is centred about 45 m along the lane. The photo-placed flight and ramp (data/cervantes_elena_steps.json, cervantes-elena-ramp) run from the drain at 49.1 m to 46.1 m, centred about 47.6 m, so the survey puts the drop about 2 m further west; the model is up to about 0.4 m above the survey at 46-47 m (independent review of 17 November 2026). A 1 m ground model widens a 3 m ramp, and the camera pins near the junction are 1.5-4.7 m, so this alone does not justify moving the reviewed flight, garden door, beds and lawns that hang off the drain. Settle it before detail goes on the junction with a solved camera: IMG_2286 has the drain, the tile grid and the door (scripts/photo_pose.py), with IMG_2464 or IMG_2328 as the second view.",
-      "sources": ["IMG_2286.jpg", "IMG_2464.jpg", "IMG_2328.jpg"],
-      "features": ["steps:cervantes-elena-steps", "ramp:cervantes-elena-ramp", "cervantes_garden_door.json:cervantes-garden-door"],
+      "sources": [
+        "IMG_2286.jpg",
+        "IMG_2464.jpg",
+        "IMG_2328.jpg"
+      ],
+      "features": [
+        "steps:cervantes-elena-steps",
+        "ramp:cervantes-elena-ramp",
+        "cervantes_garden_door.json:cervantes-garden-door"
+      ],
       "task": "cervantes-lane-edges",
       "status": "open",
       "requests": []
@@ -155,9 +224,105 @@
       "area": "cervantes",
       "kind": "height",
       "description": "The lane-edge 'patio walls' of data/cervantes_patio_walls.json are 0.65 m high on both sides from the Dalí exit to east of Elena. In the November photos (IMG_2264, IMG_2467, IMG_2468, IMG_2274) the bed edges on the north side are low rounded kerbs of about 0.15-0.2 m with the planting standing over them, and on the south side the houses and garden walls come down to the lane. 17 November 2026: cervantes-patio-north-1 lowered to 0.15 m with the new at-grade bed behind it (independent review); the other four (south-1, south-2, south-3, north-east) are still 0.65 m.",
-      "sources": ["IMG_2264.jpg", "IMG_2467.jpg", "IMG_2468.jpg", "IMG_2274.jpg"],
-      "features": ["cervantes_patio_walls.json:cervantes-patio-north-1", "cervantes_lane_edges.json:cervantes-north-bed-west"],
+      "sources": [
+        "IMG_2264.jpg",
+        "IMG_2467.jpg",
+        "IMG_2468.jpg",
+        "IMG_2274.jpg"
+      ],
+      "features": [
+        "cervantes_patio_walls.json:cervantes-patio-north-1",
+        "cervantes_lane_edges.json:cervantes-north-bed-west"
+      ],
       "task": "cervantes-lane-edges",
+      "status": "open",
+      "requests": []
+    },
+    {
+      "id": "elena-junction-west-wall-position",
+      "area": "elena",
+      "kind": "placement",
+      "description": "The white wall with two doors along the west side of the junction lawns stood 1.07 m too far west (wall-foot points 1.01 m rms off its face) and both lawns stopped 0.4-0.5 m short of the lane kerb and well short of the wall, leaving a paved band the photos show as lawn. 17 November 2026: wall, doors, sills, lawns and cross path moved to the measured lines (0.19 m rms over 21 points, worst 0.55 m; far held-out points 0.28 and 0.34 m). Fixed pending the second-agent measured approval.",
+      "sources": [
+        "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2358.jpg",
+        "map:ground"
+      ],
+      "features": [
+        "lane_walls.json:elena-south-lawn-west-wall",
+        "frontage_divisions.json:cervantes-elena-lawn-1",
+        "frontage_divisions.json:cervantes-elena-lawn-2",
+        "frontage_divisions.json:cervantes-lawn-door-path"
+      ],
+      "task": "elena-junction-lawns-roof",
+      "status": "fixed",
+      "requests": []
+    },
+    {
+      "id": "elena-junction-far-end",
+      "area": "elena",
+      "kind": "completeness",
+      "description": "From the Elena 24 roof (ELENA-ROOF-2026-11-17.jpg) the far lawn ends at a white wall with two cypresses that runs from the west wall to the lane, and the lane passes its east end through a gate with a metal frame onto the middle pool lawn. The model ends the far lawn at the north face of registry 6265801UF1366N_part5, which stops at x = -148.5, and leaves open paving from there to the lane and the pool. At 22-40 m the roof camera cannot fix the wall's depth to better than about 1 m, and its photographed base runs nearly square to the view where the registry face is 30 degrees off it. Photo request elena-south-cypress-wall-gate asks for the ground views.",
+      "sources": [
+        "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2358.jpg",
+        "IMG_2367.jpg"
+      ],
+      "features": [
+        "frontage_divisions.json:cervantes-elena-lawn-2"
+      ],
+      "task": "elena-junction-lawns-roof",
+      "status": "open",
+      "requests": []
+    },
+    {
+      "id": "elena-junction-cervantes-door-wall",
+      "area": "elena",
+      "kind": "completeness",
+      "description": "North end of the west wall: ELENA-ROOF-2026-11-17.jpg shows a tall white wall facing Cervantes with a brown door and the CALLE ELENA tile sign at its corner, enclosing the patio (parasol) west of the near lawn. The model has the 0.65 m cervantes-patio-south-2 there and no door (see also cervantes-kerb-walls-height).",
+      "sources": [
+        "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2367.jpg"
+      ],
+      "features": [
+        "cervantes_patio_walls.json:cervantes-patio-south-2"
+      ],
+      "task": "elena-junction-lawns-roof",
+      "status": "open",
+      "requests": []
+    },
+    {
+      "id": "elena-junction-planting-detail",
+      "area": "elena",
+      "kind": "appearance",
+      "description": "Detail for after the structure review: the three lawn trees are generic trees where the photos show clipped domes and a clipped standard; the two cypresses against the far wall, the shrubs at the west wall foot, the bougainvillea on the walls and the lamp post are not drawn. The tree positions are estimates (their trunk bases are hidden in the roof views).",
+      "sources": [
+        "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2358.jpg",
+        "IMG_2367.jpg"
+      ],
+      "features": [
+        "junction_lawns.json:junction-pollarded-1",
+        "junction_lawns.json:junction-pollarded-2",
+        "junction_lawns.json:junction-pollarded-3"
+      ],
+      "task": "elena-junction-lawns-roof",
+      "status": "open",
+      "requests": []
+    },
+    {
+      "id": "elena-south-east-beds",
+      "area": "elena",
+      "kind": "completeness",
+      "description": "East side of Elena south between Cervantes and the far wall: ELENA-ROOF-2026-11-17.jpg and IMG_2358 show planted beds with bougainvillea and a lamp post between the lane tiles and the front patio walls of the houses; the model has the lane against white walls with a grey margin and no beds.",
+      "sources": [
+        "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2358.jpg"
+      ],
+      "features": [
+        "elena_lane_paving.json:elena-south-three-column"
+      ],
+      "task": "elena-junction-lawns-roof",
       "status": "open",
       "requests": []
     }

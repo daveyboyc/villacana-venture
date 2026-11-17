@@ -36,7 +36,11 @@ for tree in lawns['trees']:
 # Map and scene consume the same retained lawn and kerb edges.
 for region in (r for r in frontages['regions'] if r['id'].startswith('cervantes-elena-lawn-')):
     border = next(b for b in frontages['borders'] if b['id'] == region['id'] + '-curb')
-    assert border['points'] == region['ring'] + [region['ring'][0]], 'Kerb diverges from lawn'
+    # The kerb is drawn where the photos show it: the whole ring, or a run of its consecutive corners
+    # (along the lane and the cross path; the lawn meets a shrub strip at the west wall's foot, 17 Nov 2026).
+    ring, kerb = region['ring'], border['points']
+    runs = [(ring + ring)[i:i + len(kerb)] for i in range(len(ring))]
+    assert kerb == ring + [ring[0]] or kerb in runs, 'Kerb diverges from lawn'
     assert {'IMG_2358.jpg', 'IMG_2367.jpg'} <= set(region['evidence'])
     assert 0 < border['height'] <= .2 and 0 < border['width'] <= .25
 

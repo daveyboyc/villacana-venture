@@ -317,15 +317,15 @@
   },
   "frontage_divisions.json:cervantes-elena-lawn-1": {
    "level": "photographed",
-   "why": "Lawn, white kerb and door approach clear from the ground and the roof; outline approximate."
+   "why": "Lawn, white kerb along the lane and cross path, and the shrub strip at the west wall foot measured through two solved roof cameras (ELENA-ROOF-2026-11-17.jpg, IMG_2358) and checked on the aerial (17 Nov 2026). The north edge along Cervantes is hidden behind the foreground garden wall in both roof views and follows the aerial's lawn edge."
   },
   "frontage_divisions.json:cervantes-elena-lawn-2": {
    "level": "photographed",
-   "why": "Lawn, white kerb and door approach clear from the ground and the roof; outline approximate."
+   "why": "Lane kerb, cross-path kerb and west edge measured through two solved roof cameras (17 Nov 2026). The far edge at the cypress wall, 22-24 m from the camera, is not measured to better than about 1 m."
   },
   "frontage_divisions.json:cervantes-lawn-door-path": {
    "level": "photographed",
-   "why": "Tiled approach between the lawns clear in three photos."
+   "why": "Tiled cross path between the lawns, kerbs both sides, ending at the lawn door; its west end measured through the solved roof camera (17 Nov 2026)."
   },
   "middle_pool_lane_frontages.json:south-lane-four-column-paving": {
    "level": "photographed",
@@ -664,8 +664,8 @@
    "why": "Line from the georeferenced aerial (white wall top and shadow) agreeing to about 0.15 m with the registry party-wall jog; no photo shows the wall and no solved camera places it."
   },
   "lane_walls.json:elena-south-lawn-west-wall": {
-   "level": "estimated",
-   "why": "IMG_2261, IMG_2260 and IMG_2330 from the lane and IMG_2358 from a roof show a plain white wall about 2.2 m high with two brown doors along the whole west side of the Elena south lawns, behind a bed of trained bougainvillea. The doors stand on the existing sills (data/door_sills.json); the line between them and the north end at the Cervantes wall follow the traced lawn edge and are good to about 1 m. Height by eye against the doors. No camera is solved."
+   "level": "photographed",
+   "why": "White wall with two brown doors along the west side of the lawns, photographed from the lane (IMG_2261, IMG_2260, IMG_2330) and the roof. Its line was measured on 17 Nov 2026 through two solved roof cameras (ELENA-ROOF-2026-11-17.jpg, IMG_2358): wall-foot points fit the face at 0.19 m rms with the lane and path kerbs. Height 2.2 m by eye; the stretch behind the far lawn is 20-24 m out and good to about 0.35 m."
   },
   "lane_walls.json:elena-south-mouth-patio-wall": {
    "level": "estimated",
@@ -746,6 +746,10 @@
   "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3": {
    "level": "estimated",
    "why": "Narrow jade and bougainvillea bed at the foot of the south wall in IMG_2449, IMG_2450 and IMG_2794; broken at the two doors, width to the wall face."
+  },
+  "plain_fronts.json:elena-24-south-patio": {
+   "level": "photographed",
+   "why": "The open blue-tiled patio below the Elena 24 roof is photographed straight down in ELENA-ROOF-2026-11-17.jpg, IMG_2358 and IMG_2367: no porch roof or balcony."
   }
  },
  "gaps": [

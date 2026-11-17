@@ -13,24 +13,28 @@
    "name": "Cervantes / Elena · front lawn 1",
    "ring": [
     [
-     -149.2,
-     67.4
+     -153.583,
+     59.074
     ],
     [
-     -153.4,
-     60.1
+     -148.532,
+     67.523
     ],
     [
-     -157.0,
-     64.3
+     -152.013,
+     69.375
     ],
     [
-     -154.8,
-     65.6
+     -154.032,
+     65.569
     ],
     [
-     -152.7,
-     69.3
+     -156.239,
+     64.084
+    ],
+    [
+     -157.739,
+     61.551
     ]
    ],
    "evidence": [
@@ -40,9 +44,10 @@
     "IMG_2329.jpg",
     "IMG_2342.jpg",
     "IMG_2358.jpg",
-    "IMG_2367.jpg"
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg"
    ],
-   "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey; reviewed against IMG_2358/2367 roof views on 2026-10-15: lane, white kerb and door-approach relationships corroborated, existing approximate outline retained without a calibrated retrace",
+   "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey; reviewed against IMG_2358/2367 roof views on 2026-10-15: lane, white kerb and door-approach relationships corroborated, existing approximate outline retained without a calibrated retrace 17 November 2026 (task elena-junction-lawns-roof): retraced through two solved roof cameras (ELENA-ROOF-2026-11-17.jpg, IMG_2358) on the ground surface and checked on the Esri aerial. The lane edge follows the white kerb photographed against the lane tiles (seven kerb points, 0.08 m rms, worst 0.12 m), about 0.45 m east of the old line; the west edge runs to the foot of the moved west wall (0.35 m from its centreline, leaving the shrub strip) where the photos and the aerial show lawn, not paving. Its cross-path edge sits on the kerb against the path (photo kerb points -0.11 to 0.15 m). The north edge runs along the Cervantes south wall, hidden behind the foreground garden wall in both roof photos: inferred from the aerial's lawn edge.",
    "status": "photo-backed type; approximate extent"
   },
   {
@@ -51,24 +56,20 @@
    "name": "Cervantes / Elena · front lawn 2",
    "ring": [
     [
-     -149.1,
-     75.3
+     -149.262,
+     75.381
     ],
     [
-     -145.3,
-     73.4
+     -145.084,
+     73.292
     ],
     [
-     -148.3129,
-     68.6525
+     -147.967,
+     68.469
     ],
     [
-     -150.5586,
-     69.847
-    ],
-    [
-     -152.39,
-     71.58
+     -151.847,
+     70.532
     ]
    ],
    "evidence": [
@@ -77,9 +78,10 @@
     "IMG_2329.jpg",
     "IMG_2342.jpg",
     "IMG_2358.jpg",
-    "IMG_2367.jpg"
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg"
    ],
-   "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey; reviewed against IMG_2358/2367 roof views on 2026-10-15: lane, white kerb and door-approach relationships corroborated, existing approximate outline retained without a calibrated retrace 16 November 2026 (data/lane_walls.json): the north-west corner was moved 0.69 m (0.61 m east, 0.32 m north), from (-153.0, 71.9) to (-152.39, 71.58), to sit 0.45 m inside the photographed west wall whose doors stand on the built sills; IMG_2260 and IMG_2261 show this lawn edge running straight along that wall behind a bed.",
+   "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey; reviewed against IMG_2358/2367 roof views on 2026-10-15: lane, white kerb and door-approach relationships corroborated, existing approximate outline retained without a calibrated retrace 16 November 2026 (data/lane_walls.json): the north-west corner was moved 0.69 m (0.61 m east, 0.32 m north), from (-153.0, 71.9) to (-152.39, 71.58), to sit 0.45 m inside the photographed west wall whose doors stand on the built sills; IMG_2260 and IMG_2261 show this lawn edge running straight along that wall behind a bed. 17 November 2026 (task elena-junction-lawns-roof): retraced through two solved roof cameras (ELENA-ROOF-2026-11-17.jpg, IMG_2358) on the ground surface and checked on the Esri aerial. The lane edge follows the white kerb photographed against the lane tiles (seven kerb points, 0.08 m rms, worst 0.12 m), about 0.45 m east of the old line; the west edge runs to the foot of the moved west wall (0.35 m from its centreline, leaving the shrub strip) where the photos and the aerial show lawn, not paving. The far edge against the cypress wall is unchanged: at 22-24 m the roof cameras do not fix depth to better than about 1 m.",
    "status": "photo-backed type; approximate extent"
   },
   {
@@ -287,32 +289,29 @@
    "name": "Front-door approach between lawns",
    "ring": [
     [
-     -148.0887,
-     68.3973
+     -148.029,
+     68.365
     ],
     [
-     -148.1178,
-     68.3426
+     -148.491,
+     67.592
     ],
     [
-     -148.5596,
-     67.6284
+     -152.525,
+     69.738
     ],
     [
-     -153.2113,
-     70.1027
-    ],
-    [
-     -152.7887,
-     70.8973
+     -152.102,
+     70.532
     ]
    ],
    "evidence": [
     "IMG_2260.jpg",
     "IMG_2261.jpg",
-    "IMG_2330.jpg"
+    "IMG_2330.jpg",
+    "ELENA-ROOF-2026-11-17.jpg"
    ],
-   "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey 26 October material recheck: plain square tiles on this approach align with the south Elena grid; UVs share lane axes/phase while the existing path ring/level remain unchanged. Grid origin/pitch fit the model and are not survey measurements.",
+   "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey 26 October material recheck: plain square tiles on this approach align with the south Elena grid; UVs share lane axes/phase while the existing path ring/level remain unchanged. Grid origin/pitch fit the model and are not survey measurements. 17 November 2026: east end carried to the measured lane kerb and west end to the face of the moved west wall at its lawn door (task elena-junction-lawns-roof); its sides are unchanged.",
    "status": "photo-backed type; approximate extent"
   }
  ],
@@ -321,28 +320,16 @@
    "id": "cervantes-elena-lawn-1-curb",
    "points": [
     [
-     -149.2,
-     67.4
+     -153.583,
+     59.074
     ],
     [
-     -153.4,
-     60.1
+     -148.532,
+     67.523
     ],
     [
-     -157.0,
-     64.3
-    ],
-    [
-     -154.8,
-     65.6
-    ],
-    [
-     -152.7,
-     69.3
-    ],
-    [
-     -149.2,
-     67.4
+     -152.013,
+     69.375
     ]
    ],
    "height": 0.12,
@@ -354,36 +341,25 @@
     "IMG_2329.jpg",
     "IMG_2342.jpg",
     "IMG_2358.jpg",
-    "IMG_2367.jpg"
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg"
    ],
-   "trust": "Low white lawn edging visible in photos; exact alignment and dimensions approximate; reviewed against IMG_2358/2367 roof views on 2026-10-15: lane, white kerb and door-approach relationships corroborated, existing approximate outline retained without a calibrated retrace"
+   "trust": "Low white lawn edging visible in photos; exact alignment and dimensions approximate; reviewed against IMG_2358/2367 roof views on 2026-10-15: lane, white kerb and door-approach relationships corroborated, existing approximate outline retained without a calibrated retrace 17 November 2026: the kerb runs only along the lane and the cross path, where the photos show it; along the west wall the lawn meets a shrub strip at the wall foot and has no white kerb (ELENA-ROOF-2026-11-17.jpg, IMG_2358)."
   },
   {
    "id": "cervantes-elena-lawn-2-curb",
    "points": [
     [
-     -149.1,
-     75.3
+     -145.084,
+     73.292
     ],
     [
-     -145.3,
-     73.4
+     -147.967,
+     68.469
     ],
     [
-     -148.3129,
-     68.6525
-    ],
-    [
-     -150.5586,
-     69.847
-    ],
-    [
-     -152.39,
-     71.58
-    ],
-    [
-     -149.1,
-     75.3
+     -151.847,
+     70.532
     ]
    ],
    "height": 0.12,
@@ -394,9 +370,10 @@
     "IMG_2329.jpg",
     "IMG_2342.jpg",
     "IMG_2358.jpg",
-    "IMG_2367.jpg"
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg"
    ],
-   "trust": "Low white lawn edging visible in photos; exact alignment and dimensions approximate; reviewed against IMG_2358/2367 roof views on 2026-10-15: lane, white kerb and door-approach relationships corroborated, existing approximate outline retained without a calibrated retrace"
+   "trust": "Low white lawn edging visible in photos; exact alignment and dimensions approximate; reviewed against IMG_2358/2367 roof views on 2026-10-15: lane, white kerb and door-approach relationships corroborated, existing approximate outline retained without a calibrated retrace 17 November 2026: the kerb runs only along the lane and the cross path, where the photos show it; along the west wall the lawn meets a shrub strip at the wall foot and has no white kerb (ELENA-ROOF-2026-11-17.jpg, IMG_2358)."
   }
  ]
 }
