@@ -76,12 +76,12 @@
           60.66
         ],
         [
-          -154.99,
-          58.6
+          -156.707,
+          59.625
         ],
         [
-          -152.41,
-          57.06
+          -154.127,
+          58.085
         ],
         [
           -142.06,
@@ -627,12 +627,12 @@
       "name": "Cervantes / Elena ramp",
       "points": [
         [
-          -154.99,
-          58.6
+          -156.707,
+          59.625
         ],
         [
-          -152.41,
-          57.06
+          -154.127,
+          58.085
         ]
       ],
       "heights": [
@@ -645,7 +645,7 @@
         "photo:IMG_2265.jpg",
         "photo:IMG_2286.jpg"
       ],
-      "trust": "Slope, white edges and foot drain confirmed by reference photos; IMG_2286 and IMG_2262 show three steps beside it on the north side taking the same rise. The rise is part of the ground (data/terrain.json): 0.6 m over about 3 m here, the laser survey's drop (+0.53 to +1.13 m), which the three riser faces measured against the 0.4 m tiles in IMG_2286 agree with (about 0.2 m each; first judged 0.5 m by eye)"
+      "trust": "Slope, white edges and foot drain confirmed by reference photos; IMG_2286 and IMG_2262 show three steps beside it on the north side taking the same rise. The rise is part of the ground (data/terrain.json): 0.6 m over about 3 m here, the laser survey's drop (+0.53 to +1.13 m), which the three riser faces measured against the 0.4 m tiles in IMG_2286 agree with (about 0.2 m each; first judged 0.5 m by eye) 17 November 2026: moved 2.0 m west with the steps beside it, so the foot drain meets the near lawn's kerb corner (IMG_2262) and the rise sits where the 2020-21 laser survey has it."
     }
   ]
 }

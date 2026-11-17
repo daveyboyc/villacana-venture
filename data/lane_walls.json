@@ -152,8 +152,8 @@
           73.59
         ],
         [
-          -153.9,
-          55.62
+          -154.748,
+          56.127
         ]
       ],
       "height": 1.7,
@@ -166,7 +166,7 @@
         "IMG_2275.jpg",
         "IMG_2264.jpg"
       ],
-      "basis": "Between the Dalí exit and the Elena junction the north side of the lane is a white garden wall about 1.5-1.8 m high, with bougainvillea over it and banana leaves behind, set back behind a planted bed (IMG_2274 looking north-east, IMG_2468 and IMG_2264 looking west, IMG_2275 at the exit). The model had open paving here up to the houses 6 m back. The line, 2.0 m off the centreline, is where the three photographed patio partitions behind it end (data/cervantes_north_patios.json) and the garden door's wall stands (data/cervantes_garden_door.json), which it meets at its west end. West end at the exit planter. No door asserted: none shows from the lane, though the patios behind must have one."
+      "basis": "Between the Dalí exit and the Elena junction the north side of the lane is a white garden wall about 1.5-1.8 m high, with bougainvillea over it and banana leaves behind, set back behind a planted bed (IMG_2274 looking north-east, IMG_2468 and IMG_2264 looking west, IMG_2275 at the exit). The model had open paving here up to the houses 6 m back. The line, 2.0 m off the centreline, is where the three photographed patio partitions behind it end (data/cervantes_north_patios.json) and the garden door's wall stands (data/cervantes_garden_door.json), which it meets at its west end. West end at the exit planter. No door asserted: none shows from the lane, though the patios behind must have one. 17 November 2026: east end moved 1.0 m west with the garden door wall it meets (data/cervantes_garden_door.json, task elena-junction-lawns-roof)."
     },
     {
       "id": "cervantes-south-garden-wall-alberto",

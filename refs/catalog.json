@@ -708,8 +708,8 @@
   "looksAtFeatures": [
    "plain_fronts.json:elena-24-south-patio",
    "cervantes_garden_door.json:cervantes-garden-door",
-   "cervantes_garden_door.json:cervantes-junction-north-patio",
-   "cervantes_garden_door.json:cervantes-junction-east-planter"
+   "cervantes_garden_door.json:cervantes-junction-east-planter",
+   "cervantes_garden_door.json:cervantes-junction-north-patio"
   ],
   "subject": "The brown garden door, its pilaster frame and curved coping, and the three-riser flight up to it"
  },
@@ -3066,7 +3066,7 @@
    "elena_lane_paving.json:elena-south-three-column",
    "street:cervantes",
    "street:elena-south",
-   "ramp:cervantes-elena-ramp"
+   "cervantes_garden_door.json:cervantes-junction-north-bed"
   ],
   "subject": "The steps beside the Cervantes ramp"
  },
@@ -3203,7 +3203,7 @@
    "street:cervantes",
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
-   "ramp:cervantes-elena-ramp"
+   "cervantes_garden_door.json:cervantes-junction-north-bed"
   ]
  },
  {
@@ -4005,7 +4005,7 @@
    "elena_lane_paving.json:elena-south-three-column",
    "street:cervantes",
    "street:elena-south",
-   "ramp:cervantes-elena-ramp"
+   "cervantes_garden_door.json:cervantes-junction-north-bed"
   ],
   "subject": "The steps beside the Cervantes ramp"
  },
@@ -4049,8 +4049,8 @@
   "looksAtFeatures": [
    "plain_fronts.json:elena-24-south-patio",
    "cervantes_garden_door.json:cervantes-garden-door",
-   "cervantes_garden_door.json:cervantes-junction-north-patio",
-   "cervantes_garden_door.json:cervantes-junction-east-planter"
+   "cervantes_garden_door.json:cervantes-junction-east-planter",
+   "cervantes_garden_door.json:cervantes-junction-north-patio"
   ],
   "subject": "The brown garden door and its three-riser flight between the west hedge bed and the east planter"
  },
@@ -4588,7 +4588,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "cervantes_garden_door.json:cervantes-junction-east-planter",
    "backdrop.json:aerial-trees",
    "cervantes_garden_door.json:cervantes-garden-door",
    "plain_fronts.json:elena-24-south-patio"
@@ -4636,7 +4636,7 @@
    "elena_lane_paving.json:elena-south-three-column",
    "street:cervantes",
    "street:elena-south",
-   "ramp:cervantes-elena-ramp"
+   "cervantes_garden_door.json:cervantes-junction-north-bed"
   ],
   "subject": "The ramp and steps side by side"
  },
@@ -5652,7 +5652,7 @@
    "elena_lane_paving.json:elena-south-three-column",
    "street:cervantes",
    "street:elena-south",
-   "ramp:cervantes-elena-ramp"
+   "cervantes_garden_door.json:cervantes-junction-north-bed"
   ],
   "subject": "The steps beside the Cervantes ramp",
   "headingOff": 93
@@ -6835,9 +6835,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "plain_fronts.json:elena-24-south-patio",
-   "cervantes_garden_door.json:cervantes-junction-north-patio",
    "backdrop.json:aerial-trees",
-   "cervantes_north_patios.json:cervantes-north-partition-east"
+   "cervantes_north_patios.json:cervantes-north-partition-east",
+   "cervantes_garden_door.json:cervantes-junction-north-patio"
   ],
   "subject": "North-side white bed, garden door and Calle de Elena plaque at the junction"
  },
@@ -7130,7 +7130,6 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "plain_fronts.json:elena-24-south-patio",
-   "cervantes_garden_door.json:cervantes-junction-north-patio",
    "cervantes_north_patios.json:cervantes-north-partition-east"
   ]
  },
@@ -7170,9 +7169,9 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "cervantes_garden_door.json:cervantes-junction-east-planter",
    "plain_fronts.json:elena-24-south-patio",
    "cervantes_garden_door.json:cervantes-garden-door",
-   "cervantes_garden_door.json:cervantes-junction-east-planter",
    "cervantes_garden_door.json:cervantes-junction-north-patio"
   ],
   "subject": "Garden door, hedge bed and steps at the Elena junction"
@@ -7216,7 +7215,7 @@
    "elena_lane_paving.json:elena-south-three-column",
    "street:cervantes",
    "street:elena-south",
-   "ramp:cervantes-elena-ramp"
+   "cervantes_garden_door.json:cervantes-junction-north-bed"
   ],
   "subject": "Elena steps and ramp at the junction"
  },
@@ -9051,9 +9050,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:cervantes",
-   "backdrop.json:aerial-trees",
-   "cervantes_patio_walls.json:cervantes-patio-south-2",
-   "frontage_divisions.json:cervantes-elena-lawn-1"
+   "ramp:cervantes-elena-ramp",
+   "steps:cervantes-elena-steps",
+   "backdrop.json:aerial-trees"
   ],
   "subject": "Steps and ramp at the Elena/Cervantes junction"
  },
@@ -9095,7 +9094,7 @@
    "cervantes_patio_walls.json:cervantes-patio-north-east",
    "backdrop.json:aerial-trees",
    "street:cervantes",
-   "cervantes_garden_door.json:cervantes-junction-east-planter"
+   "plain_fronts.json:elena-24-south-patio"
   ]
  },
  {
@@ -9839,7 +9838,7 @@
    "elena_lane_paving.json:elena-south-three-column",
    "street:cervantes",
    "street:elena-south",
-   "ramp:cervantes-elena-ramp"
+   "cervantes_garden_door.json:cervantes-junction-north-bed"
   ],
   "subject": "The steps beside the Cervantes ramp"
  },

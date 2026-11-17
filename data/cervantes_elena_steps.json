@@ -3,12 +3,12 @@
  "name": "Cervantes / Elena · steps beside the ramp",
  "road": "cervantes",
  "foot": [
-  -152.41,
-  57.06
+  -154.127,
+  58.085
  ],
  "toward": [
-  -154.99,
-  58.6
+  -156.707,
+  59.625
  ],
  "across": [
   0.02,
@@ -26,5 +26,5 @@
   "IMG_2328.jpg",
   "IMG_2262.jpg"
  ],
- "trust": "Three shallow steps on the north half of the lane, beside the smooth ramp, starting one tile row up from the foot drain (IMG_2286, IMG_2355, IMG_2328, IMG_2262). White-painted risers, terracotta treads with grey stone nosings. Risers at 0.4, 0.92 and 1.45 m from the drain: each tread is one 0.4 m tile plus its nosing, about 0.5 m, counted from the tiles in IMG_2286 and IMG_2355. Together they climb the same 0.6 m as the ramp (16 November 2026: the laser survey's drop, and the riser faces measured against the tread tiles in IMG_2286 at about 0.2 m each; first read as 0.5 m), which reaches the top tread's level 3.0 m up; every tread stays above the ramp beside it (check_terrain.py). Positions approximate (about 0.1 m); the top tread's length to where the ramp meets it is estimated."
+ "trust": "Three shallow steps on the north half of the lane, beside the smooth ramp, starting one tile row up from the foot drain (IMG_2286, IMG_2355, IMG_2328, IMG_2262). White-painted risers, terracotta treads with grey stone nosings. Risers at 0.4, 0.92 and 1.45 m from the drain: each tread is one 0.4 m tile plus its nosing, about 0.5 m, counted from the tiles in IMG_2286 and IMG_2355. Together they climb the same 0.6 m as the ramp (16 November 2026: the laser survey's drop, and the riser faces measured against the tread tiles in IMG_2286 at about 0.2 m each; first read as 0.5 m), which reaches the top tread's level 3.0 m up; every tread stays above the ramp beside it (check_terrain.py). Positions approximate (about 0.1 m); the top tread's length to where the ramp meets it is estimated. 17 November 2026: the whole flight moved 2.0 m west along the lane. IMG_2262 shows the foot drain meeting the near lawn's north-east kerb corner, which lies on the lane kerb measured through two solved roof cameras (task elena-junction-lawns-roof); the lawn's north kerb from that corner to the measured west-wall corner is about 10-11 tile rows (4-4.4 m) in IMG_2262, as the model's 4.6 m. The 2020-21 laser survey has the rise starting about 2.0-2.5 m west of the old foot; IMG_2196 has the drain 1.4-1.75 m west of the garden door's centre (0.72 m before)."
 }

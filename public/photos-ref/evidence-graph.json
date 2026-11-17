@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "b0a6654702b758e41fd431190d46f822712f6eda7d7508975c6df492700c9fd1",
+ "inputDigest": "6981911a0367af2f3f63431d78cc4fb54f550231f3d17767ac3f3b83aa6f6017",
  "summary": {
   "unplaced": 3,
   "needs-review": 232,
@@ -10747,7 +10747,7 @@
    "from": "photo:IMG_2260.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
-   "gap": 0.7
+   "gap": 0.6
   },
   {
    "from": "photo:IMG_2260.jpg",
