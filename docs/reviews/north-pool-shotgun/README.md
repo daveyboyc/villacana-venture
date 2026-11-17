@@ -37,7 +37,10 @@ integrating main `494a871`, 14 pass plus the new Cervantes lane-edge check.
 `check_cervantes_patio_walls.py` fails its height assertion on the newer upstream
 wall data; `check_dali_threshold.py` fails because it imports that checker. Those
 scripts and their input data are unchanged by this branch. Map, street layout,
-boundaries, terrain, pool levels and ground plan checks pass.
+boundaries, terrain, pool levels and ground plan checks pass. The existing layout
+browser suite stops at `South Dalí approach has a reachable step at 0.00` in its
+source/route assertions, before its 3D screenshots. Its tested terrain/route inputs
+and assertion code are unchanged by this branch.
 TypeScript and production build passed; Vite reports the existing large-bundle warning.
 
 The first concurrent full-scene browser runs timed out under software rendering.
