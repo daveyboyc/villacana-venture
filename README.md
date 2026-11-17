@@ -41,7 +41,10 @@ renders and exports are not merged; `?batch=0` turns merging off to compare.
 (or choose **Play**). Tap **Start playing**, move with the left thumb joystick,
 drag the scene to aim, and tap **FIRE**. On desktop use WASD, drag to aim, and
 click or press F to fire. The original arcade shotgun has spread, recoil, a pump
-cycle, sound and unlimited shells. Hit the three floating practice targets over
+cycle and [Freedoom sound effects](public/audio/shotgun/README.md), played with
+[Howler.js](https://github.com/goldfire/howler.js). The gun holds eight shells:
+tap **RELOAD** (or press **R**) to insert shells from an unlimited reserve.
+Firing can interrupt a reload after a shell is loaded. Hit the three floating practice targets over
 the north pool. **Pause** offers restart and a return to Inspect; sound can be muted.
 Landscape gives more room for the touch controls. This is a target-practice prototype,
 without enemies; it does not implement the complete [FPS PRD](docs/NORTH_POOL_FPS_TEST_PRD.md).

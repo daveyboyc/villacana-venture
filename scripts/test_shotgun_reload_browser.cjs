@@ -1,0 +1,38 @@
+const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs');
+(async()=>{
+  const {createServer}=await import('vite');
+  const styles=fs.readFileSync('slice.html','utf8').match(/<style>([\s\S]*?)<\/style>/)[1];
+  const html=`<!doctype html><meta name="viewport" content="width=device-width,initial-scale=1"><style>${styles}html,body{height:100%;margin:0;background:linear-gradient(#a6d4e0 0 53%,#b7c49c 53% 65%,#75afbb 65%)}canvas{width:100%;height:100%}</style><canvas id="scene"></canvas><button id="walk-pad"><span class="walk-thumb"></span></button><button class="chip" id="jump">Jump</button><script type="module">import * as THREE from '/node_modules/three/build/three.module.js';import {createShotgun} from '/src/shotgun.ts';const camera=new THREE.PerspectiveCamera();camera.position.set(0,1.65,10);camera.lookAt(0,1.65,100);camera.updateMatrixWorld();const game=createShotgun({scene:new THREE.Scene(),camera,canvas:document.querySelector('canvas'),centre:{x:0,z:0},groundY:()=>0,ignoreObject:new THREE.Group(),available:()=>true,resetInput:()=>{},resetPlayer:()=>{}});window.testGame=game;window.testCamera=camera;window.testTick=()=>game.update(.016,false);window.testTick();</script>`;
+  const server=await createServer({server:{host:'127.0.0.1',port:0,strictPort:false},logLevel:'error',plugins:[{name:'reload-fixture',configureServer(s){s.middlewares.use('/__reload',(_,res)=>{res.setHeader('Content-Type','text/html');res.end(html);});}}]});await server.listen();
+  const browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE,args:['--no-sandbox']});
+  try{
+    const context=await browser.newContext({viewport:{width:390,height:792},isMobile:true,hasTouch:true});const page=await context.newPage(),errors=[],failures=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.url().includes('/audio/')&&r.status()!==200)failures.push(r.url());});
+    await page.addInitScript(()=>{const Audio=window.AudioContext;window.AudioContext=new Proxy(Audio,{construct(target,args){const context=Reflect.construct(target,args);window.testAudioContext=context;return context;}});window.audioStarts=0;window.audioStops=0;const start=AudioBufferSourceNode.prototype.start,stop=AudioBufferSourceNode.prototype.stop;AudioBufferSourceNode.prototype.start=function(...args){window.audioStarts++;return start.apply(this,args);};AudioBufferSourceNode.prototype.stop=function(...args){window.audioStops++;return stop.apply(this,args);};});
+    await page.goto('http://127.0.0.1:'+server.httpServer.address().port+'/__reload');
+    await page.locator('#shotgun-hud[data-audio=ready]').waitFor();await page.locator('.sg-sprite').evaluate(img=>img.decode());
+    await page.locator('#sg-start').tap();
+    const tick=async(ms=0)=>{if(ms)await page.waitForTimeout(ms);await page.evaluate(()=>window.testTick());};
+    const attr=name=>page.locator('#shotgun-hud').getAttribute('data-'+name);
+    const starts=()=>page.evaluate(()=>window.audioStarts);
+    assert.equal(await attr('ammo'),'8');assert.equal(await page.locator('#sg-reload').isDisabled(),true);
+    const before=await starts();await page.locator('#sg-fire').tap();await tick();assert.equal(await attr('ammo'),'7');assert.equal(await attr('shots'),'1');assert.ok(await starts()>before,'Decoded blast must actually start');
+    const blast=await starts();await tick(260);assert.ok(await starts()>blast,'Pump cue must start');await tick(560);
+    const beforeReload=await starts();await page.locator('#sg-reload').tap();assert.ok(await starts()>beforeReload,'Reload open cue must start');await tick(420);assert.equal(await attr('action'),'loading');await tick(560);assert.equal(await attr('ammo'),'8');assert.ok(await starts()>=beforeReload+3,'Shell and close cues must start');await tick(320);assert.equal(await attr('action'),'ready');
+    // Consume a full load; dry fire must not create another shot.
+    for(let i=0;i<8;i++){await page.locator('#sg-fire').tap();await tick(810);}
+    assert.equal(await attr('ammo'),'0');const shots=await attr('shots');await page.locator('#sg-fire').tap();await tick();assert.equal(await attr('shots'),shots);assert.match(await page.locator('#sg-status').textContent(),/EMPTY/);
+    await page.locator('#sg-reload').tap();await tick(980);assert.equal(await attr('ammo'),'1');
+    await page.locator('#sg-fire').tap();await tick();assert.equal(await attr('ammo'),'0');assert.equal(await attr('action'),'pump');await tick(820);assert.equal(await attr('ammo'),'0');
+    await page.locator('#sg-reload').tap();await tick(980);assert.equal(await attr('ammo'),'1');await page.locator('#sg-pause').tap();const silent=await starts();await tick(1200);assert.equal(await attr('ammo'),'1');assert.equal(await starts(),silent,'Paused reload must be silent');
+    await page.locator('#sg-start').tap();await tick();await page.locator('#sg-mute').tap();const muted=await starts();await page.locator('#sg-fire').tap();await tick(820);assert.equal(await starts(),muted,'Mute must suppress blast and pump');
+    await page.locator('#sg-reload').tap();await tick(980);assert.equal(await attr('ammo'),'1');assert.equal(await starts(),muted,'Mute must suppress reload');
+    const dir='docs/reviews/shotgun-audio-reload';fs.mkdirSync(dir,{recursive:true});await page.screenshot({path:dir+'/reload-portrait.png'});await page.setViewportSize({width:844,height:338});await page.screenshot({path:dir+'/reload-landscape.png'});
+    const boxes=await page.locator('#sg-reload,#sg-fire,#jump').evaluateAll(els=>els.map(e=>{const r=e.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height};}));for(const b of boxes){assert.ok(b.w>=44&&b.h>=44);assert.ok(b.y>=0&&b.y+b.h<=338);}for(let i=0;i<boxes.length;i++)for(let j=i+1;j<boxes.length;j++){const a=boxes[i],b=boxes[j];assert.ok(a.x+a.w<=b.x||b.x+b.w<=a.x||a.y+a.h<=b.y||b.y+b.h<=a.y,'Touch buttons overlap');}
+    await page.locator('#sg-pause').tap();await page.locator('#sg-reset').tap();assert.equal(await attr('ammo'),'8');assert.equal(await attr('shots'),'0');assert.equal(await attr('action'),'ready');
+    await page.locator('#sg-start').tap();await page.locator('#sg-mute').tap();const unmuted=await starts();await page.evaluate(()=>window.testAudioContext.suspend());await page.keyboard.press('f');await page.waitForFunction(n=>window.audioStarts>n,unmuted);assert.ok(await starts()>unmuted,'Unmute and idle-context resume restore playback');await tick(820);await page.keyboard.press('r');assert.equal(await attr('action'),'opening');
+    await page.evaluate(()=>window.dispatchEvent(new Event('blur')));const blurred=await starts();await tick(1200);assert.equal(await attr('state'),'paused');assert.equal(await attr('ammo'),'7');assert.equal(await starts(),blurred);
+    await page.locator('#sg-start').tap();await page.evaluate(()=>{window.testCamera.lookAt(0,1.65,0);window.testCamera.updateMatrixWorld();window.testTick();});await page.locator('#sg-fire').tap();assert.equal(await attr('hits'),'1','Reloaded gun still scores a target hit');
+    await page.evaluate(()=>window.testGame.dispose());assert.equal(await page.locator('#shotgun-hud').count(),0);assert.deepEqual(errors,[]);assert.deepEqual(failures,[]);
+    fs.writeFileSync(dir+'/results.json',JSON.stringify({audioFilesLoaded:true,blastAndPumpPlayback:true,reloadPlayback:true,ammo:true,emptyFire:true,interrupt:true,pause:true,reset:true,mute:true,keyboard:true,idleAudioResume:true,targetHit:true,touchLayout:true,disposal:true,errors},null,2)+'\n');console.log('Shotgun reload browser/audio checks PASS');
+  }finally{await browser.close();await server.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

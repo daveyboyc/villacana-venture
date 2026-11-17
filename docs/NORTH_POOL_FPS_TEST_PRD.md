@@ -10,7 +10,7 @@
 Dave clarified that he is testing on mobile and wants a Doom/Duke Nukem-style
 shotgun. The current increment adds **Play** (`?view=fps`), an original centred
 shotgun graphic, eight-pellet hitscan spread, a 0.8-second pump cycle, visual impact
-and hit feedback, synthesised sound, unlimited shells, and three floating practice
+and hit feedback, and three floating practice
 targets. Mobile uses the existing movement joystick, drag-to-look and a dedicated
 FIRE button. Pause, sound mute and restart are available. The canonical Walk route
 now forwards Walk mode to the scene instead of opening Inspect.
@@ -20,6 +20,16 @@ completion of the full course/boundary, settings, pointer-lock, performance or p
 exit criteria below. The first course has three targets, replacing the proposed
 five-target count for this increment. Gameplay targets are artificial overlays;
 no real-world geometry or placement confidence changes are implied.
+
+### Audio and reload update — 17 November 2026
+
+The prototype now reuses Freedoom's BSD-licensed shotgun, pump and reload WAVs and
+Howler.js 2.2.4 (MIT) for mobile audio playback. It holds eight shells and reloads
+one at a time from an unlimited reserve using RELOAD or R. Firing interrupts a
+reload when a shell is available. Pause cancels unfinished reload work while
+retaining inserted shells; restart restores eight. This supersedes the earlier
+unlimited-loaded-ammo/no-reload default. Source notices and pinned file hashes
+are in `public/audio/shotgun/`.
 
 ## 1. Outcome
 
@@ -70,7 +80,8 @@ and openings where the model supports them. Surrounding buildings remain visible
 private interiors, roofs and routes to other pools are outside the play area.
 
 **Game:** Single-player target practice with five reusable non-character targets.
-One simple weapon, unlimited ammunition, no reload, no enemy AI and no player
+One simple weapon, eight loaded shells with manual reload from an unlimited reserve,
+no enemy AI and no player
 damage. This is enough to test moving, aiming and firing around the courtyard.
 
 **Deferred:** Multiplayer, combat NPCs, campaigns, inventories, realistic weapons,
@@ -112,8 +123,9 @@ additional preferences already confirmed by Dave.
 | Mouse | Continuous yaw and pitch while pointer-locked |
 | Shift | Sprint while held |
 | Space | Jump when grounded |
-| Left click | Fire one shot per press while actively playing |
-| R | Restart course while playing |
+| Left click / F / touch FIRE | Fire one shot per press while actively playing |
+| R / touch RELOAD | Insert shells one at a time; firing interrupts once a shell is loaded |
+| Pause → Restart | Restart course |
 | Escape | Pause and release pointer lock |
 
 Use a centred crosshair and a small weapon silhouette or simple viewmodel. Hide
