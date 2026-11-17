@@ -118,6 +118,13 @@ ground plane against the 0.4 m tiles. First pass:
   the seat in IMG_2443; the rest recorded as gaps.
 - Planting stays inside its beds and off the lane and the steps.
 
+Second pass, after the fixes: all five approved (south wall and corner bed with notes). Its notes: the
+wall's return down Calle Alberto with the clipped hedge at the corner is not built
+(`gap:cervantes-alberto-south-return`); the crossing paving in the model starts about 0.9 m east of
+the step foot (crossing data, not this change); the south hedge planter's west end and a light strip
+at about 115 m in the aerial are unchecked. This is a structure-stage sign-off in Inspect, not
+measured placement approval.
+
 ## Limits
 
 No camera is solved. Positions come from the photos read against the lane tiles (0.4 m), the registry
