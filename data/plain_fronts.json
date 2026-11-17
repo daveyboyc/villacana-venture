@@ -162,6 +162,27 @@
     "IMG_2358.jpg",
     "IMG_2367.jpg"
    ]
+  },
+  {
+   "id": "elena-south-east-corner-house",
+   "box": [
+    -150.0,
+    59.0,
+    -145.5,
+    61.8
+   ],
+   "facing": [
+    -0.51,
+    -0.86
+   ],
+   "noPorches": true,
+   "noOpenings": false,
+   "trust": "IMG_2358 and IMG_2367 look straight at the north-west face of the house on the east corner of Elena south and Cervantes (registry 6265601UF1366N_part1, the face from corner 3 to 4): a white moulded balcony ledge under an arched shuttered window and a white pilastered porch round the brown door, with bougainvillea, and no timber balcony or tiled porch roof. The generated timber balcony with its tiled roof stood out from this face. The face's own windows and door are left as generated.",
+   "evidence": [
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg"
+   ]
   }
  ],
  "parapets": [

@@ -6,9 +6,9 @@
   "needs-review": 232,
   "suggested": 267,
   "photos": 502,
-  "features": 497,
+  "features": 498,
   "photosCitedByModel": 211,
-  "modelFeaturesWithPhotoCitations": 241
+  "modelFeaturesWithPhotoCitations": 242
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -4277,6 +4277,17 @@
    ]
   },
   {
+   "id": "plain_fronts.json:elena-south-east-corner-house",
+   "name": "elena south east corner house",
+   "kind": "reference feature",
+   "source": "IMG_2358 and IMG_2367 look straight at the north-west face of the house on the east corner of Elena south and Cervantes (registry 6265601UF1366N_part1, the face from corner 3 to 4): a white moulded balcony ledge under an arched shuttered window and a white pilastered porch round the brown door, with bougainvillea, and no timber balcony or tiled porch roof. The generated timber balcony with its tiled roof stood out from this face. The face's own windows and door are left as generated.",
+   "evidence": [
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg"
+   ]
+  },
+  {
    "id": "plain_fronts.json:north-pool-gated-patio-walls",
    "name": "north pool gated patio walls",
    "kind": "reference feature",
@@ -8115,6 +8126,12 @@
   {
    "from": "photo:ELENA-ROOF-2026-11-17.jpg",
    "to": "plain_fronts.json:elena-24-south-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "plain_fronts.json:elena-south-east-corner-house",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -13620,6 +13637,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2358.jpg",
+   "to": "plain_fronts.json:elena-south-east-corner-house",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2359.jpg",
    "to": "building:6265201UF1366N_part4",
    "relation": "possibly-in-view",
@@ -13963,6 +13986,12 @@
   {
    "from": "photo:IMG_2367.jpg",
    "to": "plain_fronts.json:elena-24-south-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "plain_fronts.json:elena-south-east-corner-house",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

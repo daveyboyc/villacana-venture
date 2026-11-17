@@ -94,7 +94,8 @@
    "frontage_divisions.json:cervantes-lawn-door-path",
    "lane_walls.json:elena-south-lawn-west-wall",
    "lane_walls.json:cervantes-elena-patio-front-wall",
-   "plain_fronts.json:elena-24-south-patio"
+   "plain_fronts.json:elena-24-south-patio",
+   "plain_fronts.json:elena-south-east-corner-house"
   ],
   "looksAt": [
    -151.0,
@@ -1602,7 +1603,7 @@
    "backdrop.json:aerial-trees",
    "lane_walls.json:elena-south-mouth-patio-wall",
    "cervantes_patio_walls.json:cervantes-patio-south-3",
-   "elena_lane_paving.json:elena-south-three-column"
+   "plain_fronts.json:elena-south-east-corner-house"
   ],
   "subject": "The Elena south lane and lawns below the roof"
  },
@@ -2973,9 +2974,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
+   "plain_fronts.json:elena-south-east-corner-house",
    "elena_lane_paving.json:elena-south-three-column",
-   "street:elena-south",
-   "lane_walls.json:elena-south-mouth-patio-wall"
+   "street:elena-south"
   ]
  },
  {
@@ -3114,9 +3115,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
+   "plain_fronts.json:elena-south-east-corner-house",
    "elena_lane_paving.json:elena-south-three-column",
-   "street:elena-south",
-   "lane_walls.json:elena-south-mouth-patio-wall"
+   "street:elena-south"
   ]
  },
  {
@@ -5748,7 +5749,8 @@
    "lane_walls.json:elena-south-lawn-west-wall",
    "lane_walls.json:elena-south-mouth-patio-wall",
    "cervantes_garden_door.json:cervantes-junction-north-patio",
-   "plain_fronts.json:elena-24-south-patio"
+   "plain_fronts.json:elena-24-south-patio",
+   "plain_fronts.json:elena-south-east-corner-house"
   ],
   "looksAt": [
    -151.0,
@@ -6154,7 +6156,8 @@
    "junction_lawns.json:junction-pollarded-2",
    "junction_lawns.json:junction-pollarded-3",
    "cervantes_garden_door.json:cervantes-junction-north-patio",
-   "plain_fronts.json:elena-24-south-patio"
+   "plain_fronts.json:elena-24-south-patio",
+   "plain_fronts.json:elena-south-east-corner-house"
   ],
   "looksAt": [
    -151.5,
@@ -8980,6 +8983,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "plain_fronts.json:elena-south-east-corner-house",
    "backdrop.json:aerial-trees",
    "lane_walls.json:elena-south-mouth-patio-wall"
   ],
@@ -15620,9 +15624,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
+   "plain_fronts.json:elena-south-east-corner-house",
    "lane_walls.json:elena-south-mouth-patio-wall",
-   "elena_lane_paving.json:elena-south-three-column",
-   "street:elena-south"
+   "elena_lane_paving.json:elena-south-three-column"
   ]
  },
  {
