@@ -93,6 +93,7 @@
    "frontage_divisions.json:cervantes-elena-lawn-2",
    "frontage_divisions.json:cervantes-lawn-door-path",
    "lane_walls.json:elena-south-lawn-west-wall",
+   "lane_walls.json:cervantes-elena-patio-front-wall",
    "plain_fronts.json:elena-24-south-patio"
   ],
   "looksAt": [
@@ -3055,6 +3056,7 @@
   },
   "citedBy": [
    "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "lane_walls.json:cervantes-elena-patio-front-wall",
    "steps:cervantes-elena-steps",
    "ramp:cervantes-elena-ramp"
   ],
@@ -3149,6 +3151,7 @@
    "cervantes_patio_walls.json:cervantes-patio-south-2-west",
    "cervantes_patio_walls.json:cervantes-patio-south-3",
    "lane_walls.json:cervantes-north-garden-wall-west",
+   "lane_walls.json:cervantes-elena-patio-front-wall",
    "cervantes_lane_edges.json:cervantes-north-bed-west"
   ],
   "looksAt": [
@@ -3159,7 +3162,7 @@
   "looksAtFeatures": [
    "street:cervantes",
    "backdrop.json:aerial-trees",
-   "cervantes_patio_walls.json:cervantes-patio-south-2-west",
+   "lane_walls.json:cervantes-elena-patio-front-wall",
    "cervantes_patio_walls.json:cervantes-patio-south-2"
   ]
  },
@@ -7340,6 +7343,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "lane_walls.json:cervantes-elena-patio-front-wall",
    "cervantes_lane_edges.json:cervantes-north-bed-west"
   ],
   "looksAt": [

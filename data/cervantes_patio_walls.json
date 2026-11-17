@@ -140,8 +140,8 @@
           65.995
         ],
         [
-          -157.968,
-          61.397
+          -162.264,
+          63.955
         ]
       ],
       "height": 0.65,
@@ -157,7 +157,7 @@
         "IMG_2274.jpg",
         "IMG_2275.jpg"
       ],
-      "trust": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges. 17 November 2026: split at the north end of the Elena lawns' west wall; this western part, in front of the houses, is unchanged and still open (cervantes-kerb-walls-height)."
+      "trust": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges. 17 November 2026: split at the north end of the Elena lawns' west wall; this western part, in front of the houses, is unchanged and still open (cervantes-kerb-walls-height). 17 November 2026: trimmed to the stretch in front of the house (registry part5 north face); east of the house corner it is replaced by the photographed 2.2 m patio wall with a door (data/lane_walls.json cervantes-elena-patio-front-wall)."
     },
     {
       "id": "cervantes-patio-south-3",

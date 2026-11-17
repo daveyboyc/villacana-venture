@@ -74,7 +74,9 @@ for w in data['walls']:
         assert gap >= 1.0, f'{wid}: {gap:.2f} m from the {sid} centreline'
     # Calle Cervantes is a narrow lane between its walls: keep a wall's face outside its 1.2 m paving and its kerb walls.
     gap = line_gap(w['points'], streets['cervantes']['points'])
-    assert w['area'] != 'cervantes' or gap - w['thickness'] / 2 >= 1.0, f'{wid}: face {gap - w["thickness"] / 2:.2f} m from the Cervantes centreline'
+    # A photographed wall may stand on the lane's own edge line, where the kerb walls run (0.88 m out; the
+    # Cervantes patio wall with a door, 17 Nov 2026): its face still has to clear the 1.2 m paving by 0.1 m.
+    assert w['area'] != 'cervantes' or gap - w['thickness'] / 2 >= 0.7, f'{wid}: face {gap - w["thickness"] / 2:.2f} m from the Cervantes centreline'
     for pool in skeleton['pools']:
         ring = pool['ring'] + [pool['ring'][0]]
         assert not any(crosses(a, b, c, e) for a, b in segments(w['points']) for c, e in segments(ring)), f"{wid}: crosses pool {pool['id']}"

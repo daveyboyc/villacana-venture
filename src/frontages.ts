@@ -24,7 +24,7 @@ export function addFrontageDivisions(scene:THREE.Scene):void {
     const elenaSpur=region.id==='cervantes-lawn-door-path';
     if(elenaSpur){const road=skeleton.boundaryReference.roads.find(r=>r.id==='elena-south')!;applyElenaPavingUv(geometry,{...road,points:road.points as Vec2[]});}
     const material=new THREE.MeshStandardMaterial({color:elenaSpur?'#ffffff':FRONTAGE_COLORS[region.kind],roughness:1,map:elenaSpur?elenaPavingTexture():region.kind==="entrance"?surfaceTexture("paving"):surfaceTexture("turf")});
-    const mesh=new THREE.Mesh(geometry,material);mesh.name=region.id;mesh.position.y=.025;mesh.receiveShadow=true;mesh.userData.referenceSurface=true;scene.add(mesh);
+    const mesh=new THREE.Mesh(geometry,material);mesh.name=region.id;mesh.position.y=(region as {lift?:number}).lift??.025;mesh.receiveShadow=true;mesh.userData.referenceSurface=true;scene.add(mesh);
   }
   const stone=plasterMaterial("#fffdf3");
   for(const border of frontageBorders) for(let i=0;i<border.points.length-1;i++) {

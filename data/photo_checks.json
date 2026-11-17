@@ -1893,6 +1893,18 @@
    "result": "differs",
    "followUp": "elena-junction-lawns-roof",
    "notes": "Camera re-solved with the near parapet (0.25 m). The lawns, lane kerb and west wall foot line up with the photo (traced overlay IMG_2358-traced-after.jpg); the clipped trees, cypresses and the bougainvillea are not drawn."
+  },
+  {
+   "task": "elena-junction-lawns-roof",
+   "checked": "2026-11-17",
+   "by": "Claude",
+   "feature": "lane_walls.json:cervantes-elena-patio-front-wall",
+   "photo": "ELENA-ROOF-2026-11-17.jpg",
+   "render": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-after-details.png",
+   "before": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-before-details.png",
+   "result": "differs",
+   "followUp": "elena-junction-lawns-roof",
+   "notes": "Through the solved roof camera with Show details: the tall patio wall with its brown door now faces Cervantes beside the CALLE ELENA corner, the wall along the near lawn is the low kerb, and the junction lawns sit just below their kerb tops. Still different: the bougainvillea and climbers on the walls, the CALLE ELENA tile sign, the clipped trees and cypresses, the far cypress wall and gate. A photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [

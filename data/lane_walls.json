@@ -213,6 +213,42 @@
         "IMG_2448.jpg"
       ],
       "basis": "The south side of the lane from the Elena patios to the Calle Alberto crossing is one tall plain white wall, above head height, with bougainvillea and jade at its foot: IMG_2795, IMG_2450 and IMG_2794 look west along it, IMG_2449 shows the CALLE DE MIGUEL plaque on it and IMG_2448 the ALBERTO plaque on its end at the crossing. It carries on the line of the existing wall east of Elena (data/cervantes_east_south_patios.json), which ended at 78.2 m, to the corner at about 93 m where it turns south along Calle Alberto (the ALBERTO plaque face in IMG_2448; the registry block's east face is at 93.0 m). Two brown doors in IMG_2794: one close to the camera at about 90 m, one in a capped pier opening about 6 m further west, at about 83.5 m; each is good to about 2 m. The gardens behind it are not traced."
+    },
+    {
+      "id": "cervantes-elena-patio-front-wall",
+      "name": "Cervantes south · patio wall with a brown door between the house and the Elena lawns' west wall",
+      "area": "cervantes",
+      "points": [
+        [
+          -162.264,
+          63.955
+        ],
+        [
+          -157.968,
+          61.397
+        ]
+      ],
+      "height": 2.2,
+      "thickness": 0.25,
+      "raise": 0,
+      "doors": [
+        {
+          "id": "cervantes-elena-patio-front-door",
+          "at": [
+            -160.293,
+            62.633
+          ],
+          "width": 0.95,
+          "height": 2.0
+        }
+      ],
+      "evidence": [
+        "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2467.jpg",
+        "IMG_2264.jpg",
+        "IMG_2262.jpg"
+      ],
+      "basis": "ELENA-ROOF-2026-11-17.jpg looks down on a tall white wall facing Cervantes with a closed brown door, between the CALLE ELENA corner of the lawns' west wall and the house west of it, closing the patio with the parasol; IMG_2467 and IMG_2264 show it from the lane, a white wall a little taller than its door, and IMG_2262 its east end beside the CALLE ELENA face. It stands on the existing Cervantes south wall line, from the house corner (registry 6265801UF1366N_part5 corner 32, 0.23 m off the line) to the west wall's north end. The door head, cast through the solved roof camera at 2.0 m, is 0.95 m wide, 6.35 m along the line from its west end and within about 0.2 m of the line. Height 2.2 m as the west wall, by eye against the door. Built 17 November 2026 (task elena-junction-lawns-roof); it replaces the 0.65 m wall drawn here."
     }
   ]
 }
