@@ -1,0 +1,17 @@
+{
+  "audioFilesLoaded": true,
+  "blastAndPumpPlayback": true,
+  "reloadPlayback": true,
+  "ammo": true,
+  "emptyFire": true,
+  "interrupt": true,
+  "pause": true,
+  "reset": true,
+  "mute": true,
+  "keyboard": true,
+  "idleAudioResume": true,
+  "targetHit": true,
+  "touchLayout": true,
+  "disposal": true,
+  "errors": []
+}
