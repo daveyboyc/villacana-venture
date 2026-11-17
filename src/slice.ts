@@ -1,3 +1,4 @@
+import { createShotgun } from "./shotgun";
 import {replacesLaneGroundOpening,inLaneFrontageBand} from "./middle-pool-lane-frontages";
 import {inspectionTargets} from "./inspection-targets";
 import {bindWalkControls} from "./walk-controls";
@@ -93,6 +94,7 @@ if(embedded) {
 const phoneInspect=navigator.maxTouchPoints>0&&matchMedia("(max-width:900px), (max-height:500px)").matches;
 if(phoneInspect)document.body.classList.add("mobile-inspect");
 const pageQuery=new URLSearchParams(location.search);
+const shotgunMode=pageQuery.get("weapon")==="shotgun";
 const detailMode=pageQuery.get("details");
 const layoutOnly=detailMode==="1"?false:detailMode==="0"?true:!phoneInspect;
 document.body.dataset.details=layoutOnly?"0":"1";
@@ -176,9 +178,9 @@ async function boot(): Promise<void> {
   };
   const buildings = skeleton.buildings.filter((b) => near(b.ring));
 
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  renderer.shadowMap.enabled = true;
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: !shotgunMode });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, shotgunMode ? 1 : 2));
+  renderer.shadowMap.enabled = !(shotgunMode && phoneInspect);
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
   const scene = new THREE.Scene();
@@ -447,6 +449,7 @@ async function boot(): Promise<void> {
     bounds: { minX: centre.x - RADIUS, maxX: centre.x + RADIUS, minZ: centre.z - RADIUS, maxZ: centre.z + RADIUS },
   };
 
+  if(shotgunMode)player.y=world.groundHeight?.(player.x,player.z)??0;
   bindInput();
   let camYaw = Math.atan2(start.x - spawn[0], -(start.z - spawn[1]));
   let pitch = seafrontFocus ? 0.75 : 0.45;
@@ -455,7 +458,7 @@ async function boot(): Promise<void> {
   type WalkingView='first'|'third';
   const validView=(v:string|null):v is WalkingView=>v==='first'||v==='third';
   const queryView=new URLSearchParams(location.search).get('camera');
-  let walkingView:WalkingView|null=validView(queryView)?queryView:null;
+  let walkingView:WalkingView|null=shotgunMode?'first':validView(queryView)?queryView:null;
   if(!walkingView){try{const stored=localStorage.getItem('villacana.walk-camera');if(validView(stored))walkingView=stored;}catch{/* Private browsing may deny storage. */}}
   const chooseView=(mode:WalkingView)=>{
     walkingView=mode;pitch=.45;resetPointers();
@@ -629,6 +632,12 @@ async function boot(): Promise<void> {
   const cameraBlockers:THREE.Object3D[]=[];
   scene.traverse(o=>{if((o as THREE.Mesh).isMesh&&(o.userData.structural||/^(T01-|T02-|T03-|T04-)/.test(o.name)))cameraBlockers.push(o);});
   const walkCameraRay=new THREE.Raycaster(),walkCameraDirection=new THREE.Vector3();
+  const shotgun=shotgunMode ? createShotgun({scene,camera,canvas,ignoreObject:player.group,
+    centre:centroid(shown[0].ring),groundY:liveGroundY,
+    available:()=>!overview&&!references.active()&&canvas.dataset.ready==='true'&&(!embedded||parent.document.body.dataset.appView!=='map'),
+    resetInput:()=>resetPointers(),
+    resetPlayer:()=>{player.place(spawn[0],spawn[1],0);player.y=world.groundHeight?.(player.x,player.z)??0;camYaw=Math.atan2(start.x-spawn[0],-(start.z-spawn[1]));pitch=.45;},
+  }):null;
 
   if(batching)batchStatic(scene);
   const stroll = (() => {
@@ -747,16 +756,17 @@ async function boot(): Promise<void> {
     const dt = Math.min(clock.getDelta(), 0.05);
     if(embedded && parent.document.body.dataset.appView === "map"){stroll.pause();return;}
     readKeys();
+    if(shotgun&&!shotgun.playing()){input.moveX=input.moveZ=input.lookDx=input.lookDy=0;input.jump=input.run=false;}
     const currentRoute=document.querySelector<HTMLElement>("#current-route")!;
     const nearbyNames=routes.map(r=>({name:r.name,d:Math.min(...r.points.slice(1).map((b,i)=>closestOnSegment(player.x,player.z,...r.points[i],...b).d)),width:r.width})).filter(r=>r.d<r.width/2+.7).sort((a,b)=>a.d-b.d);
     const routeNames=[...new Set(nearbyNames.map(r=>r.name))].slice(0,2);currentRoute.hidden=overview||!routeNames.length;currentRoute.textContent=routeNames.join(" · ");
     gateButton.hidden=overview||Math.hypot(player.x-gate.at[0],player.z-gate.at[1])>6;
-    if(!overview && !references.active()) player.update(dt, input, world, camYaw);
+    if(!overview && !references.active() && (!shotgun||shotgun.playing())) player.update(dt, input, world, camYaw);
     scorecard.update(overview?overviewCentre.x:player.x,overview?overviewCentre.z:player.z);
     stroll.sample(performance.now(), overview, player.x, player.z, overviewCentre.x, overviewCentre.z);
 
     const inCloseSpace=!!host && (silviaCloseCamera(player.x,player.z)||(host.holes??[]).some(r=>pointInRing(player.x,player.z,r)));
-    const firstPerson=!overview && (walkingView==='first'||(walkingView===null&&inCloseSpace));
+    const firstPerson=!overview && (shotgunMode||walkingView==='first'||(walkingView===null&&inCloseSpace));
     document.querySelector('#camera-first')!.setAttribute('aria-pressed',String(firstPerson));
     document.querySelector('#camera-third')!.setAttribute('aria-pressed',String(!overview&&!firstPerson));
     document.querySelector<HTMLElement>('#walk-pad')!.hidden=overview;
@@ -828,13 +838,14 @@ async function boot(): Promise<void> {
         if(hit){const reach=Math.max(.15,hit.distance-.2);camera.position.copy(target).addScaledVector(walkCameraDirection,reach);player.group.visible=reach>2.2;}
       }
     }
-    const walkingFov=!overview&&!firstPerson&&inCloseSpace?70:55;
+    const walkingFov=shotgunMode&&!overview?70:!overview&&!firstPerson&&inCloseSpace?70:55;
     if(camera.fov!==walkingFov){camera.fov=walkingFov;camera.updateProjectionMatrix();}
     camera.lookAt(target);
     // Looking through a photo's camera replaces the walking camera (src/photo-camera.ts).
     if (photoView) { photoView.apply(camera, innerWidth, innerHeight); player.group.visible = false; }
     pools.update(clock.elapsedTime);
     camera.updateMatrixWorld();
+    shotgun?.update(dt,moving);
     document.querySelector<HTMLElement>(".reference-tools")!.style.bottom=`calc(${controls.offsetHeight+24}px + env(safe-area-inset-bottom))`;
     checks.visible=overview&&showChecks;
     notes.hidden=!overview||!showChecks;

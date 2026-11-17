@@ -104,3 +104,5 @@ body[data-app-view="map"]>.reference-tools {right:378px;bottom:68px;}
  #path-network {top:auto;left:8px;right:8px;bottom:66px;width:auto;max-height:55dvh;padding:8px;}
  #path-network p {margin:6px 0;}#network-results {max-height:18dvh;}
 }
+
+body[data-app-view="fps"]>.reference-tools,body[data-app-view="fps"]>.reference-layer {display:none;}

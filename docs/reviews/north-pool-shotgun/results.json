@@ -1,0 +1,15 @@
+{
+  "mobile": "390x844 and 844x390 Chromium touch emulation",
+  "routing": true,
+  "multitouch": true,
+  "pause": true,
+  "reset": true,
+  "rapidFire": true,
+  "regression": true,
+  "occluded": true,
+  "open": true,
+  "scored": true,
+  "cooldown": true,
+  "disposed": true,
+  "errors": []
+}

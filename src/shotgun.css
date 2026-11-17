@@ -1,0 +1,25 @@
+#shotgun-hud{position:fixed;inset:0;z-index:9;pointer-events:none;font:700 14px ui-monospace,monospace;color:#fff0ce;text-shadow:0 2px #171918;user-select:none;-webkit-user-select:none}
+#shotgun-hud [hidden]{display:none!important}
+#shotgun-hud button,#shotgun-hud a{pointer-events:auto;touch-action:none;cursor:pointer;font:700 13px ui-monospace,monospace;color:#fff0ce;background:#242d2c;border:2px solid #8e967a;border-radius:4px;min-height:44px;padding:10px 12px;text-decoration:none}
+#shotgun-hud button:disabled{opacity:.5;cursor:wait}
+#shotgun-hud button:focus-visible,#shotgun-hud a:focus-visible{outline:3px solid #f8ba57;outline-offset:3px}
+.sg-top{position:absolute;top:max(10px,env(safe-area-inset-top));left:12px;right:12px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.sg-top>div{display:flex;gap:6px}.sg-top small,.sg-bottom small{display:block;font-size:10px;letter-spacing:2px;color:#c4c8af}
+.sg-bottom{position:absolute;bottom:0;left:0;right:0;min-height:48px;box-sizing:border-box;padding:7px max(12px,env(safe-area-inset-right)) calc(7px + env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:space-between;background:linear-gradient(#333d37,#1e2524);border-top:3px solid #737f6c;gap:8px}
+.sg-bottom b{font-size:24px;color:#ffcc79}.sg-bottom>span:last-child{text-align:right}#sg-status{font-size:12px;text-align:center}
+#sg-crosshair,#sg-hit{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:28px;line-height:1;color:#fff8e6;text-shadow:1px 1px #1c241b,-1px -1px #1c241b}#sg-hit{font-size:42px;color:#ffc35d}
+#sg-weapon{position:absolute;bottom:48px;left:50%;width:clamp(150px,35vw,260px);height:clamp(180px,42vw,312px);transform:translateX(calc(-50% + var(--sway,0px)));filter:drop-shadow(5px 4px 0 #0006)}
+#sg-weapon svg{width:100%;height:100%;overflow:visible}#sg-flash{opacity:0;transform-origin:100px 65px}.sg-firing #sg-flash{animation:sg-flash .12s steps(2,end)}.sg-firing svg{animation:sg-recoil .8s steps(7,end)}.sg-firing #sg-pump{animation:sg-pump .8s steps(6,end)}
+@keyframes sg-flash{0%,65%{opacity:1}100%{opacity:0}}
+@keyframes sg-recoil{0%{transform:translateY(0)}12%{transform:translateY(32px) rotate(-3deg)}35%{transform:translateY(18px) rotate(3deg)}100%{transform:none}}
+@keyframes sg-pump{0%,20%,100%{transform:translateY(0)}50%,65%{transform:translateY(24px)}}
+#shotgun-hud #sg-fire{position:absolute;right:max(18px,env(safe-area-inset-right));bottom:calc(76px + env(safe-area-inset-bottom));width:88px;height:88px;border-radius:50%;background:#8d3825e8;border:3px solid #ffb45d;font-size:19px;box-shadow:0 4px 0 #301d17}#sg-fire:active{background:#c05e32;transform:translateY(2px)}
+#sg-menu{position:absolute;inset:0;pointer-events:auto;display:flex;align-items:center;justify-content:center;background:#111b1f7d;overflow:auto;padding:12px}
+.sg-card{max-width:390px;max-height:calc(100% - 30px);overflow:auto;background:#202b29f5;border:2px solid #87947b;border-top:5px solid #d99748;padding:22px;box-shadow:8px 8px 0 #0005;box-sizing:border-box;text-align:center}
+.sg-kicker{font-size:10px;letter-spacing:2px;color:#dca35b}.sg-card h1{font-size:27px;line-height:1.1;margin:14px 0}.sg-card p{font:14px/1.6 system-ui,sans-serif;font-weight:400}.sg-card small{font-size:11px;color:#c3ccbc}.sg-card button,.sg-card a{display:block;width:100%;box-sizing:border-box;margin:10px 0 0}#shotgun-hud #sg-start{background:#b76931;border-color:#f0b570;font-size:16px}
+body.shotgun-mode :is(#inspection-jump,#walk-camera,#walk-touch-help,#layout-details,#title,#areas,#back,#current-route,#gate-control,.reference-tools,.reference-layer,#scorecard){display:none!important}
+body.shotgun-mode #walk-pad{bottom:calc(76px + env(safe-area-inset-bottom));z-index:10}
+body.shotgun-mode #jump{bottom:calc(176px + env(safe-area-inset-bottom));right:max(24px,env(safe-area-inset-right));z-index:10;min-height:44px}
+body.shotgun-mode:has(#sg-menu:not([hidden])) :is(#walk-pad,#jump){visibility:hidden}
+@media(max-height:500px){.sg-top{top:6px}.sg-top>span{font-size:11px}.sg-top small{font-size:9px}#sg-weapon{height:175px;width:146px}.sg-card{padding:12px;max-width:520px}.sg-card h1{font-size:22px;margin:6px 0}.sg-card p{margin:6px 0;font-size:12px}.sg-card #sg-instructions{display:none}.sg-card button,.sg-card a{margin-top:6px}.sg-bottom{min-height:42px}.sg-bottom b{font-size:20px}body.shotgun-mode #walk-pad{width:108px;height:108px}body.shotgun-mode #walk-pad .walk-thumb{left:32px;top:32px}}
+@media(prefers-reduced-motion:reduce){.sg-firing svg{animation:none}.sg-firing #sg-pump{animation:none}#sg-weapon{transform:translateX(-50%)}}
