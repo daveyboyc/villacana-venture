@@ -431,11 +431,11 @@ def grid(step=2.0, extent=(-270.0, -160.0, 130.0, 270.0)):
     coarse = smooth[::k, ::k]
     # Photographed flights of steps stay exact: siteY lays each as level ground, a straight rise over
     # the flight and level ground above, blending into the grid within 3 m. Their rise is the survey's
-    # where that agrees with the photos; otherwise the photo-read rise as built (Cervantes: survey 0.22 m).
+    # where that agrees with the photos; otherwise the photo-read rise as built.
     surveyed = {i['id']: i for i in json.loads((ROOT / 'data/levels_survey.json').read_text())['items']}
     ramps = []
     for name, item in (('cervantes_elena_steps.json', 'cervantes-elena-steps'), ('middle_pool_steps.json', 'middle-pool-sw-rise'),
-                       ('middle_pool_north.json', 'middle-pool-nw-rise')):
+                       ('middle_pool_north.json', 'middle-pool-nw-rise'), ('cervantes_alberto_steps.json', 'cervantes-alberto-steps')):
         flight = json.loads((ROOT / 'data' / name).read_text())
         flight = flight.get('steps', flight)
         compare = surveyed[item].get('compare') or surveyed['middle-pool-sw-rise']['compare']
@@ -456,9 +456,9 @@ def grid(step=2.0, extent=(-270.0, -160.0, 130.0, 270.0)):
             near = (ahead < 0) & (across < 6.0)
             if near.any():
                 behind = min(behind, max(0.5, float(-ahead[near].max()) - 1.25))
-        # The Cervantes flight shares the lane with a ramp as wide as the lane; the courtyard flights are
+        # The Cervantes flights share the lane with a ramp as wide as the lane; the courtyard flights are
         # narrow (the south-west one with a 1.5-2 m terracotta ramp beside it), so the ground beside them stays the survey's.
-        half = 3.0 if flight['id'] == 'cervantes-elena-steps' else 2.0
+        half = 3.0 if flight['road'] == 'cervantes' else 2.0
         ramps.append({'id': flight['id'], 'foot': foot, 'toward': flight['toward'], 'start': start, 'run': round(flight['end'], 3), 'halfWidth': half, 'behind': round(behind, 2),
                       'base': round(float(ground.at(*compare['low'])) - datum, 3), 'rise': round(rise, 2), 'photoRise': [low, high], 'surveyRise': round(survey_rise, 2),
                       'from': 'survey' if rise == survey_rise else 'photos (the survey reads less; open in data/levels_survey.json)'})

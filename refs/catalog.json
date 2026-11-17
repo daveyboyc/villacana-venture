@@ -1469,10 +1469,10 @@
   ],
   "looksAtBasis": "estimated 12 m along the heading",
   "looksAtFeatures": [
+   "lane_walls.json:cervantes-north-garden-wall-west",
+   "cervantes_lane_edges.json:cervantes-north-bed-west",
    "backdrop.json:aerial-trees",
-   "cervantes_north_patios.json:cervantes-north-partition-middle",
-   "cervantes_patio_walls.json:cervantes-patio-north-1",
-   "street:cervantes"
+   "cervantes_north_patios.json:cervantes-north-partition-middle"
   ]
  },
  {
@@ -3095,7 +3095,9 @@
    "cervantes_patio_walls.json:cervantes-patio-north-east",
    "cervantes_patio_walls.json:cervantes-patio-south-1",
    "cervantes_patio_walls.json:cervantes-patio-south-2",
-   "cervantes_patio_walls.json:cervantes-patio-south-3"
+   "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "lane_walls.json:cervantes-north-garden-wall-west",
+   "cervantes_lane_edges.json:cervantes-north-bed-west"
   ],
   "looksAt": [
    -158.8,
@@ -3410,7 +3412,8 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "street:cervantes",
-   "cervantes_patio_walls.json:cervantes-patio-north-1"
+   "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "cervantes_lane_edges.json:cervantes-north-bed-west"
   ]
  },
  {
@@ -3444,7 +3447,9 @@
    "cervantes_patio_walls.json:cervantes-patio-north-east",
    "cervantes_patio_walls.json:cervantes-patio-south-1",
    "cervantes_patio_walls.json:cervantes-patio-south-2",
-   "cervantes_patio_walls.json:cervantes-patio-south-3"
+   "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "lane_walls.json:cervantes-north-garden-wall-west",
+   "cervantes_lane_edges.json:cervantes-north-bed-west"
   ],
   "looksAt": [
    -172.9,
@@ -3454,8 +3459,8 @@
   "looksAtFeatures": [
    "frontage_divisions.json:cervantes-west-planting",
    "backdrop.json:aerial-trees",
-   "cervantes_patio_walls.json:cervantes-patio-north-1",
-   "street:cervantes"
+   "lane_walls.json:cervantes-north-garden-wall-west",
+   "cervantes_lane_edges.json:cervantes-north-bed-west"
   ]
  },
  {
@@ -3496,7 +3501,8 @@
    "dali_cervantes_threshold.json:dali-lawn-strip-2",
    "dali_cervantes_threshold.json:dali-house-footpath-1",
    "dali_cervantes_threshold.json:dali-house-footpath-2",
-   "dali_cervantes_threshold.json:cervantes-parking-crossing"
+   "dali_cervantes_threshold.json:cervantes-parking-crossing",
+   "lane_walls.json:cervantes-north-garden-wall-west"
   ],
   "looksAt": [
    -185.5,
@@ -3506,7 +3512,8 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "dali_cervantes_threshold.json:dali-house-footpath-1",
-   "dali_cervantes_threshold.json:dali-lawn-strip-1"
+   "lane_walls.json:cervantes-north-garden-wall-west",
+   "cervantes_lane_edges.json:cervantes-north-bed-west"
   ]
  },
  {
@@ -6214,7 +6221,11 @@
    "altitude": 7.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "cervantes_lane_edges.json:cervantes-east-north-planter",
+   "cervantes_lane_edges.json:cervantes-east-north-brick-planter",
+   "cervantes_lane_edges.json:cervantes-east-south-planter"
+  ],
   "looksAt": [
    -108.0,
    24.0
@@ -6253,7 +6264,12 @@
    "altitude": 7.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "cervantes_lane_edges.json:cervantes-east-north-planter",
+   "cervantes_lane_edges.json:cervantes-east-north-brick-planter",
+   "cervantes_lane_edges.json:cervantes-east-north-thuja-planter",
+   "cervantes_lane_edges.json:cervantes-east-south-planter"
+  ],
   "looksAt": [
    -108.0,
    24.0
@@ -6292,7 +6308,9 @@
    "altitude": 7.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "cervantes_lane_edges.json:cervantes-east-north-thuja-planter"
+  ],
   "looksAt": [
    -70.0,
    10.0
@@ -6445,7 +6463,11 @@
    "altitude": 7.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:cervantes-south-garden-wall-alberto",
+   "cervantes_lane_edges.json:cervantes-alberto-corner-planter",
+   "steps:cervantes-alberto-steps"
+  ],
   "looksAt": [
    -128.0,
    41.0
@@ -6453,7 +6475,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "street:cervantes"
+   "street:cervantes",
+   "cervantes_lane_edges.json:cervantes-north-bed-house-2",
+   "cervantes_lane_edges.json:cervantes-north-bed-house-1"
   ],
   "subject": "Lane beyond the Alberto crossing with three white steps"
  },
@@ -6485,7 +6509,11 @@
    "altitude": 8.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:cervantes-south-garden-wall-alberto",
+   "cervantes_lane_edges.json:cervantes-north-bed-house-3",
+   "steps:cervantes-alberto-steps"
+  ],
   "looksAt": [
    -132.0,
    45.0
@@ -6494,8 +6522,8 @@
   "looksAtFeatures": [
    "street:cervantes",
    "backdrop.json:aerial-trees",
-   "cervantes_east_south_patios.json:cervantes-east-south-wall",
-   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
+   "cervantes_lane_edges.json:cervantes-north-bed-house-1",
+   "cervantes_east_south_patios.json:cervantes-east-south-wall"
   ],
   "subject": "Lane west of the Alberto crossing with the Calle de Miguel plaque"
  },
@@ -6527,7 +6555,10 @@
    "altitude": 7.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:cervantes-south-garden-wall-alberto",
+   "cervantes_lane_edges.json:cervantes-north-bed-house-2"
+  ],
   "looksAt": [
    -126.5,
    42.0
@@ -6536,6 +6567,7 @@
   "looksAtFeatures": [
    "street:cervantes",
    "backdrop.json:aerial-trees",
+   "lane_walls.json:cervantes-south-garden-wall-alberto",
    "cervantes_east_south_patios.json:cervantes-east-south-wall"
   ],
   "subject": "Arched porch opening on the north side of the lane"
@@ -6647,7 +6679,9 @@
    "altitude": 6.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "cervantes_lane_edges.json:cervantes-north-bed-house-1"
+  ],
   "looksAt": [
    -154.0,
    51.0
@@ -7232,17 +7266,19 @@
    "altitude": 7.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "cervantes_lane_edges.json:cervantes-north-bed-west"
+  ],
   "looksAt": [
    -175.0,
    69.0
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "cervantes_lane_edges.json:cervantes-north-bed-west",
    "backdrop.json:aerial-trees",
    "cervantes_patio_walls.json:cervantes-patio-north-1",
-   "street:cervantes",
-   "frontage_divisions.json:cervantes-west-planting"
+   "lane_walls.json:cervantes-north-garden-wall-west"
   ],
   "subject": "Cervantes lane west of Elena"
  },
@@ -7274,7 +7310,10 @@
    "altitude": 7.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:cervantes-north-garden-wall-west",
+   "cervantes_lane_edges.json:cervantes-north-bed-west"
+  ],
   "looksAt": [
    -185.0,
    72.0
@@ -7282,7 +7321,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "dali_cervantes_threshold.json:dali-house-footpath-1"
+   "dali_cervantes_threshold.json:dali-house-footpath-1",
+   "lane_walls.json:cervantes-north-garden-wall-west",
+   "cervantes_lane_edges.json:cervantes-north-bed-west"
   ],
   "subject": "West end of the lane towards Dali"
  },
@@ -18557,7 +18598,11 @@
    "altitude": 8.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:cervantes-south-garden-wall-alberto",
+   "cervantes_lane_edges.json:cervantes-north-bed-house-2",
+   "cervantes_lane_edges.json:cervantes-north-bed-house-3"
+  ],
   "looksAt": [
    -121.9,
    38.3
@@ -18565,7 +18610,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:cervantes",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "cervantes_lane_edges.json:cervantes-north-bed-house-3",
+   "cervantes_lane_edges.json:cervantes-north-bed-house-2"
   ]
  },
  {
@@ -18594,7 +18641,9 @@
    "altitude": 7.0,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:cervantes-south-garden-wall-alberto"
+  ],
   "looksAt": [
    -135.1,
    45.7
@@ -18604,7 +18653,7 @@
    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
    "street:cervantes",
    "backdrop.json:aerial-trees",
-   "cervantes_east_south_patios.json:cervantes-east-south-wall"
+   "cervantes_lane_edges.json:cervantes-north-bed-house-1"
   ]
  },
  {
@@ -18634,7 +18683,9 @@
    "altitude": 6.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "cervantes_lane_edges.json:cervantes-north-bed-house-1"
+  ],
   "looksAt": [
    -137.1,
    47.3
@@ -18673,7 +18724,9 @@
    "altitude": 4.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "cervantes_lane_edges.json:cervantes-north-bed-house-1"
+  ],
   "looksAt": [
    -139.4,
    47.9

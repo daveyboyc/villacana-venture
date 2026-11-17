@@ -1,6 +1,6 @@
 {
   "id": "lane-walls",
-  "name": "Garden and patio walls along Calle Elena and Calle Jorge",
+  "name": "Garden and patio walls along Calle Elena, Calle Jorge and Calle Cervantes",
   "checkedAt": "2026-11-16",
   "about": "Walls that close gardens and patios off from Calle Elena and Calle Jorge where the model left the ground open (Dave, 2026-11-16: the walls need adding around Calle Jorge and Elena). Each wall is a polyline of [x, z] model metres, built as a white rendered wall with a slightly wider coping, solid for collision, with closed timber doors where a photo shows one. 'raise' lifts the top by the lane's own height above the site ground (Calle Jorge's path stands 0.3 m above it, src/jorge-lane.ts), so 'height' is read from the path the photos were taken on. Levels and reasons are in data/confidence.json. Not a property survey: positions are photo pins, the registry and the Esri aerial, good to about 1 m.",
   "walls": [
@@ -152,6 +152,69 @@
       "doors": [],
       "evidence": [],
       "basis": "Inferred from the aerial: a white wall on the line of the east face of 6364401UF1366S_part7 runs from the lane edge back to the plain lawn wall (guillermoWest in data/jorge_lane.json), the west side of the plinth lawn. Only the stretch from the house corner to the planter is missing in the model; the rest is the house face. Height as jorge-patio-wall-117."
+    },
+    {
+      "id": "cervantes-north-garden-wall-west",
+      "name": "Cervantes west · white garden wall on the north side, Dalí exit to the Elena garden door",
+      "area": "cervantes",
+      "points": [
+        [
+          -184.05,
+          73.59
+        ],
+        [
+          -153.9,
+          55.62
+        ]
+      ],
+      "height": 1.7,
+      "thickness": 0.22,
+      "raise": 0,
+      "doors": [],
+      "evidence": [
+        "IMG_2274.jpg",
+        "IMG_2468.jpg",
+        "IMG_2275.jpg",
+        "IMG_2264.jpg"
+      ],
+      "basis": "Between the Dalí exit and the Elena junction the north side of the lane is a white garden wall about 1.5-1.8 m high, with bougainvillea over it and banana leaves behind, set back behind a planted bed (IMG_2274 looking north-east, IMG_2468 and IMG_2264 looking west, IMG_2275 at the exit). The model had open paving here up to the houses 6 m back. The line, 2.0 m off the centreline, is where the three photographed patio partitions behind it end (data/cervantes_north_patios.json) and the garden door's wall stands (data/cervantes_garden_door.json), which it meets at its west end. West end at the exit planter. No door asserted: none shows from the lane, though the patios behind must have one."
+    },
+    {
+      "id": "cervantes-south-garden-wall-alberto",
+      "name": "Cervantes · tall white wall on the south side, east of the Elena patios to Calle Alberto",
+      "area": "cervantes",
+      "points": [
+        [
+          -126.76,
+          43.35
+        ],
+        [
+          -112.67,
+          34.94
+        ]
+      ],
+      "height": 2.1,
+      "thickness": 0.2,
+      "raise": 0,
+      "doors": [
+        {
+          "id": "cervantes-south-wall-alberto-door",
+          "at": [
+            -115.5,
+            36.63
+          ],
+          "width": 0.9,
+          "height": 1.9
+        }
+      ],
+      "evidence": [
+        "IMG_2795.jpg",
+        "IMG_2450.jpg",
+        "IMG_2794.jpg",
+        "IMG_2449.jpg",
+        "IMG_2448.jpg"
+      ],
+      "basis": "The south side of the lane from the Elena patios to the Calle Alberto crossing is one tall plain white wall, above head height, with bougainvillea and jade at its foot: IMG_2795, IMG_2450 and IMG_2794 look west along it, IMG_2449 shows the CALLE DE MIGUEL plaque on it and IMG_2448 the ALBERTO plaque on its end at the crossing. It carries on the line of the existing wall east of Elena (data/cervantes_east_south_patios.json), which ended at 78.2 m, to the crossing at 94.6 m. One brown door at the left edge of IMG_2794, close to the camera; its place along the wall is good to about 2 m. The gardens behind it are not traced."
     }
   ]
 }

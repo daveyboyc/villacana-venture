@@ -3827,6 +3827,54 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude"
+  },
+  {
+   "id": "cervantes-lane-edges",
+   "area": "cervantes",
+   "priority": 2,
+   "kind": "layout",
+   "title": "Calle Cervantes, Dalí to the Picasso end: levels, steps and the walls, beds and planters along the lane",
+   "photos": [
+    "IMG_2286.jpg",
+    "IMG_2448.jpg",
+    "IMG_2449.jpg",
+    "IMG_2274.jpg",
+    "IMG_2468.jpg",
+    "IMG_2795.jpg",
+    "IMG_2450.jpg",
+    "IMG_2794.jpg",
+    "IMG_2796.jpg",
+    "IMG_2453.jpg",
+    "IMG_2443.jpg",
+    "IMG_2442.jpg",
+    "IMG_2444.jpg"
+   ],
+   "build": "Dave, 2026-11-16: start with the Cervantes/Elena junction and Cervantes from end to end; get the levels right (where the steps and ramps are) and fill the areas around the path with patio walls, small border walls and planters. Levels: check every change against the laser survey and data/levels_survey.json (the Elena steps and ramp, and the two steps just west of the Calle Alberto crossing). Structure: along the lane, build the photographed lane-side garden walls, the kerbed beds at the house fronts and the raised hedge planters where the model leaves open paving, in Layout, with planting only under Show details.",
+   "avoid": "Do not move the reviewed junction flight, garden door or lawns on the survey alone; do not invent walls or doors the photos do not show; keep the lane's walking line clear; leave Walk alone.",
+   "accept": [
+    "Visible in Inspect in Layout and with Show details",
+    "scripts/check_terrain.py, check_levels.py, check_lane_walls.py and check_cervantes_lane_edges.py pass",
+    "Second-agent review of the Inspect renders against the full-size photos, the survey profile and the aerial"
+   ],
+   "features": [
+    "steps:cervantes-alberto-steps",
+    "steps:cervantes-elena-steps",
+    "ramp:cervantes-elena-ramp",
+    "lane_walls.json:cervantes-north-garden-wall-west",
+    "lane_walls.json:cervantes-south-garden-wall-alberto",
+    "cervantes_lane_edges.json:cervantes-north-bed-west",
+    "cervantes_lane_edges.json:cervantes-north-bed-house-1",
+    "cervantes_lane_edges.json:cervantes-north-bed-house-2",
+    "cervantes_lane_edges.json:cervantes-north-bed-house-3",
+    "cervantes_lane_edges.json:cervantes-alberto-corner-planter",
+    "cervantes_lane_edges.json:cervantes-east-north-planter",
+    "cervantes_lane_edges.json:cervantes-east-north-brick-planter",
+    "cervantes_lane_edges.json:cervantes-east-north-thuja-planter",
+    "cervantes_lane_edges.json:cervantes-east-south-planter"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude"
   }
  ]
 }

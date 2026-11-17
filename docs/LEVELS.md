@@ -20,7 +20,7 @@ photos**.
   steps lead up to front doors. What is raised is the ground in front of some houses:
   walled patios and terraces, reached by one to six steps.
 - **The west side is higher.** The rise shows at the Cervantes ramp and
-  steps at Elena, and all along the west side of the middle pool courtyard: three
+  steps at Elena (0.6 m) and the two steps at Calle Alberto (0.27 m), and all along the west side of the middle pool courtyard: three
   stone steps and a ramp up to Calle Eva at the south-west corner (IMG_2333), and
   a short rise with white steps at the planter's north end (IMG_2332, IMG_2331).
   The raised planter holds back the upper ground. Photos read about 0.5 m; the laser
@@ -59,16 +59,24 @@ photos**.
 ## Checked against the laser survey
 
 `scripts/lidar_check.py report` measures each item's rise between its `compare` points on the
-survey's 1 m ground model (docs/reviews/lidar-levels/measurements.json, `levelsSurvey`). Four of
-the seven with comparison points fall inside their photo range and the Dalí apron is 0.11 m over.
-The ground itself now comes from the survey (task `terrain-from-lidar`), so the model matches
-the survey wherever the photos do. Where they disagree the photo-read rise is built and the item
-stays open:
-- **Cervantes ramp and steps at Elena:** photos 0.4-0.5 m (three risers counted), survey 0.21-0.22 m.
-  Built at 0.5 m. Check whether the `compare` points straddle the whole rise, or whether the
-  ground above the steps is lower than the photos suggest; a 1 m grid softens steps and short ramps.
+survey's 1 m ground model (docs/reviews/lidar-levels/measurements.json, `levelsSurvey`). The
+ground itself comes from the survey (task `terrain-from-lidar`), so the model matches the survey
+wherever the photos do.
+- **Cervantes ramp and steps at Elena (settled 16 November 2026):** the old comparison points were
+  3 m apart and did not span the drop, so they read 0.21 m. Sampled every 0.5 m along the lane, the
+  survey is level at +0.53 m below the flight and +1.13-1.17 m above it: 0.6 m. The three riser faces
+  measured against the 0.4 m tread tiles in full-size IMG_2286 are about 0.2 m each, which agrees;
+  the 0.4-0.5 m first read by eye was low. Built at 0.6 m. Still open: the survey's drop is centred
+  about 2 m west of the photo-placed flight (discrepancy `cervantes-elena-steps-position`).
+- **Cervantes at Calle Alberto (new, 16 November 2026):** two steps beside a ramp just west of the
+  crossing (IMG_2448, IMG_2449), where the survey drops 0.27 m from +0.54 to +0.27 m. Built
+  (`data/cervantes_alberto_steps.json`).
 - **Elena south** reads level in the photos; the survey has it falling about 0.35 m over 15 m to
   the middle pool gate, too gentle to see. The survey is built.
+
+Along Cervantes as a whole the survey reads: +1.15-1.2 m from the Dalí exit to Elena, the 0.6 m
+Elena drop, level at +0.53-0.57 m to Alberto, the 0.27 m Alberto drop, then level at +0.2-0.25 m
+to the Picasso end. There are no other steps on the lane.
 
 ## Using it when building
 

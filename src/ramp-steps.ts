@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import cervantes from "../data/cervantes_elena_steps.json";
+import alberto from "../data/cervantes_alberto_steps.json";
 import middlePool from "../data/middle_pool_steps.json";
 import middlePoolNorth from "../data/middle_pool_north.json";
 import { roadHeight } from "./boundaries";
@@ -9,8 +10,8 @@ import type { BoundaryReference, Vec2 } from "./types";
 
 type FlightData = typeof cervantes;
 
-/** Photographed steps beside a lane ramp: data/cervantes_elena_steps.json, data/middle_pool_steps.json. */
-export const flights = [cervantes, middlePool, middlePoolNorth.steps].map((steps: FlightData) => {
+/** Photographed steps beside a lane ramp: data/cervantes_elena_steps.json, data/cervantes_alberto_steps.json, data/middle_pool_steps.json. */
+export const flights = [cervantes, alberto, middlePool, middlePoolNorth.steps].map((steps: FlightData) => {
   const foot = steps.foot as Vec2, toward = steps.toward as Vec2;
   const length = Math.hypot(toward[0] - foot[0], toward[1] - foot[1]);
   const up: Vec2 = [(toward[0] - foot[0]) / length, (toward[1] - foot[1]) / length];

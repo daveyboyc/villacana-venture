@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "e99da2229044ac80453afd23b63c4bcce5580cb3ceb4461a307efe9bf9157d56",
+ "inputDigest": "3972b1e6ae1390ba105fb3dd393525d207bc6cccf0756e5dc805fb457a766b2c",
  "summary": {
   "unplaced": 3,
   "suggested": 267,
   "needs-review": 231,
   "photos": 501,
-  "features": 478,
-  "photosCitedByModel": 197,
-  "modelFeaturesWithPhotoCitations": 222
+  "features": 490,
+  "photosCitedByModel": 210,
+  "modelFeaturesWithPhotoCitations": 234
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -3088,7 +3088,9 @@
     "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
-    "cervantes_patio_walls.json:cervantes-patio-south-3"
+    "cervantes_patio_walls.json:cervantes-patio-south-3",
+    "lane_walls.json:cervantes-north-garden-wall-west",
+    "cervantes_lane_edges.json:cervantes-north-bed-west"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -3466,7 +3468,9 @@
     "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
-    "cervantes_patio_walls.json:cervantes-patio-south-3"
+    "cervantes_patio_walls.json:cervantes-patio-south-3",
+    "lane_walls.json:cervantes-north-garden-wall-west",
+    "cervantes_lane_edges.json:cervantes-north-bed-west"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -3505,7 +3509,8 @@
     "dali_cervantes_threshold.json:dali-lawn-strip-2",
     "dali_cervantes_threshold.json:dali-house-footpath-1",
     "dali_cervantes_threshold.json:dali-house-footpath-2",
-    "dali_cervantes_threshold.json:cervantes-parking-crossing"
+    "dali_cervantes_threshold.json:cervantes-parking-crossing",
+    "lane_walls.json:cervantes-north-garden-wall-west"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -6208,7 +6213,11 @@
      "angleOffset": 6.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_lane_edges.json:cervantes-east-north-planter",
+    "cervantes_lane_edges.json:cervantes-east-north-brick-planter",
+    "cervantes_lane_edges.json:cervantes-east-south-planter"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -88.5,
@@ -6250,7 +6259,12 @@
      "angleOffset": 29.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_lane_edges.json:cervantes-east-north-planter",
+    "cervantes_lane_edges.json:cervantes-east-north-brick-planter",
+    "cervantes_lane_edges.json:cervantes-east-north-thuja-planter",
+    "cervantes_lane_edges.json:cervantes-east-south-planter"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -89.8,
@@ -6282,7 +6296,9 @@
      "angleOffset": 29.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_lane_edges.json:cervantes-east-north-thuja-planter"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -90.0,
@@ -6446,7 +6462,11 @@
      "angleOffset": 5.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:cervantes-south-garden-wall-alberto",
+    "cervantes_lane_edges.json:cervantes-alberto-corner-planter",
+    "steps:cervantes-alberto-steps"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -111.2,
@@ -6489,7 +6509,11 @@
      "angleOffset": 33.9
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:cervantes-south-garden-wall-alberto",
+    "cervantes_lane_edges.json:cervantes-north-bed-house-3",
+    "steps:cervantes-alberto-steps"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -112.7,
@@ -6526,7 +6550,10 @@
      "angleOffset": 24.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:cervantes-south-garden-wall-alberto",
+    "cervantes_lane_edges.json:cervantes-north-bed-house-2"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -121.9,
@@ -6652,7 +6679,9 @@
      "angleOffset": 28.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_lane_edges.json:cervantes-north-bed-house-1"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -129.8,
@@ -7310,7 +7339,9 @@
      "angleOffset": 30.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_lane_edges.json:cervantes-north-bed-west"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -154.2,
@@ -7342,7 +7373,10 @@
      "angleOffset": 19.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:cervantes-north-garden-wall-west",
+    "cervantes_lane_edges.json:cervantes-north-bed-west"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -167.1,
@@ -18600,7 +18634,11 @@
      "angleOffset": 20.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:cervantes-south-garden-wall-alberto",
+    "cervantes_lane_edges.json:cervantes-north-bed-house-2",
+    "cervantes_lane_edges.json:cervantes-north-bed-house-3"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -116.6,
@@ -18642,7 +18680,9 @@
      "angleOffset": 8.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:cervantes-south-garden-wall-alberto"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -129.8,
@@ -18679,7 +18719,9 @@
      "angleOffset": 10.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_lane_edges.json:cervantes-north-bed-house-1"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -131.8,
@@ -18721,7 +18763,9 @@
      "angleOffset": 32.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_lane_edges.json:cervantes-north-bed-house-1"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -134.3,

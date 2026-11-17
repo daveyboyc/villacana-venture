@@ -1,0 +1,490 @@
+{
+ "id": "cervantes-lane-edges",
+ "name": "Calle Cervantes · beds and hedge planters along the lane",
+ "checkedAt": "2026-11-16",
+ "about": "Raised hedge planters and kerbed beds along Calle Miguel de Cervantes where the model left open paving between the lane and the houses (Dave, 16 November 2026: fill the areas around the path with patio walls, small border walls and planters). Each is a rectangle in the lane's own frame: s metres along the straight lane axis from the Dalí end, o metres off it (negative north, positive south); 'ring' is the same rectangle in model metres. The white kerb walls and soil are structure (Layout, solid, on the map); the planting is Show details only and keeps the route-clearance guard. Positions come from the ground photos, the registry house fronts and the lane tiles, good to about 1 m along the lane and 0.2 m across; heights by eye. The garden walls behind them are in data/lane_walls.json. Not a property survey and not placement approval.",
+ "axis": {
+  "origin": [
+   -194.62,
+   82.22
+  ],
+  "along": [
+   0.859,
+   -0.512
+  ],
+  "right": [
+   0.512,
+   0.859
+  ]
+ },
+ "planters": [
+  {
+   "id": "cervantes-north-bed-west",
+   "name": "Cervantes west · raised bed between the lane kerb and the north garden wall",
+   "kind": "raised",
+   "s": [
+    13.5,
+    46.7
+   ],
+   "o": [
+    -1.0,
+    -1.89
+   ],
+   "height": 0.6,
+   "wall": 0.08,
+   "ring": [
+    [
+     -183.54,
+     74.45
+    ],
+    [
+     -155.02,
+     57.45
+    ],
+    [
+     -155.47,
+     56.69
+    ],
+    [
+     -183.99,
+     73.68
+    ]
+   ],
+   "planting": {
+    "kind": "shrubs",
+    "height": 1.7,
+    "runs": [
+     {
+      "s": [
+       13.5,
+       30.0
+      ],
+      "look": "dracaena"
+     },
+     {
+      "s": [
+       30.0,
+       46.7
+      ],
+      "look": "oleander"
+     }
+    ]
+   },
+   "evidence": [
+    "IMG_2274.jpg",
+    "IMG_2468.jpg",
+    "IMG_2264.jpg",
+    "IMG_2467.jpg"
+   ],
+   "basis": "From the Dalí exit to the Elena steps the north side of the lane is a planted bed in front of a white garden wall: dracaena, jade and shrubs under bougainvillea near the Dalí end (IMG_2274, IMG_2468), a tall oleander hedge nearer Elena (IMG_2264, IMG_2467). Its lane edge is the existing 0.65 m kerb wall (data/cervantes_patio_walls.json, cervantes-patio-north-1); the bed fills the 0.9 m to the new garden wall, soil just under the kerb top. Width from the kerb wall to the wall line the three north patio partitions end on; the planting is Show details only."
+  },
+  {
+   "id": "cervantes-north-bed-house-1",
+   "name": "Cervantes east of Elena · lantana bed at the house front",
+   "kind": "bed",
+   "s": [
+    71.4,
+    76.4
+   ],
+   "o": [
+    -0.95,
+    -1.37
+   ],
+   "height": 0.12,
+   "wall": 0.07,
+   "ring": [
+    [
+     -133.77,
+     44.85
+    ],
+    [
+     -129.48,
+     42.29
+    ],
+    [
+     -129.69,
+     41.93
+    ],
+    [
+     -133.99,
+     44.49
+    ]
+   ],
+   "planting": {
+    "kind": "shrubs",
+    "height": 1.2,
+    "runs": [
+     {
+      "s": [
+       71.4,
+       76.4
+      ],
+      "look": "lantana"
+     }
+    ]
+   },
+   "evidence": [
+    "IMG_2453.jpg",
+    "IMG_2796.jpg",
+    "IMG_2797.jpg"
+   ],
+   "basis": "IMG_2453, IMG_2796 and IMG_2797 look west along the lane past a house front with a barred window: a narrow bed of lantana (yellow and orange) and photinia runs along its foot, edged by a low kerb at the lane. Bed from the lane edge to the registry house front (6265401UF1366N_part3), which stands about 1.4 m off the lane centreline here; it stops where the house front steps out to the arched porch."
+  },
+  {
+   "id": "cervantes-north-bed-house-2",
+   "name": "Cervantes west of the porch · bed at the house front",
+   "kind": "bed",
+   "s": [
+    79.8,
+    84.8
+   ],
+   "o": [
+    -0.95,
+    -1.42
+   ],
+   "height": 0.12,
+   "wall": 0.07,
+   "ring": [
+    [
+     -126.56,
+     40.55
+    ],
+    [
+     -122.26,
+     37.99
+    ],
+    [
+     -122.5,
+     37.58
+    ],
+    [
+     -126.8,
+     40.14
+    ]
+   ],
+   "planting": {
+    "kind": "shrubs",
+    "height": 1.0,
+    "runs": [
+     {
+      "s": [
+       79.8,
+       84.8
+      ],
+      "look": "lantana"
+     }
+    ]
+   },
+   "evidence": [
+    "IMG_2450.jpg",
+    "IMG_2794.jpg"
+   ],
+   "basis": "West of the arched porch (IMG_2450) the north house fronts, with grilles, lanterns and bougainvillea, have a narrow planted strip at their foot (IMG_2794). Bed from the lane edge to the registry house front (6265401UF1366N_part4)."
+  },
+  {
+   "id": "cervantes-north-bed-house-3",
+   "name": "Cervantes before Alberto · bed at the house front",
+   "kind": "bed",
+   "s": [
+    84.95,
+    89.0
+   ],
+   "o": [
+    -0.95,
+    -1.96
+   ],
+   "height": 0.12,
+   "wall": 0.07,
+   "ring": [
+    [
+     -122.13,
+     37.91
+    ],
+    [
+     -118.66,
+     35.84
+    ],
+    [
+     -119.17,
+     34.97
+    ],
+    [
+     -122.65,
+     37.04
+    ]
+   ],
+   "planting": {
+    "kind": "shrubs",
+    "height": 1.0,
+    "runs": [
+     {
+      "s": [
+       84.95,
+       89.0
+      ],
+      "look": "lantana"
+     }
+    ]
+   },
+   "evidence": [
+    "IMG_2794.jpg",
+    "IMG_2449.jpg"
+   ],
+   "basis": "The same planted strip continues where the house front steps back to about 2 m off the centreline, up to the corner before Calle Alberto (IMG_2794, IMG_2449 looking back west)."
+  },
+  {
+   "id": "cervantes-alberto-corner-planter",
+   "name": "Cervantes at Alberto · raised hedge planter on the north corner",
+   "kind": "raised",
+   "s": [
+    91.0,
+    94.5
+   ],
+   "o": [
+    -0.95,
+    -1.9
+   ],
+   "height": 0.5,
+   "wall": 0.1,
+   "ring": [
+    [
+     -116.94,
+     34.81
+    ],
+    [
+     -113.93,
+     33.02
+    ],
+    [
+     -114.42,
+     32.2
+    ],
+    [
+     -117.42,
+     34.0
+    ]
+   ],
+   "planting": {
+    "kind": "hedge",
+    "height": 1.45,
+    "runs": [
+     {
+      "s": [
+       91.0,
+       94.5
+      ],
+      "look": "box"
+     }
+    ]
+   },
+   "evidence": [
+    "IMG_2448.jpg"
+   ],
+   "basis": "IMG_2448, from the Alberto crossing looking west: on the right a white raised planter with a tall clipped hedge stands at the corner beside the two steps. Length and depth estimated from the tiles (about 1 m); it stops at the crossing."
+  },
+  {
+   "id": "cervantes-east-north-planter",
+   "name": "Cervantes east · raised hedge planter on the north side",
+   "kind": "raised",
+   "s": [
+    110.8,
+    118.4
+   ],
+   "o": [
+    -0.95,
+    -1.8
+   ],
+   "height": 0.5,
+   "wall": 0.1,
+   "ring": [
+    [
+     -99.93,
+     24.67
+    ],
+    [
+     -93.4,
+     20.78
+    ],
+    [
+     -93.84,
+     20.05
+    ],
+    [
+     -100.36,
+     23.94
+    ]
+   ],
+   "planting": {
+    "kind": "hedge",
+    "height": 1.3,
+    "runs": [
+     {
+      "s": [
+       110.8,
+       118.4
+      ],
+      "look": "box"
+     }
+    ]
+   },
+   "evidence": [
+    "IMG_2443.jpg",
+    "IMG_2442.jpg"
+   ],
+   "basis": "IMG_2443 and IMG_2442 look west from near the Picasso end: beyond the white seat pillar and the brick-edged steps, the north side of the lane is a white raised planter with a dense clipped hedge. West end where the lawn of IMG_2446 begins; estimated to about 1.5 m."
+  },
+  {
+   "id": "cervantes-east-north-brick-planter",
+   "name": "Cervantes east · low brick-coped planter wall by the seat pillar",
+   "kind": "raised",
+   "s": [
+    120.2,
+    123.0
+   ],
+   "o": [
+    -0.95,
+    -1.4
+   ],
+   "height": 0.45,
+   "wall": 0.12,
+   "ring": [
+    [
+     -91.85,
+     19.86
+    ],
+    [
+     -89.45,
+     18.43
+    ],
+    [
+     -89.68,
+     18.04
+    ],
+    [
+     -92.09,
+     19.47
+    ]
+   ],
+   "planting": {
+    "kind": "hedge",
+    "height": 1.15,
+    "runs": [
+     {
+      "s": [
+       120.2,
+       123.0
+      ],
+      "look": "box"
+     }
+    ]
+   },
+   "evidence": [
+    "IMG_2442.jpg",
+    "IMG_2443.jpg"
+   ],
+   "basis": "In the foreground of IMG_2442 and IMG_2443 a low white wall with a brick coping runs along the north edge of the lane from the white seat pillar and the brick-edged steps (not built: they stand in the gap left at 118.4-120.2 m) towards the Picasso end, with a clipped hedge behind it."
+  },
+  {
+   "id": "cervantes-east-north-thuja-planter",
+   "name": "Cervantes east end · white planter wall with a thuja hedge",
+   "kind": "raised",
+   "s": [
+    123.0,
+    135.0
+   ],
+   "o": [
+    -0.95,
+    -1.75
+   ],
+   "height": 0.6,
+   "wall": 0.12,
+   "ring": [
+    [
+     -89.45,
+     18.43
+    ],
+    [
+     -79.14,
+     12.28
+    ],
+    [
+     -79.55,
+     11.6
+    ],
+    [
+     -89.86,
+     17.74
+    ]
+   ],
+   "planting": {
+    "kind": "hedge",
+    "height": 1.75,
+    "runs": [
+     {
+      "s": [
+       123.0,
+       135.0
+      ],
+      "look": "thuja"
+     }
+    ]
+   },
+   "evidence": [
+    "IMG_2444.jpg",
+    "IMG_2443.jpg"
+   ],
+   "basis": "IMG_2444 looks east along the last stretch to the car park: the house wall stands on the lane on the right (south), and on the left a white planter wall about 0.6 m high carries a tall clipped thuja hedge to the end of the lane, where the lawn and the car park open out."
+  },
+  {
+   "id": "cervantes-east-south-planter",
+   "name": "Cervantes east · raised hedge planter on the south side",
+   "kind": "raised",
+   "s": [
+    110.6,
+    123.4
+   ],
+   "o": [
+    0.95,
+    1.8
+   ],
+   "height": 0.45,
+   "wall": 0.1,
+   "ring": [
+    [
+     -99.13,
+     26.41
+    ],
+    [
+     -88.13,
+     19.86
+    ],
+    [
+     -87.7,
+     20.59
+    ],
+    [
+     -98.69,
+     27.14
+    ]
+   ],
+   "planting": {
+    "kind": "hedge",
+    "height": 1.2,
+    "runs": [
+     {
+      "s": [
+       110.6,
+       123.4
+      ],
+      "look": "box"
+     }
+    ]
+   },
+   "evidence": [
+    "IMG_2443.jpg",
+    "IMG_2442.jpg"
+   ],
+   "basis": "IMG_2443 and IMG_2442: the south side of the lane between the tiled-roof house and the end house is a low white planter wall with a clipped hedge, the lawn behind it. It stops where the end house wall comes to the lane (6365201UF1366N_part2)."
+  }
+ ]
+}

@@ -27,14 +27,14 @@
    "run": 3.0,
    "halfWidth": 3.0,
    "behind": 3.0,
-   "base": 0.54,
-   "rise": 0.5,
+   "base": 0.53,
+   "rise": 0.6,
    "photoRise": [
-    0.4,
-    0.5
+    0.55,
+    0.65
    ],
-   "surveyRise": 0.21,
-   "from": "photos (the survey reads less; open in data/levels_survey.json)"
+   "surveyRise": 0.6,
+   "from": "survey"
   },
   {
    "id": "middle-pool-sw-steps",
@@ -80,6 +80,29 @@
     0.55
    ],
    "surveyRise": 0.52,
+   "from": "survey"
+  },
+  {
+   "id": "cervantes-alberto-steps",
+   "foot": [
+    -114.22,
+    34.3
+   ],
+   "toward": [
+    -116.28,
+    35.53
+   ],
+   "start": 0.0,
+   "run": 2.4,
+   "halfWidth": 3.0,
+   "behind": 3.0,
+   "base": 0.27,
+   "rise": 0.27,
+   "photoRise": [
+    0.22,
+    0.32
+   ],
+   "surveyRise": 0.27,
    "from": "survey"
   }
  ],

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Garden and patio walls along Calle Elena and Calle Jorge (data/lane_walls.json).
+"""Garden and patio walls along Calle Elena, Calle Jorge and Calle Cervantes (data/lane_walls.json).
 
   python3 scripts/check_lane_walls.py
 
@@ -54,7 +54,7 @@ ids = set()
 for w in data['walls']:
     wid = w['id']
     assert wid not in ids, f'{wid}: duplicate id'; ids.add(wid)
-    assert w['area'] in ('elena', 'seaward-lanes'), f'{wid}: area'
+    assert w['area'] in ('elena', 'seaward-lanes', 'cervantes'), f'{wid}: area'
     assert len(w['points']) >= 2 and all(len(p) == 2 for p in w['points']), f'{wid}: polyline'
     assert all(math.hypot(b[0] - a[0], b[1] - a[1]) > 0.2 for a, b in segments(w['points'])), f'{wid}: degenerate segment'
     assert 0.5 <= w['height'] <= 3.5 and 0.15 <= w['thickness'] <= 0.5 and w['raise'] >= 0, f'{wid}: size'
@@ -69,9 +69,12 @@ for w in data['walls']:
         assert near <= 0.25, f"{d['id']}: {near:.2f} m off its wall"
         assert d['height'] < w['height'] and 0.7 <= d['width'] <= 1.6, f"{d['id']}: size"
     # Keep clear of the walking lines of the lane it lines and of the pools.
-    for sid in ('elena-north', 'elena-south', 'jorge'):
+    for sid in ('elena-north', 'elena-south', 'jorge', 'alberto'):
         gap = line_gap(w['points'], streets[sid]['points'])
         assert gap >= 1.0, f'{wid}: {gap:.2f} m from the {sid} centreline'
+    # Calle Cervantes is a narrow lane between its walls: keep a wall's face outside its 1.2 m paving and its kerb walls.
+    gap = line_gap(w['points'], streets['cervantes']['points'])
+    assert w['area'] != 'cervantes' or gap - w['thickness'] / 2 >= 1.0, f'{wid}: face {gap - w["thickness"] / 2:.2f} m from the Cervantes centreline'
     for pool in skeleton['pools']:
         ring = pool['ring'] + [pool['ring'][0]]
         assert not any(crosses(a, b, c, e) for a, b in segments(w['points']) for c, e in segments(ring)), f"{wid}: crosses pool {pool['id']}"
@@ -128,4 +131,18 @@ src = (ROOT / 'src/slice.ts').read_text()
 assert 'addLaneWalls(scene)' in src and 'laneWallRings()' in src, 'slice.ts: lane walls not drawn or not solid'
 assert 'laneWalls' in (ROOT / 'src/blueprint.ts').read_text(), 'blueprint.ts: lane walls not on the map'
 assert 'lane_walls.json' in (ROOT / 'scripts/assign_photo_map.py').read_text(), 'lane walls not in the feature inventory'
+# Cervantes: the north wall stands where the photographed patio partitions end and meets the garden door's wall;
+# the south wall carries on the line of the wall east of Elena to the Alberto crossing.
+north = walls['cervantes-north-garden-wall-west']
+for part in load('data/cervantes_north_patios.json')['walls']:
+    if part['id'] == 'cervantes-north-partition-east':
+        continue  # it ends on the garden door's wall, east of this one
+    end = min(part['points'], key=lambda p: seg_dist(p, *north['points']))
+    assert seg_dist(end, *north['points']) <= north['thickness'] / 2 + 0.1, f"{part['id']}: does not end on the Cervantes north wall"
+door = load('data/cervantes_garden_door.json')
+west_jamb = [door['origin'][i] + door['along'][i] * door['wallWidth'] / 2 for i in range(2)]  # its 'along' points west
+assert math.dist(north['points'][1], west_jamb) < 0.15, 'Cervantes north wall does not meet the garden door wall'
+south = walls['cervantes-south-garden-wall-alberto']
+east_south = load('data/cervantes_east_south_patios.json')['walls'][0]['points']
+assert math.dist(south['points'][0], east_south[1]) < 0.05 and seg_dist(south['points'][1], *east_south) > 10, 'Cervantes south wall does not continue the wall east of Elena'
 print(f"Lane walls: {len(data['walls'])} walls, {sum(len(w['doors']) for w in data['walls'])} doors on the built sills, clear of lanes, pools and lawns; Jorge garden ends at its wall PASS")
