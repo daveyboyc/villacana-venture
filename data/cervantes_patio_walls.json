@@ -102,15 +102,46 @@
     },
     {
       "id": "cervantes-patio-south-2",
-      "name": "Cervantes · south patio wall 2",
+      "name": "Cervantes · low kerb along the near Elena lawn",
+      "points": [
+        [
+          -157.968,
+          61.397
+        ],
+        [
+          -153.84,
+          58.937
+        ]
+      ],
+      "height": 0.15,
+      "thickness": 0.2,
+      "solid": true,
+      "side": "south",
+      "streetId": "cervantes",
+      "evidence": [
+        "IMG_2262.jpg",
+        "IMG_2263.jpg",
+        "IMG_2264.jpg",
+        "IMG_2265.jpg",
+        "IMG_2273.jpg",
+        "IMG_2274.jpg",
+        "IMG_2275.jpg",
+        "IMG_2286.jpg",
+        "IMG_2328.jpg"
+      ],
+      "trust": "Low white rounded kerb between the Cervantes ramp and the near Elena lawn, from the lawns' west wall (CALLE ELENA sign) to the lawn's north-east corner at the foot drain, where it turns into the lane kerb along Elena south: IMG_2262, IMG_2286 and IMG_2328 show it a little higher than the ramp beside it with the lawn level with its top. 17 November 2026: lowered from the 0.65 m wall first drawn here to 0.15 m and carried east to 0.15 m short of the lawn corner, where the lawn's own kerb along Elena south takes over (Dave). Height read by eye against the 0.4 m ramp tiles; line unchanged."
+    },
+    {
+      "id": "cervantes-patio-south-2-west",
+      "name": "Cervantes · south patio wall 2, west of the Elena lawn wall",
       "points": [
         [
           -165.6815,
           65.995
         ],
         [
-          -154.3836,
-          59.2604
+          -157.968,
+          61.397
         ]
       ],
       "height": 0.65,
@@ -126,7 +157,7 @@
         "IMG_2274.jpg",
         "IMG_2275.jpg"
       ],
-      "trust": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges."
+      "trust": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges. 17 November 2026: split at the north end of the Elena lawns' west wall; this western part, in front of the houses, is unchanged and still open (cervantes-kerb-walls-height)."
     },
     {
       "id": "cervantes-patio-south-3",
@@ -272,8 +303,8 @@
           57.15232613098909
         ],
         [
-          -154.73299815711044,
-          58.467673869010916
+          -154.0561,
+          58.0488
         ]
       ],
       "evidence": [

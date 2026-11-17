@@ -27,7 +27,10 @@ export function addCervantesPatioWalls(scene:THREE.Scene,reference:BoundaryRefer
     const quad=(p:number[],q:number[],r:number[],s:number[])=>{for(const v of [p,q,r,p,r,s]){positions.push(...v);uvs.push(v[0]+v[2],v[1]);}};
     for(let j=0;j<cuts;j++) {
       const t=j/cuts,u=(j+1)/cuts,ax=a[0]+(b[0]-a[0])*t,az=a[1]+(b[1]-a[1])*t,bx=a[0]+(b[0]-a[0])*u,bz=a[1]+(b[1]-a[1])*u;
-      const topA=roadHeight(road,ax,az).height+wall.height,topB=roadHeight(road,bx,bz).height+wall.height;
+      // Heights are above the lane surface, which referenceGroundHeight lays 0.06 m over the ground at the
+      // stored 0.27 road height; adding the raw 0.27 drew every wall 0.21 m too tall (17 Nov 2026).
+      const lane=(x:number,z:number)=>roadHeight(road,x,z).height-0.27+0.06;
+      const topA=lane(ax,az)+wall.height,topB=lane(bx,bz)+wall.height;
       const bottomA=Math.min(0,topA-wall.height),bottomB=Math.min(0,topB-wall.height);
       quad([ax+nx,bottomA,az+nz],[bx+nx,bottomB,bz+nz],[bx+nx,topB,bz+nz],[ax+nx,topA,az+nz]);
       quad([bx-nx,bottomB,bz-nz],[ax-nx,bottomA,az-nz],[ax-nx,topA,az-nz],[bx-nx,topB,bz-nz]);

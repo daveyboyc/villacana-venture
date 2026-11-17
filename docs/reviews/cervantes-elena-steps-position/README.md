@@ -37,3 +37,22 @@ cameras 0.6-0.75 m for the door (door 1.0 m accepted at about ±0.4 m); LiDAR 20
 the door looks 1.3-1.6 times too wide from the roof; the grid cell at (-152, 54) went from 0.59 to 0.87 m once the
 moved patio no longer holds it. That cell is in Elena 24's patio east of the door (raised about 0.45 m above the
 0.53 m lane), not on the lane.
+
+## The kerb between the ramp and the lawn (follow-up, same day)
+
+Dave asked for the white wall between the ramp and the near lawn to be lowered to the kerb the photos show.
+`cervantes-patio-south-2` is split at the north end of the lawns' west wall: the stretch along the lawn is now a
+0.15 m kerb carried east to 0.15 m short of the lawn corner at the drain, where the lawn's own lane kerb takes over;
+the stretch west of the wall, in front of the houses (`cervantes-patio-south-2-west`), is unchanged at 0.65 m and
+stays open. The junction opening in `cervantes_patio_walls.json` had its corner on the lane edge from before the
+lawns were measured (0.66 m inside the lawn); it now sits 0.12 m lane-side of the measured kerb.
+
+`src/cervantes-walls.ts` stood every Cervantes patio wall on the stored 0.27 m road height instead of the lane
+surface (0.06 m over the ground), so each drew 0.21 m taller than recorded; the north-side kerb lowered to 0.15 m
+earlier still showed 0.36 m. Fixed: measured in the model export, the new kerb stands 0.15 m above the lane and the
+0.65 m walls 0.65 m. `check_cervantes_patio_walls.py` now allows low kerbs (0.1-0.25 m) as well as walls; it had
+failed on `main` since the north-side kerb was lowered.
+
+`kerb-before-after.jpg`: IMG_2286 and IMG_2328 beside renders from the same rough poses. Still different: the lawn
+behind the kerb is about 0.25 m below the lane in the model, where the photos show it level with the kerb top
+(levels stage, not changed here).
