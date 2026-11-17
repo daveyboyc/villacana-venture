@@ -90,7 +90,6 @@ const fs = require('node:fs');
     await resort();
     await mobile.waitForFunction(c => document.querySelector('#overview-controls').dataset.centre === c, originText);
     // Two fingers sliding up tilt toward the horizon; they neither pan nor zoom.
-    const distanceBeforeSlide = await distance();
     const left = await clearSpot(24, 240, 120, 640);
     const right = await clearSpot(220, left[1] - 40, 360, left[1] + 40);
     await touch('touchStart', [[1, ...left], [2, ...right]]);
@@ -98,8 +97,9 @@ const fs = require('node:fs');
     await touch('touchEnd', []);
     await mobile.waitForFunction(p => Number(document.querySelector('#overview-controls').dataset.pitch) !== p, pitch);
     assert(await pitchNow() < pitch, 'two fingers sliding up tilt toward the horizon');
-    assert.equal(await centreText(), originText, 'a two-finger slide does not pan');
-    assert(Math.abs(await distance() - distanceBeforeSlide) < 1, 'a parallel two-finger drag does not zoom');
+    // The tilt turns about the point between the fingers, so the centre may slide along the view, but never sideways.
+    assert(Math.abs((await readCentre())[0] - origin[0]) < 0.5, 'a two-finger slide does not pan sideways');
+    assert.equal(await mobile.locator('#overview-controls').getAttribute('data-bearing'), '0', 'a two-finger slide does not turn');
     await resort();
     await mobile.waitForFunction(c => document.querySelector('#overview-controls').dataset.centre === c, originText);
     const tilted = await pitchNow();

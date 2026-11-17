@@ -41,63 +41,75 @@ const fs = require('node:fs');
     assert.equal(await canvas.getAttribute('data-player'), beforePlayer);
     assert.notEqual(await controls.getAttribute('data-centre'), west);
     console.log('Named camera jumps without iframe reload or character movement PASS');
-    // Drag tilts and turns. Pan is still there, and neither moves the shelved walker.
-    const pitch = Number(await controls.getAttribute('data-pitch'));
-    await page.mouse.move(900,750); await page.mouse.down(); await page.mouse.move(980,680,{steps:5}); await page.mouse.up();
-    await page.waitForFunction(before => Number(document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.pitch) < before, pitch);
-    assert.notEqual(await controls.getAttribute('data-bearing'), '0');
-    assert.equal(await canvas.getAttribute('data-player'), beforePlayer);
-    await scene.locator('#overview-pan').click();
-    const beforePan = await controls.getAttribute('data-centre');
-    await page.mouse.move(900, 750); await page.mouse.down(); await page.mouse.move(1020, 700, {steps:5}); await page.mouse.up();
-    await page.waitForFunction(before => document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.centre !== before, beforePan);
-    assert.equal(await canvas.getAttribute('data-player'), beforePlayer);
-    console.log('Mouse orbit/pan PASS');
-    // Pan is still selected, so a left-drag gives the grab direction. Orbit is then
-    // selected and the trackpad has to pan, pinch and zoom without that button.
+    // Google Maps arrangement. A plain drag grabs the ground and pans; it never moves the shelved walker.
     const centreOf = async () => (await controls.getAttribute('data-centre')).split(',').map(Number);
+    const moved = (before, metres = 1) => page.waitForFunction(({before, metres}) => {
+      const [x, z] = document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.centre.split(',').map(Number);
+      return Math.hypot(x - before[0], z - before[1]) > metres;
+    }, {before, metres});
+    assert.equal(await scene.locator('#overview-pan').getAttribute('aria-pressed'), 'true', 'a drag pans by default');
+    assert.equal(await controls.getAttribute('data-bearing'), '0');
     const dragStart = await centreOf();
     await page.mouse.move(880, 620); await page.mouse.down(); await page.mouse.move(1040, 620, {steps:4}); await page.mouse.up();
-    await page.waitForFunction(before => {
-      const [x, z] = document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.centre.split(',').map(Number);
-      return Math.hypot(x - before[0], z - before[1]) > 1;
-    }, dragStart);
-    const dragEnd = await centreOf();
-    await scene.locator('#overview-rotate').click();
-    const scrollStart = await centreOf();
+    await moved(dragStart);
+    assert((await centreOf())[0] < dragStart[0], 'dragging right pulls the ground right, so the view moves west');
+    assert.equal(await controls.getAttribute('data-bearing'), '0', 'a plain drag pans without turning');
+    assert.equal(await canvas.getAttribute('data-player'), beforePlayer);
+    // The drag focused the scene, so the arrow keys move it: up is forward (north at bearing 0).
+    const keyStart = await centreOf();
+    await page.keyboard.down('ArrowUp'); await moved(keyStart, 2); await page.keyboard.up('ArrowUp');
+    assert((await centreOf())[1] < keyStart[1], 'the up arrow moves forward');
+    // With focus on the page around the scene the keys still reach it.
+    await page.evaluate(() => { document.activeElement?.blur?.(); window.focus(); });
+    const backStart = await centreOf();
+    await page.keyboard.down('ArrowDown'); await moved(backStart, 2); await page.keyboard.up('ArrowDown');
+    assert((await centreOf())[1] > backStart[1], 'the down arrow moves back, even from the page outside the scene');
+    console.log('Drag pan and arrow-key forward/back PASS');
+    // A scroll zooms towards the pointer, whether it is a mouse notch or a trackpad scroll.
+    const zoomStart = await centreOf(), distanceBeforeZoom = Number(await controls.getAttribute('data-distance'));
+    await scene.locator('#scene').evaluate(node => {
+      for (let i = 0; i < 4; i++) node.dispatchEvent(new WheelEvent('wheel', { bubbles: true, cancelable: true, deltaY: -100, deltaMode: 0, clientX: node.clientWidth * 0.85, clientY: node.clientHeight / 2 }));
+    });
+    await page.waitForFunction(before => Number(document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.distance) < before, distanceBeforeZoom);
+    await moved(zoomStart, 0.5);
+    assert((await centreOf())[0] > zoomStart[0], 'scrolling in on the right of the screen zooms towards the right');
     const distanceBeforeScroll = Number(await controls.getAttribute('data-distance'));
     await scene.locator('#scene').evaluate(node => {
-      for (let i = 0; i < 4; i++) node.dispatchEvent(new WheelEvent('wheel', { bubbles: true, cancelable: true, deltaX: 60, deltaY: 0, deltaMode: 0, clientX: 700, clientY: 500 }));
+      for (let i = 0; i < 6; i++) node.dispatchEvent(new WheelEvent('wheel', { bubbles: true, cancelable: true, deltaX: 3, deltaY: 24.5, deltaMode: 0, clientX: node.clientWidth / 2, clientY: node.clientHeight / 2 }));
     });
-    await page.waitForFunction(before => {
-      const [x, z] = document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.centre.split(',').map(Number);
-      return Math.hypot(x - before[0], z - before[1]) > 1;
-    }, scrollStart);
-    const scrollEnd = await centreOf();
-    const scrollDot = (dragEnd[0] - dragStart[0]) * (scrollEnd[0] - scrollStart[0]) + (dragEnd[1] - dragStart[1]) * (scrollEnd[1] - scrollStart[1]);
-    assert(scrollDot > 0, 'trackpad scroll pans the same way as a drag');
-    assert(Math.abs(Number(await controls.getAttribute('data-distance')) - distanceBeforeScroll) < 0.5, 'trackpad scroll does not zoom');
+    await page.waitForFunction(before => Number(document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.distance) > before, distanceBeforeScroll);
     const beforeTrackpadPinch = Number(await controls.getAttribute('data-distance'));
     await scene.locator('#scene').evaluate(node => {
-      for (let i = 0; i < 8; i++) node.dispatchEvent(new WheelEvent('wheel', { bubbles: true, cancelable: true, deltaY: -12, deltaMode: 0, ctrlKey: true, clientX: 700, clientY: 500 }));
+      for (let i = 0; i < 8; i++) node.dispatchEvent(new WheelEvent('wheel', { bubbles: true, cancelable: true, deltaY: -12, deltaMode: 0, ctrlKey: true, clientX: node.clientWidth / 2, clientY: node.clientHeight / 2 }));
     });
     await page.waitForFunction(before => Number(document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.distance) < before * 0.85, beforeTrackpadPinch);
-    const centreBeforeNotch = await controls.getAttribute('data-centre');
-    const distanceBeforeNotch = Number(await controls.getAttribute('data-distance'));
-    await page.mouse.move(900, 620);
-    await page.mouse.wheel(0, 100);
-    await page.waitForFunction(before => Number(document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.distance) > before, distanceBeforeNotch);
-    assert.equal(await controls.getAttribute('data-centre'), centreBeforeNotch, 'a mouse-wheel notch zooms without panning');
-    const bearing = await controls.getAttribute('data-bearing');
-    const beforeRight = await controls.getAttribute('data-centre');
-    await page.mouse.move(860, 640);
-    await page.mouse.down({ button: 'right' });
-    await page.mouse.move(1040, 640, { steps: 5 });
-    await page.mouse.up({ button: 'right' });
-    await page.waitForFunction(before => document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.centre !== before, beforeRight);
-    assert.equal(await controls.getAttribute('data-bearing'), bearing, 'right-drag pans without orbiting');
+    console.log('Scroll and pinch zoom towards the pointer PASS');
+    // Right-drag rotates about the point under the pointer: at the screen centre the centre stays put...
+    const box = await page.locator('#resort-scene').boundingBox();
+    const middle = [box.x + box.width / 2, box.y + box.height / 2];
+    const turnStart = await centreOf(), bearing = await controls.getAttribute('data-bearing');
+    await page.mouse.move(...middle); await page.mouse.down({ button: 'right' });
+    await page.mouse.move(middle[0] + 140, middle[1], { steps: 5 }); await page.mouse.up({ button: 'right' });
+    await page.waitForFunction(b => document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.bearing !== b, bearing);
+    const turnEnd = await centreOf();
+    assert(Math.hypot(turnEnd[0] - turnStart[0], turnEnd[1] - turnStart[1]) < 1.5, 'turning about the screen centre keeps the centre');
+    // ...and off centre, Ctrl-drag turns and tilts about that point, so the centre swings round it.
+    const pitch = Number(await controls.getAttribute('data-pitch')), bearing2 = await controls.getAttribute('data-bearing');
+    await page.keyboard.down('Control');
+    await page.mouse.move(middle[0] - 260, middle[1] + 160); await page.mouse.down();
+    await page.mouse.move(middle[0] - 140, middle[1] + 110, { steps: 5 }); await page.mouse.up();
+    await page.keyboard.up('Control');
+    await page.waitForFunction(b => document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.bearing !== b, bearing2);
+    assert(Number(await controls.getAttribute('data-pitch')) < pitch, 'dragging up tilts toward the horizon');
+    await moved(turnEnd, 1);
     assert.equal(await canvas.getAttribute('data-player'), beforePlayer);
-    console.log('Trackpad pan, pinch zoom, mouse-wheel zoom and right-drag pan PASS');
+    // The Orbit button makes a plain drag rotate instead.
+    await scene.locator('#overview-rotate').click();
+    const bearing3 = await controls.getAttribute('data-bearing');
+    await page.mouse.move(900, 750); await page.mouse.down(); await page.mouse.move(1000, 750, {steps:5}); await page.mouse.up();
+    await page.waitForFunction(b => document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.bearing !== b, bearing3);
+    await scene.locator('#overview-pan').click();
+    console.log('Rotate and tilt about the pointer, and the Orbit switch PASS');
     // Direct links survive reload. Walk is shelved: the nav button is not offered.
     await scene.locator('#inspection-area').selectOption('barraka-beach');
     await page.waitForURL(/area=barraka-beach/);

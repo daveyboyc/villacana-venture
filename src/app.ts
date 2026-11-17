@@ -60,6 +60,15 @@ function setView(view: View, history = true): void {
   window.dispatchEvent(new Event("resize"));
 }
 for (const view of ["map", "overview", "walk", "fps"] as const) document.querySelector(`#view-${view}`)!.addEventListener("click", () => setView(view));
+// Arrow keys and WASD move the 3D view even while focus is on the page around it.
+for (const type of ["keydown", "keyup"] as const) window.addEventListener(type, e => {
+  if (scenePage.hidden || e.metaKey || e.ctrlKey || e.altKey || !/^(Arrow(Up|Down|Left|Right)|Key[WASD])$/.test(e.code)) return;
+  if ((e.target as HTMLElement).closest?.("input,textarea,select,[contenteditable]") || document.querySelector("dialog[open]")) return;
+  const scene = frame.contentWindow as (Window & typeof globalThis) | null, body = frame.contentDocument?.body;
+  if (!scene || !body) return;
+  body.dispatchEvent(new scene.KeyboardEvent(type, { code: e.code, key: e.key, bubbles: true, cancelable: true }));
+  if (e.code.startsWith("Arrow")) e.preventDefault();
+});
 document.querySelector('#visit-silvia')!.addEventListener('click',()=>{
   const url=new URL(location.href);url.searchParams.delete('study');url.searchParams.delete('at');url.searchParams.delete('look');url.searchParams.set('area','silvia-north');url.searchParams.set('place','silvia');url.searchParams.set('details','1');window.history.replaceState(null,'',url);
   trackEvent("area_jumped", { area_id: "silvia-north", area_name: "Silvia tunnel", source: "silvia_shortcut" });
