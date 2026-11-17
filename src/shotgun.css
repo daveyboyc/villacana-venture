@@ -27,3 +27,14 @@ body.shotgun-mode #jump{bottom:calc(176px + env(safe-area-inset-bottom));right:m
 body.shotgun-mode:has(#sg-menu:not([hidden])) :is(#walk-pad,#jump){visibility:hidden}
 @media(max-height:500px){.sg-top{top:6px}.sg-top>span{font-size:11px}.sg-top small{font-size:9px}.sg-card{padding:12px;max-width:520px}.sg-card h1{font-size:22px;margin:6px 0}.sg-card p{margin:6px 0;font-size:12px}.sg-card #sg-instructions{display:none}.sg-card button,.sg-card a{margin-top:6px}.sg-bottom{min-height:42px}.sg-bottom b{font-size:20px}body.shotgun-mode #walk-pad{width:108px;height:108px}body.shotgun-mode #walk-pad .walk-thumb{left:32px;top:32px}}
 @media(prefers-reduced-motion:reduce){.sg-firing .sg-viewmodel{animation:none}#sg-weapon{transform:translateX(-50%)}}
+#shotgun-hud #sg-reload{position:absolute;right:max(18px,env(safe-area-inset-right));bottom:calc(178px + env(safe-area-inset-bottom));width:88px;min-height:44px;background:#394338;border-color:#d6b36d;font-size:12px;padding:8px 4px}
+#shotgun-hud #sg-reload.sg-empty{background:#8d3825;border-color:#ffd183}
+body.shotgun-mode #jump{bottom:calc(232px + env(safe-area-inset-bottom))}
+#sg-shell{position:absolute;right:12%;bottom:24%;width:12px;height:29px;border:2px solid #351a13;border-bottom:7px solid #cda25c;background:linear-gradient(90deg,#6f2019,#bd5140 40%,#7c2c23);opacity:0;box-sizing:border-box}
+.sg-reloading .sg-viewmodel{animation:none;transform:translate(18px,45px) rotate(-15deg);transition:transform .15s steps(3,end)}
+.sg-loading #sg-shell{animation:sg-insert .55s steps(5,end) infinite}
+@keyframes sg-insert{0%{opacity:0;transform:translate(18px,25px) rotate(-20deg)}20%{opacity:1}75%{opacity:1;transform:translate(-10px,-3px) rotate(-20deg)}100%{opacity:0;transform:translate(-16px,-8px)}}
+@media(prefers-reduced-motion:reduce){.sg-reloading .sg-viewmodel{transform:none;transition:none}.sg-loading #sg-shell{animation:none;opacity:1}}
+#sg-shell{bottom:44%}
+@media(max-height:500px){.sg-reloading .sg-viewmodel{transform:translate(12px,8px) rotate(-12deg)}}
+@media(max-height:500px) and (prefers-reduced-motion:reduce){.sg-reloading .sg-viewmodel{transform:none}}
