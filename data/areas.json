@@ -246,7 +246,9 @@
     "data/levels_survey.json",
     "data/door_sills.json",
     "data/elena_walkway.json",
-    "data/lane_walls.json"
+    "data/lane_walls.json",
+    "data/elena_south_beds.json",
+    "data/elena_junction_details.json"
    ],
    "src": [
     "src/elena-north.ts",
@@ -256,7 +258,8 @@
     "src/layout-routes.ts",
     "src/door-sills.ts",
     "src/elena-walkway.ts",
-    "src/lane-walls.ts"
+    "src/lane-walls.ts",
+    "src/elena-junction-details.ts"
    ],
    "notes": [
     "IMG_2254 shows the sign CALLE ELENA 18-30.",
@@ -327,7 +330,7 @@
     "src/ramp-steps.ts",
     "src/cervantes-garden-door.ts",
     "src/cervantes-north-patios.ts",
-    "src/junction-lawns.ts",
+    "src/elena-junction-details.ts",
     "src/cervantes-east-south-patios.ts",
     "src/cervantes-lane-edges.ts",
     "src/lane-walls.ts"

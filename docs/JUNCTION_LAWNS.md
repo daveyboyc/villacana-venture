@@ -6,7 +6,7 @@ distinct clipped trees beside the lane: two on the nearer lawn, and one beyond
 the front-door approach. IMG_2260 corroborates the last two and that approach.
 
 `data/junction_lawns.json` records the three estimated positions, sizes and
-individual evidence. `src/junction-lawns.ts`, called by the existing frontage
+individual evidence. `src/elena-junction-details.ts` (a Show-details step since 18 November 2026, drawing each as a clipped tree; before that `src/junction-lawns.ts`), called by the existing frontage
 builder, uses the existing pollarded-tree sprite. The shared sprite guard keeps
 the complete visible footprint clear of named routes and omits it in Layout.
 Existing scene draping places it on the site levels. No collision is added.

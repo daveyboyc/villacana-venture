@@ -778,6 +778,22 @@
   "plain_fronts.json:elena-south-far-blank-face": {
    "level": "photographed",
    "why": "The north face of the house behind the cypress wall is a plain white wall with one small window and two pilaster gables in the Elena 24 roof photos and IMG_2261: no balconies or awnings."
+  },
+  "elena_junction_details.json:cypresses": {
+   "level": "estimated",
+   "why": "Two slim cypresses at the foot of the far wall, photographed from the roof and the lane; their spacing is cast through the solved roof camera, their line follows the estimated cypress wall."
+  },
+  "elena_junction_details.json:climbers": {
+   "level": "photographed",
+   "why": "Bougainvillea and trained vines on the west wall, the cypress wall and the corner patio wall as the roof and lane photos show; extents along each wall read by eye."
+  },
+  "elena_junction_details.json:lamp": {
+   "level": "photographed",
+   "why": "The black lantern post in the east hedge bed near the junction, in IMG_2358, IMG_2367 and the Elena 24 roof photo; base cast through the solved roof camera to about 0.5 m."
+  },
+  "elena_junction_details.json:sign": {
+   "level": "photographed",
+   "why": "CALLE and ELENA tile plaques on the west wall near its north end (IMG_2262, IMG_2286, the roof photo); size and height read by eye."
   }
  },
  "gaps": [

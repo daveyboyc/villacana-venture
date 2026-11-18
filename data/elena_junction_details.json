@@ -1,0 +1,124 @@
+{
+ "id": "elena-junction-details",
+ "name": "Elena south junction lawns · photographed planting, lamp and street sign",
+ "checkedAt": "2026-11-18",
+ "about": "Show-details pieces on structure reviewed in docs/reviews/elena-junction-lawns-roof, from the Elena 24 roof photos (ELENA-ROOF-2026-11-17, IMG_2358, IMG_2367) and the lane views (IMG_2261, IMG_2262, IMG_2330): the two cypresses at the far wall, bougainvillea and vines on the walls, the lamp post in the east hedge bed and the CALLE ELENA tile sign. Drawn by src/elena-junction-details.ts; every piece keeps the shared route guard with its whole footprint. The lawn trees are in data/junction_lawns.json.",
+ "evidence": [
+  "ELENA-ROOF-2026-11-17.jpg",
+  "IMG_2358.jpg",
+  "IMG_2367.jpg",
+  "IMG_2261.jpg",
+  "IMG_2262.jpg",
+  "IMG_2330.jpg"
+ ],
+ "cypresses": [
+  {
+   "id": "elena-south-cypress-1",
+   "at": [
+    -148.201,
+    74.739
+   ],
+   "height": 2.9,
+   "radius": 0.28
+  },
+  {
+   "id": "elena-south-cypress-2",
+   "at": [
+    -147.421,
+    74.348
+   ],
+   "height": 2.9,
+   "radius": 0.28
+  }
+ ],
+ "climbers": [
+  {
+   "id": "west-wall-bougainvillea-north",
+   "wall": "elena-south-lawn-west-wall",
+   "segment": 0,
+   "from": 1.6,
+   "to": 6.4,
+   "side": "east",
+   "height": 2.1,
+   "depth": 0.45,
+   "flowers": 760,
+   "colour": "#b4247c",
+   "basis": "Bougainvillea trained over the west wall from just past the CALLE ELENA plaques to the bed door (the stretch with the plaques is bare but for a thin vine), magenta, with shrubs at its foot (ELENA-ROOF-2026-11-17, IMG_2358, IMG_2261)."
+  },
+  {
+   "id": "west-wall-bougainvillea-south",
+   "wall": "elena-south-lawn-west-wall",
+   "segment": 1,
+   "from": 0.3,
+   "to": 1.2,
+   "side": "east",
+   "height": 2.0,
+   "depth": 0.4,
+   "flowers": 250,
+   "colour": "#b4247c",
+   "basis": "The bougainvillea carries on past the lawn door (IMG_2261, ELENA-ROOF-2026-11-17)."
+  },
+  {
+   "id": "west-wall-vine-far",
+   "wall": "elena-south-lawn-west-wall",
+   "segment": 1,
+   "from": 2.6,
+   "to": 7.6,
+   "side": "east",
+   "height": 2.2,
+   "depth": 0.25,
+   "flowers": 0,
+   "sparse": true,
+   "basis": "A climber trained along the west wall beside the far lawn, sparse with the wall showing (ELENA-ROOF-2026-11-17, IMG_2358)."
+  },
+  {
+   "id": "cypress-wall-vine",
+   "wall": "elena-south-cypress-wall",
+   "segment": 0,
+   "from": 0.3,
+   "to": 4.4,
+   "side": "north",
+   "height": 2.1,
+   "depth": 0.2,
+   "flowers": 0,
+   "sparse": true,
+   "basis": "Vines trained along the top of the cypress wall (ELENA-ROOF-2026-11-17, IMG_2358, IMG_2261)."
+  },
+  {
+   "id": "corner-patio-bougainvillea",
+   "wall": "elena-south-mouth-patio-wall",
+   "segment": 0,
+   "from": 0.3,
+   "to": 4.0,
+   "side": "west",
+   "height": 1.6,
+   "depth": 0.22,
+   "flowers": 350,
+   "colour": "#c4317a",
+   "basis": "Bougainvillea over the corner house's patio wall behind the hedge bed, pink and orange (IMG_2358, IMG_2367)."
+  }
+ ],
+ "lamp": {
+  "id": "elena-south-lamp",
+  "bed": "elena-south-east-bed-mouth",
+  "s": 1.5,
+  "o": -0.98,
+  "basis": "Black lantern post standing in the hedge bed on the east side of the lane near the junction (IMG_2358, IMG_2367, ELENA-ROOF-2026-11-17; base cast through the roof camera to about 1.5 m along and 1.4 m east of the centreline, ±0.5 m)."
+ },
+ "sign": {
+  "id": "calle-elena-sign",
+  "wall": "elena-south-lawn-west-wall",
+  "segment": 0,
+  "from": 0.35,
+  "side": "east",
+  "y": 1.75,
+  "plaques": [
+   "CALLE",
+   "ELENA"
+  ],
+  "plaqueWidth": 0.46,
+  "plaqueHeight": 0.16,
+  "gap": 0.18,
+  "basis": "Two tile plaques, CALLE and ELENA in dark capitals on white tiles, on the lawn-side face of the west wall near its north end (IMG_2262, IMG_2286, ELENA-ROOF-2026-11-17)."
+ }
+}

@@ -1188,7 +1188,7 @@
    "id": "elena",
    "name": "Calle Elena",
    "counts": {
-    "ready": 5,
+    "ready": 6,
     "needs-evidence": 0,
     "needs-source-access": 0,
     "awaiting-review": 1,
@@ -1302,13 +1302,17 @@
      "id": "elena-junction-planting-detail",
      "area": "elena",
      "kind": "appearance",
-     "description": "Detail for after the structure review: the three lawn trees are generic trees where the photos show clipped domes and a clipped standard; the two cypresses against the far wall, the shrubs at the west wall foot, the bougainvillea on the walls and the lamp post are not drawn. The tree positions are estimates (their trunk bases are hidden in the roof views).",
+     "description": "Detail for after the structure review: the three lawn trees are generic trees where the photos show clipped domes and a clipped standard; the two cypresses against the far wall, the shrubs at the west wall foot, the bougainvillea on the walls and the lamp post are not drawn. The tree positions are estimates (their trunk bases are hidden in the roof views). 18 November 2026: built in Show details (data/elena_junction_details.json, src/elena-junction-details.ts): the lawn trees as clipped domes and a clipped standard re-placed through the roof cameras, the two cypresses at the far wall, bougainvillea on the west wall and over the corner patio wall, vines on the far part of the west wall and along the cypress wall, the lamp post in the east hedge bed and the CALLE ELENA tile plaques. Still not drawn: the shrubs in the strip at the west wall's foot, the bougainvillea on the foreground garden wall north of Cervantes beyond what was there, the corner house's white balcony ledge and porch surround, and the small window in the blank face behind the cypress wall.",
      "sources": [
       "ELENA-ROOF-2026-11-17.jpg",
       "IMG_2358.jpg",
       "IMG_2367.jpg"
      ],
      "features": [
+      "elena_junction_details.json:climbers",
+      "elena_junction_details.json:cypresses",
+      "elena_junction_details.json:lamp",
+      "elena_junction_details.json:sign",
       "junction_lawns.json:junction-pollarded-1",
       "junction_lawns.json:junction-pollarded-2",
       "junction_lawns.json:junction-pollarded-3"
@@ -1330,6 +1334,27 @@
      ],
      "features": [
       "elena_lane_paving.json:elena-south-three-column"
+     ],
+     "task": "elena-junction-lawns-roof",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "elena-lawn-north-edge",
+     "area": "elena",
+     "kind": "placement",
+     "description": "The near Elena lawn's north edge (the Cervantes south kerb, cervantes-patio-south-2) is inferred: both roof photos have it behind the foreground garden wall. Two readings say it is 0.6-0.8 m further north than modelled: the Elena south lane kerb is seen through the solved Elena 24 roof camera down to z = 58.44, where the model's lawn corner is at 59.07, and the clipped standard tree's trunk casts to z 59.0-59.4 through both roof cameras, at or beyond the modelled edge. Moving it would narrow or shift Cervantes at the junction (mapped 1.2 m wide, kerb lines 0.88 m either side of the centreline), which needs a ground camera solved at the junction (IMG_2262, IMG_2286 or IMG_2328 with the drain, the ramp kerb and the CALLE ELENA corner). The drain's position along Cervantes is not affected: the lane kerb runs square to Cervantes.",
+     "sources": [
+      "ELENA-ROOF-2026-11-17.jpg",
+      "IMG_2358.jpg",
+      "IMG_2262.jpg"
+     ],
+     "features": [
+      "frontage_divisions.json:cervantes-elena-lawn-1",
+      "cervantes_patio_walls.json:cervantes-patio-south-2",
+      "junction_lawns.json:junction-pollarded-1"
      ],
      "task": "elena-junction-lawns-roof",
      "status": "open",
@@ -5198,7 +5223,7 @@
    "id": "whole-resort",
    "name": "The whole resort",
    "counts": {
-    "ready": 12,
+    "ready": 13,
     "needs-evidence": 4,
     "needs-source-access": 0,
     "awaiting-review": 3,
@@ -5627,13 +5652,17 @@
      "id": "elena-junction-planting-detail",
      "area": "elena",
      "kind": "appearance",
-     "description": "Detail for after the structure review: the three lawn trees are generic trees where the photos show clipped domes and a clipped standard; the two cypresses against the far wall, the shrubs at the west wall foot, the bougainvillea on the walls and the lamp post are not drawn. The tree positions are estimates (their trunk bases are hidden in the roof views).",
+     "description": "Detail for after the structure review: the three lawn trees are generic trees where the photos show clipped domes and a clipped standard; the two cypresses against the far wall, the shrubs at the west wall foot, the bougainvillea on the walls and the lamp post are not drawn. The tree positions are estimates (their trunk bases are hidden in the roof views). 18 November 2026: built in Show details (data/elena_junction_details.json, src/elena-junction-details.ts): the lawn trees as clipped domes and a clipped standard re-placed through the roof cameras, the two cypresses at the far wall, bougainvillea on the west wall and over the corner patio wall, vines on the far part of the west wall and along the cypress wall, the lamp post in the east hedge bed and the CALLE ELENA tile plaques. Still not drawn: the shrubs in the strip at the west wall's foot, the bougainvillea on the foreground garden wall north of Cervantes beyond what was there, the corner house's white balcony ledge and porch surround, and the small window in the blank face behind the cypress wall.",
      "sources": [
       "ELENA-ROOF-2026-11-17.jpg",
       "IMG_2358.jpg",
       "IMG_2367.jpg"
      ],
      "features": [
+      "elena_junction_details.json:climbers",
+      "elena_junction_details.json:cypresses",
+      "elena_junction_details.json:lamp",
+      "elena_junction_details.json:sign",
       "junction_lawns.json:junction-pollarded-1",
       "junction_lawns.json:junction-pollarded-2",
       "junction_lawns.json:junction-pollarded-3"
@@ -5655,6 +5684,27 @@
      ],
      "features": [
       "elena_lane_paving.json:elena-south-three-column"
+     ],
+     "task": "elena-junction-lawns-roof",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "elena-lawn-north-edge",
+     "area": "elena",
+     "kind": "placement",
+     "description": "The near Elena lawn's north edge (the Cervantes south kerb, cervantes-patio-south-2) is inferred: both roof photos have it behind the foreground garden wall. Two readings say it is 0.6-0.8 m further north than modelled: the Elena south lane kerb is seen through the solved Elena 24 roof camera down to z = 58.44, where the model's lawn corner is at 59.07, and the clipped standard tree's trunk casts to z 59.0-59.4 through both roof cameras, at or beyond the modelled edge. Moving it would narrow or shift Cervantes at the junction (mapped 1.2 m wide, kerb lines 0.88 m either side of the centreline), which needs a ground camera solved at the junction (IMG_2262, IMG_2286 or IMG_2328 with the drain, the ramp kerb and the CALLE ELENA corner). The drain's position along Cervantes is not affected: the lane kerb runs square to Cervantes.",
+     "sources": [
+      "ELENA-ROOF-2026-11-17.jpg",
+      "IMG_2358.jpg",
+      "IMG_2262.jpg"
+     ],
+     "features": [
+      "frontage_divisions.json:cervantes-elena-lawn-1",
+      "cervantes_patio_walls.json:cervantes-patio-south-2",
+      "junction_lawns.json:junction-pollarded-1"
      ],
      "task": "elena-junction-lawns-roof",
      "status": "open",

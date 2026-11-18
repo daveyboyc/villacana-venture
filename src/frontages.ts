@@ -4,7 +4,6 @@ import divisions from "../data/frontage_divisions.json";
 import { pointInRing } from "./geom";
 import { plasterMaterial, surfaceTexture } from "./materials";
 import type { Vec2 } from "./types";
-import { addJunctionLawns } from "./junction-lawns";
 import skeleton from '../public/map/skeleton.json';
 import {applyElenaPavingUv,elenaPavingTexture} from './elena-lane-paving';
 
@@ -14,7 +13,7 @@ export const FRONTAGE_COLORS:Record<string,string>={patio:"#d9b393",lawn:"#71865
 /** Suppress invented garden-wall blocks where the reference now defines a surface. */
 export const inReviewedFrontage=(x:number,z:number)=>inDaliThreshold(x,z)||frontageRegions.some(r=>pointInRing(x,z,r.ring));
 export function addFrontageDivisions(scene:THREE.Scene):void {
-  addJunctionLawns(scene);
+  // The junction lawn trees are a Show-details piece now (src/elena-junction-details.ts).
   for(const region of frontageRegions) {
     if(region.kind==="patio") continue; // This registry enclosure is already modeled.
     const shape=new THREE.Shape(region.ring.map(([x,z])=>new THREE.Vector2(x,-z)));
