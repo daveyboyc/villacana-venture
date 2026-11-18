@@ -153,6 +153,10 @@ from the photos; see `docs/LEVELS.md` and check with `scripts/check_levels.py`.
   request instead of guessing when a build needs a view nobody has taken. Re-run
   `scripts/build_scorecard.py measure` after changing ground, footprints or the facade kit;
   it is a summary, not placement approval.
+- Photo coverage (`docs/PHOTO_COVERAGE_PRD.md`): `scripts/photo_coverage.py` grades every feature unseen,
+  seen, located, fixed or measured from what the solved cameras can see, and the map's **Photo coverage**
+  layer shows it with the photo requests. Use it to list an area's photo coverage (stage 1) and re-run it
+  after solving a camera. It says what the photos could support, not what is measured.
 - Ground levels, street slopes and roof heights can be measured against the national
   laser survey (`scripts/lidar_check.py`, docs/reviews/lidar-levels). Check a level or
   height change there before building it.
