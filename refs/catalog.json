@@ -6896,7 +6896,7 @@
    "layout",
    "levels"
   ],
-  "note": "Matches the cervantes-junction-north-bed and garden door (IMG_2196/2287). The plaque reads 'CALLE DE ELENA'. looksAt estimated from the existing door position.",
+  "note": "The raised white fan-palm bed, CALLE DE ELENA plaque, lamp and brown double door are on the corner wall west of the Elena north mouth (IMG_2514, IMG_2800, IMG_2966, IMG_2967), not the Elena 24 garden door and its bed (IMG_2196/2287), which come after it further west with the hedge and plumbago (IMG_2463). Corrected 18 November 2026; the earlier note matched it to the garden door. Magnolia over the wall; lantana bed in the foreground.",
   "observation": null,
   "taken": "2026-10-26",
   "originalUrl": "https://drive.google.com/file/d/1K8KF9O8W2OU8jI9Vw_khQVKaRlN-fa1x/view?usp=drivesdk",
@@ -6910,15 +6910,15 @@
   },
   "citedBy": [],
   "looksAt": [
-   -152.5,
-   53.0
+   -148.5,
+   52.8
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "plain_fronts.json:elena-24-south-patio",
+   "cervantes_patio_walls.json:cervantes-patio-north-east",
    "backdrop.json:aerial-trees",
-   "cervantes_north_patios.json:cervantes-north-partition-east",
-   "cervantes_garden_door.json:cervantes-junction-north-patio"
+   "street:cervantes",
+   "elena_lane_paving.json:elena-north-three-column"
   ],
   "subject": "North-side white bed, garden door and Calle de Elena plaque at the junction"
  },
@@ -18990,7 +18990,7 @@
    "planting",
    "signage"
   ],
-  "note": null,
+  "note": "The north-west corner of the Elena north mouth on Cervantes (Elena north meets Cervantes at about x -145; this corner is west of it, east of the Elena 24 garden door). Camera on Cervantes looking west; the drain across the Elena north mouth is in the foreground, the Elena 24 garden-door hedge and the Cervantes steps beyond.",
   "observation": null,
   "taken": "2026-11-03",
   "originalUrl": "https://drive.google.com/file/d/1Le_5kLypcjqPHsamK_-qAwpsqQIZD6Tm/view?usp=drivesdk",
@@ -19004,16 +19004,17 @@
   },
   "citedBy": [],
   "looksAt": [
-   -146.7,
-   50.7
+   -147.5,
+   52.6
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north",
    "backdrop.json:aerial-trees",
-   "elena_north.json:elena-north-tree-bed-2"
-  ]
+   "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "street:cervantes",
+   "elena_lane_paving.json:elena-north-three-column"
+  ],
+  "subject": "Fan-palm raised bed, CALLE DE ELENA plaque, wall lamp and bougainvillea on the corner wall west of the Elena north mouth"
  },
  {
   "id": "IMG_2801.jpg",
@@ -19687,7 +19688,7 @@
    "facades",
    "layout"
   ],
-  "note": null,
+  "note": "The north-west corner of the Elena north mouth on Cervantes (Elena north meets Cervantes at about x -145; this corner is west of it, east of the Elena 24 garden door). Looking west along Cervantes. The brown doorway on the left is on the south side.",
   "observation": null,
   "taken": "2026-11-16",
   "originalUrl": "https://drive.google.com/file/d/19ug5o1fWtJCb7Ussv-E4ITBxkJLXSW2K/view?usp=drivesdk",
@@ -19701,15 +19702,15 @@
   },
   "citedBy": [],
   "looksAt": [
-   -148.0,
-   55.0
+   -148.3,
+   52.8
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:cervantes",
+   "cervantes_patio_walls.json:cervantes-patio-north-east",
    "backdrop.json:aerial-trees",
-   "cervantes_patio_walls.json:cervantes-patio-south-3",
-   "cervantes_patio_walls.json:cervantes-patio-north-east"
+   "street:cervantes",
+   "elena_lane_paving.json:elena-north-three-column"
   ],
   "subject": "CALLE DE ELENA plaque, fan-palm corner planter and opposite garden doorway at the Cervantes/Elena junction"
  },
@@ -19730,7 +19731,7 @@
    "signage",
    "layout"
   ],
-  "note": null,
+  "note": "The north-west corner of the Elena north mouth on Cervantes (Elena north meets Cervantes at about x -145; this corner is west of it, east of the Elena 24 garden door). The red drain grating runs across the Elena north mouth at the bed's east end.",
   "observation": "Looking west at the Cervantes/Elena corner: a raised white-rendered planter of fan palms with a box-hedge edge under the CALLE DE ELENA tile plaque and bougainvillea, the terracotta tile path with an iron slot drain running west beside it.",
   "taken": "2026-11-16",
   "originalUrl": "https://drive.google.com/file/d/1buE2FdmOYyIW84J7Po26sNBfH_hfN3qE/view?usp=drivesdk",

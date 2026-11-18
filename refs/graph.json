@@ -130256,7 +130256,7 @@
   },
   {
    "from": "ref:IMG_2455.jpg",
-   "to": "model:plain_fronts.json:elena-24-south-patio",
+   "to": "model:cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -130268,13 +130268,13 @@
   },
   {
    "from": "ref:IMG_2455.jpg",
-   "to": "model:cervantes_north_patios.json:cervantes-north-partition-east",
+   "to": "model:street:cervantes",
    "relation": "looks-at",
    "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2455.jpg",
-   "to": "model:cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "model:elena_lane_paving.json:elena-north-three-column",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -134444,27 +134444,27 @@
   },
   {
    "from": "ref:IMG_2800.jpg",
-   "to": "model:elena_lane_paving.json:elena-north-three-column",
-   "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
-  },
-  {
-   "from": "ref:IMG_2800.jpg",
-   "to": "model:street:elena-north",
-   "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
-  },
-  {
-   "from": "ref:IMG_2800.jpg",
    "to": "model:backdrop.json:aerial-trees",
    "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
+   "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2800.jpg",
-   "to": "model:elena_north.json:elena-north-tree-bed-2",
+   "to": "model:cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2800.jpg",
+   "to": "model:street:cervantes",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2800.jpg",
+   "to": "model:elena_lane_paving.json:elena-north-three-column",
+   "relation": "looks-at",
+   "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2801.jpg",
@@ -134810,7 +134810,7 @@
   },
   {
    "from": "ref:IMG_2966.jpg",
-   "to": "model:street:cervantes",
+   "to": "model:cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -134822,13 +134822,13 @@
   },
   {
    "from": "ref:IMG_2966.jpg",
-   "to": "model:cervantes_patio_walls.json:cervantes-patio-south-3",
+   "to": "model:street:cervantes",
    "relation": "looks-at",
    "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2966.jpg",
-   "to": "model:cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "model:elena_lane_paving.json:elena-north-three-column",
    "relation": "looks-at",
    "basis": "reviewed"
   },
