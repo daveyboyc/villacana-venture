@@ -102,6 +102,9 @@
    "elena_junction_details.json:climbers",
    "elena_junction_details.json:lamp",
    "elena_junction_details.json:sign",
+   "elena_junction_details.json:shrubs",
+   "elena_junction_details.json:facade",
+   "elena_junction_details.json:windows",
    "elena_south_beds.json:elena-south-east-bed-mouth",
    "elena_south_beds.json:elena-south-east-bed-house",
    "plain_fronts.json:elena-24-south-patio",
@@ -2987,7 +2990,7 @@
    "backdrop.json:aerial-trees",
    "plain_fronts.json:elena-south-east-corner-house",
    "elena_south_beds.json:elena-south-east-bed-house",
-   "elena_lane_paving.json:elena-south-three-column"
+   "elena_junction_details.json:facade"
   ]
  },
  {
@@ -3029,6 +3032,9 @@
    "elena_junction_details.json:climbers",
    "elena_junction_details.json:lamp",
    "elena_junction_details.json:sign",
+   "elena_junction_details.json:shrubs",
+   "elena_junction_details.json:facade",
+   "elena_junction_details.json:windows",
    "door_sills.json:elena-lawn-door-sill",
    "door_sills.json:elena-bed-door-sill",
    "plain_fronts.json:elena-south-far-blank-face"
@@ -3042,7 +3048,7 @@
    "backdrop.json:aerial-trees",
    "elena_junction_details.json:climbers",
    "lane_walls.json:elena-south-lawn-west-wall",
-   "elena_junction_details.json:sign"
+   "elena_junction_details.json:shrubs"
   ],
   "subject": "Two brown garden doors in the white wall and the tiled approach between Elena south lawns"
  },
@@ -3082,6 +3088,9 @@
    "elena_junction_details.json:climbers",
    "elena_junction_details.json:lamp",
    "elena_junction_details.json:sign",
+   "elena_junction_details.json:shrubs",
+   "elena_junction_details.json:facade",
+   "elena_junction_details.json:windows",
    "steps:cervantes-elena-steps",
    "ramp:cervantes-elena-ramp"
   ],
@@ -4718,7 +4727,7 @@
    "frontage_divisions.json:cervantes-elena-lawn-1",
    "backdrop.json:aerial-trees",
    "elena_junction_details.json:climbers",
-   "elena_junction_details.json:sign"
+   "elena_junction_details.json:shrubs"
   ]
  },
  {
@@ -4756,6 +4765,9 @@
    "elena_junction_details.json:climbers",
    "elena_junction_details.json:lamp",
    "elena_junction_details.json:sign",
+   "elena_junction_details.json:shrubs",
+   "elena_junction_details.json:facade",
+   "elena_junction_details.json:windows",
    "elena_south_beds.json:elena-south-east-bed-mouth",
    "elena_south_beds.json:elena-south-east-bed-house",
    "door_sills.json:elena-lawn-door-sill",
@@ -5785,6 +5797,9 @@
    "elena_junction_details.json:climbers",
    "elena_junction_details.json:lamp",
    "elena_junction_details.json:sign",
+   "elena_junction_details.json:shrubs",
+   "elena_junction_details.json:facade",
+   "elena_junction_details.json:windows",
    "elena_south_beds.json:elena-south-east-bed-mouth",
    "elena_south_beds.json:elena-south-east-bed-house",
    "cervantes_garden_door.json:cervantes-junction-north-patio",
@@ -6200,6 +6215,9 @@
    "elena_junction_details.json:climbers",
    "elena_junction_details.json:lamp",
    "elena_junction_details.json:sign",
+   "elena_junction_details.json:shrubs",
+   "elena_junction_details.json:facade",
+   "elena_junction_details.json:windows",
    "elena_south_beds.json:elena-south-east-bed-mouth",
    "elena_south_beds.json:elena-south-east-bed-house",
    "cervantes_garden_door.json:cervantes-junction-north-patio",
@@ -9033,8 +9051,8 @@
   "looksAtFeatures": [
    "plain_fronts.json:elena-south-east-corner-house",
    "backdrop.json:aerial-trees",
-   "elena_junction_details.json:climbers",
-   "lane_walls.json:elena-south-mouth-patio-wall"
+   "elena_junction_details.json:facade",
+   "elena_junction_details.json:climbers"
   ],
   "subject": "Elena lane towards the Cervantes junction"
  },
@@ -15675,7 +15693,7 @@
    "backdrop.json:aerial-trees",
    "plain_fronts.json:elena-south-east-corner-house",
    "elena_south_beds.json:elena-south-east-bed-house",
-   "elena_junction_details.json:climbers"
+   "elena_junction_details.json:facade"
   ]
  },
  {

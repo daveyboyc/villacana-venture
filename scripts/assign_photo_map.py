@@ -244,8 +244,9 @@ def features(s):
     lamp=det['lamp']; lamp_at=[bax['origin'][j]+bax['along'][j]*lamp['s']+bax['right'][j]*lamp['o'] for j in range(2)]
     where={'cypresses':[c['at'] for c in det['cypresses']],
            'climbers':[p for c in det['climbers'] for p in lanewalls[c['wall']]['points'][c['segment']:c['segment']+2]],
-           'lamp':[lamp_at,lamp_at],'sign':lanewalls[det['sign']['wall']]['points'][:2]}
-    for key,name in (('cypresses','Elena south · cypresses at the far wall'),('climbers','Elena south · bougainvillea and vines on the lawn walls'),('lamp','Elena south · lamp post in the east hedge bed'),('sign','Elena south · CALLE ELENA tile sign')):
+           'lamp':[lamp_at,lamp_at],'sign':lanewalls[det['sign']['wall']]['points'][:2],
+           'shrubs':lanewalls['elena-south-lawn-west-wall']['points'][:2],'facade':[p for f in det['facade'] for p in f['face']],'windows':[p for w in det['windows'] for p in w['face']]}
+    for key,name in (('cypresses','Elena south · cypresses at the far wall'),('climbers','Elena south · bougainvillea and vines on the lawn walls'),('lamp','Elena south · lamp post in the east hedge bed'),('sign','Elena south · CALLE ELENA tile sign'),('shrubs','Elena south · shrubs at the west wall foot'),('facade','Elena south · corner house balcony ledge and piers'),('windows','Elena south · small window on the blank face behind the cypress wall')):
         add('elena_junction_details.json:'+key,name,'reference feature','photo interpretation through the solved Elena 24 roof cameras; detail on reviewed structure',points=where[key],evidence=det['evidence'])
     for bed in json.loads((ROOT/'data/elena_south_beds.json').read_text())['planters']: # Elena south hedge beds, same kind as the Cervantes ones
         add('elena_south_beds.json:'+bed['id'],bed['name'],'reference feature','photo interpretation through the solved Elena 24 roof cameras against the lane tiles and house fronts; about 0.5 m along, 0.2 m across',ring=bed['ring'],evidence=bed['evidence'])

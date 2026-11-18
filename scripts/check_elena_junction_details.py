@@ -42,6 +42,16 @@ lamp = d['lamp']; bed = next(b for b in beds['planters'] if b['id'] == lamp['bed
 assert bed['s'][0] < lamp['s'] < bed['s'][1] and min(bed['o']) < lamp['o'] < max(bed['o']), 'lamp is not in its bed'
 sg = d['sign']; _, _, L = seg(sg['wall'], sg['segment'])
 assert sg['from'] + len(sg['plaques']) * (sg['plaqueWidth'] + sg['gap']) <= L and 1.2 <= sg['y'] <= walls[sg['wall']]['height'], 'sign does not fit its wall'
-for key in ['elena_junction_details.json:' + x for x in ['cypresses', 'climbers', 'lamp', 'sign']]:
+for sh in d.get('shrubs', []):
+    _, _, L = seg(sh['wall'], sh['segment'])
+    assert sh['width'] / 2 <= sh['at'] <= L - sh['width'] / 2 and 0.3 <= sh['height'] <= 1.2, 'shrub off its wall or wrong size'
+for fc in d.get('facade', []):
+    L = math.dist(*fc['face'])
+    for b in fc['boxes']:
+        assert 0 <= b['along'][0] < b['along'][1] <= L and 0 <= b['out'][0] < b['out'][1] <= 0.8 and 0 <= b['y'][0] < b['y'][1] <= 7, f"{fc['id']} {b['name']}: off its face"
+    assert fc['basis'], f"{fc['id']}: basis"
+for w in d.get('windows', []):
+    assert 0 < w['along'] < math.dist(*w['face']) and w['basis'], f"{w['id']}: off its face"
+for key in ['elena_junction_details.json:' + x for x in ['cypresses', 'climbers', 'lamp', 'sign', 'shrubs', 'facade', 'windows']]:
     assert key in confidence, f'{key}: no confidence level'
 print(f"Elena junction details: {len(d['cypresses'])} cypresses at the wall foot, {len(d['climbers'])} climbers on modelled walls, lamp in its bed, sign on the wall PASS")
