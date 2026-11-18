@@ -17,8 +17,11 @@ assert len(lawns['trees']) == 3, 'Roof views show three distinct clipped lawn tr
 assert len({t['id'] for t in lawns['trees']}) == 3
 for tree in lawns['trees']:
     p = tree['point']
-    # SPRITE_SIZE.pollarded_tree.w is 2.6 m. Include the whole card footprint.
-    radius = 2.6 * tree['scale'] / 2
+    # Clipped trees (src/elena-junction-details.ts, 18 Nov 2026): the crown's footprint, or for a crown that overhangs
+    # the lane kerb as photographed (canopyOverhangs, as in data/objects.json) only the 0.3 m trunk.
+    assert tree['kind'] in ('dome', 'standard') and 0.5 <= tree['trunk'] <= 1.6 and 0.8 <= tree['crown'] <= 2.2, tree['id'] + ': clipped tree size'
+    crown = tree['crown'] / 2
+    radius = 0.3 if tree.get('canopyOverhangs') else crown
     region = regions[tree['region']]
     assert region['kind'] == 'lawn'
     assert inside(*p, region['ring']) and edge_distance(*p, region['ring']) >= radius, tree['id'] + ' leaves lawn'

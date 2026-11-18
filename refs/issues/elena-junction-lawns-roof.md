@@ -7,8 +7,8 @@ Task `elena-junction-lawns-roof` · area **Calle Elena** · priority P1 · layou
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/elena.md` and the contact sheet `reference/contact-sheets/elena.jpg`
 - docs: `docs/ELENA_NORTH.md`, `docs/ELENA_EAST_PATIOS.md`, `docs/STREET_LAYOUT.md`, `docs/TERRAIN.md`, `docs/LEVELS.md`, `docs/reviews/path-network-inventory-elena/README.md`, `docs/reviews/elena-patio-wall-correction/README.md`, `docs/ELENA_WALKWAY.md`, `docs/LANE_WALLS.md`
-- data: `data/elena_north.json`, `data/elena_east_patios.json`, `data/cervantes_elena_steps.json`, `data/street_layout.json`, `proposals/calle-elena.json`, `data/terrain.json`, `data/levels_survey.json`, `data/door_sills.json`, `data/elena_walkway.json`, `data/lane_walls.json`
-- src: `src/elena-north.ts`, `src/elena-east-patios.ts`, `src/ramp-steps.ts`, `src/terrain.ts`, `src/layout-routes.ts`, `src/door-sills.ts`, `src/elena-walkway.ts`, `src/lane-walls.ts`
+- data: `data/elena_north.json`, `data/elena_east_patios.json`, `data/cervantes_elena_steps.json`, `data/street_layout.json`, `proposals/calle-elena.json`, `data/terrain.json`, `data/levels_survey.json`, `data/door_sills.json`, `data/elena_walkway.json`, `data/lane_walls.json`, `data/elena_south_beds.json`, `data/elena_junction_details.json`
+- src: `src/elena-north.ts`, `src/elena-east-patios.ts`, `src/ramp-steps.ts`, `src/terrain.ts`, `src/layout-routes.ts`, `src/door-sills.ts`, `src/elena-walkway.ts`, `src/lane-walls.ts`, `src/elena-junction-details.ts`
 
 ## Photos to build from
 

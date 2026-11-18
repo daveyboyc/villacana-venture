@@ -275,14 +275,22 @@
       "id": "elena-junction-far-end",
       "area": "elena",
       "kind": "completeness",
-      "description": "From the Elena 24 roof (ELENA-ROOF-2026-11-17.jpg) the far lawn ends at a white wall with two cypresses that runs from the west wall to the lane, and the lane passes its east end through a gate with a metal frame onto the middle pool lawn. The model ends the far lawn at the north face of registry 6265801UF1366N_part5, which stops at x = -148.5, and leaves open paving from there to the lane and the pool. At 22-40 m the roof camera cannot fix the wall's depth to better than about 1 m, and its photographed base runs nearly square to the view where the registry face is 30 degrees off it. Photo request elena-south-cypress-wall-gate asks for the ground views.",
+      "description": "From the Elena 24 roof (ELENA-ROOF-2026-11-17.jpg) the far lawn ends at a white wall with two cypresses that runs from the west wall to the lane, and the lane passes its east end through a gate with a metal frame onto the middle pool lawn. The model ends the far lawn at the north face of registry 6265801UF1366N_part5, which stops at x = -148.5, and leaves open paving from there to the lane and the pool. At 22-40 m the roof camera cannot fix the wall's depth to better than about 1 m, and its photographed base runs nearly square to the view where the registry face is 30 degrees off it. Photo request elena-south-cypress-wall-gate asks for the ground views. 18 November 2026: built the white cypress wall (lane_walls.json elena-south-cypress-wall, 2.0 m) 0.35 m beyond the far lawn's edge, from the west wall to just short of the lane kerb, as an estimate (about 1 m in depth), and left generated porches and openings off the plain north face of registry 6265801UF1366N_part5 behind it (plain_fronts.json elena-south-far-blank-face). Existing photos checked: IMG_2261 and IMG_2330 show the wall face-on but their cameras are not solved; IMG_2683 and IMG_2684 look back from beside the far lawn but have the wall behind them; IMG_2681, IMG_2682 and IMG_2506 show the lane past the houses to the middle-pool gate, which is already modelled (middle_pool_north.json). The photo request stays open to fix the wall's line.",
       "sources": [
         "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2261.jpg",
+        "IMG_2330.jpg",
         "IMG_2358.jpg",
-        "IMG_2367.jpg"
+        "IMG_2367.jpg",
+        "IMG_2681.jpg",
+        "IMG_2682.jpg",
+        "IMG_2683.jpg",
+        "IMG_2684.jpg"
       ],
       "features": [
-        "frontage_divisions.json:cervantes-elena-lawn-2"
+        "frontage_divisions.json:cervantes-elena-lawn-2",
+        "lane_walls.json:elena-south-cypress-wall",
+        "plain_fronts.json:elena-south-far-blank-face"
       ],
       "task": "elena-junction-lawns-roof",
       "status": "open",
@@ -292,7 +300,7 @@
       "id": "elena-junction-cervantes-door-wall",
       "area": "elena",
       "kind": "completeness",
-      "description": "North end of the west wall: ELENA-ROOF-2026-11-17.jpg shows a tall white wall facing Cervantes with a brown door and the CALLE ELENA tile sign at its corner, enclosing the patio (parasol) west of the near lawn. The model has the 0.65 m cervantes-patio-south-2 there and no door (see also cervantes-kerb-walls-height). 17 November 2026: built as lane_walls.json cervantes-elena-patio-front-wall, 2.2 m with a 0.95 m brown door, from the house corner (registry part5 corner 32) to the CALLE ELENA corner on the Cervantes south line; the door placed through the solved roof camera (also IMG_2467, IMG_2264). The 0.65 m wall there is gone; the rest of cervantes-patio-south-2-west stays in front of the house face. The CALLE ELENA tile sign and the bougainvillea are detail, not drawn.",
+      "description": "North end of the west wall: ELENA-ROOF-2026-11-17.jpg shows a tall white wall facing Cervantes with a brown door and the CALLE ELENA tile sign at its corner, enclosing the patio (parasol) west of the near lawn. The model has the 0.65 m cervantes-patio-south-2 there and no door (see also cervantes-kerb-walls-height). 17 November 2026: built as lane_walls.json cervantes-elena-patio-front-wall, 2.2 m with a 0.95 m brown door, from the house corner (registry part5 corner 32) to the CALLE ELENA corner on the Cervantes south line; the door placed through the solved roof camera (also IMG_2467, IMG_2264). The 0.65 m wall there is gone; the rest of cervantes-patio-south-2-west stays in front of the house face. The CALLE ELENA tile sign and the bougainvillea are detail, not drawn. Structure review, 18 November: lowered to 1.9 m (wall top cast at 1.84-1.95 m), with the door 1.8 m. The west wall's north end may be too tall as well (2.2 m); open.",
       "sources": [
         "ELENA-ROOF-2026-11-17.jpg",
         "IMG_2264.jpg",
@@ -311,13 +319,17 @@
       "id": "elena-junction-planting-detail",
       "area": "elena",
       "kind": "appearance",
-      "description": "Detail for after the structure review: the three lawn trees are generic trees where the photos show clipped domes and a clipped standard; the two cypresses against the far wall, the shrubs at the west wall foot, the bougainvillea on the walls and the lamp post are not drawn. The tree positions are estimates (their trunk bases are hidden in the roof views).",
+      "description": "Detail for after the structure review: the three lawn trees are generic trees where the photos show clipped domes and a clipped standard; the two cypresses against the far wall, the shrubs at the west wall foot, the bougainvillea on the walls and the lamp post are not drawn. The tree positions are estimates (their trunk bases are hidden in the roof views). 18 November 2026: built in Show details (data/elena_junction_details.json, src/elena-junction-details.ts): the lawn trees as clipped domes and a clipped standard re-placed through the roof cameras, the two cypresses at the far wall, bougainvillea on the west wall and over the corner patio wall, vines on the far part of the west wall and along the cypress wall, the lamp post in the east hedge bed and the CALLE ELENA tile plaques. Still not drawn: the shrubs in the strip at the west wall's foot, the bougainvillea on the foreground garden wall north of Cervantes beyond what was there, the corner house's white balcony ledge and porch surround, and the small window in the blank face behind the cypress wall.",
       "sources": [
         "ELENA-ROOF-2026-11-17.jpg",
         "IMG_2358.jpg",
         "IMG_2367.jpg"
       ],
       "features": [
+        "elena_junction_details.json:climbers",
+        "elena_junction_details.json:cypresses",
+        "elena_junction_details.json:lamp",
+        "elena_junction_details.json:sign",
         "junction_lawns.json:junction-pollarded-1",
         "junction_lawns.json:junction-pollarded-2",
         "junction_lawns.json:junction-pollarded-3"
@@ -330,13 +342,32 @@
       "id": "elena-south-east-beds",
       "area": "elena",
       "kind": "completeness",
-      "description": "East side of Elena south between Cervantes and the far wall: ELENA-ROOF-2026-11-17.jpg and IMG_2358 show planted beds with bougainvillea and a lamp post between the lane tiles and the front patio walls of the houses; the model has the lane against white walls with a grey margin and no beds.",
+      "description": "East side of Elena south between Cervantes and the far wall: ELENA-ROOF-2026-11-17.jpg and IMG_2358 show planted beds with bougainvillea and a lamp post between the lane tiles and the front patio walls of the houses; the model has the lane against white walls with a grey margin and no beds. 18 November 2026: the clipped hedge beds between the lane and the corner house's patio wall and front are built (data/elena_south_beds.json, s 0.95-9.85 m), width from the solved roof camera; the hedge is planted against the back of each bed in 0.36 m pieces so it clears the shared route guard. South of 9.9 m the registry house fronts come within 0.15-0.4 m of the lane and nothing is built; the lamp post is detail. Structure review, 18 November: the beds now start at the photographed tile edge, 1.0 m east of the centreline. They are only 0.25-0.3 m deep up to the modelled patio wall and house face, where the photos show a hedge about 0.6-0.8 m deep: the corner patio wall (elena-south-mouth-patio-wall) is probably further east than drawn. Open.",
       "sources": [
         "ELENA-ROOF-2026-11-17.jpg",
         "IMG_2358.jpg"
       ],
       "features": [
         "elena_lane_paving.json:elena-south-three-column"
+      ],
+      "task": "elena-junction-lawns-roof",
+      "status": "open",
+      "requests": []
+    },
+    {
+      "id": "elena-lawn-north-edge",
+      "area": "elena",
+      "kind": "placement",
+      "description": "The near Elena lawn's north edge (the Cervantes south kerb, cervantes-patio-south-2) is inferred: both roof photos have it behind the foreground garden wall. Two readings say it is 0.6-0.8 m further north than modelled: the Elena south lane kerb is seen through the solved Elena 24 roof camera down to z = 58.44, where the model's lawn corner is at 59.07, and the clipped standard tree's trunk casts to z 59.0-59.4 through both roof cameras, at or beyond the modelled edge. Moving it would narrow or shift Cervantes at the junction (mapped 1.2 m wide, kerb lines 0.88 m either side of the centreline), which needs a ground camera solved at the junction (IMG_2262, IMG_2286 or IMG_2328 with the drain, the ramp kerb and the CALLE ELENA corner). The drain's position along Cervantes is not affected: the lane kerb runs square to Cervantes.",
+      "sources": [
+        "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2358.jpg",
+        "IMG_2262.jpg"
+      ],
+      "features": [
+        "frontage_divisions.json:cervantes-elena-lawn-1",
+        "cervantes_patio_walls.json:cervantes-patio-south-2",
+        "junction_lawns.json:junction-pollarded-1"
       ],
       "task": "elena-junction-lawns-roof",
       "status": "open",

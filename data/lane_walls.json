@@ -228,7 +228,7 @@
           61.397
         ]
       ],
-      "height": 2.2,
+      "height": 1.9,
       "thickness": 0.25,
       "raise": 0,
       "doors": [
@@ -239,7 +239,7 @@
             62.633
           ],
           "width": 0.95,
-          "height": 2.0
+          "height": 1.8
         }
       ],
       "evidence": [
@@ -248,7 +248,34 @@
         "IMG_2264.jpg",
         "IMG_2262.jpg"
       ],
-      "basis": "ELENA-ROOF-2026-11-17.jpg looks down on a tall white wall facing Cervantes with a closed brown door, between the CALLE ELENA corner of the lawns' west wall and the house west of it, closing the patio with the parasol; IMG_2467 and IMG_2264 show it from the lane, a white wall a little taller than its door, and IMG_2262 its east end beside the CALLE ELENA face. It stands on the existing Cervantes south wall line, from the house corner (registry 6265801UF1366N_part5 corner 32, 0.23 m off the line) to the west wall's north end. The door head, cast through the solved roof camera at 2.0 m, is 0.95 m wide, 6.35 m along the line from its west end and within about 0.2 m of the line. Height 2.2 m as the west wall, by eye against the door. Built 17 November 2026 (task elena-junction-lawns-roof); it replaces the 0.65 m wall drawn here."
+      "basis": "ELENA-ROOF-2026-11-17.jpg looks down on a tall white wall facing Cervantes with a closed brown door, between the CALLE ELENA corner of the lawns' west wall and the house west of it, closing the patio with the parasol; IMG_2467 and IMG_2264 show it from the lane, a white wall a little taller than its door, and IMG_2262 its east end beside the CALLE ELENA face. It stands on the existing Cervantes south wall line, from the house corner (registry 6265801UF1366N_part5 corner 32, 0.23 m off the line) to the west wall's north end. The door head, cast through the solved roof camera at 2.0 m, is 0.95 m wide, 2.37 m along the wall from its west end and within about 0.2 m of the line. Height 1.9 m: the wall top casts at 1.84-1.95 m through the solved roof camera and IMG_2467 and IMG_2264 agree (structure review of 18 November; first built at 2.2 m). Built 17 November 2026 (task elena-junction-lawns-roof); it replaces the 0.65 m wall drawn here. Door 1.8 m, its head just under the coping as photographed."
+    },
+    {
+      "id": "elena-south-cypress-wall",
+      "name": "Elena south · white wall with two cypresses at the far end of the lawns",
+      "area": "elena",
+      "points": [
+        [
+          -149.411,
+          75.847
+        ],
+        [
+          -145.04,
+          73.661
+        ]
+      ],
+      "height": 2.0,
+      "thickness": 0.25,
+      "raise": 0,
+      "doors": [],
+      "evidence": [
+        "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2358.jpg",
+        "IMG_2367.jpg",
+        "IMG_2261.jpg",
+        "IMG_2330.jpg"
+      ],
+      "basis": "The far lawn ends at a plain white wall about 2 m high, with vines trained along its top and two cypresses at its foot, running from the lawns' west wall to the lane kerb: face-on in IMG_2261 and IMG_2330 from the junction, and from the Elena 24 roof in ELENA-ROOF-2026-11-17, IMG_2358 and IMG_2367; the Esri aerial has the lawn's green ending at a dark wall line. Built 0.35 m beyond the far lawn's traced edge, from the west wall to 1.0 m off the lane centreline (just short of the kerb). Its line is estimated: 22-24 m from the roof cameras the depth is good to about 1 m, and no ground camera near it is solved (photo request elena-south-cypress-wall-gate). Before this the model had open paving here and drew the north face of registry 6265801UF1366N_part5 as the boundary. 18 November 2026."
     }
   ]
 }

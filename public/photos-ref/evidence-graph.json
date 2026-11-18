@@ -6,9 +6,9 @@
   "needs-review": 232,
   "suggested": 267,
   "photos": 502,
-  "features": 498,
+  "features": 506,
   "photosCitedByModel": 211,
-  "modelFeaturesWithPhotoCitations": 242
+  "modelFeaturesWithPhotoCitations": 250
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2357,36 +2357,42 @@
   },
   {
    "id": "junction_lawns.json:junction-pollarded-1",
-   "name": "Cervantes / Elena · clipped lawn tree 1",
+   "name": "Cervantes / Elena · clipped standard 1",
    "kind": "reference feature",
    "source": "authored photo/map interpretation",
    "evidence": [
     "IMG_2329.jpg",
     "IMG_2342.jpg",
     "IMG_2358.jpg",
-    "IMG_2367.jpg"
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2262.jpg"
    ]
   },
   {
    "id": "junction_lawns.json:junction-pollarded-2",
-   "name": "Cervantes / Elena · clipped lawn tree 2",
+   "name": "Cervantes / Elena · clipped dome 2",
    "kind": "reference feature",
    "source": "authored photo/map interpretation",
    "evidence": [
     "IMG_2260.jpg",
     "IMG_2358.jpg",
-    "IMG_2367.jpg"
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2262.jpg"
    ]
   },
   {
    "id": "junction_lawns.json:junction-pollarded-3",
-   "name": "Cervantes / Elena · clipped lawn tree 3",
+   "name": "Cervantes / Elena · clipped dome 3",
    "kind": "reference feature",
    "source": "authored photo/map interpretation",
    "evidence": [
     "IMG_2260.jpg",
     "IMG_2358.jpg",
-    "IMG_2367.jpg"
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2262.jpg"
    ]
   },
   {
@@ -3573,6 +3579,99 @@
    ]
   },
   {
+   "id": "lane_walls.json:elena-south-cypress-wall",
+   "name": "Elena south · white wall with two cypresses at the far end of the lawns",
+   "kind": "reference feature",
+   "source": "photo/aerial interpretation; about 1 m",
+   "evidence": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2261.jpg",
+    "IMG_2330.jpg"
+   ]
+  },
+  {
+   "id": "elena_junction_details.json:cypresses",
+   "name": "Elena south · cypresses at the far wall",
+   "kind": "reference feature",
+   "source": "photo interpretation through the solved Elena 24 roof cameras; detail on reviewed structure",
+   "evidence": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2261.jpg",
+    "IMG_2262.jpg",
+    "IMG_2330.jpg"
+   ]
+  },
+  {
+   "id": "elena_junction_details.json:climbers",
+   "name": "Elena south · bougainvillea and vines on the lawn walls",
+   "kind": "reference feature",
+   "source": "photo interpretation through the solved Elena 24 roof cameras; detail on reviewed structure",
+   "evidence": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2261.jpg",
+    "IMG_2262.jpg",
+    "IMG_2330.jpg"
+   ]
+  },
+  {
+   "id": "elena_junction_details.json:lamp",
+   "name": "Elena south · lamp post in the east hedge bed",
+   "kind": "reference feature",
+   "source": "photo interpretation through the solved Elena 24 roof cameras; detail on reviewed structure",
+   "evidence": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2261.jpg",
+    "IMG_2262.jpg",
+    "IMG_2330.jpg"
+   ]
+  },
+  {
+   "id": "elena_junction_details.json:sign",
+   "name": "Elena south · CALLE ELENA tile sign",
+   "kind": "reference feature",
+   "source": "photo interpretation through the solved Elena 24 roof cameras; detail on reviewed structure",
+   "evidence": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2261.jpg",
+    "IMG_2262.jpg",
+    "IMG_2330.jpg"
+   ]
+  },
+  {
+   "id": "elena_south_beds.json:elena-south-east-bed-mouth",
+   "name": "Elena south · hedge bed in front of the corner patio wall",
+   "kind": "reference feature",
+   "source": "photo interpretation through the solved Elena 24 roof cameras against the lane tiles and house fronts; about 0.5 m along, 0.2 m across",
+   "evidence": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2330.jpg"
+   ]
+  },
+  {
+   "id": "elena_south_beds.json:elena-south-east-bed-house",
+   "name": "Elena south · hedge bed along the corner house",
+   "kind": "reference feature",
+   "source": "photo interpretation through the solved Elena 24 roof cameras against the lane tiles and house fronts; about 0.5 m along, 0.2 m across",
+   "evidence": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2330.jpg"
+   ]
+  },
+  {
    "id": "cervantes_lane_edges.json:cervantes-north-bed-west",
    "name": "Cervantes west · planted bed between the lane kerb and the north garden wall",
    "kind": "reference feature",
@@ -4285,6 +4384,18 @@
     "IMG_2358.jpg",
     "IMG_2367.jpg",
     "ELENA-ROOF-2026-11-17.jpg"
+   ]
+  },
+  {
+   "id": "plain_fronts.json:elena-south-far-blank-face",
+   "name": "elena south far blank face",
+   "kind": "reference feature",
+   "source": "Behind the cypress wall at the far end of the Elena south lawns, the north face of registry 6265801UF1366N_part5 (corners 41-42) is a tall plain white wall with a single small arched window, seen from the Elena 24 roof (ELENA-ROOF-2026-11-17, IMG_2358, IMG_2367) and the lane (IMG_2261). The generated balcony, awnings, windows and shutters are left off; the one small window is not drawn.",
+   "evidence": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2261.jpg"
    ]
   },
   {
@@ -8113,6 +8224,24 @@
   },
   {
    "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "junction_lawns.json:junction-pollarded-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "junction_lawns.json:junction-pollarded-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "junction_lawns.json:junction-pollarded-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
    "to": "lane_walls.json:elena-south-lawn-west-wall",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -8125,6 +8254,48 @@
   },
   {
    "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "lane_walls.json:elena-south-cypress-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "elena_junction_details.json:cypresses",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "elena_junction_details.json:climbers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "elena_junction_details.json:lamp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "elena_junction_details.json:sign",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "elena_south_beds.json:elena-south-east-bed-mouth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "elena_south_beds.json:elena-south-east-bed-house",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
    "to": "plain_fronts.json:elena-24-south-patio",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -8132,6 +8303,12 @@
   {
    "from": "photo:ELENA-ROOF-2026-11-17.jpg",
    "to": "plain_fronts.json:elena-south-east-corner-house",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:ELENA-ROOF-2026-11-17.jpg",
+   "to": "plain_fronts.json:elena-south-far-blank-face",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -10913,6 +11090,36 @@
   },
   {
    "from": "photo:IMG_2261.jpg",
+   "to": "lane_walls.json:elena-south-cypress-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "elena_junction_details.json:cypresses",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "elena_junction_details.json:climbers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "elena_junction_details.json:lamp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "elena_junction_details.json:sign",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
    "to": "door_sills.json:elena-lawn-door-sill",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -10920,6 +11127,12 @@
   {
    "from": "photo:IMG_2261.jpg",
    "to": "door_sills.json:elena-bed-door-sill",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "plain_fronts.json:elena-south-far-blank-face",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -10970,7 +11183,49 @@
   },
   {
    "from": "photo:IMG_2262.jpg",
+   "to": "junction_lawns.json:junction-pollarded-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
+   "to": "junction_lawns.json:junction-pollarded-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
+   "to": "junction_lawns.json:junction-pollarded-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
    "to": "lane_walls.json:cervantes-elena-patio-front-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
+   "to": "elena_junction_details.json:cypresses",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
+   "to": "elena_junction_details.json:climbers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
+   "to": "elena_junction_details.json:lamp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
+   "to": "elena_junction_details.json:sign",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -12624,6 +12879,48 @@
   },
   {
    "from": "photo:IMG_2330.jpg",
+   "to": "lane_walls.json:elena-south-cypress-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "elena_junction_details.json:cypresses",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "elena_junction_details.json:climbers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "elena_junction_details.json:lamp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "elena_junction_details.json:sign",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "elena_south_beds.json:elena-south-east-bed-mouth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "elena_south_beds.json:elena-south-east-bed-house",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
    "to": "door_sills.json:elena-lawn-door-sill",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -13626,6 +13923,48 @@
   },
   {
    "from": "photo:IMG_2358.jpg",
+   "to": "lane_walls.json:elena-south-cypress-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "elena_junction_details.json:cypresses",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "elena_junction_details.json:climbers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "elena_junction_details.json:lamp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "elena_junction_details.json:sign",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "elena_south_beds.json:elena-south-east-bed-mouth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "elena_south_beds.json:elena-south-east-bed-house",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
    "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -13639,6 +13978,12 @@
   {
    "from": "photo:IMG_2358.jpg",
    "to": "plain_fronts.json:elena-south-east-corner-house",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "plain_fronts.json:elena-south-far-blank-face",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -13979,6 +14324,48 @@
   },
   {
    "from": "photo:IMG_2367.jpg",
+   "to": "lane_walls.json:elena-south-cypress-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "elena_junction_details.json:cypresses",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "elena_junction_details.json:climbers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "elena_junction_details.json:lamp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "elena_junction_details.json:sign",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "elena_south_beds.json:elena-south-east-bed-mouth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "elena_south_beds.json:elena-south-east-bed-house",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
    "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -13992,6 +14379,12 @@
   {
    "from": "photo:IMG_2367.jpg",
    "to": "plain_fronts.json:elena-south-east-corner-house",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "plain_fronts.json:elena-south-far-blank-face",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

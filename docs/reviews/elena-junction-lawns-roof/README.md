@@ -99,3 +99,48 @@ IMG_2358 and IMG_2367 look straight at that face: a white moulded balcony ledge 
 white porch round the brown door. `IMG_2358-east-corner-house-after.jpg`: photo beside the render through the solved camera.
 Not built yet: the ledge and porch surround (detail), and the hedge bed with the lamp post between the lane and this
 house's front patio (structure, next).
+
+## 18 November: east beds, the far end, and the detail planting
+
+**Structure.**
+- **East hedge beds** (`data/elena_south_beds.json`): two kerbed beds between the lane tiles and the corner house's patio
+  wall and front. The roof camera puts the tile edge 0.6-0.9 m and the hedge face 1.0-1.2 m east of the centreline.
+  The beds use the Cervantes bed renderer, now with a frame per file. The hedge is planted at the back of each bed in
+  0.36 m pieces so it clears the shared route guard. South of 9.9 m the house fronts come within 0.15-0.4 m of the
+  lane, and nothing is built there.
+- **Cypress wall** (`lane_walls.json:elena-south-cypress-wall`): a 2.0 m white wall 0.35 m beyond the far lawn's edge, from
+  the west wall to just short of the lane kerb. Existing photos show it (IMG_2261 and IMG_2330 face-on, the roof photos
+  from above), but none of their cameras fixes its depth, so its line is estimated to about 1 m. Photo request
+  `elena-south-cypress-wall-gate` asks for the two ground views that would fix it. IMG_2681, IMG_2682 and IMG_2506 show
+  the lane on to the middle-pool gate, which `data/middle_pool_north.json` already models.
+- **Plain house face** (`plain_fronts.json:elena-south-far-blank-face`): no generated porches or openings on the plain
+  north face of 6265801UF1366N_part5 behind the cypress wall.
+- Structure review: `STRUCTURE-REVIEW.md`.
+
+**Detail** (`data/elena_junction_details.json`, `src/elena-junction-details.ts`, Show details only):
+- **Lawn trees** are now clipped domes and a clipped standard, re-placed through both roof cameras. The domes' crowns
+  overhang the lane kerb as photographed, so only their trunks keep the route clearance.
+- **Cypresses:** two at the foot of the cypress wall.
+- **Climbers:** bougainvillea on the west wall (starting past the plaques) and over the corner patio wall; vines on the
+  far part of the west wall and along the cypress wall.
+- **Lamp post** in the east hedge bed, and the **CALLE ELENA** tile plaques on the west wall.
+- `details-photo-vs-render.jpg` shows the photo beside the render.
+
+**Still different.**
+- The clipped standard stands about 1 m south of the photographed one. Both cameras put its trunk 0.5-1 m north of the
+  modelled lawn edge, and the lane kerb shows to z 58.4. So the lawn's north edge (the Cervantes south kerb, hidden in
+  both roof photos) is probably 0.6-0.8 m too far south: discrepancy `elena-lawn-north-edge`. A ground camera at the
+  junction needs solving to fix it.
+- Not drawn yet: the shrubs at the west wall's foot, the corner house's ledge and porch, and the small window in the
+  blank face.
+
+**Structure review (`STRUCTURE-REVIEW.md`) and fixes, 18 November.** The reviewer passed the kerb, the lawn level,
+both plain fronts and the cypress wall (with limits), and failed two items, both now fixed as specified:
+- **Patio wall with the brown door:** lowered from 2.2 m to 1.9 m, with the door 1.8 m. Through the solved roof camera
+  the wall top casts at 1.84-1.95 m, and IMG_2467 and IMG_2264 agree. Its basis text now gives the door's true place,
+  2.37 m from the wall's west end. The reviewer suspects the west wall's north end is too tall as well; that is open.
+- **East hedge beds:** both now start at the photographed tile edge, 1.0 m east of the centreline (they started at
+  0.65 m, over paving). The hedge fills the 0.25-0.3 m bed, so it is thinner than the photographed one, which bulges
+  over it. The patio wall behind is probably further east than drawn; that is open.
+
+These fixes were not re-reviewed. `IMG_2358-east-beds-after-review.jpg` shows them.

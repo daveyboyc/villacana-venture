@@ -1905,6 +1905,18 @@
    "result": "differs",
    "followUp": "elena-junction-lawns-roof",
    "notes": "Through the solved roof camera with Show details: the tall patio wall with its brown door now faces Cervantes beside the CALLE ELENA corner, the wall along the near lawn is the low kerb, and the junction lawns sit just below their kerb tops. Still different: the bougainvillea and climbers on the walls, the CALLE ELENA tile sign, the clipped trees and cypresses, the far cypress wall and gate. A photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "elena-junction-lawns-roof",
+   "checked": "2026-11-18",
+   "by": "Claude",
+   "feature": "elena_junction_details.json:climbers",
+   "photo": "ELENA-ROOF-2026-11-17.jpg",
+   "render": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-after-details.png",
+   "before": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-before-details.png",
+   "result": "differs",
+   "followUp": "elena-junction-lawns-roof",
+   "notes": "Through the solved roof camera with Show details: clipped domes, cypresses against the far wall, bougainvillea on the west wall, vines on the cypress wall, the east hedge beds with the lamp post and the CALLE ELENA plaques now stand where the photo has them. Still different: the clipped standard stands about 1 m south of the photographed one (the lawn's north edge, discrepancy elena-lawn-north-edge), shrubs at the west wall's foot, the corner house's ledge and porch. A photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [

@@ -2,14 +2,14 @@
  "id": "junction-lawns",
  "name": "Cervantes / Elena · pollarded lawn trees",
  "reviewedAt": "2026-10-15",
- "trust": "Three clipped trees and their order beside the lane/door approach are visible in ground and roof photos. Positions and 2.6 m heights are estimated within the existing approximate lawn outlines, not surveyed. Existing lawn rings and white kerbs retained: oblique roof views establish the relationships but do not calibrate a metric retrace.",
+ "trust": "Three clipped trees and their order beside the lane/door approach are visible in ground and roof photos. Positions and 2.6 m heights are estimated within the existing approximate lawn outlines, not surveyed. Existing lawn rings and white kerbs retained: oblique roof views establish the relationships but do not calibrate a metric retrace. 18 November 2026: drawn as clipped trees (a round crown on a trunk, src/clipped-plants.ts roundClippedTree) instead of the generic pollarded-tree card, and re-placed through the solved roof cameras.",
  "trees": [
   {
    "id": "junction-pollarded-1",
-   "name": "Cervantes / Elena · clipped lawn tree 1",
+   "name": "Cervantes / Elena · clipped standard 1",
    "point": [
-    -153,
-    62.5
+    -154.3,
+    59.95
    ],
    "region": "cervantes-elena-lawn-1",
    "scale": 0.62,
@@ -17,41 +17,62 @@
     "IMG_2329.jpg",
     "IMG_2342.jpg",
     "IMG_2358.jpg",
-    "IMG_2367.jpg"
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2262.jpg"
    ],
-   "trust": "Photo-supported clipped tree; position and size estimated relative to retained lawn and entrance approach."
+   "trust": "Photo-supported clipped tree; position and size estimated relative to retained lawn and entrance approach. 18 November 2026: the clipped standard (round crown on a bare trunk) near the lawn's north tip, between the manhole and the lane corner: trunk cast through the solved roof cameras of ELENA-ROOF-2026-11-17 and IMG_2358 (its foot is hidden by the foreground bougainvillea) and placed by IMG_2262 against the manhole and the kerb corner; good to about 0.5 m. Its crown overhangs the lawn's north kerb as photographed (only the trunk keeps clear); the photos put the trunk 0.5-1 m further north still, beyond the modelled lawn edge (discrepancy elena-lawn-north-edge).",
+   "kind": "standard",
+   "trunk": 1.15,
+   "crown": 1.3,
+   "crownHeight": 1.15,
+   "canopyOverhangs": true
   },
   {
    "id": "junction-pollarded-2",
-   "name": "Cervantes / Elena · clipped lawn tree 2",
+   "name": "Cervantes / Elena · clipped dome 2",
    "point": [
-    -151,
-    66.5
+    -149.52,
+    67.06
    ],
    "region": "cervantes-elena-lawn-1",
    "scale": 0.62,
    "evidence": [
     "IMG_2260.jpg",
     "IMG_2358.jpg",
-    "IMG_2367.jpg"
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2262.jpg"
    ],
-   "trust": "Photo-supported clipped tree; position and size estimated relative to retained lawn and entrance approach."
+   "trust": "Photo-supported clipped tree; position and size estimated relative to retained lawn and entrance approach. 18 November 2026: the clipped dome at the near lawn's corner by the cross path: trunk foot cast through both solved roof cameras to (-149.80, 66.56) and (-149.24, 67.55), placed between them; its crown overhangs the lane kerb as photographed, so only the trunk keeps the route clearance.",
+   "kind": "dome",
+   "trunk": 0.75,
+   "crown": 1.75,
+   "crownHeight": 1.45,
+   "canopyOverhangs": true
   },
   {
    "id": "junction-pollarded-3",
-   "name": "Cervantes / Elena · clipped lawn tree 3",
+   "name": "Cervantes / Elena · clipped dome 3",
    "point": [
-    -148.9,
-    71.9
+    -147.9,
+    69.7
    ],
    "region": "cervantes-elena-lawn-2",
    "scale": 0.62,
    "evidence": [
     "IMG_2260.jpg",
     "IMG_2358.jpg",
-    "IMG_2367.jpg"
+    "IMG_2367.jpg",
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2262.jpg"
    ],
-   "trust": "Photo-supported clipped tree; position and size estimated relative to retained lawn and entrance approach."
+   "trust": "Photo-supported clipped tree; position and size estimated relative to retained lawn and entrance approach. 18 November 2026: the clipped dome at the far lawn's north-east corner, its trunk hidden behind the near dome in ELENA-ROOF-2026-11-17: placed under the crown centre on the lawn, good to about 1 m; crown overhangs the kerb as photographed.",
+   "kind": "dome",
+   "trunk": 0.75,
+   "crown": 1.7,
+   "crownHeight": 1.45,
+   "canopyOverhangs": true
   }
  ]
 }

@@ -757,11 +757,43 @@
   },
   "lane_walls.json:cervantes-elena-patio-front-wall": {
    "level": "photographed",
-   "why": "Tall white patio wall with a brown door on Cervantes south between the house and the CALLE ELENA corner, seen from the Elena 24 roof (ELENA-ROOF-2026-11-17.jpg) and from the lane (IMG_2467, IMG_2264); door width and position cast through the solved roof camera, height by eye."
+   "why": "Tall white patio wall with a brown door on Cervantes south between the house and the CALLE ELENA corner, seen from the Elena 24 roof (ELENA-ROOF-2026-11-17.jpg) and from the lane (IMG_2467, IMG_2264); door width and position cast through the solved roof camera, height 1.9 m from the wall top cast through the solved roof camera."
   },
   "plain_fronts.json:elena-south-east-corner-house": {
    "level": "photographed",
    "why": "The north-west face of the Elena south / Cervantes east corner house is photographed head-on from the Elena 24 roof (IMG_2358, IMG_2367): white balcony ledge and porch surround, no timber balcony or porch roof."
+  },
+  "elena_south_beds.json:elena-south-east-bed-mouth": {
+   "level": "photographed",
+   "why": "Clipped hedge bed between the Elena south tiles and the corner house's patio wall and front, photographed from the Elena 24 roof (IMG_2358, IMG_2367, ELENA-ROOF-2026-11-17) and the lane (IMG_2330); width from the solved roof camera, ends estimated."
+  },
+  "elena_south_beds.json:elena-south-east-bed-house": {
+   "level": "photographed",
+   "why": "Clipped hedge bed between the Elena south tiles and the corner house's patio wall and front, photographed from the Elena 24 roof (IMG_2358, IMG_2367, ELENA-ROOF-2026-11-17) and the lane (IMG_2330); width from the solved roof camera, ends estimated."
+  },
+  "lane_walls.json:elena-south-cypress-wall": {
+   "level": "estimated",
+   "why": "Photographed face-on from the lane (IMG_2261, IMG_2330) and from the roof, so plainly there, but its line is placed from the far lawn's edge and the aerial, good to about 1 m; the photo request elena-south-cypress-wall-gate asks for ground views to fix it."
+  },
+  "plain_fronts.json:elena-south-far-blank-face": {
+   "level": "photographed",
+   "why": "The north face of the house behind the cypress wall is a plain white wall with one small window and two pilaster gables in the Elena 24 roof photos and IMG_2261: no balconies or awnings."
+  },
+  "elena_junction_details.json:cypresses": {
+   "level": "estimated",
+   "why": "Two slim cypresses at the foot of the far wall, photographed from the roof and the lane; their spacing is cast through the solved roof camera, their line follows the estimated cypress wall."
+  },
+  "elena_junction_details.json:climbers": {
+   "level": "photographed",
+   "why": "Bougainvillea and trained vines on the west wall, the cypress wall and the corner patio wall as the roof and lane photos show; extents along each wall read by eye."
+  },
+  "elena_junction_details.json:lamp": {
+   "level": "photographed",
+   "why": "The black lantern post in the east hedge bed near the junction, in IMG_2358, IMG_2367 and the Elena 24 roof photo; base cast through the solved roof camera to about 0.5 m."
+  },
+  "elena_junction_details.json:sign": {
+   "level": "photographed",
+   "why": "CALLE and ELENA tile plaques on the west wall near its north end (IMG_2262, IMG_2286, the roof photo); size and height read by eye."
   }
  },
  "gaps": [
