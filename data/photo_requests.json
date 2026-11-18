@@ -821,6 +821,42 @@
       "since": "2026-11-17",
       "status": "open",
       "note": "18 November 2026: the wall is built from the far lawn's edge and the aerial as an estimate (about 1 m in depth). Existing photos IMG_2261 and IMG_2330 show it face-on from the junction but are unsolved; IMG_2683/2684 have it behind the camera. These two views would fix its line."
+    },
+    {
+      "id": "cervantes-elena-junction-square",
+      "area": "cervantes",
+      "at": [
+        -151.6,
+        57.0
+      ],
+      "look": [
+        -154.2,
+        59.6
+      ],
+      "priority": 1,
+      "radius": 3,
+      "since": "2026-11-18",
+      "status": "open",
+      "ask": "Stand on the drain at the foot of the Cervantes ramp and steps, at the Elena junction. (1) Face straight across the lane towards the near Elena lawn's corner, so the lawn kerb, the drain's south end, the ramp and the steps' white side are all in one frame. (2) Turn to face along Cervantes up the ramp, with the CALLE ELENA corner and the houses on both sides in view. (3) One more facing the brown garden door with its three red steps.",
+      "why": "elena-lawn-north-edge and cervantes-elena-steps-position: no ground camera at the junction is solved; these views have enough fixed corners (the CALLE ELENA wall corner, the patio wall door, the house fronts) to solve one and fix where the lawn's north kerb and the drain really are."
+    },
+    {
+      "id": "elena-south-east-patio-wall-square",
+      "area": "elena",
+      "at": [
+        -151.0,
+        61.3
+      ],
+      "look": [
+        -149.6,
+        60.4
+      ],
+      "priority": 2,
+      "radius": 3,
+      "since": "2026-11-18",
+      "status": "open",
+      "ask": "On Calle Elena south, about 3 m from the Cervantes junction, stand on the lawn-side kerb and face east square-on to the hedge bed, the lamp post and the white patio wall behind it, so the tiles' edge, the bed and the wall foot are all visible. Then one looking along the east side towards the middle pool.",
+      "why": "elena-south-east-beds: the two roof cameras disagree by 0.5 m on where the patio wall behind the hedge stands, which sets how deep the hedge bed is."
     }
   ]
 }
