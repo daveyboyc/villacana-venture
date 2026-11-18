@@ -1,7 +1,8 @@
 import * as THREE from "three";
 import data from "../data/cervantes_lane_edges.json";
 import elena from "../data/elena_south_beds.json";
-import { clippedHedge, looseShrub } from "./clipped-plants";
+import elenaCorner from "../data/elena_north_corner.json";
+import { clippedHedge, fanPalm, looseShrub } from "./clipped-plants";
 import { groundElenaWall } from "./elena-wall-ground";
 import { plasterMaterial } from "./materials";
 import { siteY } from "./terrain";
@@ -11,9 +12,13 @@ import type { Vec2 } from "./types";
  * walls and soil are structure (Layout, solid, on the map); the planting is a Show-details piece. */
 export type LaneEdgePlanting = { kind: string; height: number; runs: { s: number[]; look: string }[] };
 type Axis = { origin: number[]; along: number[]; right: number[] };
-export type LaneEdgePlanter = { id: string; name: string; kind: string; s: number[]; o: number[]; height: number; wall: number; ring: Vec2[]; planting: LaneEdgePlanting; evidence: string[]; basis: string; axis: Axis };
-/** Cervantes beds (data/cervantes_lane_edges.json) and the Elena south beds (data/elena_south_beds.json), each in its own lane frame. */
-export const cervantesLaneEdges: LaneEdgePlanter[] = [data, elena].flatMap((file) => file.planters.map((p) => ({ ...p, ring: p.ring as Vec2[], axis: file.axis })));
+/** `join` leaves out the kerb where two planters meet as one bed: an end (`s0`/`s1`), or a stretch [from, to] of the
+ * `near` (o[0]) or `far` (o[1]) side. */
+export type PlanterJoin = { ends?: string[]; near?: number[]; far?: number[] };
+export type LaneEdgePlanter = { id: string; name: string; kind: string; s: number[]; o: number[]; height: number; wall: number; ring: Vec2[]; planting: LaneEdgePlanting; evidence: string[]; basis: string; axis: Axis; join?: PlanterJoin };
+/** Cervantes beds (data/cervantes_lane_edges.json), the Elena south beds (data/elena_south_beds.json) and the Elena north
+ * corner bed (data/elena_north_corner.json), each in its own lane frame. */
+export const cervantesLaneEdges: LaneEdgePlanter[] = [data, elena, elenaCorner].flatMap((file) => file.planters.map((p) => ({ ...p, ring: p.ring as Vec2[], axis: file.axis })));
 
 /** A point in a lane frame: s metres along the axis, o metres off it (positive to the right of the axis). */
 const at = (axis: Axis, s: number, o: number): Vec2 => [axis.origin[0] + axis.along[0] * s + axis.right[0] * o, axis.origin[1] + axis.along[1] * s + axis.right[1] * o];
@@ -42,12 +47,16 @@ export function addCervantesLaneEdges(scene: THREE.Scene): void {
   const FOOT = 0.06;
   for (const p of cervantesLaneEdges) {
     const [s0, s1] = p.s, [near, far] = p.o, sign = Math.sign(far - near), t = p.wall, A = (s: number, o: number) => at(p.axis, s, o);
-    // Kerb walls: the lane face and the back on the long sides, the two ends between them.
-    for (const o of [near + sign * t / 2, far - sign * t / 2]) group.add(box(A(s0, o), A(s1, o), -FOOT, p.height, t, white, p.id));
+    // Kerb walls: the lane face and the back on the long sides, the two ends between them, less any joins.
+    const join = p.join ?? {};
+    for (const [o, gap] of [[near + sign * t / 2, join.near], [far - sign * t / 2, join.far]] as [number, number[] | undefined][]) {
+      for (const [a, b] of gap ? [[s0, gap[0]], [gap[1], s1]] : [[s0, s1]]) if (b - a > 0.02) group.add(box(A(a, o), A(b, o), -FOOT, p.height, t, white, p.id));
+    }
     const mid = (near + far) / 2, inner = Math.abs(far - near) - 2 * t;
-    for (const s of [s0 + t / 2, s1 - t / 2]) group.add(box(A(s, mid - sign * inner / 2), A(s, mid + sign * inner / 2), -FOOT, p.height, t, white, p.id));
-    // Soil just under the kerb top, between the walls.
-    group.add(box(A(s0 + t, mid), A(s1 - t, mid), p.height - 0.08, p.height - 0.03, inner, soil, p.id + "-soil"));
+    const open0 = join.ends?.includes("s0"), open1 = join.ends?.includes("s1");
+    for (const [s, open] of [[s0 + t / 2, open0], [s1 - t / 2, open1]] as [number, boolean | undefined][]) if (!open) group.add(box(A(s, mid - sign * inner / 2), A(s, mid + sign * inner / 2), -FOOT, p.height, t, white, p.id));
+    // Soil just under the kerb top, between the walls (to the end where it joins another bed).
+    group.add(box(A(open0 ? s0 : s0 + t, mid), A(open1 ? s1 : s1 - t, mid), p.height - 0.08, p.height - 0.03, inner, soil, p.id + "-soil"));
   }
   scene.add(group);
 }
@@ -58,6 +67,10 @@ const LOOKS: Record<string, (length: number, depth: number, height: number, seed
   oleander: (length, depth, height, seed) => clippedHedge({ length, depth, height, seed, clip: 3.2, density: 520, leaf: "narrow", leafSize: [0.16, 0.045], greens: ["#2f4528", "#3d5733", "#4a6638"], inside: "#1d2c19", flowers: { count: Math.round(length * 18), colour: "#f0c3c8" } }),
   dracaena: (length, depth, height, seed) => looseShrub({ width: Math.min(length, 0.9), depth, height, seed, leaf: "narrow", leafSize: [0.32, 0.05], greens: ["#4f6f3a", "#6b8a4a", "#c9cf9a"], stems: 4 }),
   jade: (length, depth, height, seed) => looseShrub({ width: Math.min(length, 0.7), depth, height, seed, leaf: "glossy", leafSize: [0.07, 0.05], greens: ["#4d6e36", "#5d7f40", "#6b8c48"], stems: 4 }),
+  // Plumbago in a clipped hedge: pale blue flower heads over the box (IMG_2463, IMG_2462).
+  plumbago: (length, depth, height, seed) => clippedHedge({ length, depth, height, seed, clip: 4.2, leafSize: [0.06, 0.035], greens: ["#3a5a2e", "#476a35", "#55773d"], flowers: { count: Math.round(length * 70), colour: "#a9bde6", kind: "star", size: [0.05, 0.05] } }),
+  // Fan palm clumps in the raised corner bed at the Elena north mouth (IMG_2455, IMG_2800, IMG_2967).
+  fanpalm: (length, depth, height, seed) => fanPalm({ width: length, depth, height, seed }),
   lantana: (length, depth, height, seed) => looseShrub({ width: Math.min(length, 0.9), depth, height, seed, leaf: "small", leafSize: [0.06, 0.04], greens: ["#3f5a30", "#4c6a37", "#5d7a42"], stems: 5, flowers: { count: 30, colour: seed % 2 ? "#f2c230" : "#e8652e" } }),
 };
 
@@ -75,7 +88,7 @@ export function addCervantesLaneEdgePlanting(into: THREE.Scene, keep: (x: number
     const back = p.planting as LaneEdgePlanting & { depth?: number; step?: number };
     const [near, far] = p.o, sign = Math.sign(far - near), depth = back.depth ?? Math.abs(far - near) - 2 * p.wall - 0.04, o = back.depth ? far - sign * (p.wall + back.depth / 2) : (near + far) / 2;
     for (const run of p.planting.runs) {
-      const look = LOOKS[run.look] ?? LOOKS.box, loose = run.look === "dracaena" || run.look === "lantana" || run.look === "jade";
+      const look = LOOKS[run.look] ?? LOOKS.box, loose = run.look === "dracaena" || run.look === "lantana" || run.look === "jade" || run.look === "fanpalm";
       // Short pieces: the guard bounds each with a circle, and these beds are narrow and close to the lane.
       const step = back.step ?? (loose ? 0.5 : 0.6), pieces = Math.max(1, Math.ceil((run.s[1] - run.s[0] - 2 * p.wall) / step)), len = (run.s[1] - run.s[0] - 2 * p.wall) / pieces;
       for (let i = 0; i < pieces; i++) {

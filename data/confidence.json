@@ -806,6 +806,30 @@
   "elena_junction_details.json:windows": {
    "level": "photographed",
    "why": "The one small window on the blank face behind the cypress wall, cast through the solved roof camera."
+  },
+  "lane_walls.json:elena-north-corner-patio-wall": {
+   "level": "estimated",
+   "why": "Photographed from Cervantes (IMG_2455, IMG_2800, IMG_2965-2967) with its CALLE DE ELENA tiles and brown double door, but no solved camera sees it: the line continues the registry house front and meets the Elena 24 garden-door wall, the height is the CALLE ELENA wall opposite, its top is hidden by bougainvillea. About 0.5 m."
+  },
+  "cervantes_lane_edges.json:cervantes-elena-corner-bed": {
+   "level": "estimated",
+   "why": "The raised hedge and fan-palm bed along Cervantes in IMG_2455, IMG_2800, IMG_2463: lane face at the old kerb wall line, kerb height from the tile count in IMG_2800; extents estimated to about 0.5 m."
+  },
+  "elena_north_corner.json:elena-north-corner-bed": {
+   "level": "estimated",
+   "why": "The raised fan-palm bed up the Elena north mouth, frontal in IMG_2800 and IMG_2967: back on the registry house-front line, face from the tile count across the mouth; unsolved cameras, about 0.4-0.5 m."
+  },
+  "elena_north_corner_details.json:climbers": {
+   "level": "estimated",
+   "why": "Magenta bougainvillea over the corner and the Cervantes face, and by the garden door, in IMG_2455, IMG_2800, IMG_2463; extents along the wall read by eye from unsolved photos."
+  },
+  "elena_north_corner_details.json:lamp": {
+   "level": "photographed",
+   "why": "The black lantern on its wall bracket at the corner is clear in IMG_2800, IMG_2967 and IMG_2455; its height and reach are estimated to about 0.3 m."
+  },
+  "elena_north_corner_details.json:sign": {
+   "level": "photographed",
+   "why": "CALLE DE ELENA in single-letter tiles, read in IMG_2800, IMG_2967 and IMG_2455; its place along the wall is estimated to about 0.3 m."
   }
  },
  "gaps": [

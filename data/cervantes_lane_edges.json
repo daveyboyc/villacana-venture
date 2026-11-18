@@ -699,6 +699,76 @@
     "IMG_2794.jpg"
    ],
    "basis": "IMG_2449, IMG_2450 and IMG_2794: a narrow bed of jade and young bougainvillea runs along the foot of the tall south wall behind an aggregate strip; it stops at the two doors. Width from the lane edge to the wall face."
+  },
+  {
+   "id": "cervantes-elena-corner-bed",
+   "name": "Cervantes at the Elena north mouth · raised hedge and fan-palm bed along the corner patio wall",
+   "kind": "raised",
+   "s": [
+    50.34,
+    55.55
+   ],
+   "o": [
+    -0.95,
+    -1.945
+   ],
+   "height": 0.5,
+   "wall": 0.1,
+   "ring": [
+    [
+     -151.864,
+     55.63
+    ],
+    [
+     -147.389,
+     52.962
+    ],
+    [
+     -147.898,
+     52.108
+    ],
+    [
+     -152.374,
+     54.775
+    ]
+   ],
+   "planting": {
+    "kind": "shrubs",
+    "height": 1.9,
+    "runs": [
+     {
+      "s": [
+       50.34,
+       52.6
+      ],
+      "look": "plumbago"
+     },
+     {
+      "s": [
+       52.6,
+       55.55
+      ],
+      "look": "fanpalm"
+     }
+    ]
+   },
+   "evidence": [
+    "IMG_2455.jpg",
+    "IMG_2800.jpg",
+    "IMG_2965.jpg",
+    "IMG_2966.jpg",
+    "IMG_2967.jpg",
+    "IMG_2799.jpg",
+    "IMG_2514.jpg",
+    "IMG_2686.jpg",
+    "IMG_2463.jpg"
+   ],
+   "basis": "The white raised bed along the Cervantes edge in front of the corner patio wall (lane_walls.json elena-north-corner-patio-wall): clipped hedge with plumbago from the Elena 24 garden-door planter (IMG_2463), then fan palms to the corner, where it meets the bed up the Elena north mouth (data/elena_north_corner.json). It replaces the 0.65 m wall cervantes-patio-north-east, which stood at its lane face; the face is set at 0.95 m, the lane paving limit, and the back is the patio wall. Kerb 0.5 m: in IMG_2800 the bed corner is 145 px tall where the 0.4 m tiles beside it are about 125 px. Estimated to about 0.5 m along, 0.2 m across.",
+   "join": {
+    "ends": [
+     "s1"
+    ]
+   }
   }
  ]
 }

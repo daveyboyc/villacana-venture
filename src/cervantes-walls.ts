@@ -6,7 +6,8 @@ import { barrierRings, roadHeight } from "./boundaries";
 import { plasterMaterial } from "./materials";
 import type { Boundary, BoundaryReference, Vec2 } from "./types";
 
-export const cervantesPatioWalls=[...layout.walls,...east.walls].map(w=>({...w,points:w.points as Vec2[]}));
+// A retired wall stays in the data as a tombstone for the evidence graph, but is neither drawn nor solid.
+export const cervantesPatioWalls=[...layout.walls,...east.walls].filter(w=>!(w as {retired?:unknown}).retired).map(w=>({...w,points:w.points as Vec2[]}));
 export const cervantesWallOpenings=layout.openings.map(o=>({...o,ring:o.ring as Vec2[]}));
 export function inCervantesWallReview(x:number,z:number):boolean {
   const [a,b]=layout.review.points;

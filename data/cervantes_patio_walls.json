@@ -70,7 +70,16 @@
         "IMG_2274.jpg",
         "IMG_2275.jpg"
       ],
-      "trust": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges."
+      "trust": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges.",
+      "retired": {
+        "date": "2026-11-18",
+        "by": [
+          "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+          "lane_walls.json:elena-north-corner-patio-wall"
+        ],
+        "why": "This 0.65 m wall was the lane face of the raised fan-palm bed at the west corner of the Elena north mouth (IMG_2455, IMG_2800, IMG_2967); the bed now draws that face itself, with the corner patio wall behind it. Kept as a tombstone so the evidence graph keeps its history; not drawn and not solid.",
+        "review": "docs/reviews/elena-north-corner/STRUCTURE-REVIEW.md"
+      }
     },
     {
       "id": "cervantes-patio-south-1",

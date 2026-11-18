@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "6981911a0367af2f3f63431d78cc4fb54f550231f3d17767ac3f3b83aa6f6017",
+ "inputDigest": "121c5f142465cd704ec66b1a5606c8c840c1e9c99c79fb5603ea68fa9d69f67f",
  "summary": {
   "unplaced": 3,
   "needs-review": 232,
   "suggested": 267,
   "photos": 502,
-  "features": 509,
-  "photosCitedByModel": 211,
-  "modelFeaturesWithPhotoCitations": 253
+  "features": 514,
+  "photosCitedByModel": 221,
+  "modelFeaturesWithPhotoCitations": 258
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2058,20 +2058,6 @@
    ]
   },
   {
-   "id": "cervantes_patio_walls.json:cervantes-patio-north-east",
-   "name": "Cervantes · north patio wall east of garden door",
-   "kind": "reference feature",
-   "source": "authored photo/map interpretation",
-   "evidence": [
-    "IMG_2263.jpg",
-    "IMG_2264.jpg",
-    "IMG_2265.jpg",
-    "IMG_2273.jpg",
-    "IMG_2274.jpg",
-    "IMG_2275.jpg"
-   ]
-  },
-  {
    "id": "cervantes_patio_walls.json:cervantes-patio-south-1",
    "name": "Cervantes · south patio wall 1",
    "kind": "reference feature",
@@ -3592,6 +3578,23 @@
    ]
   },
   {
+   "id": "lane_walls.json:elena-north-corner-patio-wall",
+   "name": "Elena north mouth · white patio wall with the CALLE DE ELENA plaque and a brown double door, round the west corner onto Cervantes",
+   "kind": "reference feature",
+   "source": "photo/aerial interpretation; about 1 m",
+   "evidence": [
+    "IMG_2455.jpg",
+    "IMG_2800.jpg",
+    "IMG_2965.jpg",
+    "IMG_2966.jpg",
+    "IMG_2967.jpg",
+    "IMG_2799.jpg",
+    "IMG_2514.jpg",
+    "IMG_2686.jpg",
+    "IMG_2969.jpg"
+   ]
+  },
+  {
    "id": "elena_junction_details.json:cypresses",
    "name": "Elena south · cypresses at the far wall",
    "kind": "reference feature",
@@ -3687,6 +3690,51 @@
     "IMG_2261.jpg",
     "IMG_2262.jpg",
     "IMG_2330.jpg"
+   ]
+  },
+  {
+   "id": "elena_north_corner_details.json:climbers",
+   "name": "Elena north corner · bougainvillea over the patio wall",
+   "kind": "reference feature",
+   "source": "photo interpretation from unsolved ground photos; detail on reviewed structure",
+   "evidence": [
+    "IMG_2455.jpg",
+    "IMG_2800.jpg",
+    "IMG_2965.jpg",
+    "IMG_2966.jpg",
+    "IMG_2967.jpg",
+    "IMG_2799.jpg",
+    "IMG_2463.jpg"
+   ]
+  },
+  {
+   "id": "elena_north_corner_details.json:lamp",
+   "name": "Elena north corner · lantern on its bracket",
+   "kind": "reference feature",
+   "source": "photo interpretation from unsolved ground photos; detail on reviewed structure",
+   "evidence": [
+    "IMG_2455.jpg",
+    "IMG_2800.jpg",
+    "IMG_2965.jpg",
+    "IMG_2966.jpg",
+    "IMG_2967.jpg",
+    "IMG_2799.jpg",
+    "IMG_2463.jpg"
+   ]
+  },
+  {
+   "id": "elena_north_corner_details.json:sign",
+   "name": "Elena north corner · CALLE DE ELENA tiles",
+   "kind": "reference feature",
+   "source": "photo interpretation from unsolved ground photos; detail on reviewed structure",
+   "evidence": [
+    "IMG_2455.jpg",
+    "IMG_2800.jpg",
+    "IMG_2965.jpg",
+    "IMG_2966.jpg",
+    "IMG_2967.jpg",
+    "IMG_2799.jpg",
+    "IMG_2463.jpg"
    ]
   },
   {
@@ -3846,6 +3894,39 @@
     "IMG_2449.jpg",
     "IMG_2450.jpg",
     "IMG_2794.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "name": "Cervantes at the Elena north mouth · raised hedge and fan-palm bed along the corner patio wall",
+   "kind": "reference feature",
+   "source": "photo interpretation against the registry house fronts and the lane tiles; about 1 m along, 0.2 m across",
+   "evidence": [
+    "IMG_2455.jpg",
+    "IMG_2800.jpg",
+    "IMG_2965.jpg",
+    "IMG_2966.jpg",
+    "IMG_2967.jpg",
+    "IMG_2799.jpg",
+    "IMG_2514.jpg",
+    "IMG_2686.jpg",
+    "IMG_2463.jpg"
+   ]
+  },
+  {
+   "id": "elena_north_corner.json:elena-north-corner-bed",
+   "name": "Elena north mouth · raised fan-palm bed under the CALLE DE ELENA wall",
+   "kind": "reference feature",
+   "source": "photo interpretation against the registry house front, the mapped lanes and tile counts; about 0.5 m",
+   "evidence": [
+    "IMG_2455.jpg",
+    "IMG_2800.jpg",
+    "IMG_2965.jpg",
+    "IMG_2966.jpg",
+    "IMG_2967.jpg",
+    "IMG_2799.jpg",
+    "IMG_2514.jpg",
+    "IMG_2686.jpg"
    ]
   },
   {
@@ -11363,12 +11444,6 @@
   },
   {
    "from": "photo:IMG_2263.jpg",
-   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2263.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -11427,12 +11502,6 @@
   {
    "from": "photo:IMG_2264.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2264.jpg",
-   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -11507,12 +11576,6 @@
   {
    "from": "photo:IMG_2265.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2265.jpg",
-   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -11828,12 +11891,6 @@
   },
   {
    "from": "photo:IMG_2273.jpg",
-   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2273.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -11890,12 +11947,6 @@
   },
   {
    "from": "photo:IMG_2274.jpg",
-   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2274.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -11939,12 +11990,6 @@
   {
    "from": "photo:IMG_2275.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2275.jpg",
-   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -15139,6 +15184,42 @@
    "angleOffset": 19.3
   },
   {
+   "from": "photo:IMG_2455.jpg",
+   "to": "lane_walls.json:elena-north-corner-patio-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2455.jpg",
+   "to": "elena_north_corner_details.json:climbers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2455.jpg",
+   "to": "elena_north_corner_details.json:lamp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2455.jpg",
+   "to": "elena_north_corner_details.json:sign",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2455.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2455.jpg",
+   "to": "elena_north_corner.json:elena-north-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2456.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -15434,6 +15515,30 @@
    "relation": "possibly-in-view",
    "distance": 34.0,
    "angleOffset": 25.7
+  },
+  {
+   "from": "photo:IMG_2463.jpg",
+   "to": "elena_north_corner_details.json:climbers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2463.jpg",
+   "to": "elena_north_corner_details.json:lamp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2463.jpg",
+   "to": "elena_north_corner_details.json:sign",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2463.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2464.jpg",
@@ -16787,6 +16892,24 @@
    "relation": "possibly-in-view",
    "distance": 38.0,
    "angleOffset": 9.5
+  },
+  {
+   "from": "photo:IMG_2514.jpg",
+   "to": "lane_walls.json:elena-north-corner-patio-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2514.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2514.jpg",
+   "to": "elena_north_corner.json:elena-north-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2515.jpg",
@@ -20925,6 +21048,24 @@
    "angleOffset": 29.0
   },
   {
+   "from": "photo:IMG_2686.jpg",
+   "to": "lane_walls.json:elena-north-corner-patio-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2686.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2686.jpg",
+   "to": "elena_north_corner.json:elena-north-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2687.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -23407,6 +23548,42 @@
    "angleOffset": 2.5
   },
   {
+   "from": "photo:IMG_2799.jpg",
+   "to": "lane_walls.json:elena-north-corner-patio-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2799.jpg",
+   "to": "elena_north_corner_details.json:climbers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2799.jpg",
+   "to": "elena_north_corner_details.json:lamp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2799.jpg",
+   "to": "elena_north_corner_details.json:sign",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2799.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2799.jpg",
+   "to": "elena_north_corner.json:elena-north-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2800.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -23432,6 +23609,42 @@
    "relation": "possibly-in-view",
    "distance": 36.5,
    "angleOffset": 24.2
+  },
+  {
+   "from": "photo:IMG_2800.jpg",
+   "to": "lane_walls.json:elena-north-corner-patio-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2800.jpg",
+   "to": "elena_north_corner_details.json:climbers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2800.jpg",
+   "to": "elena_north_corner_details.json:lamp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2800.jpg",
+   "to": "elena_north_corner_details.json:sign",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2800.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2800.jpg",
+   "to": "elena_north_corner.json:elena-north-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2801.jpg",
@@ -23870,6 +24083,42 @@
    "angleOffset": 2.6
   },
   {
+   "from": "photo:IMG_2965.jpg",
+   "to": "lane_walls.json:elena-north-corner-patio-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2965.jpg",
+   "to": "elena_north_corner_details.json:climbers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2965.jpg",
+   "to": "elena_north_corner_details.json:lamp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2965.jpg",
+   "to": "elena_north_corner_details.json:sign",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2965.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2965.jpg",
+   "to": "elena_north_corner.json:elena-north-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2966.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -23903,6 +24152,42 @@
    "angleOffset": 10.3
   },
   {
+   "from": "photo:IMG_2966.jpg",
+   "to": "lane_walls.json:elena-north-corner-patio-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2966.jpg",
+   "to": "elena_north_corner_details.json:climbers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2966.jpg",
+   "to": "elena_north_corner_details.json:lamp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2966.jpg",
+   "to": "elena_north_corner_details.json:sign",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2966.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2966.jpg",
+   "to": "elena_north_corner.json:elena-north-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2967.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -23934,6 +24219,42 @@
    "relation": "possibly-in-view",
    "distance": 37.1,
    "angleOffset": 17.8
+  },
+  {
+   "from": "photo:IMG_2967.jpg",
+   "to": "lane_walls.json:elena-north-corner-patio-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2967.jpg",
+   "to": "elena_north_corner_details.json:climbers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2967.jpg",
+   "to": "elena_north_corner_details.json:lamp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2967.jpg",
+   "to": "elena_north_corner_details.json:sign",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2967.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2967.jpg",
+   "to": "elena_north_corner.json:elena-north-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2968.jpg",
@@ -24000,6 +24321,12 @@
    "relation": "possibly-in-view",
    "distance": 27.9,
    "angleOffset": 20.0
+  },
+  {
+   "from": "photo:IMG_2969.jpg",
+   "to": "lane_walls.json:elena-north-corner-patio-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2970.jpg",

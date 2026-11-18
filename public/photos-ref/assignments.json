@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "6981911a0367af2f3f63431d78cc4fb54f550231f3d17767ac3f3b83aa6f6017",
+ "inputDigest": "121c5f142465cd704ec66b1a5606c8c840c1e9c99c79fb5603ea68fa9d69f67f",
  "summary": {
   "unplaced": 3,
   "needs-review": 232,
   "suggested": 267,
   "photos": 502,
-  "features": 509,
-  "photosCitedByModel": 211,
-  "modelFeaturesWithPhotoCitations": 253
+  "features": 514,
+  "photosCitedByModel": 221,
+  "modelFeaturesWithPhotoCitations": 258
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -3105,7 +3105,6 @@
    "citedBy": [
     "frontage_divisions.json:cervantes-elena-lawn-1",
     "cervantes_patio_walls.json:cervantes-patio-north-1",
-    "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
     "cervantes_patio_walls.json:cervantes-patio-south-2-west",
@@ -3160,7 +3159,6 @@
    ],
    "citedBy": [
     "cervantes_patio_walls.json:cervantes-patio-north-1",
-    "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
     "cervantes_patio_walls.json:cervantes-patio-south-2-west",
@@ -3213,7 +3211,6 @@
    ],
    "citedBy": [
     "cervantes_patio_walls.json:cervantes-patio-north-1",
-    "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
     "cervantes_patio_walls.json:cervantes-patio-south-2-west",
@@ -3499,7 +3496,6 @@
    "citedBy": [
     "frontage_divisions.json:cervantes-west-planting",
     "cervantes_patio_walls.json:cervantes-patio-north-1",
-    "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
     "cervantes_patio_walls.json:cervantes-patio-south-2-west",
@@ -3544,7 +3540,6 @@
    "citedBy": [
     "frontage_divisions.json:cervantes-west-planting",
     "cervantes_patio_walls.json:cervantes-patio-north-1",
-    "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
     "cervantes_patio_walls.json:cervantes-patio-south-2-west",
@@ -3579,7 +3574,6 @@
    "inViewCandidates": [],
    "citedBy": [
     "cervantes_patio_walls.json:cervantes-patio-north-1",
-    "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
     "cervantes_patio_walls.json:cervantes-patio-south-2-west",
@@ -6891,7 +6885,14 @@
      "angleOffset": 19.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:elena-north-corner-patio-wall",
+    "elena_north_corner_details.json:climbers",
+    "elena_north_corner_details.json:lamp",
+    "elena_north_corner_details.json:sign",
+    "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+    "elena_north_corner.json:elena-north-corner-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -140.3,
@@ -7278,7 +7279,12 @@
      "angleOffset": 25.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_north_corner_details.json:climbers",
+    "elena_north_corner_details.json:lamp",
+    "elena_north_corner_details.json:sign",
+    "cervantes_lane_edges.json:cervantes-elena-corner-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -146.0,
@@ -9304,7 +9310,11 @@
      "angleOffset": 9.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:elena-north-corner-patio-wall",
+    "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+    "elena_north_corner.json:elena-north-corner-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -148.7,
@@ -15699,7 +15709,11 @@
      "angleOffset": 29.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:elena-north-corner-patio-wall",
+    "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+    "elena_north_corner.json:elena-north-corner-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -145.5,
@@ -18980,7 +18994,14 @@
      "angleOffset": 2.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:elena-north-corner-patio-wall",
+    "elena_north_corner_details.json:climbers",
+    "elena_north_corner_details.json:lamp",
+    "elena_north_corner_details.json:sign",
+    "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+    "elena_north_corner.json:elena-north-corner-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -138.8,
@@ -19022,7 +19043,14 @@
      "angleOffset": 24.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:elena-north-corner-patio-wall",
+    "elena_north_corner_details.json:climbers",
+    "elena_north_corner_details.json:lamp",
+    "elena_north_corner_details.json:sign",
+    "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+    "elena_north_corner.json:elena-north-corner-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -140.8,
@@ -19686,7 +19714,14 @@
      "angleOffset": 2.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:elena-north-corner-patio-wall",
+    "elena_north_corner_details.json:climbers",
+    "elena_north_corner_details.json:lamp",
+    "elena_north_corner_details.json:sign",
+    "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+    "elena_north_corner.json:elena-north-corner-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -136.5,
@@ -19734,7 +19769,14 @@
      "angleOffset": 10.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:elena-north-corner-patio-wall",
+    "elena_north_corner_details.json:climbers",
+    "elena_north_corner_details.json:lamp",
+    "elena_north_corner_details.json:sign",
+    "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+    "elena_north_corner.json:elena-north-corner-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -139.0,
@@ -19782,7 +19824,14 @@
      "angleOffset": 17.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:elena-north-corner-patio-wall",
+    "elena_north_corner_details.json:climbers",
+    "elena_north_corner_details.json:lamp",
+    "elena_north_corner_details.json:sign",
+    "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+    "elena_north_corner.json:elena-north-corner-bed"
+   ],
    "geometryReview": "observed",
    "camera": {
     "x": -142.3,
@@ -19878,7 +19927,9 @@
      "angleOffset": 20.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:elena-north-corner-patio-wall"
+   ],
    "geometryReview": "observed",
    "camera": {
     "x": -146.5,

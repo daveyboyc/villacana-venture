@@ -18,7 +18,7 @@ skeleton = load('public/map/skeleton.json')
 confidence = load('data/confidence.json')['features']
 photos = {p['file'] for p in load('public/photos-ref/manifest.json')}
 walls = {w['id']: w for w in load('data/lane_walls.json')['walls']}
-patio = load('data/cervantes_patio_walls.json')['walls']
+patio = [w for w in load('data/cervantes_patio_walls.json')['walls'] if not w.get('retired')]  # a retired wall is a tombstone, not drawn
 flights = [load('data/cervantes_elena_steps.json'), load('data/cervantes_alberto_steps.json')]
 
 ax = data['axis']

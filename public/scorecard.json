@@ -1174,7 +1174,7 @@
     "Facades: 0 of 71 kit parts traced from photos.",
     "How sure: 24 photographed, 25 estimated, 3 inferred, 4 known gaps.",
     "Placement: 0 of 53 features verified, 4 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 7 still open; 6 evidence requests. This is not whole-area acceptance."
+    "Model loop: 0 tracked findings accepted, 7 still open; 7 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
@@ -1267,13 +1267,26 @@
       "features": [],
       "tasks": [],
       "state": "open"
+     },
+     {
+      "id": "photo-elena-north-corner-square",
+      "area": "elena",
+      "kind": "photo",
+      "ask": "On Cervantes at the mouth of Calle Elena north, stand on the south-side kerb opposite the CALLE DE ELENA corner and face it square-on: get the fan-palm bed's corner, the foot of the white wall behind it, the brown double door and the hedged tree bed across the mouth in one frame. Then one from 4-5 m up Elena north looking back down at the corner.",
+      "why": "gap:elena-north-west-corner: the corner patio wall and the raised bed are built from unsolved photos and the registry house line; a solved ground view would fix the wall foot and the bed faces.",
+      "photoRequest": "elena-north-corner-square",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
+      "state": "open"
      }
     ],
     "readyTasks": 6
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 4 spots",
+    "headline": "Photos needed: 5 spots",
     "requests": [
      {
       "id": "elena-25-far-end",
@@ -1303,6 +1316,22 @@
       ],
       "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
       "why": "task elena-25-passage: register the portal on the lane",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "elena-north-corner-square",
+      "at": [
+       -145.6,
+       54.4
+      ],
+      "look": [
+       -149.0,
+       51.0
+      ],
+      "ask": "On Cervantes at the mouth of Calle Elena north, stand on the south-side kerb opposite the CALLE DE ELENA corner and face it square-on: get the fan-palm bed's corner, the foot of the white wall behind it, the brown double door and the hedged tree bed across the mouth in one frame. Then one from 4-5 m up Elena north looking back down at the corner.",
+      "why": "gap:elena-north-west-corner: the corner patio wall and the raised bed are built from unsolved photos and the registry house line; a solved ground view would fix the wall foot and the bed faces.",
       "priority": 2,
       "state": "open",
       "photos": []
@@ -1439,7 +1468,7 @@
     "generated": 147
    },
    "placement": {
-    "features": 43,
+    "features": 48,
     "verified": 0,
     "disputed": 6
    },
@@ -1463,8 +1492,8 @@
     ]
    },
    "confidence": {
-    "photographed": 15,
-    "estimated": 26,
+    "photographed": 17,
+    "estimated": 29,
     "inferred": 2,
     "registry": 0,
     "gaps": 8
@@ -1474,8 +1503,8 @@
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.2 m.",
     "Photos: 75, 75 placed; 4 cameras solved, 2 stations holding.",
     "Facades: 0 of 147 kit parts traced from photos.",
-    "How sure: 15 photographed, 26 estimated, 2 inferred, 8 known gaps.",
-    "Placement: 0 of 43 features verified, 2 open discrepancies.",
+    "How sure: 17 photographed, 29 estimated, 2 inferred, 8 known gaps.",
+    "Placement: 0 of 48 features verified, 2 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 2 still open; 4 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -3113,7 +3142,7 @@
     "generated": 2452
    },
    "placement": {
-    "features": 509,
+    "features": 514,
     "verified": 0,
     "disputed": 49
    },
@@ -3341,8 +3370,8 @@
     ]
    },
    "confidence": {
-    "photographed": 91,
-    "estimated": 170,
+    "photographed": 93,
+    "estimated": 173,
     "inferred": 16,
     "registry": 232,
     "gaps": 39
@@ -3352,9 +3381,9 @@
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 518, 499 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 91 photographed, 170 estimated, 16 inferred, 39 known gaps.",
-    "Placement: 0 of 509 features verified, 53 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 20 still open; 46 evidence requests. This is not whole-area acceptance."
+    "How sure: 93 photographed, 173 estimated, 16 inferred, 39 known gaps.",
+    "Placement: 0 of 514 features verified, 53 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 20 still open; 47 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
@@ -4013,13 +4042,26 @@
       "features": [],
       "tasks": [],
       "state": "open"
+     },
+     {
+      "id": "photo-elena-north-corner-square",
+      "area": "elena",
+      "kind": "photo",
+      "ask": "On Cervantes at the mouth of Calle Elena north, stand on the south-side kerb opposite the CALLE DE ELENA corner and face it square-on: get the fan-palm bed's corner, the foot of the white wall behind it, the brown double door and the hedged tree bed across the mouth in one frame. Then one from 4-5 m up Elena north looking back down at the corner.",
+      "why": "gap:elena-north-west-corner: the corner patio wall and the raised bed are built from unsolved photos and the registry house line; a solved ground view would fix the wall foot and the bed faces.",
+      "photoRequest": "elena-north-corner-square",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
+      "state": "open"
      }
     ],
     "readyTasks": 40
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 36 spots",
+    "headline": "Photos needed: 37 spots",
     "requests": [
      {
       "id": "alberto",
@@ -4305,6 +4347,22 @@
       ],
       "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
       "why": "task elena-25-passage: register the portal on the lane",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "elena-north-corner-square",
+      "at": [
+       -145.6,
+       54.4
+      ],
+      "look": [
+       -149.0,
+       51.0
+      ],
+      "ask": "On Cervantes at the mouth of Calle Elena north, stand on the south-side kerb opposite the CALLE DE ELENA corner and face it square-on: get the fan-palm bed's corner, the foot of the white wall behind it, the brown double door and the hedged tree bed across the mouth in one frame. Then one from 4-5 m up Elena north looking back down at the corner.",
+      "why": "gap:elena-north-west-corner: the corner patio wall and the raised bed are built from unsolved photos and the registry house line; a solved ground view would fix the wall foot and the bed faces.",
       "priority": 2,
       "state": "open",
       "photos": []
