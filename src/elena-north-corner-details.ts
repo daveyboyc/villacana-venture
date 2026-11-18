@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import data from "../data/elena_north_corner_details.json";
+import corner from "../data/elena_north_corner.json";
 import { wallClimber } from "./clipped-plants";
 import { wallFrame } from "./elena-junction-details";
 import { lanternPost, LANTERN_HEIGHT } from "./lantern-post";
@@ -52,6 +53,7 @@ export function addElenaNorthCornerDetails(into: THREE.Scene, keep: (x: number, 
   const root = new THREE.Group(); root.name = data.id; root.userData.noDrape = true; root.userData.omitted = [] as string[];
   const omit = (id: string) => (root.userData.omitted as string[]).push(id);
   let seed = 917;
+  const BED = corner.planters[0].height, bark = new THREE.MeshStandardMaterial({ color: "#6a5642", roughness: 1 });
 
   // Bougainvillea in 0.6 m pieces over the wall faces, so the guard bounds each with its footprint.
   for (const c of data.climbers) {
@@ -60,12 +62,20 @@ export function addElenaNorthCornerDetails(into: THREE.Scene, keep: (x: number, 
       const s = c.from + i * len, mid = s + len / 2, off = f.half + c.depth / 2;
       const cx = f.a[0] + f.u[0] * mid + f.n[0] * off, cz = f.a[1] + f.u[1] * mid + f.n[1] * off;
       if (!keep(cx, cz) || !clear(cx, cz, Math.hypot(len, c.depth) / 2)) { omit(`${c.id}-${i}`); continue; }
-      const piece = wallClimber({ length: len, height: Math.min(c.height, f.height + 0.35), depth: c.depth, seed: seed++, flowers: Math.round((c.flowers * len) / (c.to - c.from)), flowerColour: c.colour });
+      // The leafy mass starts `base` up and may rise about half a metre over the coping.
+      const piece = wallClimber({ length: len, height: Math.min(c.height, f.height + 0.5 - c.base), depth: c.depth, seed: seed++, flowers: Math.round((c.flowers * len) / (c.to - c.from)), flowerColour: c.colour, sparse: (c as { sparse?: boolean }).sparse });
       const start = f.forward ? s : s + len;
       const sx = f.a[0] + f.u[0] * start + f.n[0] * f.half, sz = f.a[1] + f.u[1] * start + f.n[1] * f.half;
-      // The climbers grow from the raised bed in front of the wall, not from the lane.
       piece.position.set(sx, siteY(sx, sz) + c.base, sz); piece.quaternion.copy(f.turn);
       piece.name = c.id; piece.traverse((o) => { o.userData.noDrape = true; }); root.add(piece);
+    }
+    // Bare trained stems from the bed up to the flowering mass (IMG_2455, IMG_2800).
+    const stems = (c as { stems?: number }).stems ?? 0;
+    for (let i = 0; i < stems; i++) {
+      const s = c.from + ((i + 0.5) * (c.to - c.from)) / stems, x = f.a[0] + f.u[0] * s + f.n[0] * (f.half + 0.08), z = f.a[1] + f.u[1] * s + f.n[1] * (f.half + 0.08);
+      const rise = c.base - BED + 0.2, stem = new THREE.Mesh(new THREE.CylinderGeometry(0.025, 0.04, rise, 6), bark);
+      stem.position.set(x, siteY(x, z) + BED + rise / 2, z); stem.rotation.z = ((seed++ % 5) - 2) * 0.06;
+      stem.castShadow = true; stem.name = c.id + "-stem"; stem.userData.noDrape = true; root.add(stem);
     }
   }
 

@@ -155,3 +155,111 @@ Reviewer: an independent subagent that did not build this change. Scope: `lane_w
 
 These are photographic diagnostics through rough, unsolved fits relative to the bed corner. They are not measured
 placement approval. The `estimated` grade stays.
+
+## Follow-up review (18 November 2026, after commit 19457b5)
+
+Structure verdict: approved. R1-R4 are built as asked and match the fits.
+
+Detail verdict: approved with changes (D1 patio tree, D2 bougainvillea, D3 sign position, D4 fan-palm mass).
+
+### Method
+
+I re-ran my four camera fits with the bed's outer corner at the new face (Elena o = -0.75, Cervantes o = -0.95). I
+projected the built features through the fits and compared them with the photos (pixel x, y in the
+1200 x 1600 originals). I also looked at the new renders and the full-size photos again.
+`scripts/check_elena_north_corner.py` passes.
+
+### Structure: R1-R4 verified
+
+- **R1 (wall 2.8 m): verified.** The 2.8 m top projects at (814, 23) in IMG_2800, where the photo shows white wall
+  up to the top of the frame. It also sits just above the door head, as the coping does in IMG_2966.
+- **R2 (door at (-148.85, 50.72), 0.8 x 2.7 m): verified.** Jambs at head height, model against photo:
+
+| Photo | Model jambs | Photo jambs |
+| --- | --- | --- |
+| IMG_2455 | (729,425) / (842,431) | (730,420) / (840,420) |
+| IMG_2800 | (949,66) / (1116,80) | (990,40) / (1150,40) |
+| IMG_2966 | south jamb (1098,262) | south jamb (1090,297) |
+
+  That is within 0-40 px, about 0.1 m. The Layout render now shows plain wall north of the door, as the photos do.
+- **R3 (Elena face at -0.75, one joined bed): verified.** The mouth to the tree bed (+0.76) is 1.51 m against the
+  photo reading of 1.45-1.5 m. No kerb crosses the L in the Layout renders.
+- **R4 (records): verified.** The five discrepancies are open, `gap:elena-north-west-lower-bed` is recorded, and the
+  README's IMG_2686 description is corrected.
+- **Open:** the door sill level and the 0.2-0.3 m corner offset stay open, as recorded.
+
+### Detail
+
+- **Letter tiles: right size and style, about 0.2 m too far north (D3).**
+  - Size, height and look are right: 0.08 x 0.21 m dark capitals on white with framed tiles, a blank tile between
+    words, bottom about 1.9 m.
+  - In all three fits the built sign projects 40-55 px north (right) of the photographed plaque: IMG_2455 ends
+    (554, 724) against (508, 685); IMG_2800 (675, 927) against (630, 910); IMG_2966 (862, 1078) against (805, 1027).
+  - Its north end (s 3.18) touches the door's south jamb (3.2). The photos show about 0.25 m of wall and the door's
+    pilaster between them (IMG_2455 pilaster at x 705-730 between the plaque end at 685 and the door at 730).
+- **Lantern: accepted.** It is on its bracket off the Cervantes face at the corner, at about 2.3 m.
+  - It projects 75-100 px north of the photographed lantern, which is about 0.3-0.4 m too close to the wall line:
+    IMG_2455 (474,489) against (400,480); IMG_2800 (550,175) against (450,150); IMG_2966 (764,354) against (677,330).
+  - Most of that is the recorded 0.2-0.3 m corner offset, so this is within tolerance. Optionally lengthen the reach
+    from 0.35 to about 0.5-0.6 m.
+- **Bougainvillea: wrong extent and shape (D2).**
+  - "None on the Elena run" is contradicted. Flowering bougainvillea spills over the top of the plaque run from the
+    corner to beyond the door:
+    - IMG_2800: (750-950, 0-200) above the plaque and (1050-1200, 0-80) over the door;
+    - IMG_2455: x 300-900, y 0-200 over the plaque wall and around the door head; magnolia crop (0-500, 330-560);
+    - IMG_2966: crop x 300-800, y 0-250;
+    - IMG_2967: x 380-700 at the top, and a spray at "ELENA".
+  - It hangs down to about the plaque top, leaving the letters readable.
+  - On the Cervantes face it is a trained climber: twisted stems against white wall low down (IMG_2463, IMG_2969-like
+    trunk in IMG_2455 (880-960, 450-580)), with the flowers and foliage in the upper wall and over the coping.
+  - The build has solid flat pink sheets from the bed top (0.5 m) to about 3.1 m (`corner-close-details.png`,
+    `corner-overhead-details.png`), which reads as a pink wall.
+- **Fan palms: right species, too sparse (D4).**
+  - The fan-palm plant (palmate fans on stalks) is the right species, on the Elena arm only, as asked.
+  - In the photos the bed is one dense mound of *Chamaerops* that fills the whole 1.37 m depth with no soil showing
+    (IMG_2800, IMG_2455, IMG_2966). Its fans reach about 1.8-1.9 m above the lane, up to the plaque's bottom edge.
+    Fronds spill over the front kerb and round the corner behind the hedge.
+  - The renders show separate spiky clumps in rows with bare soil between and in front (`IMG_2800-after-details.png`
+    x 560-1200, y 390-690; `corner-close-details.png` (650-900, 400-760)).
+- **Hedge and plumbago: right.** The clipped hedge runs the whole Cervantes arm to the corner, with plumbago. Optional:
+  in IMG_2463 and IMG_2800 the plumbago is a looser layer behind the clipped hedge, its pale blue heads standing above
+  the hedge top against the wall. The build has blue dots in the clipped hedge face.
+- **Patio tree: contradicted by the photos (D1).**
+  - From IMG_2455's fitted camera, `elena-north-corner-patio-tree` at (-151.0, 51.7) lies on bearing about 264°,
+    image x ≈ 665. There the photo shows the house's south gallery, with its tiled roof edge and posts, clear above
+    the wall at heights of about 3.5-5 m (x 480-650, y 260-420). The same holds in IMG_2966 (orig x 780-950,
+    y 130-300).
+  - The built tree, a crown about 4-5 m wide rising to about 7-8 m in `corner-close-details.png`, would hide it.
+  - The magnolia with seed cones over the wall in IMG_2455 and IMG_2965 has its trunk at x ≈ 1100-1160 (bearing about
+    283°). That matches `elena-north-tree-bed-2` (about 289° from the same camera), with the lantana of that bed
+    below it. Its limbs reach west over the lane and the wall top above the door.
+  - So the "crowns over the wall" evidence cited for the patio tree is that magnolia. The dark canopy over the pocket
+    on the aerial is most likely the same magnolia spreading west. IMG_2360's glossy tree beyond the bougainvillea
+    fits that too, but it is unsolved.
+
+### Required changes (detail)
+
+- **D1. Patio tree.** Remove `elena-north-corner-patio-tree`, or keep only something the photos allow: nothing showing
+  above the wall between about 3.5 and 5 m on the sight lines above. Record as an open question whether anything grows
+  in the patio, and that `elena-north-tree-bed-2`'s tree is a magnolia with a crown overhanging the mouth and the
+  wall. That tree bed is not this task's, so record it as a discrepancy rather than editing it here.
+- **D2. Bougainvillea.**
+  - Add bougainvillea along the top of the Elena run from the corner to about 0.5 m past the door's north jamb. It
+    should drape about 0.3-0.7 m down the face and rise about 0.3-0.5 m above the coping, without covering the
+    letters.
+  - On the Cervantes face, put the foliage and flowers mainly from about 1.4 m up and over the coping, with bare
+    trained stems on white wall below, instead of solid sheets from the bed top.
+  - Let the corner mass wrap the corner.
+- **D3. Sign.** Move the sign centre about 0.2 m south: about 3.5 m along the Elena run from the house corner, so
+  s ≈ 1.85-2.95. That leaves about 0.25 m of wall and pilaster before the door, as photographed.
+- **D4. Fan palms.** Fill the Elena arm as one dense, continuous mound to about 1.8-1.9 m above the lane, with no soil
+  showing and fronds over the front kerb.
+
+### Optional
+
+- Lantern reach about 0.5-0.6 m.
+- Plumbago as a loose layer behind the hedge.
+- The double door is drawn as a plain brown slab. The photos show two panelled leaves under a lintel between white
+  pilasters (IMG_2455 x 705-865; IMG_2966).
+
+These remain photographic diagnostics through unsolved fits, not placement approval.

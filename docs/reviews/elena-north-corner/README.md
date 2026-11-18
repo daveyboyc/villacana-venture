@@ -41,20 +41,26 @@ Nothing generated stood in the pocket.
 
 ## Stage 5: detail (`data/elena_north_corner_details.json`, Show details)
 
-- Hedge with plumbago along the whole Cervantes arm; fan palms (`fanPalm`, src/clipped-plants.ts) on the Elena arm.
-- CALLE DE ELENA in tall single-letter tiles (0.08 x 0.21 m), from the corner to the door's south jamb, bottom about
-  1.9 m up.
-- The lantern on an iron bracket on the Cervantes face just round the corner, about 2.3 m up.
-- Bougainvillea over the Cervantes face from the corner, and by the garden door; none over the tiles or the door.
-- A broadleaf tree in the patio (`objects.json` `elena-north-corner-patio-tree`) where the aerial shows canopy. The
-  magnolias in the photos stand in the hedged beds east of the mouth, so its species is not established.
+Reviewed in the follow-up section of [STRUCTURE-REVIEW.md](STRUCTURE-REVIEW.md): approved with changes D1-D4, applied.
+
+- Hedge with plumbago along the whole Cervantes arm; fan palms (`fanPalm`, src/clipped-plants.ts) filling the Elena
+  arm as one dense mound about 1.9 m high (D4).
+- CALLE DE ELENA in tall single-letter tiles, bottom about 1.9 m up, from the corner towards the door, clear of the
+  door's pilaster (D3). The recorded 0.2-0.3 m corner offset leaves only about 1.15 m of face there, so the tiles are
+  drawn 0.075 m wide.
+- The lantern on a 0.55 m iron bracket on the Cervantes face just round the corner, about 2.3 m up.
+- Bougainvillea (D2): a drape over the coping of the plaque run from the corner to past the door, the letters left
+  readable; on the Cervantes face flowering from about 1.3 m up and over the coping on bare trained stems, and by the
+  garden door.
+- No tree in the patio (D1): the house's south gallery shows clear above the wall there. The magnolia over the wall
+  stands in the hedged tree bed east of the mouth (discrepancy `elena-north-tree-bed-2-magnolia`).
 
 ## Open (data/discrepancies.json, task elena-north-corner)
 
 `elena-north-corner-offset` (0.2-0.3 m, within tolerance; photo request `elena-north-corner-square`),
 `elena-north-corner-door-sill`, `elena-north-west-lower-bed` (the lower bed along the house north of the raised bed,
 IMG_2686 and IMG_2969: the raised bed does not run under the barred windows; this lower bed does),
-`elena-north-tree-bed-2-south-face` (0.6 m), `cervantes-garden-door-wall-height` (1.9 m modelled, about 2.4-2.5 m).
+`elena-north-tree-bed-2-south-face` (0.6 m), `elena-north-tree-bed-2-magnolia`, `cervantes-garden-door-wall-height` (1.9 m modelled, about 2.4-2.5 m).
 
 Renders: `IMG_2800-after.png` and `IMG_2800-after-details.png` (through the hand-fitted starting pose, not a solved
 camera), `corner-overhead-layout.png`, `corner-overhead-details.png`, `corner-close-details.png`,

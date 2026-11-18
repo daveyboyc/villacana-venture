@@ -88,23 +88,26 @@ door_at = math.dist(a, wall['doors'][0]['at'])
 door = (door_at - wall['doors'][0]['width'] / 2, door_at + wall['doors'][0]['width'] / 2)
 sg, lp = det['sign'], det['lamp']
 half_sign = (sum(len(w) for w in sg['words']) * sg['tileW'] + sg['gap'] * (len(sg['words']) - 1)) / 2
+assert 0.06 <= sg['tileW'] <= 0.1 and 0.18 <= sg['tileH'] <= 0.25, 'letter tiles are tall and narrow (about 0.08 x 0.21 m)'
 sign = (sg['centre'] - half_sign, sg['centre'] + half_sign)
 # Structure review: the tiles run from the door's south jamb to the corner on the lane face; the lantern is just round the
 # corner on the Cervantes face; about 2 m of plain wall north of the door.
 assert sg['segment'] == 0 and lp['segment'] == 1 and lp['at'] <= 0.6, 'tiles on the lane face, lantern on the Cervantes face at the corner'
-assert door[1] <= sign[0] and sign[1] <= run, 'tiles must lie between the door and the corner'
+assert door[1] + 0.1 <= sign[0] and sign[1] <= run, 'tiles must lie between the door (with its pilaster) and the corner'
 assert door[0] >= 1.5, 'about 2 m of plain wall north of the door'
 assert sg['y'] + sg['tileH'] / 2 < wall['height'] and lp['y'] <= wall['height'], 'sign or lantern above the wall'
 for c in det['climbers']:
     seg_len = run if c['segment'] == 0 else math.dist(wall['points'][1], wall['points'][2])
     assert 0 <= c['from'] < c['to'] <= seg_len + 1e-6, f"{c['id']}: off its wall run"
     if c['segment'] == 0:
-        assert c['from'] >= sign[1] and (c['to'] <= door[0] or c['from'] >= door[1]), f"{c['id']}: covers the sign or the door"
-    assert abs(c['base'] - bed['height']) < 0.01, f"{c['id']}: should grow from the bed top"
+        # Detail review D2: on the lane face the bougainvillea only drapes over the top, above the tiles.
+        assert c['base'] >= sg['y'] + sg['tileH'] / 2 + 0.05, f"{c['id']}: covers the tiles"
+    assert c['base'] >= bed['height'] and c['base'] + c['height'] <= wall['height'] + 0.55, f"{c['id']}: from the bed to about 0.5 m over the coping"
 for key in ('climbers', 'lamp', 'sign'):
     assert confidence.get('elena_north_corner_details.json:' + key, {}).get('level'), f'{key}: confidence level'
 assert all(p in photos for p in det['evidence'])
 assert 'addElenaNorthCornerDetails(into,keep)' in (ROOT / 'src/slice.ts').read_text(), 'details not drawn'
-assert any(o['id'] == 'elena-north-corner-patio-tree' and inside((o['x'], o['z']), [a, b, wall['points'][2], (-154.1, 51.5), (-153.82, 50.96)]) for o in load('data/objects.json')), 'patio tree not inside the patio'
+# Detail review D1: no tree inside the patio (the gallery shows clear above the wall); the magnolia stands in tree bed 2.
+assert not any(o['id'].startswith('elena-north-corner') for o in load('data/objects.json')), 'no tree in the corner patio'
 print(f'Elena north corner: raised bed {s1 - s0:.1f} m up the mouth, {o1 - o0:.2f} m deep against the patio wall '
       f'on the house-front line, meeting the Cervantes arm PASS')

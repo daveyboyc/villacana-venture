@@ -462,6 +462,23 @@
       "features": [
         "cervantes_garden_door.json:cervantes-garden-door"
       ]
+    },
+    {
+      "id": "elena-north-tree-bed-2-magnolia",
+      "area": "elena",
+      "kind": "completeness",
+      "task": "elena-north-corner",
+      "status": "open",
+      "requests": [],
+      "description": "The magnolia with seed cones whose crown shows over the CALLE DE ELENA wall (IMG_2455, IMG_2965) stands in the hedged tree bed east of the Elena north mouth (bearing about 283 degrees from IMG_2455's fitted camera, against 289 for elena-north-tree-bed-2), above its lantana; its limbs reach west over the wall and it is most likely the dark canopy over the corner pocket on the aerial. The model has a pollarded tree there. A tree first placed inside the corner patio was removed in the detail review: the house's south gallery shows clear above the wall where it stood.",
+      "sources": [
+        "IMG_2455.jpg",
+        "IMG_2965.jpg",
+        "IMG_2514.jpg"
+      ],
+      "features": [
+        "elena_north.json:elena-north-tree-bed-2"
+      ]
     }
   ]
 }
