@@ -276,6 +276,51 @@
         "IMG_2330.jpg"
       ],
       "basis": "The far lawn ends at a plain white wall about 2 m high, with vines trained along its top and two cypresses at its foot, running from the lawns' west wall to the lane kerb: face-on in IMG_2261 and IMG_2330 from the junction, and from the Elena 24 roof in ELENA-ROOF-2026-11-17, IMG_2358 and IMG_2367; the Esri aerial has the lawn's green ending at a dark wall line. Built 0.35 m beyond the far lawn's traced edge, from the west wall to 1.0 m off the lane centreline (just short of the kerb). Its line is estimated: 22-24 m from the roof cameras the depth is good to about 1 m, and no ground camera near it is solved (photo request elena-south-cypress-wall-gate). Before this the model had open paving here and drew the north face of registry 6265801UF1366N_part5 as the boundary. 18 November 2026."
+    },
+    {
+      "id": "elena-north-corner-patio-wall",
+      "name": "Elena north mouth · white patio wall with the CALLE DE ELENA plaque and a brown double door, round the west corner onto Cervantes",
+      "area": "elena",
+      "points": [
+        [
+          -150.01,
+          48.72
+        ],
+        [
+          -148.065,
+          52.061
+        ],
+        [
+          -152.6,
+          54.85
+        ]
+      ],
+      "height": 2.8,
+      "thickness": 0.25,
+      "raise": 0,
+      "doors": [
+        {
+          "id": "elena-north-corner-patio-door",
+          "at": [
+            -148.85,
+            50.72
+          ],
+          "width": 0.8,
+          "height": 2.7
+        }
+      ],
+      "evidence": [
+        "IMG_2455.jpg",
+        "IMG_2800.jpg",
+        "IMG_2965.jpg",
+        "IMG_2966.jpg",
+        "IMG_2967.jpg",
+        "IMG_2799.jpg",
+        "IMG_2514.jpg",
+        "IMG_2686.jpg",
+        "IMG_2969.jpg"
+      ],
+      "basis": "Encloses the walled patio between the house (registry 6265201UF1366N_part4, corner -150.01, 48.72), Elena north and Cervantes. IMG_2455, IMG_2800 and IMG_2965-2967 (on Cervantes, looking west) show the white wall facing the Elena north lane behind the raised fan-palm bed, with the CALLE DE ELENA tiles from the corner to a brown double door, the lantern on the Cervantes face at the corner, and about 2 m of plain wall north of the door to the house; IMG_2463 and IMG_2360 show it turning west along Cervantes behind the hedge to the Elena 24 garden door. The Elena face continues the registry house-front line (2.24 m west of the Elena north centreline); the Cervantes face runs 2.07 m north of the Cervantes axis to the garden-door wall (2.0 m) and the patio partition (2.14 m). Structure review (docs/reviews/elena-north-corner/STRUCTURE-REVIEW.md), rough camera fits of IMG_2455, IMG_2800, IMG_2966 and IMG_2967 to the bed corner agreeing to about 0.2 m: top about 2.8 m (coping 2.65 m in IMG_2966, wall above the 2.5-2.85 m door head), door about 0.8 m wide between its pilasters with its centre 1.85 m from the corner. Estimated to about 0.5 m in plan; no solved camera sees it."
     }
   ]
 }

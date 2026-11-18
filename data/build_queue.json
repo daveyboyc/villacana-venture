@@ -3912,6 +3912,39 @@
    "status": "in-progress",
    "owner": "Claude",
    "notes": "17 November 2026: camera solved; lawns, west wall (refitted after a rejected first fit), sills, cross path and the porch roof over the Elena 24 patio done and approved with limits by a second agent (docs/reviews/elena-junction-lawns-roof/REVIEW.md). Open: the far cypress wall, its gate and the far length's depth (photo request elena-south-cypress-wall-gate), the CALLE ELENA door wall at the Cervantes end, the east-side beds and lamp post, and the planting detail."
+  },
+  {
+   "id": "elena-north-corner",
+   "area": "elena",
+   "priority": 1,
+   "kind": "layout",
+   "title": "Elena north mouth: the walled corner patio, raised fan-palm bed, lantern, CALLE DE ELENA tiles and bougainvillea on Cervantes",
+   "photos": [
+    "IMG_2455.jpg",
+    "IMG_2800.jpg",
+    "IMG_2966.jpg",
+    "IMG_2967.jpg"
+   ],
+   "build": "Dave, 18 November 2026 (Inspect screenshot): this corner of Elena needs a patio and walls, lamppost, bougainvillea and plants. Build the pocket west of the Elena north mouth on Cervantes from the ground photos, structure first (wall, raised bed) with an independent review, then the photographed detail.",
+   "avoid": "No change to Walk. No detail on structure that has not passed review. No solved camera sees the corner: positions are estimates; do not grade them photographed or measured.",
+   "accept": [
+    "Visible in Inspect in Layout and with Show details",
+    "Structure signed off by a reviewer subagent (docs/reviews/elena-north-corner/STRUCTURE-REVIEW.md)",
+    "check_elena_north_corner, check_cervantes_lane_edges, check_lane_walls, check_map pass; production build"
+   ],
+   "features": [
+    "lane_walls.json:elena-north-corner-patio-wall",
+    "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+    "elena_north_corner.json:elena-north-corner-bed",
+    "elena_north_corner_details.json:climbers",
+    "elena_north_corner_details.json:lamp",
+    "elena_north_corner_details.json:sign",
+    "cervantes_patio_walls.json:cervantes-patio-north-east"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude",
+   "notes": "18 November 2026: built from unsolved ground photos and the registry house line; structure approved with changes (wall 2.8 m, door 0.8 m moved south, Elena bed face at 0.75 m), all applied. Open: a solved camera (photo request elena-north-corner-square) and the records in data/discrepancies.json."
   }
  ]
 }

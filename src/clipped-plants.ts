@@ -219,3 +219,49 @@ export function wallClimber(o: { length: number; height: number; depth: number; 
   }
   return f.build("wall-climber");
 }
+
+/**
+ * A clump of Mediterranean fan palm (Chamaerops), as in the raised bed at the Elena north corner (IMG_2455, IMG_2800,
+ * IMG_2967): many fronds on thin stalks from one base, each ending in a stiff fan of narrow leaflets. The stalks and fans
+ * stay inside `width` x `depth` (plus 0.1 m) so the route guard can bound the piece. x along, z across, y up, on y = 0.
+ */
+export function fanPalm(o: { width: number; depth: number; height: number; seed: number }): THREE.Group {
+  const rng = seeded(o.seed), group = new THREE.Group(); group.name = "fan-palm";
+  const hx = o.width / 2 + 0.1, hz = o.depth / 2 + 0.1, leaflet = Math.min(0.45, o.height * 0.32, Math.min(hx, hz) * 0.85);
+  const fronds = Math.round(22 + o.width * o.depth * 75), leaflets = 22;
+  const stalk = new THREE.CylinderGeometry(0.008, 0.014, 1, 4).translate(0, 0.5, 0);
+  const card = leafGeometry("narrow");
+  const stalks = new THREE.InstancedMesh(stalk, new THREE.MeshStandardMaterial({ color: "#6b6a3e", roughness: 0.9 }), fronds);
+  const leaves = new THREE.InstancedMesh(card, new THREE.MeshStandardMaterial({ side: THREE.DoubleSide, roughness: 0.7 }), fronds * leaflets);
+  const greens = ["#3d6638", "#4a7441", "#577f48", "#3a5c35", "#6d7f45"];
+  const up = new THREE.Vector3(0, 1, 0), m = new THREE.Matrix4(), basis = new THREE.Matrix4();
+  let k = 0;
+  for (let i = 0; i < fronds; i++) {
+    const a = rng() * Math.PI * 2, e = THREE.MathUtils.degToRad(8 + rng() * 75);
+    // A dense mound: low fronds over the soil and the kerb, the tallest in the middle.
+    const reach = (o.height - leaflet * 0.5) * (0.3 + rng() * 0.7);
+    const dir = new THREE.Vector3(Math.cos(a) * Math.cos(e), Math.sin(e), Math.sin(a) * Math.cos(e));
+    const end = dir.clone().multiplyScalar(reach);
+    // Keep the fan inside the footprint: shorten the stalk's spread, not its height.
+    const room = Math.max(0.02, Math.min((hx - leaflet) / Math.max(1e-3, Math.abs(end.x)), (hz - leaflet) / Math.max(1e-3, Math.abs(end.z)), 1));
+    end.x *= room; end.z *= room;
+    const stalkDir = end.clone().normalize();
+    stalks.setMatrixAt(i, m.compose(new THREE.Vector3(), new THREE.Quaternion().setFromUnitVectors(up, stalkDir), new THREE.Vector3(1, end.length(), 1)));
+    // The fan: leaflets radiating over about 200 degrees in the plane across the stalk, tips drooping a little.
+    const side = new THREE.Vector3(-Math.sin(a), 0, Math.cos(a)), face = new THREE.Vector3().crossVectors(side, stalkDir).normalize();
+    for (let j = 0; j < leaflets; j++) {
+      const t = THREE.MathUtils.degToRad(-115 + (230 * j) / (leaflets - 1) + (rng() - 0.5) * 6);
+      const d = stalkDir.clone().multiplyScalar(Math.cos(t)).addScaledVector(side, Math.sin(t)).addScaledVector(up, -0.18 * Math.abs(Math.sin(t))).normalize();
+      const n = face.clone().addScaledVector(d, -face.dot(d)).normalize(), z = new THREE.Vector3().crossVectors(d, n);
+      basis.makeBasis(d, n, z);
+      const q = new THREE.Quaternion().setFromRotationMatrix(basis), len = leaflet * (0.75 + rng() * 0.35);
+      const at = end.clone().addScaledVector(d, len * 0.5);
+      leaves.setMatrixAt(k, m.compose(at, q, new THREE.Vector3(len, 1, 0.16)));
+      leaves.setColorAt(k++, tone(greens[Math.floor(rng() * greens.length)], rng, 0.1));
+    }
+  }
+  for (const mesh of [stalks, leaves]) { mesh.instanceMatrix.needsUpdate = true; mesh.castShadow = mesh.receiveShadow = true; mesh.computeBoundingSphere(); group.add(mesh); }
+  if (leaves.instanceColor) leaves.instanceColor.needsUpdate = true;
+  stalks.name = "fan-palm-stalks"; leaves.name = "fan-palm-leaves";
+  return group;
+}

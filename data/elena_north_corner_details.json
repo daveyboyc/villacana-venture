@@ -1,0 +1,85 @@
+{
+ "id": "elena-north-corner-details",
+ "name": "Elena north mouth · bougainvillea, lantern and CALLE DE ELENA tiles on the corner patio wall",
+ "checkedAt": "2026-11-18",
+ "about": "Show-details pieces on lane_walls.json elena-north-corner-patio-wall (segment 0 runs from the house corner along the Elena north lane to the corner, segment 1 from the corner west along Cervantes): climbers by segment, 'from'/'to' metres along it, 'side' the face they grow on, 'base' the height above the lane the leafy mass starts (bare trained 'stems' below it, from the bed top), 'sparse' a drape without a dark backing; the lantern 'at' metres along, 'y' its bracket height, 'out' its reach; the sign's 'centre' metres along, one tile ('tileW' x 'tileH') per letter. Drawn by src/elena-north-corner-details.ts. Positions read by eye from unsolved ground photos, about 0.3-0.5 m.",
+ "wall": "elena-north-corner-patio-wall",
+ "evidence": [
+  "IMG_2455.jpg",
+  "IMG_2800.jpg",
+  "IMG_2965.jpg",
+  "IMG_2966.jpg",
+  "IMG_2967.jpg",
+  "IMG_2799.jpg",
+  "IMG_2463.jpg"
+ ],
+ "climbers": [
+  {
+   "id": "corner-bougainvillea-drape",
+   "segment": 0,
+   "from": 1.5,
+   "to": 3.86,
+   "side": "east",
+   "base": 2.2,
+   "height": 0.95,
+   "depth": 0.4,
+   "flowers": 900,
+   "colour": "#c52a85",
+   "sparse": true,
+   "basis": "Bougainvillea spilling over the top of the plaque run from the corner to past the door, about 0.6 m down the face and 0.3-0.5 m above the coping, the letters left readable (IMG_2800, IMG_2455, IMG_2966, IMG_2967; detail review D2)."
+  },
+  {
+   "id": "corner-bougainvillea-cervantes",
+   "segment": 1,
+   "from": 0.0,
+   "to": 2.6,
+   "side": "south",
+   "base": 1.3,
+   "height": 1.8,
+   "depth": 0.5,
+   "flowers": 1500,
+   "colour": "#c52a85",
+   "stems": 3,
+   "basis": "The bulk of the bougainvillea over the Cervantes face from the corner westwards, flowering from about 1.4 m up and over the coping, bare trained stems below from the bed (IMG_2455, IMG_2800, IMG_2966, IMG_2799; detail review D2)."
+  },
+  {
+   "id": "corner-bougainvillea-west",
+   "segment": 1,
+   "from": 3.8,
+   "to": 5.3,
+   "side": "south",
+   "base": 1.3,
+   "height": 1.7,
+   "depth": 0.45,
+   "flowers": 700,
+   "colour": "#c8358f",
+   "stems": 2,
+   "basis": "More bougainvillea over the wall above the hedge and plumbago, by the Elena 24 garden door (IMG_2463, IMG_2462)."
+  }
+ ],
+ "lamp": {
+  "id": "corner-wall-lantern",
+  "segment": 1,
+  "at": 0.3,
+  "side": "south",
+  "y": 2.3,
+  "out": 0.55,
+  "basis": "Black lantern on an iron bracket on the Cervantes face just round the corner, among the bougainvillea, about 2.3 m up (IMG_2800 left of the wall edge, IMG_2455, IMG_2966; structure review fits)."
+ },
+ "sign": {
+  "id": "calle-de-elena-tiles",
+  "segment": 0,
+  "side": "east",
+  "centre": 3.35,
+  "y": 2.0,
+  "tileW": 0.075,
+  "tileH": 0.21,
+  "gap": 0.06,
+  "words": [
+   "CALLE",
+   "DE",
+   "ELENA"
+  ],
+  "basis": "CALLE DE ELENA in tall, narrow single-letter tiles (about 0.08 x 0.21 m: CALLE is 125 x 65 px in IMG_2967), dark capitals on white, about 1.1 m long, from the corner to the door's south jamb on the face to the Elena north lane, bottom about 1.9 m up (IMG_2800, IMG_2967, IMG_2455; structure review fits). Detail review D3: moved south off the door; with the recorded 0.2-0.3 m corner offset only about 1.15 m of face lies between the door jamb and the modelled corner, so the tiles are drawn 0.075 m wide with 0.06 m word gaps to fit it."
+ }
+}

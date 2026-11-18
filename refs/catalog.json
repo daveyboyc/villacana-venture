@@ -6232,9 +6232,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:cervantes",
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
    "backdrop.json:aerial-trees",
-   "cervantes_garden_door.json:cervantes-junction-east-planter",
-   "cervantes_patio_walls.json:cervantes-patio-north-east"
+   "cervantes_garden_door.json:cervantes-junction-east-planter"
   ],
   "subject": "The Cervantes/Elena junction"
  },
@@ -6908,17 +6908,24 @@
    "altitude": 7.0,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:elena-north-corner-patio-wall",
+   "elena_north_corner_details.json:climbers",
+   "elena_north_corner_details.json:lamp",
+   "elena_north_corner_details.json:sign",
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "elena_north_corner.json:elena-north-corner-bed"
+  ],
   "looksAt": [
    -148.5,
    52.8
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "cervantes_patio_walls.json:cervantes-patio-north-east",
-   "backdrop.json:aerial-trees",
-   "street:cervantes",
-   "elena_lane_paving.json:elena-north-three-column"
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "lane_walls.json:elena-north-corner-patio-wall",
+   "elena_north_corner_details.json:climbers",
+   "cervantes_patio_walls.json:cervantes-patio-north-east"
   ],
   "subject": "North-side white bed, garden door and Calle de Elena plaque at the junction"
  },
@@ -7211,7 +7218,8 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "plain_fronts.json:elena-24-south-patio",
-   "cervantes_north_patios.json:cervantes-north-partition-east"
+   "elena_north_corner_details.json:climbers",
+   "lane_walls.json:elena-north-corner-patio-wall"
   ]
  },
  {
@@ -7243,7 +7251,12 @@
    "altitude": 7.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "elena_north_corner_details.json:climbers",
+   "elena_north_corner_details.json:lamp",
+   "elena_north_corner_details.json:sign",
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed"
+  ],
   "looksAt": [
    -152.5,
    55.0
@@ -7252,8 +7265,8 @@
   "looksAtFeatures": [
    "cervantes_garden_door.json:cervantes-junction-east-planter",
    "plain_fronts.json:elena-24-south-patio",
-   "cervantes_garden_door.json:cervantes-garden-door",
-   "cervantes_garden_door.json:cervantes-junction-north-patio"
+   "lane_walls.json:elena-north-corner-patio-wall",
+   "elena_north_corner_details.json:climbers"
   ],
   "subject": "Garden door, hedge bed and steps at the Elena junction"
  },
@@ -9175,10 +9188,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "cervantes_patio_walls.json:cervantes-patio-north-east",
-   "backdrop.json:aerial-trees",
-   "street:cervantes",
-   "plain_fronts.json:elena-24-south-patio"
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "lane_walls.json:elena-north-corner-patio-wall",
+   "elena_north_corner_details.json:climbers",
+   "cervantes_patio_walls.json:cervantes-patio-north-east"
   ]
  },
  {
@@ -9216,10 +9229,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_north_corner.json:elena-north-corner-bed",
    "backdrop.json:aerial-trees",
    "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north",
-   "elena_north.json:elena-north-tree-bed-2"
+   "street:elena-north"
   ],
   "subject": "White boundary wall with arched timber door beside Cervantes lane"
  },
@@ -9252,7 +9265,11 @@
    "altitude": 8.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:elena-north-corner-patio-wall",
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "elena_north_corner.json:elena-north-corner-bed"
+  ],
   "looksAt": [
    -147.0,
    46.0
@@ -15725,7 +15742,11 @@
    "altitude": 8.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:elena-north-corner-patio-wall",
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "elena_north_corner.json:elena-north-corner-bed"
+  ],
   "looksAt": [
    -148.4,
    45.8
@@ -18961,7 +18982,14 @@
    "altitude": 6.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:elena-north-corner-patio-wall",
+   "elena_north_corner_details.json:climbers",
+   "elena_north_corner_details.json:lamp",
+   "elena_north_corner_details.json:sign",
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "elena_north_corner.json:elena-north-corner-bed"
+  ],
   "looksAt": [
    -143.9,
    51.3
@@ -19002,17 +19030,24 @@
    "altitude": 7.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:elena-north-corner-patio-wall",
+   "elena_north_corner_details.json:climbers",
+   "elena_north_corner_details.json:lamp",
+   "elena_north_corner_details.json:sign",
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "elena_north_corner.json:elena-north-corner-bed"
+  ],
   "looksAt": [
    -147.5,
    52.6
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_north_corner.json:elena-north-corner-bed",
    "backdrop.json:aerial-trees",
-   "cervantes_patio_walls.json:cervantes-patio-north-east",
-   "street:cervantes",
-   "elena_lane_paving.json:elena-north-three-column"
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "cervantes_patio_walls.json:cervantes-patio-north-east"
   ],
   "subject": "Fan-palm raised bed, CALLE DE ELENA plaque, wall lamp and bougainvillea on the corner wall west of the Elena north mouth"
  },
@@ -19657,7 +19692,14 @@
    "altitude": 6.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:elena-north-corner-patio-wall",
+   "elena_north_corner_details.json:climbers",
+   "elena_north_corner_details.json:lamp",
+   "elena_north_corner_details.json:sign",
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "elena_north_corner.json:elena-north-corner-bed"
+  ],
   "looksAt": [
    -148.0,
    56.0
@@ -19700,17 +19742,24 @@
    "altitude": 6.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:elena-north-corner-patio-wall",
+   "elena_north_corner_details.json:climbers",
+   "elena_north_corner_details.json:lamp",
+   "elena_north_corner_details.json:sign",
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "elena_north_corner.json:elena-north-corner-bed"
+  ],
   "looksAt": [
    -148.3,
    52.8
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "cervantes_patio_walls.json:cervantes-patio-north-east",
-   "backdrop.json:aerial-trees",
-   "street:cervantes",
-   "elena_lane_paving.json:elena-north-three-column"
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "lane_walls.json:elena-north-corner-patio-wall",
+   "elena_north_corner_details.json:climbers",
+   "cervantes_patio_walls.json:cervantes-patio-north-east"
   ],
   "subject": "CALLE DE ELENA plaque, fan-palm corner planter and opposite garden doorway at the Cervantes/Elena junction"
  },
@@ -19743,17 +19792,24 @@
    "altitude": 6.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:elena-north-corner-patio-wall",
+   "elena_north_corner_details.json:climbers",
+   "elena_north_corner_details.json:lamp",
+   "elena_north_corner_details.json:sign",
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "elena_north_corner.json:elena-north-corner-bed"
+  ],
   "looksAt": [
    -147.3,
    52.1
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_north_corner.json:elena-north-corner-bed",
    "backdrop.json:aerial-trees",
-   "cervantes_patio_walls.json:cervantes-patio-north-east",
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north"
+   "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+   "cervantes_patio_walls.json:cervantes-patio-north-east"
   ],
   "subject": "Same corner planter as IMG_2966, seen from its east end"
  },
@@ -19826,17 +19882,19 @@
    "altitude": 6.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:elena-north-corner-patio-wall"
+  ],
   "looksAt": [
    -149.5,
    48.7
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_north_corner.json:elena-north-corner-bed",
    "backdrop.json:aerial-trees",
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north",
-   "elena_north.json:elena-north-planter-box-2"
+   "lane_walls.json:elena-north-corner-patio-wall",
+   "elena_lane_paving.json:elena-north-three-column"
   ],
   "subject": "trained climber on the white wall west of the Elena/Cervantes corner"
  },

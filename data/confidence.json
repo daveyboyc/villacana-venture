@@ -806,6 +806,30 @@
   "elena_junction_details.json:windows": {
    "level": "photographed",
    "why": "The one small window on the blank face behind the cypress wall, cast through the solved roof camera."
+  },
+  "lane_walls.json:elena-north-corner-patio-wall": {
+   "level": "estimated",
+   "why": "Photographed from Cervantes (IMG_2455, IMG_2800, IMG_2965-2967) with its CALLE DE ELENA tiles and brown double door, but no solved camera sees it: the line continues the registry house front and meets the Elena 24 garden-door wall; height 2.8 m and the 0.8 m door from rough camera fits in the structure review. About 0.5 m."
+  },
+  "cervantes_lane_edges.json:cervantes-elena-corner-bed": {
+   "level": "estimated",
+   "why": "The raised hedge and plumbago bed along Cervantes in IMG_2455, IMG_2800, IMG_2463: face confirmed in line with the tree-bed kerb corner (structure review), kerb height from the tile count in IMG_2800; extents estimated to about 0.5 m."
+  },
+  "elena_north_corner.json:elena-north-corner-bed": {
+   "level": "estimated",
+   "why": "The raised fan-palm bed up the Elena north mouth, frontal in IMG_2800 and IMG_2967: back on the registry house-front line, face at the 1.45 m lane paving (three tile columns and margins in IMG_2686); unsolved cameras, about 0.3-0.5 m."
+  },
+  "elena_north_corner_details.json:climbers": {
+   "level": "estimated",
+   "why": "Magenta bougainvillea draped over the coping of the plaque run and over the Cervantes face on bare stems, as in IMG_2455, IMG_2800, IMG_2966 and IMG_2463; extents read by eye and in the detail review."
+  },
+  "elena_north_corner_details.json:lamp": {
+   "level": "photographed",
+   "why": "The black lantern on its wall bracket, just round the corner on the Cervantes face, is clear in IMG_2800, IMG_2966 and IMG_2455; its height and reach are estimated to about 0.3 m."
+  },
+  "elena_north_corner_details.json:sign": {
+   "level": "photographed",
+   "why": "CALLE DE ELENA in tall single-letter tiles between the door and the corner, read in IMG_2800, IMG_2967 and IMG_2455; placed by the review fits to about 0.2-0.3 m, the tiles drawn a little narrow to fit the modelled corner."
   }
  },
  "gaps": [
@@ -1313,25 +1337,19 @@
    "why": "IMG_2448 shows the tall south wall turning the corner at about 93 m, its ALBERTO-plaque face running south along Calle Alberto, with a clipped hedge about 1.5 m tall in front of it at the corner. The lane-side wall stops at the corner; the return and the hedge are not built, because Calle Alberto south of Cervantes is not traced."
   },
   {
-   "id": "gap:elena-north-west-corner",
-   "name": "Elena north mouth · west corner on Cervantes: walled patio, fan-palm bed, lamp, bougainvillea",
+   "id": "gap:elena-north-west-lower-bed",
+   "name": "Elena north · lower bed along the house front north of the corner",
    "at": [
-    -148.5,
-    52.4
+    -151.0,
+    46.5
    ],
    "photos": [
-    "IMG_2455.jpg",
-    "IMG_2800.jpg",
-    "IMG_2966.jpg",
-    "IMG_2967.jpg",
-    "IMG_2799.jpg",
-    "IMG_2965.jpg",
-    "IMG_2514.jpg",
     "IMG_2686.jpg",
     "IMG_2969.jpg",
-    "IMG_2360.jpg"
+    "IMG_2970.jpg",
+    "IMG_2971.jpg"
    ],
-   "why": "Photographed from Cervantes and the Elena north mouth: a white raised bed of fan palms along the Cervantes edge, behind it a white corner wall with the CALLE DE ELENA tile plaque, a bracket lamp at its corner, bougainvillea over it and a brown double door into a private patio with a magnolia; a raised bed under the barred windows continues up Elena north (IMG_2686), and a trained climber on a wall with a stone shelf (IMG_2969). The model has only the 0.65 m wall cervantes-patio-north-east and open paving. No solved camera sees it: solve IMG_2800 or IMG_2966 (drain, lane tiles, registry corners) before building the layout."
+   "why": "A lower kerbed bed with a trained climber runs along the house under its barred windows north of the raised corner bed (IMG_2686, IMG_2969); not modelled (discrepancy elena-north-west-lower-bed)."
   }
  ]
 }

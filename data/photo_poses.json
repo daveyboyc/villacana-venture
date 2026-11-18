@@ -4384,6 +4384,57 @@
      }
     ]
    }
+  },
+  "IMG_2800.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -141.39,
+    "y": 2.45,
+    "z": 50.81,
+    "yaw": 257.9,
+    "pitch": -17.0,
+    "roll": -1.8,
+    "f": 1235.0
+   },
+   "initialBasis": "hand fit to four points (bed corner top and foot, the tree-bed kerb corner, the lawn kerb corner) and two upright edges, 66 px rms; eye fixed at 1.5 m above the lane. A starting pose for comparison renders, not a solved camera."
+  },
+  "IMG_2966.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -139.0,
+    "y": 2.45,
+    "z": 50.1,
+    "yaw": 253.8,
+    "pitch": -10.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "phone pin; reviewed looksAt; eye 1.5 m above the lane (model ground +0.95 m); tilted 10 degrees down by eye; 26 mm-equivalent lens from EXIF"
+  },
+  "IMG_2455.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -140.3,
+    "y": 2.45,
+    "z": 48.9,
+    "yaw": 244.6,
+    "pitch": -10.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "phone pin; reviewed looksAt; eye 1.5 m above the lane (model ground +0.95 m); tilted 10 degrees down by eye; 26 mm-equivalent lens from EXIF"
   }
  }
 }

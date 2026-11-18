@@ -248,10 +248,20 @@ def features(s):
            'shrubs':lanewalls['elena-south-lawn-west-wall']['points'][:2],'facade':[p for f in det['facade'] for p in f['face']],'windows':[p for w in det['windows'] for p in w['face']]}
     for key,name in (('cypresses','Elena south · cypresses at the far wall'),('climbers','Elena south · bougainvillea and vines on the lawn walls'),('lamp','Elena south · lamp post in the east hedge bed'),('sign','Elena south · CALLE ELENA tile sign'),('shrubs','Elena south · shrubs at the west wall foot'),('facade','Elena south · corner house balcony ledge and piers'),('windows','Elena south · small window on the blank face behind the cypress wall')):
         add('elena_junction_details.json:'+key,name,'reference feature','photo interpretation through the solved Elena 24 roof cameras; detail on reviewed structure',points=where[key],evidence=det['evidence'])
+    cd=json.loads((ROOT/'data/elena_north_corner_details.json').read_text()) # Elena north corner: bougainvillea, lantern, tile sign (Show details)
+    cw=lanewalls[cd['wall']]['points']
+    def on_wall(seg,t):
+        a,b=cw[seg],cw[seg+1]; l=math.dist(a,b); return [round(a[0]+(b[0]-a[0])*t/l,3),round(a[1]+(b[1]-a[1])*t/l,3)]
+    for key,name,pts in (('climbers','Elena north corner · bougainvillea over the patio wall',[on_wall(c['segment'],t) for c in cd['climbers'] for t in (c['from'],c['to'])]),
+                         ('lamp','Elena north corner · lantern on its bracket',[on_wall(cd['lamp']['segment'],cd['lamp']['at'])]),
+                         ('sign','Elena north corner · CALLE DE ELENA tiles',[on_wall(cd['sign']['segment'],cd['sign']['centre'])])):
+        add('elena_north_corner_details.json:'+key,name,'reference feature','photo interpretation from unsolved ground photos; detail on reviewed structure',points=pts,evidence=cd['evidence'])
     for bed in json.loads((ROOT/'data/elena_south_beds.json').read_text())['planters']: # Elena south hedge beds, same kind as the Cervantes ones
         add('elena_south_beds.json:'+bed['id'],bed['name'],'reference feature','photo interpretation through the solved Elena 24 roof cameras against the lane tiles and house fronts; about 0.5 m along, 0.2 m across',ring=bed['ring'],evidence=bed['evidence'])
     for bed in json.loads((ROOT/'data/cervantes_lane_edges.json').read_text())['planters']: # Cervantes beds and hedge planters
         add('cervantes_lane_edges.json:'+bed['id'],bed['name'],'reference feature','photo interpretation against the registry house fronts and the lane tiles; about 1 m along, 0.2 m across',ring=bed['ring'],evidence=bed['evidence'])
+    for bed in json.loads((ROOT/'data/elena_north_corner.json').read_text())['planters']: # the raised bed up the west side of the Elena north mouth
+        add('elena_north_corner.json:'+bed['id'],bed['name'],'reference feature','photo interpretation against the registry house front, the mapped lanes and tile counts; about 0.5 m',ring=bed['ring'],evidence=bed['evidence'])
     picasso_wall=json.loads((ROOT/'data/picasso_lawn_wall.json').read_text())
     add('picasso_lawn_wall.json:'+picasso_wall['id'],picasso_wall['name'],'reference feature','photo/aerial interpretation; the lawn edge, about 1 m',evidence=picasso_wall['evidence'],points=picasso_wall['points'])
     garden=json.loads((ROOT/'data/cervantes_garden_door.json').read_text())

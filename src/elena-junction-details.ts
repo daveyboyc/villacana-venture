@@ -21,7 +21,7 @@ const wallById = new Map(walls.walls.map((w) => [w.id, w]));
 const lawnLift = (region: string) => (frontages.regions.find((r) => r.id === region) as { lift?: number } | undefined)?.lift ?? 0.025;
 
 /** A wall segment as a frame: start, unit direction, unit normal toward `side` (a compass word), half thickness. */
-function wallFrame(wallId: string, segment: number, side: string) {
+export function wallFrame(wallId: string, segment: number, side: string) {
   const w = wallById.get(wallId)!;
   const a = w.points[segment] as Vec2, b = w.points[segment + 1] as Vec2, l = Math.hypot(b[0] - a[0], b[1] - a[1]);
   const u: Vec2 = [(b[0] - a[0]) / l, (b[1] - a[1]) / l];

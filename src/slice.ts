@@ -67,6 +67,7 @@ import { addPicassoLawnWall, picassoLawnWallRings } from "./picasso-lawn-wall";
 import { addLaneWalls, laneWallRings } from "./lane-walls";
 import { addCervantesLaneEdges, addCervantesLaneEdgePlanting, cervantesLaneEdgeRings } from "./cervantes-lane-edges";
 import { addElenaJunctionDetails } from "./elena-junction-details";
+import { addElenaNorthCornerDetails } from "./elena-north-corner-details";
 import { addMainPoolLawn, inLawnPlainFront, lawnSolidRings, PLAIN_LAWN_BUILDINGS } from "./main-pool-lawn";
 import { addGroundPlan, groundPlanSolidRings, paintGroundPlan } from "./ground-plan";
 import { bareGardenWall, plainForOpenings, plainForPorches } from "./plain-fronts";
@@ -344,6 +345,7 @@ async function boot(): Promise<void> {
   addCervantesLaneEdges(scene); // Cervantes beds and hedge planters along the lane (data/cervantes_lane_edges.json)
   if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addCervantesLaneEdgePlanting(into,keep)});
   if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addElenaJunctionDetails(into,keep)}); // Elena junction lawn trees, cypresses, climbers, lamp and sign (data/elena_junction_details.json)
+  if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addElenaNorthCornerDetails(into,keep)}); // Elena north corner: bougainvillea, lantern and CALLE DE ELENA tiles (data/elena_north_corner_details.json)
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   addMiddleSwGateway(scene);
   addNorthWestCanopies(scene,skeleton.buildings);

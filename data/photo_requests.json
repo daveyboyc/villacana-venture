@@ -857,6 +857,24 @@
       "status": "open",
       "ask": "On Calle Elena south, about 3 m from the Cervantes junction, stand on the lawn-side kerb and face east square-on to the hedge bed, the lamp post and the white patio wall behind it, so the tiles' edge, the bed and the wall foot are all visible. Then one looking along the east side towards the middle pool.",
       "why": "elena-south-east-beds: the two roof cameras disagree by 0.5 m on where the patio wall behind the hedge stands, which sets how deep the hedge bed is."
+    },
+    {
+      "id": "elena-north-corner-square",
+      "area": "elena",
+      "at": [
+        -145.6,
+        54.4
+      ],
+      "look": [
+        -149.0,
+        51.0
+      ],
+      "priority": 2,
+      "radius": 3,
+      "since": "2026-11-18",
+      "status": "open",
+      "ask": "On Cervantes at the mouth of Calle Elena north, stand on the south-side kerb opposite the CALLE DE ELENA corner and face it square-on: get the fan-palm bed's corner, the foot of the white wall behind it, the brown double door and the hedged tree bed across the mouth in one frame. Then one from 4-5 m up Elena north looking back down at the corner.",
+      "why": "gap:elena-north-west-corner: the corner patio wall and the raised bed are built from unsolved photos and the registry house line; a solved ground view would fix the wall foot and the bed faces."
     }
   ]
 }

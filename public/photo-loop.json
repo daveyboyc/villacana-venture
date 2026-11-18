@@ -1188,7 +1188,7 @@
    "id": "elena",
    "name": "Calle Elena",
    "counts": {
-    "ready": 6,
+    "ready": 11,
     "needs-evidence": 0,
     "needs-source-access": 0,
     "awaiting-review": 1,
@@ -1361,6 +1361,107 @@
      "requests": [],
      "state": "ready",
      "blockers": []
+    },
+    {
+     "area": "elena",
+     "task": "elena-north-corner",
+     "status": "open",
+     "requests": [],
+     "id": "elena-north-corner-offset",
+     "kind": "placement",
+     "description": "The corner patio wall and the raised bed are built from the registry house line, the mapped lanes and tile counts; rough camera fits of IMG_2455, IMG_2800, IMG_2966 and IMG_2967 to the bed corner (structure review, 18 November 2026) agree with each other to about 0.2 m and put the corner 0.2-0.3 m from the model, within the stated 0.5 m. No solved camera sees it; photo request elena-north-corner-square asks for a view that could be solved.",
+     "sources": [
+      "IMG_2455.jpg",
+      "IMG_2800.jpg",
+      "IMG_2966.jpg",
+      "IMG_2967.jpg",
+      "IMG_2686.jpg",
+      "IMG_2463.jpg"
+     ],
+     "features": [
+      "lane_walls.json:elena-north-corner-patio-wall",
+      "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+      "elena_north_corner.json:elena-north-corner-bed"
+     ],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "area": "elena",
+     "task": "elena-north-corner",
+     "status": "open",
+     "requests": [],
+     "id": "elena-north-corner-door-sill",
+     "kind": "completeness",
+     "description": "The brown double door in the corner patio wall: no photo shows its sill or the patio floor level behind it, so the door stands on the lane ground with no step.",
+     "sources": [
+      "IMG_2455.jpg",
+      "IMG_2800.jpg"
+     ],
+     "features": [
+      "lane_walls.json:elena-north-corner-patio-wall"
+     ],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "area": "elena",
+     "task": "elena-north-corner",
+     "status": "open",
+     "requests": [],
+     "id": "elena-north-west-lower-bed",
+     "kind": "completeness",
+     "description": "North of the raised corner bed, a lower kerbed bed runs along the house front under its barred windows on the west side of Elena north (IMG_2686, IMG_2969, with a trained climber on a wall with a stone shelf). It is not modelled; the two white planter boxes of elena_north.json stand in it.",
+     "sources": [
+      "IMG_2686.jpg",
+      "IMG_2969.jpg",
+      "IMG_2970.jpg",
+      "IMG_2971.jpg"
+     ],
+     "features": [
+      "elena_north.json:elena-north-planter-box-1",
+      "elena_north.json:elena-north-planter-box-2"
+     ],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "area": "elena",
+     "task": "elena-north-corner",
+     "status": "open",
+     "requests": [],
+     "id": "elena-north-tree-bed-2-south-face",
+     "kind": "placement",
+     "description": "Structure review of the Elena north corner (18 November 2026): in IMG_2800 and IMG_2799 the kerb corner of the hedged tree bed east of the mouth lines up with the corner bed's Cervantes face (about 0.9 m north of the Cervantes axis); the model has its south face about 0.6 m further north (1.5 m). Not moved: an existing feature outside this task, from rough fits only.",
+     "sources": [
+      "IMG_2800.jpg",
+      "IMG_2799.jpg",
+      "IMG_2197.jpg"
+     ],
+     "features": [
+      "elena_north.json:elena-north-tree-bed-2"
+     ],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "elena-north-tree-bed-2-magnolia",
+     "area": "elena",
+     "kind": "completeness",
+     "task": "elena-north-corner",
+     "status": "open",
+     "requests": [],
+     "description": "The magnolia with seed cones whose crown shows over the CALLE DE ELENA wall (IMG_2455, IMG_2965) stands in the hedged tree bed east of the Elena north mouth (bearing about 283 degrees from IMG_2455's fitted camera, against 289 for elena-north-tree-bed-2), above its lantana; its limbs reach west over the wall and it is most likely the dark canopy over the corner pocket on the aerial. The model has a pollarded tree there. A tree first placed inside the corner patio was removed in the detail review: the house's south gallery shows clear above the wall where it stood.",
+     "sources": [
+      "IMG_2455.jpg",
+      "IMG_2965.jpg",
+      "IMG_2514.jpg"
+     ],
+     "features": [
+      "elena_north.json:elena-north-tree-bed-2"
+     ],
+     "state": "ready",
+     "blockers": []
     }
    ],
    "requests": [
@@ -1441,6 +1542,19 @@
      "ask": "On Calle Elena south, about 3 m from the Cervantes junction, stand on the lawn-side kerb and face east square-on to the hedge bed, the lamp post and the white patio wall behind it, so the tiles' edge, the bed and the wall foot are all visible. Then one looking along the east side towards the middle pool.",
      "why": "elena-south-east-beds: the two roof cameras disagree by 0.5 m on where the patio wall behind the hedge stands, which sets how deep the hedge bed is.",
      "photoRequest": "elena-south-east-patio-wall-square",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-elena-north-corner-square",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "On Cervantes at the mouth of Calle Elena north, stand on the south-side kerb opposite the CALLE DE ELENA corner and face it square-on: get the fan-palm bed's corner, the foot of the white wall behind it, the brown double door and the hedged tree bed across the mouth in one frame. Then one from 4-5 m up Elena north looking back down at the corner.",
+     "why": "gap:elena-north-west-corner: the corner patio wall and the raised bed are built from unsolved photos and the registry house line; a solved ground view would fix the wall foot and the bed faces.",
+     "photoRequest": "elena-north-corner-square",
      "status": "open",
      "sources": [],
      "features": [],
@@ -2076,7 +2190,7 @@
    "id": "cervantes",
    "name": "Calle Miguel de Cervantes",
    "counts": {
-    "ready": 1,
+    "ready": 2,
     "needs-evidence": 0,
     "needs-source-access": 0,
     "awaiting-review": 1,
@@ -2165,6 +2279,24 @@
      "task": "cervantes-lane-edges",
      "status": "open",
      "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "area": "cervantes",
+     "task": "elena-north-corner",
+     "status": "open",
+     "requests": [],
+     "id": "cervantes-garden-door-wall-height",
+     "kind": "height",
+     "description": "The Elena 24 garden-door wall on Cervantes is modelled 1.9 m high; IMG_2463 reads about 2.4-2.5 m beside the door, stepping up at a pier to 2.6-2.7 m where it meets the corner patio wall (structure review of the Elena north corner, 18 November 2026). Not changed here.",
+     "sources": [
+      "IMG_2463.jpg",
+      "IMG_2196.jpg"
+     ],
+     "features": [
+      "cervantes_garden_door.json:cervantes-garden-door"
+     ],
      "state": "ready",
      "blockers": []
     }
@@ -5249,7 +5381,7 @@
    "id": "whole-resort",
    "name": "The whole resort",
    "counts": {
-    "ready": 13,
+    "ready": 19,
     "needs-evidence": 4,
     "needs-source-access": 0,
     "awaiting-review": 3,
@@ -5735,6 +5867,125 @@
      "task": "elena-junction-lawns-roof",
      "status": "open",
      "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "area": "elena",
+     "task": "elena-north-corner",
+     "status": "open",
+     "requests": [],
+     "id": "elena-north-corner-offset",
+     "kind": "placement",
+     "description": "The corner patio wall and the raised bed are built from the registry house line, the mapped lanes and tile counts; rough camera fits of IMG_2455, IMG_2800, IMG_2966 and IMG_2967 to the bed corner (structure review, 18 November 2026) agree with each other to about 0.2 m and put the corner 0.2-0.3 m from the model, within the stated 0.5 m. No solved camera sees it; photo request elena-north-corner-square asks for a view that could be solved.",
+     "sources": [
+      "IMG_2455.jpg",
+      "IMG_2800.jpg",
+      "IMG_2966.jpg",
+      "IMG_2967.jpg",
+      "IMG_2686.jpg",
+      "IMG_2463.jpg"
+     ],
+     "features": [
+      "lane_walls.json:elena-north-corner-patio-wall",
+      "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+      "elena_north_corner.json:elena-north-corner-bed"
+     ],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "area": "elena",
+     "task": "elena-north-corner",
+     "status": "open",
+     "requests": [],
+     "id": "elena-north-corner-door-sill",
+     "kind": "completeness",
+     "description": "The brown double door in the corner patio wall: no photo shows its sill or the patio floor level behind it, so the door stands on the lane ground with no step.",
+     "sources": [
+      "IMG_2455.jpg",
+      "IMG_2800.jpg"
+     ],
+     "features": [
+      "lane_walls.json:elena-north-corner-patio-wall"
+     ],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "area": "elena",
+     "task": "elena-north-corner",
+     "status": "open",
+     "requests": [],
+     "id": "elena-north-west-lower-bed",
+     "kind": "completeness",
+     "description": "North of the raised corner bed, a lower kerbed bed runs along the house front under its barred windows on the west side of Elena north (IMG_2686, IMG_2969, with a trained climber on a wall with a stone shelf). It is not modelled; the two white planter boxes of elena_north.json stand in it.",
+     "sources": [
+      "IMG_2686.jpg",
+      "IMG_2969.jpg",
+      "IMG_2970.jpg",
+      "IMG_2971.jpg"
+     ],
+     "features": [
+      "elena_north.json:elena-north-planter-box-1",
+      "elena_north.json:elena-north-planter-box-2"
+     ],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "area": "elena",
+     "task": "elena-north-corner",
+     "status": "open",
+     "requests": [],
+     "id": "elena-north-tree-bed-2-south-face",
+     "kind": "placement",
+     "description": "Structure review of the Elena north corner (18 November 2026): in IMG_2800 and IMG_2799 the kerb corner of the hedged tree bed east of the mouth lines up with the corner bed's Cervantes face (about 0.9 m north of the Cervantes axis); the model has its south face about 0.6 m further north (1.5 m). Not moved: an existing feature outside this task, from rough fits only.",
+     "sources": [
+      "IMG_2800.jpg",
+      "IMG_2799.jpg",
+      "IMG_2197.jpg"
+     ],
+     "features": [
+      "elena_north.json:elena-north-tree-bed-2"
+     ],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "area": "cervantes",
+     "task": "elena-north-corner",
+     "status": "open",
+     "requests": [],
+     "id": "cervantes-garden-door-wall-height",
+     "kind": "height",
+     "description": "The Elena 24 garden-door wall on Cervantes is modelled 1.9 m high; IMG_2463 reads about 2.4-2.5 m beside the door, stepping up at a pier to 2.6-2.7 m where it meets the corner patio wall (structure review of the Elena north corner, 18 November 2026). Not changed here.",
+     "sources": [
+      "IMG_2463.jpg",
+      "IMG_2196.jpg"
+     ],
+     "features": [
+      "cervantes_garden_door.json:cervantes-garden-door"
+     ],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "elena-north-tree-bed-2-magnolia",
+     "area": "elena",
+     "kind": "completeness",
+     "task": "elena-north-corner",
+     "status": "open",
+     "requests": [],
+     "description": "The magnolia with seed cones whose crown shows over the CALLE DE ELENA wall (IMG_2455, IMG_2965) stands in the hedged tree bed east of the Elena north mouth (bearing about 283 degrees from IMG_2455's fitted camera, against 289 for elena-north-tree-bed-2), above its lantana; its limbs reach west over the wall and it is most likely the dark canopy over the corner pocket on the aerial. The model has a pollarded tree there. A tree first placed inside the corner patio was removed in the detail review: the house's south gallery shows clear above the wall where it stood.",
+     "sources": [
+      "IMG_2455.jpg",
+      "IMG_2965.jpg",
+      "IMG_2514.jpg"
+     ],
+     "features": [
+      "elena_north.json:elena-north-tree-bed-2"
+     ],
      "state": "ready",
      "blockers": []
     }
@@ -6383,6 +6634,19 @@
      "ask": "On Calle Elena south, about 3 m from the Cervantes junction, stand on the lawn-side kerb and face east square-on to the hedge bed, the lamp post and the white patio wall behind it, so the tiles' edge, the bed and the wall foot are all visible. Then one looking along the east side towards the middle pool.",
      "why": "elena-south-east-beds: the two roof cameras disagree by 0.5 m on where the patio wall behind the hedge stands, which sets how deep the hedge bed is.",
      "photoRequest": "elena-south-east-patio-wall-square",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-elena-north-corner-square",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "On Cervantes at the mouth of Calle Elena north, stand on the south-side kerb opposite the CALLE DE ELENA corner and face it square-on: get the fan-palm bed's corner, the foot of the white wall behind it, the brown double door and the hedged tree bed across the mouth in one frame. Then one from 4-5 m up Elena north looking back down at the corner.",
+     "why": "gap:elena-north-west-corner: the corner patio wall and the raised bed are built from unsolved photos and the registry house line; a solved ground view would fix the wall foot and the bed faces.",
+     "photoRequest": "elena-north-corner-square",
      "status": "open",
      "sources": [],
      "features": [],

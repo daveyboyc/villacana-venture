@@ -1,0 +1,85 @@
+{
+ "id": "elena-north-corner",
+ "name": "Elena north mouth · west corner on Cervantes",
+ "checkedAt": "2026-11-18",
+ "about": "The raised fan-palm bed up the west side of the Elena north mouth, in front of the CALLE DE ELENA patio wall (lane_walls.json elena-north-corner-patio-wall); its arm along Cervantes is in data/cervantes_lane_edges.json. A rectangle in the Elena north lane frame, built and planted like the Cervantes beds (src/cervantes-lane-edges.ts): s metres along the mapped Elena north centreline from its Cervantes end northwards, o metres off it (negative west, positive east); 'ring' is the same rectangle in model metres. Positions come from the registry house front, the mapped lanes and tile counts in unsolved ground photos, about 0.3-0.5 m; no solved camera sees the corner (photo request elena-north-corner-square).",
+ "axis": {
+  "origin": [
+   -145.1,
+   52.7
+  ],
+  "along": [
+   -0.5036,
+   -0.864
+  ],
+  "right": [
+   0.864,
+   -0.5036
+  ]
+ },
+ "planters": [
+  {
+   "id": "elena-north-corner-bed",
+   "name": "Elena north mouth · raised fan-palm bed under the CALLE DE ELENA wall",
+   "kind": "raised",
+   "s": [
+    0.93,
+    5.91
+   ],
+   "o": [
+    -2.115,
+    -0.75
+   ],
+   "height": 0.5,
+   "wall": 0.1,
+   "ring": [
+    [
+     -147.396,
+     52.962
+    ],
+    [
+     -149.904,
+     48.659
+    ],
+    [
+     -148.724,
+     47.971
+    ],
+    [
+     -146.216,
+     52.274
+    ]
+   ],
+   "planting": {
+    "kind": "shrubs",
+    "height": 1.9,
+    "runs": [
+     {
+      "s": [
+       0.93,
+       5.91
+      ],
+      "look": "fanpalm"
+     }
+    ]
+   },
+   "evidence": [
+    "IMG_2455.jpg",
+    "IMG_2800.jpg",
+    "IMG_2965.jpg",
+    "IMG_2966.jpg",
+    "IMG_2967.jpg",
+    "IMG_2799.jpg",
+    "IMG_2514.jpg",
+    "IMG_2686.jpg"
+   ],
+   "basis": "The same raised bed turning the corner and running up the west side of the Elena north mouth to the house corner (registry 6265201UF1366N_part4 at -150.01, 48.72), in front of the CALLE DE ELENA wall: frontal in IMG_2800 and IMG_2967, from the mouth in IMG_2514; IMG_2686 shows it at the foot of the view, with a lower bed (not modelled) continuing along the house beyond. Its back is the patio wall on the house-front line (2.24 m west of the centreline). Its lane face is 0.75 m west of the centreline, against the lane paving: IMG_2686 shows the mouth as three 0.4 m tile columns with 0.12-0.13 m margins either side, about 1.45 m, as the structure review found (the first build left a 0.27 m strip at 1.0 m). Estimated to about 0.3 m across, 0.5 m along.",
+   "join": {
+    "near": [
+     0.93,
+     2.04
+    ]
+   }
+  }
+ ]
+}
