@@ -794,6 +794,18 @@
   "elena_junction_details.json:sign": {
    "level": "photographed",
    "why": "CALLE and ELENA tile plaques on the west wall near its north end (IMG_2262, IMG_2286, the roof photo); size and height read by eye."
+  },
+  "elena_junction_details.json:shrubs": {
+   "level": "photographed",
+   "why": "Shrubs at the west wall's foot in the roof photos; spacing and sizes by eye."
+  },
+  "elena_junction_details.json:facade": {
+   "level": "estimated",
+   "why": "The corner house's balcony ledge and piers, photographed head-on in IMG_2358 and IMG_2367 and cast onto the registry face; how far they project is estimated."
+  },
+  "elena_junction_details.json:windows": {
+   "level": "photographed",
+   "why": "The one small window on the blank face behind the cypress wall, cast through the solved roof camera."
   }
  },
  "gaps": [

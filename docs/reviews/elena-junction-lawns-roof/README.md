@@ -144,3 +144,20 @@ both plain fronts and the cypress wall (with limits), and failed two items, both
   over it. The patio wall behind is probably further east than drawn; that is open.
 
 These fixes were not re-reviewed. `IMG_2358-east-beds-after-review.jpg` shows them.
+
+## 18 November, later: the open items
+
+- **Patio wall behind the east hedge.** The two roof cameras disagree on where it stands: IMG_2358 puts it at 1.7-2.0 m
+  east of the centreline, the new roof photo at 1.4 m. The model's 1.4 m lies between them, so it is not moved. A
+  ground photo square to the lane would settle it.
+- **The west wall's north end.** Its top is covered by bougainvillea and planting in both roof photos, so it can't be
+  measured. The plaque proportions in IMG_2262 fit 2.1-2.2 m, so it is left at 2.2 m.
+- **The lawn's north edge.** IMG_2286 shows the Cervantes cross-section at the drain: about 2.0 m from the lawn kerb
+  to the north bed wall, against 1.73 m in the model. That points the other way from the roof readings, so it is not
+  moved. A solved ground camera at the junction is still the way to settle it.
+- **The cypress wall's line.** Still waiting on the photo request `elena-south-cypress-wall-gate`.
+- **Detail added:**
+  - shrubs at the west wall's foot;
+  - the corner house's white balcony ledge on two piers, cast onto the registry face through IMG_2358 (the
+    photographed porch front is solid with an arched doorway; approximate);
+  - the small window high on the blank face behind the cypress wall, cast through the roof camera.

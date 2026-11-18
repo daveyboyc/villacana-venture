@@ -120,5 +120,148 @@
   "plaqueHeight": 0.16,
   "gap": 0.18,
   "basis": "Two tile plaques, CALLE and ELENA in dark capitals on white tiles, on the lawn-side face of the west wall near its north end (IMG_2262, IMG_2286, ELENA-ROOF-2026-11-17)."
- }
+ },
+ "shrubs": [
+  {
+   "wall": "elena-south-lawn-west-wall",
+   "segment": 0,
+   "at": 2.3,
+   "width": 0.8,
+   "height": 0.75,
+   "side": "east"
+  },
+  {
+   "wall": "elena-south-lawn-west-wall",
+   "segment": 0,
+   "at": 3.6,
+   "width": 0.7,
+   "height": 0.65,
+   "side": "east"
+  },
+  {
+   "wall": "elena-south-lawn-west-wall",
+   "segment": 0,
+   "at": 5.2,
+   "width": 0.8,
+   "height": 0.8,
+   "side": "east"
+  },
+  {
+   "wall": "elena-south-lawn-west-wall",
+   "segment": 0,
+   "at": 6.3,
+   "width": 0.6,
+   "height": 0.6,
+   "side": "east"
+  },
+  {
+   "wall": "elena-south-lawn-west-wall",
+   "segment": 0,
+   "at": 7.7,
+   "width": 0.7,
+   "height": 0.7,
+   "side": "east"
+  }
+ ],
+ "shrubsBasis": "Rounded light-green shrubs (hydrangea-like) in the strip at the west wall's foot, between the wall and the near lawn (ELENA-ROOF-2026-11-17, IMG_2358, IMG_2261); spacing read by eye.",
+ "facade": [
+  {
+   "id": "corner-house-porch",
+   "face": [
+    [
+     -149.7,
+     61.55
+    ],
+    [
+     -145.77,
+     59.2
+    ]
+   ],
+   "side": "north",
+   "boxes": [
+    {
+     "name": "balcony slab",
+     "along": [
+      1.3,
+      4.4
+     ],
+     "out": [
+      0.0,
+      0.6
+     ],
+     "y": [
+      3.75,
+      3.95
+     ]
+    },
+    {
+     "name": "moulding",
+     "along": [
+      1.4,
+      4.3
+     ],
+     "out": [
+      0.0,
+      0.48
+     ],
+     "y": [
+      3.5,
+      3.75
+     ]
+    },
+    {
+     "name": "pier west",
+     "along": [
+      1.4,
+      1.75
+     ],
+     "out": [
+      0.2,
+      0.55
+     ],
+     "y": [
+      0.0,
+      3.5
+     ]
+    },
+    {
+     "name": "pier east",
+     "along": [
+      3.95,
+      4.3
+     ],
+     "out": [
+      0.2,
+      0.55
+     ],
+     "y": [
+      0.0,
+      3.5
+     ]
+    }
+   ],
+   "basis": "IMG_2358 and IMG_2367 look straight at the north-west face of the corner house (registry 6265601UF1366N_part1, corners 3-4): a white moulded balcony ledge about 3.2 m wide under the arched shuttered window, carried on two white piers either side of the recessed brown door. Cast through the solved IMG_2358 camera onto the face: ledge 1.3-4.4 m along it, top about 4.0 m above the ground, window sitting on it; door head about 2.3 m. Projection and pier sizes estimated."
+  }
+ ],
+ "windows": [
+  {
+   "id": "far-blank-face-window",
+   "face": [
+    [
+     -153.1,
+     79.02
+    ],
+    [
+     -148.99,
+     76.56
+    ]
+   ],
+   "side": "north",
+   "along": 2.49,
+   "y": 5.4,
+   "width": 0.6,
+   "height": 0.55,
+   "basis": "The single small arched window high on the plain north face of 6265801UF1366N_part5 behind the cypress wall (ELENA-ROOF-2026-11-17; IMG_2261), cast through the solved roof camera onto the registry face: 2.5 m from its west corner, centre about 5.4 m above the ground, about 0.6 m square."
+  }
+ ]
 }

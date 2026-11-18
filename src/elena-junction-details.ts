@@ -4,7 +4,7 @@ import lawns from "../data/junction_lawns.json";
 import frontages from "../data/frontage_divisions.json";
 import walls from "../data/lane_walls.json";
 import beds from "../data/elena_south_beds.json";
-import { roundClippedTree, wallClimber } from "./clipped-plants";
+import { looseShrub, roundClippedTree, wallClimber } from "./clipped-plants";
 import { lanternPost, LANTERN_RADIUS } from "./lantern-post";
 import { siteY } from "./terrain";
 import type { Vec2 } from "./types";
@@ -101,6 +101,43 @@ export function addElenaJunctionDetails(into: THREE.Scene, keep: (x: number, z: 
       piece.position.set(sx, siteY(sx, sz), sz);
       piece.quaternion.copy(f.turn);
       piece.name = c.id; piece.traverse((o) => { o.userData.noDrape = true; }); root.add(piece);
+    }
+  }
+
+  // Shrubs in the strip at the west wall's foot.
+  for (const [i, sh] of (data.shrubs ?? []).entries()) {
+    const f = wallFrame(sh.wall, sh.segment, sh.side), off = f.half + 0.05 + sh.width / 2;
+    const x = f.a[0] + f.u[0] * sh.at + f.n[0] * off, z = f.a[1] + f.u[1] * sh.at + f.n[1] * off;
+    if (!keep(x, z) || !clear(x, z, sh.width / 2)) { omit(`west-wall-shrub-${i}`); continue; }
+    const bush = looseShrub({ width: sh.width, depth: sh.width * 0.8, height: sh.height, seed: seed++, leaf: "glossy", leafSize: [0.1, 0.08], greens: ["#5f8a3e", "#6f9a48", "#7fa852", "#56803a"], stems: 5 });
+    bush.position.set(x, siteY(x, z) + 0.12, z); bush.name = "west-wall-shrub"; bush.traverse((o) => { o.userData.noDrape = true; }); root.add(bush);
+  }
+
+  // White facade pieces the photos show on registry faces: boxes in the face's frame (along it, out of it, up).
+  const plaster = new THREE.MeshStandardMaterial({ color: "#fbf8f0", roughness: 0.85 });
+  for (const fc of data.facade ?? []) {
+    const [a, b] = fc.face as [Vec2, Vec2], l = Math.hypot(b[0] - a[0], b[1] - a[1]), u: Vec2 = [(b[0] - a[0]) / l, (b[1] - a[1]) / l];
+    let n: Vec2 = [u[1], -u[0]]; if (fc.side === "north" ? n[1] > 0 : fc.side === "south" ? n[1] < 0 : fc.side === "east" ? n[0] < 0 : n[0] > 0) n = [-n[0], -n[1]];
+    const ground = siteY((a[0] + b[0]) / 2, (a[1] + b[1]) / 2);
+    for (const bx of fc.boxes) {
+      const sm = (bx.along[0] + bx.along[1]) / 2, om = (bx.out[0] + bx.out[1]) / 2;
+      const x = a[0] + u[0] * sm + n[0] * om, z = a[1] + u[1] * sm + n[1] * om;
+      if (!clear(x, z, Math.hypot(bx.along[1] - bx.along[0], bx.out[1] - bx.out[0]) / 2)) { omit(`${fc.id}-${bx.name}`); continue; }
+      const mesh = new THREE.Mesh(new THREE.BoxGeometry(bx.along[1] - bx.along[0], bx.y[1] - bx.y[0], bx.out[1] - bx.out[0]), plaster);
+      mesh.position.set(x, ground + (bx.y[0] + bx.y[1]) / 2, z); mesh.rotation.y = -Math.atan2(u[1], u[0]);
+      mesh.castShadow = mesh.receiveShadow = true; mesh.name = fc.id; mesh.userData.noDrape = true; root.add(mesh);
+    }
+  }
+
+  // Small windows on plain faces: a brown shuttered panel in a white reveal, just proud of the wall.
+  for (const w of data.windows ?? []) {
+    const [a, b] = w.face as [Vec2, Vec2], l = Math.hypot(b[0] - a[0], b[1] - a[1]), u: Vec2 = [(b[0] - a[0]) / l, (b[1] - a[1]) / l];
+    let n: Vec2 = [u[1], -u[0]]; if (w.side === "north" ? n[1] > 0 : n[1] < 0) n = [-n[0], -n[1]];
+    const x = a[0] + u[0] * w.along + n[0] * 0.03, z = a[1] + u[1] * w.along + n[1] * 0.03, y = siteY(x, z) + w.y;
+    const frame = new THREE.Mesh(new THREE.BoxGeometry(w.width + 0.12, w.height + 0.12, 0.04), plaster);
+    const panel = new THREE.Mesh(new THREE.BoxGeometry(w.width, w.height, 0.05), new THREE.MeshStandardMaterial({ color: "#4a2e1f", roughness: 0.8 }));
+    for (const [m, dz] of [[frame, 0.0], [panel, 0.01]] as [THREE.Mesh, number][]) {
+      m.position.set(x + n[0] * dz, y, z + n[1] * dz); m.rotation.y = -Math.atan2(u[1], u[0]); m.name = w.id; m.userData.noDrape = true; root.add(m);
     }
   }
 
