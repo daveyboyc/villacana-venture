@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import data from "../data/cervantes_lane_edges.json";
+import elena from "../data/elena_south_beds.json";
 import { clippedHedge, looseShrub } from "./clipped-plants";
 import { groundElenaWall } from "./elena-wall-ground";
 import { plasterMaterial } from "./materials";
@@ -9,12 +10,13 @@ import type { Vec2 } from "./types";
 /** Raised hedge planters and kerbed beds along Calle Cervantes (data/cervantes_lane_edges.json). The white kerb
  * walls and soil are structure (Layout, solid, on the map); the planting is a Show-details piece. */
 export type LaneEdgePlanting = { kind: string; height: number; runs: { s: number[]; look: string }[] };
-export type LaneEdgePlanter = { id: string; name: string; kind: string; s: number[]; o: number[]; height: number; wall: number; ring: Vec2[]; planting: LaneEdgePlanting; evidence: string[]; basis: string };
-export const cervantesLaneEdges: LaneEdgePlanter[] = data.planters.map((p) => ({ ...p, ring: p.ring as Vec2[] }));
+type Axis = { origin: number[]; along: number[]; right: number[] };
+export type LaneEdgePlanter = { id: string; name: string; kind: string; s: number[]; o: number[]; height: number; wall: number; ring: Vec2[]; planting: LaneEdgePlanting; evidence: string[]; basis: string; axis: Axis };
+/** Cervantes beds (data/cervantes_lane_edges.json) and the Elena south beds (data/elena_south_beds.json), each in its own lane frame. */
+export const cervantesLaneEdges: LaneEdgePlanter[] = [data, elena].flatMap((file) => file.planters.map((p) => ({ ...p, ring: p.ring as Vec2[], axis: file.axis })));
 
-const { origin, along, right } = data.axis;
-/** A point in the lane frame: s metres along the axis from the Dalí end, o metres off it (positive south). */
-const at = (s: number, o: number): Vec2 => [origin[0] + along[0] * s + right[0] * o, origin[1] + along[1] * s + right[1] * o];
+/** A point in a lane frame: s metres along the axis, o metres off it (positive to the right of the axis). */
+const at = (axis: Axis, s: number, o: number): Vec2 => [axis.origin[0] + axis.along[0] * s + axis.right[0] * o, axis.origin[1] + axis.along[1] * s + axis.right[1] * o];
 
 /** Collision: the whole planter (kerbs and the planting on them). */
 export const cervantesLaneEdgeRings = (): Vec2[][] => cervantesLaneEdges.map((p) => p.ring);
@@ -39,13 +41,13 @@ export function addCervantesLaneEdges(scene: THREE.Scene): void {
   const soil = new THREE.MeshStandardMaterial({ color: "#5a4634", roughness: 1 });
   const FOOT = 0.06;
   for (const p of cervantesLaneEdges) {
-    const [s0, s1] = p.s, [near, far] = p.o, sign = Math.sign(far - near), t = p.wall;
+    const [s0, s1] = p.s, [near, far] = p.o, sign = Math.sign(far - near), t = p.wall, A = (s: number, o: number) => at(p.axis, s, o);
     // Kerb walls: the lane face and the back on the long sides, the two ends between them.
-    for (const o of [near + sign * t / 2, far - sign * t / 2]) group.add(box(at(s0, o), at(s1, o), -FOOT, p.height, t, white, p.id));
+    for (const o of [near + sign * t / 2, far - sign * t / 2]) group.add(box(A(s0, o), A(s1, o), -FOOT, p.height, t, white, p.id));
     const mid = (near + far) / 2, inner = Math.abs(far - near) - 2 * t;
-    for (const s of [s0 + t / 2, s1 - t / 2]) group.add(box(at(s, mid - sign * inner / 2), at(s, mid + sign * inner / 2), -FOOT, p.height, t, white, p.id));
+    for (const s of [s0 + t / 2, s1 - t / 2]) group.add(box(A(s, mid - sign * inner / 2), A(s, mid + sign * inner / 2), -FOOT, p.height, t, white, p.id));
     // Soil just under the kerb top, between the walls.
-    group.add(box(at(s0 + t, mid), at(s1 - t, mid), p.height - 0.08, p.height - 0.03, inner, soil, p.id + "-soil"));
+    group.add(box(A(s0 + t, mid), A(s1 - t, mid), p.height - 0.08, p.height - 0.03, inner, soil, p.id + "-soil"));
   }
   scene.add(group);
 }
@@ -68,17 +70,21 @@ export function addCervantesLaneEdgePlanting(into: THREE.Scene, keep: (x: number
   details.userData.noDrape = true;
   let seed = 311;
   for (const p of cervantesLaneEdges) {
-    const [near, far] = p.o, sign = Math.sign(far - near), depth = Math.abs(far - near) - 2 * p.wall - 0.04, o = (near + far) / 2 + sign * 0.0;
+    // A bed right at the lane edge (Elena south) can set a slimmer planting depth and piece length, planted against the
+    // back of the bed, so each piece's footprint clears the shared route guard.
+    const back = p.planting as LaneEdgePlanting & { depth?: number; step?: number };
+    const [near, far] = p.o, sign = Math.sign(far - near), depth = back.depth ?? Math.abs(far - near) - 2 * p.wall - 0.04, o = back.depth ? far - sign * (p.wall + back.depth / 2) : (near + far) / 2;
     for (const run of p.planting.runs) {
       const look = LOOKS[run.look] ?? LOOKS.box, loose = run.look === "dracaena" || run.look === "lantana" || run.look === "jade";
       // Short pieces: the guard bounds each with a circle, and these beds are narrow and close to the lane.
-      const step = loose ? 0.5 : 0.6, pieces = Math.max(1, Math.ceil((run.s[1] - run.s[0] - 2 * p.wall) / step)), len = (run.s[1] - run.s[0] - 2 * p.wall) / pieces;
+      const step = back.step ?? (loose ? 0.5 : 0.6), pieces = Math.max(1, Math.ceil((run.s[1] - run.s[0] - 2 * p.wall) / step)), len = (run.s[1] - run.s[0] - 2 * p.wall) / pieces;
       for (let i = 0; i < pieces; i++) {
-        const s = run.s[0] + p.wall + (i + 0.5) * len, mid = at(s, o);
+        const s = run.s[0] + p.wall + (i + 0.5) * len, mid = at(p.axis, s, o);
         if (!keep(...mid) || !clear(mid, Math.hypot(len, depth) / 2)) { seed++; continue; }
         const height = (p.planting.height - p.height) * (0.9 + ((seed * 37) % 17) / 85);
         const plant = look(len, depth, height, seed++);
         plant.position.set(mid[0], siteY(...mid) + p.height - 0.04, mid[1]);
+        const { along, right } = p.axis;
         plant.rotation.y = -Math.atan2(along[1], along[0]);
         plant.name = p.id + "-planting";
         const ux = along[0], uz = along[1], rx = right[0], rz = right[1];

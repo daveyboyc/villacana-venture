@@ -275,14 +275,22 @@
       "id": "elena-junction-far-end",
       "area": "elena",
       "kind": "completeness",
-      "description": "From the Elena 24 roof (ELENA-ROOF-2026-11-17.jpg) the far lawn ends at a white wall with two cypresses that runs from the west wall to the lane, and the lane passes its east end through a gate with a metal frame onto the middle pool lawn. The model ends the far lawn at the north face of registry 6265801UF1366N_part5, which stops at x = -148.5, and leaves open paving from there to the lane and the pool. At 22-40 m the roof camera cannot fix the wall's depth to better than about 1 m, and its photographed base runs nearly square to the view where the registry face is 30 degrees off it. Photo request elena-south-cypress-wall-gate asks for the ground views.",
+      "description": "From the Elena 24 roof (ELENA-ROOF-2026-11-17.jpg) the far lawn ends at a white wall with two cypresses that runs from the west wall to the lane, and the lane passes its east end through a gate with a metal frame onto the middle pool lawn. The model ends the far lawn at the north face of registry 6265801UF1366N_part5, which stops at x = -148.5, and leaves open paving from there to the lane and the pool. At 22-40 m the roof camera cannot fix the wall's depth to better than about 1 m, and its photographed base runs nearly square to the view where the registry face is 30 degrees off it. Photo request elena-south-cypress-wall-gate asks for the ground views. 18 November 2026: built the white cypress wall (lane_walls.json elena-south-cypress-wall, 2.0 m) 0.35 m beyond the far lawn's edge, from the west wall to just short of the lane kerb, as an estimate (about 1 m in depth), and left generated porches and openings off the plain north face of registry 6265801UF1366N_part5 behind it (plain_fronts.json elena-south-far-blank-face). Existing photos checked: IMG_2261 and IMG_2330 show the wall face-on but their cameras are not solved; IMG_2683 and IMG_2684 look back from beside the far lawn but have the wall behind them; IMG_2681, IMG_2682 and IMG_2506 show the lane past the houses to the middle-pool gate, which is already modelled (middle_pool_north.json). The photo request stays open to fix the wall's line.",
       "sources": [
         "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2261.jpg",
+        "IMG_2330.jpg",
         "IMG_2358.jpg",
-        "IMG_2367.jpg"
+        "IMG_2367.jpg",
+        "IMG_2681.jpg",
+        "IMG_2682.jpg",
+        "IMG_2683.jpg",
+        "IMG_2684.jpg"
       ],
       "features": [
-        "frontage_divisions.json:cervantes-elena-lawn-2"
+        "frontage_divisions.json:cervantes-elena-lawn-2",
+        "lane_walls.json:elena-south-cypress-wall",
+        "plain_fronts.json:elena-south-far-blank-face"
       ],
       "task": "elena-junction-lawns-roof",
       "status": "open",
@@ -330,7 +338,7 @@
       "id": "elena-south-east-beds",
       "area": "elena",
       "kind": "completeness",
-      "description": "East side of Elena south between Cervantes and the far wall: ELENA-ROOF-2026-11-17.jpg and IMG_2358 show planted beds with bougainvillea and a lamp post between the lane tiles and the front patio walls of the houses; the model has the lane against white walls with a grey margin and no beds.",
+      "description": "East side of Elena south between Cervantes and the far wall: ELENA-ROOF-2026-11-17.jpg and IMG_2358 show planted beds with bougainvillea and a lamp post between the lane tiles and the front patio walls of the houses; the model has the lane against white walls with a grey margin and no beds. 18 November 2026: the clipped hedge beds between the lane and the corner house's patio wall and front are built (data/elena_south_beds.json, s 0.95-9.85 m), width from the solved roof camera; the hedge is planted against the back of each bed in 0.36 m pieces so it clears the shared route guard. South of 9.9 m the registry house fronts come within 0.15-0.4 m of the lane and nothing is built; the lamp post is detail.",
       "sources": [
         "ELENA-ROOF-2026-11-17.jpg",
         "IMG_2358.jpg"

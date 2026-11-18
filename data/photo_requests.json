@@ -814,12 +814,13 @@
         -146.5,
         77.0
       ],
-      "ask": "Standing on the cross path between the two Elena south lawns, one photo looking south at the far wall with the two cypresses, taking in where it meets the lane and the gate onto the middle pool lawn; then one from the lane beside the far lawn looking west along that wall.",
+      "ask": "Two ground photos at the far end of the Elena south lawns: (1) standing on the tiled cross path between the two lawns, facing south at the white wall with the two cypresses, taking in both its ends (the west wall corner and where it meets the lane kerb); (2) from the lane level with the far lawn's south end, facing west along the cypress wall, so its line against the lawn kerb shows. A third from the lane facing east at the same spot helps.",
       "why": "elena-junction-far-end: the roof view shows the wall and gate 22-40 m out, too far to fix their position",
       "priority": 2,
       "radius": 5,
       "since": "2026-11-17",
-      "status": "open"
+      "status": "open",
+      "note": "18 November 2026: the wall is built from the far lawn's edge and the aerial as an estimate (about 1 m in depth). Existing photos IMG_2261 and IMG_2330 show it face-on from the junction but are unsolved; IMG_2683/2684 have it behind the camera. These two views would fix its line."
     }
   ]
 }

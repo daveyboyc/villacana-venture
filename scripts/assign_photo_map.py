@@ -238,6 +238,8 @@ def features(s):
     lane_walls=json.loads((ROOT/'data/lane_walls.json').read_text()) # garden and patio walls along Calle Elena, Calle Jorge and Calle Cervantes
     for w in lane_walls['walls']:
         add('lane_walls.json:'+w['id'],w['name'],'reference feature','photo/aerial interpretation; about 1 m' if w['evidence'] else 'inferred from the aerial and the registry; about 1 m',evidence=w['evidence'],points=w['points'])
+    for bed in json.loads((ROOT/'data/elena_south_beds.json').read_text())['planters']: # Elena south hedge beds, same kind as the Cervantes ones
+        add('elena_south_beds.json:'+bed['id'],bed['name'],'reference feature','photo interpretation through the solved Elena 24 roof cameras against the lane tiles and house fronts; about 0.5 m along, 0.2 m across',ring=bed['ring'],evidence=bed['evidence'])
     for bed in json.loads((ROOT/'data/cervantes_lane_edges.json').read_text())['planters']: # Cervantes beds and hedge planters
         add('cervantes_lane_edges.json:'+bed['id'],bed['name'],'reference feature','photo interpretation against the registry house fronts and the lane tiles; about 1 m along, 0.2 m across',ring=bed['ring'],evidence=bed['evidence'])
     picasso_wall=json.loads((ROOT/'data/picasso_lawn_wall.json').read_text())

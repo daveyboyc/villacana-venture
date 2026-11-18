@@ -762,6 +762,22 @@
   "plain_fronts.json:elena-south-east-corner-house": {
    "level": "photographed",
    "why": "The north-west face of the Elena south / Cervantes east corner house is photographed head-on from the Elena 24 roof (IMG_2358, IMG_2367): white balcony ledge and porch surround, no timber balcony or porch roof."
+  },
+  "elena_south_beds.json:elena-south-east-bed-mouth": {
+   "level": "photographed",
+   "why": "Clipped hedge bed between the Elena south tiles and the corner house's patio wall and front, photographed from the Elena 24 roof (IMG_2358, IMG_2367, ELENA-ROOF-2026-11-17) and the lane (IMG_2330); width from the solved roof camera, ends estimated."
+  },
+  "elena_south_beds.json:elena-south-east-bed-house": {
+   "level": "photographed",
+   "why": "Clipped hedge bed between the Elena south tiles and the corner house's patio wall and front, photographed from the Elena 24 roof (IMG_2358, IMG_2367, ELENA-ROOF-2026-11-17) and the lane (IMG_2330); width from the solved roof camera, ends estimated."
+  },
+  "lane_walls.json:elena-south-cypress-wall": {
+   "level": "estimated",
+   "why": "Photographed face-on from the lane (IMG_2261, IMG_2330) and from the roof, so plainly there, but its line is placed from the far lawn's edge and the aerial, good to about 1 m; the photo request elena-south-cypress-wall-gate asks for ground views to fix it."
+  },
+  "plain_fronts.json:elena-south-far-blank-face": {
+   "level": "photographed",
+   "why": "The north face of the house behind the cypress wall is a plain white wall with one small window and two pilaster gables in the Elena 24 roof photos and IMG_2261: no balconies or awnings."
   }
  },
  "gaps": [

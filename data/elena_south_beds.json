@@ -1,0 +1,132 @@
+{
+ "id": "elena-south-beds",
+ "name": "Calle Elena south · hedge beds on the east side of the lane",
+ "checkedAt": "2026-11-18",
+ "about": "Kerbed hedge beds between the Elena south lane tiles and the patio wall and house front on its east side (Dave, 17-18 November 2026). Same structure and planting as data/cervantes_lane_edges.json, drawn by src/cervantes-lane-edges.ts in this lane's own frame: s metres along the Elena south centreline from the Cervantes junction, o metres off it, positive to the west.",
+ "axis": {
+  "origin": [
+   -153.67,
+   57.81
+  ],
+  "along": [
+   0.5261,
+   0.8504
+  ],
+  "right": [
+   -0.8504,
+   0.5261
+  ]
+ },
+ "planters": [
+  {
+   "id": "elena-south-east-bed-mouth",
+   "name": "Elena south · hedge bed in front of the corner patio wall",
+   "kind": "bed",
+   "s": [
+    0.95,
+    5.2
+   ],
+   "o": [
+    -0.65,
+    -1.25
+   ],
+   "height": 0.15,
+   "wall": 0.06,
+   "ring": [
+    [
+     -152.617,
+     58.276
+    ],
+    [
+     -150.382,
+     61.89
+    ],
+    [
+     -149.871,
+     61.574
+    ],
+    [
+     -152.107,
+     57.96
+    ]
+   ],
+   "planting": {
+    "kind": "shrubs",
+    "height": 1.35,
+    "runs": [
+     {
+      "s": [
+       0.95,
+       5.2
+      ],
+      "look": "box"
+     }
+    ],
+    "depth": 0.36,
+    "step": 0.36
+   },
+   "evidence": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2330.jpg"
+   ],
+   "basis": "IMG_2358 and IMG_2367 look down on a clipped hedge about 1.2 m high in a bed between the lane tiles and the white patio wall of the corner house (elena-south-mouth-patio-wall, bougainvillea trained over it), with the lamp post standing in the bed; ELENA-ROOF-2026-11-17 shows it along the left of the lane. Cast through the solved roof camera, the tile edge is 0.6-0.9 m east of the centreline and the hedge's face 1.0-1.2 m; the bed runs from the lane edge to the wall face. Ends and kerb height estimated."
+  },
+  {
+   "id": "elena-south-east-bed-house",
+   "name": "Elena south · hedge bed along the corner house",
+   "kind": "bed",
+   "s": [
+    5.35,
+    9.85
+   ],
+   "o": [
+    -0.65,
+    -1.3
+   ],
+   "height": 0.15,
+   "wall": 0.06,
+   "ring": [
+    [
+     -150.303,
+     62.018
+    ],
+    [
+     -147.935,
+     65.844
+    ],
+    [
+     -147.382,
+     65.503
+    ],
+    [
+     -149.75,
+     61.676
+    ]
+   ],
+   "planting": {
+    "kind": "shrubs",
+    "height": 1.35,
+    "runs": [
+     {
+      "s": [
+       5.35,
+       9.85
+      ],
+      "look": "box"
+     }
+    ],
+    "depth": 0.36,
+    "step": 0.36
+   },
+   "evidence": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2330.jpg"
+   ],
+   "basis": "The same clipped hedge continues past the house corner along its lane-side wall (IMG_2358, IMG_2367, IMG_2330), between the lane tiles and the registry house face 1.4 m east of the centreline. South of 9.9 m the house fronts come within 0.15-0.4 m of the lane edge and the planting there is not built (discrepancy elena-south-east-beds)."
+  }
+ ]
+}

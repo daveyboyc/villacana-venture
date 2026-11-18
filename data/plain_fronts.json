@@ -183,6 +183,28 @@
     "IMG_2367.jpg",
     "ELENA-ROOF-2026-11-17.jpg"
    ]
+  },
+  {
+   "id": "elena-south-far-blank-face",
+   "box": [
+    -153.6,
+    76.0,
+    -148.4,
+    79.6
+   ],
+   "facing": [
+    -0.51,
+    -0.86
+   ],
+   "noPorches": true,
+   "noOpenings": true,
+   "trust": "Behind the cypress wall at the far end of the Elena south lawns, the north face of registry 6265801UF1366N_part5 (corners 41-42) is a tall plain white wall with a single small arched window, seen from the Elena 24 roof (ELENA-ROOF-2026-11-17, IMG_2358, IMG_2367) and the lane (IMG_2261). The generated balcony, awnings, windows and shutters are left off; the one small window is not drawn.",
+   "evidence": [
+    "ELENA-ROOF-2026-11-17.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2261.jpg"
+   ]
   }
  ],
  "parapets": [

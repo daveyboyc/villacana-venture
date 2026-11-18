@@ -94,8 +94,12 @@
    "frontage_divisions.json:cervantes-lawn-door-path",
    "lane_walls.json:elena-south-lawn-west-wall",
    "lane_walls.json:cervantes-elena-patio-front-wall",
+   "lane_walls.json:elena-south-cypress-wall",
+   "elena_south_beds.json:elena-south-east-bed-mouth",
+   "elena_south_beds.json:elena-south-east-bed-house",
    "plain_fronts.json:elena-24-south-patio",
-   "plain_fronts.json:elena-south-east-corner-house"
+   "plain_fronts.json:elena-south-east-corner-house",
+   "plain_fronts.json:elena-south-far-blank-face"
   ],
   "looksAt": [
    -151.0,
@@ -1602,8 +1606,8 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "lane_walls.json:elena-south-mouth-patio-wall",
-   "cervantes_patio_walls.json:cervantes-patio-south-3",
-   "plain_fronts.json:elena-south-east-corner-house"
+   "elena_south_beds.json:elena-south-east-bed-mouth",
+   "cervantes_patio_walls.json:cervantes-patio-south-3"
   ],
   "subject": "The Elena south lane and lawns below the roof"
  },
@@ -2975,8 +2979,8 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "plain_fronts.json:elena-south-east-corner-house",
-   "elena_lane_paving.json:elena-south-three-column",
-   "street:elena-south"
+   "elena_south_beds.json:elena-south-east-bed-house",
+   "elena_lane_paving.json:elena-south-three-column"
   ]
  },
  {
@@ -3013,8 +3017,10 @@
    "frontage_divisions.json:cervantes-front-patio",
    "frontage_divisions.json:cervantes-lawn-door-path",
    "lane_walls.json:elena-south-lawn-west-wall",
+   "lane_walls.json:elena-south-cypress-wall",
    "door_sills.json:elena-lawn-door-sill",
-   "door_sills.json:elena-bed-door-sill"
+   "door_sills.json:elena-bed-door-sill",
+   "plain_fronts.json:elena-south-far-blank-face"
   ],
   "looksAt": [
    -153.7,
@@ -3114,10 +3120,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "elena_south_beds.json:elena-south-east-bed-house",
    "backdrop.json:aerial-trees",
    "plain_fronts.json:elena-south-east-corner-house",
-   "elena_lane_paving.json:elena-south-three-column",
-   "street:elena-south"
+   "elena_lane_paving.json:elena-south-three-column"
   ]
  },
  {
@@ -4726,6 +4732,9 @@
    "elena_lane_paving.json:elena-south-three-column",
    "frontage_divisions.json:cervantes-lawn-door-path",
    "lane_walls.json:elena-south-lawn-west-wall",
+   "lane_walls.json:elena-south-cypress-wall",
+   "elena_south_beds.json:elena-south-east-bed-mouth",
+   "elena_south_beds.json:elena-south-east-bed-house",
    "door_sills.json:elena-lawn-door-sill",
    "door_sills.json:elena-bed-door-sill"
   ],
@@ -5748,9 +5757,13 @@
    "junction_lawns.json:junction-pollarded-3",
    "lane_walls.json:elena-south-lawn-west-wall",
    "lane_walls.json:elena-south-mouth-patio-wall",
+   "lane_walls.json:elena-south-cypress-wall",
+   "elena_south_beds.json:elena-south-east-bed-mouth",
+   "elena_south_beds.json:elena-south-east-bed-house",
    "cervantes_garden_door.json:cervantes-junction-north-patio",
    "plain_fronts.json:elena-24-south-patio",
-   "plain_fronts.json:elena-south-east-corner-house"
+   "plain_fronts.json:elena-south-east-corner-house",
+   "plain_fronts.json:elena-south-far-blank-face"
   ],
   "looksAt": [
    -151.0,
@@ -6155,9 +6168,13 @@
    "junction_lawns.json:junction-pollarded-1",
    "junction_lawns.json:junction-pollarded-2",
    "junction_lawns.json:junction-pollarded-3",
+   "lane_walls.json:elena-south-cypress-wall",
+   "elena_south_beds.json:elena-south-east-bed-mouth",
+   "elena_south_beds.json:elena-south-east-bed-house",
    "cervantes_garden_door.json:cervantes-junction-north-patio",
    "plain_fronts.json:elena-24-south-patio",
-   "plain_fronts.json:elena-south-east-corner-house"
+   "plain_fronts.json:elena-south-east-corner-house",
+   "plain_fronts.json:elena-south-far-blank-face"
   ],
   "looksAt": [
    -151.5,
@@ -7269,10 +7286,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_south_beds.json:elena-south-east-bed-mouth",
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
-   "lane_walls.json:elena-south-mouth-patio-wall",
-   "backdrop.json:aerial-trees"
+   "lane_walls.json:elena-south-mouth-patio-wall"
   ],
   "subject": "Junction lawn corner kerb and pollarded tree"
  },
@@ -8985,7 +9002,8 @@
   "looksAtFeatures": [
    "plain_fronts.json:elena-south-east-corner-house",
    "backdrop.json:aerial-trees",
-   "lane_walls.json:elena-south-mouth-patio-wall"
+   "lane_walls.json:elena-south-mouth-patio-wall",
+   "elena_south_beds.json:elena-south-east-bed-mouth"
   ],
   "subject": "Elena lane towards the Cervantes junction"
  },
@@ -9026,8 +9044,8 @@
   "looksAtFeatures": [
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
-   "backdrop.json:aerial-trees",
-   "frontage_divisions.json:cervantes-elena-lawn-1"
+   "elena_south_beds.json:elena-south-east-bed-mouth",
+   "backdrop.json:aerial-trees"
   ]
  },
  {
@@ -15584,7 +15602,7 @@
    "backdrop.json:aerial-trees",
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
-   "frontage_divisions.json:cervantes-lawn-door-path"
+   "elena_south_beds.json:elena-south-east-bed-house"
   ]
  },
  {
@@ -15625,8 +15643,8 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "plain_fronts.json:elena-south-east-corner-house",
-   "lane_walls.json:elena-south-mouth-patio-wall",
-   "elena_lane_paving.json:elena-south-three-column"
+   "elena_south_beds.json:elena-south-east-bed-house",
+   "lane_walls.json:elena-south-mouth-patio-wall"
   ]
  },
  {
