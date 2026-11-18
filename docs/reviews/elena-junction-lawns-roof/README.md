@@ -133,3 +133,14 @@ house's front patio (structure, next).
   junction needs solving to fix it.
 - Not drawn yet: the shrubs at the west wall's foot, the corner house's ledge and porch, and the small window in the
   blank face.
+
+**Structure review (`STRUCTURE-REVIEW.md`) and fixes, 18 November.** The reviewer passed the kerb, the lawn level,
+both plain fronts and the cypress wall (with limits), and failed two items, both now fixed as specified:
+- **Patio wall with the brown door:** lowered from 2.2 m to 1.9 m, with the door 1.8 m. Through the solved roof camera
+  the wall top casts at 1.84-1.95 m, and IMG_2467 and IMG_2264 agree. Its basis text now gives the door's true place,
+  2.37 m from the wall's west end. The reviewer suspects the west wall's north end is too tall as well; that is open.
+- **East hedge beds:** both now start at the photographed tile edge, 1.0 m east of the centreline (they started at
+  0.65 m, over paving). The hedge fills the 0.25-0.3 m bed, so it is thinner than the photographed one, which bulges
+  over it. The patio wall behind is probably further east than drawn; that is open.
+
+These fixes were not re-reviewed. `IMG_2358-east-beds-after-review.jpg` shows them.

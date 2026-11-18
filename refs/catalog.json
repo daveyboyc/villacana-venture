@@ -9075,8 +9075,8 @@
   "looksAtFeatures": [
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
-   "elena_south_beds.json:elena-south-east-bed-mouth",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "elena_south_beds.json:elena-south-east-bed-mouth"
   ]
  },
  {

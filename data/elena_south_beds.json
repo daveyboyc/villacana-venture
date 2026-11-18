@@ -27,19 +27,19 @@
     5.2
    ],
    "o": [
-    -0.65,
+    -1.0,
     -1.25
    ],
    "height": 0.15,
    "wall": 0.06,
    "ring": [
     [
-     -152.617,
-     58.276
+     -152.32,
+     58.092
     ],
     [
-     -150.382,
-     61.89
+     -150.084,
+     61.706
     ],
     [
      -149.871,
@@ -62,8 +62,8 @@
       "look": "box"
      }
     ],
-    "depth": 0.36,
-    "step": 0.36
+    "depth": 0.1,
+    "step": 0.3
    },
    "evidence": [
     "ELENA-ROOF-2026-11-17.jpg",
@@ -71,7 +71,7 @@
     "IMG_2367.jpg",
     "IMG_2330.jpg"
    ],
-   "basis": "IMG_2358 and IMG_2367 look down on a clipped hedge about 1.2 m high in a bed between the lane tiles and the white patio wall of the corner house (elena-south-mouth-patio-wall, bougainvillea trained over it), with the lamp post standing in the bed; ELENA-ROOF-2026-11-17 shows it along the left of the lane. Cast through the solved roof camera, the tile edge is 0.6-0.9 m east of the centreline and the hedge's face 1.0-1.2 m; the bed runs from the lane edge to the wall face. Ends and kerb height estimated."
+   "basis": "IMG_2358 and IMG_2367 look down on a clipped hedge about 1.2 m high in a bed between the lane tiles and the white patio wall of the corner house (elena-south-mouth-patio-wall, bougainvillea trained over it), with the lamp post standing in the bed; ELENA-ROOF-2026-11-17 shows it along the left of the lane. Cast through the solved roof camera, the tile edge is 0.6-0.9 m east of the centreline and the hedge's face 1.0-1.2 m; the bed runs from the lane edge to the wall face. Ends and kerb height estimated. 18 November structure review: both solved roof cameras put the lane's tile edge at about 1.0 m east of the centreline, so the bed starts there (first built from 0.65 m, over photographed paving); the hedge fills the narrow bed and bulges over it in the photos."
   },
   {
    "id": "elena-south-east-bed-house",
@@ -82,19 +82,19 @@
     9.85
    ],
    "o": [
-    -0.65,
+    -1.0,
     -1.3
    ],
    "height": 0.15,
    "wall": 0.06,
    "ring": [
     [
-     -150.303,
-     62.018
+     -150.005,
+     61.834
     ],
     [
-     -147.935,
-     65.844
+     -147.638,
+     65.66
     ],
     [
      -147.382,
@@ -117,8 +117,8 @@
       "look": "box"
      }
     ],
-    "depth": 0.36,
-    "step": 0.36
+    "depth": 0.15,
+    "step": 0.3
    },
    "evidence": [
     "ELENA-ROOF-2026-11-17.jpg",
@@ -126,7 +126,7 @@
     "IMG_2367.jpg",
     "IMG_2330.jpg"
    ],
-   "basis": "The same clipped hedge continues past the house corner along its lane-side wall (IMG_2358, IMG_2367, IMG_2330), between the lane tiles and the registry house face 1.4 m east of the centreline. South of 9.9 m the house fronts come within 0.15-0.4 m of the lane edge and the planting there is not built (discrepancy elena-south-east-beds)."
+   "basis": "The same clipped hedge continues past the house corner along its lane-side wall (IMG_2358, IMG_2367, IMG_2330), between the lane tiles and the registry house face 1.4 m east of the centreline. South of 9.9 m the house fronts come within 0.15-0.4 m of the lane edge and the planting there is not built (discrepancy elena-south-east-beds). 18 November structure review: both solved roof cameras put the lane's tile edge at about 1.0 m east of the centreline, so the bed starts there (first built from 0.65 m, over photographed paving); the hedge fills the narrow bed and bulges over it in the photos."
   }
  ]
 }
