@@ -2,7 +2,7 @@
  "id": "elena-north-corner-details",
  "name": "Elena north mouth · bougainvillea, lantern and CALLE DE ELENA tiles on the corner patio wall",
  "checkedAt": "2026-11-18",
- "about": "Show-details pieces on lane_walls.json elena-north-corner-patio-wall (segment 0 runs from the house corner along the Elena north lane to the corner, segment 1 from the corner west along Cervantes): climbers by segment, 'from'/'to' metres along it, 'side' the face they grow on, 'base' the bed top they grow from; the lantern 'at' metres along, 'y' its bracket height, 'out' its reach; the sign's 'centre' metres along, one 'tile' per letter. Drawn by src/elena-north-corner-details.ts. Positions read by eye from unsolved ground photos, about 0.3-0.5 m.",
+ "about": "Show-details pieces on lane_walls.json elena-north-corner-patio-wall (segment 0 runs from the house corner along the Elena north lane to the corner, segment 1 from the corner west along Cervantes): climbers by segment, 'from'/'to' metres along it, 'side' the face they grow on, 'base' the bed top they grow from; the lantern 'at' metres along, 'y' its bracket height, 'out' its reach; the sign's 'centre' metres along, one tile ('tileW' x 'tileH') per letter. Drawn by src/elena-north-corner-details.ts. Positions read by eye from unsolved ground photos, about 0.3-0.5 m.",
  "wall": "elena-north-corner-patio-wall",
  "evidence": [
   "IMG_2455.jpg",
@@ -14,19 +14,6 @@
   "IMG_2463.jpg"
  ],
  "climbers": [
-  {
-   "id": "corner-bougainvillea-elena",
-   "segment": 0,
-   "from": 3.35,
-   "to": 3.86,
-   "side": "east",
-   "base": 0.5,
-   "height": 2.6,
-   "depth": 0.5,
-   "flowers": 420,
-   "colour": "#c52a85",
-   "basis": "Magenta bougainvillea over the corner, left of the CALLE DE ELENA tiles as seen from Cervantes, the lantern among it (IMG_2800, IMG_2967, IMG_2455)."
-  },
   {
    "id": "corner-bougainvillea-cervantes",
    "segment": 1,
@@ -56,26 +43,27 @@
  ],
  "lamp": {
   "id": "corner-wall-lantern",
-  "segment": 0,
-  "at": 3.7,
-  "side": "east",
-  "y": 2.35,
+  "segment": 1,
+  "at": 0.3,
+  "side": "south",
+  "y": 2.3,
   "out": 0.35,
-  "basis": "Black lantern on an iron bracket at the corner of the wall, above the fan palms (IMG_2800, IMG_2967, IMG_2455, IMG_2799)."
+  "basis": "Black lantern on an iron bracket on the Cervantes face just round the corner, among the bougainvillea, about 2.3 m up (IMG_2800 left of the wall edge, IMG_2455, IMG_2966; structure review fits)."
  },
  "sign": {
   "id": "calle-de-elena-tiles",
   "segment": 0,
   "side": "east",
-  "centre": 2.55,
-  "y": 1.75,
-  "tile": 0.11,
-  "gap": 0.11,
+  "centre": 3.29,
+  "y": 2.0,
+  "tileW": 0.08,
+  "tileH": 0.21,
+  "gap": 0.08,
   "words": [
    "CALLE",
    "DE",
    "ELENA"
   ],
-  "basis": "CALLE DE ELENA in single-letter tiles, dark capitals in a dark border on white, on the face to the Elena north lane between the corner and the brown double door (IMG_2800, IMG_2967, IMG_2455)."
+  "basis": "CALLE DE ELENA in tall, narrow single-letter tiles (about 0.08 x 0.21 m: CALLE is 125 x 65 px in IMG_2967), dark capitals on white, about 1.1 m long, from the corner to the door's south jamb on the face to the Elena north lane, bottom about 1.9 m up (IMG_2800, IMG_2967, IMG_2455; structure review fits)."
  }
 }

@@ -13,17 +13,17 @@ import { siteY } from "./terrain";
  */
 type Guard = (x: number, z: number, radius: number) => boolean;
 
-/** One square tile per letter, dark capitals in a dark border on a white glaze, as on the corner (IMG_2800, IMG_2967). */
-function letterTiles(text: string): THREE.CanvasTexture {
-  const tile = 96, canvas = document.createElement("canvas"); canvas.width = tile * text.length; canvas.height = tile;
+/** One tall tile per letter, dark capitals in a dark border on a white glaze, as on the corner (IMG_2800, IMG_2967). */
+function letterTiles(text: string, aspect: number): THREE.CanvasTexture {
+  const tile = 64, high = Math.round(tile * aspect), canvas = document.createElement("canvas"); canvas.width = tile * text.length; canvas.height = high;
   const g = canvas.getContext("2d")!;
   [...text].forEach((ch, i) => {
     const x = i * tile;
-    g.fillStyle = "#f5f2ea"; g.fillRect(x, 0, tile, tile);
-    g.strokeStyle = "#1b2230"; g.lineWidth = 7; g.strokeRect(x + 6, 6, tile - 12, tile - 12);
-    g.strokeStyle = "rgba(80,80,80,0.35)"; g.lineWidth = 2; g.strokeRect(x + 1, 1, tile - 2, tile - 2);
-    g.fillStyle = "#141821"; g.font = "bold 62px Georgia, serif"; g.textAlign = "center"; g.textBaseline = "middle";
-    g.fillText(ch, x + tile / 2, tile / 2 + 3);
+    g.fillStyle = "#f5f2ea"; g.fillRect(x, 0, tile, high);
+    g.strokeStyle = "#1b2230"; g.lineWidth = 5; g.strokeRect(x + 4, 4, tile - 8, high - 8);
+    g.strokeStyle = "rgba(80,80,80,0.35)"; g.lineWidth = 2; g.strokeRect(x + 1, 1, tile - 2, high - 2);
+    g.fillStyle = "#141821"; g.font = `bold ${Math.round(high * 0.62)}px Georgia, serif`; g.textAlign = "center"; g.textBaseline = "middle";
+    g.fillText(ch, x + tile / 2, high / 2 + 3, tile - 12);
   });
   const t = new THREE.CanvasTexture(canvas); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4;
   return t;
@@ -81,7 +81,7 @@ export function addElenaNorthCornerDetails(into: THREE.Scene, keep: (x: number, 
 
   // CALLE DE ELENA: a tile per letter, the words read left to right by someone facing the wall.
   {
-    const sg = data.sign, f = wallFrame(data.wall, sg.segment, sg.side), widths = sg.words.map((w) => w.length * sg.tile);
+    const sg = data.sign, f = wallFrame(data.wall, sg.segment, sg.side), widths = sg.words.map((w) => w.length * sg.tileW);
     const total = widths.reduce((a, b) => a + b, 0) + sg.gap * (sg.words.length - 1);
     let run = 0;
     sg.words.forEach((word, i) => {
@@ -89,7 +89,7 @@ export function addElenaNorthCornerDetails(into: THREE.Scene, keep: (x: number, 
       const centre = sg.centre + (f.forward ? 1 : -1) * (-total / 2 + run + widths[i] / 2);
       run += widths[i] + sg.gap;
       const x = f.a[0] + f.u[0] * centre + f.n[0] * (f.half + 0.012), z = f.a[1] + f.u[1] * centre + f.n[1] * (f.half + 0.012);
-      const plaque = new THREE.Mesh(new THREE.PlaneGeometry(widths[i], sg.tile), new THREE.MeshStandardMaterial({ map: letterTiles(word), roughness: 0.45 }));
+      const plaque = new THREE.Mesh(new THREE.PlaneGeometry(widths[i], sg.tileH), new THREE.MeshStandardMaterial({ map: letterTiles(word, sg.tileH / sg.tileW), roughness: 0.45 }));
       plaque.position.set(x, siteY(x, z) + sg.y, z); plaque.quaternion.copy(f.turn);
       plaque.name = sg.id; plaque.userData.noDrape = true; root.add(plaque);
     });

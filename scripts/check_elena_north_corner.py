@@ -48,7 +48,8 @@ def seg_dist(p, a, b):
 
 (bed,) = data['planters']
 (s0, s1), (o0, o1) = bed['s'], bed['o']
-assert o0 < o1 < 0 and abs(o1) >= 0.95 and 0.25 <= o1 - o0 <= 1.5, 'bed must be on the west side, off the paving, 0.25-1.5 m deep'
+# The Elena north paving is 1.45 m wide (three 0.4 m tile columns and two margins, IMG_2686): its edge is 0.725 m off the centreline.
+assert o0 < o1 < 0 and abs(o1) >= 0.72 and 0.25 <= o1 - o0 <= 1.5, 'bed must be on the west side, off the paving, 0.25-1.5 m deep'
 assert 0 < s0 < s1 and s1 - s0 <= 8, 'bed extent'
 assert bed['kind'] == 'raised' and 0.4 <= bed['height'] <= 0.7 and 0.05 <= bed['wall'] <= 0.15, 'raised kerb sizes'
 want = [world(s0, o0), world(s1, o0), world(s1, o1), world(s0, o1)]
@@ -86,11 +87,14 @@ run = math.dist(a, b)
 door_at = math.dist(a, wall['doors'][0]['at'])
 door = (door_at - wall['doors'][0]['width'] / 2, door_at + wall['doors'][0]['width'] / 2)
 sg, lp = det['sign'], det['lamp']
-half_sign = (sum(len(w) for w in sg['words']) * sg['tile'] + sg['gap'] * (len(sg['words']) - 1)) / 2
+half_sign = (sum(len(w) for w in sg['words']) * sg['tileW'] + sg['gap'] * (len(sg['words']) - 1)) / 2
 sign = (sg['centre'] - half_sign, sg['centre'] + half_sign)
-assert sg['segment'] == 0 and lp['segment'] == 0, 'sign and lantern belong on the lane face'
-assert door[1] + 0.1 <= sign[0] and sign[1] + 0.1 <= lp['at'] <= run, 'order along the lane face must be door, sign, lantern at the corner'
-assert sg['y'] + sg['tile'] / 2 < wall['height'] and lp['y'] <= wall['height'] + 0.3, 'sign or lantern above the wall'
+# Structure review: the tiles run from the door's south jamb to the corner on the lane face; the lantern is just round the
+# corner on the Cervantes face; about 2 m of plain wall north of the door.
+assert sg['segment'] == 0 and lp['segment'] == 1 and lp['at'] <= 0.6, 'tiles on the lane face, lantern on the Cervantes face at the corner'
+assert door[1] <= sign[0] and sign[1] <= run, 'tiles must lie between the door and the corner'
+assert door[0] >= 1.5, 'about 2 m of plain wall north of the door'
+assert sg['y'] + sg['tileH'] / 2 < wall['height'] and lp['y'] <= wall['height'], 'sign or lantern above the wall'
 for c in det['climbers']:
     seg_len = run if c['segment'] == 0 else math.dist(wall['points'][1], wall['points'][2])
     assert 0 <= c['from'] < c['to'] <= seg_len + 1e-6, f"{c['id']}: off its wall run"
@@ -101,6 +105,6 @@ for key in ('climbers', 'lamp', 'sign'):
     assert confidence.get('elena_north_corner_details.json:' + key, {}).get('level'), f'{key}: confidence level'
 assert all(p in photos for p in det['evidence'])
 assert 'addElenaNorthCornerDetails(into,keep)' in (ROOT / 'src/slice.ts').read_text(), 'details not drawn'
-assert any(o['id'] == 'elena-north-corner-magnolia' and inside((o['x'], o['z']), [a, b, wall['points'][2], (-154.1, 51.5), (-153.82, 50.96)]) for o in load('data/objects.json')), 'magnolia not inside the patio'
+assert any(o['id'] == 'elena-north-corner-patio-tree' and inside((o['x'], o['z']), [a, b, wall['points'][2], (-154.1, 51.5), (-153.82, 50.96)]) for o in load('data/objects.json')), 'patio tree not inside the patio'
 print(f'Elena north corner: raised bed {s1 - s0:.1f} m up the mouth, {o1 - o0:.2f} m deep against the patio wall '
       f'on the house-front line, meeting the Cervantes arm PASS')
