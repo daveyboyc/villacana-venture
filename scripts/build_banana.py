@@ -2,8 +2,12 @@
 """Build the banana plant beside Calle de Miguel headless in Blender and export it as glTF.
 
   python3 scripts/build_banana.py            writes public/models/plants/banana.glb
-  python3 scripts/build_banana.py --extract  re-cuts the leaf textures in scripts/assets/banana/
-                                              from the private full-size original of IMG_3092
+  python3 scripts/build_banana.py --extract  re-cuts the leaf and bunch textures in
+                                              scripts/assets/banana/ from the private full-size
+                                              original of IMG_3092 (needs pillow-heif and scipy)
+
+It also writes public/models/plants/banana-bunch.glb, the photographed bunch on its own (origin at
+the top of its stalk, where it leaves the crown).
 
 The plant photographed over the garden wall in IMG_3092 (key view, looking up from the lane),
 IMG_3090 (from further west) and IMG_3093 (a leaf hanging over the lane in shade). It has fruited,
@@ -13,6 +17,12 @@ and torn into strips along the lateral veins, plus three dead brown leaves hangi
 The pseudostem is built from overlapping leaf sheaths, pale green with dark blotches, the outer
 ones dried brown and peeling. The bunch hangs from an arching stalk: two dense clusters of hands of
 upward-curving green fingers, a long bare rachis and a grey-purple male bud with one bract lifted.
+
+The bunch is the photographed one. Its layout (stalk arch, six hands in two clusters, rachis, bud and
+lifted bract) is measured from IMG_3092 at BUNCH_K metres per pixel, scaled from the bud. Its colour is
+the photo itself: the bunch is cut out of the sky by `--extract` into scripts/assets/banana/bunch-photo.jpg,
+the background is refilled from the nearest bunch pixel, and the photo is projected onto the geometry
+from the lane-side view (BUNCH_ORIGIN, bunch_uv).
 
 Leaf colour is photographic: three leaves of IMG_3092 (Dave's photo, published in this repo as
 public/photos-ref/IMG_3092.jpg) were traced and unrolled into flat texture strips by `--extract`
@@ -205,6 +215,53 @@ def extract():
         Image.fromarray((np.flipud(col) * 255 + 0.5).clip(0, 255).astype(np.uint8)).save(
             ASSETS / f'leaf-{name}.jpg', quality=92, optimize=True)
         print('wrote', (ASSETS / f'leaf-{name}.jpg').relative_to(HERE.parent), w, 'x', h)
+    extract_bunch()
+
+
+# The bunch in the full-size original (pixels): the stalk arch, both clusters, the rachis, the bud and
+# the lifted bract against the sky. Zones keep out the leaves that cross behind it.
+BUNCH_CROP = (1785, 1999, 2427, 3320)
+BUNCH_POLY = [(0, 110), (70, 110), (140, 320), (390, 320), (395, 560), (340, 610), (345, 780), (470, 770), (480, 840),
+              (390, 880), (375, 1050), (245, 1050), (250, 860), (270, 800), (255, 650), (150, 665), (110, 600),
+              (120, 520), (30, 470), (15, 330), (0, 250)]
+
+
+def extract_bunch():
+    from PIL import ImageDraw
+    from scipy import ndimage
+    c = np.asarray(Image.open(ORIGINAL).convert('RGB').crop(BUNCH_CROP), np.float32) / 255
+    H, W = c.shape[:2]
+    r, g, b = c[..., 0], c[..., 1], c[..., 2]
+    lum = c @ np.array([0.3, 0.55, 0.15], np.float32)
+    yy, xx = np.mgrid[0:H, 0:W]
+    sky = (b > r + 0.10) & (b > g)
+    zone = Image.new('L', (W, H), 0)
+    ImageDraw.Draw(zone).polygon(BUNCH_POLY, fill=255)
+    fg = (np.asarray(zone) > 0) & ~sky & ~((r > 0.5) & (g > 0.45) & (r > b + 0.2) & (r > g - 0.08))  # no yellow leaf
+    fg &= ~((yy > 640) & (yy < 830) & (lum > 0.33) & ~((xx > 270) & (xx < 335)))  # rachis zone: only the dark stalk
+    fg &= ~((yy > 860) & (g > b + 0.04) & (g > r))                                  # bud zone: no green leaf
+    fg &= ~((r > g + 0.05) & (r > b + 0.15) & (yy > 600) & (yy < 840))              # orange leaf margin by the rachis
+    fg = ndimage.binary_opening(fg, iterations=1)
+    lab, n = ndimage.label(fg)
+    sizes = ndimage.sum(fg, lab, range(1, n + 1))
+    pale = (lum > 0.72) & ((c.max(-1) - c.min(-1)) < 0.25)                            # hazy sky between fingers
+    keep = ndimage.binary_fill_holes(np.isin(lab, 1 + np.where(sizes > 600)[0])) & ~sky & ~pale
+    # Everything else takes the colour of the nearest bunch pixel, blended toward the typical colour of
+    # its part (fruit, rachis, bract, bud), so a vertex projected a little off the photographed outline
+    # still lands on that part's colour, never sky, leaf or a dark edge.
+    idx = ndimage.distance_transform_edt(~keep, return_distances=False, return_indices=True)
+    out = c[idx[0], idx[1]]
+    parts = [(yy < 650), (yy >= 650) & (yy < 800) & (xx < 340), (yy >= 760) & (yy < 870) & (xx >= 330), (yy >= 840)]
+    lit = lum > np.percentile(lum[keep], 35)  # the part's lit side, not its shadowed edge
+    for part in parts:
+        sel = part & keep & lit
+        if sel.any():
+            typical = np.median(c[sel], axis=0)
+            far = part & ~keep
+            out[far] = 0.35 * out[far] + 0.65 * typical
+    Image.fromarray((out * 255 + 0.5).astype(np.uint8)).resize((W * 4 // 5, H * 4 // 5), Image.LANCZOS).save(
+        ASSETS / 'bunch-photo.jpg', quality=90, optimize=True)
+    print('wrote', (ASSETS / 'bunch-photo.jpg').relative_to(HERE.parent), W * 4 // 5, 'x', H * 4 // 5)
 
 
 # ---------------------------------------------------------------------------------------------
@@ -372,37 +429,6 @@ def stem_texture(rng, w=512, h=1024):
     return Image.fromarray((np.flipud(np.clip(out, 0, 1)) * 255 + 0.5).astype(np.uint8), 'RGB')
 
 
-def fruit_texture(rng, w=128, h=256):
-    u = (np.arange(w) + 0.5) / w
-    v = np.repeat(((np.arange(h) + 0.5) / h)[:, None], w, 1)
-    U = np.repeat(u[None, :], h, 0)
-    ridge = np.abs((U * 6) % 1 - 0.5) * 2          # 0 on the six ridges
-    col = mix(srgb(70, 98, 36), srgb(98, 124, 48), fbm(rng, h, w, 4, 12))
-    col = mix(col, srgb(126, 146, 66), 0.45 * smooth(0.3, 0.0, ridge))
-    col *= (0.93 + 0.1 * fbm(rng, h, w, 3, 40))[..., None]
-    col = mix(col, srgb(84, 100, 44), smooth(0.14, 0.02, v))       # stalk end
-    col = mix(col, srgb(44, 36, 24), smooth(0.88, 0.96, v))       # dried flower at the tip
-    col = mix(col, srgb(52, 50, 30), 0.4 * smooth(0.8, 0.9, fbm(rng, h, w, 24, 24)))
-    return Image.fromarray((np.flipud(np.clip(col, 0, 1)) * 255 + 0.5).astype(np.uint8), 'RGB')
-
-
-def bud_texture(rng, size=256):
-    h = w = size
-    u = (np.arange(w) + 0.5) / w
-    v = np.repeat(((np.arange(h) + 0.5) / h)[:, None], w, 1)
-    U = np.repeat(u[None, :], h, 0)
-    streak = fbm(rng, h, w, 3, 70)
-    # Outer bract faces: matte grey-violet with a waxy bloom, as photographed.
-    outer = mix(srgb(86, 74, 84), srgb(118, 106, 116), smooth(0.3, 0.75, fbm(rng, h, w, 6, 10)))
-    outer = mix(outer, srgb(150, 144, 152), 0.4 * smooth(0.5, 0.85, streak))
-    outer *= (1 - 0.3 * smooth(0.1, 0.0, np.minimum(U, 0.5 - U) * 2))[..., None]
-    # Inner face of the lifted bract: deep red-maroon.
-    inner = mix(srgb(78, 24, 34), srgb(108, 36, 46), streak)
-    inner = mix(inner, srgb(120, 80, 84), 0.3 * smooth(0.85, 1.0, v))
-    col = np.where((U < 0.5)[..., None], outer, inner)
-    return Image.fromarray((np.flipud(np.clip(col, 0, 1)) * 255 + 0.5).astype(np.uint8), 'RGB')
-
-
 def write_textures(folder):
     rng = np.random.default_rng(SEED)
     leaf, normal, glow = leaf_textures(rng)
@@ -411,8 +437,7 @@ def write_textures(folder):
         'leaf-normal': ('banana-leaf-normal.jpg', normal),
         'leaf-glow': ('banana-leaf-glow.jpg', glow),
         'stem': ('banana-stem.jpg', stem_texture(rng)),
-        'fruit': ('banana-fruit.jpg', fruit_texture(rng)),
-        'bud': ('banana-bud.jpg', bud_texture(rng)),
+        'bunch': ('banana-bunch.jpg', Image.open(ASSETS / 'bunch-photo.jpg').convert('RGB')),
     }
     paths = {}
     for key, (name, image) in files.items():
@@ -498,6 +523,8 @@ def make_plant_class():
             self.uv = {}
 
         def vert(self, kind, co, uv):
+            if kind == 'banana-bunch':
+                uv = bunch_uv(co)  # the photo, projected from the lane-side view
             v = self.bm(kind).verts.new(co)
             self.uv[v] = uv
             return v
@@ -787,50 +814,63 @@ def crown(p):
                 cols=5 if spec.get('dead') else 7, wave=6 if spec.get('dead') else 10)
 
 
-def bunch(p):
+# The bunch as photographed (IMG_3092), in crop pixels of BUNCH_CROP: x right, y down. BUNCH_K metres per
+# pixel comes from the bud, 195 px long and 87 px across for a bud of about 0.29 x 0.13 m. BUNCH_ORIGIN puts
+# crop pixel (0, 0) in the model so the crown top (crop y 380, where the leaves part beside the stalk)
+# meets TOP, and the stem 268 px to the left of the crop meets the pseudostem. The bud's foot then comes
+# out at about 1.96 m, just above the garden wall, as photographed.
+BUNCH_K = 0.0015
+BUNCH_ORIGIN = (0.50, 3.52)
+BUNCH_SIZE = (642, 1321)
+
+
+def P(u, v, y=0.0):
+    """A photo pixel on the bunch's plane (through its stalk), in model coordinates."""
+    return (BUNCH_ORIGIN[0] + u * BUNCH_K, y, BUNCH_ORIGIN[1] - v * BUNCH_K)
+
+
+def bunch_uv(co):
+    """Texture coordinates of a point by projecting the photo along the lane camera's view (+y)."""
+    u = (co[0] - BUNCH_ORIGIN[0]) / BUNCH_K / BUNCH_SIZE[0]
+    v = (BUNCH_ORIGIN[1] - co[2]) / BUNCH_K / BUNCH_SIZE[1]
+    return (min(0.999, max(0.001, u)), min(0.999, max(0.001, 1 - v)))
+
+
+def bunch(p, kind='banana-bunch'):
+    """The photographed bunch: the stalk arching up out of the crown and down, six hands of upward-curving
+    fingers in two clusters, the knobbly bare rachis and the matte bud with one bract lifted to the right."""
     rng = p.rng
-    az = math.radians(-8)
-    out = (math.cos(az), math.sin(az), 0)
-    # Fruit stalk: out of the top of the pseudostem, arching over and hanging.
-    a = stem_centre(TOP - 0.05)
-    stalk = bezier(a, add(add(a, (0, 0, 1), 0.30), out, 0.05), add(add(a, (0, 0, 1), 0.34), out, 0.50),
-                   add(add(a, (0, 0, 1), -0.02), out, 0.70), 14)
-    top = stalk[-1]
-    axis_len = 0.50
-    axis_bottom = add(add(top, (0, 0, -1), axis_len), out, 0.04)
-    axis = bezier(top, add(top, (0, 0, -0.18)), add(axis_bottom, (0, 0, 0.18)), axis_bottom, 10)
-    p.sweep('banana-stem', stalk + axis[1:], [0.042] * len(stalk) + [0.04 - 0.014 * k / 10 for k in range(1, 11)],
-            9, PEDUNCLE)
-    # Hands: two dense clusters, as photographed, each hand a double crescent of fingers that grow
-    # out from the stalk and curve up.
-    hands = [(0.03, 0.0, 16, 1.0), (0.11, 2.2, 15, 1.0), (0.19, 4.3, 14, 0.96),
-             (0.31, 1.1, 13, 0.92), (0.38, 3.3, 12, 0.88), (0.45, 5.4, 10, 0.82)]
-    for along, facing, count, size in hands:
-        f = along / axis_len * 10
-        i = min(9, int(f))
-        centre = add(axis[i], sub(axis[i + 1], axis[i]), f - i)
+    UV = (0.0, 1.0)  # replaced by the projection
+    s0 = stem_centre(TOP - 0.05)
+    arch = bezier(s0, add(s0, (0, 0, 1), 0.32), P(-80, 80), P(5, 175), 12)
+    stalk = arch + [P(47, 220), P(90, 280), P(123, 340), P(150, 372)]
+    axis = [P(150, 372), P(160, 420), P(185, 470), P(215, 520), P(245, 568), P(275, 615), P(300, 660)]
+    path = stalk + axis[1:]
+    p.sweep(kind, path, [0.031] * len(stalk) + [0.03 - 0.004 * k / 6 for k in range(1, 7)], 9, UV)
+    # Hands: three in the upper cluster, three in the lower, each a double crescent of fingers growing out
+    # from the axis and curving up, wide enough to fill the photographed outline (about 0.36 m across).
+    hands = [(P(158, 400), 0.0, 14, 1.0), (P(172, 440), 2.1, 14, 1.0), (P(195, 480), 4.2, 12, 0.95),
+             (P(222, 528), 1.0, 14, 1.0), (P(248, 570), 3.1, 13, 0.97), (P(275, 612), 5.2, 11, 0.9)]
+    for centre, facing, count, size in hands:
         for row in range(2):
             n_row = count // 2 + (count % 2 if row == 0 else 0)
             for q in range(n_row):
-                spread = (q / max(1, n_row - 1) - 0.5) * math.radians(200 if row == 0 else 160)
-                phi = facing + spread + rng.uniform(-0.1, 0.1)
+                phi = facing + 2 * math.pi * (q + 0.5 * row) / n_row + rng.uniform(-0.15, 0.15)
                 radial = (math.cos(phi), math.sin(phi), 0)
-                base = add(add(centre, radial, 0.034 + 0.028 * row), (0, 0, -0.025 * row))
-                finger(p, base, radial, rng.uniform(0.125, 0.15) * size, 0.021 * size,
-                       rng.uniform(-0.35, -0.1) + 0.25 * row, rng.uniform(1.25, 1.45), rng.uniform(0, 1))
-    # Bare rachis, long and thin, knobbly with bract scars, down to the bud.
-    rach_len = 0.46
-    bud_top = add(add(axis_bottom, (0, 0, -1), rach_len), out, 0.03)
-    rachis = bezier(axis_bottom, add(axis_bottom, (0, 0, -0.15)), add(bud_top, (0, 0, 0.14)), bud_top, 18)
-    knots = {i: 1.0 + (0.22 if i % 2 else 0.0) for i in range(19)}
-    p.sweep('banana-stem', rachis, [0.016 - 0.004 * k / 18 for k in range(19)], 6, RACHIS,
-            bump=lambda i, j: knots[i] * (1 + 0.1 * ((i * 7 + j * 3) % 5) / 5))
-    bud(p, bud_top, out)
+                base = add(add(centre, radial, 0.032 + 0.026 * row), (0, 0, -0.022 * row))
+                finger(p, kind, base, radial, rng.uniform(0.13, 0.15) * size, 0.026 * size,
+                       rng.uniform(-0.3, -0.05) + 0.2 * row, rng.uniform(1.2, 1.45), rng.uniform(0, 1))
+    # The bare rachis, dark and knobbly with bract scars, down to the bud.
+    rachis = [P(300, 660), P(303, 700), P(305, 730), P(310, 760), P(312, 790), P(311, 820), P(311, 845)]
+    knots = {i: 1.0 + (0.25 if i % 2 else 0.0) for i in range(len(rachis))}
+    dense = [add(rachis[i], sub(rachis[i + 1], rachis[i]), t / 3) for i in range(len(rachis) - 1) for t in range(3)] + [rachis[-1]]
+    p.sweep(kind, dense, [0.015 - 0.003 * k / len(dense) for k in range(len(dense))], 6, UV,
+            bump=lambda i, j: knots[i % len(knots)] * (1 + 0.12 * ((i * 7 + j * 3) % 5) / 5))
+    bud(p, kind, P(311, 845))
 
 
-def finger(p, base, radial, length, radius, start, end, spin):
-    """One banana: a six-sided finger, out from the stalk then curving up, to a dark dried tip with
-    the thread of the dried flower."""
+def finger(p, kind, base, radial, length, radius, start, end, spin):
+    """One banana: a six-sided finger, out from the stalk then curving up, to a dark dried tip."""
     pts, radii = [], []
     pos = base
     steps = 7
@@ -840,22 +880,19 @@ def finger(p, base, radial, length, radius, start, end, spin):
             a = start + (end - start) * (s - 0.5 / steps) ** 0.8
             pos = add(pos, (radial[0] * math.cos(a), radial[1] * math.cos(a), math.sin(a)), length / steps)
         pts.append(pos)
-        body = math.sin(math.pi * min(1.0, 0.16 + s * 0.92)) ** 0.45
-        radii.append(radius * (0.38 if k == 0 else max(0.22, body)))
-    radii[-1] = radius * 0.18
-    p.sweep('banana-fruit', pts, radii, 6, (0.0, 1.0), roll=spin)
-    tip = pts[-1]
-    d = unit(sub(pts[-1], pts[-2]))
-    thread = [tip, add(add(tip, d, 0.012), (0, 0, 1), 0.006), add(add(tip, d, 0.022), radial, 0.006)]
-    p.sweep('banana-stem', thread, [radius * 0.18, 0.0018, 0.0008], 3, RACHIS, tip=True)
+        # Plump and blunt, as photographed: a short neck at the stalk, full along the body, rounded at the tip.
+        body = min(1.0, 0.45 + 2.2 * s) * (1 - 0.55 * max(0.0, (s - 0.8) / 0.2) ** 2)
+        radii.append(radius * (0.42 if k == 0 else body))
+    pts.append(add(pts[-1], unit(sub(pts[-1], pts[-2])), radius * 0.35))
+    radii.append(0.0)
+    p.sweep(kind, pts, radii, 6, (0.0, 1.0), roll=spin, tip=True)
 
 
-def bud(p, top, out):
-    """The male bud: a matte grey-purple teardrop of overlapping bracts, the top one lifted."""
-    length, R = 0.28, 0.066
-    down = unit(add((0, 0, -1), out, 0.1))
-    side = unit(cross(down, (0, 1, 0)))
-    other = cross(down, side)
+def bud(p, kind, top):
+    """The male bud: a teardrop of overlapping bracts 0.29 m long, and the top bract lifted out to the
+    right like a lid, as photographed (its maroon inner face shows)."""
+    length, R = 0.29, 0.066
+    down, side, other = (0, 0, -1), (1, 0, 0), (0, 1, 0)
 
     def radius(v):
         if v < 0.3:
@@ -864,52 +901,37 @@ def bud(p, top, out):
 
     def at(v, a, scale=1.0):
         r = radius(v) * scale
-        c = add(top, down, v * length)
-        return add(add(c, side, math.cos(a) * r), other, math.sin(a) * r)
+        return add(add(add(top, down, v * length), side, math.cos(a) * r), other, math.sin(a) * r)
 
     pts = [add(top, down, length * k / 14) for k in range(15)]
-    p.sweep('banana-bud', pts, [radius(k / 14) * 0.97 for k in range(15)], 14, (0.0, 0.5), tip=True)
-    for layer in range(4):
-        centre = layer * 2.4 + 0.5
-        v0 = 0.04 + 0.07 * layer
-        rows, cols = 10, 8
-        grid = []
-        for i in range(rows + 1):
-            v = v0 + (0.985 - v0) * i / rows
-            row = []
-            for j in range(cols + 1):
-                a = centre + (j / cols - 0.5) * math.radians(200)
-                edge = abs(j / cols - 0.5) * 2
-                scale = 1.02 + 0.022 * (3 - layer) + 0.02 * edge ** 3
-                row.append(p.vert('banana-bud', at(v, a, scale), (0.04 + 0.42 * j / cols, v)))
-            grid.append(row)
+    p.sweep(kind, pts, [radius(k / 14) * 0.97 for k in range(15)], 14, (0.0, 1.0), tip=True)
+    for layer in range(4):  # overlapping bract edges
+        centre, v0, rows, cols = layer * 2.4 + 0.5, 0.04 + 0.07 * layer, 10, 8
+        grid = [[p.vert(kind, at(v0 + (0.985 - v0) * i / rows, centre + (j / cols - 0.5) * math.radians(200),
+                                  1.02 + 0.022 * (3 - layer) + 0.02 * abs(j / cols - 0.5) ** 3 * 8), (0, 0))
+                 for j in range(cols + 1)] for i in range(rows + 1)]
         for i in range(rows):
             for j in range(cols):
-                p.face('banana-bud', (grid[i][j], grid[i][j + 1], grid[i + 1][j + 1], grid[i + 1][j]))
-    # The lifted bract: hinged near the top on the outward side, swung up and out like a lid. Two
-    # surfaces back to back: grey-violet outside (below), red-maroon inside (above).
-    hinge = add(top, down, 0.06 * length)
-    out_dir = unit(sub(at(0.06, 0.0), add(top, down, 0.06 * length)))
-    lift = unit(add(add(out_dir, (0, 0, 1), 0.25), down, -0.05))
-    across = unit(cross(lift, down))
+                p.face(kind, (grid[i][j], grid[i][j + 1], grid[i + 1][j + 1], grid[i + 1][j]))
+    # The lifted bract: hinged at the bud's top right, reaching out to the right and a little up (crop
+    # pixels 330,840 to 470,815), cupped, two surfaces back to back.
+    hinge, tip = P(330, 842), P(470, 815)
+    lift = unit(sub(tip, hinge))
+    across = unit(cross(lift, (0, 1, 0)))
     normal = unit(cross(across, lift))
-    rows, cols = 7, 6
-    for face_side, urange in ((1, (0.04, 0.46)), (-1, (0.54, 0.96))):
+    reach, rows, cols = math.dist(hinge, tip), 7, 6
+    for face_side in (1, -1):
         grid = []
         for i in range(rows + 1):
             s = i / rows
-            w = 0.07 * math.sin(math.pi * min(1.0, 0.25 + s * 0.8)) ** 0.6
-            row = []
-            for j in range(cols + 1):
-                x = j / cols * 2 - 1
-                co = add(add(add(hinge, lift, 0.17 * s), across, x * w), normal,
-                         0.028 * (1 - x * x) - 0.035 * s * s + 0.0015 * face_side)
-                row.append(p.vert('banana-bud', co, (urange[0] + (urange[1] - urange[0]) * j / cols, 0.1 + 0.85 * s)))
-            grid.append(row)
+            w = 0.03 * math.sin(math.pi * min(1.0, 0.25 + s * 0.8)) ** 0.6
+            grid.append([p.vert(kind, add(add(add(hinge, lift, reach * s), across, (j / cols * 2 - 1) * w), normal,
+                                          0.012 * (1 - (j / cols * 2 - 1) ** 2) - 0.02 * s * s + 0.0015 * face_side), (0, 0))
+                         for j in range(cols + 1)])
         for i in range(rows):
             for j in range(cols):
                 quad = (grid[i][j], grid[i][j + 1], grid[i + 1][j + 1], grid[i + 1][j])
-                p.face('banana-bud', quad if face_side > 0 else quad[::-1])
+                p.face(kind, quad if face_side > 0 else quad[::-1])
 
 
 # ---------------------------------------------------------------------------------------------
@@ -922,8 +944,7 @@ def bud(p, top, out):
 MATERIALS = {
     'banana-leaf': ('leaf', 0.62, True, True, 'leaf-normal', ('leaf-glow', 0.35)),
     'banana-stem': ('stem', 0.82, True, False, None, None),
-    'banana-fruit': ('fruit', 0.5, False, False, None, ('fruit', 0.06)),
-    'banana-bud': ('bud', 0.8, True, False, None, None),
+    'banana-bunch': ('bunch', 0.6, True, False, None, ('bunch', 0.65)),  # the photo's own light: it is shaded already
 }
 
 
@@ -968,6 +989,8 @@ def export(p, textures):
     from build_plants import OUT
     bpy.ops.wm.read_factory_settings(use_empty=True)
     for kind in MATERIALS:
+        if kind not in p.meshes:
+            continue
         b = p.meshes[kind]
         mesh = bpy.data.meshes.new(f'{p.name}-{kind}')
         b.to_mesh(mesh)
@@ -991,8 +1014,17 @@ def main():
     pseudostem(plant)
     crown(plant)
     bunch(plant)
+    # The bunch on its own, for reuse: moved so the top of its stalk, where it leaves the crown, is the origin.
+    alone = Banana('banana-bunch', SEED)
+    bunch(alone)
+    s0 = stem_centre(TOP - 0.05)
+    for b in alone.meshes.values():
+        for v in b.verts:
+            v.co = (v.co[0] - s0[0], v.co[1] - s0[1], v.co[2] - s0[2])
     with tempfile.TemporaryDirectory() as folder:
-        export(plant, write_textures(folder))
+        textures = write_textures(folder)
+        export(plant, textures)
+        export(alone, textures)
 
 
 if __name__ == '__main__':
