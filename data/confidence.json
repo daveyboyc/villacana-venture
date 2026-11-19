@@ -89,7 +89,7 @@
   },
   "jorge_lane.json:jorge-lane-lawn-palm": {
    "level": "estimated",
-   "why": "IMG_2764 and IMG_2765 show tall slender palms on the main-pool lawn, the nearest about 19 m from the camera on a bearing of about 330 degrees. One is built there, 15 m tall; position good to about 4 m. Two short thick generic palms the photos contradict were removed (Dave, 2026-11-12: the palm is inaccurate)."
+   "why": "IMG_2764 and IMG_2765 show tall slender palms on the main-pool lawn, the nearest about 19 m from the camera on a bearing of about 330 degrees. One is built there, 15 m tall; position good to about 4 m. Two short thick generic palms the photos contradict were removed (Dave, 2026-11-12: the palm is inaccurate). 2026-11-19 (Dave): it stands on the right of the pink path where the path meets the deck, seen from the gate (IMG_2765, IMG_2764, IMG_2603, IMG_3076); moved there, side photographed, position along the path good to about 1-2 m."
   },
   "ground_plan_main_pool.json:lawn-pink-paths": {
    "level": "estimated",
@@ -109,7 +109,7 @@
   },
   "main_pool_lawn.json:lawn-sea-hedge": {
    "level": "estimated",
-   "why": "IMG_2761 and IMG_2763 show a clipped hedge in front of the sea fence and a shower on the white wall. The hedge follows the inland side of the existing railing for the stretch those photos see. The fence itself stays the green bars from the closer paseo photos."
+   "why": "IMG_2759 and IMG_2761 show the shower as a grey mosaic panel with a riser and head on the lawn face of the short white wing east of the gate (Dave, 2026-11-19: left of the gate on the inside, facing the pool). Built there; panel size by eye against the gate opening."
   },
   "main_pool_lawn.json:main-pool-deck-tiles": {
    "level": "estimated",
@@ -351,13 +351,17 @@
    "level": "inferred",
    "why": "Only one beam edge shows over the wall; the pergola's size, posts and height are guessed."
   },
+  "main_pool.json:clubhouse-front": {
+   "level": "photographed",
+   "why": "IMG_2765, IMG_2764, IMG_3076 and IMG_3073 show the clubhouse's upper storey glazed end to end on its pool faces, three blue lettered awnings along the left wing and dark awnings at the east end (Dave, 2026-11-19). Glazing follows the registry faces; sign spans are read as fractions along the left wing, good to about 1 m."
+  },
   "seafront_fence.json:guillermo-beach-gate": {
    "level": "estimated",
    "why": "IMG_2602, IMG_2766 and IMG_2485 show the gate's square piers, rectangular opening, moulded lintel, segmental hood, ring-pattern leaf and sign; widths and heights are by eye against the leaf (request beach-gateway for a square-on view). The slope beside it is closed (Dave, 13 Nov)."
   },
   "seafront_fence.json:guillermo-ramp-wall": {
    "level": "inferred",
-   "why": "A wall must close the lawn between the foot of Calle Guillermo and the gateway (IMG_2226 shows white wall there from the beach); its line follows the paseo edge and its height is assumed."
+   "why": "Dave, 2026-11-19: the boundary west of the gate is a fence, not a wall. IMG_2759, IMG_2763 and IMG_2766 show a green rigid-mesh fence on a low plinth with the hedge inside it, and a short white wing beside the gate pier; its line follows the paseo edge, and plinth and fence heights are by eye."
   },
   "beach_verge.json:barraka-front-verge": {
    "level": "estimated",

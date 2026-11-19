@@ -94,66 +94,6 @@ graph LR
   A --> F7["6465801UF1366N_part6 · unreviewed"]
   F7 --> PIMG_2346_jpg(["IMG_2346"])
   F7 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F8["Beach gateway from the big-pool lawn · disputed"]
-  F8 --> PIMG_2226_jpg(["IMG_2226"])
-  F8 --> PIMG_2227_jpg(["IMG_2227"])
-  F8 --> PIMG_2484_jpg(["IMG_2484"])
-  F8 --> PIMG_2485_jpg(["IMG_2485"])
-  F8 --> PIMG_2488_jpg(["IMG_2488"])
-  F8 --> PIMG_2600_jpg(["IMG_2600"])
-  F8 --> PIMG_2601_jpg(["IMG_2601"])
-  F8 --> PIMG_2602_jpg(["IMG_2602"])
-  F8 --> PIMG_2604_jpg(["IMG_2604"])
-  F8 --> PIMG_2609_jpg(["IMG_2609"])
-  F8 --> PIMG_2610_jpg(["IMG_2610"])
-  F8 --> PIMG_2630_jpg(["IMG_2630"])
-  F8 --> PIMG_2631_jpg(["IMG_2631"])
-  F8 --> PIMG_2759_jpg(["IMG_2759"])
-  F8 --> PIMG_2760_jpg(["IMG_2760"])
-  F8 --> PIMG_2766_jpg(["IMG_2766"])
-  F8 --> PIMG_2767_jpg(["IMG_2767"])
-  F8 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
-  F8 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
-  A --> F9["White wall beside the paseo ramp · unreviewed"]
-  F9 --> PIMG_2226_jpg(["IMG_2226"])
-  F9 --> PIMG_2227_jpg(["IMG_2227"])
-  F9 --> PIMG_2484_jpg(["IMG_2484"])
-  F9 --> PIMG_2485_jpg(["IMG_2485"])
-  F9 --> PIMG_2488_jpg(["IMG_2488"])
-  F9 --> PIMG_2600_jpg(["IMG_2600"])
-  F9 --> PIMG_2601_jpg(["IMG_2601"])
-  F9 --> PIMG_2602_jpg(["IMG_2602"])
-  F9 --> PIMG_2604_jpg(["IMG_2604"])
-  F9 --> PIMG_2609_jpg(["IMG_2609"])
-  F9 --> PIMG_2610_jpg(["IMG_2610"])
-  F9 --> PIMG_2630_jpg(["IMG_2630"])
-  F9 --> PIMG_2631_jpg(["IMG_2631"])
-  F9 --> PIMG_2759_jpg(["IMG_2759"])
-  F9 --> PIMG_2760_jpg(["IMG_2760"])
-  F9 --> PIMG_2766_jpg(["IMG_2766"])
-  F9 --> PIMG_2767_jpg(["IMG_2767"])
-  F9 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
-  F9 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
-  A --> F10["Green bar railing on a sandstone plinth along the big-pool lawn · unreviewed"]
-  F10 --> PIMG_2226_jpg(["IMG_2226"])
-  F10 --> PIMG_2227_jpg(["IMG_2227"])
-  F10 --> PIMG_2484_jpg(["IMG_2484"])
-  F10 --> PIMG_2485_jpg(["IMG_2485"])
-  F10 --> PIMG_2488_jpg(["IMG_2488"])
-  F10 --> PIMG_2600_jpg(["IMG_2600"])
-  F10 --> PIMG_2601_jpg(["IMG_2601"])
-  F10 --> PIMG_2602_jpg(["IMG_2602"])
-  F10 --> PIMG_2604_jpg(["IMG_2604"])
-  F10 --> PIMG_2609_jpg(["IMG_2609"])
-  F10 --> PIMG_2610_jpg(["IMG_2610"])
-  F10 --> PIMG_2630_jpg(["IMG_2630"])
-  F10 --> PIMG_2631_jpg(["IMG_2631"])
-  F10 --> PIMG_2759_jpg(["IMG_2759"])
-  F10 --> PIMG_2760_jpg(["IMG_2760"])
-  F10 --> PIMG_2766_jpg(["IMG_2766"])
-  F10 --> PIMG_2767_jpg(["IMG_2767"])
-  F10 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
-  F10 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
 ```
 
 ## Placement evidence
@@ -170,9 +110,6 @@ graph LR
 | `barraka_facade.json:barraka-facade` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `building:6465801UF1366N_part5` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `building:6465801UF1366N_part6` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `seafront_fence.json:guillermo-beach-gate` | disputed | differs | open discrepancy photo-discrepancy:58170dc8a5dd3aaa; open discrepancy photo-discrepancy:4d29ca0cdc7d5d41 |
-| `seafront_fence.json:guillermo-ramp-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `seafront_fence.json:main-pool-lawn-railing` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 ## Photo checks
 

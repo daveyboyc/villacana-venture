@@ -84,8 +84,9 @@ function wallRings(): Vec2[][] {
     const pts = wall.points as Vec2[];
     for (let i = 0; i < pts.length - 1; i++) rings.push(stripRing(pts[i], pts[i + 1], 0.12));
   }
-  const s = data.hedge.shower as Vec2;
-  rings.push(stripRing([s[0] - 0.45, s[1]], [s[0] + 0.45, s[1]], 0.09));
+  // The shower panel is flush on the gate's east wing (data/seafront_fence.json): a thin strip along the wing.
+  const s = data.hedge.shower as Vec2, yaw = (data.hedge.showerFacing * Math.PI) / 180, ux = Math.cos(yaw), uz = -Math.sin(yaw);
+  rings.push(stripRing([s[0] - ux * 0.45, s[1] - uz * 0.45], [s[0] + ux * 0.45, s[1] + uz * 0.45], 0.04));
   return rings;
 }
 
@@ -98,6 +99,17 @@ type Ground = (x: number, z: number) => number;
 
 
 
+
+/** Small grey-green mosaic tiles with pale grout, the shower panel's finish in IMG_2759 and IMG_2761. */
+function showerTiles(): THREE.Material {
+  const c = document.createElement("canvas"); c.width = 64; c.height = 128;
+  const g = c.getContext("2d")!;
+  g.fillStyle = "#d8d8d2"; g.fillRect(0, 0, 64, 128);
+  const tones = ["#8f948e", "#9da19a", "#868b86", "#a7aaa3", "#7f847f"];
+  for (let y = 0; y < 128; y += 8) for (let x = 0; x < 64; x += 8) { g.fillStyle = tones[(x * 7 + y * 3) % tones.length]; g.fillRect(x + 1, y + 1, 6, 6); }
+  const map = new THREE.CanvasTexture(c); map.colorSpace = THREE.SRGBColorSpace; map.wrapS = map.wrapT = THREE.RepeatWrapping; map.repeat.set(1.8, 2);
+  return new THREE.MeshStandardMaterial({ map, roughness: 0.55 });
+}
 
 function box(name: string, w: number, h: number, d: number, material: THREE.Material, at: Vec2, y: number, yaw = 0): THREE.Mesh {
   const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
@@ -179,7 +191,7 @@ function addSteps(group: THREE.Group, details: boolean, ground: Ground): void {
 }
 
 /** One blue box awning: a sloping canvas top, a lettered valance in front and plain sides and back. */
-function boxAwning(text: string, width: number): THREE.Group {
+export function boxAwning(text: string, width: number): THREE.Group {
   const c = document.createElement("canvas"); c.width = 512; c.height = 48;
   const g = c.getContext("2d")!;
   g.fillStyle = "#1d4e86"; g.fillRect(0, 0, 512, 48);
@@ -214,12 +226,8 @@ function addShop(group: THREE.Group, ground: Ground): void {
   const front = new THREE.Group(); front.name = "enrique-shop-front"; front.position.set(at[0], base, at[1]);
   const awnings: [string, number][] = [["FISH PORTIONS · MEATS · PUBLIC PEOPLE", 2.1], ["RACIONES · PESCADOS · CARNES · PIZZAS", 2.1], ["BAR & RESTAURANTE ENRIQUE", 2.3]];
   const span = awnings.reduce((t, [, w]) => t + w, 0) + 0.5 * (awnings.length - 1);
-  let x = -span / 2;
-  for (const [text, width] of awnings) {
-    const awning = boxAwning(text, width); awning.name = "enrique-awning";
-    awning.position.set(x + width / 2, 2.45, 0); front.add(awning);
-    x += width + 0.5;
-  }
+  // The three blue signboards are along the clubhouse's upper glazing (src/main-pool.ts addClubhouseFront; Dave, 2026-11-19:
+  // the blue covers were in the wrong place, bunched here at the stair head). The menu boards and lantern stay.
   const board = plasterMaterial("#f7f4ee");
   for (const [dx, w] of [[-span / 2 - 0.9, 0.6], [-span / 2 - 0.3, 0.3]] as const) front.add(box("enrique-menu", w, 0.8, 0.03, board, [dx, 0.03], 1.65));
   const lamp = new THREE.MeshStandardMaterial({ color: "#2b2b28", roughness: 0.5, metalness: 0.4 });
@@ -281,8 +289,11 @@ export function addMainPoolLawn(scene: THREE.Scene, mainRing: Vec2[], toddlerRin
       group.add(box("lawn-white-wall", len, top - foot, 0.22, white, [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2], (top + foot) / 2, -Math.atan2(b[1] - a[1], b[0] - a[0])));
     }
   }
-  const showerAt = data.hedge.shower as Vec2;
-  group.add(box("lawn-shower-wall", 0.9, 1.9, 0.18, white, showerAt, on(showerAt) + 0.95));
+  // The lawn shower (IMG_2759, IMG_2761): a grey mosaic-tiled panel on the lawn face of the white wing east of the gate.
+  const showerAt = data.hedge.shower as Vec2, showerYaw = (data.hedge.showerFacing * Math.PI) / 180;
+  const facing: Vec2 = [Math.sin(showerYaw), Math.cos(showerYaw)];
+  const out = (d: number): Vec2 => [showerAt[0] + facing[0] * d, showerAt[1] + facing[1] * d];
+  group.add(box("lawn-shower-panel", 0.9, 1.95, 0.04, showerTiles(), showerAt, on(showerAt) + 0.975, showerYaw));
   addDeck(group, mainRing, toddlerRing, ground);
   addSteps(group, details, ground);
   if (details) {
@@ -299,8 +310,14 @@ export function addMainPoolLawn(scene: THREE.Scene, mainRing: Vec2[], toddlerRin
       const along = drain.along as Vec2, n = Math.hypot(along[0], along[1]) || 1;
       group.add(box("lawn-slot-drain", 1.6, 0.02, 0.22, grate, drain.at as Vec2, on(drain.at as Vec2) + 0.055, -Math.atan2(along[1] / n, along[0] / n)));
     }
-    const head = new THREE.Mesh(new THREE.SphereGeometry(0.06, 8, 6), new THREE.MeshStandardMaterial({ color: "#d5d8dc", metalness: 0.8, roughness: 0.25 }));
-    head.position.set(showerAt[0], on(showerAt) + 1.7, showerAt[1] + 0.12); head.name = "lawn-shower"; group.add(head);
+    // Chrome riser up the panel to a head above the wall top, a push tap, and a grey tiled tray at its foot.
+    const chrome = new THREE.MeshStandardMaterial({ color: "#d5d8dc", metalness: 0.8, roughness: 0.25 }), base = on(showerAt);
+    group.add(box("lawn-shower", 0.035, 1.5, 0.035, chrome, out(0.06), base + 1.45, showerYaw));
+    group.add(box("lawn-shower", 0.035, 0.035, 0.32, chrome, out(0.2), base + 2.2, showerYaw));
+    const head = new THREE.Mesh(new THREE.CylinderGeometry(0.09, 0.06, 0.05, 12), chrome);
+    head.position.set(out(0.36)[0], base + 2.17, out(0.36)[1]); head.name = "lawn-shower"; group.add(head);
+    group.add(box("lawn-shower", 0.08, 0.08, 0.06, chrome, out(0.05), base + 1.05, showerYaw));
+    group.add(box("lawn-shower-tray", 0.95, 0.04, 0.8, new THREE.MeshStandardMaterial({ color: "#9a9c98", roughness: 0.7 }), out(0.42), base + 0.01, showerYaw));
     // The hedge along the sea railing is the main lawn's edge in the ground plan (data/ground_plan_main_pool.json).
     for (const plant of data.rooms.plants) {
       const at = plant.at as Vec2;

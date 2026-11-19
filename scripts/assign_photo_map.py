@@ -313,6 +313,8 @@ def features(s):
     add('main_pool_lawn.json:'+steps['id'],steps['name'],'reference feature',lawn['trust'],evidence=steps['evidence'],points=[[-35.0,97.51],[-31.04,104.82]])
     shop=lawn['shop']
     add('main_pool_lawn.json:'+shop['id'],shop['name'],'reference feature',lawn['trust'],evidence=shop['evidence'],points=[shop['at']])
+    club=json.loads((ROOT/'data/main_pool.json').read_text())['clubhouseFront']
+    add('main_pool.json:clubhouse-front','Clubhouse upper-storey glazing, blue lettered awnings and dark awnings','reference feature',club['note'],evidence=club['evidence'],points=[[-7.26,64.07],[-17.95,68.51],[-31.43,77.12],[-38.67,94.31]])
     plain=lawn['plainBuildings']
     add('main_pool_lawn.json:'+plain['id'],plain['name'],'reference feature',lawn['trust'],evidence=plain['evidence'],points=[[-11.6,128.9],[-8.7,134.0],[-16.0,131.3]])
     # The ground plan (docs/SMOOTH_PATHS.md): every traced path, patio, apron and green space, one file per area.

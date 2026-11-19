@@ -1,5 +1,5 @@
 {
-  "note": "The boundary between Villacana and the paseo/Barraka beach along the big-pool lawn: a white wall from the end of the sandstone wall, down beside the paseo ramp, to an arched gateway at the lawn's south-west corner, a short white wall, then white railings along the lawn to its east end. Turned-frame metres (sea downward); every line is 1.75 m inland of the paseo's centre line, just off the 3 m paving. Heights are metres above the paseo.",
+  "note": "The boundary between Villacana and the paseo/Barraka beach along the big-pool lawn: a green rigid-mesh fence (white-walled at the foot of Calle Guillermo) from the end of the sandstone wall, down beside the paseo ramp, to an arched gateway with short white wings at the lawn's south-west corner, a short white wing with the lawn shower, then green bar railings along the lawn to its east end. Turned-frame metres (sea downward); every line is 1.75 m inland of the paseo's centre line, just off the 3 m paving. Heights are metres above the paseo.",
   "evidence": [
     "IMG_2226.jpg",
     "IMG_2227.jpg",
@@ -19,7 +19,9 @@
     "IMG_2766.jpg",
     "IMG_2767.jpg",
     "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
-    "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png"
+    "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+    "IMG_2761.jpg",
+    "IMG_2763.jpg"
   ],
   "trust": "Dave, 2026-10-21: a fence and a coastal gate run in front of the slope, separating Villacana from Barraka beach. IMG_2226 (from the beach, looking north-west) shows, west to east, a white wall with a tiled panel, a white arched gateway at paseo level, a short white wall and white railings along the lawn up to Barraka's raised deck; IMG_2227 shows the white tiled wall where the sandstone wall ends; apple-maps/11 shows the gateway at the bottom of the lane with the zebra crossing in front. Positions follow the paseo line (plan about 1-2 m); the gateway sits where the lane meets it. Heights (wall 1.5 m, railings 1.1 m, arch 2.4 m), the 1.4 m opening and the bar spacing are read by eye, not measured. The gateway opening stays clear. IMG_2602 and IMG_2759 show a dark iron leaf, drawn swung open. Dave, 2026-10-27: the beach entrance is not at the end of the slope but to its left looking at the beach. Moved 7.5 m north-east along the same line to the dark gateway the aerial shows at the lawn's south-west corner (about scene -6, 131.5), which also agrees within compass error with the arch's bearing in IMG_2226; the wall is split into 1.5 m runs so it steps down the ramp. Ground there from the laser survey (main_pool.json seafront profile). 2026-11-04 (barraka-frontage-paseo-furniture): close photos from the paseo (IMG_2604, 2609, 2610, 2630, 2631; also IMG_2484 for the mesh-panel stretch near the gateway) show the lawn railing as dark green vertical bars with square posts on a low sandstone-block plinth, not the white railings read from the beach at 50 m in IMG_2226 (the pale line there is probably the white pool-side building). Only the finish changed (bars, posts and rail now dark green, plinth sandstone); heights (railing 1.1 m, plinth 0.3 m; the photos suggest the plinth is nearer 0.5 m) and collision are unchanged. 13 Nov: the railing had been a straight chord from the gateway to Barraka's corner, across the grass, so the wall enclosed the pool and cut the private lawn in two. IMG_2760 looks across that lawn to a fence at the far edge, with Barraka beyond; IMG_2604, IMG_2611, IMG_2630 and IMG_2610 show the same green fence following the path. The line now follows the path's lawn edge, traced from the aerial, and the pool stays open to the lawn. 14 Nov: that line still sat on the beach side of the paving where the path widens toward Barraka. IMG_2610 and IMG_2630 show the sandstone wall and green bars on the lawn side of the pink terrace, and the Esri aerial puts that edge 2 to 3 m inland of the old line (Imagery © Google, photorealistic 3D, 14 Nov 2026, shows the same border). The railing now follows that lawn edge from just after the gate. Near Barraka the stone plinth rises from 0.3 m to about 0.75 m and the bars to about 1.65 m, read by eye from IMG_2610; not measured.",
   "wall": {
@@ -38,8 +40,15 @@
         120.59
       ]
     ],
-    "height": 1.5,
-    "thickness": 0.25
+    "height": 1.9,
+    "thickness": 0.25,
+    "mesh": {
+      "plinth": 1.0,
+      "plinthFinish": "white",
+      "post": 2.4,
+      "paint": "#2a4335"
+    },
+    "note": "Mesh fence on a white wall about 1 m high at the foot of Calle Guillermo (IMG_2600). 2026-11-19 (Dave: the white wall in the front is wrong, it should be just a fence): IMG_2759, IMG_2763, IMG_2602 and IMG_2766 show a dark green rigid-mesh fence here, on a low sandstone plinth seen from the paseo, with the hedge in front of it on the lawn side; only a short white wing stands beside the gate pier. IMG_2600 shows a white wall about 1 m high under the mesh at the foot of Calle Guillermo. Heights by eye."
   },
   "rampWall": {
     "id": "guillermo-ramp-wall",
@@ -69,9 +78,17 @@
         118.067
       ]
     ],
-    "height": 1.5,
+    "height": 1.75,
     "thickness": 0.25,
-    "note": "Dave, 2026-11-13: the slope down has no opening; the only way out is the gate. The ramp wall now starts where the corner wall ends, closing the 2.3 m gap the foot of Calle Guillermo ran out through. IMG_2600 and IMG_2601 show the inner tiled path from the lane's foot ending at a hedge and a mesh fence, not at an opening."
+    "note": "Dave, 2026-11-13: the slope down has no opening; the only way out is the gate. The ramp wall now starts where the corner wall ends, closing the 2.3 m gap the foot of Calle Guillermo ran out through. IMG_2600 and IMG_2601 show the inner tiled path from the lane's foot ending at a hedge and a mesh fence, not at an opening. 2026-11-19 (Dave: the white wall in the front is wrong, it should be just a fence): IMG_2759, IMG_2763, IMG_2602 and IMG_2766 show a dark green rigid-mesh fence here, on a low sandstone plinth seen from the paseo, with the hedge in front of it on the lawn side; only a short white wing stands beside the gate pier. IMG_2600 shows a white wall about 1 m high under the mesh at the foot of Calle Guillermo. Heights by eye. The last 1.4 m beside the gate stays a solid white wing (IMG_2766, IMG_2602).",
+    "mesh": {
+      "plinth": 0.5,
+      "plinthFinish": "sandstone",
+      "post": 2.4,
+      "paint": "#2a4335",
+      "solidLast": 1,
+      "solidHeight": 1.85
+    }
   },
   "gate": {
     "id": "guillermo-beach-gate",
@@ -103,29 +120,69 @@
         117.353
       ],
       [
-        -59.08,
-        116.33
+        -60.477,
+        116.822
       ]
     ],
-    "height": 1.5,
-    "thickness": 0.25
+    "height": 1.85,
+    "thickness": 0.25,
+    "note": "The white wing east of the gate. 2026-11-19: shortened from 3.1 m to 1.6 m and raised to about 1.85 m: IMG_2759 and IMG_2761 show the green bar fence starting right after a short white wing, and the grey mosaic shower panel on that wing's lawn face (Dave: a shower to the left of the gate on the inside, facing the pool). IMG_2766 shows its plain white paseo face behind the plumbago."
   },
   "railing": {
     "id": "main-pool-lawn-railing",
     "points": [
-      [-59.08, 116.33],
-      [-56.736, 112.449],
-      [-53.377, 112.062],
-      [-51.904, 111.802],
-      [-49.573, 111.448],
-      [-46.533, 110.349],
-      [-44.788, 109.988],
-      [-43.366, 109.101],
-      [-40.802, 107.882],
-      [-39.378, 106.696],
-      [-38.703, 106.157],
-      [-36.914, 104.883],
-      [-35.051, 103.299]
+      [
+        -60.477,
+        116.822
+      ],
+      [
+        -56.736,
+        112.449
+      ],
+      [
+        -53.377,
+        112.062
+      ],
+      [
+        -51.904,
+        111.802
+      ],
+      [
+        -49.573,
+        111.448
+      ],
+      [
+        -46.533,
+        110.349
+      ],
+      [
+        -44.788,
+        109.988
+      ],
+      [
+        -43.366,
+        109.101
+      ],
+      [
+        -40.802,
+        107.882
+      ],
+      [
+        -39.378,
+        106.696
+      ],
+      [
+        -38.703,
+        106.157
+      ],
+      [
+        -36.914,
+        104.883
+      ],
+      [
+        -35.051,
+        103.299
+      ]
     ],
     "height": 1.1,
     "heightAtEnd": 1.65,
