@@ -7,8 +7,8 @@
 
 The plant photographed over the garden wall in IMG_3092 (key view, looking up from the lane),
 IMG_3090 (from further west) and IMG_3093 (a leaf hanging over the lane in shade). It has fruited,
-so it makes no new leaves: no rolled 'cigar' leaf at the top, as in the photo. Fifteen live leaves
-in a full spiral: the youngest two nearly upright, the middle ones arching out, the oldest drooping
+so it makes no new leaves: no rolled 'cigar' leaf at the top, as in the photo. Sixteen live leaves
+in a full spiral: the youngest four nearly upright, the middle ones arching out, the oldest drooping
 and torn into strips along the lateral veins, plus three dead brown leaves hanging against the stem.
 The pseudostem is built from overlapping leaf sheaths, pale green with dark blotches, the outer
 ones dried brown and peeling. The bunch hangs from an arching stalk: two dense clusters of hands of
@@ -349,9 +349,9 @@ def stem_texture(rng, w=512, h=1024):
     # Dried outer sheaths: papery brown and tan fibres.
     sel, s = region(DRY)
     fib = fbm(rng, h, w, 4, 160, 2)
-    col = mix(srgb(128, 96, 64), srgb(196, 170, 128), smooth(0.35, 0.7, fib))
-    col = mix(col, srgb(84, 60, 42), 0.6 * smooth(0.6, 0.75, fbm(rng, h, w, 10, 12)))
-    col = mix(col, srgb(170, 160, 120), 0.3 * smooth(0.6, 0.9, fbm(rng, h, w, 5, 5)))
+    col = mix(srgb(118, 98, 78), srgb(178, 162, 134), smooth(0.35, 0.7, fib))
+    col = mix(col, srgb(78, 62, 50), 0.6 * smooth(0.6, 0.75, fbm(rng, h, w, 10, 12)))
+    col = mix(col, srgb(168, 164, 140), 0.3 * smooth(0.6, 0.9, fbm(rng, h, w, 5, 5)))
     col = col * (1 - 0.3 * smooth(0.08, 0.0, np.minimum(s, 1 - s)))[..., None]
     out[sel] = col[sel]
     # Petioles and midribs: pale yellow-green, fine lengthwise lines, a darker channel on top.
@@ -361,12 +361,13 @@ def stem_texture(rng, w=512, h=1024):
     out[sel] = col[sel]
     # Fruit stalk: green, speckled.
     sel, s = region(PEDUNCLE)
-    col = mix(srgb(96, 118, 52), srgb(130, 146, 70), fbm(rng, h, w, 40, 20))
+    col = mix(srgb(66, 86, 38), srgb(98, 112, 54), fbm(rng, h, w, 40, 20))
     out[sel] = col[sel]
     # Rachis: dark brown-maroon, banded by the scars of fallen male flowers.
     sel, s = region(RACHIS)
-    band = 0.5 + 0.5 * np.cos(2 * np.pi * v * 22)
-    col = mix(srgb(58, 40, 34), srgb(104, 80, 60), smooth(0.6, 1.0, band) * fbm(rng, h, w, 16, 16))
+    band = 0.5 + 0.5 * np.cos(2 * np.pi * (v * 30 + 0.15 * fbm(rng, h, w, 8, 4)))
+    col = mix(srgb(52, 40, 34), srgb(92, 72, 56), 0.6 * fbm(rng, h, w, 30, 12))
+    col = mix(col, srgb(110, 92, 70), 0.5 * smooth(0.8, 1.0, band) * fbm(rng, h, w, 16, 16))
     out[sel] = col[sel]
     return Image.fromarray((np.flipud(np.clip(out, 0, 1)) * 255 + 0.5).astype(np.uint8), 'RGB')
 
@@ -376,8 +377,8 @@ def fruit_texture(rng, w=128, h=256):
     v = np.repeat(((np.arange(h) + 0.5) / h)[:, None], w, 1)
     U = np.repeat(u[None, :], h, 0)
     ridge = np.abs((U * 6) % 1 - 0.5) * 2          # 0 on the six ridges
-    col = mix(srgb(92, 126, 46), srgb(120, 150, 58), fbm(rng, h, w, 4, 12))
-    col = mix(col, srgb(146, 166, 76), 0.45 * smooth(0.3, 0.0, ridge))
+    col = mix(srgb(70, 98, 36), srgb(98, 124, 48), fbm(rng, h, w, 4, 12))
+    col = mix(col, srgb(126, 146, 66), 0.45 * smooth(0.3, 0.0, ridge))
     col *= (0.93 + 0.1 * fbm(rng, h, w, 3, 40))[..., None]
     col = mix(col, srgb(84, 100, 44), smooth(0.14, 0.02, v))       # stalk end
     col = mix(col, srgb(44, 36, 24), smooth(0.88, 0.96, v))       # dried flower at the tip
@@ -392,12 +393,12 @@ def bud_texture(rng, size=256):
     U = np.repeat(u[None, :], h, 0)
     streak = fbm(rng, h, w, 3, 70)
     # Outer bract faces: matte grey-violet with a waxy bloom, as photographed.
-    outer = mix(srgb(92, 74, 88), srgb(126, 108, 122), smooth(0.3, 0.75, fbm(rng, h, w, 6, 10)))
-    outer = mix(outer, srgb(160, 150, 160), 0.35 * smooth(0.5, 0.85, streak))
+    outer = mix(srgb(86, 74, 84), srgb(118, 106, 116), smooth(0.3, 0.75, fbm(rng, h, w, 6, 10)))
+    outer = mix(outer, srgb(150, 144, 152), 0.4 * smooth(0.5, 0.85, streak))
     outer *= (1 - 0.3 * smooth(0.1, 0.0, np.minimum(U, 0.5 - U) * 2))[..., None]
     # Inner face of the lifted bract: deep red-maroon.
-    inner = mix(srgb(100, 22, 36), srgb(140, 40, 52), streak)
-    inner = mix(inner, srgb(150, 90, 90), 0.3 * smooth(0.85, 1.0, v))
+    inner = mix(srgb(78, 24, 34), srgb(108, 36, 46), streak)
+    inner = mix(inner, srgb(120, 80, 84), 0.3 * smooth(0.85, 1.0, v))
     col = np.where((U < 0.5)[..., None], outer, inner)
     return Image.fromarray((np.flipud(np.clip(col, 0, 1)) * 255 + 0.5).astype(np.uint8), 'RGB')
 
@@ -619,19 +620,31 @@ def make_plant_class():
                 r0, r1, root, hg, tw = strips[sign, k]
                 along = (i - r0) / max(1, r1 - r0)
                 lat = down = free = 0.0
+                at_root = None
                 if j:
                     m = j * sub_steps
                     for q in range(m):
                         xx = (q + 0.5) / (cols * sub_steps)
+                        if xx > root and at_root is None:
+                            at_root = (lat, down)
                         th = fold + sag * xx + wave * math.sin(t * length / 0.42 * 6.283 + phases[sign]) * xx * xx
                         th += curl * smooth_s(0.8, 1.0, xx)
                         if xx > root:
-                            th += hg * (1 + tw * (along - 0.5) * 2) * (xx - root) / max(0.05, 1 - root)
+                            th += 0.35 * hg * (1 + tw * (along - 0.5) * 2) * (xx - root) / max(0.05, 1 - root)
                             free += w / (cols * sub_steps)
                         lat += math.cos(th) / (cols * sub_steps)
                         down += math.sin(th) / (cols * sub_steps)
                 co = add(add(p, s, sign * lat * w), n, -down * w)
-                co = add(co, tangent, tw * 0.35 * free)   # torn strips splay apart along the blade
+                if free:
+                    # A torn strip hangs from where it is still attached: blend its free part toward
+                    # hanging under its own weight, each strip by its own amount, splayed apart.
+                    rl, rd = at_root
+                    root_co = add(add(p, s, sign * rl * w), n, -rd * w)
+                    fall = unit(add(add((0, 0, -1), s, 0.45 * sign), tangent, tw * 0.6))
+                    g = min(1.0, hg / math.radians(90)) * smooth_s(0.0, 0.12, free)
+                    hung = add(root_co, fall, free)
+                    co = tuple(co[q] * (1 - g) + hung[q] * g for q in range(3))
+                co = add(co, tangent, tw * 0.2 * free)   # torn strips splay apart along the blade
                 uv = (u0 + sign * x * 0.49 / 4, t)
                 v = cache[key] = self.vert('banana-leaf', co, uv)
                 return v
@@ -651,7 +664,7 @@ def make_plant_class():
                 t = 0.92 * k / 10
                 p, tangent, s, n = frame(t)
                 r = 0.022 * (1 - t) ** 0.9 + 0.0035
-                pts.append(add(p, n, -0.55 * r))
+                pts.append(add(p, n, -1.05 * r))
                 radii.append(r)
             self.sweep('banana-stem', pts, radii, 6, PETIOLE, squash=0.8, roll=math.pi / 2)
             return frame
@@ -671,12 +684,12 @@ LEAVES = [
     L(az=40, pet=0.2, a0=-88, bend=4, L=1.10, W=0.14, tex=DEAD, tears=6, depth=(0.5, 0.95), fold=75, sag=10, hang=20, roll=0, twist=-50, h=2.34, dead=True),
     L(az=150, pet=0.3, a0=-84, bend=6, L=1.35, W=0.16, tex=DEAD, tears=8, depth=(0.5, 0.95), fold=70, sag=12, hang=20, roll=0, twist=40, h=2.40, dead=True),
     # old leaves, drooping, the blade torn into strips that hang
-    L(az=150, rise=14, pet=0.42, a0=-6, bend=95, L=1.95, W=0.30, tex=YELLOWED, tears=14, depth=(0.7, 0.98), fold=14, sag=40, hang=80, roll=0, twist=-10, h=2.50),
-    L(az=-60, rise=18, pet=0.45, a0=0, bend=92, L=2.10, W=0.31, tex=GREEN, tears=13, depth=(0.65, 0.98), fold=12, sag=38, hang=75, roll=-10, twist=15, h=2.52),
-    L(az=100, rise=16, pet=0.45, a0=-4, bend=90, L=2.05, W=0.30, tex=GREEN, tears=12, depth=(0.6, 0.97), fold=12, sag=36, hang=75, roll=0, twist=-20, h=2.54),
-    L(az=22, rise=20, pet=0.50, a0=2, bend=88, L=2.30, W=0.33, tex=YELLOWED, tears=12, depth=(0.6, 0.97), fold=10, sag=34, hang=70, roll=-30, twist=25, h=2.56),
-    L(az=-120, rise=22, pet=0.45, a0=6, bend=80, L=2.05, W=0.30, tex=GREEN, tears=10, depth=(0.55, 0.95), fold=12, sag=34, hang=65, roll=0, twist=10, h=2.58),
-    L(az=200, rise=26, pet=0.45, a0=6, bend=82, L=2.00, W=0.30, tex=YELLOWED, tears=11, depth=(0.55, 0.95), fold=12, sag=34, hang=65, roll=30, twist=-15, h=2.60),
+    L(az=150, rise=28, pet=0.80, a0=8, bend=100, L=1.95, W=0.30, tex=YELLOWED, tears=14, depth=(0.7, 0.98), fold=14, sag=40, hang=80, roll=0, twist=-10, h=2.50),
+    L(az=-58, rise=30, pet=0.85, a0=10, bend=96, L=2.10, W=0.31, tex=GREEN, tears=13, depth=(0.65, 0.98), fold=12, sag=38, hang=75, roll=-10, twist=15, h=2.52),
+    L(az=100, rise=28, pet=0.80, a0=6, bend=94, L=2.05, W=0.30, tex=GREEN, tears=12, depth=(0.6, 0.97), fold=12, sag=36, hang=75, roll=0, twist=-20, h=2.54),
+    L(az=22, rise=30, pet=0.80, a0=10, bend=92, L=2.30, W=0.33, tex=YELLOWED, tears=12, depth=(0.6, 0.97), fold=10, sag=34, hang=70, roll=-30, twist=25, h=2.56),
+    L(az=-120, rise=32, pet=0.75, a0=12, bend=86, L=2.05, W=0.30, tex=GREEN, tears=10, depth=(0.55, 0.95), fold=12, sag=34, hang=65, roll=0, twist=10, h=2.58),
+    L(az=200, rise=34, pet=0.75, a0=12, bend=88, L=2.00, W=0.30, tex=YELLOWED, tears=11, depth=(0.55, 0.95), fold=12, sag=34, hang=65, roll=30, twist=-15, h=2.60),
     # middle leaves, arching out
     L(az=235, rise=58, pet=0.70, a0=38, bend=72, L=2.00, W=0.30, tex=GREEN, tears=6, depth=(0.4, 0.9), fold=14, sag=30, hang=50, roll=0, twist=10, h=2.64),
     L(az=70, rise=60, pet=0.75, a0=42, bend=70, L=2.10, W=0.30, tex=YELLOWED, tears=6, depth=(0.4, 0.9), fold=14, sag=30, hang=50, roll=0, twist=-10, h=2.67),
@@ -708,31 +721,38 @@ def pseudostem(p):
         dried = k < 3
         phi0 = k * 2.4 + 0.4
         span = math.radians(rng.uniform(220, 300))
-        gap = 0.003 * (sheaths - k) + 0.004
-        rows, cols = 14, 10
-        grid = []
-        for i in range(rows + 1):
-            s = i / rows
-            z = top * s
-            narrow = 1 - smooth_s(0.7, 1.0, s) * 0.92
-            peel = (0.1 * smooth_s(0.55, 1.0, s) ** 1.5 + 0.02 * s) if dried else 0.0
-            row = []
-            for j in range(cols + 1):
-                c = j / cols - 0.5
-                a = phi0 + 0.25 * z + c * span * narrow
-                r = stem_radius(z) + gap + peel * (1 - (2 * c) ** 2 * 0.5)
-                lip = 0.004 * (abs(c) * 2) ** 6
-                ctr = stem_centre(z)
-                co = (ctr[0] + math.cos(a) * (r + lip), ctr[1] + math.sin(a) * (r + lip), z)
-                region = DRY if dried else SHEATH
-                uv = (region[0] + (region[1] - region[0]) * (j / cols), z / TOP)
-                row.append(p.vert('banana-stem', co, uv))
-            grid.append(row)
-        kind = 'banana-stem'
-        for i in range(rows):
-            for j in range(cols):
-                p.face(kind, (grid[i][j], grid[i][j + 1], grid[i + 1][j + 1], grid[i + 1][j]))
-
+        gap = 0.0018 * (sheaths - k) + 0.002
+        # The dried outer sheaths split into papery strips that peel away at the top.
+        pieces = [(-0.5, 0.5, 0.0, 1.0)]
+        if dried:
+            cuts = sorted(rng.uniform(-0.4, 0.4) for _ in range(3))
+            edges = [-0.5] + cuts + [0.5]
+            pieces = [(edges[q] + 0.01, edges[q + 1] - 0.01, rng.uniform(0.02, 0.16), rng.uniform(0.55, 1.0))
+                      for q in range(4)]
+        rows, cols = 14, 4 if dried else 10
+        for c0, c1, peel_amount, height in pieces:
+            grid = []
+            for i in range(rows + 1):
+                s = i / rows
+                row = []
+                for j in range(cols + 1):
+                    c = c0 + (c1 - c0) * j / cols
+                    # Green sheaths end in a rounded top; dried strips in ragged ends at their own height.
+                    zt = top * (height - (0.1 * (2 * c) ** 2 if not dried else 0.04 * rng.random()))
+                    z = zt * s
+                    peel = peel_amount * smooth_s(0.45, 1.0, s) ** 1.6 if dried else 0.0
+                    a = phi0 + 0.25 * z + c * span
+                    lip = 0.003 * (abs(c) * 2) ** 6
+                    r = stem_radius(z) + gap + lip + peel
+                    ctr = stem_centre(z - peel * 0.4)
+                    co = (ctr[0] + math.cos(a) * r, ctr[1] + math.sin(a) * r, z - peel * 0.4)
+                    region = DRY if dried else SHEATH
+                    uv = (region[0] + (region[1] - region[0]) * (c + 0.5), z / TOP)
+                    row.append(p.vert('banana-stem', co, uv))
+                grid.append(row)
+            for i in range(rows):
+                for j in range(cols):
+                    p.face('banana-stem', (grid[i][j], grid[i][j + 1], grid[i + 1][j + 1], grid[i + 1][j]))
 
 def crown(p):
     for n, spec in enumerate(LEAVES):
@@ -749,9 +769,10 @@ def crown(p):
         end = add(foot, (math.cos(rise) * h[0], math.cos(rise) * h[1], math.sin(rise)), lp)
         start_dir = (math.cos(a0) * h[0], math.cos(a0) * h[1], math.sin(a0))
         if spec.get('dead'):   # snapped where it left the stem, hanging straight down against it
-            end = add(add(foot, h, 0.06), (0, 0, -1), lp)
-            stalk = bezier(foot, add(foot, h, 0.06), add(end, (0, 0, 1), lp * 0.4), end, 6)
-            p.sweep('banana-stem', stalk, [0.03 - 0.012 * k / 6 for k in range(7)], 6, DRY, squash=0.6)
+            foot = add(ctr, h, rad * 0.85)
+            end = add(add(foot, h, 0.025), (0, 0, -1), lp)
+            stalk = bezier(foot, add(foot, (0, 0, -1), lp * 0.3), add(end, (0, 0, 1), lp * 0.3), end, 6)
+            p.sweep('banana-stem', stalk, [0.022 - 0.008 * k / 6 for k in range(7)], 6, DRY, squash=0.5)
         else:
             ctrl1 = add(foot, (0, 0, 1), lp * 0.4)
             ctrl2 = add(end, start_dir, -lp * 0.3)
@@ -794,8 +815,8 @@ def bunch(p):
                 spread = (q / max(1, n_row - 1) - 0.5) * math.radians(200 if row == 0 else 160)
                 phi = facing + spread + rng.uniform(-0.1, 0.1)
                 radial = (math.cos(phi), math.sin(phi), 0)
-                base = add(add(centre, radial, 0.045 + 0.03 * row), (0, 0, -0.025 * row))
-                finger(p, base, radial, rng.uniform(0.12, 0.145) * size, 0.019 * size,
+                base = add(add(centre, radial, 0.034 + 0.028 * row), (0, 0, -0.025 * row))
+                finger(p, base, radial, rng.uniform(0.125, 0.15) * size, 0.021 * size,
                        rng.uniform(-0.35, -0.1) + 0.25 * row, rng.uniform(1.25, 1.45), rng.uniform(0, 1))
     # Bare rachis, long and thin, knobbly with bract scars, down to the bud.
     rach_len = 0.46
