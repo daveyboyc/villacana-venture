@@ -518,7 +518,8 @@ const path = require("node:path");
       if (visible.some(delta=>Math.abs(delta)>.01)) throw Error("Dalí footpath tiles do not follow its player ground");
       const a = d.approach, arch = sills.approachPoint(0.6, 0), foot = sills.approachPoint(a.foot + 1, 0);
       const rise = world.groundHeight(...arch) - world.groundHeight(...foot);
-      if (rise < 0.15 || rise > 0.35) throw Error("South Dalí approach rise " + rise.toFixed(2) + " m is outside the survey");
+      // data/levels_survey.json dali-south-approach: the laser survey reads about 0.06-0.08 m (first read by eye as 0.15-0.35 m).
+      if (rise < 0.05 || rise > 0.12) throw Error("South Dalí approach rise " + rise.toFixed(2) + " m is outside the survey");
       // The arch plane itself intersects the unchanged solid registry facade.
       // Check continuity at every reachable player centre, including the whole exterior landing.
       let continuousSamples=0,firstReachable=Infinity;
