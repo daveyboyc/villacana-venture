@@ -1,0 +1,5261 @@
+{
+  "version": 1,
+  "scope": "Existing explicit patio/garden wall axes in six source files, all standing zero-storey registry enclosures, and wall-related recorded gaps. Other renderer-specific retaining walls, planter rims and generated filler are not patio-wall traces. Other wall/patio/terrace model groups are included as context only, without wall quantities. Physical resort-wide wall survey remains incomplete.",
+  "totals": {
+    "wall": 24,
+    "kerb": 2,
+    "enclosure": 23,
+    "gap": 20,
+    "context": 37
+  },
+  "records": [
+    {
+      "id": "cervantes_patio_walls.json:cervantes-patio-north-1",
+      "name": "Cervantes · north patio wall 1",
+      "kind": "kerb",
+      "points": [
+        [
+          -185.1463,
+          75.5488
+        ],
+        [
+          -155.4381,
+          57.8401
+        ]
+      ],
+      "areas": [
+        "cervantes"
+      ],
+      "heightM": 0.15,
+      "thicknessM": 0.2,
+      "lengthM": 34.59,
+      "grossFaceM2": 5.19,
+      "openings": [],
+      "routeOpenings": [
+        {
+          "name": "Calle Elena junction",
+          "ring": [
+            [
+              -146.1600483748589,
+              53.31928173973561
+            ],
+            [
+              -143.99995162514114,
+              52.06071826026439
+            ],
+            [
+              -163.66995162514112,
+              18.300718260264386
+            ],
+            [
+              -165.83004837485888,
+              19.559281739735614
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2262.jpg",
+            "IMG_2265.jpg"
+          ]
+        },
+        {
+          "name": "Calle Elena junction",
+          "ring": [
+            [
+              -138.1832478615131,
+              85.21703231823045
+            ],
+            [
+              -138.9851935157356,
+              89.1822080529973
+            ],
+            [
+              -139.00428651467584,
+              89.31062215701456
+            ],
+            [
+              -139.00995736534307,
+              89.44032399266771
+            ],
+            [
+              -139.0021448961361,
+              89.56991446316603
+            ],
+            [
+              -138.98093338034633,
+              89.6979956730174
+            ],
+            [
+              -138.9465516270999,
+              89.8231860071602
+            ],
+            [
+              -138.899370513188,
+              89.944135034478
+            ],
+            [
+              -134.549370513188,
+              99.58413503447798
+            ],
+            [
+              -132.270629486812,
+              98.555864965522
+            ],
+            [
+              -136.45496116482892,
+              89.28300120090519
+            ],
+            [
+              -135.6348064842644,
+              85.22779194700271
+            ],
+            [
+              -135.61693077862367,
+              85.11144927107738
+            ],
+            [
+              -135.61007774295192,
+              84.99394099479139
+            ],
+            [
+              -135.61430814518485,
+              84.87630909949691
+            ],
+            [
+              -135.62958447306903,
+              84.75959666271318
+            ],
+            [
+              -135.65577126679443,
+              84.64483860884327
+            ],
+            [
+              -135.6926363201574,
+              84.53305253218716
+            ],
+            [
+              -135.73985273960312,
+              84.42522967362578
+            ],
+            [
+              -135.79700184288956,
+              84.32232613098908
+            ],
+            [
+              -152.60700184288953,
+              57.15232613098909
+            ],
+            [
+              -154.0561,
+              58.0488
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2262.jpg",
+            "IMG_2265.jpg"
+          ]
+        },
+        {
+          "name": "Front-door approach between lawns",
+          "ring": [
+            [
+              -148.0887,
+              68.3973
+            ],
+            [
+              -148.1178,
+              68.3426
+            ],
+            [
+              -148.5596,
+              67.6284
+            ],
+            [
+              -153.2113,
+              70.1027
+            ],
+            [
+              -152.7887,
+              70.8973
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2261.jpg"
+          ]
+        }
+      ],
+      "evidence": [
+        "IMG_2263.jpg",
+        "IMG_2264.jpg",
+        "IMG_2265.jpg",
+        "IMG_2273.jpg",
+        "IMG_2274.jpg",
+        "IMG_2275.jpg"
+      ],
+      "confidence": "photographed",
+      "basis": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges. 17 November 2026: lowered from 0.65 m to 0.15 m, the low rounded kerb at the foot of the planted bed in IMG_2274, IMG_2264 and IMG_2468 (task cervantes-lane-edges, independent review).",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": [
+        {
+          "id": "cervantes-junction-north-patio",
+          "rise": [
+            0.4,
+            0.5
+          ],
+          "confidence": "low",
+          "from_": "the lower junction paving",
+          "model": "built",
+          "photos": [
+            "IMG_2358.jpg",
+            "IMG_2367.jpg",
+            "IMG_2359.jpg",
+            "IMG_2369.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cervantes_patio_walls.json:cervantes-patio-south-1",
+      "name": "Cervantes · south patio wall 1",
+      "kind": "wall",
+      "points": [
+        [
+          -184.291,
+          77.0879
+        ],
+        [
+          -177.4542,
+          73.0126
+        ]
+      ],
+      "areas": [
+        "cervantes"
+      ],
+      "heightM": 0.65,
+      "thicknessM": 0.2,
+      "lengthM": 7.96,
+      "grossFaceM2": 5.17,
+      "openings": [],
+      "routeOpenings": [
+        {
+          "name": "Calle Elena junction",
+          "ring": [
+            [
+              -146.1600483748589,
+              53.31928173973561
+            ],
+            [
+              -143.99995162514114,
+              52.06071826026439
+            ],
+            [
+              -163.66995162514112,
+              18.300718260264386
+            ],
+            [
+              -165.83004837485888,
+              19.559281739735614
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2262.jpg",
+            "IMG_2265.jpg"
+          ]
+        },
+        {
+          "name": "Calle Elena junction",
+          "ring": [
+            [
+              -138.1832478615131,
+              85.21703231823045
+            ],
+            [
+              -138.9851935157356,
+              89.1822080529973
+            ],
+            [
+              -139.00428651467584,
+              89.31062215701456
+            ],
+            [
+              -139.00995736534307,
+              89.44032399266771
+            ],
+            [
+              -139.0021448961361,
+              89.56991446316603
+            ],
+            [
+              -138.98093338034633,
+              89.6979956730174
+            ],
+            [
+              -138.9465516270999,
+              89.8231860071602
+            ],
+            [
+              -138.899370513188,
+              89.944135034478
+            ],
+            [
+              -134.549370513188,
+              99.58413503447798
+            ],
+            [
+              -132.270629486812,
+              98.555864965522
+            ],
+            [
+              -136.45496116482892,
+              89.28300120090519
+            ],
+            [
+              -135.6348064842644,
+              85.22779194700271
+            ],
+            [
+              -135.61693077862367,
+              85.11144927107738
+            ],
+            [
+              -135.61007774295192,
+              84.99394099479139
+            ],
+            [
+              -135.61430814518485,
+              84.87630909949691
+            ],
+            [
+              -135.62958447306903,
+              84.75959666271318
+            ],
+            [
+              -135.65577126679443,
+              84.64483860884327
+            ],
+            [
+              -135.6926363201574,
+              84.53305253218716
+            ],
+            [
+              -135.73985273960312,
+              84.42522967362578
+            ],
+            [
+              -135.79700184288956,
+              84.32232613098908
+            ],
+            [
+              -152.60700184288953,
+              57.15232613098909
+            ],
+            [
+              -154.0561,
+              58.0488
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2262.jpg",
+            "IMG_2265.jpg"
+          ]
+        },
+        {
+          "name": "Front-door approach between lawns",
+          "ring": [
+            [
+              -148.0887,
+              68.3973
+            ],
+            [
+              -148.1178,
+              68.3426
+            ],
+            [
+              -148.5596,
+              67.6284
+            ],
+            [
+              -153.2113,
+              70.1027
+            ],
+            [
+              -152.7887,
+              70.8973
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2261.jpg"
+          ]
+        }
+      ],
+      "evidence": [
+        "IMG_2263.jpg",
+        "IMG_2264.jpg",
+        "IMG_2265.jpg",
+        "IMG_2273.jpg",
+        "IMG_2274.jpg",
+        "IMG_2275.jpg"
+      ],
+      "confidence": "photographed",
+      "basis": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": [
+        {
+          "id": "cervantes-junction-north-patio",
+          "rise": [
+            0.4,
+            0.5
+          ],
+          "confidence": "low",
+          "from_": "the lower junction paving",
+          "model": "built",
+          "photos": [
+            "IMG_2358.jpg",
+            "IMG_2367.jpg",
+            "IMG_2359.jpg",
+            "IMG_2369.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cervantes_patio_walls.json:cervantes-patio-south-2",
+      "name": "Cervantes · low kerb along the near Elena lawn",
+      "kind": "kerb",
+      "points": [
+        [
+          -157.968,
+          61.397
+        ],
+        [
+          -153.84,
+          58.937
+        ]
+      ],
+      "areas": [
+        "cervantes"
+      ],
+      "heightM": 0.15,
+      "thicknessM": 0.2,
+      "lengthM": 4.81,
+      "grossFaceM2": 0.72,
+      "openings": [],
+      "routeOpenings": [
+        {
+          "name": "Calle Elena junction",
+          "ring": [
+            [
+              -146.1600483748589,
+              53.31928173973561
+            ],
+            [
+              -143.99995162514114,
+              52.06071826026439
+            ],
+            [
+              -163.66995162514112,
+              18.300718260264386
+            ],
+            [
+              -165.83004837485888,
+              19.559281739735614
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2262.jpg",
+            "IMG_2265.jpg"
+          ]
+        },
+        {
+          "name": "Calle Elena junction",
+          "ring": [
+            [
+              -138.1832478615131,
+              85.21703231823045
+            ],
+            [
+              -138.9851935157356,
+              89.1822080529973
+            ],
+            [
+              -139.00428651467584,
+              89.31062215701456
+            ],
+            [
+              -139.00995736534307,
+              89.44032399266771
+            ],
+            [
+              -139.0021448961361,
+              89.56991446316603
+            ],
+            [
+              -138.98093338034633,
+              89.6979956730174
+            ],
+            [
+              -138.9465516270999,
+              89.8231860071602
+            ],
+            [
+              -138.899370513188,
+              89.944135034478
+            ],
+            [
+              -134.549370513188,
+              99.58413503447798
+            ],
+            [
+              -132.270629486812,
+              98.555864965522
+            ],
+            [
+              -136.45496116482892,
+              89.28300120090519
+            ],
+            [
+              -135.6348064842644,
+              85.22779194700271
+            ],
+            [
+              -135.61693077862367,
+              85.11144927107738
+            ],
+            [
+              -135.61007774295192,
+              84.99394099479139
+            ],
+            [
+              -135.61430814518485,
+              84.87630909949691
+            ],
+            [
+              -135.62958447306903,
+              84.75959666271318
+            ],
+            [
+              -135.65577126679443,
+              84.64483860884327
+            ],
+            [
+              -135.6926363201574,
+              84.53305253218716
+            ],
+            [
+              -135.73985273960312,
+              84.42522967362578
+            ],
+            [
+              -135.79700184288956,
+              84.32232613098908
+            ],
+            [
+              -152.60700184288953,
+              57.15232613098909
+            ],
+            [
+              -154.0561,
+              58.0488
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2262.jpg",
+            "IMG_2265.jpg"
+          ]
+        },
+        {
+          "name": "Front-door approach between lawns",
+          "ring": [
+            [
+              -148.0887,
+              68.3973
+            ],
+            [
+              -148.1178,
+              68.3426
+            ],
+            [
+              -148.5596,
+              67.6284
+            ],
+            [
+              -153.2113,
+              70.1027
+            ],
+            [
+              -152.7887,
+              70.8973
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2261.jpg"
+          ]
+        }
+      ],
+      "evidence": [
+        "IMG_2262.jpg",
+        "IMG_2263.jpg",
+        "IMG_2264.jpg",
+        "IMG_2265.jpg",
+        "IMG_2273.jpg",
+        "IMG_2274.jpg",
+        "IMG_2275.jpg",
+        "IMG_2286.jpg",
+        "IMG_2328.jpg"
+      ],
+      "confidence": "photographed",
+      "basis": "Low white rounded kerb between the Cervantes ramp and the near Elena lawn, from the lawns' west wall (CALLE ELENA sign) to the lawn's north-east corner at the foot drain, where it turns into the lane kerb along Elena south: IMG_2262, IMG_2286 and IMG_2328 show it a little higher than the ramp beside it with the lawn level with its top. 17 November 2026: lowered from the 0.65 m wall first drawn here to 0.15 m and carried east to 0.15 m short of the lawn corner, where the lawn's own kerb along Elena south takes over (Dave). Height read by eye against the 0.4 m ramp tiles; line unchanged.",
+      "placement": "disputed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": [
+        {
+          "id": "cervantes-junction-north-patio",
+          "rise": [
+            0.4,
+            0.5
+          ],
+          "confidence": "low",
+          "from_": "the lower junction paving",
+          "model": "built",
+          "photos": [
+            "IMG_2358.jpg",
+            "IMG_2367.jpg",
+            "IMG_2359.jpg",
+            "IMG_2369.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cervantes_patio_walls.json:cervantes-patio-south-2-west",
+      "name": "Cervantes · south patio wall 2, west of the Elena lawn wall",
+      "kind": "wall",
+      "points": [
+        [
+          -165.6815,
+          65.995
+        ],
+        [
+          -162.264,
+          63.955
+        ]
+      ],
+      "areas": [
+        "cervantes"
+      ],
+      "heightM": 0.65,
+      "thicknessM": 0.2,
+      "lengthM": 3.98,
+      "grossFaceM2": 2.59,
+      "openings": [],
+      "routeOpenings": [
+        {
+          "name": "Calle Elena junction",
+          "ring": [
+            [
+              -146.1600483748589,
+              53.31928173973561
+            ],
+            [
+              -143.99995162514114,
+              52.06071826026439
+            ],
+            [
+              -163.66995162514112,
+              18.300718260264386
+            ],
+            [
+              -165.83004837485888,
+              19.559281739735614
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2262.jpg",
+            "IMG_2265.jpg"
+          ]
+        },
+        {
+          "name": "Calle Elena junction",
+          "ring": [
+            [
+              -138.1832478615131,
+              85.21703231823045
+            ],
+            [
+              -138.9851935157356,
+              89.1822080529973
+            ],
+            [
+              -139.00428651467584,
+              89.31062215701456
+            ],
+            [
+              -139.00995736534307,
+              89.44032399266771
+            ],
+            [
+              -139.0021448961361,
+              89.56991446316603
+            ],
+            [
+              -138.98093338034633,
+              89.6979956730174
+            ],
+            [
+              -138.9465516270999,
+              89.8231860071602
+            ],
+            [
+              -138.899370513188,
+              89.944135034478
+            ],
+            [
+              -134.549370513188,
+              99.58413503447798
+            ],
+            [
+              -132.270629486812,
+              98.555864965522
+            ],
+            [
+              -136.45496116482892,
+              89.28300120090519
+            ],
+            [
+              -135.6348064842644,
+              85.22779194700271
+            ],
+            [
+              -135.61693077862367,
+              85.11144927107738
+            ],
+            [
+              -135.61007774295192,
+              84.99394099479139
+            ],
+            [
+              -135.61430814518485,
+              84.87630909949691
+            ],
+            [
+              -135.62958447306903,
+              84.75959666271318
+            ],
+            [
+              -135.65577126679443,
+              84.64483860884327
+            ],
+            [
+              -135.6926363201574,
+              84.53305253218716
+            ],
+            [
+              -135.73985273960312,
+              84.42522967362578
+            ],
+            [
+              -135.79700184288956,
+              84.32232613098908
+            ],
+            [
+              -152.60700184288953,
+              57.15232613098909
+            ],
+            [
+              -154.0561,
+              58.0488
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2262.jpg",
+            "IMG_2265.jpg"
+          ]
+        },
+        {
+          "name": "Front-door approach between lawns",
+          "ring": [
+            [
+              -148.0887,
+              68.3973
+            ],
+            [
+              -148.1178,
+              68.3426
+            ],
+            [
+              -148.5596,
+              67.6284
+            ],
+            [
+              -153.2113,
+              70.1027
+            ],
+            [
+              -152.7887,
+              70.8973
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2261.jpg"
+          ]
+        }
+      ],
+      "evidence": [
+        "IMG_2263.jpg",
+        "IMG_2264.jpg",
+        "IMG_2265.jpg",
+        "IMG_2273.jpg",
+        "IMG_2274.jpg",
+        "IMG_2275.jpg"
+      ],
+      "confidence": "photographed",
+      "basis": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges. 17 November 2026: split at the north end of the Elena lawns' west wall; this western part, in front of the houses, is unchanged and still open (cervantes-kerb-walls-height). 17 November 2026: trimmed to the stretch in front of the house (registry part5 north face); east of the house corner it is replaced by the photographed 2.2 m patio wall with a door (data/lane_walls.json cervantes-elena-patio-front-wall).",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": [
+        {
+          "id": "cervantes-junction-north-patio",
+          "rise": [
+            0.4,
+            0.5
+          ],
+          "confidence": "low",
+          "from_": "the lower junction paving",
+          "model": "built",
+          "photos": [
+            "IMG_2358.jpg",
+            "IMG_2367.jpg",
+            "IMG_2359.jpg",
+            "IMG_2369.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cervantes_patio_walls.json:cervantes-patio-south-3",
+      "name": "Cervantes · south patio wall 3",
+      "kind": "wall",
+      "points": [
+        [
+          -152.0297,
+          57.8573
+        ],
+        [
+          -142.8979,
+          52.4139
+        ]
+      ],
+      "areas": [
+        "cervantes"
+      ],
+      "heightM": 0.65,
+      "thicknessM": 0.2,
+      "lengthM": 10.63,
+      "grossFaceM2": 6.91,
+      "openings": [],
+      "routeOpenings": [
+        {
+          "name": "Calle Elena junction",
+          "ring": [
+            [
+              -146.1600483748589,
+              53.31928173973561
+            ],
+            [
+              -143.99995162514114,
+              52.06071826026439
+            ],
+            [
+              -163.66995162514112,
+              18.300718260264386
+            ],
+            [
+              -165.83004837485888,
+              19.559281739735614
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2262.jpg",
+            "IMG_2265.jpg"
+          ]
+        },
+        {
+          "name": "Calle Elena junction",
+          "ring": [
+            [
+              -138.1832478615131,
+              85.21703231823045
+            ],
+            [
+              -138.9851935157356,
+              89.1822080529973
+            ],
+            [
+              -139.00428651467584,
+              89.31062215701456
+            ],
+            [
+              -139.00995736534307,
+              89.44032399266771
+            ],
+            [
+              -139.0021448961361,
+              89.56991446316603
+            ],
+            [
+              -138.98093338034633,
+              89.6979956730174
+            ],
+            [
+              -138.9465516270999,
+              89.8231860071602
+            ],
+            [
+              -138.899370513188,
+              89.944135034478
+            ],
+            [
+              -134.549370513188,
+              99.58413503447798
+            ],
+            [
+              -132.270629486812,
+              98.555864965522
+            ],
+            [
+              -136.45496116482892,
+              89.28300120090519
+            ],
+            [
+              -135.6348064842644,
+              85.22779194700271
+            ],
+            [
+              -135.61693077862367,
+              85.11144927107738
+            ],
+            [
+              -135.61007774295192,
+              84.99394099479139
+            ],
+            [
+              -135.61430814518485,
+              84.87630909949691
+            ],
+            [
+              -135.62958447306903,
+              84.75959666271318
+            ],
+            [
+              -135.65577126679443,
+              84.64483860884327
+            ],
+            [
+              -135.6926363201574,
+              84.53305253218716
+            ],
+            [
+              -135.73985273960312,
+              84.42522967362578
+            ],
+            [
+              -135.79700184288956,
+              84.32232613098908
+            ],
+            [
+              -152.60700184288953,
+              57.15232613098909
+            ],
+            [
+              -154.0561,
+              58.0488
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2262.jpg",
+            "IMG_2265.jpg"
+          ]
+        },
+        {
+          "name": "Front-door approach between lawns",
+          "ring": [
+            [
+              -148.0887,
+              68.3973
+            ],
+            [
+              -148.1178,
+              68.3426
+            ],
+            [
+              -148.5596,
+              67.6284
+            ],
+            [
+              -153.2113,
+              70.1027
+            ],
+            [
+              -152.7887,
+              70.8973
+            ]
+          ],
+          "evidence": [
+            "IMG_2260.jpg",
+            "IMG_2261.jpg"
+          ]
+        }
+      ],
+      "evidence": [
+        "IMG_2263.jpg",
+        "IMG_2264.jpg",
+        "IMG_2265.jpg",
+        "IMG_2273.jpg",
+        "IMG_2274.jpg",
+        "IMG_2275.jpg"
+      ],
+      "confidence": "photographed",
+      "basis": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": [
+        {
+          "id": "cervantes-junction-north-patio",
+          "rise": [
+            0.4,
+            0.5
+          ],
+          "confidence": "low",
+          "from_": "the lower junction paving",
+          "model": "built",
+          "photos": [
+            "IMG_2358.jpg",
+            "IMG_2367.jpg",
+            "IMG_2359.jpg",
+            "IMG_2369.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cervantes_north_patios.json:cervantes-north-partition-east",
+      "name": "Cervantes north · east visible patio partition",
+      "kind": "wall",
+      "points": [
+        [
+          -152.26,
+          54.55
+        ],
+        [
+          -154.052,
+          51.543
+        ]
+      ],
+      "areas": [
+        "cervantes"
+      ],
+      "heightM": 1.6,
+      "thicknessM": 0.18,
+      "lengthM": 3.5,
+      "grossFaceM2": 5.6,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2368.jpg",
+        "IMG_2369.jpg",
+        "IMG_2359.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "Roof photographs support transverse white partitions and climbing planting. Approximate plan positions anchored to the aerial and registry row 6265201UF1366N_part4; endpoints and heights estimated, about 1–2 m plan uncertainty. Wall ends stop before occluded junctions; gaps do not assert a photographed gate.",
+      "placement": "unreviewed",
+      "solvedCameras": [
+        "IMG_2359.jpg"
+      ],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": [
+        {
+          "id": "cervantes-junction-north-patio",
+          "rise": [
+            0.4,
+            0.5
+          ],
+          "confidence": "low",
+          "from_": "the lower junction paving",
+          "model": "built",
+          "photos": [
+            "IMG_2358.jpg",
+            "IMG_2367.jpg",
+            "IMG_2359.jpg",
+            "IMG_2369.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cervantes_north_patios.json:cervantes-north-partition-middle",
+      "name": "Cervantes north · middle visible patio partition",
+      "kind": "wall",
+      "points": [
+        [
+          -157.311,
+          57.794
+        ],
+        [
+          -159.564,
+          54.014
+        ]
+      ],
+      "areas": [
+        "cervantes"
+      ],
+      "heightM": 1.65,
+      "thicknessM": 0.18,
+      "lengthM": 4.4,
+      "grossFaceM2": 7.26,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2368.jpg",
+        "IMG_2369.jpg",
+        "IMG_2359.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "Roof photographs support transverse white partitions and climbing planting. Approximate plan positions anchored to the aerial and registry row 6265201UF1366N_part4; endpoints and heights estimated, about 1–2 m plan uncertainty. Wall ends stop before occluded junctions; gaps do not assert a photographed gate.",
+      "placement": "unreviewed",
+      "solvedCameras": [
+        "IMG_2359.jpg"
+      ],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": [
+        {
+          "id": "cervantes-junction-north-patio",
+          "rise": [
+            0.4,
+            0.5
+          ],
+          "confidence": "low",
+          "from_": "the lower junction paving",
+          "model": "built",
+          "photos": [
+            "IMG_2358.jpg",
+            "IMG_2367.jpg",
+            "IMG_2359.jpg",
+            "IMG_2369.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cervantes_north_patios.json:cervantes-north-partition-west",
+      "name": "Cervantes north · west visible patio partition",
+      "kind": "wall",
+      "points": [
+        [
+          -162.895,
+          61.122
+        ],
+        [
+          -164.84,
+          57.858
+        ]
+      ],
+      "areas": [
+        "cervantes"
+      ],
+      "heightM": 1.55,
+      "thicknessM": 0.18,
+      "lengthM": 3.8,
+      "grossFaceM2": 5.89,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2368.jpg",
+        "IMG_2369.jpg",
+        "IMG_2359.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "Roof photographs support transverse white partitions and climbing planting. Approximate plan positions anchored to the aerial and registry row 6265201UF1366N_part4; endpoints and heights estimated, about 1–2 m plan uncertainty. Wall ends stop before occluded junctions; gaps do not assert a photographed gate.",
+      "placement": "unreviewed",
+      "solvedCameras": [
+        "IMG_2359.jpg"
+      ],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": [
+        {
+          "id": "cervantes-junction-north-patio",
+          "rise": [
+            0.4,
+            0.5
+          ],
+          "confidence": "low",
+          "from_": "the lower junction paving",
+          "model": "built",
+          "photos": [
+            "IMG_2358.jpg",
+            "IMG_2367.jpg",
+            "IMG_2359.jpg",
+            "IMG_2369.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+      "name": "Cervantes east south · bounded white patio frontage",
+      "kind": "wall",
+      "points": [
+        [
+          -142.3997,
+          52.664
+        ],
+        [
+          -126.7656,
+          43.3465
+        ]
+      ],
+      "areas": [
+        "elena"
+      ],
+      "heightM": 1.85,
+      "thicknessM": 0.2,
+      "lengthM": 18.2,
+      "grossFaceM2": 33.67,
+      "openings": [
+        {
+          "id": "cervantes-east-south-door",
+          "name": "Cervantes east south · closed brown curved-coping garden door",
+          "at": [
+            -140.9394,
+            51.7937
+          ],
+          "width": 0.95,
+          "height": 1.75,
+          "copingWidth": 1.45,
+          "copingRise": 0.22,
+          "evidence": [
+            "IMG_2366.jpg",
+            "IMG_2360.jpg"
+          ],
+          "trust": "The roof photos show the closed brown leaf and curved white coping on the lane wall, before the cane pergola. Door location near the Elena end and dimensions are estimated; no opening or invented step is added."
+        }
+      ],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2366.jpg",
+        "IMG_2360.jpg",
+        "IMG_2197.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "Photographs support the white lane-side wall, closed curved-coping timber door and cane-roofed pergola, south of Cervantes east of Elena. Plan positions are estimated against the georeferenced Esri aerial, checked street axis and unchanged registry frontage 6265601UF1366N_part1 (roughly 1-2 m uncertainty); heights and dimensions are estimates. Camera pins locate the north-row roof, not these patios. The bounded fragment stops where foliage/foreshortening obscure the continuation; its ends do not assert gates.",
+      "placement": "unreviewed",
+      "solvedCameras": [
+        "IMG_2360.jpg"
+      ],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "elena_east_patios.json:elena-east-patios-west-wall",
+      "name": "Elena east patios · garden wall behind the second hedged bed",
+      "kind": "wall",
+      "points": [
+        [
+          -144.3,
+          47.36
+        ],
+        [
+          -143.202,
+          49.243
+        ]
+      ],
+      "areas": [
+        "elena"
+      ],
+      "heightM": 1.85,
+      "thicknessM": 0.26,
+      "lengthM": 2.18,
+      "grossFaceM2": 4.03,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2197.jpg",
+        "IMG_2199.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "IMG_2199 shows the white garden wall continuing south of the closed timber door with a bougainvillea trunk trained on it; IMG_2197, looking along Cervantes, shows the same wall behind the second hedged bed up to the lane frontage. Continues the existing elena-north-garden-wall line from its door surround and turns at the bed's Cervantes end. Height matches the existing garden wall (estimated).",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "elena_east_patios.json:elena-east-patios-cervantes-wall",
+      "name": "Elena east patios · white wall behind the plumbago bed on Cervantes",
+      "kind": "wall",
+      "points": [
+        [
+          -143.202,
+          49.243
+        ],
+        [
+          -137.94,
+          46.105
+        ]
+      ],
+      "areas": [
+        "cervantes",
+        "elena"
+      ],
+      "heightM": 1.9,
+      "thicknessM": 0.2,
+      "lengthM": 6.13,
+      "grossFaceM2": 11.64,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2356.jpg",
+        "IMG_2197.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "IMG_2356 shows a continuous white wall standing behind the raised plumbago bed on the north side of Cervantes east of Elena, with bougainvillea over it and no gate; IMG_2197 shows unbroken planting and white walls along that frontage. Drawn 2.0 m north of the Cervantes axis, behind the existing kerb and hedge, from the garden wall corner to the registry face of 6265401UF1366N_part3, where the house front takes over. Line and height estimated; no opening is photographed, so it is solid.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": [
+        {
+          "id": "cervantes-junction-north-patio",
+          "rise": [
+            0.4,
+            0.5
+          ],
+          "confidence": "low",
+          "from_": "the lower junction paving",
+          "model": "built",
+          "photos": [
+            "IMG_2358.jpg",
+            "IMG_2367.jpg",
+            "IMG_2359.jpg",
+            "IMG_2369.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elena_east_patios.json:elena-east-patios-divider-south",
+      "name": "Elena east patios · dividing wall between the Cervantes patio and the pergola patio",
+      "kind": "wall",
+      "points": [
+        [
+          -140.604,
+          42.782
+        ],
+        [
+          -145.328,
+          45.597
+        ]
+      ],
+      "areas": [
+        "elena"
+      ],
+      "heightM": 1.85,
+      "thicknessM": 0.2,
+      "lengthM": 5.5,
+      "grossFaceM2": 10.17,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2199.jpg"
+      ],
+      "confidence": "inferred",
+      "basis": "No photo shows this wall. Its line is inferred from two independent sources: the georeferenced aerial (Esri World Imagery, public/map/ground.jpg) shows a white wall top with a dark shadow band 0.7 m north of it across the patio band, within about 0.15 m of the line from the party-wall jog in the registry face of 6265401UF1366N_part3 at (-140.2, 42.8), parallel to the Cervantes wall (whose aerial pattern matches its modelled line to 0.03 m with the same shadow width, so the heights are similar). It meets the garden wall 1.38 m north of the closed door's centre; IMG_2199 shows that stretch of garden wall but not the divider. The last 1.2 m to the garden wall is under foliage on the aerial. Height estimated to match the garden wall; no door seen; not measured through a solved camera.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "elena_north.json:elena-north-patio-east",
+      "name": "Elena north · patio wall, east side",
+      "kind": "wall",
+      "points": [
+        [
+          -158.53269275458544,
+          27.89617935098349
+        ],
+        [
+          -153.69,
+          36.44
+        ]
+      ],
+      "areas": [
+        "elena"
+      ],
+      "heightM": 1.85,
+      "thicknessM": 0.2,
+      "lengthM": 9.82,
+      "grossFaceM2": 18.17,
+      "openings": [
+        {
+          "at": [
+            -155.5629194719012,
+            33.13566316326331
+          ],
+          "width": 0.9,
+          "height": 1.8
+        }
+      ],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2363.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "Full-height lane-facing privacy wall and timber door in IMG_2363, with a raised shaped door head. Height 1.85 m / door 1.8 m estimated from relative door proportions (about 0.2–0.3 m uncertainty), not measured. Gateway junction snapped to the existing return. The short former 0.95 m gap to the window return is closed as estimated frontage continuity: foliage hides the exact connection; it is not source-registered.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "elena_north.json:elena-north-garden-wall",
+      "name": "Elena north · garden wall and closed timber door",
+      "kind": "wall",
+      "points": [
+        [
+          -151.43,
+          35.13
+        ],
+        [
+          -144.3,
+          47.36
+        ]
+      ],
+      "areas": [
+        "elena"
+      ],
+      "heightM": 1.85,
+      "thicknessM": 0.26,
+      "lengthM": 14.16,
+      "grossFaceM2": 26.19,
+      "openings": [
+        {
+          "at": [
+            -144.6318881162498,
+            46.79071645697966
+          ],
+          "width": 0.95,
+          "height": 1.95
+        }
+      ],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2199.jpg",
+        "IMG_2200.jpg",
+        "IMG_2201.jpg"
+      ],
+      "confidence": "photographed",
+      "basis": "White garden wall behind the planted beds, closed timber door at the east end of their intervening path (IMG_2199-2201). Alignment follows existing bed backs; dimensions estimated, not surveyed. Ends at the photographed door surround; no continuation into the patios is claimed.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "elena_north.json:elena-north-window-return",
+      "name": "Elena north · barred window wall at the north end of the bed",
+      "kind": "wall",
+      "points": [
+        [
+          -153.69,
+          36.44
+        ],
+        [
+          -151.43,
+          35.13
+        ]
+      ],
+      "areas": [
+        "elena"
+      ],
+      "heightM": 2.0,
+      "thicknessM": 0.18,
+      "lengthM": 2.61,
+      "grossFaceM2": 5.22,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2200.jpg",
+        "IMG_2201.jpg"
+      ],
+      "confidence": "photographed",
+      "basis": "Short transverse white wall with a barred dark window faces south along Elena (IMG_2200/2201). Approximate placement against the existing magnolia bed; no unseen enclosure is inferred.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "elena_north.json:elena-north-patio-divider",
+      "name": "Elena north · visible front-patio divider to house",
+      "kind": "wall",
+      "points": [
+        [
+          -155.9726283171307,
+          32.41282587637534
+        ],
+        [
+          -153.42543481803332,
+          30.966677309145865
+        ]
+      ],
+      "areas": [
+        "elena"
+      ],
+      "heightM": 1.85,
+      "thicknessM": 0.2,
+      "lengthM": 2.93,
+      "grossFaceM2": 5.42,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2363.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "One cross-patio divider is visible above the table and blue tarp in IMG_2363, joining the lane-facing wall to the house frontage. The bounded model fragment is fitted to the unchanged wall and registry face (about 0.5–1 m plan uncertainty); height estimated to match the privacy wall. No repeated concealed partitions are inferred.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "lane_walls.json:elena-south-lawn-west-wall",
+      "name": "Elena south · white wall with two brown doors west of the junction lawns",
+      "kind": "wall",
+      "points": [
+        [
+          -157.968,
+          61.397
+        ],
+        [
+          -153.268,
+          68.61
+        ],
+        [
+          -149.02,
+          76.58
+        ]
+      ],
+      "areas": [
+        "elena"
+      ],
+      "heightM": 2.2,
+      "thicknessM": 0.25,
+      "lengthM": 17.64,
+      "grossFaceM2": 38.81,
+      "openings": [
+        {
+          "id": "elena-south-bed-door",
+          "at": [
+            -154.009,
+            67.244
+          ],
+          "width": 0.95,
+          "height": 2.0
+        },
+        {
+          "id": "elena-south-lawn-door",
+          "at": [
+            -152.341,
+            70.092
+          ],
+          "width": 1.05,
+          "height": 2.0
+        }
+      ],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2261.jpg",
+        "IMG_2358.jpg",
+        "IMG_2260.jpg",
+        "IMG_2330.jpg",
+        "ELENA-ROOF-2026-11-17.jpg"
+      ],
+      "confidence": "photographed",
+      "basis": "IMG_2261 and IMG_2260 look south down the Elena lawns and IMG_2358 looks down on them from a roof north of Cervantes: a plain white wall about 2.2 m high, a little taller than its two brown doors, runs along the whole west side of both lawns behind a narrow bed with trained bougainvillea, from the Cervantes corner to the wall with the cypresses at the far end, which the model draws as the north face of registry 6265801UF1366N_part5. One door is at the end of the tiled cross-path between the lawns and the other in the bed a few metres north; IMG_2330 shows both from the lane. The doors stand where the red-tread sills of data/door_sills.json already are (elena-lawn-door-sill, elena-bed-door-sill), and the wall's outer face runs through them, with the lawn door about 0.4 m further back as the far door in IMG_2261 is set in. North of the bed door the wall keeps about 0.6 m outside the traced edge of lawn 1 (data/frontage_divisions.json) and meets the existing Cervantes south patio wall (data/cervantes_patio_walls.json, cervantes-patio-south-2). Heights by eye against the doors; the line is about 1 m. 17 November 2026 (task elena-junction-lawns-roof, refitted after review): measured through two solved roof cameras, ELENA-ROOF-2026-11-17.jpg and IMG_2358 re-solved with its parapet, and checked on the Esri aerial. The photographed wall foot runs straight from the Cervantes south wall for about 8.6 m past the bed door (ten foot points from both cameras on one line, 0.09 m rms); the first trace had it 1.4 m further west at the north end with a 1.1 m jog. The wall is now that straight run, ending on the Cervantes south wall line, then the existing far length to the cypress wall (registry 6265801UF1366N_part5); the bed door and its sill sit on the straight run where both photos put the door, and the lawn door stays where the cross path ends. Foot, kerb and path points fit at 0.10 m rms (worst 0.19 m); the two held-out points on the far length, 20-24 m out, are 0.28 and 0.34 m on the lawn side, left open. See docs/reviews/elena-junction-lawns-roof.",
+      "placement": "disputed",
+      "solvedCameras": [
+        "IMG_2358.jpg",
+        "ELENA-ROOF-2026-11-17.jpg"
+      ],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "lane_walls.json:elena-south-mouth-patio-wall",
+      "name": "Elena south · low patio wall on the east side of the lane mouth",
+      "kind": "wall",
+      "points": [
+        [
+          -152.03,
+          57.86
+        ],
+        [
+          -149.7,
+          61.55
+        ]
+      ],
+      "areas": [
+        "elena"
+      ],
+      "heightM": 1.1,
+      "thicknessM": 0.22,
+      "lengthM": 4.36,
+      "grossFaceM2": 4.8,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2358.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "IMG_2358, from the roof north of Cervantes looking south-south-east down Calle Elena, shows on the left of the lane mouth a paved patio in front of a house door hung with bougainvillea, closed off from the lane by a low white wall about waist high with a hedge and the lamp post outside it. Built from the end of the existing Cervantes south wall east of Elena (data/cervantes_patio_walls.json, cervantes-patio-south-3) to the north-west corner of registry 6265601UF1366N_part1, about 1.4 m east of the lane centreline. Height by eye; whether it has a gate is not visible. The Google satellite view (Imagery © Google 2026, zoom 21, fetched 16 November 2026) shows a white line along the west edge of the red-tiled patio, which supports the lane-side line; in IMG_2358 the wall that shows clearly is the one across the patio's north side.",
+      "placement": "unreviewed",
+      "solvedCameras": [
+        "IMG_2358.jpg"
+      ],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "lane_walls.json:jorge-garden-east-wall",
+      "name": "Calle Jorge · tall patio wall with lantern and meter box at the east side of the cactus garden",
+      "kind": "wall",
+      "points": [
+        [
+          -49.69,
+          139.17
+        ],
+        [
+          -48.76,
+          140.77
+        ]
+      ],
+      "areas": [
+        "seaward-lanes"
+      ],
+      "heightM": 2.6,
+      "thicknessM": 0.3,
+      "lengthM": 1.85,
+      "grossFaceM2": 4.81,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2230.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "IMG_2230, from about 114 m along the lane looking west, shows behind the hedged planters and a patio with a chair a tall white wall facing east with a wall lantern and a meter box on it, the candelabra tree rising behind it. Its lane end is about 10 degrees right of the lane's vanishing point, which with the camera pin puts it about 103 to 106 m along. The Esri aerial shows a white wall there, at 104.3 m, from the lane edge back to the house corner of 6364401UF1366S_part2, with the garden lawn ending against it and its shadow falling on the lawn. So the open garden ends here, not at 108.4 m as first estimated from the pins: the planter now runs from this wall (data/jorge_lane.json boundary gap, kerb and lawn end at 104.4 m). Built from the house corner to the lane edge just behind the garden kerb, 2.6 m above the path by eye against the 0.7 m planter and hedge in front of it.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "lane_walls.json:jorge-patio-wall-117",
+      "name": "Calle Jorge · patio wall from the house corner to the planter at 117.5 m",
+      "kind": "wall",
+      "points": [
+        [
+          -38.36,
+          132.38
+        ],
+        [
+          -37.55,
+          133.76
+        ]
+      ],
+      "areas": [],
+      "heightM": 2.2,
+      "thicknessM": 0.25,
+      "lengthM": 1.6,
+      "grossFaceM2": 3.52,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [],
+      "confidence": "inferred",
+      "basis": "Inferred from the aerial. Esri and Google show white walls at right angles to the lane on the north side where the registry houses step back (111.1, 117.7 and 124.3 m), each from the house corner forward to the planters at the lane edge. This one is the east side of the planted patio between the house rows, from the corner of 6364401UF1366S_part7 to the planter. Height taken from the photographed patio wall at 104.3 m (IMG_2230), less a little; no photo shows it. The one at 111.1 m is not built: the brick entrances in the planter, placed from photo pins, would put it between the first entrance and its patio (see discrepancy jorge-planter-gaps-vs-aerial).",
+      "placement": "disputed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "lane_walls.json:jorge-patio-wall-124",
+      "name": "Calle Jorge · patio wall between the last patio and the plinth lawn at 124.5 m",
+      "kind": "wall",
+      "points": [
+        [
+          -32.35,
+          128.78
+        ],
+        [
+          -31.5,
+          130.26
+        ]
+      ],
+      "areas": [],
+      "heightM": 2.2,
+      "thicknessM": 0.25,
+      "lengthM": 1.71,
+      "grossFaceM2": 3.75,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [],
+      "confidence": "inferred",
+      "basis": "Inferred from the aerial: a white wall on the line of the east face of 6364401UF1366S_part7 runs from the lane edge back to the plain lawn wall (guillermoWest in data/jorge_lane.json), the west side of the plinth lawn. Only the stretch from the house corner to the planter is missing in the model; the rest is the house face. Height as jorge-patio-wall-117.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "lane_walls.json:cervantes-north-garden-wall-west",
+      "name": "Cervantes west · white garden wall on the north side, Dalí exit to the Elena garden door",
+      "kind": "wall",
+      "points": [
+        [
+          -184.05,
+          73.59
+        ],
+        [
+          -154.748,
+          56.127
+        ]
+      ],
+      "areas": [
+        "cervantes"
+      ],
+      "heightM": 1.7,
+      "thicknessM": 0.22,
+      "lengthM": 34.11,
+      "grossFaceM2": 57.99,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2274.jpg",
+        "IMG_2468.jpg",
+        "IMG_2275.jpg",
+        "IMG_2264.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "Between the Dalí exit and the Elena junction the north side of the lane is a white garden wall about 1.5-1.8 m high, with bougainvillea over it and banana leaves behind, set back behind a planted bed (IMG_2274 looking north-east, IMG_2468 and IMG_2264 looking west, IMG_2275 at the exit). The model had open paving here up to the houses 6 m back. The line, 2.0 m off the centreline, is where the three photographed patio partitions behind it end (data/cervantes_north_patios.json) and the garden door's wall stands (data/cervantes_garden_door.json), which it meets at its west end. West end at the exit planter. No door asserted: none shows from the lane, though the patios behind must have one. 17 November 2026: east end moved 1.0 m west with the garden door wall it meets (data/cervantes_garden_door.json, task elena-junction-lawns-roof).",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": [
+        {
+          "id": "cervantes-junction-north-patio",
+          "rise": [
+            0.4,
+            0.5
+          ],
+          "confidence": "low",
+          "from_": "the lower junction paving",
+          "model": "built",
+          "photos": [
+            "IMG_2358.jpg",
+            "IMG_2367.jpg",
+            "IMG_2359.jpg",
+            "IMG_2369.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lane_walls.json:cervantes-south-garden-wall-alberto",
+      "name": "Cervantes · tall white wall on the south side, east of the Elena patios to Calle Alberto",
+      "kind": "wall",
+      "points": [
+        [
+          -126.76,
+          43.35
+        ],
+        [
+          -114.04,
+          35.76
+        ]
+      ],
+      "areas": [
+        "cervantes"
+      ],
+      "heightM": 2.1,
+      "thicknessM": 0.2,
+      "lengthM": 14.81,
+      "grossFaceM2": 31.11,
+      "openings": [
+        {
+          "id": "cervantes-south-wall-alberto-door-west",
+          "at": [
+            -122.2,
+            40.63
+          ],
+          "width": 0.9,
+          "height": 1.9
+        },
+        {
+          "id": "cervantes-south-wall-alberto-door",
+          "at": [
+            -116.62,
+            37.3
+          ],
+          "width": 0.9,
+          "height": 1.9
+        }
+      ],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2795.jpg",
+        "IMG_2450.jpg",
+        "IMG_2794.jpg",
+        "IMG_2449.jpg",
+        "IMG_2448.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "The south side of the lane from the Elena patios to the Calle Alberto crossing is one tall plain white wall, above head height, with bougainvillea and jade at its foot: IMG_2795, IMG_2450 and IMG_2794 look west along it, IMG_2449 shows the CALLE DE MIGUEL plaque on it and IMG_2448 the ALBERTO plaque on its end at the crossing. It carries on the line of the existing wall east of Elena (data/cervantes_east_south_patios.json), which ended at 78.2 m, to the corner at about 93 m where it turns south along Calle Alberto (the ALBERTO plaque face in IMG_2448; the registry block's east face is at 93.0 m). Two brown doors in IMG_2794: one close to the camera at about 90 m, one in a capped pier opening about 6 m further west, at about 83.5 m; each is good to about 2 m. The gardens behind it are not traced.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": [
+        {
+          "id": "cervantes-junction-north-patio",
+          "rise": [
+            0.4,
+            0.5
+          ],
+          "confidence": "low",
+          "from_": "the lower junction paving",
+          "model": "built",
+          "photos": [
+            "IMG_2358.jpg",
+            "IMG_2367.jpg",
+            "IMG_2359.jpg",
+            "IMG_2369.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lane_walls.json:cervantes-elena-patio-front-wall",
+      "name": "Cervantes south · patio wall with a brown door between the house and the Elena lawns' west wall",
+      "kind": "wall",
+      "points": [
+        [
+          -162.264,
+          63.955
+        ],
+        [
+          -157.968,
+          61.397
+        ]
+      ],
+      "areas": [
+        "cervantes"
+      ],
+      "heightM": 1.9,
+      "thicknessM": 0.25,
+      "lengthM": 5.0,
+      "grossFaceM2": 9.5,
+      "openings": [
+        {
+          "id": "cervantes-elena-patio-front-door",
+          "at": [
+            -160.293,
+            62.633
+          ],
+          "width": 0.95,
+          "height": 1.8
+        }
+      ],
+      "routeOpenings": [],
+      "evidence": [
+        "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2467.jpg",
+        "IMG_2264.jpg",
+        "IMG_2262.jpg"
+      ],
+      "confidence": "photographed",
+      "basis": "ELENA-ROOF-2026-11-17.jpg looks down on a tall white wall facing Cervantes with a closed brown door, between the CALLE ELENA corner of the lawns' west wall and the house west of it, closing the patio with the parasol; IMG_2467 and IMG_2264 show it from the lane, a white wall a little taller than its door, and IMG_2262 its east end beside the CALLE ELENA face. It stands on the existing Cervantes south wall line, from the house corner (registry 6265801UF1366N_part5 corner 32, 0.23 m off the line) to the west wall's north end. The door head, cast through the solved roof camera at 2.0 m, is 0.95 m wide, 2.37 m along the wall from its west end and within about 0.2 m of the line. Height 1.9 m: the wall top casts at 1.84-1.95 m through the solved roof camera and IMG_2467 and IMG_2264 agree (structure review of 18 November; first built at 2.2 m). Built 17 November 2026 (task elena-junction-lawns-roof); it replaces the 0.65 m wall drawn here. Door 1.8 m, its head just under the coping as photographed.",
+      "placement": "disputed",
+      "solvedCameras": [
+        "ELENA-ROOF-2026-11-17.jpg"
+      ],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": [
+        {
+          "id": "cervantes-junction-north-patio",
+          "rise": [
+            0.4,
+            0.5
+          ],
+          "confidence": "low",
+          "from_": "the lower junction paving",
+          "model": "built",
+          "photos": [
+            "IMG_2358.jpg",
+            "IMG_2367.jpg",
+            "IMG_2359.jpg",
+            "IMG_2369.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lane_walls.json:elena-south-cypress-wall",
+      "name": "Elena south · white wall with two cypresses at the far end of the lawns",
+      "kind": "wall",
+      "points": [
+        [
+          -149.411,
+          75.847
+        ],
+        [
+          -145.04,
+          73.661
+        ]
+      ],
+      "areas": [
+        "elena"
+      ],
+      "heightM": 2.0,
+      "thicknessM": 0.25,
+      "lengthM": 4.89,
+      "grossFaceM2": 9.77,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2358.jpg",
+        "IMG_2367.jpg",
+        "IMG_2261.jpg",
+        "IMG_2330.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "The far lawn ends at a plain white wall about 2 m high, with vines trained along its top and two cypresses at its foot, running from the lawns' west wall to the lane kerb: face-on in IMG_2261 and IMG_2330 from the junction, and from the Elena 24 roof in ELENA-ROOF-2026-11-17, IMG_2358 and IMG_2367; the Esri aerial has the lawn's green ending at a dark wall line. Built 0.35 m beyond the far lawn's traced edge, from the west wall to 1.0 m off the lane centreline (just short of the kerb). Its line is estimated: 22-24 m from the roof cameras the depth is good to about 1 m, and no ground camera near it is solved (photo request elena-south-cypress-wall-gate). Before this the model had open paving here and drew the north face of registry 6265801UF1366N_part5 as the boundary. 18 November 2026.",
+      "placement": "disputed",
+      "solvedCameras": [
+        "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2358.jpg"
+      ],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "lane_walls.json:elena-north-corner-patio-wall",
+      "name": "Elena north mouth · white patio wall with the CALLE DE ELENA plaque and a brown double door, round the west corner onto Cervantes",
+      "kind": "wall",
+      "points": [
+        [
+          -150.01,
+          48.72
+        ],
+        [
+          -148.065,
+          52.061
+        ],
+        [
+          -152.6,
+          54.85
+        ]
+      ],
+      "areas": [
+        "cervantes"
+      ],
+      "heightM": 2.8,
+      "thicknessM": 0.25,
+      "lengthM": 9.19,
+      "grossFaceM2": 25.73,
+      "openings": [
+        {
+          "id": "elena-north-corner-patio-door",
+          "at": [
+            -148.85,
+            50.72
+          ],
+          "width": 0.8,
+          "height": 2.7
+        }
+      ],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_2455.jpg",
+        "IMG_2800.jpg",
+        "IMG_2965.jpg",
+        "IMG_2966.jpg",
+        "IMG_2967.jpg",
+        "IMG_2799.jpg",
+        "IMG_2514.jpg",
+        "IMG_2686.jpg",
+        "IMG_2969.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "Encloses the walled patio between the house (registry 6265201UF1366N_part4, corner -150.01, 48.72), Elena north and Cervantes. IMG_2455, IMG_2800 and IMG_2965-2967 (on Cervantes, looking west) show the white wall facing the Elena north lane behind the raised fan-palm bed, with the CALLE DE ELENA tiles from the corner to a brown double door, the lantern on the Cervantes face at the corner, and about 2 m of plain wall north of the door to the house; IMG_2463 and IMG_2360 show it turning west along Cervantes behind the hedge to the Elena 24 garden door. The Elena face continues the registry house-front line (2.24 m west of the Elena north centreline); the Cervantes face runs 2.07 m north of the Cervantes axis to the garden-door wall (2.0 m) and the patio partition (2.14 m). Structure review (docs/reviews/elena-north-corner/STRUCTURE-REVIEW.md), rough camera fits of IMG_2455, IMG_2800, IMG_2966 and IMG_2967 to the bed corner agreeing to about 0.2 m: top about 2.8 m (coping 2.65 m in IMG_2966, wall above the 2.5-2.85 m door head), door about 0.8 m wide between its pilasters with its centre 1.85 m from the corner. Estimated to about 0.5 m in plan; no solved camera sees it.",
+      "placement": "disputed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": [
+        {
+          "id": "cervantes-junction-north-patio",
+          "rise": [
+            0.4,
+            0.5
+          ],
+          "confidence": "low",
+          "from_": "the lower junction paving",
+          "model": "built",
+          "photos": [
+            "IMG_2358.jpg",
+            "IMG_2367.jpg",
+            "IMG_2359.jpg",
+            "IMG_2369.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paseo_wall.json:paseo-retaining-wall",
+      "name": "Paseo · sandstone retaining wall and mesh fence",
+      "kind": "context",
+      "points": [
+        [
+          -111.25,
+          230.76
+        ],
+        [
+          -108.81,
+          229.02
+        ],
+        [
+          -106.22,
+          227.48
+        ],
+        [
+          -103.48,
+          226.13
+        ],
+        [
+          -100.76,
+          224.77
+        ],
+        [
+          -98.41,
+          223.22
+        ],
+        [
+          -96.2,
+          221.19
+        ],
+        [
+          -93.99,
+          219.16
+        ],
+        [
+          -91.78,
+          217.13
+        ],
+        [
+          -89.43,
+          215.26
+        ],
+        [
+          -87.07,
+          213.38
+        ],
+        [
+          -85.83,
+          212.53
+        ],
+        [
+          -84.62,
+          211.63
+        ],
+        [
+          -83.44,
+          210.69
+        ],
+        [
+          -82.33,
+          209.67
+        ],
+        [
+          -81.3,
+          208.56
+        ],
+        [
+          -80.33,
+          207.43
+        ],
+        [
+          -79.36,
+          206.27
+        ],
+        [
+          -78.39,
+          205.06
+        ],
+        [
+          -77.76,
+          203.57
+        ],
+        [
+          -76.99,
+          202.19
+        ],
+        [
+          -76.18,
+          200.85
+        ],
+        [
+          -75.34,
+          199.55
+        ],
+        [
+          -74.47,
+          198.28
+        ],
+        [
+          -73.44,
+          197.18
+        ],
+        [
+          -72.41,
+          196.09
+        ],
+        [
+          -71.38,
+          194.99
+        ],
+        [
+          -70.21,
+          194.05
+        ],
+        [
+          -69.05,
+          193.09
+        ],
+        [
+          -67.86,
+          192.26
+        ],
+        [
+          -66.58,
+          191.43
+        ],
+        [
+          -65.29,
+          190.62
+        ],
+        [
+          -63.99,
+          189.8
+        ],
+        [
+          -62.66,
+          189.03
+        ],
+        [
+          -61.38,
+          188.19
+        ],
+        [
+          -60.12,
+          187.34
+        ],
+        [
+          -58.86,
+          186.49
+        ],
+        [
+          -57.67,
+          185.57
+        ],
+        [
+          -55.49,
+          183.51
+        ],
+        [
+          -53.31,
+          181.45
+        ],
+        [
+          -51.13,
+          179.39
+        ],
+        [
+          -48.95,
+          177.32
+        ],
+        [
+          -46.78,
+          175.26
+        ],
+        [
+          -44.6,
+          173.2
+        ],
+        [
+          -42.66,
+          170.88
+        ],
+        [
+          -41.12,
+          168.15
+        ],
+        [
+          -39.37,
+          165.63
+        ],
+        [
+          -37.36,
+          163.39
+        ],
+        [
+          -35.18,
+          161.33
+        ],
+        [
+          -32.85,
+          159.43
+        ],
+        [
+          -30.5,
+          157.55
+        ],
+        [
+          -28.25,
+          155.56
+        ],
+        [
+          -26.18,
+          153.62
+        ],
+        [
+          -23.73,
+          151.81
+        ],
+        [
+          -21.21,
+          150.07
+        ],
+        [
+          -18.94,
+          148.09
+        ],
+        [
+          -16.87,
+          145.92
+        ],
+        [
+          -14.8,
+          143.75
+        ],
+        [
+          -12.73,
+          141.58
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "paseo"
+      ],
+      "evidence": [
+        "IMG_2350.jpg",
+        "IMG_2349.jpg",
+        "IMG_2352.jpg",
+        "IMG_2354.jpg",
+        "IMG_2227.jpg",
+        "IMG_2298.jpg",
+        "IMG_2299.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Wall, fence and their order are clear in four ground photos; face line from the aerial, smoothed.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "paseo_wall.json:paseo-timber-edge",
+      "name": "Paseo · timber edge onto the beach",
+      "kind": "context",
+      "points": [
+        [
+          -110.38,
+          231.98
+        ],
+        [
+          -107.99,
+          230.28
+        ],
+        [
+          -105.51,
+          228.8
+        ],
+        [
+          -102.81,
+          227.47
+        ],
+        [
+          -100.01,
+          226.07
+        ],
+        [
+          -97.48,
+          224.4
+        ],
+        [
+          -95.19,
+          222.29
+        ],
+        [
+          -92.98,
+          220.26
+        ],
+        [
+          -90.81,
+          218.27
+        ],
+        [
+          -88.5,
+          216.43
+        ],
+        [
+          -86.16,
+          214.58
+        ],
+        [
+          -84.96,
+          213.75
+        ],
+        [
+          -83.7,
+          212.82
+        ],
+        [
+          -82.46,
+          211.83
+        ],
+        [
+          -81.27,
+          210.73
+        ],
+        [
+          -80.18,
+          209.56
+        ],
+        [
+          -79.19,
+          208.4
+        ],
+        [
+          -78.2,
+          207.22
+        ],
+        [
+          -77.1,
+          205.82
+        ],
+        [
+          -76.41,
+          204.23
+        ],
+        [
+          -75.69,
+          202.94
+        ],
+        [
+          -74.91,
+          201.64
+        ],
+        [
+          -74.09,
+          200.38
+        ],
+        [
+          -73.3,
+          199.22
+        ],
+        [
+          -72.35,
+          198.21
+        ],
+        [
+          -71.32,
+          197.12
+        ],
+        [
+          -70.36,
+          196.09
+        ],
+        [
+          -69.26,
+          195.21
+        ],
+        [
+          -68.14,
+          194.28
+        ],
+        [
+          -67.02,
+          193.5
+        ],
+        [
+          -65.77,
+          192.69
+        ],
+        [
+          -64.49,
+          191.89
+        ],
+        [
+          -63.21,
+          191.08
+        ],
+        [
+          -61.87,
+          190.31
+        ],
+        [
+          -60.55,
+          189.44
+        ],
+        [
+          -59.28,
+          188.58
+        ],
+        [
+          -57.98,
+          187.71
+        ],
+        [
+          -56.68,
+          186.69
+        ],
+        [
+          -54.46,
+          184.6
+        ],
+        [
+          -52.28,
+          182.54
+        ],
+        [
+          -50.1,
+          180.48
+        ],
+        [
+          -47.92,
+          178.41
+        ],
+        [
+          -45.75,
+          176.35
+        ],
+        [
+          -43.51,
+          174.23
+        ],
+        [
+          -41.42,
+          171.73
+        ],
+        [
+          -39.85,
+          168.95
+        ],
+        [
+          -38.19,
+          166.56
+        ],
+        [
+          -36.29,
+          164.44
+        ],
+        [
+          -34.19,
+          162.46
+        ],
+        [
+          -31.91,
+          160.6
+        ],
+        [
+          -29.53,
+          158.7
+        ],
+        [
+          -27.24,
+          156.67
+        ],
+        [
+          -25.22,
+          154.77
+        ],
+        [
+          -22.86,
+          153.03
+        ],
+        [
+          -20.29,
+          151.25
+        ],
+        [
+          -17.9,
+          149.17
+        ],
+        [
+          -15.78,
+          146.96
+        ],
+        [
+          -13.71,
+          144.79
+        ],
+        [
+          -11.64,
+          142.62
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "paseo"
+      ],
+      "evidence": [
+        "IMG_2350.jpg",
+        "IMG_2351.jpg",
+        "IMG_2352.jpg",
+        "IMG_2354.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. The timber edge shows in every paseo photo along the wall; board size estimated.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "frontage_divisions.json:cervantes-west-planting",
+      "name": "Cervantes · planting along low wall",
+      "kind": "context",
+      "points": [
+        [
+          -172.0,
+          63.9
+        ],
+        [
+          -182.8,
+          70.4
+        ],
+        [
+          -182.0,
+          71.8
+        ],
+        [
+          -171.2,
+          65.3
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "cervantes"
+      ],
+      "evidence": [
+        "IMG_2273.jpg",
+        "IMG_2274.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Built from 2 photos; no reviewer has yet said it is clearly photographed. authored photo/map interpretation",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "frontage_divisions.json:cervantes-front-patio",
+      "name": "Cervantes / Elena · paved front enclosure",
+      "kind": "context",
+      "points": [
+        [
+          -155.37,
+          75.01
+        ],
+        [
+          -155.36,
+          75.02
+        ],
+        [
+          -155.36,
+          75.02
+        ],
+        [
+          -155.35,
+          75.03
+        ],
+        [
+          -154.62,
+          74.59
+        ],
+        [
+          -156.57,
+          71.21
+        ],
+        [
+          -157.27,
+          71.62
+        ],
+        [
+          -157.27,
+          71.63
+        ],
+        [
+          -157.26,
+          71.63
+        ],
+        [
+          -157.26,
+          71.64
+        ],
+        [
+          -157.26,
+          71.65
+        ],
+        [
+          -157.26,
+          71.66
+        ],
+        [
+          -157.26,
+          71.66
+        ],
+        [
+          -157.26,
+          71.67
+        ],
+        [
+          -157.26,
+          71.68
+        ],
+        [
+          -157.26,
+          71.69
+        ],
+        [
+          -157.27,
+          71.69
+        ],
+        [
+          -157.27,
+          71.7
+        ],
+        [
+          -157.28,
+          71.71
+        ],
+        [
+          -157.28,
+          71.71
+        ],
+        [
+          -157.29,
+          71.72
+        ],
+        [
+          -157.29,
+          71.72
+        ],
+        [
+          -157.3,
+          71.73
+        ],
+        [
+          -157.79,
+          72.03
+        ],
+        [
+          -155.83,
+          75.25
+        ],
+        [
+          -155.46,
+          75.0
+        ],
+        [
+          -155.46,
+          75.0
+        ],
+        [
+          -155.45,
+          75.0
+        ],
+        [
+          -155.44,
+          74.99
+        ],
+        [
+          -155.44,
+          74.99
+        ],
+        [
+          -155.43,
+          74.99
+        ],
+        [
+          -155.42,
+          74.99
+        ],
+        [
+          -155.41,
+          74.99
+        ],
+        [
+          -155.41,
+          74.99
+        ],
+        [
+          -155.4,
+          74.99
+        ],
+        [
+          -155.39,
+          75.0
+        ],
+        [
+          -155.38,
+          75.0
+        ],
+        [
+          -155.38,
+          75.0
+        ],
+        [
+          -155.37,
+          75.01
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "cervantes"
+      ],
+      "evidence": [
+        "IMG_2260.jpg",
+        "IMG_2261.jpg"
+      ],
+      "confidence": "inferred",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Provisional paved enclosure from registry and satellite; the photos do not confirm its use or boundary.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "coastal_gate.json:dali-coastal-solid-wall",
+      "name": "Dalí · tall white coastal wall",
+      "kind": "context",
+      "points": [
+        [
+          -123.8,
+          232.5
+        ],
+        [
+          -116.8,
+          224.4
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "dali"
+      ],
+      "evidence": [
+        "IMG_2284.jpg",
+        "IMG_2296.jpg",
+        "IMG_2297.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Wall, mesh and gate arrangement clear in three ground photos; position about 1-2 m.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "middle_pool.json:middle-pool-west-planter",
+      "name": "Middle pool · raised planter wall with hedge, west path",
+      "kind": "context",
+      "points": [
+        [
+          -138.19,
+          90.17
+        ],
+        [
+          -134.3,
+          98.79
+        ],
+        [
+          -136.53,
+          100.14
+        ],
+        [
+          -137.05,
+          99.28
+        ],
+        [
+          -135.75,
+          98.5
+        ],
+        [
+          -139.29,
+          90.67
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "middle-pool"
+      ],
+      "evidence": [
+        "IMG_2332.jpg",
+        "IMG_2333.jpg",
+        "IMG_2331.jpg",
+        "IMG_2245.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Planter wall and hedge clear in four photos from several sides; bed depth estimated.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "picasso_service_road.json:picasso-boundary-wall",
+      "name": "picasso boundary wall",
+      "kind": "context",
+      "points": [
+        [
+          -23.38,
+          43.9
+        ],
+        [
+          -30.13,
+          33.97
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "picasso"
+      ],
+      "evidence": [
+        "IMG_2345.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Built from 1 photo; no reviewer has yet said it is clearly photographed. bounded single-photo estimate",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "middle_pool_north.json:middle-pool-north-door-wall",
+      "name": "Middle pool · bounded garden wall with brown door",
+      "kind": "context",
+      "points": [
+        [
+          -141.75,
+          87.1
+        ],
+        [
+          -138.2,
+          84.94
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "middle-pool"
+      ],
+      "evidence": [
+        "IMG_2332.jpg",
+        "IMG_2195.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Wall face and closed door clear in two photos; length estimated.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "eva_walled_lawn.json:eva-walled-lawn",
+      "name": "Calle Eva · walled lawn and espalier corner",
+      "kind": "context",
+      "points": [
+        [
+          -116.73,
+          78.82
+        ],
+        [
+          -115.42,
+          81.07
+        ],
+        [
+          -112.01,
+          79.07
+        ],
+        [
+          -113.33,
+          76.83
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "eva"
+      ],
+      "evidence": [
+        "IMG_2339.jpg",
+        "IMG_2336.jpg",
+        "IMG_2337.jpg",
+        "IMG_2338.jpg",
+        "IMG_2503.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Wall faces, lawn and bollard clear in IMG_2339; return length estimated.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "jorge_lane.json:jorge-lane-verge",
+      "name": "Calle Jorge lawns, garden kerb, planter walls with thresholds, hedges and wall planting (photographed east stretch)",
+      "kind": "context",
+      "points": [
+        [
+          -59.52,
+          150.64
+        ],
+        [
+          -42.21,
+          140.62
+        ],
+        [
+          -22.92,
+          129.45
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "seaward-lanes"
+      ],
+      "evidence": [
+        "IMG_2182.jpg",
+        "IMG_2183.jpg",
+        "IMG_2184.jpg",
+        "IMG_2229.jpg",
+        "IMG_2230.jpg",
+        "IMG_2231.jpg",
+        "IMG_2232.jpg",
+        "IMG_2233.jpg",
+        "IMG_2234.jpg",
+        "IMG_2235.jpg",
+        "IMG_2280.jpg",
+        "IMG_2594.jpg",
+        "IMG_2596.jpg",
+        "IMG_2597.jpg",
+        "IMG_2696.jpg",
+        "IMG_2697.jpg",
+        "IMG_2698.jpg",
+        "IMG_2764.jpg",
+        "IMG_2765.jpg",
+        "IMG_2773.jpg",
+        "IMG_2774.jpg",
+        "IMG_2822.jpg",
+        "IMG_2823.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. IMG_2182, IMG_2229, IMG_2230, IMG_2233 and IMG_2234 show lawn from the path to the house fronts on the south side, an open garden lawn with a white-painted kerb on the north side, and white planters about 0.7 m high with clipped hedges, two brick thresholds and number niches in front of the patios. The lawn outlines follow the registry houses and the aerial; kerb, planter and threshold stations are read from the pins, good to about 2 m. The digits on the niche tiles are not legible and are not modelled.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "jorge_lane.json:jorge-lane-guillermo-planter",
+      "name": "Lantana planter wall along Calle Guillermo behind the Calle de Jorge plinth",
+      "kind": "context",
+      "points": [
+        [
+          -20.88,
+          122.49
+        ],
+        [
+          -31.9,
+          103.45
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "main-pool"
+      ],
+      "evidence": [
+        "IMG_2597.jpg",
+        "IMG_2773.jpg",
+        "IMG_2774.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. IMG_2773 and IMG_2774 show a neat, straight white planter wall about a metre high along the east side of Calle Guillermo north of the Jorge junction, with a low carpet of lantana on top and a clump of yucca heads behind it; IMG_2597 shows it behind the plinth lawn. Its top is set one metre above the lane beside it (Dave, 2026-11-12: about one metre). It is set at the east edge of the mapped Guillermo line, 22 m long; its ends are not measured.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "jorge_lane.json:jorge-lane-guillermo-west",
+      "name": "West of Calle Guillermo: plain lawn wall, patio wall, hedged planters, lamp posts and brick border",
+      "kind": "context",
+      "points": [
+        [
+          -36.34,
+          122.2
+        ],
+        [
+          -28.09,
+          115.92
+        ],
+        [
+          -35.76,
+          102.68
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "main-pool"
+      ],
+      "evidence": [
+        "IMG_2773.jpg",
+        "IMG_2774.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. IMG_2773 and IMG_2774 show a plain white wall along the north side of the plinth lawn, its top falling from about 3.9 m to about 2.6 m at the lane, a no-dogs sign near its end, then hedged planters with gateways, a taller patio wall behind, two lamp posts and a brick border along the lane. On 12 November Dave agreed to treat the east portion of registry part 6364401UF1366S_part7, behind that wall, as an open walled patio on the photo evidence, without a measured check (data/registry_corrections.json). Positions are good to about 1 to 1.5 m; where the roofed west block ends is not seen in any photo. Dave has not yet looked at the result.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "jorge_lane.json:jorge-lane-gateway",
+      "name": "Calle Jorge gateway at the end of the flagged path, with its walls and cross-path",
+      "kind": "context",
+      "points": [
+        [
+          -114.18,
+          179.98
+        ],
+        [
+          -119.37,
+          182.99
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "dali"
+      ],
+      "evidence": [
+        "IMG_2280.jpg",
+        "IMG_2696.jpg",
+        "IMG_2697.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. IMG_2280 and IMG_2697, enlarged, show a white gateway with a flat capped lintel, open green iron leaves, bougainvillea over it, a white wall with a hedge to its left and a flagged cross-path in front. It is seen only from 25 m away, so its size (built 1.25 m wide by 2.1 m high, measured against the round tree to about a quarter) and station (the aerial's white mark at 28 to 29 m) are estimates.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "seafront_fence.json:guillermo-ramp-wall",
+      "name": "White wall beside the paseo ramp",
+      "kind": "context",
+      "points": [
+        [
+          -11.1,
+          139.58
+        ],
+        [
+          -9.49,
+          137.95
+        ],
+        [
+          -8.57,
+          137.02
+        ],
+        [
+          -7.66,
+          136.09
+        ],
+        [
+          -6.74,
+          135.16
+        ],
+        [
+          -5.78,
+          134.18
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "main-pool"
+      ],
+      "evidence": [
+        "IMG_2226.jpg",
+        "IMG_2227.jpg",
+        "IMG_2484.jpg",
+        "IMG_2485.jpg",
+        "IMG_2488.jpg",
+        "IMG_2600.jpg",
+        "IMG_2601.jpg",
+        "IMG_2602.jpg",
+        "IMG_2604.jpg",
+        "IMG_2609.jpg",
+        "IMG_2610.jpg",
+        "IMG_2630.jpg",
+        "IMG_2631.jpg",
+        "IMG_2759.jpg",
+        "IMG_2760.jpg",
+        "IMG_2766.jpg",
+        "IMG_2767.jpg",
+        "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+        "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+        "IMG_2761.jpg",
+        "IMG_2763.jpg"
+      ],
+      "confidence": "inferred",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Dave, 2026-11-19: the boundary west of the gate is a fence, not a wall. IMG_2759, IMG_2763 and IMG_2766 show a green rigid-mesh fence on a low plinth with the hedge inside it, and a short white wing beside the gate pier; its line follows the paseo edge, and plinth and fence heights are by eye.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "elena_south_beds.json:elena-south-east-bed-mouth",
+      "name": "Elena south · hedge bed in front of the corner patio wall",
+      "kind": "context",
+      "points": [
+        [
+          -152.32,
+          58.09
+        ],
+        [
+          -150.08,
+          61.71
+        ],
+        [
+          -149.87,
+          61.57
+        ],
+        [
+          -152.11,
+          57.96
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "elena"
+      ],
+      "evidence": [
+        "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2358.jpg",
+        "IMG_2367.jpg",
+        "IMG_2330.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Clipped hedge bed between the Elena south tiles and the corner house's patio wall and front, photographed from the Elena 24 roof (IMG_2358, IMG_2367, ELENA-ROOF-2026-11-17) and the lane (IMG_2330); width from the solved roof camera, ends estimated.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "cervantes_lane_edges.json:cervantes-north-bed-west",
+      "name": "Cervantes west · planted bed between the lane kerb and the north garden wall",
+      "kind": "context",
+      "points": [
+        [
+          -183.54,
+          74.45
+        ],
+        [
+          -155.02,
+          57.45
+        ],
+        [
+          -155.47,
+          56.69
+        ],
+        [
+          -183.99,
+          73.68
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "cervantes"
+      ],
+      "evidence": [
+        "IMG_2274.jpg",
+        "IMG_2468.jpg",
+        "IMG_2264.jpg",
+        "IMG_2467.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Planted bed at grade behind the low lane kerb, in front of the new garden wall, photographed in IMG_2274, IMG_2468, IMG_2264 and IMG_2467; width set by the kerb and the wall, plants by eye.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "cervantes_lane_edges.json:cervantes-east-north-brick-planter",
+      "name": "Cervantes east · low brick-coped planter wall by the seat pillar",
+      "kind": "context",
+      "points": [
+        [
+          -91.85,
+          19.86
+        ],
+        [
+          -89.45,
+          18.43
+        ],
+        [
+          -89.68,
+          18.04
+        ],
+        [
+          -92.09,
+          19.47
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "cervantes"
+      ],
+      "evidence": [
+        "IMG_2442.jpg",
+        "IMG_2443.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Low brick-coped white wall with a hedge behind it beside the seat pillar in IMG_2442 and IMG_2443; extent estimated.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "cervantes_lane_edges.json:cervantes-east-north-thuja-planter",
+      "name": "Cervantes east end · white planter wall with a thuja hedge",
+      "kind": "context",
+      "points": [
+        [
+          -89.45,
+          18.43
+        ],
+        [
+          -79.14,
+          12.28
+        ],
+        [
+          -79.55,
+          11.6
+        ],
+        [
+          -89.86,
+          17.74
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "cervantes"
+      ],
+      "evidence": [
+        "IMG_2444.jpg",
+        "IMG_2443.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. White planter wall with a tall thuja hedge to the end of the lane in IMG_2444 and IMG_2443; height by eye.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1",
+      "name": "Cervantes to Alberto · narrow bed at the foot of the south wall",
+      "kind": "context",
+      "points": [
+        [
+          -126.79,
+          42.9
+        ],
+        [
+          -122.84,
+          40.54
+        ],
+        [
+          -122.69,
+          40.79
+        ],
+        [
+          -126.64,
+          43.14
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "cervantes"
+      ],
+      "evidence": [
+        "IMG_2449.jpg",
+        "IMG_2450.jpg",
+        "IMG_2794.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Narrow jade and bougainvillea bed at the foot of the south wall in IMG_2449, IMG_2450 and IMG_2794; broken at the two doors, width to the wall face.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2",
+      "name": "Cervantes to Alberto · narrow bed at the foot of the south wall",
+      "kind": "context",
+      "points": [
+        [
+          -121.98,
+          40.03
+        ],
+        [
+          -117.25,
+          37.21
+        ],
+        [
+          -117.1,
+          37.46
+        ],
+        [
+          -121.83,
+          40.28
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "cervantes"
+      ],
+      "evidence": [
+        "IMG_2449.jpg",
+        "IMG_2450.jpg",
+        "IMG_2794.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Narrow jade and bougainvillea bed at the foot of the south wall in IMG_2449, IMG_2450 and IMG_2794; broken at the two doors, width to the wall face.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3",
+      "name": "Cervantes to Alberto · narrow bed at the foot of the south wall",
+      "kind": "context",
+      "points": [
+        [
+          -116.39,
+          36.7
+        ],
+        [
+          -114.33,
+          35.47
+        ],
+        [
+          -114.18,
+          35.72
+        ],
+        [
+          -116.25,
+          36.95
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "cervantes"
+      ],
+      "evidence": [
+        "IMG_2449.jpg",
+        "IMG_2450.jpg",
+        "IMG_2794.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Narrow jade and bougainvillea bed at the foot of the south wall in IMG_2449, IMG_2450 and IMG_2794; broken at the two doors, width to the wall face.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "cervantes_lane_edges.json:cervantes-elena-corner-bed",
+      "name": "Cervantes at the Elena north mouth · raised hedge and plumbago bed along the corner patio wall",
+      "kind": "context",
+      "points": [
+        [
+          -151.86,
+          55.63
+        ],
+        [
+          -147.39,
+          52.96
+        ],
+        [
+          -147.9,
+          52.11
+        ],
+        [
+          -152.37,
+          54.77
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "cervantes"
+      ],
+      "evidence": [
+        "IMG_2455.jpg",
+        "IMG_2800.jpg",
+        "IMG_2965.jpg",
+        "IMG_2966.jpg",
+        "IMG_2967.jpg",
+        "IMG_2799.jpg",
+        "IMG_2514.jpg",
+        "IMG_2686.jpg",
+        "IMG_2463.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. The raised hedge and plumbago bed along Cervantes in IMG_2455, IMG_2800, IMG_2463: face confirmed in line with the tree-bed kerb corner (structure review), kerb height from the tile count in IMG_2800; extents estimated to about 0.5 m.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "elena_north_corner.json:elena-north-corner-bed",
+      "name": "Elena north mouth · raised fan-palm bed under the CALLE DE ELENA wall",
+      "kind": "context",
+      "points": [
+        [
+          -147.4,
+          52.96
+        ],
+        [
+          -149.9,
+          48.66
+        ],
+        [
+          -148.72,
+          47.97
+        ],
+        [
+          -146.22,
+          52.27
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "cervantes"
+      ],
+      "evidence": [
+        "IMG_2455.jpg",
+        "IMG_2800.jpg",
+        "IMG_2965.jpg",
+        "IMG_2966.jpg",
+        "IMG_2967.jpg",
+        "IMG_2799.jpg",
+        "IMG_2514.jpg",
+        "IMG_2686.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. The raised fan-palm bed up the Elena north mouth, frontal in IMG_2800 and IMG_2967: back on the registry house-front line, face at the 1.45 m lane paving (three tile columns and margins in IMG_2686); unsolved cameras, about 0.3-0.5 m.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "picasso_lawn_wall.json:picasso-lawn-wall",
+      "name": "White wall along Calle Pintor Picasso enclosing the big-pool lawn",
+      "kind": "context",
+      "points": [
+        [
+          5.41,
+          78.23
+        ],
+        [
+          14.99,
+          86.22
+        ],
+        [
+          24.5,
+          96.17
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "main-pool"
+      ],
+      "evidence": [
+        "IMG_2764.jpg",
+        "IMG_2765.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. IMG_2764 and IMG_3077 show a plain white wall with climbers on the east side of the lawn, running back to the pool building. Its line is the lawn edge on the aerial, and it ends at the corner by Barraka. The 30 m run that turned back across the lawn to the gate is removed (Dave, 2026-11-19): no photo shows it, and the stretch from the corner to the sea railing is green bars. Height is by eye.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "cervantes_garden_door.json:cervantes-garden-door",
+      "name": "Cervantes junction · raised garden door and private patio",
+      "kind": "context",
+      "points": [
+        [
+          -152.6,
+          54.85
+        ],
+        [
+          -154.75,
+          56.13
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "cervantes",
+        "elena"
+      ],
+      "evidence": [
+        "IMG_2327.jpg",
+        "IMG_2328.jpg",
+        "IMG_2287.jpg",
+        "IMG_2196.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Close ground photos from three angles (IMG_2196, IMG_2287, IMG_2327) show the three-riser flight, door frame and coping; sizes read to about 0.1 m, wall position within about 1.5 m. 17 Nov 2026: moved west along the lane (flight and ramp 2.0 m, door 1.0 m) so the foot drain meets the near lawn's kerb corner as IMG_2262 shows and the rise sits where the 2020-21 laser survey has it; position good to about 0.3-0.5 m, not yet measured through a solved ground camera.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "cervantes_garden_door.json:cervantes-junction-north-patio",
+      "name": "cervantes-junction-north-patio",
+      "kind": "context",
+      "points": [
+        [
+          -152.65,
+          54.76
+        ],
+        [
+          -154.8,
+          56.04
+        ],
+        [
+          -155.82,
+          54.32
+        ],
+        [
+          -153.68,
+          53.04
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "cervantes",
+        "elena"
+      ],
+      "evidence": [
+        "IMG_2358.jpg",
+        "IMG_2367.jpg",
+        "IMG_2359.jpg",
+        "IMG_2369.jpg"
+      ],
+      "confidence": "inferred",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. The roof photos show a tiled patio behind the door; its outline and level are inferred from the door sill (levels survey: low confidence).",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "raised_terraces.json:north-pool-west-terrace",
+      "name": "North pool · north-west raised terrace and tiled stair",
+      "kind": "context",
+      "points": [
+        [
+          -190.45,
+          24.6
+        ],
+        [
+          -190.25,
+          22.2
+        ],
+        [
+          -189.95,
+          20.0
+        ],
+        [
+          -189.55,
+          18.4
+        ],
+        [
+          -189.0,
+          17.2
+        ],
+        [
+          -188.1,
+          16.15
+        ],
+        [
+          -186.9,
+          15.1
+        ],
+        [
+          -184.8,
+          13.55
+        ],
+        [
+          -182.75,
+          12.25
+        ],
+        [
+          -181.3,
+          11.25
+        ],
+        [
+          -184.28,
+          9.32
+        ],
+        [
+          -187.71,
+          11.38
+        ],
+        [
+          -187.62,
+          11.53
+        ],
+        [
+          -187.5,
+          11.75
+        ],
+        [
+          -189.03,
+          12.63
+        ],
+        [
+          -191.57,
+          14.07
+        ],
+        [
+          -191.19,
+          14.76
+        ],
+        [
+          -193.54,
+          16.05
+        ],
+        [
+          -194.78,
+          16.74
+        ],
+        [
+          -194.47,
+          24.95
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "north-pool"
+      ],
+      "evidence": [
+        "IMG_2204.jpg",
+        "IMG_2206.jpg",
+        "IMG_2208.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. Six-riser flight, walls and terrace clear in three photos; plan position about 1.5 m.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "raised_terraces.json:north-pool-north-patios",
+      "name": "North pool · low northern patio plinths and white steps",
+      "kind": "context",
+      "points": [
+        [
+          -181.35,
+          8.43
+        ],
+        [
+          -180.27,
+          9.34
+        ],
+        [
+          -179.38,
+          9.9
+        ],
+        [
+          -176.3,
+          10.18
+        ],
+        [
+          -173.6,
+          9.93
+        ],
+        [
+          -169.0,
+          9.2
+        ],
+        [
+          -167.21,
+          8.97
+        ],
+        [
+          -164.8,
+          8.4
+        ],
+        [
+          -163.9,
+          3.39
+        ],
+        [
+          -164.15,
+          3.54
+        ],
+        [
+          -165.5,
+          1.3
+        ],
+        [
+          -167.3,
+          3.8
+        ],
+        [
+          -171.0,
+          3.9
+        ],
+        [
+          -174.62,
+          3.86
+        ],
+        [
+          -181.78,
+          8.14
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "north-pool"
+      ],
+      "evidence": [
+        "IMG_2204.jpg",
+        "IMG_2205.jpg",
+        "IMG_2207.jpg",
+        "IMG_2208.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. Re-traced 2026-11-15 through the solved IMG_2205 camera (IMG_2204 cross-check): plinth wall foot and its three white-step openings, continuous clipped hedges, patios running back to the house walls. Depth along the view is good to about 0.5-0.8 m; the step up to the porch fronts and the east end are estimated.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "raised_terraces.json:middle-pool-north-terrace",
+      "name": "Middle pool · bounded north raised patio",
+      "kind": "context",
+      "points": [
+        [
+          -134.0,
+          83.0
+        ],
+        [
+          -126.3,
+          82.1
+        ],
+        [
+          -126.55,
+          80.2
+        ],
+        [
+          -134.25,
+          81.1
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "middle-pool"
+      ],
+      "evidence": [
+        "IMG_2193.jpg",
+        "IMG_2194.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Built from 2 photos; no reviewer has yet said it is clearly photographed. authored photo/levels interpretation",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "raised_terraces.json:middle-pool-oleander-bed",
+      "name": "Middle pool · shallow oleander bed beside patio",
+      "kind": "context",
+      "points": [
+        [
+          -134.8,
+          105.25
+        ],
+        [
+          -130.6,
+          102.7
+        ],
+        [
+          -131.15,
+          101.8
+        ],
+        [
+          -135.35,
+          104.35
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "middle-pool"
+      ],
+      "evidence": [
+        "IMG_2246.jpg",
+        "IMG_2247.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Built from 2 photos; no reviewer has yet said it is clearly photographed. authored photo/levels interpretation",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "raised_terraces.json:middle-pool-curved-hedge-patio",
+      "name": "Middle pool · short uncertain curved hedge patio",
+      "kind": "context",
+      "points": [
+        [
+          -125.0,
+          81.3
+        ],
+        [
+          -123.8,
+          81.1
+        ],
+        [
+          -122.7,
+          80.7
+        ],
+        [
+          -121.65,
+          80.15
+        ],
+        [
+          -120.8,
+          79.55
+        ],
+        [
+          -121.7,
+          78.3
+        ],
+        [
+          -125.35,
+          79.8
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "middle-pool"
+      ],
+      "evidence": [
+        "IMG_2341.jpg"
+      ],
+      "confidence": "inferred",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. The wall is photographed, but where it stands is guessed (about 4 m): the photo GPS is off by 47 m.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "main_pool_lawn.json:lawn-white-rooms",
+      "name": "White walls, door and strelitzia bed on the main-pool lawn",
+      "kind": "context",
+      "points": [
+        [
+          -13.8,
+          128.6
+        ],
+        [
+          -13.8,
+          130.2
+        ],
+        [
+          -13.8,
+          131.1
+        ],
+        [
+          -13.8,
+          132.0
+        ],
+        [
+          -11.4,
+          132.0
+        ],
+        [
+          -8.5,
+          134.2
+        ],
+        [
+          -9.3,
+          135.2
+        ],
+        [
+          -10.5,
+          135.4
+        ],
+        [
+          -11.6,
+          134.8
+        ],
+        [
+          -12.0,
+          133.9
+        ],
+        [
+          -11.6,
+          128.4
+        ],
+        [
+          -11.1,
+          127.8
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "main-pool"
+      ],
+      "evidence": [
+        "IMG_2762.jpg",
+        "IMG_2763.jpg",
+        "IMG_2765.jpg",
+        "IMG_2759.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. IMG_2762 shows a white door wall and a strelitzia over a silver bush; IMG_2763 shows a curved white wall. The runs stop where each photo stops. Positions are good to about 4 m.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "ground_plan_north_pool.json:north-pool-west-gated-patio",
+      "name": "North pool · walled patio with two brown gates south of the west path",
+      "kind": "context",
+      "points": [
+        [
+          -183.14,
+          30.06
+        ],
+        [
+          -181.2,
+          32.96
+        ],
+        [
+          -187.0,
+          33.0
+        ],
+        [
+          -187.0,
+          29.3
+        ],
+        [
+          -184.0,
+          29.45
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "north-pool"
+      ],
+      "evidence": [
+        "IMG_2206.jpg",
+        "IMG_2208.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. The walls, gates and terracotta patio are photographed in IMG_2206 and IMG_2208 and measured on the wall planes through the solved camera: the west wall (x -187) with its 1.0 m gate, and the east wall running south-south-east through its 0.88 m gate. The walls' ends and the patio's north and south sides are estimated.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "plain_fronts.json:elena-24-south-patio",
+      "name": "elena 24 south patio",
+      "kind": "context",
+      "points": [
+        [
+          -159.5,
+          49.5
+        ],
+        [
+          -152.5,
+          49.5
+        ],
+        [
+          -152.5,
+          55.0
+        ],
+        [
+          -159.5,
+          55.0
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "elena"
+      ],
+      "evidence": [
+        "ELENA-ROOF-2026-11-17.jpg",
+        "IMG_2358.jpg",
+        "IMG_2367.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. The open blue-tiled patio below the Elena 24 roof is photographed straight down in ELENA-ROOF-2026-11-17.jpg, IMG_2358 and IMG_2367: no porch roof or balcony.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "plain_fronts.json:north-pool-gated-patio-walls",
+      "name": "north pool gated patio walls",
+      "kind": "context",
+      "points": [
+        [
+          -188.2,
+          28.6
+        ],
+        [
+          -179.0,
+          28.6
+        ],
+        [
+          -179.0,
+          33.0
+        ],
+        [
+          -188.2,
+          33.0
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "north-pool"
+      ],
+      "evidence": [
+        "IMG_2206.jpg",
+        "IMG_2208.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. IMG_2206 and IMG_2208 show these walls bare; the generated hedge runs are left out, and the walls themselves are now the photographed patio walls (ground_plan_north_pool.json north-pool-west-gated-patio).",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "north_pool_frontages.json:west-patio-gate-1",
+      "name": "west patio gate 1",
+      "kind": "context",
+      "points": [
+        [
+          -187.0,
+          31.08
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "north-pool"
+      ],
+      "evidence": [
+        "IMG_2206.jpg",
+        "IMG_2208.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Gate and raised capping in the west patio wall, measured on the wall plane through the solved IMG_2206 camera (1.0 m wide, top about 1.6 m).",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "north_pool_frontages.json:west-patio-gate-2",
+      "name": "west patio gate 2",
+      "kind": "context",
+      "points": [
+        [
+          -182.37,
+          31.22
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "north-pool"
+      ],
+      "evidence": [
+        "IMG_2206.jpg",
+        "IMG_2208.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Gate in the east patio wall, measured 0.88 m wide on the wall plane through the solved IMG_2206 camera.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "building:6265801UF1366N_part1",
+      "name": "Untraced enclosure 6265801UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          -155.42,
+          75.07
+        ],
+        [
+          -155.85,
+          75.36
+        ],
+        [
+          -157.9,
+          72.0
+        ],
+        [
+          -157.34,
+          71.66
+        ],
+        [
+          -156.57,
+          71.21
+        ],
+        [
+          -154.62,
+          74.59
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6465301UF1366N_part1",
+      "name": "Untraced enclosure 6465301UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          -2.94,
+          1.96
+        ],
+        [
+          -6.45,
+          4.68
+        ],
+        [
+          -7.75,
+          3.11
+        ],
+        [
+          -9.34,
+          1.2
+        ],
+        [
+          -14.89,
+          5.87
+        ],
+        [
+          -17.36,
+          3.22
+        ],
+        [
+          -8.44,
+          -4.53
+        ],
+        [
+          -7.9,
+          -3.89
+        ],
+        [
+          -6.67,
+          -2.44
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6465301UF1366N_part3",
+      "name": "Untraced enclosure 6465301UF1366N_part3",
+      "kind": "enclosure",
+      "points": [
+        [
+          0.57,
+          37.98
+        ],
+        [
+          -5.33,
+          43.75
+        ],
+        [
+          -34.24,
+          9.81
+        ],
+        [
+          -21.67,
+          -0.41
+        ],
+        [
+          -18.07,
+          3.87
+        ],
+        [
+          -17.36,
+          3.22
+        ],
+        [
+          -14.89,
+          5.87
+        ],
+        [
+          -20.86,
+          10.89
+        ],
+        [
+          -22.05,
+          11.7
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6465542UF1366N_part1",
+      "name": "Untraced enclosure 6465542UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          77.75,
+          38.23
+        ],
+        [
+          77.7,
+          39.03
+        ],
+        [
+          74.14,
+          38.87
+        ],
+        [
+          74.16,
+          38.22
+        ],
+        [
+          74.17,
+          37.98
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6465543UF1366N_part1",
+      "name": "Untraced enclosure 6465543UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          74.23,
+          37.23
+        ],
+        [
+          74.16,
+          38.22
+        ],
+        [
+          69.89,
+          38.15
+        ],
+        [
+          69.91,
+          37.5
+        ],
+        [
+          69.94,
+          37.08
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6465544UF1366N_part1",
+      "name": "Untraced enclosure 6465544UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          69.94,
+          37.08
+        ],
+        [
+          69.91,
+          37.5
+        ],
+        [
+          69.89,
+          38.15
+        ],
+        [
+          66.9,
+          38.12
+        ],
+        [
+          66.89,
+          37.4
+        ],
+        [
+          66.9,
+          36.98
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6465545UF1366N_part1",
+      "name": "Untraced enclosure 6465545UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          66.9,
+          36.98
+        ],
+        [
+          66.89,
+          37.4
+        ],
+        [
+          66.9,
+          38.12
+        ],
+        [
+          64.61,
+          38.11
+        ],
+        [
+          62.12,
+          38.13
+        ],
+        [
+          62.14,
+          36.94
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6465546UF1366N_part1",
+      "name": "Untraced enclosure 6465546UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          53.89,
+          24.88
+        ],
+        [
+          53.85,
+          25.4
+        ],
+        [
+          50.06,
+          25.09
+        ],
+        [
+          50.11,
+          24.54
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6465547UF1366N_part1",
+      "name": "Untraced enclosure 6465547UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          50.16,
+          24.05
+        ],
+        [
+          50.11,
+          24.54
+        ],
+        [
+          49.33,
+          24.47
+        ],
+        [
+          46.45,
+          24.27
+        ],
+        [
+          46.51,
+          23.75
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6465548UF1366N_part1",
+      "name": "Untraced enclosure 6465548UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          46.43,
+          24.49
+        ],
+        [
+          46.38,
+          25.19
+        ],
+        [
+          42.74,
+          24.92
+        ],
+        [
+          42.8,
+          24.24
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6465549UF1366N_part1",
+      "name": "Untraced enclosure 6465549UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          42.8,
+          24.24
+        ],
+        [
+          42.74,
+          24.92
+        ],
+        [
+          38.93,
+          24.63
+        ],
+        [
+          38.98,
+          23.97
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6465550UF1366N_part1",
+      "name": "Untraced enclosure 6465550UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          38.98,
+          23.97
+        ],
+        [
+          38.93,
+          24.63
+        ],
+        [
+          35.98,
+          24.4
+        ],
+        [
+          35.44,
+          24.36
+        ],
+        [
+          35.5,
+          23.78
+        ],
+        [
+          35.51,
+          23.72
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6465551UF1366N_part1",
+      "name": "Untraced enclosure 6465551UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          35.51,
+          23.72
+        ],
+        [
+          35.5,
+          23.78
+        ],
+        [
+          35.44,
+          24.36
+        ],
+        [
+          31.4,
+          24.04
+        ],
+        [
+          31.43,
+          23.43
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6465801UF1366N_part2",
+      "name": "Untraced enclosure 6465801UF1366N_part2",
+      "kind": "enclosure",
+      "points": [
+        [
+          29.57,
+          94.54
+        ],
+        [
+          14.69,
+          77.22
+        ],
+        [
+          12.29,
+          74.48
+        ],
+        [
+          13.18,
+          73.74
+        ],
+        [
+          30.52,
+          93.74
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6466331UF1366N_part1",
+      "name": "Untraced enclosure 6466331UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          8.99,
+          -95.07
+        ],
+        [
+          7.85,
+          -94.49
+        ],
+        [
+          6.27,
+          -97.5
+        ],
+        [
+          6.02,
+          -98.03
+        ],
+        [
+          7.15,
+          -98.63
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6466332UF1366N_part1",
+      "name": "Untraced enclosure 6466332UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          10.98,
+          -91.23
+        ],
+        [
+          9.88,
+          -90.63
+        ],
+        [
+          7.85,
+          -94.49
+        ],
+        [
+          8.99,
+          -95.07
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6466333UF1366N_part1",
+      "name": "Untraced enclosure 6466333UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          12.91,
+          -87.52
+        ],
+        [
+          11.81,
+          -86.95
+        ],
+        [
+          9.88,
+          -90.63
+        ],
+        [
+          10.98,
+          -91.23
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6466334UF1366N_part1",
+      "name": "Untraced enclosure 6466334UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          14.66,
+          -84.14
+        ],
+        [
+          13.58,
+          -83.59
+        ],
+        [
+          11.81,
+          -86.95
+        ],
+        [
+          12.91,
+          -87.52
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6466335UF1366N_part1",
+      "name": "Untraced enclosure 6466335UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          16.6,
+          -80.4
+        ],
+        [
+          15.55,
+          -79.84
+        ],
+        [
+          13.58,
+          -83.59
+        ],
+        [
+          14.66,
+          -84.14
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6466336UF1366N_part1",
+      "name": "Untraced enclosure 6466336UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          18.68,
+          -76.39
+        ],
+        [
+          17.65,
+          -75.85
+        ],
+        [
+          15.55,
+          -79.84
+        ],
+        [
+          16.6,
+          -80.4
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6466348UF1366N_part1",
+      "name": "Untraced enclosure 6466348UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          -19.14,
+          -71.51
+        ],
+        [
+          -20.2,
+          -70.96
+        ],
+        [
+          -24.58,
+          -79.46
+        ],
+        [
+          -23.5,
+          -80.02
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6466349UF1366N_part1",
+      "name": "Untraced enclosure 6466349UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          -23.5,
+          -80.02
+        ],
+        [
+          -24.58,
+          -79.46
+        ],
+        [
+          -25.09,
+          -80.44
+        ],
+        [
+          -27.43,
+          -84.95
+        ],
+        [
+          -26.31,
+          -85.52
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "building:6466350UF1366N_part1",
+      "name": "Untraced enclosure 6466350UF1366N_part1",
+      "kind": "enclosure",
+      "points": [
+        [
+          -26.31,
+          -85.52
+        ],
+        [
+          -27.43,
+          -84.95
+        ],
+        [
+          -29.45,
+          -88.86
+        ],
+        [
+          -28.32,
+          -89.46
+        ]
+      ],
+      "areas": [],
+      "evidence": [],
+      "confidence": "registry",
+      "placement": "unreviewed",
+      "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
+      "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "gap:elena-east-patios",
+      "name": "Elena north · patios behind the garden wall",
+      "kind": "gap",
+      "points": [
+        [
+          -146.5,
+          40.5
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2366.jpg",
+        "IMG_2360.jpg",
+        "IMG_2197.jpg",
+        "IMG_2199.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "The garden wall, door, pergola and one dividing wall (inferred from the aerial) are built; the rest of the patios behind them (further partitions, floors, levels) is hidden under the magnolia canopy in the roof photos, so it is empty in the model.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:cervantes-east-planter-front",
+      "name": "Cervantes junction · lane-edge wall east of the garden-door planter",
+      "kind": "gap",
+      "points": [
+        [
+          -150.97,
+          55.18
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2196.jpg",
+        "IMG_2287.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "The 0.65 m lane-edge wall stands about 0.3 m further out than the planter front in the photos; it may be the same planter continuing east.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:barraka-facade",
+      "name": "Barraka building facade: north-east window rows and timber band, glazed frontage with red awnings and lettering, thatched edge",
+      "kind": "gap",
+      "points": [
+        [
+          30.0,
+          112.0
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2604.jpg",
+        "IMG_2615.jpg",
+        "IMG_2618.jpg",
+        "IMG_2619.jpg",
+        "IMG_2630.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "Registry floors 1 (3 m) and the laser survey roof 2.9-3.7 m disagree with the two-level wall seen in the photos (about 4.5-5 m); the building mass is unchanged and none of the openings, awnings or lettering are modelled until the height is settled (task barraka-facade).",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:barraka-cooking-shelter",
+      "name": "Barraka thatched cooking shelter, net-covered mound and kayaks on the sand",
+      "kind": "gap",
+      "points": [
+        [
+          40.0,
+          105.0
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2619.jpg",
+        "IMG_2346.jpg",
+        "IMG_2347.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "Clear in IMG_2619 (open timber shelter with a thatched pitched roof and white board walls) but its footprint depends on the camera pin and the disputed aisle position; no second bearing, so it is not placed (see barraka-barbecue-boat).",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:barraka-slot-drains",
+      "name": "Barraka slot drains along the glazed wall and across the terrace paving",
+      "kind": "gap",
+      "points": [
+        [
+          22.0,
+          108.0
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2610.jpg",
+        "IMG_2630.jpg",
+        "IMG_2631.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "Black grating strips are visible in three photos from weak pins (+-4 to +-7 m) under the awning; their lines are not fixed, so none is drawn. A slot drain runs along the glazed wall and across the terrace paving. The paving widening and the drain line are not traced, so they are not built. The sandbags on the drain are temporary.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:eva-wall-climbers",
+      "name": "Climbers and shrubs against the house walls on Calle Eva west",
+      "kind": "gap",
+      "points": [
+        [
+          -150.6,
+          111.0
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2549.jpg",
+        "IMG_2553.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "The bougainvillea and jasmine up the house walls behind the west beds are not modelled; the east wall climbers are (eva-planting-shapes).",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:calle-alberto-22-40-tunnel",
+      "name": "Covered passage from the Calle Alberto 22-40 porch to the inner courtyard",
+      "kind": "gap",
+      "points": [
+        [
+          -113.36,
+          52.67
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2792.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "IMG_2792 shows only the porch; which way the passage turns behind the back wall, and its width, height and line through the house, are unseen, so it is not cut through the registry house in 3D (photo request calle-alberto-22-40-inside).",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:jorge-west",
+      "name": "Calle Jorge 56 to 86 m: house fronts, walls, planters, doors and the CALLE JORGE 27 35 passage",
+      "kind": "gap",
+      "points": [
+        [
+          -77.8,
+          158.9
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2234.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "Since 14 November the path, lawns, a tree and a portal are built from the aerial between the gateway and 86 m (inferred). What is still left out because nothing shows it: the house fronts, garden walls, planters, lamps and house numbers between the house rows from 56 to 86 m, and the mouth of the CALLE JORGE 27 35 passage (IMG_2185-2187 show it only from inside).",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:enrique-shop-storey",
+      "name": "Shop storey at the head of Enrique's steps",
+      "kind": "gap",
+      "points": [
+        [
+          -35.7,
+          96.2
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2775.jpg",
+        "IMG_2776.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "The photos show a white storey with glazed shop fronts and a curved fin wall on the street-level terrace; the model has only the terrace roof, so the shop awnings have no wall behind them. Task enrique-shop-storey.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:beach-gate-plumbago",
+      "name": "Plumbago either side of the beach gate",
+      "kind": "gap",
+      "points": [
+        [
+          -4.4,
+          134.3
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2766.jpg",
+        "IMG_2767.jpg",
+        "IMG_2485.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "Blue plumbago spills over the white walls either side of the gate on the paseo side; not modelled yet (task main-pool-gate-corner).",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:slope-fence-sandstone-mesh",
+      "name": "Sandstone-faced wall with green mesh down the slope",
+      "kind": "gap",
+      "points": [
+        [
+          -7.5,
+          136.4
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2766.jpg",
+        "IMG_2484.jpg",
+        "IMG_2600.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "From the paseo the boundary south-west of the gate is a sandstone-faced wall topped with green rigid mesh; the model draws a plain white wall there (task main-pool-gate-corner).",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:north-pool-gated-patio-sides",
+      "name": "North and south sides of the walled patio",
+      "kind": "gap",
+      "points": [
+        [
+          -184.5,
+          33.0
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2206.jpg",
+        "IMG_2208.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "The roof station sees only the patio's west and east walls; what closes it on the north (towards the west path) and the south (towards the block by the camera) is hidden, so those sides are left open rather than walled by guess.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:north-pool-isabel-iron-gate",
+      "name": "Iron gate and its wall at the head of Calle Isabel",
+      "kind": "gap",
+      "points": [
+        [
+          -162.2,
+          7.3
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2205.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "IMG_2205 (x 1000-1140, y 520-600) shows a black iron gate between white walls where Calle Isabel leaves the lawn, at about (-162.55..-161.8, 7.2-7.5); not modelled, so an open passage shows there.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:north-pool-isabel-hidden-wall",
+      "name": "Generated low wall behind the yucca on Calle Isabel",
+      "kind": "gap",
+      "points": [
+        [
+          -159.6,
+          18.0
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2205.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "A generated low wall and gate stand at about (-159.8..-159.5, 17.5-19.0); the yucca hides that ground in IMG_2205, so whether a wall is there is unknown and the generated one is left.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:elena-east-patio-dividers",
+      "name": "Patio dividers further north behind the Elena garden wall",
+      "kind": "gap",
+      "points": [
+        [
+          -145.0,
+          38.5
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2362.jpg",
+        "IMG_2364.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "The registry face of 6265401UF1366N_part3 jogs at two more party walls (about z 38.5 and 35), where patio dividers would normally run to the garden wall, but the magnolia canopy hides that ground on the aerial and in the roof photos (IMG_2366 looks south of Cervantes, not into these patios); not built rather than guessed (photo request elena-east-patios-inside).",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:jorge-silvia-lawn-wall",
+      "name": "Calle Jorge at Calle Silvia · white wall round the north-east corner of the south-pool lawn",
+      "kind": "gap",
+      "points": [
+        [
+          -91.04,
+          170.05
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2280.jpg",
+        "IMG_2697.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "The Esri and Google aerials show a white wall with a curved corner where the south-pool lawn meets Calle Jorge at Calle Silvia (about 51-55 m along Jorge), running south along the lawn's east side. IMG_2280 and IMG_2697 see this stretch only through the gateway from about 25 m and show the second white portal, not the wall. Not built: its line, height and how it meets the portal are not known (photo request jorge-silvia-junction).",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:jorge-south-recesses",
+      "name": "Calle Jorge east stretch · gaps between the south-side house blocks",
+      "kind": "gap",
+      "points": [
+        [
+          -43.03,
+          149.18
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2229.jpg",
+        "IMG_2182.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "The registry house fronts on the lawn side step back to about 11 m at 101-108 m and 121-125 m. The aerials show these recesses in deep shadow and do not show whether a wall closes them at the house-front line, so the lawn and open ground run into them in the model (photo request jorge-east-house-fronts).",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:cervantes-south-wall-door-72",
+      "name": "Cervantes east of Elena · second door in the south wall",
+      "kind": "gap",
+      "points": [
+        [
+          -131.65,
+          46.26
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2795.jpg",
+        "IMG_2796.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "IMG_2795 and IMG_2796 show a brown door in the south wall at about 72.5 m along the lane, on the existing wall of data/cervantes_east_south_patios.json, which models one door only (at 61.7 m). Not added here: that feature has its own review.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:cervantes-east-south-lawn-kerb",
+      "name": "Cervantes east · lawn and low rounded kerb on the south side by the seat",
+      "kind": "gap",
+      "points": [
+        [
+          -90.02,
+          21.38
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2443.jpg",
+        "IMG_2442.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "From about 119 m to the end house (123.5 m) IMG_2443 shows lawn behind a low kerb and a low rounded white wall near the camera, not the hedge planter. Not built: the lawn edge is not traced.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:cervantes-alberto-south-return",
+      "name": "Cervantes at Alberto · the south wall turning down Calle Alberto",
+      "kind": "gap",
+      "points": [
+        [
+          -113.45,
+          36.75
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2448.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "IMG_2448 shows the tall south wall turning the corner at about 93 m, its ALBERTO-plaque face running south along Calle Alberto, with a clipped hedge about 1.5 m tall in front of it at the corner. The lane-side wall stops at the corner; the return and the hedge are not built, because Calle Alberto south of Cervantes is not traced.",
+      "levelState": "Evidence required before tracing or levelling."
+    }
+  ]
+}
