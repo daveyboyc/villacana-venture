@@ -840,6 +840,16 @@
      "station": null
     },
     {
+     "photo": "IMG_3033.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3034.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "ref:web/south-pool-01-looking-north-palm.jpg",
      "state": "needs-solving",
      "station": null
@@ -915,7 +925,8 @@
       "IMG_2764.jpg",
       "IMG_2765.jpg",
       "IMG_2766.jpg",
-      "IMG_2767.jpg"
+      "IMG_2767.jpg",
+      "IMG_3075.jpg"
      ],
      "features": [],
      "tasks": [],
@@ -1148,6 +1159,41 @@
     },
     {
      "photo": "IMG_2823.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3068.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3072.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3073.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3074.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3075.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3076.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3077.jpg",
      "state": "needs-solving",
      "station": null
     }
@@ -3553,6 +3599,21 @@
      "photo": "IMG_2793.jpg",
      "state": "needs-solving",
      "station": null
+    },
+    {
+     "photo": "IMG_3005.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3006.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3007.jpg",
+     "state": "needs-solving",
+     "station": null
     }
    ],
    "readyTasks": [
@@ -4599,6 +4660,11 @@
      "photo": "IMG_2984.jpg",
      "state": "needs-solving",
      "station": null
+    },
+    {
+     "photo": "IMG_3067.jpg",
+     "state": "needs-solving",
+     "station": null
     }
    ],
    "readyTasks": [
@@ -5010,6 +5076,91 @@
      "photo": "IMG_2991.jpg",
      "state": "needs-solving",
      "station": null
+    },
+    {
+     "photo": "IMG_3046.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3049.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3050.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3051.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3054.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3057.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3058.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3059.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3060.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3061.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3062.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3063.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3064.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3065.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3066.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3069.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3070.jpg",
+     "state": "needs-solving",
+     "station": null
     }
    ],
    "readyTasks": [
@@ -5357,6 +5508,206 @@
     },
     {
      "photo": "IMG_2990.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3033.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3034.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3036.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3037.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3038.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3039.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3040.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3041.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3042.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3043.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3044.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3045.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3046.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3047.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3048.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3049.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3052.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3053.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3054.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3055.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3056.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3057.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3058.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3059.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3060.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3061.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3062.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3063.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3064.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3065.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3066.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3067.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3068.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3069.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3070.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3071.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3072.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3073.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3074.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3075.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -6197,7 +6548,8 @@
       "IMG_2764.jpg",
       "IMG_2765.jpg",
       "IMG_2766.jpg",
-      "IMG_2767.jpg"
+      "IMG_2767.jpg",
+      "IMG_3075.jpg"
      ],
      "features": [],
      "tasks": [],
@@ -9162,6 +9514,246 @@
     },
     {
      "photo": "IMG_2991.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2994.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3005.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3006.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3007.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3033.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3034.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3036.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3037.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3038.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3039.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3040.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3041.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3042.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3043.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3044.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3045.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3046.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3047.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3048.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3049.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3050.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3051.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3052.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3053.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3054.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3055.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3056.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3057.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3058.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3059.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3060.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3061.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3062.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3063.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3064.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3065.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3066.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3067.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3068.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3069.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3070.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3071.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3072.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3073.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3074.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3075.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3076.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3077.jpg",
      "state": "needs-solving",
      "station": null
     },

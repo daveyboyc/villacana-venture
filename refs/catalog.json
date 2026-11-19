@@ -20728,6 +20728,1771 @@
   "subject": "beach and shoreline east of the camera"
  },
  {
+  "id": "IMG_2994.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2994.jpg",
+  "title": "Paved lane between white houses and a garden wall, bougainvillea on the right, ladder and wheelbarrow",
+  "shows": [
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting",
+   "facades"
+  ],
+  "note": "No GPS (a JPEG sent without location data), so it is unplaced. Square terracotta tiles differ from the octagonal tiles of IMG_3005-3007; place it by matching the white wall and lamps to a pinned photo.",
+  "observation": null,
+  "taken": null,
+  "originalUrl": "https://drive.google.com/file/d/1Gk1iNyKqgkQRQkmtKp2nWUcdqmAgs3kx/view?usp=drivesdk",
+  "citedBy": []
+ },
+ {
+  "id": "IMG_3005.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3005.jpg",
+  "title": "Hedged white planter beside an octagon-tiled lane, lawn corner and bougainvillea houses beyond",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-17",
+  "originalUrl": "https://drive.google.com/file/d/1tTLRoICa5uZS-GbdO1DUnRB3XoxowGGy/view?usp=drivesdk",
+  "camera": {
+   "x": -89.3,
+   "z": 68.0,
+   "heading": 83,
+   "accuracy": 4.7,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -83.3,
+   67.3
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:eva"
+  ],
+  "subject": "the planter, hedge and octagon-tiled lane corner"
+ },
+ {
+  "id": "IMG_3006.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3006.jpg",
+  "title": "Octagon-tiled lane between a tall white wall and a hedged planter, bougainvillea corner ahead",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting",
+   "facades"
+  ],
+  "note": "Same lane as IMG_3005 and IMG_3007, a few metres along.",
+  "observation": null,
+  "taken": "2026-11-17",
+  "originalUrl": "https://drive.google.com/file/d/1XF8v_3Un90S0JdOChB31z9OD909VKZBi/view?usp=drivesdk",
+  "camera": {
+   "x": -88.8,
+   "z": 68.3,
+   "heading": 70,
+   "accuracy": 4.7,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -83.2,
+   66.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:eva"
+  ]
+ },
+ {
+  "id": "IMG_3007.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3007.jpg",
+  "title": "Octagon-tiled lane with a large round manhole cover, hedged planter on the right",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": "Tile size and the cover positions can be measured here.",
+  "observation": null,
+  "taken": "2026-11-17",
+  "originalUrl": "https://drive.google.com/file/d/1TCyXtKG-rDQB0VJp8xX_6KcUQlmimJik/view?usp=drivesdk",
+  "camera": {
+   "x": -84.8,
+   "z": 64.6,
+   "heading": 64,
+   "accuracy": 4.7,
+   "altitude": 6.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -79.4,
+   62.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:eva",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_3033.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3033.jpg",
+  "title": "South pool lawn from the beach-side grass: clover pool, flower bed and white terraced houses",
+  "shows": [
+   "south-pool",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1Cub25jUXc8nroXpTNvnJm2FNhx9yY-Vt/view?usp=drivesdk",
+  "camera": {
+   "x": -75.9,
+   "z": 198.8,
+   "heading": 300,
+   "accuracy": 5.5,
+   "altitude": 5.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -110.0,
+   215.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "south pool lawn and its seaward house row",
+  "headingOff": 55
+ },
+ {
+  "id": "IMG_3034.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3034.jpg",
+  "title": "South pool lawn corner: white house with round tiled turret, tall cactus and clipped hedges",
+  "shows": [
+   "south-pool",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "planting"
+  ],
+  "note": "Taken from the same spot as IMG_3033 turned about 70 degrees.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1NL7XZDcj4Q8vjlbwvdRjYb2bL5aD35tN/view?usp=drivesdk",
+  "camera": {
+   "x": -75.9,
+   "z": 199.4,
+   "heading": 10,
+   "accuracy": 4.7,
+   "altitude": 5.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -74.9,
+   193.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3036.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3036.jpg",
+  "title": "Timber boardwalk with a long pink wall on its right and a lamp pole, looking south-west",
+  "shows": [
+   "paseo",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": "Outside the modelled resort: the pin is off the aerial for IMG_3036-3039. The timber boardwalk is a separate structure beyond the paseo end.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1G4V1Qv41IouQB1jiUQLkzBbbZ6s-0Mnu/view?usp=drivesdk",
+  "camera": {
+   "x": 200.2,
+   "z": -77.6,
+   "heading": 236,
+   "accuracy": 2.0,
+   "altitude": 2.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   195.2,
+   -74.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3037.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3037.jpg",
+  "title": "Boardwalk bend between a white building and the pink wall, palms and pampas grass",
+  "shows": [
+   "paseo",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": "Outside the modelled resort: the pin is off the aerial for IMG_3036-3039. The timber boardwalk is a separate structure beyond the paseo end.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1Zp0o9urr4v6Dc_oag3Dwi5Vmlk0CePx-/view?usp=drivesdk",
+  "camera": {
+   "x": 190.5,
+   "z": -70.2,
+   "heading": 232,
+   "accuracy": 3.5,
+   "altitude": 2.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   185.8,
+   -66.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3038.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3038.jpg",
+  "title": "Boardwalk where it widens and turns, with a white wall on the left and railed edge on the right",
+  "shows": [
+   "paseo",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": "Outside the modelled resort: the pin is off the aerial for IMG_3036-3039. The timber boardwalk is a separate structure beyond the paseo end.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1IkVU1FEUJCGI4s_NqpcX4gxYxIc7rDV-/view?usp=drivesdk",
+  "camera": {
+   "x": 183.1,
+   "z": -63.4,
+   "heading": 217,
+   "accuracy": 3.5,
+   "altitude": 3.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   179.5,
+   -58.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3039.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3039.jpg",
+  "title": "Boardwalk with red-framed rail running towards the beach, pampas grass behind",
+  "shows": [
+   "paseo",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": "Outside the modelled resort: the pin is off the aerial for IMG_3036-3039. The timber boardwalk is a separate structure beyond the paseo end.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/11gCdfg7bcRjQVkbCW5z48-sxTn9GJPNo/view?usp=drivesdk",
+  "camera": {
+   "x": 177.1,
+   "z": -58.1,
+   "heading": 224,
+   "accuracy": 4.7,
+   "altitude": 2.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   172.9,
+   -53.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3040.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3040.jpg",
+  "title": "Boardwalk on a raised deck with red posts, lamp pole and the pink wall ending",
+  "shows": [
+   "paseo",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1KruOQmG1mN8kHagKZak76JeK7FMDH_Lu/view?usp=drivesdk",
+  "camera": {
+   "x": 174.1,
+   "z": -53.2,
+   "heading": 239,
+   "accuracy": 4.7,
+   "altitude": 3.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   169.0,
+   -50.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3041.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3041.jpg",
+  "title": "Red timber handrail and picket balustrade of the boardwalk with sea beyond the dune scrub",
+  "shows": [
+   "paseo",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1dJo3wbyleT9-mIzRHOEugbEP3K4Stlu7/view?usp=drivesdk",
+  "camera": {
+   "x": 171.9,
+   "z": -51.3,
+   "heading": 182,
+   "accuracy": 4.7,
+   "altitude": 3.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   171.7,
+   -45.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3042.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3042.jpg",
+  "title": "Boardwalk straight to a small white tiled-roof hut, with rock edge and red top rail",
+  "shows": [
+   "paseo",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1Wqrq6kyYwy-wB0laaEycftMa3iIu2M-m/view?usp=drivesdk",
+  "camera": {
+   "x": 167.4,
+   "z": -47.3,
+   "heading": 238,
+   "accuracy": 2.4,
+   "altitude": 5.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   162.3,
+   -44.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3043.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3043.jpg",
+  "title": "Over the red rail: a second boardwalk arm and park with a hotel behind",
+  "shows": [
+   "paseo",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/14PoJdo9GHhFvXM0JJhRfaV_DkVN2H2Gv/view?usp=drivesdk",
+  "camera": {
+   "x": 165.6,
+   "z": -46.4,
+   "heading": 293,
+   "accuracy": 2.4,
+   "altitude": 4.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   160.1,
+   -48.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3044.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3044.jpg",
+  "title": "Boardwalk turning towards a white tiled-roof hut with beach and sea ahead",
+  "shows": [
+   "paseo",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1BtVL2qZV2jthzKr95gphYWbzvbJzFw7t/view?usp=drivesdk",
+  "camera": {
+   "x": 155.4,
+   "z": -38.3,
+   "heading": 215,
+   "accuracy": 2.4,
+   "altitude": 4.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   152.0,
+   -33.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3045.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3045.jpg",
+  "title": "Straight boardwalk to the beach hut, picket rail and the sea at the end",
+  "shows": [
+   "paseo",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1z2igEdJ7xj8qEo9KQ9uAz0fFdXWOAn1H/view?usp=drivesdk",
+  "camera": {
+   "x": 152.2,
+   "z": -35.3,
+   "heading": 214,
+   "accuracy": 2.3,
+   "altitude": 4.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   148.8,
+   -30.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_3046.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3046.jpg",
+  "title": "Beach seen over the boardwalk picket rail, dune scrub and sea",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "view",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1PT-8Wqgf95DNJE6WIlJBIwPSab4FjmUA/view?usp=drivesdk",
+  "camera": {
+   "x": 149.5,
+   "z": -31.5,
+   "heading": 155,
+   "accuracy": 2.3,
+   "altitude": 3.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   152.0,
+   -26.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_3047.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3047.jpg",
+  "title": "Low white building with tiled roof and barred windows behind chain-link, seen from the boardwalk",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": "Outside the Villacana fence line; not part of the resort model.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1WRVgglYeU9Pmhr5e3NMXaay7inpn-ECI/view?usp=drivesdk",
+  "camera": {
+   "x": 146.7,
+   "z": -26.3,
+   "heading": 265,
+   "accuracy": 2.3,
+   "altitude": 3.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   140.7,
+   -25.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3048.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3048.jpg",
+  "title": "Boardwalk beside a chain-link fence, lawn with palms and a Norfolk pine",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/16lBCmkUMyuNo9ufkyPDdM2-p1q3I6YUA/view?usp=drivesdk",
+  "camera": {
+   "x": 142.0,
+   "z": -15.5,
+   "heading": 239,
+   "accuracy": 2.2,
+   "altitude": 3.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   136.9,
+   -12.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3049.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3049.jpg",
+  "title": "Long straight boardwalk with picket rails running towards La Concha",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1hFJZmLmJDqyRuOlRNeCIKZedo8J9oKdF/view?usp=drivesdk",
+  "camera": {
+   "x": 139.8,
+   "z": -11.4,
+   "heading": 224,
+   "accuracy": 2.2,
+   "altitude": 3.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   135.6,
+   -7.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3050.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3050.jpg",
+  "title": "Open beach with palms and sea from the boardwalk rail",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1H9Z6NclEGjCXa3pTMU7UNimcBXm8jMxa/view?usp=drivesdk",
+  "camera": {
+   "x": 135.8,
+   "z": -4.6,
+   "heading": 97,
+   "accuracy": 2.2,
+   "altitude": 3.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   141.8,
+   -3.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_3051.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3051.jpg",
+  "title": "Beach and a stranded boat over the picket rail",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1upDhZZPvXWAWmsQUT4wPEBHSpQF4D8hj/view?usp=drivesdk",
+  "camera": {
+   "x": 127.8,
+   "z": 0.9,
+   "heading": 192,
+   "accuracy": 2.2,
+   "altitude": 3.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   126.6,
+   6.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach",
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3052.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3052.jpg",
+  "title": "Neighbouring lawn behind chain-link fence: lamp post, young palm and low white houses",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "Neighbouring plot, outside the resort boundary.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/12yKLvOnC-Dc2Nxlz3SKXBqhkOwscia4V/view?usp=drivesdk",
+  "camera": {
+   "x": 117.1,
+   "z": 10.5,
+   "heading": 268,
+   "accuracy": 2.2,
+   "altitude": 3.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   111.1,
+   10.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3053.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3053.jpg",
+  "title": "White tiled-roof bungalow and Norfolk pine behind chain-link fence",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": "Neighbouring plot, outside the resort boundary.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1sFhhJArE-fhlWHORnkMOC7xRG24q0ucJ/view?usp=drivesdk",
+  "camera": {
+   "x": 115.9,
+   "z": 11.4,
+   "heading": 332,
+   "accuracy": 2.2,
+   "altitude": 3.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   113.1,
+   6.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3054.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3054.jpg",
+  "title": "Pink stamped-concrete paseo running south-west beside a fence, white restaurant ahead",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1gvYsWT90RJcA6tlhsGKoX4ZBUJtW6nUn/view?usp=drivesdk",
+  "camera": {
+   "x": 111.7,
+   "z": 16.4,
+   "heading": 226,
+   "accuracy": 2.3,
+   "altitude": 2.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   100.0,
+   26.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "area:paseo"
+  ],
+  "subject": "the east end of the paseo"
+ },
+ {
+  "id": "IMG_3055.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3055.jpg",
+  "title": "Fenced lawn with a bench and low white buildings with a green dado; hotel block behind",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": "Neighbouring plot, outside the resort boundary.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/14elOYOulxVcQ8Ol7OX7fqwz8z7-cq3Ud/view?usp=drivesdk",
+  "camera": {
+   "x": 75.9,
+   "z": 44.8,
+   "heading": 260,
+   "accuracy": 10.1,
+   "altitude": 5.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   70.0,
+   45.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_3056.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3056.jpg",
+  "title": "Lawn behind the fence: low white building with green plinth and wall plates",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": "Neighbouring plot, outside the resort boundary.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1Ns6v3nhjFwfUGZZbLeMP9f_3OqZ7hRqL/view?usp=drivesdk",
+  "camera": {
+   "x": 75.6,
+   "z": 52.3,
+   "heading": 256,
+   "accuracy": 3.5,
+   "altitude": 5.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   69.8,
+   53.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_3057.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3057.jpg",
+  "title": "Paseo and fenced lawn, white two-storey beach building with a hut on the sand ahead",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1x6k0WHIblA6g0faWOdqVEPzIr8Fxw0hL/view?usp=drivesdk",
+  "camera": {
+   "x": 75.6,
+   "z": 53.8,
+   "heading": 232,
+   "accuracy": 3.3,
+   "altitude": 5.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   70.9,
+   57.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3058.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3058.jpg",
+  "title": "Pink paseo edge with timber kerb and sand",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1gZ3Z8Hg9fac2IjZx-OvNjKvfM7H6zGCf/view?usp=drivesdk",
+  "camera": {
+   "x": 69.1,
+   "z": 61.2,
+   "heading": 182,
+   "accuracy": 2.6,
+   "altitude": 5.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   68.9,
+   67.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_3059.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3059.jpg",
+  "title": "Closed beach restaurant behind chain-link: flat-roofed glazed pavilion and terrace",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials"
+  ],
+  "note": "Fenced and derelict-looking; neighbouring plot east of the resort paseo.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1_0N-YILU9VMbDFZSkqGtcjbxfPm5JUMJ/view?usp=drivesdk",
+  "camera": {
+   "x": 65.4,
+   "z": 64.6,
+   "heading": 256,
+   "accuracy": 2.7,
+   "altitude": 5.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   59.6,
+   66.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3060.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3060.jpg",
+  "title": "Terrace of the closed restaurant: tiled floor, curved planter wall, steps and a canopy",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1BORfG0-9asynaje5RYurbQiaLXKBvnLp/view?usp=drivesdk",
+  "camera": {
+   "x": 60.9,
+   "z": 67.4,
+   "heading": 317,
+   "accuracy": 3.2,
+   "altitude": 4.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   56.8,
+   63.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3061.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3061.jpg",
+  "title": "Restaurant terrace seen through the fence: curved planter, canopy and wooden door",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1t2AiozeyGx_IhseiP7G9j2aD-PIdQcHR/view?usp=drivesdk",
+  "camera": {
+   "x": 59.9,
+   "z": 67.4,
+   "heading": 313,
+   "accuracy": 3.3,
+   "altitude": 5.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   55.5,
+   63.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3062.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3062.jpg",
+  "title": "Glazed restaurant pavilion with stepped roof edge and sandstone kerb",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1z_8GeJuG3ffWYfveiwZ5NwMlQFeQmntc/view?usp=drivesdk",
+  "camera": {
+   "x": 58.4,
+   "z": 67.4,
+   "heading": 263,
+   "accuracy": 3.4,
+   "altitude": 5.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   52.4,
+   68.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3063.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3063.jpg",
+  "title": "Paseo to a white two-storey beach building and a thatched hut on the sand",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1hwRymT5Le1sSpojQQhqrFs9D9foQCCKY/view?usp=drivesdk",
+  "camera": {
+   "x": 54.5,
+   "z": 76.1,
+   "heading": 207,
+   "accuracy": 4.7,
+   "altitude": 5.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   75.0,
+   50.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "area:paseo"
+  ],
+  "subject": "beach building east of Barraka",
+  "headingOff": 169
+ },
+ {
+  "id": "IMG_3064.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3064.jpg",
+  "title": "Paseo with a sandstone wall and fence on the right leading to the white beach building",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1r1gdLmF-Hn1APb4COIwieu2ZyTfsK7F-/view?usp=drivesdk",
+  "camera": {
+   "x": 53.2,
+   "z": 77.3,
+   "heading": 226,
+   "accuracy": 4.7,
+   "altitude": 5.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   48.9,
+   81.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3065.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3065.jpg",
+  "title": "Beach building end and a rubble sandstone wall topped by chain-link, with a lamp pole and a restaurant sign",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "signage",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1X3HHvshJ9DCjiUTuYzuGeQ8IjLy1ZIwd/view?usp=drivesdk",
+  "camera": {
+   "x": 40.8,
+   "z": 90.3,
+   "heading": 243,
+   "accuracy": 2.5,
+   "altitude": 5.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   35.5,
+   93.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3066.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3066.jpg",
+  "title": "Sandstone wall topped with green bars and a white wall with double doors, paseo corner",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": "Material and section of the paseo wall are visible; compare with the open paseo-wall-east-end request.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1V12JDOXkkwppjkNKlT_sWnLYAAS722bL/view?usp=drivesdk",
+  "camera": {
+   "x": 37.8,
+   "z": 93.7,
+   "heading": 277,
+   "accuracy": 2.5,
+   "altitude": 4.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   31.8,
+   93.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3067.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3067.jpg",
+  "title": "Paseo lane between a white wall with doors and the sandstone wall and fence",
+  "shows": [
+   "paseo",
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "The lane meets the paseo; check against the Calle Guillermo end before naming it.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1fTIK_yMrwyi8DkJXphHKsbuJnrjoigW0/view?usp=drivesdk",
+  "camera": {
+   "x": 36.6,
+   "z": 94.6,
+   "heading": 316,
+   "accuracy": 2.5,
+   "altitude": 4.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   32.4,
+   90.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_3068.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3068.jpg",
+  "title": "Green bar fence on a sandstone base at the white pillar, palms and bananas behind",
+  "shows": [
+   "paseo",
+   "main-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1OG2AhvswXMCxJ7tnqrlTTIB2fmaJWUl3/view?usp=drivesdk",
+  "camera": {
+   "x": 35.3,
+   "z": 95.2,
+   "heading": 274,
+   "accuracy": 2.5,
+   "altitude": 5.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   29.3,
+   94.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3069.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3069.jpg",
+  "title": "Paseo beside the wooden Barraka building, sandstone wall and green bars on the right",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1q37EvlvjgWO6MjENaNNwZTwP-0zuVQLW/view?usp=drivesdk",
+  "camera": {
+   "x": 32.8,
+   "z": 95.5,
+   "heading": 238,
+   "accuracy": 2.6,
+   "altitude": 5.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   27.7,
+   98.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3070.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3070.jpg",
+  "title": "Barraka Beach restaurant glazing and red awning with sandbags, paseo beyond",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "signage",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1Z-gohn8dT26BnI2T1SBXPcjFJwjty_3l/view?usp=drivesdk",
+  "camera": {
+   "x": 26.1,
+   "z": 100.2,
+   "heading": 210,
+   "accuracy": 2.8,
+   "altitude": 5.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   23.1,
+   105.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:barraka",
+   "barraka_facade.json:barraka-facade",
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3071.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3071.jpg",
+  "title": "Pink stamped paving with a slot drain and the sandstone planter edge",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1K00qPMwkixohV7J-z5_nqXYvU_bJzd3f/view?usp=drivesdk",
+  "camera": {
+   "x": 21.6,
+   "z": 105.4,
+   "heading": 213,
+   "accuracy": 2.7,
+   "altitude": 3.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   18.3,
+   110.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "beach_verge.json:barraka-front-verge",
+   "area:barraka",
+   "barraka_facade.json:barraka-facade"
+  ]
+ },
+ {
+  "id": "IMG_3072.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3072.jpg",
+  "title": "Paseo curving between the sandstone wall with green bars and grass, white buildings beyond",
+  "shows": [
+   "paseo",
+   "main-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1UZJu2CkAlgLlcCND-k-XwdeFU-bjPip3/view?usp=drivesdk",
+  "camera": {
+   "x": 20.1,
+   "z": 108.2,
+   "heading": 229,
+   "accuracy": 2.7,
+   "altitude": 3.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   15.6,
+   112.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_3073.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3073.jpg",
+  "title": "Main pool lawn and pool terrace through the green bar fence",
+  "shows": [
+   "main-pool",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1sMAd1-SAcXRRJUNjIC3phSk2IYbvlm4P/view?usp=drivesdk",
+  "camera": {
+   "x": 14.7,
+   "z": 112.6,
+   "heading": 306,
+   "accuracy": 2.6,
+   "altitude": 3.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   9.8,
+   109.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "ground_plan_main_pool.json:main-lawn"
+  ]
+ },
+ {
+  "id": "IMG_3074.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3074.jpg",
+  "title": "Paseo bending south-west with a crossing marking and the gateway of the lawn side",
+  "shows": [
+   "paseo",
+   "main-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1An8u9VIdFT1jUFCrC11uNmV-2s6ek3OB/view?usp=drivesdk",
+  "camera": {
+   "x": 10.9,
+   "z": 116.3,
+   "heading": 211,
+   "accuracy": 2.6,
+   "altitude": 3.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -10.0,
+   128.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "ground_plan_main_pool.json:lawn-strip-guillermo",
+   "ground_plan_main_pool.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-white-rooms",
+   "main_pool_lawn.json:lawn-kiosk-plain"
+  ],
+  "subject": "paseo bend and gate pillar"
+ },
+ {
+  "id": "IMG_3075.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3075.jpg",
+  "title": "White service store with open door beside the lawn path, bench and banana plants",
+  "shows": [
+   "main-pool",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials"
+  ],
+  "note": "A small structure at the lawn edge; check whether it is already modelled.",
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1-tq-U0GcrfvzSBeobQ9_xZuqzLE87A3b/view?usp=drivesdk",
+  "camera": {
+   "x": -1.5,
+   "z": 128.6,
+   "heading": 281,
+   "accuracy": 2.5,
+   "altitude": 4.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -7.4,
+   127.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "ground_plan_main_pool.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "ground_plan_main_pool.json:main-lawn",
+   "ground_plan_main_pool.json:lawn-strip-guillermo"
+  ]
+ },
+ {
+  "id": "IMG_3076.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3076.jpg",
+  "title": "Main pool lawn: pink path with bollard lights, bin and the white clubhouse across the pool",
+  "shows": [
+   "main-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1G2Jjvodqs4p-ROgaXqDssfw_ybyIPt7w/view?usp=drivesdk",
+  "camera": {
+   "x": -2.7,
+   "z": 127.7,
+   "heading": 330,
+   "accuracy": 2.6,
+   "altitude": 5.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -5.0,
+   150.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "area:beach",
+   "beach_verge.json:barraka-front-verge"
+  ],
+  "subject": "lawn path and clubhouse",
+  "headingOff": 144
+ },
+ {
+  "id": "IMG_3077.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3077.jpg",
+  "title": "Main pool lawn looking over the lawn to the pool terrace and the white wall and hotel block",
+  "shows": [
+   "main-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-18",
+  "originalUrl": "https://drive.google.com/file/d/1AJ7B18OxW4TX38VMMZ7L4DImarfn9h-M/view?usp=drivesdk",
+  "camera": {
+   "x": -3.5,
+   "z": 127.7,
+   "heading": 0,
+   "accuracy": 2.5,
+   "altitude": 4.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -3.5,
+   121.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "ground_plan_main_pool.json:main-lawn"
+  ]
+ },
+ {
   "id": "ref:apple-maps/01-3d-overview-from-north.png",
   "kind": "map-screenshot",
   "path": "reference/apple-maps/01-3d-overview-from-north.png",

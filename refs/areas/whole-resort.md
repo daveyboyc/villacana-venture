@@ -21,8 +21,8 @@ Overviews, maps and wide views covering several areas at once, and the mountain 
 
 ## Coverage
 
-Layout: 12, Levels and slopes: 2, Facades and roofs: 18, Materials: 5, Planting: 4, Signs: 4, Views: 20
-23 reviewed, 0 suggested only by camera position.
+Layout: 23, Levels and slopes: 2, Facades and roofs: 19, Materials: 16, Planting: 5, Signs: 4, Views: 30
+34 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -64,6 +64,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2994.jpg](../../public/photos-ref/IMG_2994.jpg) | ground | layout, materials, planting, facades | Paved lane between white houses and a garden wall, bougainvillea on the right, ladder and wheelbarrow **Note:** No GPS (a JPEG sent without location data), so it is unplaced. Square terracotta tiles differ from the octagonal tiles of IMG_3005-3007; place it by matching the white wall and lamps to a pinned photo. |
 | [IMG_2217.jpg](../../public/photos-ref/IMG_2217.jpg) | roof | facades, view, planting | Roof terrace looking south-south-east over roofs to the sea |
 | [IMG_2214.jpg](../../public/photos-ref/IMG_2214.jpg) | roof | facades, view | Roof terrace: flat roofs, solar panels, water tanks, mountains north **Note:** On a roof by Calle Elena. The pin is inside a building. |
 | [IMG_2215.jpg](../../public/photos-ref/IMG_2215.jpg) | roof | facades, view | Roof terrace looking north-east: roofs, a tall tower block beyond |
@@ -86,4 +87,14 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2362.jpg](../../public/photos-ref/IMG_2362.jpg) | roof | facades, view, materials | Roof by Elena: looking east-south-east over the terraces to the sea **Looks at:** The terraces east of Elena north. _Used by: elena_north.json:elena-north-magnolia-bed._ |
 | [IMG_2595.jpg](../../public/photos-ref/IMG_2595.jpg) | ground | layout, facades, planting, view, materials | Tiled path along lawns towards white houses with chimneys, looking ENE **Note:** Camera is at the Teodoro Rojo / Patricia corner; view runs along Teodoro Rojo. |
 | [IMG_2219.jpg](../../public/photos-ref/IMG_2219.jpg) | roof | facades, materials, view | Tiled roof terrace looking north, mountains behind |
+| [IMG_3036.jpg](../../public/photos-ref/IMG_3036.jpg) | ground | layout, materials, view | Timber boardwalk with a long pink wall on its right and a lamp pole, looking south-west **Note:** Outside the modelled resort: the pin is off the aerial for IMG_3036-3039. The timber boardwalk is a separate structure beyond the paseo end. |
+| [IMG_3037.jpg](../../public/photos-ref/IMG_3037.jpg) | ground | layout, materials, view | Boardwalk bend between a white building and the pink wall, palms and pampas grass **Note:** Outside the modelled resort: the pin is off the aerial for IMG_3036-3039. The timber boardwalk is a separate structure beyond the paseo end. |
+| [IMG_3038.jpg](../../public/photos-ref/IMG_3038.jpg) | ground | layout, materials, view | Boardwalk where it widens and turns, with a white wall on the left and railed edge on the right **Note:** Outside the modelled resort: the pin is off the aerial for IMG_3036-3039. The timber boardwalk is a separate structure beyond the paseo end. |
+| [IMG_3039.jpg](../../public/photos-ref/IMG_3039.jpg) | ground | layout, materials, view | Boardwalk with red-framed rail running towards the beach, pampas grass behind **Note:** Outside the modelled resort: the pin is off the aerial for IMG_3036-3039. The timber boardwalk is a separate structure beyond the paseo end. |
+| [IMG_3040.jpg](../../public/photos-ref/IMG_3040.jpg) | ground | layout, materials, view | Boardwalk on a raised deck with red posts, lamp pole and the pink wall ending |
+| [IMG_3041.jpg](../../public/photos-ref/IMG_3041.jpg) | ground | layout, materials, view | Red timber handrail and picket balustrade of the boardwalk with sea beyond the dune scrub |
+| [IMG_3042.jpg](../../public/photos-ref/IMG_3042.jpg) | ground | layout, materials, view | Boardwalk straight to a small white tiled-roof hut, with rock edge and red top rail |
+| [IMG_3043.jpg](../../public/photos-ref/IMG_3043.jpg) | ground | layout, materials, view | Over the red rail: a second boardwalk arm and park with a hotel behind |
+| [IMG_3044.jpg](../../public/photos-ref/IMG_3044.jpg) | ground | layout, materials, view | Boardwalk turning towards a white tiled-roof hut with beach and sea ahead |
+| [IMG_3045.jpg](../../public/photos-ref/IMG_3045.jpg) | ground | layout, materials, view | Straight boardwalk to the beach hut, picket rail and the sea at the end |
 | `reference/photos/06-north-pool-looking-north-east-mountains.jpg` | upper-floor | facades, view | North pool looking north-east: terraces, mountains behind |

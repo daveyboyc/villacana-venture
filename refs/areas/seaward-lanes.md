@@ -44,8 +44,8 @@ The lanes between the middle pool and the beach.
 
 ## Coverage
 
-Layout: 135, Levels and slopes: 31, Facades and roofs: 84, Materials: 123, Planting: 85, Signs: 23, Views: 15
-161 reviewed, 0 suggested only by camera position.
+Layout: 136, Levels and slopes: 31, Facades and roofs: 84, Materials: 124, Planting: 85, Signs: 23, Views: 15
+162 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -444,6 +444,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2702.jpg](../../public/photos-ref/IMG_2702.jpg) | ground | layout, materials, signage | Narrow lane between walls with a street plaque and slot drain **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
 | [IMG_2791.jpg](../../public/photos-ref/IMG_2791.jpg) | ground | layout, materials, facades | Tiled lane with grille windows and a raised planter |
 | [IMG_2979.jpg](../../public/photos-ref/IMG_2979.jpg) | ground | layout, materials, facades | Through the open gate: the tiled arcade with lantern, mat and arches **Looks at:** Calle de Jorge 39-67 arcade from the lawn-side gate looking toward Pintor Dalí. |
+| [IMG_3067.jpg](../../public/photos-ref/IMG_3067.jpg) | ground | layout, materials | Paseo lane between a white wall with doors and the sandstone wall and fence **Note:** The lane meets the paseo; check against the Calle Guillermo end before naming it. |
 | `reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels | Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west **Note:** Dave, 2026-10-21. Wider version of apple-maps/11. Apple's 3D mesh is coarse: it shows order, sides and which way the ground falls, not measured heights. |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |
 | `reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |
