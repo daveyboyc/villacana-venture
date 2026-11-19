@@ -41,3 +41,8 @@ Validation after rebasing onto `a12c902` (new Drive photos and main-pool work):
   in software-rendered Chromium. It does not exercise the new map panel.
 - Placement-change gate remains red for the shared-renderer fingerprint reason
   above. No review/discrepancy history or gate policy was removed.
+- Full layout browser regression completed its in-page geometry/route assertions
+  and saved the map and closed coastal-gate renders, then timed out at line 795:
+  `#gate-control` is hidden in the existing coastal-gate scene. The wall inventory
+  changes neither that control nor the 3D gate. This remains an explicit failed
+  regression; it is not counted as a passing end-to-end layout check.
