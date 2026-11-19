@@ -21,7 +21,7 @@ The clover-shaped south pool, its lawn, the date palm and the low seaward wall.
 ## Coverage
 
 Layout: 25, Levels and slopes: 3, Facades and roofs: 14, Materials: 17, Planting: 15, Signs: 4, Views: 6
-26 reviewed, 0 suggested only by camera position.
+26 reviewed, 2 suggested only by camera position.
 
 ## Levels
 
@@ -95,3 +95,12 @@ graph LR
 | [IMG_2576.jpg](../../public/photos-ref/IMG_2576.jpg) | ground | layout, signage, planting | Narrow lane to an open iron gate and the grass at the end, between oleander and planter **Looks at:** Open iron gate at the end of the lane. **Note:** Which pool lies beyond the gate is not confirmed; the lawn with a lifebuoy suggests the south pool, but this is not proven. looksAt is about 14 m ahead. |
 | [IMG_2577.jpg](../../public/photos-ref/IMG_2577.jpg) | ground | layout, signage, materials | Iron gate with notices at the end of the lane, planted wall on the right **Looks at:** Open iron gate with notices at lane end. **Note:** Same gate as IMG_2576. Beyond-gate lawn assumed to be the pool lawn; not confirmed. looksAt is about 14 m ahead along the heading. |
 | `reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_3033.jpg](../../public/photos-ref/IMG_3033.jpg) | not reviewed | not reviewed | IMG_3033 |
+| [IMG_3034.jpg](../../public/photos-ref/IMG_3034.jpg) | not reviewed | not reviewed | IMG_3034 |

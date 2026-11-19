@@ -30,7 +30,7 @@ The seafront promenade between the resort's seaward walls and the beach.
 ## Coverage
 
 Layout: 60, Levels and slopes: 13, Facades and roofs: 18, Materials: 41, Planting: 20, Signs: 7, Views: 37
-64 reviewed, 0 suggested only by camera position.
+64 reviewed, 35 suggested only by camera position.
 
 ## Open build tasks
 
@@ -252,3 +252,45 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2281.jpg](../../public/photos-ref/IMG_2281.jpg) | ground | layout | Pintor Dalí seaward end: turning area and fence |
 | [IMG_2282.jpg](../../public/photos-ref/IMG_2282.jpg) | ground | layout | Pintor Dalí seaward end: wall and paseo boundary |
 | `reference/apple-maps/03-3d-south-pool-and-promenade.png` | aerial | layout | Apple Maps 3D: south pool, its lawn and the beach promenade |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_3033.jpg](../../public/photos-ref/IMG_3033.jpg) | not reviewed | not reviewed | IMG_3033 |
+| [IMG_3034.jpg](../../public/photos-ref/IMG_3034.jpg) | not reviewed | not reviewed | IMG_3034 |
+| [IMG_3045.jpg](../../public/photos-ref/IMG_3045.jpg) | not reviewed | not reviewed | IMG_3045 |
+| [IMG_3046.jpg](../../public/photos-ref/IMG_3046.jpg) | not reviewed | not reviewed | IMG_3046 |
+| [IMG_3047.jpg](../../public/photos-ref/IMG_3047.jpg) | not reviewed | not reviewed | IMG_3047 |
+| [IMG_3048.jpg](../../public/photos-ref/IMG_3048.jpg) | not reviewed | not reviewed | IMG_3048 |
+| [IMG_3049.jpg](../../public/photos-ref/IMG_3049.jpg) | not reviewed | not reviewed | IMG_3049 |
+| [IMG_3050.jpg](../../public/photos-ref/IMG_3050.jpg) | not reviewed | not reviewed | IMG_3050 |
+| [IMG_3051.jpg](../../public/photos-ref/IMG_3051.jpg) | not reviewed | not reviewed | IMG_3051 |
+| [IMG_3052.jpg](../../public/photos-ref/IMG_3052.jpg) | not reviewed | not reviewed | IMG_3052 |
+| [IMG_3053.jpg](../../public/photos-ref/IMG_3053.jpg) | not reviewed | not reviewed | IMG_3053 |
+| [IMG_3054.jpg](../../public/photos-ref/IMG_3054.jpg) | not reviewed | not reviewed | IMG_3054 |
+| [IMG_3055.jpg](../../public/photos-ref/IMG_3055.jpg) | not reviewed | not reviewed | IMG_3055 |
+| [IMG_3056.jpg](../../public/photos-ref/IMG_3056.jpg) | not reviewed | not reviewed | IMG_3056 |
+| [IMG_3057.jpg](../../public/photos-ref/IMG_3057.jpg) | not reviewed | not reviewed | IMG_3057 |
+| [IMG_3058.jpg](../../public/photos-ref/IMG_3058.jpg) | not reviewed | not reviewed | IMG_3058 |
+| [IMG_3059.jpg](../../public/photos-ref/IMG_3059.jpg) | not reviewed | not reviewed | IMG_3059 |
+| [IMG_3060.jpg](../../public/photos-ref/IMG_3060.jpg) | not reviewed | not reviewed | IMG_3060 |
+| [IMG_3061.jpg](../../public/photos-ref/IMG_3061.jpg) | not reviewed | not reviewed | IMG_3061 |
+| [IMG_3062.jpg](../../public/photos-ref/IMG_3062.jpg) | not reviewed | not reviewed | IMG_3062 |
+| [IMG_3063.jpg](../../public/photos-ref/IMG_3063.jpg) | not reviewed | not reviewed | IMG_3063 |
+| [IMG_3064.jpg](../../public/photos-ref/IMG_3064.jpg) | not reviewed | not reviewed | IMG_3064 |
+| [IMG_3065.jpg](../../public/photos-ref/IMG_3065.jpg) | not reviewed | not reviewed | IMG_3065 |
+| [IMG_3066.jpg](../../public/photos-ref/IMG_3066.jpg) | not reviewed | not reviewed | IMG_3066 |
+| [IMG_3067.jpg](../../public/photos-ref/IMG_3067.jpg) | not reviewed | not reviewed | IMG_3067 |
+| [IMG_3068.jpg](../../public/photos-ref/IMG_3068.jpg) | not reviewed | not reviewed | IMG_3068 |
+| [IMG_3069.jpg](../../public/photos-ref/IMG_3069.jpg) | not reviewed | not reviewed | IMG_3069 |
+| [IMG_3070.jpg](../../public/photos-ref/IMG_3070.jpg) | not reviewed | not reviewed | IMG_3070 |
+| [IMG_3071.jpg](../../public/photos-ref/IMG_3071.jpg) | not reviewed | not reviewed | IMG_3071 |
+| [IMG_3072.jpg](../../public/photos-ref/IMG_3072.jpg) | not reviewed | not reviewed | IMG_3072 |
+| [IMG_3073.jpg](../../public/photos-ref/IMG_3073.jpg) | not reviewed | not reviewed | IMG_3073 |
+| [IMG_3074.jpg](../../public/photos-ref/IMG_3074.jpg) | not reviewed | not reviewed | IMG_3074 |
+| [IMG_3075.jpg](../../public/photos-ref/IMG_3075.jpg) | not reviewed | not reviewed | IMG_3075 |
+| [IMG_3076.jpg](../../public/photos-ref/IMG_3076.jpg) | not reviewed | not reviewed | IMG_3076 |
+| [IMG_3077.jpg](../../public/photos-ref/IMG_3077.jpg) | not reviewed | not reviewed | IMG_3077 |

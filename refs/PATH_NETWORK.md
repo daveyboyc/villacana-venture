@@ -11,8 +11,8 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 - sourceObservations: 59
 - sourcePixelTraces: 57
 - sourcePixelLocators: 32
-- sources: 533
-- uninspectedSources: 463
+- sources: 581
+- uninspectedSources: 511
 - routes: 24
 - segments: 181
 - tracedSides: 0
@@ -26,17 +26,17 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 | --- | --- | --- | --- | --- |
 | North pool | 20 / 20 | 0 | 0 | uninspected |
 | Middle pool | 43 / 43 | 0 | 0 | uninspected |
-| South pool | 26 / 26 | 0 | 0 | uninspected |
-| Main pool | 35 / 35 | 0 | 0 | uninspected |
+| South pool | 28 / 28 | 0 | 0 | uninspected |
+| Main pool | 41 / 41 | 0 | 0 | uninspected |
 | Calle Elena | 113 / 74 | 2 | 2 | partial |
 | Calle Miguel de Cervantes | 75 / 47 | 1 | 1 | partial |
 | Calle Pintor Dalí | 60 / 60 | 3 | 0 | uninspected |
 | Pintor Picasso and the car park | 4 / 4 | 2 | 0 | uninspected |
 | Loira, Bolivia, Alberto and Isabel | 2 / 2 | 4 | 6 | uninspected |
-| Calle Eva | 58 / 58 | 2 | 0 | uninspected |
+| Calle Eva | 61 / 61 | 2 | 0 | uninspected |
 | Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 161 / 161 | 6 | 2 | uninspected |
-| Barraka and the beach | 62 / 62 | 1 | 0 | uninspected |
-| The paseo | 64 / 64 | 4 | 0 | uninspected |
+| Barraka and the beach | 84 / 84 | 1 | 0 | uninspected |
+| The paseo | 99 / 99 | 4 | 0 | uninspected |
 | The whole resort | 23 / 23 | 0 | 0 | uninspected |
 
 Inspection is scoped to its named area; inspecting a shared source for Elena does not complete another area. Source-pixel traces remain separate from registered map edges. Source totals deduplicate IDs globally; area totals overlap. Unknown intervals are not traced sides. Tunnel candidates may overlap; this is not a count of unique real tunnels. All portal positions and physical widths remain unresolved.

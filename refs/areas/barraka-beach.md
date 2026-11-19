@@ -33,7 +33,7 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 ## Coverage
 
 Layout: 42, Levels and slopes: 6, Facades and roofs: 21, Materials: 43, Planting: 14, Signs: 7, Views: 44
-62 reviewed, 0 suggested only by camera position.
+62 reviewed, 22 suggested only by camera position.
 
 ## Levels
 
@@ -268,3 +268,32 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2625.jpg](../../public/photos-ref/IMG_2625.jpg) | ground | layout, materials, view | Paseo looking south-west beside the sandstone wall and glazed building **Note:** Pin is on the paseo; the building is a neighbouring property outside the catalogued Villacana areas. |
 | [IMG_2769.jpg](../../public/photos-ref/IMG_2769.jpg) | ground | layout, materials, view | Paseo towards Barraka beside the railing |
 | [IMG_2628.jpg](../../public/photos-ref/IMG_2628.jpg) | ground | layout, view | Paseo far north-east of Barraka towards lamp posts and palms |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_3046.jpg](../../public/photos-ref/IMG_3046.jpg) | not reviewed | not reviewed | IMG_3046 |
+| [IMG_3047.jpg](../../public/photos-ref/IMG_3047.jpg) | not reviewed | not reviewed | IMG_3047 |
+| [IMG_3048.jpg](../../public/photos-ref/IMG_3048.jpg) | not reviewed | not reviewed | IMG_3048 |
+| [IMG_3049.jpg](../../public/photos-ref/IMG_3049.jpg) | not reviewed | not reviewed | IMG_3049 |
+| [IMG_3050.jpg](../../public/photos-ref/IMG_3050.jpg) | not reviewed | not reviewed | IMG_3050 |
+| [IMG_3051.jpg](../../public/photos-ref/IMG_3051.jpg) | not reviewed | not reviewed | IMG_3051 |
+| [IMG_3055.jpg](../../public/photos-ref/IMG_3055.jpg) | not reviewed | not reviewed | IMG_3055 |
+| [IMG_3056.jpg](../../public/photos-ref/IMG_3056.jpg) | not reviewed | not reviewed | IMG_3056 |
+| [IMG_3057.jpg](../../public/photos-ref/IMG_3057.jpg) | not reviewed | not reviewed | IMG_3057 |
+| [IMG_3058.jpg](../../public/photos-ref/IMG_3058.jpg) | not reviewed | not reviewed | IMG_3058 |
+| [IMG_3059.jpg](../../public/photos-ref/IMG_3059.jpg) | not reviewed | not reviewed | IMG_3059 |
+| [IMG_3060.jpg](../../public/photos-ref/IMG_3060.jpg) | not reviewed | not reviewed | IMG_3060 |
+| [IMG_3061.jpg](../../public/photos-ref/IMG_3061.jpg) | not reviewed | not reviewed | IMG_3061 |
+| [IMG_3063.jpg](../../public/photos-ref/IMG_3063.jpg) | not reviewed | not reviewed | IMG_3063 |
+| [IMG_3064.jpg](../../public/photos-ref/IMG_3064.jpg) | not reviewed | not reviewed | IMG_3064 |
+| [IMG_3065.jpg](../../public/photos-ref/IMG_3065.jpg) | not reviewed | not reviewed | IMG_3065 |
+| [IMG_3066.jpg](../../public/photos-ref/IMG_3066.jpg) | not reviewed | not reviewed | IMG_3066 |
+| [IMG_3067.jpg](../../public/photos-ref/IMG_3067.jpg) | not reviewed | not reviewed | IMG_3067 |
+| [IMG_3068.jpg](../../public/photos-ref/IMG_3068.jpg) | not reviewed | not reviewed | IMG_3068 |
+| [IMG_3070.jpg](../../public/photos-ref/IMG_3070.jpg) | not reviewed | not reviewed | IMG_3070 |
+| [IMG_3071.jpg](../../public/photos-ref/IMG_3071.jpg) | not reviewed | not reviewed | IMG_3071 |
+| [IMG_3072.jpg](../../public/photos-ref/IMG_3072.jpg) | not reviewed | not reviewed | IMG_3072 |
