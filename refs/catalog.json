@@ -12327,7 +12327,7 @@
    "main_pool_lawn.json:lawn-bollards-bins",
    "ground_plan_main_pool.json:lawn-flagstone-apron",
    "ground_plan_main_pool.json:lawn-pink-paths",
-   "area:paseo"
+   "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "the inner tiled path ending at a lawn strip, the hedge and the mesh fence"
  },
@@ -17401,6 +17401,9 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing",
    "main_pool_lawn.json:lawn-bollards-bins",
    "main_pool_lawn.json:lawn-sea-hedge",
    "ground_plan_main_pool.json:main-lawn",
@@ -17489,8 +17492,10 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing",
    "main_pool_lawn.json:lawn-white-rooms",
-   "main_pool_lawn.json:lawn-sea-hedge",
    "main_pool_lawn.json:lawn-kiosk-plain",
    "ground_plan_main_pool.json:lawn-strip-guillermo",
    "ground_plan_main_pool.json:lawn-pink-paths",
@@ -17544,6 +17549,7 @@
    "picasso_lawn_wall.json:picasso-lawn-wall",
    "main_pool_lawn.json:lawn-bollards-bins",
    "main_pool_lawn.json:main-pool-deck-tiles",
+   "main_pool.json:clubhouse-front",
    "ground_plan_main_pool.json:main-pool-deck-band",
    "ground_plan_main_pool.json:lawn-strip-guillermo",
    "ground_plan_main_pool.json:lawn-pink-paths"
@@ -17594,6 +17600,7 @@
    "picasso_lawn_wall.json:picasso-lawn-wall",
    "main_pool_lawn.json:lawn-bollards-bins",
    "main_pool_lawn.json:lawn-white-rooms",
+   "main_pool.json:clubhouse-front",
    "ground_plan_main_pool.json:main-pool-deck-band",
    "ground_plan_main_pool.json:lawn-strip-guillermo",
    "ground_plan_main_pool.json:lawn-pink-paths"
@@ -22324,7 +22331,9 @@
    "altitude": 3.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "main_pool.json:clubhouse-front"
+  ],
   "looksAt": [
    9.8,
    109.1
@@ -22443,7 +22452,9 @@
    "altitude": 5.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "main_pool.json:clubhouse-front"
+  ],
   "looksAt": [
    -5.0,
    150.0
@@ -22482,7 +22493,10 @@
    "altitude": 4.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "main_pool_lawn.json:lawn-sea-hedge",
+   "main_pool.json:clubhouse-front"
+  ],
   "looksAt": [
    -3.5,
    121.7

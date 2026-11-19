@@ -4,9 +4,11 @@ import { poolLevelPoint } from "./pool-levels";
 import data from "../data/seafront_fence.json";
 import type { Vec2 } from "./types";
 
-/** The white wall, the gateway and railings between the big-pool lawn and the paseo (data/seafront_fence.json).
+/** The mesh fence, the gateway with its white wings and the railings between the big-pool lawn and the paseo (data/seafront_fence.json).
  * The railings are dark green bars on a low sandstone plinth, not white (IMG_2604, 2609, 2610, 2630, 2631). */
 const line = (points: number[][]): Vec2[] => points.map(poolLevelPoint).filter((p, i, all) => !i || Math.hypot(p[0] - all[i - 1][0], p[1] - all[i - 1][1]) > 0.05);
+/** A rigid-mesh fence on a plinth; `solidLast` segments at the end stay a solid white wing `solidHeight` tall. */
+type MeshSpec = { plinth: number; plinthFinish: string; post: number; paint: string; solidLast?: number; solidHeight?: number };
 const pieces = [data.wall, data.rampWall, data.stub, data.railing].map((f) => ({ ...f, line: line(f.points) }));
 const gateAt = poolLevelPoint(data.gate.at), gateAlong = (() => { const [x, z] = poolLevelPoint(data.gate.along); const n = Math.hypot(x, z); return [x / n, z / n] as Vec2; })();
 /** The beach gateway in world metres: its centre and the direction along the boundary (the sea is to the right of it). */
@@ -40,7 +42,31 @@ export function addSeafrontFence(scene: THREE.Scene, groundAt: (x: number, z: nu
     mesh.castShadow = mesh.receiveShadow = true; group.add(mesh);
   };
   const base = (a: Vec2, b: Vec2) => Math.min(groundAt(...a), groundAt(...b));
-  for (const f of [pieces[0], pieces[1], pieces[2]]) f.line.slice(1).forEach((b, i) => { const a = f.line[i]; beam(a, b, base(a, b) - 0.2, f.height + 0.2, f.thickness, white); });
+  const sandstone = plasterMaterial(data.railing.plinthFinish);
+  const wires: THREE.Matrix4[] = [], wire = new THREE.Vector3(), turn = new THREE.Quaternion(), size = new THREE.Vector3();
+  const addWire = (x: number, y: number, z: number, yaw: number, w: number, h: number, d: number) => {
+    turn.setFromEuler(new THREE.Euler(0, yaw, 0)); wire.set(x, y, z); size.set(w, h, d); wires.push(new THREE.Matrix4().compose(wire, turn, size));
+  };
+  for (const f of [pieces[0], pieces[1], pieces[2]]) f.line.slice(1).forEach((b, i) => {
+    const a = f.line[i], y = base(a, b), mesh = (f as { mesh?: MeshSpec }).mesh;
+    // Dave, 2026-11-19: west of the gate the boundary is a fence, not a wall. A low plinth carries dark green
+    // rigid-mesh panels (IMG_2759, IMG_2763, IMG_2766); only a short solid white wing stands beside the gate pier.
+    const solid = !mesh || (mesh.solidLast !== undefined && i >= f.line.length - 1 - mesh.solidLast);
+    if (solid) { beam(a, b, y - 0.2, (mesh?.solidHeight ?? f.height) + 0.2, f.thickness, white); return; }
+    beam(a, b, y - 0.2, mesh.plinth + 0.2, f.thickness, mesh.plinthFinish === "white" ? white : sandstone);
+    const length = Math.hypot(b[0] - a[0], b[1] - a[1]), yaw = -Math.atan2(b[1] - a[1], b[0] - a[0]), ux = (b[0] - a[0]) / length, uz = (b[1] - a[1]) / length;
+    const low = y + mesh.plinth, high = y + f.height, tall = high - low;
+    for (let s = 0; s <= length + 0.01; s += mesh.post) addWire(a[0] + ux * Math.min(s, length), low + tall / 2 + 0.05, a[1] + uz * Math.min(s, length), yaw, 0.06, tall + 0.1, 0.06);
+    // Welded panels: verticals every 0.1 m, horizontals every 0.2 m, and the two folded ribs that give rigid mesh its look.
+    for (let s = 0.05; s < length; s += 0.1) addWire(a[0] + ux * s, low + tall / 2, a[1] + uz * s, yaw, 0.008, tall, 0.008);
+    for (let h = 0.02; h < tall; h += 0.2) addWire((a[0] + b[0]) / 2, low + h, (a[1] + b[1]) / 2, yaw, length, 0.008, 0.008);
+    for (const rib of [0.3, 0.7]) addWire((a[0] + b[0]) / 2, low + tall * rib, (a[1] + b[1]) / 2, yaw, length, 0.035, 0.05);
+  });
+  if (wires.length) {
+    const meshPaint = new THREE.MeshStandardMaterial({ color: data.rampWall.mesh.paint, roughness: 0.6 });
+    const panels = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), meshPaint, wires.length);
+    wires.forEach((m, i) => panels.setMatrixAt(i, m)); panels.castShadow = true; panels.name = "seafront-mesh-fence"; group.add(panels);
+  }
   // Railings: a low sandstone plinth, square posts, a top rail and close vertical bars between them, all dark green.
   const rail = pieces[3], bars: THREE.Matrix4[] = [];
   const railLen = rail.line.slice(1).reduce((n, b, i) => n + Math.hypot(b[0] - rail.line[i][0], b[1] - rail.line[i][1]), 0);

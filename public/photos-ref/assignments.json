@@ -6,9 +6,9 @@
   "needs-review": 242,
   "suggested": 304,
   "photos": 550,
-  "features": 515,
-  "photosCitedByModel": 224,
-  "modelFeaturesWithPhotoCitations": 259
+  "features": 516,
+  "photosCitedByModel": 227,
+  "modelFeaturesWithPhotoCitations": 260
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -17422,6 +17422,9 @@
    "nearby": [],
    "inViewCandidates": [],
    "citedBy": [
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing",
     "main_pool_lawn.json:lawn-bollards-bins",
     "main_pool_lawn.json:lawn-sea-hedge",
     "ground_plan_main_pool.json:main-lawn",
@@ -17486,8 +17489,10 @@
    "nearby": [],
    "inViewCandidates": [],
    "citedBy": [
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing",
     "main_pool_lawn.json:lawn-white-rooms",
-    "main_pool_lawn.json:lawn-sea-hedge",
     "main_pool_lawn.json:lawn-kiosk-plain",
     "ground_plan_main_pool.json:lawn-strip-guillermo",
     "ground_plan_main_pool.json:lawn-pink-paths",
@@ -17532,6 +17537,7 @@
     "picasso_lawn_wall.json:picasso-lawn-wall",
     "main_pool_lawn.json:lawn-bollards-bins",
     "main_pool_lawn.json:main-pool-deck-tiles",
+    "main_pool.json:clubhouse-front",
     "ground_plan_main_pool.json:main-pool-deck-band",
     "ground_plan_main_pool.json:lawn-strip-guillermo",
     "ground_plan_main_pool.json:lawn-pink-paths"
@@ -17585,6 +17591,7 @@
     "picasso_lawn_wall.json:picasso-lawn-wall",
     "main_pool_lawn.json:lawn-bollards-bins",
     "main_pool_lawn.json:lawn-white-rooms",
+    "main_pool.json:clubhouse-front",
     "ground_plan_main_pool.json:main-pool-deck-band",
     "ground_plan_main_pool.json:lawn-strip-guillermo",
     "ground_plan_main_pool.json:lawn-pink-paths"
@@ -22049,7 +22056,9 @@
      "angleOffset": 34.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "main_pool.json:clubhouse-front"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 14.7,
@@ -22159,7 +22168,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "main_pool.json:clubhouse-front"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -2.7,
@@ -22185,7 +22196,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "main_pool_lawn.json:lawn-sea-hedge",
+    "main_pool.json:clubhouse-front"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -3.5,

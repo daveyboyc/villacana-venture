@@ -55,7 +55,7 @@ import { addSprites, SPRITE_SIZE, type SpriteKind, type SpritePlacement } from "
 import type { BoundaryReference, InputState, Skeleton, SkeletonBuilding, Vec2 } from "./types";
 import { addPools, nearestWall, POOL_STAND, poolSteps } from "./water";
 import { addPoolFittings, type FittingPlace, type PoolFitting } from "./pool-kit";
-import { addMainPoolTerraces, addRoofFins, addSeafront } from "./main-pool";
+import { addClubhouseFront, addMainPoolTerraces, addRoofFins, addSeafront } from "./main-pool";
 import { addSeafrontOutlines } from "./seafront";
 import { addSeaside, makeSeaside, type Seaside } from "./seaside";
 import { drapeScene, groundSheet, refine, siteY, siteYLowered, siteYStreet } from "./terrain";
@@ -275,6 +275,7 @@ async function boot(): Promise<void> {
   let coast = new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]);
   if (mainPool) {
     addMainPoolTerraces(scene, buildings.filter((b) => terraceIds.has(b.id)), centroid(pool.ring));
+    addClubhouseFront(scene, buildings, centroid(pool.ring), !layoutOnly);
     addRoofFins(scene);
     const map = await (await fetch(asset("/map/villacana.json"))).json();
     if (skeleton.seafront) addSeafrontOutlines(scene, skeleton.seafront, true, seaside);
