@@ -642,6 +642,52 @@
       "model": "built",
       "task": "elena-walkway-details",
       "note": "Three white-nosed risers (about 0.13 m each, treads about 0.5 m deep) up from the lane into the walkway (6265201UF1366N_part5), a red studded rubber ramp about 1.65 m long beside them on the north side; the floor then runs level to the west arch. Floor inside is terracotta with blue-and-white inset tiles. The first reading (two risers, 0.25-0.36 m) is replaced: IMG_2459, IMG_2518 and IMG_2689 show three risers. Built in data/elena_walkway.json at 0.40 m; under a roof, so the laser survey cannot check it."
+    },
+    {
+      "id": "dali-north-lawn-bed",
+      "area": "dali",
+      "type": "raised-bed",
+      "from": "the house-side tiled path",
+      "rise": [
+        0.32,
+        0.42
+      ],
+      "confidence": "high",
+      "at": [
+        -190.5,
+        68.5
+      ],
+      "atAccuracy": 2,
+      "photos": [
+        "IMG_3089.jpg",
+        "IMG_3086.jpg",
+        "IMG_3087.jpg"
+      ],
+      "model": "built",
+      "note": "North of the Cervantes apron the Dalí lawn strip is a raised bed behind a white kerb wall with a rounded top. The lawn is level with the wall top and flush with the parking side. The PNOA-LiDAR 2020-21 ground puts the path 0.28-0.42 m below the lawn (median 0.35). The bed ends at the apron in a white end wall with a pier and mailbox. Built in src/dali-strip-levels.ts (data/dali_strip_levels.json)."
+    },
+    {
+      "id": "dali-south-lawn-kerb",
+      "area": "dali",
+      "type": "raised-threshold",
+      "from": "the house-side tiled path",
+      "rise": [
+        0.12,
+        0.15
+      ],
+      "confidence": "medium",
+      "at": [
+        -180.5,
+        89.5
+      ],
+      "atAccuracy": 3,
+      "photos": [
+        "IMG_3082.jpg",
+        "IMG_3083.jpg",
+        "IMG_3084.jpg"
+      ],
+      "model": "built",
+      "note": "South of the apron the path is edged by a low rounded white kerb and the lawn rises behind it to the parking. The survey step (path to parking side) is 0.30-0.35 m at the IMG_3082 camera and closes about 22 m further south. Built in src/dali-strip-levels.ts."
     }
   ],
   "photosWanted": [

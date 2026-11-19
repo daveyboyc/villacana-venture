@@ -6,9 +6,9 @@
   "needs-review": 245,
   "suggested": 316,
   "photos": 565,
-  "features": 516,
-  "photosCitedByModel": 227,
-  "modelFeaturesWithPhotoCitations": 260
+  "features": 521,
+  "photosCitedByModel": 234,
+  "modelFeaturesWithPhotoCitations": 265
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -4227,6 +4227,60 @@
     "IMG_2978.jpg",
     "IMG_2983.jpg",
     "IMG_2984.jpg"
+   ]
+  },
+  {
+   "id": "dali_strip_levels.json:dali-lawn-strip-3",
+   "name": "Dalí · lawn strip south of the traced crossing zone",
+   "kind": "reference feature",
+   "source": "IMG_3082 shows the kerbed lawn strip and tiled path running on south past the end of the traced zone (z about 95). They are continued on the same bay-edge line with the traced widths (lawn 3.5 m, path 1.31 m) to 33.5 m along it, where the survey step closes. The end and the widths there are inferred, not photographed.",
+   "evidence": [
+    "IMG_3082.jpg",
+    "IMG_3084.jpg"
+   ]
+  },
+  {
+   "id": "dali_strip_levels.json:dali-house-footpath-3",
+   "name": "Dalí · house-side footpath south of the traced crossing zone",
+   "kind": "reference feature",
+   "source": "IMG_3082 shows the kerbed lawn strip and tiled path running on south past the end of the traced zone (z about 95). They are continued on the same bay-edge line with the traced widths (lawn 3.5 m, path 1.31 m) to 33.5 m along it, where the survey step closes. The end and the widths there are inferred, not photographed.",
+   "evidence": [
+    "IMG_3082.jpg",
+    "IMG_3084.jpg"
+   ]
+  },
+  {
+   "id": "dali_strip_levels.json:dali-north-lawn-bed",
+   "name": "Pintor Dalí · raised lawn bed and kerb wall north of the Cervantes apron",
+   "kind": "reference feature",
+   "source": "IMG_3089 and IMG_3086 show the strip north of the apron as a raised lawn bed. A white rendered kerb wall with a rounded top stands about 0.35-0.45 m above the tiled house-side path, and the lawn is level with its top. The laser survey gives the same step (0.35 m median). The bed ends at the apron in a white end wall with a rounded pier carrying a mailbox (IMG_3086, IMG_3087).",
+   "evidence": [
+    "IMG_3089.jpg",
+    "IMG_3086.jpg",
+    "IMG_3087.jpg",
+    "IMG_3088.jpg"
+   ]
+  },
+  {
+   "id": "dali_strip_levels.json:dali-south-lawn-kerb",
+   "name": "Pintor Dalí · low kerb and rising lawn south of the Cervantes apron",
+   "kind": "reference feature",
+   "source": "South of the apron the path is edged by a low rounded white kerb about 0.12-0.15 m high (IMG_3082-3084), and the lawn behind it rises towards the parking. The survey puts the parking side 0.3-0.35 m above the path at the camera, so the lawn takes the rest of the rise across its width. The step closes about 22 m south of the camera.",
+   "evidence": [
+    "IMG_3082.jpg",
+    "IMG_3083.jpg",
+    "IMG_3084.jpg",
+    "IMG_3088.jpg"
+   ]
+  },
+  {
+   "id": "dali_strip_levels.json:dali-apron-bed-pier",
+   "name": "Cervantes apron · rounded pier with mailbox at the raised bed's corner",
+   "kind": "reference feature",
+   "source": "The white pier with a rounded top and a wall-mounted white mailbox stands at the bed's parking-side corner by the apron (IMG_3086 left, IMG_3087). Its height is from the mailbox (about 0.4 m tall); the position is ±0.5 m.",
+   "evidence": [
+    "IMG_3086.jpg",
+    "IMG_3087.jpg"
    ]
   },
   {
@@ -25933,11 +25987,53 @@
    "angleOffset": 18.7
   },
   {
+   "from": "photo:IMG_3082.jpg",
+   "to": "dali_strip_levels.json:dali-lawn-strip-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3082.jpg",
+   "to": "dali_strip_levels.json:dali-house-footpath-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3082.jpg",
+   "to": "dali_strip_levels.json:dali-south-lawn-kerb",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3083.jpg",
+   "to": "dali_strip_levels.json:dali-south-lawn-kerb",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3084.jpg",
    "to": "building:6265201UF1366N_part2",
    "relation": "possibly-in-view",
    "distance": 31.8,
    "angleOffset": 17.5
+  },
+  {
+   "from": "photo:IMG_3084.jpg",
+   "to": "dali_strip_levels.json:dali-lawn-strip-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3084.jpg",
+   "to": "dali_strip_levels.json:dali-house-footpath-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3084.jpg",
+   "to": "dali_strip_levels.json:dali-south-lawn-kerb",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3085.jpg",
@@ -26000,6 +26096,18 @@
    "angleOffset": 6.4
   },
   {
+   "from": "photo:IMG_3086.jpg",
+   "to": "dali_strip_levels.json:dali-north-lawn-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3086.jpg",
+   "to": "dali_strip_levels.json:dali-apron-bed-pier",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3087.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -26012,6 +26120,18 @@
    "gap": 5.5
   },
   {
+   "from": "photo:IMG_3087.jpg",
+   "to": "dali_strip_levels.json:dali-north-lawn-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3087.jpg",
+   "to": "dali_strip_levels.json:dali-apron-bed-pier",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3088.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -26022,6 +26142,18 @@
    "to": "parking:Dalí car park",
    "relation": "camera-nearby",
    "gap": 5.1
+  },
+  {
+   "from": "photo:IMG_3088.jpg",
+   "to": "dali_strip_levels.json:dali-north-lawn-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3088.jpg",
+   "to": "dali_strip_levels.json:dali-south-lawn-kerb",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3089.jpg",
@@ -26048,6 +26180,12 @@
    "relation": "possibly-in-view",
    "distance": 34.6,
    "angleOffset": 17.2
+  },
+  {
+   "from": "photo:IMG_3089.jpg",
+   "to": "dali_strip_levels.json:dali-north-lawn-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3090.jpg",

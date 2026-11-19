@@ -1,0 +1,187 @@
+{
+ "id": "dali-strip-levels",
+ "name": "Pintor Dalí · house-side path, lawn strip and kerb levels either side of the Cervantes apron",
+ "checkedAt": "2026-11-19",
+ "datum": "Heights are relative to the visible Dalí parking surface (terrain siteY + daliSurface 0.272) at the lawn's parking edge. The lawn's parking edge stays flush with the parking. The house-side path sits `drop` below it.",
+ "station": {
+  "origin": [
+   -179.0,
+   89.5
+  ],
+  "along": [
+   0.443,
+   0.896
+  ],
+  "note": "Station a in metres along the path from the IMG_3082-3084 camera station (positive south)."
+ },
+ "parkingEdges": [
+  {
+   "id": "north",
+   "from": [
+    -196.84,
+    62.47
+   ],
+   "to": [
+    -189.55,
+    77.82
+   ]
+  },
+  {
+   "id": "south",
+   "from": [
+    -187.93,
+    81.09
+   ],
+   "to": [
+    -168.67,
+    119.75
+   ]
+  }
+ ],
+ "drop": [
+  [
+   -40,
+   0.35
+  ],
+  [
+   6,
+   0.35
+  ],
+  [
+   22,
+   0.0
+  ],
+  [
+   60,
+   0.0
+  ]
+ ],
+ "dropTrust": "PNOA-LiDAR 2020-21 (1 m ground) sampled every 3 m along the path and 3 m into the lawn. The path is 0.28-0.42 m below the lawn and parking from a = -30 to +9 (median 0.35), then the step closes to about 0 by a = 22 (0.17 at 12, 0.07 at 18, -0.05 at 24).",
+ "beds": [
+  {
+   "id": "dali-north-lawn-bed",
+   "name": "Pintor Dalí · raised lawn bed and kerb wall north of the Cervantes apron",
+   "zones": [
+    "dali-lawn-strip-1"
+   ],
+   "paths": [
+    "dali-house-footpath-1"
+   ],
+   "form": "raised",
+   "kerbAbove": 0.03,
+   "kerbWidth": 0.15,
+   "evidence": [
+    "IMG_3089.jpg",
+    "IMG_3086.jpg",
+    "IMG_3087.jpg",
+    "IMG_3088.jpg"
+   ],
+   "trust": "IMG_3089 and IMG_3086 show the strip north of the apron as a raised lawn bed. A white rendered kerb wall with a rounded top stands about 0.35-0.45 m above the tiled house-side path, and the lawn is level with its top. The laser survey gives the same step (0.35 m median). The bed ends at the apron in a white end wall with a rounded pier carrying a mailbox (IMG_3086, IMG_3087)."
+  },
+  {
+   "id": "dali-south-lawn-kerb",
+   "name": "Pintor Dalí · low kerb and rising lawn south of the Cervantes apron",
+   "zones": [
+    "dali-lawn-strip-2",
+    "dali-lawn-strip-3"
+   ],
+   "paths": [
+    "dali-house-footpath-2",
+    "dali-house-footpath-3"
+   ],
+   "form": "sloped",
+   "kerbHeight": 0.14,
+   "kerbWidth": 0.14,
+   "lawnAtKerb": 0.12,
+   "evidence": [
+    "IMG_3082.jpg",
+    "IMG_3083.jpg",
+    "IMG_3084.jpg",
+    "IMG_3088.jpg"
+   ],
+   "trust": "South of the apron the path is edged by a low rounded white kerb about 0.12-0.15 m high (IMG_3082-3084), and the lawn behind it rises towards the parking. The survey puts the parking side 0.3-0.35 m above the path at the camera, so the lawn takes the rest of the rise across its width. The step closes about 22 m south of the camera."
+  }
+ ],
+ "extension": [
+  {
+   "id": "dali-lawn-strip-3",
+   "kind": "lawn",
+   "name": "Dalí · lawn strip south of the traced crossing zone",
+   "ring": [
+    [
+     -181.12,
+     94.77
+    ],
+    [
+     -172.99,
+     111.08
+    ],
+    [
+     -169.86,
+     109.52
+    ],
+    [
+     -177.98,
+     93.21
+    ]
+   ],
+   "evidence": [
+    "IMG_3082.jpg",
+    "IMG_3084.jpg"
+   ]
+  },
+  {
+   "id": "dali-house-footpath-3",
+   "kind": "footpath",
+   "name": "Dalí · house-side footpath south of the traced crossing zone",
+   "ring": [
+    [
+     -177.98,
+     93.21
+    ],
+    [
+     -169.86,
+     109.52
+    ],
+    [
+     -168.69,
+     108.93
+    ],
+    [
+     -176.81,
+     92.62
+    ]
+   ],
+   "evidence": [
+    "IMG_3082.jpg",
+    "IMG_3084.jpg"
+   ]
+  }
+ ],
+ "extensionTrust": "IMG_3082 shows the kerbed lawn strip and tiled path running on south past the end of the traced zone (z about 95). They are continued on the same bay-edge line with the traced widths (lawn 3.5 m, path 1.31 m) to 33.5 m along it, where the survey step closes. The end and the widths there are inferred, not photographed.",
+ "pier": {
+  "id": "dali-apron-bed-pier",
+  "name": "Cervantes apron · rounded pier with mailbox at the raised bed's corner",
+  "at": [
+   -189.6,
+   77.3
+  ],
+  "size": [
+   0.45,
+   0.45
+  ],
+  "height": 1.25,
+  "mailbox": {
+   "size": [
+    0.32,
+    0.42,
+    0.12
+   ]
+  },
+  "evidence": [
+   "IMG_3086.jpg",
+   "IMG_3087.jpg"
+  ],
+  "trust": "The white pier with a rounded top and a wall-mounted white mailbox stands at the bed's parking-side corner by the apron (IMG_3086 left, IMG_3087). Its height is from the mailbox (about 0.4 m tall); the position is ±0.5 m."
+ }
+}

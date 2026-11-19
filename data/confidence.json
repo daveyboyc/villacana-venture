@@ -834,6 +834,26 @@
   "elena_north_corner_details.json:sign": {
    "level": "photographed",
    "why": "CALLE DE ELENA in tall single-letter tiles between the door and the corner, read in IMG_2800, IMG_2967 and IMG_2455; placed by the review fits to about 0.2-0.3 m, the tiles drawn a little narrow to fit the modelled corner."
+  },
+  "dali_strip_levels.json:dali-north-lawn-bed": {
+   "level": "photographed",
+   "why": "IMG_3089 and IMG_3086 show the raised lawn bed and its white kerb wall standing about 0.35-0.45 m above the tiled path, with the end wall at the apron (IMG_3087). The laser survey gives the same step (median 0.35 m). The outline is the traced zone, good to about 1-2 m."
+  },
+  "dali_strip_levels.json:dali-south-lawn-kerb": {
+   "level": "estimated",
+   "why": "The low kerb (0.12-0.15 m) is photographed in IMG_3082-3084. How the lawn rises behind it to the parking is taken from the 1 m laser survey and spread evenly across the strip, not read from a photo."
+  },
+  "dali_strip_levels.json:dali-lawn-strip-3": {
+   "level": "inferred",
+   "why": "IMG_3082 shows the lawn strip continuing south past the traced zone. Its widths are carried on from the traced strip, and its end (33.5 m along the bay edge, where the survey step closes) is inferred."
+  },
+  "dali_strip_levels.json:dali-house-footpath-3": {
+   "level": "inferred",
+   "why": "IMG_3082 shows the tiled path continuing south along the garden walls. Its width is carried on from the traced path, and its end is inferred."
+  },
+  "dali_strip_levels.json:dali-apron-bed-pier": {
+   "level": "estimated",
+   "why": "The pier and mailbox are photographed in IMG_3086 and IMG_3087. The pier's size is judged from the mailbox, and its position is ±0.5 m."
   }
  },
  "gaps": [
@@ -1354,33 +1374,6 @@
     "IMG_2971.jpg"
    ],
    "why": "A lower kerbed bed with a trained climber runs along the house under its barred windows north of the raised corner bed (IMG_2686, IMG_2969); not modelled (discrepancy elena-north-west-lower-bed)."
-  },
-  {
-   "id": "gap:dali-lawn-strip-south",
-   "name": "Pintor Dalí · lawn strip and house-side path south of the traced crossing zone",
-   "at": [
-    -174.5,
-    104.0
-   ],
-   "photos": [
-    "IMG_3082.jpg",
-    "IMG_3084.jpg"
-   ],
-   "why": "IMG_3082 shows the kerbed lawn strip and the terracotta house-side path running on south past the end of the traced zone (data/dali_cervantes_threshold.json stops about z 95), with Strelitzia clumps and a jacaranda on it; the trees are placed but the strip itself is not traced there."
-  },
-  {
-   "id": "gap:cervantes-apron-raised-planter",
-   "name": "Cervantes apron · raised white planter on the north side, with mailbox pier",
-   "at": [
-    -188.4,
-    75.6
-   ],
-   "photos": [
-    "IMG_3087.jpg",
-    "IMG_3088.jpg",
-    "IMG_3086.jpg"
-   ],
-   "why": "A rendered raised planter about 0.5 m high with a rounded end pier carrying a mailbox holds the fan palm clump, orange Strelitzia reginae and purple trailing flowers (IMG_3087, IMG_3088). The palms are placed on the ground; the planter is not modelled."
   },
   {
    "id": "gap:dali-lawn-bollards",

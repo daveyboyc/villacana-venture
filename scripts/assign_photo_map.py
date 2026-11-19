@@ -292,6 +292,13 @@ def features(s):
     k,a=sills['footpathKerb'],sills['approach']
     add('door_sills.json:'+k['id'],k['name'],'reference feature','photo-supported kerb on the mapped car park edge; extent estimated',evidence=k['evidence'],points=[[k['origin'][i]+k['along'][i]*t for i in range(2)] for t in (0,k['length'])])
     add('door_sills.json:'+a['id'],a['name'],'reference feature','photo-supported approach square to the registry arch recess; length estimated',evidence=a['evidence'],points=[[a['arch'][i]+a['outward'][i]*t for i in range(2)] for t in (0,a['foot'])])
+    # The Dalí house-side strip at its surveyed levels (data/dali_strip_levels.json, src/dali-strip-levels.ts).
+    strip=json.loads((ROOT/'data/dali_strip_levels.json').read_text())
+    zones={z['id']:z['ring'] for z in json.loads((ROOT/'data/dali_cervantes_threshold.json').read_text())['zones']}
+    zones.update({z['id']:z['ring'] for z in strip['extension']})
+    for z in strip['extension']:add('dali_strip_levels.json:'+z['id'],z['name'],'reference feature',strip['extensionTrust'],evidence=z['evidence'],ring=z['ring'])
+    for b in strip['beds']:add('dali_strip_levels.json:'+b['id'],b['name'],'reference feature',b['trust'],evidence=b['evidence'],points=[p for i in b['zones'] for p in zones[i]])
+    add('dali_strip_levels.json:'+strip['pier']['id'],strip['pier']['name'],'reference feature',strip['pier']['trust'],evidence=strip['pier']['evidence'],points=[strip['pier']['at']])
     lawn=json.loads((ROOT/'data/main_pool_lawn.json').read_text())
     def ribbon(points,half):
         left,right=[],[]

@@ -6,9 +6,9 @@
   "needs-review": 245,
   "suggested": 316,
   "photos": 565,
-  "features": 516,
-  "photosCitedByModel": 227,
-  "modelFeaturesWithPhotoCitations": 260
+  "features": 521,
+  "photosCitedByModel": 234,
+  "modelFeaturesWithPhotoCitations": 265
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -22224,7 +22224,11 @@
      "angleOffset": 18.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "dali_strip_levels.json:dali-lawn-strip-3",
+    "dali_strip_levels.json:dali-house-footpath-3",
+    "dali_strip_levels.json:dali-south-lawn-kerb"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -175.6,
@@ -22243,7 +22247,9 @@
    ],
    "nearby": [],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "dali_strip_levels.json:dali-south-lawn-kerb"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -176.1,
@@ -22268,7 +22274,11 @@
      "angleOffset": 17.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "dali_strip_levels.json:dali-lawn-strip-3",
+    "dali_strip_levels.json:dali-house-footpath-3",
+    "dali_strip_levels.json:dali-south-lawn-kerb"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -176.3,
@@ -22358,7 +22368,10 @@
      "angleOffset": 6.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "dali_strip_levels.json:dali-north-lawn-bed",
+    "dali_strip_levels.json:dali-apron-bed-pier"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -183.8,
@@ -22390,7 +22403,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "dali_strip_levels.json:dali-north-lawn-bed",
+    "dali_strip_levels.json:dali-apron-bed-pier"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -184.3,
@@ -22422,7 +22438,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "dali_strip_levels.json:dali-north-lawn-bed",
+    "dali_strip_levels.json:dali-south-lawn-kerb"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -185.0,
@@ -22465,7 +22484,9 @@
      "angleOffset": 17.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "dali_strip_levels.json:dali-north-lawn-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -185.8,
