@@ -10,6 +10,7 @@ The clover-shaped south pool, its lawn, the date palm and the low seaward wall.
 - Laser survey ground 2026-10-24: the south pool deck is +0.12 m (survey +0.11) and its lawn rises with the survey to about +0.6 m towards Dalí; the seaward edge stays about 1 m above the paseo.
 - 8 November 2026: the arcade in IMG_2639-2642, signed 67 39 CALLE DE JORGE, is the far end of the Pintor Dalí arch (IMG_2283/2294/2295). Opened through 6263501UF1366S_part1 along that axis, 20.4 m to the lawn face at about (-96.9, 201.6), 2.1 m wide, flat ceilings and an open middle bay (data/south_pool_passage.json). Estimated to about 2 m; the cameras are not solved. The mapped Calle Jorge centreline is 28 m off this arch and was left alone.
 - 16 November 2026: IMG_2978-2984 walk the Calle de Jorge 39-67 arcade end to end with better pins (about 5-15 m): lawn-side arched green gate (2978), covered tiled floor with blue-and-white insets and hanging lanterns (2979, 2983), the open middle bay with a pebble-mosaic panel and bougainvillea arch (2980), and the west mouth where the tile meets the flagstone ramp down to Pintor Dalí (2984). New: a tiled side lane runs north-north-west from the open bay between houses 55 and 57 to an arch (2981, 2982); it is not in data/south_pool_passage.json and its line is not measured.
+- 18 Nov: IMG_3033 and IMG_3034 look back across the lawn from the beach side: curved white planter with a flower bed, glass pool fence, and the seaward house row with a round tiled turret and tall cactus.
 
 ## Read first
 
@@ -20,8 +21,8 @@ The clover-shaped south pool, its lawn, the date palm and the low seaward wall.
 
 ## Coverage
 
-Layout: 25, Levels and slopes: 3, Facades and roofs: 14, Materials: 17, Planting: 15, Signs: 4, Views: 6
-26 reviewed, 2 suggested only by camera position.
+Layout: 27, Levels and slopes: 3, Facades and roofs: 16, Materials: 17, Planting: 17, Signs: 4, Views: 6
+28 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -85,6 +86,8 @@ graph LR
 | [IMG_2979.jpg](../../public/photos-ref/IMG_2979.jpg) | ground | layout, materials, facades | Through the open gate: the tiled arcade with lantern, mat and arches **Looks at:** Calle de Jorge 39-67 arcade from the lawn-side gate looking toward Pintor Dalí. |
 | [IMG_2983.jpg](../../public/photos-ref/IMG_2983.jpg) | ground | layout, materials, facades | Arcade west half: covered tiled walk to the arch onto Pintor Dalí **Looks at:** west half of the Calle de Jorge 39-67 arcade toward the Pintor Dalí arch. |
 | [IMG_2984.jpg](../../public/photos-ref/IMG_2984.jpg) | ground | layout, levels, materials | West mouth of the arcade: tile floor meets the crazy-paved ramp to Pintor Dalí **Looks at:** west mouth of the arcade and the flagstone ramp down to Pintor Dalí. |
+| [IMG_3033.jpg](../../public/photos-ref/IMG_3033.jpg) | ground | layout, facades, planting | South pool lawn from the beach-side grass: clover pool, flower bed and white terraced houses **Looks at:** south pool lawn and its seaward house row. **Compass:** the subject is 55° from the phone heading; trust looksAt, not the heading. |
+| [IMG_3034.jpg](../../public/photos-ref/IMG_3034.jpg) | ground | layout, facades, planting | South pool lawn corner: white house with round tiled turret, tall cactus and clipped hedges **Note:** Taken from the same spot as IMG_3033 turned about 70 degrees. |
 | `reference/web/south-pool-03-lawn-from-north-west.jpg` | ground | layout, materials | South lawn from the north-west: curved low white wall, bollard lights, loungers **Note:** Found on the web; has people in it. Reference only, never publish. |
 | `reference/apple-maps/03-3d-south-pool-and-promenade.png` | aerial | layout | Apple Maps 3D: south pool, its lawn and the beach promenade |
 | [IMG_2349.jpg](../../public/photos-ref/IMG_2349.jpg) | ground | levels, layout, materials | From the paseo: sandstone retaining wall and fence below the south pool **Note:** Shows the retaining wall right below the south pool. _Used by: paseo_wall.json:paseo-retaining-wall, south_pool.json:south-pool-seaward-level, paseo_details.json:paseo-pool-hedge._ |
@@ -95,12 +98,3 @@ graph LR
 | [IMG_2576.jpg](../../public/photos-ref/IMG_2576.jpg) | ground | layout, signage, planting | Narrow lane to an open iron gate and the grass at the end, between oleander and planter **Looks at:** Open iron gate at the end of the lane. **Note:** Which pool lies beyond the gate is not confirmed; the lawn with a lifebuoy suggests the south pool, but this is not proven. looksAt is about 14 m ahead. |
 | [IMG_2577.jpg](../../public/photos-ref/IMG_2577.jpg) | ground | layout, signage, materials | Iron gate with notices at the end of the lane, planted wall on the right **Looks at:** Open iron gate with notices at lane end. **Note:** Same gate as IMG_2576. Beyond-gate lawn assumed to be the pool lawn; not confirmed. looksAt is about 14 m ahead along the heading. |
 | `reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |
-
-## Suggested by camera position, not yet reviewed
-
-The camera stood in or near this area. Check what the picture actually shows before relying on it.
-
-| Reference | Viewpoint | Use for | What it shows |
-| --- | --- | --- | --- |
-| [IMG_3033.jpg](../../public/photos-ref/IMG_3033.jpg) | not reviewed | not reviewed | IMG_3033 |
-| [IMG_3034.jpg](../../public/photos-ref/IMG_3034.jpg) | not reviewed | not reviewed | IMG_3034 |

@@ -551,7 +551,7 @@
    },
    "photos": {
     "count": 26,
-    "tagged": 24,
+    "tagged": 26,
     "placed": 23,
     "checks": {
      "matches": 0,
@@ -680,9 +680,9 @@
     }
    },
    "photos": {
-    "count": 36,
-    "tagged": 30,
-    "placed": 36,
+    "count": 37,
+    "tagged": 37,
+    "placed": 37,
     "checks": {
      "matches": 14,
      "differs": 17,
@@ -791,7 +791,7 @@
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey.",
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
-    "Photos: 36, 36 placed; no camera solved.",
+    "Photos: 37, 37 placed; no camera solved.",
     "Facades: 0 of 32 kit parts traced from photos.",
     "How sure: 1 photographed, 19 estimated, 1 inferred, 2 known gaps.",
     "Placement: 0 of 21 features verified, 17 open discrepancies.",
@@ -2101,7 +2101,7 @@
    },
    "photos": {
     "count": 61,
-    "tagged": 58,
+    "tagged": 61,
     "placed": 61,
     "checks": {
      "matches": 15,
@@ -2238,9 +2238,9 @@
     }
    },
    "photos": {
-    "count": 158,
-    "tagged": 158,
-    "placed": 158,
+    "count": 159,
+    "tagged": 159,
+    "placed": 159,
     "checks": {
      "matches": 26,
      "differs": 14,
@@ -2297,7 +2297,7 @@
    "status": [
     "Ground: 99% of open ground within 0.25 m of the laser survey; streets within 0.25 m.",
     "Footprints: 84% stand on surveyed roof; best fit moves them 1.6 m.",
-    "Photos: 158, 158 placed; no camera solved.",
+    "Photos: 159, 159 placed; no camera solved.",
     "Facades: 0 of 597 kit parts traced from photos.",
     "How sure: 1 photographed, 17 estimated, 4 inferred, 5 known gaps.",
     "Placement: 0 of 22 features verified, 4 open discrepancies.",
@@ -2758,9 +2758,9 @@
     }
    },
    "photos": {
-    "count": 83,
-    "tagged": 61,
-    "placed": 80,
+    "count": 78,
+    "tagged": 78,
+    "placed": 75,
     "checks": {
      "matches": 1,
      "differs": 4,
@@ -2817,7 +2817,7 @@
    "status": [
     "Ground: 38% of open ground within 0.25 m of the laser survey.",
     "Footprints: one house, too few to fit against the survey.",
-    "Photos: 83, 80 placed; no camera solved.",
+    "Photos: 78, 75 placed; no camera solved.",
     "How sure: 0 photographed, 10 estimated, 1 inferred, 6 known gaps.",
     "Placement: 0 of 11 features verified, 4 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 0 still open; 3 evidence requests. This is not whole-area acceptance."
@@ -2963,9 +2963,9 @@
     }
    },
    "photos": {
-    "count": 96,
-    "tagged": 61,
-    "placed": 95,
+    "count": 101,
+    "tagged": 101,
+    "placed": 100,
     "checks": {
      "matches": 5,
      "differs": 7,
@@ -3005,7 +3005,7 @@
    "status": [
     "Ground: 86% of open ground within 0.25 m of the laser survey.",
     "Footprints: 66% stand on surveyed roof; best fit moves them 1.5 m.",
-    "Photos: 96, 95 placed; no camera solved.",
+    "Photos: 101, 100 placed; no camera solved.",
     "Facades: 0 of 106 kit parts traced from photos.",
     "How sure: 5 photographed, 12 estimated, 0 inferred, 3 known gaps.",
     "Placement: 0 of 17 features verified.",
@@ -3113,7 +3113,7 @@
    },
    "photos": {
     "count": 566,
-    "tagged": 518,
+    "tagged": 566,
     "placed": 546,
     "checks": {
      "matches": 55,

@@ -52339,18 +52339,20 @@
   {
    "id": "path-source:IMG_2994.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_2994",
+   "name": "Paved lane between white houses and a garden wall, bougainvillea on the right, ladder and wheelbarrow",
    "sourceId": "IMG_2994.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": []
+   "areas": [
+    "whole-resort"
+   ]
   },
   {
    "id": "path-source:IMG_3005.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3005",
+   "name": "Hedged white planter beside an octagon-tiled lane, lawn corner and bougainvillea houses beyond",
    "sourceId": "IMG_3005.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52363,7 +52365,7 @@
   {
    "id": "path-source:IMG_3006.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3006",
+   "name": "Octagon-tiled lane between a tall white wall and a hedged planter, bougainvillea corner ahead",
    "sourceId": "IMG_3006.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52376,7 +52378,7 @@
   {
    "id": "path-source:IMG_3007.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3007",
+   "name": "Octagon-tiled lane with a large round manhole cover, hedged planter on the right",
    "sourceId": "IMG_3007.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52389,135 +52391,190 @@
   {
    "id": "path-source:IMG_3033.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3033",
+   "name": "South pool lawn from the beach-side grass: clover pool, flower bed and white terraced houses",
    "sourceId": "IMG_3033.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
-    "paseo",
-    "south-pool"
+    "south-pool",
+    "paseo"
    ]
   },
   {
    "id": "path-source:IMG_3034.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3034",
+   "name": "South pool lawn corner: white house with round tiled turret, tall cactus and clipped hedges",
    "sourceId": "IMG_3034.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
-    "paseo",
-    "south-pool"
+    "south-pool",
+    "paseo"
    ]
   },
   {
    "id": "path-source:IMG_3036.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3036",
+   "name": "Timber boardwalk with a long pink wall on its right and a lamp pole, looking south-west",
    "sourceId": "IMG_3036.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": []
+   "areas": [
+    "paseo",
+    "whole-resort"
+   ]
   },
   {
    "id": "path-source:IMG_3037.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3037",
+   "name": "Boardwalk bend between a white building and the pink wall, palms and pampas grass",
    "sourceId": "IMG_3037.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": []
+   "areas": [
+    "paseo",
+    "whole-resort"
+   ]
   },
   {
    "id": "path-source:IMG_3038.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3038",
+   "name": "Boardwalk where it widens and turns, with a white wall on the left and railed edge on the right",
    "sourceId": "IMG_3038.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": []
+   "areas": [
+    "paseo",
+    "whole-resort"
+   ]
   },
   {
    "id": "path-source:IMG_3039.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3039",
+   "name": "Boardwalk with red-framed rail running towards the beach, pampas grass behind",
    "sourceId": "IMG_3039.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": []
+   "areas": [
+    "paseo",
+    "whole-resort"
+   ]
   },
   {
    "id": "path-source:IMG_3040.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3040",
+   "name": "Boardwalk on a raised deck with red posts, lamp pole and the pink wall ending",
    "sourceId": "IMG_3040.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": []
+   "areas": [
+    "paseo",
+    "whole-resort"
+   ]
   },
   {
    "id": "path-source:IMG_3041.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3041",
+   "name": "Red timber handrail and picket balustrade of the boardwalk with sea beyond the dune scrub",
    "sourceId": "IMG_3041.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": []
+   "areas": [
+    "paseo",
+    "whole-resort"
+   ]
   },
   {
    "id": "path-source:IMG_3042.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3042",
+   "name": "Boardwalk straight to a small white tiled-roof hut, with rock edge and red top rail",
    "sourceId": "IMG_3042.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": []
+   "areas": [
+    "paseo",
+    "whole-resort"
+   ]
   },
   {
    "id": "path-source:IMG_3043.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3043",
+   "name": "Over the red rail: a second boardwalk arm and park with a hotel behind",
    "sourceId": "IMG_3043.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": []
+   "areas": [
+    "paseo",
+    "whole-resort"
+   ]
   },
   {
    "id": "path-source:IMG_3044.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3044",
+   "name": "Boardwalk turning towards a white tiled-roof hut with beach and sea ahead",
    "sourceId": "IMG_3044.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": []
+   "areas": [
+    "paseo",
+    "whole-resort"
+   ]
   },
   {
    "id": "path-source:IMG_3045.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3045",
+   "name": "Straight boardwalk to the beach hut, picket rail and the sea at the end",
    "sourceId": "IMG_3045.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "whole-resort"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3046.jpg",
+   "kind": "path-source-accounting",
+   "name": "Beach seen over the boardwalk picket rail, dune scrub and sea",
+   "sourceId": "IMG_3046.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3047.jpg",
+   "kind": "path-source-accounting",
+   "name": "Low white building with tiled roof and barred windows behind chain-link, seen from the boardwalk",
+   "sourceId": "IMG_3047.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
@@ -52527,51 +52584,22 @@
    ]
   },
   {
-   "id": "path-source:IMG_3046.jpg",
-   "kind": "path-source-accounting",
-   "name": "IMG_3046",
-   "sourceId": "IMG_3046.jpg",
-   "disposition": "not-yet-inspected",
-   "inspectionScopes": [],
-   "review": null,
-   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": [
-    "paseo",
-    "barraka-beach"
-   ]
-  },
-  {
-   "id": "path-source:IMG_3047.jpg",
-   "kind": "path-source-accounting",
-   "name": "IMG_3047",
-   "sourceId": "IMG_3047.jpg",
-   "disposition": "not-yet-inspected",
-   "inspectionScopes": [],
-   "review": null,
-   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": [
-    "paseo",
-    "barraka-beach"
-   ]
-  },
-  {
    "id": "path-source:IMG_3048.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3048",
+   "name": "Boardwalk beside a chain-link fence, lawn with palms and a Norfolk pine",
    "sourceId": "IMG_3048.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
-    "paseo",
-    "barraka-beach"
+    "paseo"
    ]
   },
   {
    "id": "path-source:IMG_3049.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3049",
+   "name": "Long straight boardwalk with picket rails running towards La Concha",
    "sourceId": "IMG_3049.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52585,35 +52613,33 @@
   {
    "id": "path-source:IMG_3050.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3050",
+   "name": "Open beach with palms and sea from the boardwalk rail",
    "sourceId": "IMG_3050.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
-    "paseo",
     "barraka-beach"
    ]
   },
   {
    "id": "path-source:IMG_3051.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3051",
+   "name": "Beach and a stranded boat over the picket rail",
    "sourceId": "IMG_3051.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
-    "paseo",
     "barraka-beach"
    ]
   },
   {
    "id": "path-source:IMG_3052.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3052",
+   "name": "Neighbouring lawn behind chain-link fence: lamp post, young palm and low white houses",
    "sourceId": "IMG_3052.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52626,7 +52652,7 @@
   {
    "id": "path-source:IMG_3053.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3053",
+   "name": "White tiled-roof bungalow and Norfolk pine behind chain-link fence",
    "sourceId": "IMG_3053.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52639,8 +52665,22 @@
   {
    "id": "path-source:IMG_3054.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3054",
+   "name": "Pink stamped-concrete paseo running south-west beside a fence, white restaurant ahead",
    "sourceId": "IMG_3054.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "barraka-beach"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3055.jpg",
+   "kind": "path-source-accounting",
+   "name": "Fenced lawn with a bench and low white buildings with a green dado; hotel block behind",
+   "sourceId": "IMG_3055.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
@@ -52650,37 +52690,22 @@
    ]
   },
   {
-   "id": "path-source:IMG_3055.jpg",
-   "kind": "path-source-accounting",
-   "name": "IMG_3055",
-   "sourceId": "IMG_3055.jpg",
-   "disposition": "not-yet-inspected",
-   "inspectionScopes": [],
-   "review": null,
-   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": [
-    "paseo",
-    "barraka-beach"
-   ]
-  },
-  {
    "id": "path-source:IMG_3056.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3056",
+   "name": "Lawn behind the fence: low white building with green plinth and wall plates",
    "sourceId": "IMG_3056.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
-    "paseo",
-    "barraka-beach"
+    "paseo"
    ]
   },
   {
    "id": "path-source:IMG_3057.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3057",
+   "name": "Paseo and fenced lawn, white two-storey beach building with a hut on the sand ahead",
    "sourceId": "IMG_3057.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52694,7 +52719,7 @@
   {
    "id": "path-source:IMG_3058.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3058",
+   "name": "Pink paseo edge with timber kerb and sand",
    "sourceId": "IMG_3058.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52708,7 +52733,7 @@
   {
    "id": "path-source:IMG_3059.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3059",
+   "name": "Closed beach restaurant behind chain-link: flat-roofed glazed pavilion and terrace",
    "sourceId": "IMG_3059.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52722,7 +52747,7 @@
   {
    "id": "path-source:IMG_3060.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3060",
+   "name": "Terrace of the closed restaurant: tiled floor, curved planter wall, steps and a canopy",
    "sourceId": "IMG_3060.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52736,7 +52761,7 @@
   {
    "id": "path-source:IMG_3061.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3061",
+   "name": "Restaurant terrace seen through the fence: curved planter, canopy and wooden door",
    "sourceId": "IMG_3061.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52750,20 +52775,21 @@
   {
    "id": "path-source:IMG_3062.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3062",
+   "name": "Glazed restaurant pavilion with stepped roof edge and sandstone kerb",
    "sourceId": "IMG_3062.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
-    "paseo"
+    "paseo",
+    "barraka-beach"
    ]
   },
   {
    "id": "path-source:IMG_3063.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3063",
+   "name": "Paseo to a white two-storey beach building and a thatched hut on the sand",
    "sourceId": "IMG_3063.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52777,7 +52803,7 @@
   {
    "id": "path-source:IMG_3064.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3064",
+   "name": "Paseo with a sandstone wall and fence on the right leading to the white beach building",
    "sourceId": "IMG_3064.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52791,7 +52817,7 @@
   {
    "id": "path-source:IMG_3065.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3065",
+   "name": "Beach building end and a rubble sandstone wall topped by chain-link, with a lamp pole and a restaurant sign",
    "sourceId": "IMG_3065.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52805,7 +52831,7 @@
   {
    "id": "path-source:IMG_3066.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3066",
+   "name": "Sandstone wall topped with green bars and a white wall with double doors, paseo corner",
    "sourceId": "IMG_3066.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52819,7 +52845,7 @@
   {
    "id": "path-source:IMG_3067.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3067",
+   "name": "Paseo lane between a white wall with doors and the sandstone wall and fence",
    "sourceId": "IMG_3067.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52827,14 +52853,28 @@
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
     "paseo",
-    "barraka-beach"
+    "seaward-lanes"
    ]
   },
   {
    "id": "path-source:IMG_3068.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3068",
+   "name": "Green bar fence on a sandstone base at the white pillar, palms and bananas behind",
    "sourceId": "IMG_3068.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3069.jpg",
+   "kind": "path-source-accounting",
+   "name": "Paseo beside the wooden Barraka building, sandstone wall and green bars on the right",
+   "sourceId": "IMG_3069.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
@@ -52845,10 +52885,24 @@
    ]
   },
   {
-   "id": "path-source:IMG_3069.jpg",
+   "id": "path-source:IMG_3070.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3069",
-   "sourceId": "IMG_3069.jpg",
+   "name": "Barraka Beach restaurant glazing and red awning with sandbags, paseo beyond",
+   "sourceId": "IMG_3070.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3071.jpg",
+   "kind": "path-source-accounting",
+   "name": "Pink stamped paving with a slot drain and the sandstone planter edge",
+   "sourceId": "IMG_3071.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
@@ -52858,39 +52912,9 @@
    ]
   },
   {
-   "id": "path-source:IMG_3070.jpg",
-   "kind": "path-source-accounting",
-   "name": "IMG_3070",
-   "sourceId": "IMG_3070.jpg",
-   "disposition": "not-yet-inspected",
-   "inspectionScopes": [],
-   "review": null,
-   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": [
-    "paseo",
-    "barraka-beach",
-    "main-pool"
-   ]
-  },
-  {
-   "id": "path-source:IMG_3071.jpg",
-   "kind": "path-source-accounting",
-   "name": "IMG_3071",
-   "sourceId": "IMG_3071.jpg",
-   "disposition": "not-yet-inspected",
-   "inspectionScopes": [],
-   "review": null,
-   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
-   "areas": [
-    "paseo",
-    "barraka-beach",
-    "main-pool"
-   ]
-  },
-  {
    "id": "path-source:IMG_3072.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3072",
+   "name": "Paseo curving between the sandstone wall with green bars and grass, white buildings beyond",
    "sourceId": "IMG_3072.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52898,28 +52922,27 @@
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
     "paseo",
-    "barraka-beach",
     "main-pool"
    ]
   },
   {
    "id": "path-source:IMG_3073.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3073",
+   "name": "Main pool lawn and pool terrace through the green bar fence",
    "sourceId": "IMG_3073.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
-    "paseo",
-    "main-pool"
+    "main-pool",
+    "paseo"
    ]
   },
   {
    "id": "path-source:IMG_3074.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3074",
+   "name": "Paseo bending south-west with a crossing marking and the gateway of the lawn side",
    "sourceId": "IMG_3074.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
@@ -52933,40 +52956,40 @@
   {
    "id": "path-source:IMG_3075.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3075",
+   "name": "White service store with open door beside the lawn path, bench and banana plants",
    "sourceId": "IMG_3075.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
+    "main-pool",
     "paseo"
    ]
   },
   {
    "id": "path-source:IMG_3076.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3076",
+   "name": "Main pool lawn: pink path with bollard lights, bin and the white clubhouse across the pool",
    "sourceId": "IMG_3076.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
-    "paseo"
+    "main-pool"
    ]
   },
   {
    "id": "path-source:IMG_3077.jpg",
    "kind": "path-source-accounting",
-   "name": "IMG_3077",
+   "name": "Main pool lawn looking over the lawn to the pool terrace and the white wall and hotel block",
    "sourceId": "IMG_3077.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
-    "paseo",
     "main-pool"
    ]
   },
@@ -54116,8 +54139,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 41,
-   "uninspectedSources": 41,
+   "sourceCount": 42,
+   "uninspectedSources": 42,
    "routes": [],
    "tunnels": [],
    "inventoryComplete": false,
@@ -54789,8 +54812,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 161,
-   "uninspectedSources": 161,
+   "sourceCount": 162,
+   "uninspectedSources": 162,
    "routes": [
     "path-route:patricia",
     "path-route:silvia-north",
@@ -54824,8 +54847,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 84,
-   "uninspectedSources": 84,
+   "sourceCount": 79,
+   "uninspectedSources": 79,
    "routes": [
     "path-route:barraka-boardwalk"
    ],
@@ -54851,8 +54874,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 99,
-   "uninspectedSources": 99,
+   "sourceCount": 104,
+   "uninspectedSources": 104,
    "routes": [
     "path-route:paseo-west",
     "path-route:paseo",
@@ -54881,8 +54904,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 23,
-   "uninspectedSources": 23,
+   "sourceCount": 34,
+   "uninspectedSources": 34,
    "routes": [],
    "tunnels": [],
    "inventoryComplete": false,
