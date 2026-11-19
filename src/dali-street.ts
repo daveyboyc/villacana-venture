@@ -7,6 +7,7 @@ import { pointInRing } from "./geom";
 import { surfaceTexture } from "./materials";
 import { siteY } from "./terrain";
 import { lanternPost } from "./lantern-post";
+import { inDaliStrip } from "./dali-strip-levels";
 import type { Vec2 } from "./types";
 
 const fence = layout.barriers.find((b) => b.id === street.fence.barrierId);
@@ -124,14 +125,22 @@ function addSidewalk(group: THREE.Group): void {
   for (const ring of layout.parking.bayRings as Vec2[][]) {
     const edge = houseEdge(ring);
     if (!edge) continue;
-    const [a, b] = edge;
-    const mid: Vec2 = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2];
+    const [ea, eb] = edge;
+    const mid: Vec2 = [(ea[0] + eb[0]) / 2, (ea[1] + eb[1]) / 2];
     if (onBuiltFootpath(mid)) continue;
     const hit = roadHit(mid);
     const n = Math.hypot(mid[0] - hit.x, mid[1] - hit.z) || 1;
     const ox = (mid[0] - hit.x) / n, oz = (mid[1] - hit.z) / n;
     const walkMid = shift(mid, ox, oz, kerbW + lawnW + pathW / 2);
     if (insideHouse(walkMid)) continue;
+    // Generated filler: in 1 m pieces, left out where the photographed strip (src/dali-strip-levels.ts,
+    // IMG_3082-3089) shows a wider lawn and a sunk path instead.
+    const pieces = Math.max(1, Math.ceil(Math.hypot(eb[0] - ea[0], eb[1] - ea[1])));
+    for (let i = 0; i < pieces; i++) {
+    const a: Vec2 = [ea[0] + (eb[0] - ea[0]) * i / pieces, ea[1] + (eb[1] - ea[1]) * i / pieces];
+    const b: Vec2 = [ea[0] + (eb[0] - ea[0]) * (i + 1) / pieces, ea[1] + (eb[1] - ea[1]) * (i + 1) / pieces];
+    const pm: Vec2 = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2];
+    if ([0.3, kerbW + lawnW / 2, kerbW + lawnW + pathW / 2].some((d) => inDaliStrip(...shift(pm, ox, oz, d)))) continue;
     const k0 = a, k1 = b;
     const l0 = shift(a, ox, oz, kerbW), l1 = shift(b, ox, oz, kerbW);
     const g0 = shift(a, ox, oz, kerbW + lawnW), g1 = shift(b, ox, oz, kerbW + lawnW);
@@ -141,6 +150,7 @@ function addSidewalk(group: THREE.Group): void {
     top(lawn, l0, l1, g1, g0, KERB - 0.01);
     top(path, g0, g1, p1, p0, KERB);
     riser(path, g0, g1, KERB);
+    }
   }
   if (stone.length) group.add(solid(stone, kerbMat, "dali-sidewalk-kerb"), solid(lawn, grass, "dali-sidewalk-lawn"), solid(path, tiles, "dali-sidewalk"));
 }

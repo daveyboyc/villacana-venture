@@ -2,7 +2,7 @@
  "id": "dali-strip-levels",
  "name": "Pintor Dalí · house-side path, lawn strip and kerb levels either side of the Cervantes apron",
  "checkedAt": "2026-11-19",
- "datum": "Heights are relative to the visible Dalí parking surface (terrain siteY + daliSurface 0.272) at the lawn's parking edge. The lawn's parking edge stays flush with the parking. The house-side path sits `drop` below it.",
+ "datum": "Every level starts from the old visible surface at the point itself (terrain siteY + daliSurface 0.272), so it stays on the same side of the terrain's lowered-area edge as the ground around it. The path keeps that surface. The lawn stands `drop` above the path beside it: flat in the raised bed, and in the sloped strip rising from just above the kerb to `drop` at the parking edge.",
  "station": {
   "origin": [
    -179.0,
@@ -183,5 +183,10 @@
    "IMG_3087.jpg"
   ],
   "trust": "The white pier with a rounded top and a wall-mounted white mailbox stands at the bed's parking-side corner by the apron (IMG_3086 left, IMG_3087). Its height is from the mailbox (about 0.4 m tall); the position is ±0.5 m."
+ },
+ "generatedFillerOff": {
+  "what": "src/dali-street.ts addSidewalk: the generated 0.9 m lawn and 1.5 m path along every Dalí bay run",
+  "where": "1 m pieces whose kerb, lawn or path falls inside this strip's lawn or path rings",
+  "why": "IMG_3082-3084 and IMG_3086-3089 show a 3.5 m lawn strip and a 1.3 m tiled path at different levels here, not the generic sidewalk; it also rendered as an untextured dark red band over the strip."
  }
 }

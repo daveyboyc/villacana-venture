@@ -49,32 +49,48 @@ function parkingEdge(x: number, z: number, which?: string) {
   }
   return best;
 }
-/** The visible parking surface beside this point, which the lawn's parking edge meets flush. */
-const lawnLevel = (x: number, z: number, which?: string) => { const e = parkingEdge(x, z, which); return siteY(e.x, e.z) + DALI_SURFACE; };
-const pathLevel = (x: number, z: number, which?: string) => lawnLevel(x, z, which) - drop(x, z);
+/** The visible surface the flat sheets used to lie on here: the terrain plus the Dalí surface datum. Every
+ * level below is built from this at the point itself, so it stays on the same side of the terrain's
+ * lowered-area edge as the ground around it. */
+const base = (x: number, z: number) => siteY(x, z) + DALI_SURFACE;
 const edgeOf = (b: Bed) => (b.form === "raised" ? "north" : "south");
 
 function gap(x: number, z: number, ring: Vec2[]): number {
   if (pointInRing(x, z, ring)) return 0;
   return Math.min(...ring.map((a, i) => closestOnSegment(x, z, ...a, ...ring[(i + 1) % ring.length]).d));
 }
-/** Lawn surface: level in the raised bed; in the sloped strip, from just above the kerb up to the parking edge. */
+/** The nearest point of the bed's path, and how far away it is. */
+function nearestPath(bed: Bed, x: number, z: number): { x: number; z: number; d: number } {
+  let best = { x, z, d: Infinity };
+  for (const id of bed.paths) {
+    const ring = zone(id).ring;
+    if (pointInRing(x, z, ring)) return { x, z, d: 0 };
+    ring.forEach((a, i) => { const hit = closestOnSegment(x, z, ...a, ...ring[(i + 1) % ring.length]); if (hit.d < best.d) best = hit; });
+  }
+  return best;
+}
+/** The path's level: the old visible surface, which the laser survey already puts below the lawn and parking. */
+const pathLevel = (x: number, z: number) => base(x, z);
+/** Lawn surface: `drop` above the path beside it, flat in the raised bed. In the sloped strip it runs from
+ * just above the kerb up to `drop` at the parking edge. It is never below the old surface. */
 function lawnSurface(bed: Bed, x: number, z: number): number {
-  const which = edgeOf(bed), top = lawnLevel(x, z, which);
-  if (bed.form === "raised") return top;
-  const toPath = Math.min(...bed.paths.map((p) => gap(x, z, zone(p).ring))), toParking = parkingEdge(x, z, which).d;
-  const low = pathLevel(x, z, which) + (bed.lawnAtKerb ?? 0.12), w = toParking + toPath > 0 ? toPath / (toParking + toPath) : 1;
-  return Math.max(low, low + (top - low) * w);
+  const p = nearestPath(bed, x, z), ref = pathLevel(p.x, p.z), d = drop(x, z);
+  if (bed.form === "raised") return Math.max(base(x, z), ref + d);
+  const toParking = parkingEdge(x, z, edgeOf(bed)).d, w = toParking + p.d > 0 ? p.d / (toParking + p.d) : 1;
+  const kerbSide = ref + (bed.lawnAtKerb ?? 0.12);
+  return Math.max(base(x, z), kerbSide, kerbSide + (ref + d - kerbSide) * w);
 }
 
 /** Visible surface height over the strip, or undefined off it. */
 export function daliStripSurface(x: number, z: number): number | undefined {
   for (const bed of beds) {
     for (const id of bed.zones) if (pointInRing(x, z, zone(id).ring)) return lawnSurface(bed, x, z);
-    for (const id of bed.paths) if (pointInRing(x, z, zone(id).ring)) return pathLevel(x, z, edgeOf(bed));
+    for (const id of bed.paths) if (pointInRing(x, z, zone(id).ring)) return pathLevel(x, z);
   }
   return undefined;
 }
+/** Inside the photographed strip (its lawn or path), where generated sidewalk filler must not be drawn. */
+export const inDaliStrip = (x: number, z: number): boolean => beds.some((b) => [...b.zones, ...b.paths].some((id) => pointInRing(x, z, zone(id).ring)));
 /** How far a plant standing here must rise above the terrain to stand on the strip's visible surface. */
 export const daliStripPropLift = (x: number, z: number): number => { const y = daliStripSurface(x, z); return y === undefined ? 0 : y - siteY(x, z); };
 
@@ -145,28 +161,28 @@ export function addDaliStripLevels(scene: THREE.Scene): void {
   const crossing = threshold.crossingRing as Vec2[];
   for (const bed of beds) {
     const which = edgeOf(bed), kerb: number[] = [];
-    for (const id of bed.paths) group.add(sheet(zone(id).ring, (x, z) => pathLevel(x, z, which), tiles, id));
+    for (const id of bed.paths) group.add(sheet(zone(id).ring, (x, z) => pathLevel(x, z), tiles, id));
     for (const id of bed.zones) {
       const ring = zone(id).ring;
       group.add(sheet(ring, (x, z) => lawnSurface(bed, x, z), turf, id));
       // The kerb along the path: a wall up to just above the bed, or a low kerb in front of the sloped lawn.
-      const top = (p: Vec2) => bed.form === "raised" ? lawnLevel(...p, which) + (bed.kerbAbove ?? 0.03) : pathLevel(...p, which) + (bed.kerbHeight ?? 0.14);
+      const top = (p: Vec2) => bed.form === "raised" ? pathLevel(...p) + drop(...p) + (bed.kerbAbove ?? 0.03) : pathLevel(...p) + (bed.kerbHeight ?? 0.14);
       for (const pathId of bed.paths) for (const [a, b] of sharedEdges(ring, zone(pathId).ring, 0.2))
-        wall(kerb, a, b, (p) => pathLevel(...p, which), top, bed.kerbWidth, inwardOf(a, b, ring));
+        wall(kerb, a, b, (p) => pathLevel(...p), top, bed.kerbWidth, inwardOf(a, b, ring));
       // The raised bed's end wall facing the apron, down to the crossing tiles.
       if (bed.form === "raised") for (const [a, b] of sharedEdges(ring, crossing, 0.35))
-        wall(kerb, a, b, (p) => siteY(...p) + DALI_SURFACE, top, bed.kerbWidth, inwardOf(a, b, ring));
+        wall(kerb, a, b, (p) => base(...p), (p) => lawnSurface(bed, ...p) + (bed.kerbAbove ?? 0.03), bed.kerbWidth, inwardOf(a, b, ring));
     }
     group.add(solid(kerb, white, `${levels.id}-${which}-kerb`));
   }
   // The rounded pier with the mailbox at the bed's corner by the apron (IMG_3086, IMG_3087).
-  const pier = levels.pier, [px, pz] = pier.at as Vec2, base = siteY(px, pz) + DALI_SURFACE;
+  const pier = levels.pier, [px, pz] = pier.at as Vec2, foot = base(px, pz);
   const body = new THREE.Mesh(new THREE.BoxGeometry(pier.size[0], pier.height - pier.size[0] / 2, pier.size[1]), white);
-  body.position.set(px, base + (pier.height - pier.size[0] / 2) / 2, pz);
+  body.position.set(px, foot + (pier.height - pier.size[0] / 2) / 2, pz);
   const cap = new THREE.Mesh(new THREE.CylinderGeometry(pier.size[0] / 2, pier.size[0] / 2, pier.size[1], 16, 1, false, 0, Math.PI).rotateZ(Math.PI / 2).rotateY(Math.PI / 2), white);
-  cap.position.set(px, base + pier.height - pier.size[0] / 2, pz);
+  cap.position.set(px, foot + pier.height - pier.size[0] / 2, pz);
   const box = new THREE.Mesh(new THREE.BoxGeometry(...(pier.mailbox.size as [number, number, number])), new THREE.MeshStandardMaterial({ color: "#f4f2ec", roughness: 0.5 }));
-  box.position.set(px, base + 0.85, pz + pier.size[1] / 2 + pier.mailbox.size[2] / 2);
+  box.position.set(px, foot + 0.85, pz + pier.size[1] / 2 + pier.mailbox.size[2] / 2);
   for (const m of [body, cap, box]) { m.castShadow = m.receiveShadow = true; group.add(m); }
   scene.add(group);
 }
