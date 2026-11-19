@@ -20,7 +20,8 @@ The map kind is the `kind` used in `data/objects.json` and `data/kinds.json`. `s
 | `palm.glb` | `palm` | Canary date palm | `scripts/build_plants.py` | north pool |
 | `yucca.glb` | `yucca` | Many-headed yucca | `scripts/build_plants.py` | IMG_2205 |
 | `hedge.glb`, `hibiscus-hedge.glb` | `hedge`, `hibiscus_hedge` | Clipped hedge piece, plain and with red flowers | `scripts/build_plants.py` | IMG_2204-2206 |
-| `banana.glb` | `banana` | Banana plant (Musa) with a fruit bunch and purple bud; painted leaf, stem, fruit and bud textures embedded | `scripts/build_banana.py` | IMG_3092, IMG_3090 (review: `docs/reviews/banana-asset/`) |
+| `banana.glb` | `banana` | Banana plant (Musa) with its hanging bunch and purple bud. Leaf and bunch colour are cut from IMG_3092. | `scripts/build_banana.py` | IMG_3092, IMG_3090 (review: `docs/reviews/banana-asset/`) |
+| `banana-bunch.glb` | (none yet) | The photographed banana bunch on its own: stalk, two clusters of hands, rachis, bud and lifted bract. Origin at the top of the stalk. | `scripts/build_banana.py` | IMG_3092 |
 | `fan-palm-clump.glb` | `fan_palm` | Mediterranean fan palm (Chamaerops humilis), multi-trunked clump | `scripts/build_garden_plants.py` | IMG_3087, IMG_3088 |
 | `cycad.glb` | `cycad` | Sago cycad (Cycas revoluta) | `scripts/build_garden_plants.py` | IMG_3086 |
 

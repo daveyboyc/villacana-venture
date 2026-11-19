@@ -46,7 +46,14 @@ How the leaf textures were made:
 - The build evens out most of the photo's broad light and shadow.
 - It also adds a ragged cut-out margin (more ragged where the photo shows dried tissue), fine splits
   along the veins, a vein normal map (from the photo's own vein detail) and a glow map.
-- The stem, fruit and bud textures are generated from numbers.
+- The stem texture is generated from numbers.
+- **The bunch is the photo** (third pass, 19 November 2026, after Dave asked for the hanging bunch
+  from the photo). `--extract` cuts the stalk, both clusters, the rachis, the bud and the lifted
+  bract out of the sky in the full-size IMG_3092 (`BUNCH_CROP`, zones `BUNCH_POLY`). It refills the
+  background from the nearest bunch pixel, blended toward each part's typical colour, and saves
+  `scripts/assets/banana/bunch-photo.jpg`. The bunch geometry is laid out from the same photo, and
+  the photo is projected onto it from the lane-side view (`bunch_uv`). Every part of the bunch takes
+  its colour from the picture, and the backs of the fingers take the colour of the fronts.
 
 ## Size estimate
 
@@ -58,9 +65,11 @@ taken from about 6-8 m away at about eye height: the bud sits close to the photo
   leaf stalks leave it between 2.28 m (the dead leaves) and 2.90 m.
 - **Top leaf tip:** 5.97 m above the origin.
 - **Blades:** 1.1-2.55 m long, 0.28-0.66 m wide.
-- **Bunch:** the bunch stalk arches 0.7 m out from the crown. The two clusters of hands span about
-  2.9 m down to 2.4 m. The bare rachis is 0.46 m long, and the bud runs from about 1.9 m down to
-  1.63 m.
+- **Bunch:** measured in IMG_3092 at 1.5 mm per pixel, scaled from the bud (195 x 87 px, taken as
+  0.29 x 0.13 m). The stalk rises about 0.4 m out of the crown, arches over and hangs. The two
+  clusters are each about 0.36 m across, from about 2.97 m down to 2.55 m. The bare rachis runs to
+  2.25 m, and the bud from there down to about 1.96 m. The bunch hangs about 0.87 m out from the
+  stem, as in the photo.
 
 Bounding box in glTF coordinates (y up, metres):
 - x: -2.11 to 2.87
@@ -79,15 +88,19 @@ the wall toward the lane (IMG_3093).
 | File | 1,698,408 bytes (1.62 MB). Standard glTF 2.0 with no extensions; textures are embedded. |
 | Triangles | 36,946 |
 | Materials | 4 |
-| Textures | leaf atlas 1024² PNG (255 dithered colours plus one transparent index for the cut-outs), leaf normal 512² JPEG, leaf glow 512² JPEG, stem 512 × 1024 JPEG, fruit 128 × 256 JPEG, bud 256² JPEG |
+| Textures | leaf atlas 1024² PNG (255 dithered colours plus one transparent index for the cut-outs), leaf normal 512² JPEG, leaf glow 512² JPEG, stem 512 × 1024 JPEG, bunch photo 513 × 1056 JPEG |
 
 The four materials:
 - **`banana-leaf`:** alphaMode MASK, double-sided, normal map. Its emissive map is the glow map at
   strength 0.35.
 - **`banana-stem`:** double-sided. The pseudostem, sheaths, dried sheaths, leaf stalks, midribs,
   the bunch stalk and the rachis share one atlas.
-- **`banana-fruit`:** carries a faint emission (0.06).
-- **`banana-bud`:** matte, roughness 0.8.
+- **`banana-bunch`:** the photo, projected onto the stalk, fingers, rachis, bud and bract.
+  Double-sided, roughness 0.6. Its emissive map is the photo itself at strength 0.65, because the
+  photo already carries the sunlight and would otherwise be shaded twice and go near black.
+
+`public/models/plants/banana-bunch.glb` is the same bunch on its own, for reuse elsewhere. Its origin
+is the top of the stalk, where it leaves the crown.
 
 **Why the leaves glow.** The photographed leaves glow yellow-green because the sun shines through
 them, and a standard glTF material has no transmission. So the leaves carry an emissive map. The
@@ -125,14 +138,13 @@ ragged, dried margins are in the alpha.
 - the three outer sheaths are dried grey-brown and split into papery strips that peel away at the
   top.
 
-**Bunch.** The stalk arches out of the crown and hangs. Six hands form two dense clusters, as
-photographed. The fingers are thick and six-sided:
-- they grow out from the stalk, then curve up;
-- each ends in a dark tip with the thread of a dried flower.
+**Bunch.** The photographed bunch, with its layout measured and its colour taken from IMG_3092. The
+stalk arches out of the crown and hangs. Six hands form two dense clusters. The fingers are plump,
+blunt and six-sided: they grow out from the stalk, then curve up.
 
-**Rachis and bud.** A long, thin, knobbly brown rachis leads down to a matte grey-violet teardrop
-bud. The bud is made of overlapping bracts. Its top bract is lifted like a lid, dark red-maroon
-inside.
+**Rachis and bud.** A long, thin, knobbly dark rachis leads down to the grey-violet teardrop bud.
+The bud is made of overlapping bracts. Its top bract is lifted out to the right, maroon, as
+photographed.
 
 ## Checks
 
@@ -167,8 +179,9 @@ rounds of fixes. The views were:
     yellowed leaf, where another leaf shaded it.
 - **Pseudostem:** its colour and the peeling dried sheaths are typical of the plant. Its lower part
   is hidden in every photo. The stem texture is soft in close-ups.
-- **Bud height:** if the garden ground is level with the lane, the bud (1.63-1.9 m) sits at about
-  the wall top. In IMG_3092 it hangs clearly above the wall, so either the garden bed is raised or
-  the wall there is lower. This is not resolved, as before.
-- **Fingers:** the bunch is close to the photo. The fingers are a little more regular in size and
-  spacing than the real ones.
+- **Bud height:** resolved. Measured from the photo, the bunch hangs higher, and the bud's foot is
+  now at about 1.96 m, just above the garden wall, as photographed.
+- **Bunch:** the colour is the photo, projected from the lane side. The backs of the fingers repeat
+  the fronts, and fingers that reach a little past the photographed outline take each part's
+  typical colour. The hands are a little more regular in size and spacing than the real ones.
+  The photo's own light is used as emission, so the bunch does not darken in shade.
