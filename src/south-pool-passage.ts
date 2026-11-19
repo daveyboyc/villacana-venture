@@ -44,6 +44,20 @@ export function inSouthPoolPassage(x: number, z: number, margin = 0): boolean {
   return s >= -overrun - margin && s <= L + overrun + margin && Math.abs(q) <= H + margin;
 }
 
+/**
+ * The arcade floor: a straight run from the top of the Dalí ramp at the arch to the paved path at the lawn gate, so
+ * both mouths are flush as photographed (IMG_2984 from the arch, IMG_2295 from Dalí, IMG_2978 at the gate, IMG_2983
+ * inside: one level tiled floor, no step). `outside` is the player ground without the passage; the two ends are read
+ * from it just beyond each mouth, so the floor meets them whatever their datums. Undefined outside the arcade.
+ */
+let floorEnds: [number, number] | undefined;
+export function passageFloorY(x: number, z: number, outside: (x: number, z: number) => number): number | undefined {
+  const [s, q] = passageLocal(x, z);
+  if (s < 0 || s > L || Math.abs(q) > H) return undefined;
+  floorEnds ??= [outside(...passageAt(-0.05, 0)), outside(...passageAt(L + 0.15, 0))];
+  return floorEnds[0] + (floorEnds[1] - floorEnds[0]) * s / L;
+}
+
 type Part = { ring: Vec2[]; holes: Vec2[][] };
 function cut(parts: Part[], holes: Vec2[][]): Part[] {
   return parts.flatMap((p) => clipping.difference([p.ring, ...p.holes], ...holes.map((h) => [h])).map((poly) => ({
@@ -115,17 +129,28 @@ function plaqueTexture(): THREE.CanvasTexture {
   const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
 }
 
-/** Floor, flat ceilings, the three arches, the iron gate and the plaque. Furniture is Details only. */
+/** The tiled arcade floor on the player ground of passageFloorY: built once the ground exists, not draped. */
+export function addSouthPoolPassageFloor(scene: THREE.Scene, ground: (x: number, z: number) => number): void {
+  const corners: [number, number][] = [[0, -H], [0, H], [L, H], [L, -H]];
+  const positions = corners.flatMap(([s, q]) => { const p = passageAt(s, q); return [p[0], ground(...p), p[1]]; });
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+  geometry.setAttribute("uv", new THREE.Float32BufferAttribute([0, 0, 1, 0, 1, 1, 0, 1], 2));
+  geometry.setIndex([0, 2, 1, 0, 3, 2]); geometry.computeVertexNormals();
+  if (geometry.getAttribute("normal").getY(0) < 0) geometry.setIndex([0, 1, 2, 0, 2, 3]), geometry.computeVertexNormals();
+  const floor = new THREE.Mesh(geometry, repeated("terracotta", 2 * H, L));
+  floor.receiveShadow = true; floor.name = passage.id + "-floor"; floor.userData.noDrape = true;
+  scene.add(floor);
+}
+
+/** Flat ceilings, the three arches, the iron gate and the plaque. Furniture is Details only. */
 export function addSouthPoolPassage(scene: THREE.Scene): void {
   const group = new THREE.Group(); group.name = passage.id;
   group.userData.base = passageBase();
   scene.add(group);
   const white = plasterMaterial("#fbfaf4");
   const a = passage.arch;
-  const floor = new THREE.Mesh(new THREE.PlaneGeometry(2 * H, L).rotateX(-Math.PI / 2), repeated("terracotta", 2 * H, L));
-  const mid = passageAt(L / 2, 0);
-  floor.position.set(mid[0], 0.03, mid[1]); floor.rotation.y = yaw; floor.receiveShadow = true; floor.name = passage.id + "-floor";
-  group.add(floor);
+  // The tiled floor is added with the player ground (addSouthPoolPassageFloor), which it follows.
   // Covered bays only. The middle third is the open court.
   for (const [s0, s1, name] of [[a.thickness, bay, "bay-1"], [2 * bay, L - 0.05, "bay-3"]] as [number, number, string][]) {
     group.add(turnedBox(s0, s1, -H, H, 2.62, floorH, white, passage.id + "-ceiling-" + name));

@@ -576,19 +576,23 @@
       "type": "slope",
       "from": "the Dalí footpath",
       "rise": [
-        0.15,
-        0.35
+        0.05,
+        0.12
       ],
-      "confidence": "low",
+      "confidence": "medium",
       "run": [
         5,
         6
       ],
       "photos": [
-        "IMG_2283.jpg"
+        "IMG_2283.jpg",
+        "IMG_2295.jpg",
+        "IMG_2978.jpg",
+        "IMG_2983.jpg",
+        "IMG_2984.jpg"
       ],
       "model": "built",
-      "note": "Flagstone approach between flared white kerbs of 0.15-0.25 m with a grooved concrete strip at its foot, rising gently towards the arch. No flight of steps.",
+      "note": "Flagstone approach between flared white kerbs of 0.15-0.25 m with a grooved concrete strip at its foot, rising gently towards the arch. No flight of steps. 19 November 2026: the laser survey (PNOA-LiDAR 2020-21, 1 m ground model) reads 0.47 m at the foot and 0.53 m at the arch against the middle pool deck, a rise of about 0.06-0.08 m, not the 0.15-0.35 m first read by eye from IMG_2283; the arcade floor continues flush from its top (IMG_2984, IMG_2295) and meets the lawn path flush at the gate (IMG_2978).",
       "task": "door-sills"
     },
     {

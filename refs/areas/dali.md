@@ -29,7 +29,7 @@ Layout: 56, Levels and slopes: 11, Facades and roofs: 13, Materials: 37, Plantin
 Ground and floor levels read from the photos, from `data/levels_survey.json` (see `docs/LEVELS.md`).
 
 - `dali-cervantes-apron` (level): 0-0.15 m, high confidence at (-184.5, 75.5) ±4 m. Model: **built**. No step or riser: the pale tiled apron meets the Dalí asphalt flush, with a slot drain 2.5-3.2 m in from the road. A raised white planter of 0.4-0.6 m on the north side of the exit. (IMG_2275.jpg, IMG_2289.jpg, IMG_2266.jpg)
-- `dali-south-approach` (slope): 0.15-0.35 m above the Dalí footpath, low confidence. Model: **built**, task `door-sills`. Flagstone approach between flared white kerbs of 0.15-0.25 m with a grooved concrete strip at its foot, rising gently towards the arch. No flight of steps. (IMG_2283.jpg)
+- `dali-south-approach` (slope): 0.05-0.12 m above the Dalí footpath, medium confidence. Model: **built**, task `door-sills`. Flagstone approach between flared white kerbs of 0.15-0.25 m with a grooved concrete strip at its foot, rising gently towards the arch. No flight of steps. 19 November 2026: the laser survey (PNOA-LiDAR 2020-21, 1 m ground model) reads 0.47 m at the foot and 0.53 m at the arch against the middle pool deck, a rise of about 0.06-0.08 m, not the 0.15-0.35 m first read by eye from IMG_2283; the arcade floor continues flush from its top (IMG_2984, IMG_2295) and meets the lawn path flush at the gate (IMG_2978). (IMG_2283.jpg, IMG_2295.jpg, IMG_2978.jpg, IMG_2983.jpg, IMG_2984.jpg)
 - `dali-footpath-kerb` (raised-threshold): 0.1-0.15 m above the parking asphalt, medium confidence. Model: **built**, task `door-sills`. The house-side footpath stands a kerb above the asphalt; passage floors under the arches are flush with it, with a slot drain at the threshold. (IMG_2291.jpg, IMG_2293.jpg)
 
 ## Open build tasks
@@ -114,6 +114,9 @@ graph LR
   F14 --> PIMG_2283_jpg(["IMG_2283"])
   F14 --> PIMG_2294_jpg(["IMG_2294"])
   F14 --> PIMG_2295_jpg(["IMG_2295"])
+  F14 --> PIMG_2978_jpg(["IMG_2978"])
+  F14 --> PIMG_2983_jpg(["IMG_2983"])
+  F14 --> PIMG_2984_jpg(["IMG_2984"])
   A --> F15["Dalí · coastal pedestrian gate · unreviewed"]
   F15 --> PIMG_2284_jpg(["IMG_2284"])
   F15 --> PIMG_2296_jpg(["IMG_2296"])
@@ -238,12 +241,12 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2551.jpg](../../public/photos-ref/IMG_2551.jpg) | ground | layout, materials, signage, planting | Calle Eva west footpath at the Dali end, terracotta path beside a lawn island **Looks at:** Eva west stretch looking south-west to the Dali car park: kerbed bed left, kerbed lawn island and lantern right. **Note:** Pin is at the Eva/Dali junction. _Used by: eva_lane.json:eva-lane-west, eva_lane.json:eva-lane-west-edges._ |
 | [IMG_2468.jpg](../../public/photos-ref/IMG_2468.jpg) | ground | layout, facades, planting | Cervantes west end: arcaded porch on the left, dracaena and shrub bed on the right **Looks at:** West end of the lane towards Dali. **Note:** Pin (-167.1, 65.2) +-2.3 m. The arch is the mouth of the south-side covered passage seen in IMG_2288/2469. looksAt estimated 20 m along heading 242. _Used by: lane_walls.json:cervantes-north-garden-wall-west, cervantes_lane_edges.json:cervantes-north-bed-west._ |
 | [IMG_2552.jpg](../../public/photos-ref/IMG_2552.jpg) | ground | layout, materials, levels | Curved kerbed footpath meeting the Dali car park aisle **Looks at:** Eva west end: the tiled path curving onto the Dali footpath between white kerbs, slot drain, lawn and lantern. _Used by: eva_lane.json:eva-lane-west, eva_lane.json:eva-lane-west-edges._ |
+| [IMG_2983.jpg](../../public/photos-ref/IMG_2983.jpg) | ground | layout, materials, facades | Arcade west half: covered tiled walk to the arch onto Pintor Dalí **Looks at:** west half of the Calle de Jorge 39-67 arcade toward the Pintor Dalí arch. _Used by: door_sills.json:dali-south-arch-approach._ |
+| [IMG_2984.jpg](../../public/photos-ref/IMG_2984.jpg) | ground | layout, levels, materials | West mouth of the arcade: tile floor meets the crazy-paved ramp to Pintor Dalí **Looks at:** west mouth of the arcade and the flagstone ramp down to Pintor Dalí. _Used by: door_sills.json:dali-south-arch-approach._ |
 | [IMG_2471.jpg](../../public/photos-ref/IMG_2471.jpg) | ground | layout, levels, materials | Dalí footpath ramp with white mailbox pillar |
 | [IMG_2638.jpg](../../public/photos-ref/IMG_2638.jpg) | ground | layout, levels, materials | Paseo wall end and kerbed junction near Dali car park |
 | [IMG_2703.jpg](../../public/photos-ref/IMG_2703.jpg) | ground | layout, materials, planting | Eva west footpath beside the Dali road, looking north **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
 | [IMG_2704.jpg](../../public/photos-ref/IMG_2704.jpg) | ground | layout, materials, planting | Eva west footpath with kerbed grass strip, looking north **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
-| [IMG_2983.jpg](../../public/photos-ref/IMG_2983.jpg) | ground | layout, materials, facades | Arcade west half: covered tiled walk to the arch onto Pintor Dalí **Looks at:** west half of the Calle de Jorge 39-67 arcade toward the Pintor Dalí arch. |
-| [IMG_2984.jpg](../../public/photos-ref/IMG_2984.jpg) | ground | layout, levels, materials | West mouth of the arcade: tile floor meets the crazy-paved ramp to Pintor Dalí **Looks at:** west mouth of the arcade and the flagstone ramp down to Pintor Dalí. |
 | [IMG_2218.jpg](../../public/photos-ref/IMG_2218.jpg) | roof | facades, view | Roof terrace looking south-west: roofs and tall pines along Pintor Dalí |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |
 | [IMG_2266.jpg](../../public/photos-ref/IMG_2266.jpg) | ground | layout | Calle Cervantes exit onto Pintor Dalí: planter and opposite hedge |

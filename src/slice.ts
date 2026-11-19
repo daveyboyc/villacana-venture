@@ -17,7 +17,7 @@ import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-
 import {addEvaLane,inEvaLane,suppressInEvaLane} from "./eva-lane";
 import {addAlbertoPassage,inAlbertoPorch,suppressInAlbertoPorch} from "./alberto-passage";
 import {lanternPost} from "./lantern-post";
-import {addSouthPoolPassage,inSouthPoolPassage,SOUTH_POOL_HOST,southPoolGroundParts,southPoolUpperParts} from "./south-pool-passage";
+import {addSouthPoolPassage,addSouthPoolPassageFloor,inSouthPoolPassage,passageFloorY,SOUTH_POOL_HOST,southPoolGroundParts,southPoolUpperParts} from "./south-pool-passage";
 import {addJorgeLane,inJorgePlainFront,inJorgePlainWall} from "./jorge-lane";
 import {addElenaGatedEntry,elenaEntryRings} from "./elena-gated-entry";
 import {addElenaWalkway,elenaWalkwayGroundOffset,inElenaWalkway} from "./elena-walkway";
@@ -442,6 +442,7 @@ async function boot(): Promise<void> {
   if (at) { spawn[0] = at[0]; spawn[1] = at[1]; }
   if (look) { start.x = look[0]; start.z = look[1]; }
   player.place(spawn[0], spawn[1], 0);
+  const baseGround = (x:number,z:number):number => host && inSilviaFloor(x,z) ? silviaY+.06 : seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : siteY(x,z) + stepsGroundOffset(x,z) + elenaWalkwayGroundOffset(x,z) + raisedTerraceGroundOffset(x,z) + doorSillsGroundOffset(x,z) + gardenGroundOffset(x,z,skeleton.boundaryReference) + poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06);
   const world: MoveWorld = {
     solids:new GatedSolids(solids,()=>gate.open),
     coast,
@@ -449,10 +450,12 @@ async function boot(): Promise<void> {
     maxGroundStep:0.45,
     seaLevel: seaside?.seaY,
     poolFloor: (x,z) => POOL_STAND + (nearbyPools.some(p=>(p.id==="main"||p.id==="toddler")&&pointInRing(x,z,p.ring))?LOWER_POOL_Y:0),
-    groundHeight: (x,z) => host && inSilviaFloor(x,z) ? silviaY+.06 : seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : siteY(x,z) + stepsGroundOffset(x,z) + elenaWalkwayGroundOffset(x,z) + raisedTerraceGroundOffset(x,z) + doorSillsGroundOffset(x,z) + gardenGroundOffset(x,z,skeleton.boundaryReference) + poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
+    // The Calle de Jorge arcade floor runs flush from the Dalí ramp to the lawn path (src/south-pool-passage.ts).
+    groundHeight: (x,z) => passageFloorY(x,z,baseGround) ?? baseGround(x,z),
     bounds: { minX: centre.x - RADIUS, maxX: centre.x + RADIUS, minZ: centre.z - RADIUS, maxZ: centre.z + RADIUS },
   };
 
+  addSouthPoolPassageFloor(scene, world.groundHeight!);
   if(shotgunMode)player.y=world.groundHeight?.(player.x,player.z)??0;
   bindInput();
   let camYaw = Math.atan2(start.x - spawn[0], -(start.z - spawn[1]));
