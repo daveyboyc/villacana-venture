@@ -30,7 +30,7 @@ Built by `scripts/build_trees.py`. The `-far` versions are lighter, for trees we
 
 | Model | Map kind |
 | --- | --- |
-| `broadleaf.glb`, `broadleaf-far.glb` | `tree` (also used for the Dalí loquat at scale 0.8) |
+| `broadleaf.glb`, `broadleaf-far.glb` | `tree` (also used for the Dalí loquat) |
 | `spreading-tree.glb` | `feathery_tree` (jacaranda and similar) |
 | `pollarded-tree.glb` | `pollarded_tree` |
 | `umbrella-pine.glb`, `umbrella-pine-far.glb` | `umbrella_pine` |

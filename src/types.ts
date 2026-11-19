@@ -167,6 +167,4 @@ export type MapObject = {
   onTerrace?: boolean;
   /** A photographed tree or tall plant whose canopy hangs over a route: only its trunk keeps the route clearance (Dave, 2026-11-16). */
   canopyOverhangs?: boolean;
-  /** Plants and trees only: size against the kind's standard card (src/sprites.ts SPRITE_SIZE), where a photo shows a smaller or larger one. */
-  scale?: number;
 };

@@ -12274,7 +12274,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "seafront_fence.json:main-pool-lawn-railing",
-   "ground_plan_main_pool.json:main-lawn"
+   "ground_plan_main_pool.json:main-lawn",
+   "area:paseo"
   ],
   "subject": "The lawn corner and fence at the foot of the path",
   "headingOff": 47
@@ -12587,7 +12588,8 @@
   "looksAtFeatures": [
    "beach_verge.json:barraka-front-verge",
    "barraka_frontage.json:barraka-lounge-garden",
-   "area:beach"
+   "area:beach",
+   "area:paseo"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge",
   "headingOff": 52
@@ -12685,9 +12687,9 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "area:paseo",
    "barraka_frontage.json:barraka-lounge-garden",
-   "beach_verge.json:barraka-front-verge",
-   "area:paseo"
+   "beach_verge.json:barraka-front-verge"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge"
  },
@@ -13565,9 +13567,9 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "area:paseo",
    "barraka_frontage.json:barraka-lounge-garden",
-   "beach_verge.json:barraka-front-verge",
-   "area:paseo"
+   "beach_verge.json:barraka-front-verge"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge"
  },
@@ -17363,7 +17365,6 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "ground_plan_main_pool.json:main-lawn",
-   "area:paseo",
    "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "the big lawn towards Barraka, the hedge along the sea railing and the service lid"
@@ -17743,7 +17744,6 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "ground_plan_main_pool.json:main-lawn",
-   "area:paseo",
    "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "The paseo, sandstone wall with green bar fence, white solar lamp and Barraka Beach frontage ahead"

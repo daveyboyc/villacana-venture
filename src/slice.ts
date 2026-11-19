@@ -1609,7 +1609,7 @@ function addProps(scene: THREE.Scene, poolRings: Vec2[][], props: Skeleton["prop
         // Shown on the master map; not yet built in 3D.
         break;
       default:
-        if (p.kind in SPRITE_SIZE) (sprites[p.kind as SpriteKind] ??= []).push({ x: p.x, z: p.z, ...(p.scale ? { scale: p.scale } : {}), ...(p.canopyOverhangs ? { clearance: TRUNK_CLEARANCE } : {}) });
+        if (p.kind in SPRITE_SIZE) (sprites[p.kind as SpriteKind] ??= []).push({ x: p.x, z: p.z, ...(p.canopyOverhangs ? { clearance: TRUNK_CLEARANCE } : {}) });
     }
   }
   for (const [kind, places] of Object.entries(fittings)) addPoolFittings(scene, kind as PoolFitting, places, steel);

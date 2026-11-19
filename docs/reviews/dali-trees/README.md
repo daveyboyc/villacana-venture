@@ -7,7 +7,7 @@ with **Show details** in Inspect:
 | --- | --- | --- | --- |
 | dali-strelitzia-1 to -4 | `bird_of_paradise` (plants/strelitzia) | IMG_3082-3084 | ±1-4 m along the path |
 | dali-jacaranda-1 | `feathery_tree` (trees/spreading-tree) | IMG_3082 | ±3.5 m |
-| dali-loquat-1 | `tree` at scale 0.8 (trees/broadleaf) | IMG_3084, IMG_3085 | ±2 m |
+| dali-loquat-1 | `tree` (trees/broadleaf; the model is a little larger than the photographed loquat) | IMG_3084, IMG_3085 | ±2 m |
 | cervantes-apron-fan-palms | `fan_palm` (plants/fan-palm-clump, new) | IMG_3087, IMG_3088 | ±1.5 m |
 | dali-north-fan-palms | `fan_palm` | IMG_3086, IMG_3089 | ±3 m |
 | dali-cycad-1 | `cycad` (plants/cycad, new) | IMG_3086 | ±1.5 m |

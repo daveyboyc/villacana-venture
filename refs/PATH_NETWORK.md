@@ -14,7 +14,7 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 - sources: 596
 - uninspectedSources: 526
 - routes: 24
-- segments: 172
+- segments: 181
 - tracedSides: 0
 - tunnelCandidates: 11
 - confirmedUniqueTunnels: unresolved
