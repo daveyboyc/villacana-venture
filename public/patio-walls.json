@@ -6,7 +6,7 @@
     "kerb": 2,
     "enclosure": 23,
     "gap": 20,
-    "context": 37
+    "context": 38
   },
   "records": [
     {
@@ -3859,6 +3859,196 @@
       "confidence": "inferred",
       "placement": "unreviewed",
       "basis": "Model group context, not a traced wall axis or quantity. The wall is photographed, but where it stands is guessed (about 4 m): the photo GPS is off by 47 m.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "dali_strip_levels.json:dali-north-lawn-bed",
+      "name": "Pintor Dalí · raised lawn bed and kerb wall north of the Cervantes apron",
+      "kind": "context",
+      "points": [
+        [
+          -189.89,
+          77.1
+        ],
+        [
+          -189.52,
+          77.88
+        ],
+        [
+          -189.51,
+          77.89
+        ],
+        [
+          -186.59,
+          76.16
+        ],
+        [
+          -186.49,
+          76.09
+        ],
+        [
+          -186.73,
+          75.6
+        ],
+        [
+          -187.11,
+          74.79
+        ],
+        [
+          -187.5,
+          73.97
+        ],
+        [
+          -187.88,
+          73.16
+        ],
+        [
+          -188.81,
+          72.61
+        ],
+        [
+          -189.24,
+          71.81
+        ],
+        [
+          -189.72,
+          71.04
+        ],
+        [
+          -190.15,
+          70.25
+        ],
+        [
+          -190.94,
+          69.63
+        ],
+        [
+          -191.38,
+          68.84
+        ],
+        [
+          -191.85,
+          68.07
+        ],
+        [
+          -192.33,
+          67.3
+        ],
+        [
+          -192.76,
+          66.51
+        ],
+        [
+          -193.24,
+          65.74
+        ],
+        [
+          -193.62,
+          64.93
+        ],
+        [
+          -194.01,
+          64.11
+        ],
+        [
+          -194.39,
+          63.3
+        ],
+        [
+          -194.78,
+          62.49
+        ],
+        [
+          -193.68,
+          60.97
+        ],
+        [
+          -196.84,
+          62.47
+        ],
+        [
+          -196.45,
+          63.28
+        ],
+        [
+          -196.06,
+          64.09
+        ],
+        [
+          -195.68,
+          64.91
+        ],
+        [
+          -195.29,
+          65.72
+        ],
+        [
+          -194.91,
+          66.53
+        ],
+        [
+          -194.52,
+          67.35
+        ],
+        [
+          -194.13,
+          68.16
+        ],
+        [
+          -193.75,
+          68.97
+        ],
+        [
+          -193.36,
+          69.78
+        ],
+        [
+          -192.98,
+          70.6
+        ],
+        [
+          -192.59,
+          71.41
+        ],
+        [
+          -192.2,
+          72.22
+        ],
+        [
+          -191.82,
+          73.04
+        ],
+        [
+          -191.43,
+          73.85
+        ],
+        [
+          -191.05,
+          74.66
+        ],
+        [
+          -190.66,
+          75.48
+        ],
+        [
+          -190.27,
+          76.29
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "cervantes",
+        "dali"
+      ],
+      "evidence": [
+        "IMG_3089.jpg",
+        "IMG_3086.jpg",
+        "IMG_3087.jpg",
+        "IMG_3088.jpg"
+      ],
+      "confidence": "photographed",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. IMG_3089 and IMG_3086 show the raised lawn bed and its white kerb wall standing about 0.35-0.45 m above the tiled path, with the end wall at the apron (IMG_3087). The laser survey gives the same step (median 0.35 m). The outline is the traced zone, good to about 1-2 m.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {

@@ -40,3 +40,26 @@ placement approval.
 - **Apron planter.** The raised planter is not modelled (gap `cervantes-apron-raised-planter`), so
   the palms stand on the ground.
 - **Bollard lamps.** The green bollard lamps on the strip are not placed (gap `dali-lawn-bollards`).
+
+## Levels (second pass, 19 November 2026)
+
+Dave said the levels were wrong. The lawn strip, the house-side path and the apron end had been
+flat sheets at one height, and the trees stood about 0.27 m below the visible lawn.
+`src/dali-strip-levels.ts` (data `data/dali_strip_levels.json`) now builds:
+
+- **North of the Cervantes apron:** a raised lawn bed behind a white kerb wall about 0.35 m above
+  the tiled path, with an end wall and the rounded mailbox pier at the apron (IMG_3089, IMG_3086, IMG_3087).
+- **South of the apron:** a 0.14 m kerb, with the lawn rising behind it to the parking (IMG_3082-3084).
+- **The path:** the step from path to parking is 0.35 m in the PNOA-LiDAR 2020-21 ground model. It
+  closes about 22 m south of the IMG_3082 camera, and the strip is continued to there (graded inferred).
+- **Generated sidewalk:** the filler from `src/dali-street.ts` is left out over the strip.
+- **Trees:** plants on the strip stand on its surface.
+
+Renders, all Inspect with Show details:
+
+- `levels-north-raised-bed.jpg`: the raised bed, its kerb wall and the pier, looking north like IMG_3089.
+- `levels-south-kerb-near-apron.jpg`: the low kerb and lawn just south of the apron, like IMG_3084.
+- `levels-south-strip.jpg`: the strip running south with its trees, from above.
+
+These levels are checked by eye against the photos and the 1 m laser survey. No camera was
+solved, so this is not a measured placement.

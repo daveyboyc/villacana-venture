@@ -3325,7 +3325,8 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-house-footpath-1",
    "backdrop.json:aerial-trees",
-   "dali_cervantes_threshold.json:dali-lawn-strip-1"
+   "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "dali_strip_levels.json:dali-north-lawn-bed"
   ]
  },
  {
@@ -3370,7 +3371,8 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-house-footpath-2",
    "backdrop.json:aerial-trees",
-   "dali_cervantes_threshold.json:dali-lawn-strip-2"
+   "dali_cervantes_threshold.json:dali-lawn-strip-2",
+   "dali_strip_levels.json:dali-south-lawn-kerb"
   ]
  },
  {
@@ -4169,7 +4171,7 @@
    "dali_cervantes_threshold.json:dali-house-footpath-1",
    "backdrop.json:aerial-trees",
    "dali_cervantes_threshold.json:dali-lawn-strip-1",
-   "dali_cervantes_threshold.json:cervantes-parking-crossing"
+   "dali_strip_levels.json:dali-north-lawn-bed"
   ]
  },
  {
@@ -4206,7 +4208,7 @@
    "dali_cervantes_threshold.json:dali-lawn-strip-2",
    "backdrop.json:aerial-trees",
    "dali_cervantes_threshold.json:dali-house-footpath-2",
-   "dali_cervantes_threshold.json:dali-bays-1"
+   "dali_strip_levels.json:dali-south-lawn-kerb"
   ]
  },
  {
@@ -7598,8 +7600,8 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-lawn-strip-1",
    "dali_cervantes_threshold.json:dali-house-footpath-1",
-   "dali_cervantes_threshold.json:cervantes-parking-crossing",
-   "street:cervantes"
+   "dali_strip_levels.json:dali-north-lawn-bed",
+   "dali_cervantes_threshold.json:cervantes-parking-crossing"
   ]
  },
  {
@@ -7638,7 +7640,8 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-house-footpath-1",
    "backdrop.json:aerial-trees",
-   "dali_cervantes_threshold.json:dali-lawn-strip-1"
+   "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "dali_strip_levels.json:dali-north-lawn-bed"
   ]
  },
  {
@@ -7677,6 +7680,7 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-house-footpath-2",
    "dali_cervantes_threshold.json:dali-lawn-strip-2",
+   "dali_strip_levels.json:dali-south-lawn-kerb",
    "backdrop.json:aerial-trees"
   ]
  },
@@ -7835,7 +7839,7 @@
    "dali_cervantes_threshold.json:dali-lawn-strip-1",
    "backdrop.json:aerial-trees",
    "dali_cervantes_threshold.json:dali-house-footpath-1",
-   "dali_cervantes_threshold.json:dali-bays-2"
+   "dali_strip_levels.json:dali-north-lawn-bed"
   ],
   "subject": "white house frontage with arched entry on the east side of Dalí"
  },
@@ -7876,7 +7880,7 @@
    "dali_cervantes_threshold.json:dali-lawn-strip-1",
    "backdrop.json:aerial-trees",
    "dali_cervantes_threshold.json:dali-house-footpath-1",
-   "dali_cervantes_threshold.json:dali-bays-2"
+   "dali_strip_levels.json:dali-north-lawn-bed"
   ],
   "subject": "arched white gateway from Dalí footpath"
  },
@@ -22529,16 +22533,21 @@
    "altitude": 8.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "dali_strip_levels.json:dali-lawn-strip-3",
+   "dali_strip_levels.json:dali-house-footpath-3",
+   "dali_strip_levels.json:dali-south-lawn-kerb"
+  ],
   "looksAt": [
    -178.0,
    99.0
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "dali_strip_levels.json:dali-lawn-strip-3",
    "backdrop.json:aerial-trees",
    "parking:Dalí car park",
-   "dali_street.json:dali-house-lanterns"
+   "dali_strip_levels.json:dali-south-lawn-kerb"
   ],
   "subject": "jacaranda and Strelitzia nicolai on the Dalí lawn strip"
  },
@@ -22567,7 +22576,9 @@
    "altitude": 8.0,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "dali_strip_levels.json:dali-south-lawn-kerb"
+  ],
   "looksAt": [
    -180.6,
    89.0
@@ -22576,6 +22587,7 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-lawn-strip-2",
    "backdrop.json:aerial-trees",
+   "dali_strip_levels.json:dali-south-lawn-kerb",
    "dali_cervantes_threshold.json:dali-house-footpath-2"
   ],
   "subject": "Strelitzia nicolai clump on the Dalí lawn strip"
@@ -22607,7 +22619,11 @@
    "altitude": 8.0,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "dali_strip_levels.json:dali-lawn-strip-3",
+   "dali_strip_levels.json:dali-house-footpath-3",
+   "dali_strip_levels.json:dali-south-lawn-kerb"
+  ],
   "looksAt": [
    -182.5,
    82.0
@@ -22616,7 +22632,8 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-house-footpath-2",
    "backdrop.json:aerial-trees",
-   "dali_cervantes_threshold.json:dali-lawn-strip-2"
+   "dali_cervantes_threshold.json:dali-lawn-strip-2",
+   "dali_strip_levels.json:dali-south-lawn-kerb"
   ],
   "subject": "Strelitzia clumps on the lawn strip south of the apron"
  },
@@ -22685,7 +22702,10 @@
    "altitude": 7.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "dali_strip_levels.json:dali-north-lawn-bed",
+   "dali_strip_levels.json:dali-apron-bed-pier"
+  ],
   "looksAt": [
    -188.0,
    70.0
@@ -22694,7 +22714,8 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "dali_cervantes_threshold.json:dali-house-footpath-1",
-   "dali_cervantes_threshold.json:dali-lawn-strip-1"
+   "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "dali_strip_levels.json:dali-north-lawn-bed"
   ],
   "subject": "Dalí footpath north of the apron"
  },
@@ -22726,7 +22747,10 @@
    "altitude": 7.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "dali_strip_levels.json:dali-north-lawn-bed",
+   "dali_strip_levels.json:dali-apron-bed-pier"
+  ],
   "looksAt": [
    -187.0,
    74.0
@@ -22735,8 +22759,8 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-house-footpath-1",
    "dali_cervantes_threshold.json:dali-lawn-strip-1",
-   "backdrop.json:aerial-trees",
-   "dali_cervantes_threshold.json:cervantes-parking-crossing"
+   "dali_strip_levels.json:dali-north-lawn-bed",
+   "backdrop.json:aerial-trees"
   ],
   "subject": "raised planter at the Cervantes apron"
  },
@@ -22767,7 +22791,10 @@
    "altitude": 7.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "dali_strip_levels.json:dali-north-lawn-bed",
+   "dali_strip_levels.json:dali-south-lawn-kerb"
+  ],
   "looksAt": [
    -187.5,
    73.8
@@ -22776,6 +22803,7 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-house-footpath-1",
    "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "dali_strip_levels.json:dali-north-lawn-bed",
    "backdrop.json:aerial-trees"
   ],
   "subject": "fan palm clump in the apron planter"
@@ -22806,7 +22834,9 @@
    "altitude": 7.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "dali_strip_levels.json:dali-north-lawn-bed"
+  ],
   "looksAt": [
    -192.5,
    62.0
@@ -22815,7 +22845,8 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "dali_cervantes_threshold.json:dali-house-footpath-1",
-   "dali_cervantes_threshold.json:dali-lawn-strip-1"
+   "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "dali_strip_levels.json:dali-north-lawn-bed"
   ],
   "subject": "lawn strip and footpath north of the apron"
  },
