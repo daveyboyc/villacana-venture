@@ -112,12 +112,7 @@ const path = require("node:path");
     // The tunnel floor takes its level on the lane through it (src/slice.ts SILVIA_DATUM).
     const hostCentre=(await import("/src/geom.ts")).centroid(silvia.silviaFloor);
     const tunnelY=siteY(hostCentre.x,hostCentre.z)+poolGroundY(hostCentre.x,hostCentre.z);
-    const world = {
-      solids: new GatedSolids(base, () => open),
-      coast: new CoastField(map.coast, map.landRef),
-      pools: s.pools.map((p) => p.ring),
-      bounds: map.bounds,
-      groundHeight: (x, z) =>
+    const baseGround = (x, z) =>
         silvia.inSilviaFloor(x,z) ? tunnelY+.06 : sd.inZone(x, z)
           ? sd.y(x, z) + 0.06
           : siteY(x, z) +
@@ -127,7 +122,14 @@ const path = require("node:path");
             raisedTerraceGroundOffset(x, z) +
             gardenGroundOffset(x,z,s.boundaryReference) +
             poolGroundY(x, z) +
-            referenceGroundHeight(s.boundaryReference, x, z),
+            referenceGroundHeight(s.boundaryReference, x, z);
+    const world = {
+      solids: new GatedSolids(base, () => open),
+      coast: new CoastField(map.coast, map.landRef),
+      pools: s.pools.map((p) => p.ring),
+      bounds: map.bounds,
+      // As src/slice.ts: the Calle de Jorge arcade floor runs flush from the Dalí ramp to the lawn path.
+      groundHeight: (x, z) => jorge.passageFloorY(x, z, baseGround) ?? baseGround(x, z),
       maxGroundStep: 0.45,
       seaLevel: sd.seaY,
     };
