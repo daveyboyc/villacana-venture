@@ -11,6 +11,7 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 - IMG_2280 is a flagstone pedestrian entrance, distinct from Cervantes' square tiles; no readable street sign.
 - Issue #57 (data/door_sills.json): the house-side footpath and grass strip between Eva and Patricia stand a 0.12 m white kerb above the asphalt (IMG_2291-2293), with a slot drain at the arched porch; the lawn strip ends about 17 m along and cars nose up to the path beyond it. The south flagstone approach rises 0.25 m over 5 m to the arch in 6263501UF1366S_part1 between flared kerbs (IMG_2283/2294/2295); the passage behind the arch is opened as the Calle de Jorge 39-67 arcade onto the south pool lawn (data/south_pool_passage.json, estimated to about 2 m). Open: the map puts Calle Patricia about 3.7 m south of the photographed apron kerb.
 - 16 November 2026: IMG_2985/2986 show the foot of the arcade ramp: flared rounded white kerbs and a three-groove concrete threshold onto the asphalt. IMG_2987/2988: the west side of the street is a continuous clipped ivy hedge about 2 m high on a white kerb, eucalyptus behind. IMG_2989: the seaward end has a curved yellow kerb line and a white wall with a no-parking sign under a green mesh fence to the beach.
+- 19 November 2026 (IMG_3082-3089): the house-side lawn strip south of the Cervantes apron carries giant white bird-of-paradise clumps (Strelitzia nicolai, one in flower), a gnarled leaning jacaranda at its west edge and short green bollard lamps with white globes by the path kerb; a loquat overhangs the path from a front garden. The strip and path continue south past the traced crossing zone (gap dali-lawn-strip-south). North of the apron the raised white planter (mailbox on its pier) holds a multi-trunked fan palm clump, orange Strelitzia reginae and purple trailing flowers; a sago cycad grows in the garden east of the path. Trees placed in data/objects.json from the photos, ±1.5-4 m.
 
 ## Read first
 
@@ -21,8 +22,8 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 
 ## Coverage
 
-Layout: 56, Levels and slopes: 11, Facades and roofs: 13, Materials: 37, Planting: 27, Signs: 2, Views: 7
-60 reviewed, 0 suggested only by camera position.
+Layout: 62, Levels and slopes: 11, Facades and roofs: 14, Materials: 40, Planting: 35, Signs: 2, Views: 7
+68 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -230,12 +231,18 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2985.jpg](../../public/photos-ref/IMG_2985.jpg) | ground | levels, materials, layout | Foot of the flagstone ramp: flared white kerbs and grooved threshold onto Dalí **Looks at:** foot of the arcade ramp at Pintor Dalí. |
 | [IMG_2987.jpg](../../public/photos-ref/IMG_2987.jpg) | ground | planting, materials, layout | Ivy hedge on a white kerb across Pintor Dalí, eucalyptus beyond **Looks at:** west side of Pintor Dalí opposite the arcade ramp. |
 | [IMG_2988.jpg](../../public/photos-ref/IMG_2988.jpg) | ground | planting, materials, layout | Ivy hedge and white kerb along the west side of Pintor Dalí **Looks at:** west edge of Pintor Dalí looking north-west. |
+| [IMG_3082.jpg](../../public/photos-ref/IMG_3082.jpg) | ground | planting, layout, materials | Pintor Dalí house-side footpath looking south: lawn strip with a jacaranda and giant bird-of-paradise clumps **Looks at:** jacaranda and Strelitzia nicolai on the Dalí lawn strip. |
+| [IMG_3086.jpg](../../public/photos-ref/IMG_3086.jpg) | ground | layout, planting, materials | From the Cervantes apron looking north along the Dalí footpath: planter wall, cycad and climbers **Looks at:** Dalí footpath north of the apron. |
 | [IMG_2476.jpg](../../public/photos-ref/IMG_2476.jpg) | ground | layout, facades | Calle Pintor Dalí looking north |
 | [IMG_2700.jpg](../../public/photos-ref/IMG_2700.jpg) | ground | layout, planting | Dali car park aisle with white kerbs and frontage planters |
 | [IMG_2986.jpg](../../public/photos-ref/IMG_2986.jpg) | ground | levels, materials | Grooved concrete threshold between the flagstone ramp and the Dalí asphalt **Looks at:** threshold strip at the foot of the arcade ramp. |
+| [IMG_3084.jpg](../../public/photos-ref/IMG_3084.jpg) | ground | planting, layout | Pintor Dalí footpath looking north-west to the Cervantes apron: bird-of-paradise clumps on the lawn **Looks at:** Strelitzia clumps on the lawn strip south of the apron. |
+| [IMG_3085.jpg](../../public/photos-ref/IMG_3085.jpg) | ground | planting, facades | Dalí house-side path under a loquat, garden walls with bougainvillea **Looks at:** loquat over the house-side path. |
+| [IMG_3089.jpg](../../public/photos-ref/IMG_3089.jpg) | ground | layout, planting | Dalí lawn strip and footpath looking north from the apron lamp post **Looks at:** lawn strip and footpath north of the apron. |
 | [IMG_2281.jpg](../../public/photos-ref/IMG_2281.jpg) | ground | layout | Pintor Dalí seaward end: turning area and fence |
 | [IMG_2282.jpg](../../public/photos-ref/IMG_2282.jpg) | ground | layout | Pintor Dalí seaward end: wall and paseo boundary |
 | [IMG_2290.jpg](../../public/photos-ref/IMG_2290.jpg) | ground | layout | Pintor Dalí: grass between bays and shared footpath |
+| [IMG_3083.jpg](../../public/photos-ref/IMG_3083.jpg) | ground | planting | Close view of a giant bird-of-paradise clump on the Dalí lawn strip, in flower **Looks at:** Strelitzia nicolai clump on the Dalí lawn strip. |
 | [IMG_2275.jpg](../../public/photos-ref/IMG_2275.jpg) | ground | levels, layout | Cervantes exit onto Pintor Dalí: slope and drain _Used by: cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-2-west, cervantes_patio_walls.json:cervantes-patio-south-3, dali_cervantes_threshold.json:dali-bays-1, dali_cervantes_threshold.json:dali-bays-2, dali_cervantes_threshold.json:dali-lawn-strip-1, dali_cervantes_threshold.json:dali-lawn-strip-2, dali_cervantes_threshold.json:dali-house-footpath-1, dali_cervantes_threshold.json:dali-house-footpath-2, dali_cervantes_threshold.json:cervantes-parking-crossing, lane_walls.json:cervantes-north-garden-wall-west._ |
 | [IMG_2637.jpg](../../public/photos-ref/IMG_2637.jpg) | ground | layout, materials, planting | Paseo end by the Calle Pintor Dali car park with hedge behind mesh fence **Looks at:** Dali end of the paseo: wall end, mesh fence and lamp. **Note:** looksAt is the wall end about 6 m ahead along the heading, by eye from the pin (+-4.7 m). _Used by: paseo_details.json:paseo-white-lamp-1, paseo_details.json:paseo-white-lamp-2, paseo_details.json:paseo-white-lamp-3, paseo_details.json:paseo-white-lamp-4._ |
 | [IMG_2551.jpg](../../public/photos-ref/IMG_2551.jpg) | ground | layout, materials, signage, planting | Calle Eva west footpath at the Dali end, terracotta path beside a lawn island **Looks at:** Eva west stretch looking south-west to the Dali car park: kerbed bed left, kerbed lawn island and lantern right. **Note:** Pin is at the Eva/Dali junction. _Used by: eva_lane.json:eva-lane-west, eva_lane.json:eva-lane-west-edges._ |
@@ -247,6 +254,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2638.jpg](../../public/photos-ref/IMG_2638.jpg) | ground | layout, levels, materials | Paseo wall end and kerbed junction near Dali car park |
 | [IMG_2703.jpg](../../public/photos-ref/IMG_2703.jpg) | ground | layout, materials, planting | Eva west footpath beside the Dali road, looking north **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
 | [IMG_2704.jpg](../../public/photos-ref/IMG_2704.jpg) | ground | layout, materials, planting | Eva west footpath with kerbed grass strip, looking north **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
+| [IMG_3087.jpg](../../public/photos-ref/IMG_3087.jpg) | ground | layout, planting, materials | Raised white planter on the north side of the Cervantes apron, with fan palms **Looks at:** raised planter at the Cervantes apron. |
 | [IMG_2218.jpg](../../public/photos-ref/IMG_2218.jpg) | roof | facades, view | Roof terrace looking south-west: roofs and tall pines along Pintor Dalí |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |
+| [IMG_3088.jpg](../../public/photos-ref/IMG_3088.jpg) | ground | planting, layout | Cervantes apron looking west onto Pintor Dalí: fan palms in the raised planter, ivy hedge **Looks at:** fan palm clump in the apron planter. |
 | [IMG_2266.jpg](../../public/photos-ref/IMG_2266.jpg) | ground | layout | Calle Cervantes exit onto Pintor Dalí: planter and opposite hedge |
