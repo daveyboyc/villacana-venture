@@ -1,11 +1,11 @@
 {
  "version": 1,
- "inputDigest": "9ad47e6bf0f21128f16938cc3db2a6149b35bfd69aa5f89db5799c82c2fa1276",
+ "inputDigest": "d66845781e92664245aca5c51bbcb71c28e9d78002f56f1a2ab0ba6dace8506d",
  "summary": {
   "unplaced": 4,
-  "needs-review": 242,
-  "suggested": 304,
-  "photos": 550,
+  "needs-review": 245,
+  "suggested": 316,
+  "photos": 565,
   "features": 516,
   "photosCitedByModel": 227,
   "modelFeaturesWithPhotoCitations": 260
@@ -8646,6 +8646,111 @@
    "kind": "photo",
    "name": "IMG_3077",
    "file": "IMG_3077.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3082.jpg",
+   "kind": "photo",
+   "name": "IMG_3082",
+   "file": "IMG_3082.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_3083.jpg",
+   "kind": "photo",
+   "name": "IMG_3083",
+   "file": "IMG_3083.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_3084.jpg",
+   "kind": "photo",
+   "name": "IMG_3084",
+   "file": "IMG_3084.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_3085.jpg",
+   "kind": "photo",
+   "name": "IMG_3085",
+   "file": "IMG_3085.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3086.jpg",
+   "kind": "photo",
+   "name": "IMG_3086",
+   "file": "IMG_3086.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3087.jpg",
+   "kind": "photo",
+   "name": "IMG_3087",
+   "file": "IMG_3087.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3088.jpg",
+   "kind": "photo",
+   "name": "IMG_3088",
+   "file": "IMG_3088.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3089.jpg",
+   "kind": "photo",
+   "name": "IMG_3089",
+   "file": "IMG_3089.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3090.jpg",
+   "kind": "photo",
+   "name": "IMG_3090",
+   "file": "IMG_3090.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3091.jpg",
+   "kind": "photo",
+   "name": "IMG_3091",
+   "file": "IMG_3091.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3092.jpg",
+   "kind": "photo",
+   "name": "IMG_3092",
+   "file": "IMG_3092.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3093.jpg",
+   "kind": "photo",
+   "name": "IMG_3093",
+   "file": "IMG_3093.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3094.jpg",
+   "kind": "photo",
+   "name": "IMG_3094",
+   "file": "IMG_3094.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3095.jpg",
+   "kind": "photo",
+   "name": "IMG_3095",
+   "file": "IMG_3095.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3096.jpg",
+   "kind": "photo",
+   "name": "IMG_3096",
+   "file": "IMG_3096.jpg",
    "status": "suggested"
   },
   {
@@ -25819,6 +25924,296 @@
    "to": "main_pool.json:clubhouse-front",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3082.jpg",
+   "to": "building:6265801UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 19.7,
+   "angleOffset": 18.7
+  },
+  {
+   "from": "photo:IMG_3084.jpg",
+   "to": "building:6265201UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 31.8,
+   "angleOffset": 17.5
+  },
+  {
+   "from": "photo:IMG_3085.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 6.0
+  },
+  {
+   "from": "photo:IMG_3085.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 18.0,
+   "angleOffset": 33.7
+  },
+  {
+   "from": "photo:IMG_3085.jpg",
+   "to": "building:6265201UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 28.9,
+   "angleOffset": 15.3
+  },
+  {
+   "from": "photo:IMG_3085.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 30.8,
+   "angleOffset": 25.0
+  },
+  {
+   "from": "photo:IMG_3086.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0.7
+  },
+  {
+   "from": "photo:IMG_3086.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 5.6
+  },
+  {
+   "from": "photo:IMG_3086.jpg",
+   "to": "building:6265201UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 18.6,
+   "angleOffset": 2.3
+  },
+  {
+   "from": "photo:IMG_3086.jpg",
+   "to": "building:6265201UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 33.7,
+   "angleOffset": 33.9
+  },
+  {
+   "from": "photo:IMG_3086.jpg",
+   "to": "building:6265201UF1366N_part6",
+   "relation": "possibly-in-view",
+   "distance": 37.6,
+   "angleOffset": 6.4
+  },
+  {
+   "from": "photo:IMG_3087.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_3087.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 5.5
+  },
+  {
+   "from": "photo:IMG_3088.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0.3
+  },
+  {
+   "from": "photo:IMG_3088.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 5.1
+  },
+  {
+   "from": "photo:IMG_3089.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 1.3
+  },
+  {
+   "from": "photo:IMG_3089.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 4.7
+  },
+  {
+   "from": "photo:IMG_3089.jpg",
+   "to": "building:6265201UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 15.5,
+   "angleOffset": 14.5
+  },
+  {
+   "from": "photo:IMG_3089.jpg",
+   "to": "building:6265201UF1366N_part6",
+   "relation": "possibly-in-view",
+   "distance": 34.6,
+   "angleOffset": 17.2
+  },
+  {
+   "from": "photo:IMG_3090.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 1.0
+  },
+  {
+   "from": "photo:IMG_3090.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 5.1
+  },
+  {
+   "from": "photo:IMG_3090.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 14.8,
+   "angleOffset": 14.2
+  },
+  {
+   "from": "photo:IMG_3090.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 23.4,
+   "angleOffset": 17.1
+  },
+  {
+   "from": "photo:IMG_3090.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 29.1,
+   "angleOffset": 31.1
+  },
+  {
+   "from": "photo:IMG_3091.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0.2
+  },
+  {
+   "from": "photo:IMG_3091.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 5.3
+  },
+  {
+   "from": "photo:IMG_3091.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 14.6,
+   "angleOffset": 19.7
+  },
+  {
+   "from": "photo:IMG_3091.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 27.4,
+   "angleOffset": 30.1
+  },
+  {
+   "from": "photo:IMG_3091.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 28.6,
+   "angleOffset": 1.2
+  },
+  {
+   "from": "photo:IMG_3092.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 1.0
+  },
+  {
+   "from": "photo:IMG_3092.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 8.9,
+   "angleOffset": 26.6
+  },
+  {
+   "from": "photo:IMG_3092.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 17.9,
+   "angleOffset": 18.9
+  },
+  {
+   "from": "photo:IMG_3092.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 38.9,
+   "angleOffset": 15.4
+  },
+  {
+   "from": "photo:IMG_3093.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 1.3
+  },
+  {
+   "from": "photo:IMG_3093.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 7.3,
+   "angleOffset": 13.4
+  },
+  {
+   "from": "photo:IMG_3093.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 22.5,
+   "angleOffset": 26.2
+  },
+  {
+   "from": "photo:IMG_3094.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 1.6
+  },
+  {
+   "from": "photo:IMG_3094.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 19.6,
+   "angleOffset": 26.8
+  },
+  {
+   "from": "photo:IMG_3095.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 1.7
+  },
+  {
+   "from": "photo:IMG_3095.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 19.0,
+   "angleOffset": 17.2
+  },
+  {
+   "from": "photo:IMG_3096.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 1.6
+  },
+  {
+   "from": "photo:IMG_3096.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 3.7,
+   "angleOffset": 17.3
+  },
+  {
+   "from": "photo:IMG_3096.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 24.6,
+   "angleOffset": 0.7
+  },
+  {
+   "from": "photo:IMG_3096.jpg",
+   "to": "building:6265801UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 38.4,
+   "angleOffset": 17.0
   },
   {
    "from": "ref:apple-maps/02-3d-north-pool.png",

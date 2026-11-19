@@ -8529,5 +8529,254 @@
    "layout",
    "planting"
   ]
+ },
+ "IMG_3082.jpg": {
+  "title": "Pintor Dalí house-side footpath looking south: lawn strip with a jacaranda and giant bird-of-paradise clumps",
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "layout",
+   "materials"
+  ],
+  "looksAt": [
+   -178.0,
+   99.0
+  ],
+  "subject": "jacaranda and Strelitzia nicolai on the Dalí lawn strip"
+ },
+ "IMG_3083.jpg": {
+  "title": "Close view of a giant bird-of-paradise clump on the Dalí lawn strip, in flower",
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "looksAt": [
+   -180.6,
+   89.0
+  ],
+  "subject": "Strelitzia nicolai clump on the Dalí lawn strip"
+ },
+ "IMG_3084.jpg": {
+  "title": "Pintor Dalí footpath looking north-west to the Cervantes apron: bird-of-paradise clumps on the lawn",
+  "shows": [
+   "dali",
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "layout"
+  ],
+  "looksAt": [
+   -182.5,
+   82.0
+  ],
+  "subject": "Strelitzia clumps on the lawn strip south of the apron"
+ },
+ "IMG_3085.jpg": {
+  "title": "Dalí house-side path under a loquat, garden walls with bougainvillea",
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "facades"
+  ],
+  "looksAt": [
+   -178.0,
+   84.5
+  ],
+  "subject": "loquat over the house-side path"
+ },
+ "IMG_3086.jpg": {
+  "title": "From the Cervantes apron looking north along the Dalí footpath: planter wall, cycad and climbers",
+  "shows": [
+   "dali",
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "materials"
+  ],
+  "looksAt": [
+   -188.0,
+   70.0
+  ],
+  "subject": "Dalí footpath north of the apron"
+ },
+ "IMG_3087.jpg": {
+  "title": "Raised white planter on the north side of the Cervantes apron, with fan palms",
+  "shows": [
+   "cervantes",
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "materials"
+  ],
+  "looksAt": [
+   -187.0,
+   74.0
+  ],
+  "subject": "raised planter at the Cervantes apron"
+ },
+ "IMG_3088.jpg": {
+  "title": "Cervantes apron looking west onto Pintor Dalí: fan palms in the raised planter, ivy hedge",
+  "shows": [
+   "cervantes",
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "layout"
+  ],
+  "looksAt": [
+   -187.5,
+   73.8
+  ],
+  "subject": "fan palm clump in the apron planter"
+ },
+ "IMG_3089.jpg": {
+  "title": "Dalí lawn strip and footpath looking north from the apron lamp post",
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "looksAt": [
+   -192.5,
+   62.0
+  ],
+  "subject": "lawn strip and footpath north of the apron"
+ },
+ "IMG_3090.jpg": {
+  "title": "Calle de Miguel from its west end: narrow tiled lane, banana plant over the north gardens",
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "facades"
+  ],
+  "looksAt": [
+   -176.0,
+   68.5
+  ],
+  "subject": "Calle de Miguel lane and banana plant"
+ },
+ "IMG_3091.jpg": {
+  "title": "CALLE DE MIGUEL street sign on the white wall at the lane's west end",
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "facades"
+  ],
+  "looksAt": [
+   -183.5,
+   75.5
+  ],
+  "subject": "Calle de Miguel name sign",
+  "altitudeChecked": true,
+  "note": "Ground shot despite the 9.4 m phone altitude: the sign is at eye level and the neighbouring shots from the same spot (IMG_3088-3090) read 7.7-7.9 m."
+ },
+ "IMG_3092.jpg": {
+  "title": "Banana plant with a fruit bunch and purple bud over the Calle de Miguel gardens",
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "looksAt": [
+   -176.5,
+   68.0
+  ],
+  "subject": "banana plant north of Calle de Miguel"
+ },
+ "IMG_3093.jpg": {
+  "title": "Calle de Miguel looking east: wall lanterns, grilled windows, shrub border",
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "planting"
+  ],
+  "looksAt": [
+   -170.0,
+   64.0
+  ],
+  "subject": "Calle de Miguel east of the sign"
+ },
+ "IMG_3094.jpg": {
+  "title": "Arched porch on the south side of Calle de Miguel with a potted kentia palm",
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials",
+   "layout"
+  ],
+  "looksAt": [
+   -172.5,
+   66.0
+  ],
+  "subject": "arched porch off Calle de Miguel"
+ },
+ "IMG_3095.jpg": {
+  "title": "Arched porch and eaves on Calle de Miguel, looking up",
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades"
+  ],
+  "looksAt": [
+   -172.0,
+   66.0
+  ],
+  "subject": "arched porch facade"
+ },
+ "IMG_3096.jpg": {
+  "title": "Inside the arched porch: terracotta tiles with blue-and-white insets, pebble mat, schefflera",
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "planting"
+  ],
+  "looksAt": [
+   -171.0,
+   64.5
+  ],
+  "subject": "porch floor off Calle de Miguel"
  }
 }

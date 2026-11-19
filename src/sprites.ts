@@ -24,6 +24,9 @@ export type SpriteKind =
   | "eucalyptus"
   | "palm"
   | "bird_of_paradise"
+  | "banana"
+  | "fan_palm"
+  | "cycad"
   | "yucca"
   | "hedge"
   | "hibiscus_hedge"
@@ -44,6 +47,9 @@ export const SPRITE_SIZE: Record<SpriteKind, { w: number; h: number; shadow: boo
   eucalyptus: { w: 9, h: 20, shadow: true },
   palm: { w: 5, h: 10, shadow: false },
   bird_of_paradise: { w: 3.4, h: 4.6, shadow: true },
+  banana: { w: 4.4, h: 6.0, shadow: true },
+  fan_palm: { w: 3.0, h: 4.2, shadow: true },
+  cycad: { w: 2.2, h: 1.6, shadow: true },
   yucca: { w: 4.2, h: 4.8, shadow: true },
   hedge: { w: 1.7, h: 1.3, shadow: false },
   hibiscus_hedge: { w: 1.7, h: 1.3, shadow: false },
@@ -113,7 +119,7 @@ export function addSprites(scene: THREE.Scene, kind: SpriteKind, places: SpriteP
  * size of the card it replaces, under public/models/.
  */
 const MODELS: Partial<Record<SpriteKind, string>> = {
-  bird_of_paradise: "plants/strelitzia", palm: "plants/palm", yucca: "plants/yucca", hedge: "plants/hedge", hibiscus_hedge: "plants/hibiscus-hedge",
+  bird_of_paradise: "plants/strelitzia", palm: "plants/palm", banana: "plants/banana", fan_palm: "plants/fan-palm-clump", cycad: "plants/cycad", yucca: "plants/yucca", hedge: "plants/hedge", hibiscus_hedge: "plants/hibiscus-hedge",
   tree: "trees/broadleaf", feathery_tree: "trees/spreading-tree", pollarded_tree: "trees/pollarded-tree",
   umbrella_pine: "trees/umbrella-pine", norfolk_pine: "trees/norfolk-pine", eucalyptus: "trees/eucalyptus",
 };
@@ -330,6 +336,10 @@ const PAINTERS: Record<SpriteKind, (b: Brush) => void> = {
       b.leaf(x, y - 0.02, a * 1.15, 0.36, 0.07, "#62a85a");
     }
   },
+  // Card fallbacks for small screens: the nearest existing picture (the 3D models are in MODELS).
+  banana(b) { PAINTERS.bird_of_paradise(b); },
+  fan_palm(b) { PAINTERS.palm(b); },
+  cycad(b) { PAINTERS.yucca(b); },
   yucca(b) {
     b.stem(0.5, 0, 0.46, 0.4, 0.07, "#6b5540");
     b.stem(0.46, 0.35, 0.28, 0.6, 0.05, "#6b5540");
