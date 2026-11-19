@@ -11,7 +11,7 @@ with **Show details** in Inspect:
 | cervantes-apron-fan-palms | `fan_palm` (plants/fan-palm-clump, new) | IMG_3087, IMG_3088 | ±1.5 m |
 | dali-north-fan-palms | `fan_palm` | IMG_3086, IMG_3089 | ±3 m |
 | dali-cycad-1 | `cycad` (plants/cycad, new) | IMG_3086 | ±1.5 m |
-| miguel-banana-1 | `banana` (plants/banana, new) | IMG_3090, IMG_3092 | ±3 m |
+| miguel-banana-1 | `banana` (plants/banana, rebuilt with leaf colour traced from IMG_3092) | IMG_3090, IMG_3092 | ±1 m across the lane, ±3 m along it |
 
 ## How they were placed
 
@@ -21,8 +21,10 @@ placement approval.
 - **Lawn-strip trees.** Each was placed in the house-side footpath's own frame. The camera station
   is the GPS pin projected onto the modelled path centreline. Distances come from where each trunk
   meets the ground in the photo, taking a 1.5 m camera height and the path's vanishing point.
-- **Banana.** Placed where its bearings from IMG_3090 and IMG_3092 cross. The phone compasses here
-  read up to about 15 degrees off, so its position is good to about ±3 m.
+- **Banana.** Placed from the lane, not the phone compass. In IMG_3090 and IMG_3092 the lane's
+  vanishing point gives each photo's true heading. The plant stands 9.7 and 14 degrees left of the
+  lane, which puts it 3.3 m north of the lane centre, behind the north garden wall. It is turned so
+  its photographed side faces the lane.
 
 ## Renders
 
