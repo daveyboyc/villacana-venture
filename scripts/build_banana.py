@@ -680,14 +680,14 @@ LEAVES = [
     # middle leaves, arching out
     L(az=235, rise=58, pet=0.70, a0=38, bend=72, L=2.00, W=0.30, tex=GREEN, tears=6, depth=(0.4, 0.9), fold=14, sag=30, hang=50, roll=0, twist=10, h=2.64),
     L(az=70, rise=60, pet=0.75, a0=42, bend=70, L=2.10, W=0.30, tex=YELLOWED, tears=6, depth=(0.4, 0.9), fold=14, sag=30, hang=50, roll=0, twist=-10, h=2.67),
-    L(az=-95, rise=62, pet=0.80, a0=40, bend=68, L=2.00, W=0.30, tex=GREEN, tears=5, depth=(0.35, 0.85), fold=14, sag=30, hang=45, roll=0, twist=10, h=2.70),
-    L(az=-12, rise=64, pet=0.95, a0=40, bend=70, L=2.30, W=0.32, tex=SCORCHED, tears=4, depth=(0.35, 0.85), fold=8, sag=30, hang=35, roll=-40, twist=20, h=2.72),
+    L(az=-62, rise=66, pet=0.80, a0=44, bend=74, L=2.00, W=0.30, tex=GREEN, tears=5, depth=(0.35, 0.85), fold=14, sag=30, hang=45, roll=0, twist=10, h=2.70),
+    L(az=-14, rise=62, pet=0.95, a0=38, bend=72, L=2.55, W=0.33, tex=SCORCHED, tears=4, depth=(0.35, 0.85), fold=8, sag=30, hang=35, roll=-40, twist=20, h=2.72),
     L(az=188, rise=66, pet=0.95, a0=30, bend=36, L=1.80, W=0.30, tex=YELLOWED, tears=3, depth=(0.3, 0.8), fold=10, sag=34, hang=30, roll=40, twist=10, h=2.75),
     L(az=20, rise=68, pet=0.90, a0=44, bend=32, L=1.70, W=0.28, tex=YELLOWED, tears=2, depth=(0.3, 0.7), fold=14, sag=26, hang=25, roll=-35, twist=-10, h=2.78),
     # young leaves, nearly upright
     L(az=-150, rise=72, pet=0.75, a0=66, bend=50, L=1.60, W=0.25, tex=GREEN, tears=1, depth=(0.2, 0.5), fold=22, sag=22, hang=10, roll=0, twist=30, h=2.80),
     L(az=62, rise=66, pet=0.70, a0=60, bend=40, L=1.35, W=0.22, tex=GREEN, tears=1, depth=(0.2, 0.5), fold=26, sag=20, hang=10, roll=0, twist=40, h=2.82),
-    L(az=165, rise=80, pet=1.00, a0=82, bend=38, L=2.42, W=0.31, tex=YELLOWED, tears=1, depth=(0.2, 0.5), fold=34, sag=20, hang=10, roll=70, twist=-25, h=2.86),
+    L(az=168, rise=78, pet=1.00, a0=78, bend=40, L=2.45, W=0.31, tex=YELLOWED, tears=1, depth=(0.2, 0.5), fold=34, sag=20, hang=10, roll=70, twist=-25, h=2.86),
     L(az=110, rise=84, pet=0.98, a0=84, bend=14, L=2.15, W=0.30, tex=GREEN, tears=0, fold=12, sag=18, hang=0, roll=0, twist=15, h=2.90),
 ]
 
