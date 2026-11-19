@@ -559,14 +559,21 @@ const path = require("node:path");
       }
       if(!kerbContacts.left||!kerbContacts.right)throw Error("No reachable shoe-sole check on both approach side kerbs");
       if(Math.abs(world.groundHeight(...sills.approachPoint(a.foot-.01,0))-world.groundHeight(...sills.approachPoint(a.foot+.01,0)))>.005)throw Error("Invisible approach toe step");
+      // The arch opens into the Calle de Jorge arcade (data/south_pool_passage.json): walking in from the landing the player
+      // is not stopped at the facade, and the tiled floor carries on flush from the landing (IMG_2984, IMG_2295, IMG_2983).
       player.place(...sills.approachPoint(1.2,0),0);
-      const yaw=Math.atan2(-a.outward[0],a.outward[1]);let touchedFacade=false;
+      const yaw=Math.atan2(-a.outward[0],a.outward[1]),landing=sills.approachBase()+a.rise+sills.DALI_SURFACE;
+      let lastGround=world.groundHeight(player.x,player.z);
       for(let i=0;i<90;i++){
         const expected=[player.x+Math.sin(yaw)*4.7/120,player.z-Math.cos(yaw)*4.7/120];
         player.update(1/120,{...input,moveZ:1},world,yaw);
-        if(Math.hypot(player.x-expected[0],player.z-expected[1])>.001){touchedFacade=true;break;}
+        if(Math.hypot(player.x-expected[0],player.z-expected[1])>.001)throw Error("Approach is blocked before the open arcade");
+        const g=world.groundHeight(player.x,player.z);
+        if(Math.abs(g-lastGround)>.03)throw Error("Step walking from the approach landing into the arcade");
+        lastGround=g;
       }
-      if(!touchedFacade||Math.abs(world.groundHeight(player.x,player.z)-(sills.approachBase()+a.rise+sills.DALI_SURFACE))>.015)throw Error("Approach landing drops before the solid facade");
+      if(Math.abs(world.groundHeight(...sills.approachPoint(0.05,0))-landing)>.015)throw Error("Approach landing is not at its surveyed rise");
+      if(Math.abs(world.groundHeight(...jorge.passageAt(1.5,0))-landing)>.05)throw Error("Arcade floor is not flush with the approach landing");
       // Inspect old-road/new-apron asphalt contact, then apron/kerb contact on the shared outline.
       const asphaltScene=new THREE.Scene();addBoundaryReference(asphaltScene,s.boundaryReference);drapeScene(asphaltScene,buildings);sills.addDoorSills(asphaltScene);asphaltScene.updateMatrixWorld(true);
       for(const st of [5,10,20,25])for(const c of [-.22,-.18,-.07,-.03]){
