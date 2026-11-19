@@ -1,91 +1,174 @@
 # Banana plant asset (`public/models/plants/banana.glb`)
 
-The banana (Musa) behind the white garden wall on Calle de Miguel. It has a fruit bunch and a
-purple male bud. This is an original procedural model built in Blender (bpy) by
-`scripts/build_banana.py`. It is not a scan and not a downloaded model.
+The banana (Musa) behind the white garden wall on Calle de Miguel, placed in the game as
+`miguel-banana-1` (kind `banana`). It has fruited: a bunch of green bananas and a grey-purple male
+bud. The model is built procedurally in Blender (bpy 5.2.3) by `scripts/build_banana.py`. The leaf
+colour is photographic: it was cut from Dave's own photo IMG_3092. It is not a scan and not a
+downloaded model.
 
-Build: `python3 scripts/build_banana.py`. The build is seeded: two runs gave the same sha256,
-`8191e61c…8246519`.
+This is the second version. Dave judged the first, painted version insufficient: its crown was thin
+from the side, its leaves looked like flat panels, the stem was a plain tube, the bunch was a cone
+and the colour read olive.
 
-## Source photos
+Build:
 
-- `public/photos-ref/IMG_3092.jpg` is the key view, looking up from the lane. Leaf count and posture,
-  dried and torn margins, the bunch, the rachis and the bud come from this photo.
-- `public/photos-ref/IMG_3090.jpg` shows the same plant from further west. It was used for overall
-  proportion.
-- `public/photos-ref/IMG_3093.jpg` shows a leaf edge in shade. It was used for leaf colour and sheen.
+```
+python3 scripts/build_banana.py             # writes public/models/plants/banana.glb
+python3 scripts/build_banana.py --extract   # only to re-cut scripts/assets/banana/*.jpg (needs the private original)
+```
+
+The build is seeded. Three consecutive builds gave the same sha256, `54a4a9e1…6cfc6e6733`.
 
 ![comparison](comparison.jpg)
+
+The comparison shows IMG_3092 next to the model from a similar lane view, the photographed
+bunch next to the model's bunch, and the model in the game's Inspect view.
+
+## Sources and licences
+
+All texture sources are Dave's photos of this plant. No external images were used.
+
+| Use | Source | Licence |
+|---|---|---|
+| Green leaf (atlas column 1) | IMG_3092: the upright leaf in the centre, seen from below against the sky. It was unrolled between its midrib and both margins. | Dave's own photo, already published in this repo as `public/photos-ref/IMG_3092.jpg` |
+| Yellowed leaf (column 2) | IMG_3092: the leaf reaching out to the left. One half was unrolled from midrib to margin and is used mirrored for the other half. | as above |
+| Scorched leaf (column 3) | IMG_3092: the big arching leaf to the right with the brown band. It was unrolled across its visible width. | as above |
+| Dead leaf (column 4) | The brown band of the scorched leaf, spread across, made paler and greyer | as above |
+
+How the leaf textures were made:
+- `--extract` reads the private full-size original (`IMG_3092.HEIC`, 4284 × 5712; it is never
+  committed). It walks out from a hand-placed guide line until it reaches the sky to find each
+  leaf's edges, then resamples the leaf into flat strips.
+- The strips are stored, small and without photo metadata, in `scripts/assets/banana/`:
+  `leaf-green.jpg` 256 × 1024, `leaf-yellow.jpg` 128 × 1024 and `leaf-scorch.jpg` 256 × 1024,
+  about 150 kB in all.
+- The traces are `TRACES` in the build script.
+- The build evens out most of the photo's broad light and shadow.
+- It also adds a ragged cut-out margin (more ragged where the photo shows dried tissue), fine splits
+  along the veins, a vein normal map (from the photo's own vein detail) and a glow map.
+- The stem, fruit and bud textures are generated from numbers.
 
 ## Size estimate
 
 None of these sizes is measured. They come from proportions in the photos, with the garden wall
-(about 1.8-2.0 m) and the pseudostem (about 0.25-0.3 m across) as rough scales.
-- **Pseudostem:** the leaves part from it at about 2.75 m.
+(about 1.8-2.0 m) and the pseudostem (about 0.25-0.3 m across) as rough scales. IMG_3092 was
+taken from about 6-8 m away at about eye height: the bud sits close to the photo's horizon.
+
+- **Pseudostem:** 0.33 m across at the foot, tapering to about 0.17 m at the crown (2.95 m). The
+  leaf stalks leave it between 2.28 m (the dead leaves) and 2.90 m.
 - **Top leaf tip:** 5.97 m above the origin.
-- **Bunch and bud:** the bunch spans 2.32-2.80 m and the bud hangs from 2.01 m down to 1.65 m. In
-  IMG_3092 the bud hangs clearly above the wall top. If the garden ground is level with the lane,
-  the model's bud would sit just below a 1.9 m wall, so either the garden bed is raised or the wall
-  there is lower. This is not resolved.
-- **Blades:** 1.55-2.55 m long and 0.54-0.70 m wide, about 4:1 as photographed.
-- **Petioles:** 0.45-1.05 m long. The upright leaves have the longest ones.
+- **Blades:** 1.1-2.55 m long, 0.28-0.66 m wide.
+- **Bunch:** the bunch stalk arches 0.7 m out from the crown. The two clusters of hands span about
+  2.9 m down to 2.4 m. The bare rachis is 0.46 m long, and the bud runs from about 1.9 m down to
+  1.63 m.
 
 Bounding box in glTF coordinates (y up, metres):
-- x: -1.90 to 2.52
+- x: -2.11 to 2.87
 - y: 0 to 5.97
-- z: -2.09 to 2.00
+- z: -2.30 to 2.08
 
-That is about 4.4 × 4.1 m across and 5.97 m tall. The largest horizontal radius from the origin is
-2.57 m. The plant stands on its origin.
+The largest horizontal radius from the origin is 2.94 m. The first version reached 2.57 m.
+`SPRITE_SIZE.banana` in `src/sprites.ts` (w 4.4) is unchanged, so the route-clearance guard still
+checks a 2.2 m radius. The extra reach is drooping leaf tips, which the photos show reaching over
+the wall toward the lane (IMG_3093).
 
 ## Budget
 
 | | |
 |---|---|
-| File | 639,132 bytes (624 kB), textures embedded, standard glTF 2.0, no extensions |
-| Triangles | 12,865 |
+| File | 1,698,408 bytes (1.62 MB). Standard glTF 2.0 with no extensions; textures are embedded. |
+| Triangles | 36,946 |
 | Materials | 4 |
-| Textures | leaf 1024² palette PNG (alpha mask), leaf normal 512² JPEG, stem 512² JPEG, fruit 128×256 JPEG, bud 256² JPEG |
+| Textures | leaf atlas 1024² PNG (255 dithered colours plus one transparent index for the cut-outs), leaf normal 512² JPEG, leaf glow 512² JPEG, stem 512 × 1024 JPEG, fruit 128 × 256 JPEG, bud 256² JPEG |
 
 The four materials:
-- **`banana-leaf`:** alphaMode MASK, double-sided, normal map, roughness 0.48.
-- **`banana-stem`:** pseudostem, petioles, midribs, fruit stalk and rachis share one atlas. Roughness 0.78.
-- **`banana-fruit`:** roughness 0.55.
-- **`banana-bud`:** double-sided, glossy, roughness 0.32.
+- **`banana-leaf`:** alphaMode MASK, double-sided, normal map. Its emissive map is the glow map at
+  strength 0.35.
+- **`banana-stem`:** double-sided. The pseudostem, sheaths, dried sheaths, leaf stalks, midribs,
+  the bunch stalk and the rachis share one atlas.
+- **`banana-fruit`:** carries a faint emission (0.06).
+- **`banana-bud`:** matte, roughness 0.8.
+
+**Why the leaves glow.** The photographed leaves glow yellow-green because the sun shines through
+them, and a standard glTF material has no transmission. So the leaves carry an emissive map. The
+map is their own colour where the tissue is living green or yellow, and black where it is dried
+brown.
 
 ## What is modelled
 
-- **Leaves:** 10 green leaves and 1 dead leaf hanging on the stem. The two upper leaves are nearly
-  upright and the lower ones arch out and down.
-  - The atlas has four painted leaves: green, yellow-margined, scorched brown on one half (the big
-    right-hand leaf), and dead.
-  - Painting details: lateral vein striping, a pale midrib and ragged, alpha-cut margins.
-  - The blades are torn along the lateral veins. The torn strips are separate geometry that sags
-    loose, and there are finer slits in the alpha.
-- **Pseudostem:** has dried brown sheath patches. Leaf sheaths wrap its top.
-- **Fruit:** a curved stalk carries 6 hands (67 fingers). Each finger is five-sided, curves up and
-  has a dark dried tip.
-- **Rachis and bud:** a knobbly bare rachis ends in a teardrop bud. The bud has overlapping
-  purple-maroon bracts, and its top bract is lifted to show a red inner face.
+**Leaves.** There are 19 leaves in a full spiral, so the crown is full from every side:
+- **Upright:** the youngest four are nearly upright. The tall left one has its halves folded
+  together, as photographed.
+- **Arching:** six middle leaves arch out and down. The leaves seen from the lane are placed to
+  match IMG_3092: the tall upright leaf leaning left, the green upright leaf, the left leaf, the
+  upper-right leaf and the big scorched leaf. The others fill the spiral round the back.
+- **Old:** six old leaves droop on longer stalks.
+- **Dead:** three dead brown leaves hang folded against the stem.
+
+There is no rolled 'cigar' leaf. A banana makes no new leaves once its bunch has emerged, and the
+photo shows none.
+
+**Blades.** Each blade is a curved surface:
+- the two halves fold down from the midrib and sag toward the margin;
+- the margin waves, and the blade bends and twists along its length;
+- a pale midrib ridge runs underneath.
+
+**Tears.** Each blade is torn along the lateral veins (about 70° to the midrib). Upright leaves
+have 0-1 tears per half, middle leaves 2-6 and old leaves 10-14, the old ones nearly to the
+midrib. The strips between tears are separate geometry. Each strip hangs from where it is still
+attached, splays apart from its neighbours and twists by its own amount. Finer splits and the
+ragged, dried margins are in the alpha.
+
+**Pseudostem.** It tapers and leans slightly:
+- nine overlapping leaf sheaths wrap it, their edges spiralling up;
+- it is pale cream-green with dark brown-black blotches;
+- the three outer sheaths are dried grey-brown and split into papery strips that peel away at the
+  top.
+
+**Bunch.** The stalk arches out of the crown and hangs. Six hands form two dense clusters, as
+photographed. The fingers are thick and six-sided:
+- they grow out from the stalk, then curve up;
+- each ends in a dark tip with the thread of a dried flower.
+
+**Rachis and bud.** A long, thin, knobbly brown rachis leads down to a matte grey-violet teardrop
+bud. The bud is made of overlapping bracts. Its top bract is lifted like a lid, dark red-maroon
+inside.
+
+## Checks
+
+**Standalone renders.** These were in headless Chromium with three.js 0.170 and the game's lighting
+(neutral tone mapping, the same sky HDR, the game's sun and hemisphere light). There were five
+rounds of fixes. The views were:
+- the lane view matched to IMG_3092;
+- eye height from four sides;
+- an oblique high view;
+- close-ups of torn old leaves, the stem, and the bunch and bud.
+
+**In-game Inspect.** A render at map (-175.3, 65.6) is the last panel of the comparison.
 
 ## Known differences from the photo
 
-- **Leaf glow:** the photographed leaves glow yellow-green because sun shines through them. The model
-  has no transmission, so in shade its leaf undersides render darker and more olive.
-- **Uprights:** the two upright leaves look somewhat shorter, and the side leaves somewhat wider,
-  than in IMG_3092 from a similar low view. The photo camera's distance is unknown, so proportions
-  were matched by eye, not measured.
-- **Scorched leaf:** on the big right-hand leaf the photo has a broad brown band inside a yellow edge.
-  The model's brown band sits closer to the edge and is less extensive.
-- **Bud height:** see the size estimate above. The bud may sit 0.2-0.3 m too low against the wall.
-- **Bud colour:** the photographed bud is greyer, with a matte bloom. The model's bud is more saturated and
-  glossier. The rachis in the photo is relatively longer and thinner.
-- **Bunch:** in the photo the bunch looks like two denser clusters. The model's six hands are spread
-  more evenly.
-- **Leaf directions:** the leaves are arranged to match the lane view. Seen from the side (90°) the
-  crown is narrower, because the real azimuths of the leaves pointing toward or away from the camera
-  are unknown.
-- **Stem base:** the pseudostem base is hidden by the wall and bougainvillea in every photo. Its
-  colour and the hanging dead leaf are typical of the plant, not seen.
-- **Texture banding:** the leaf texture is palette-quantized (256 colours, no dither) to save size,
-  which shows slight banding on close-ups.
+- **Leaf directions:**
+  - Only the lane-facing leaves are placed from the photo. The directions of the leaves pointing
+    toward or away from the camera, and of everything round the back, are typical of the plant,
+    not seen.
+  - The leaf count (19 including the dead ones) is estimated. The lower half of the crown is hidden
+    by the wall and bougainvillea in every photo.
+- **Tearing:** the photographed leaves are torn less than this brief asked for. The upright and
+  middle leaves are nearly whole, and the lower leaves have a few wide tears. The model follows the
+  photo for the visible leaves and shreds only the old, low leaves heavily.
+- **Glow is faked:** emission lifts the leaves in shade as well as in sun. A leaf seen from above in
+  full sun is a little brighter than a real one.
+- **Texture reuse:**
+  - Three photographed leaves supply the colour of all 16 live leaves, so the same yellowing
+    pattern repeats on several leaves. The mirrored half of the yellowed leaf repeats its margin
+    pattern, offset along the leaf.
+  - Some broad light and shadow from the photo remains in the strips: a darker diagonal on the
+    yellowed leaf, where another leaf shaded it.
+- **Pseudostem:** its colour and the peeling dried sheaths are typical of the plant. Its lower part
+  is hidden in every photo. The stem texture is soft in close-ups.
+- **Bud height:** if the garden ground is level with the lane, the bud (1.63-1.9 m) sits at about
+  the wall top. In IMG_3092 it hangs clearly above the wall, so either the garden bed is raised or
+  the wall there is lower. This is not resolved, as before.
+- **Fingers:** the bunch is close to the photo. The fingers are a little more regular in size and
+  spacing than the real ones.

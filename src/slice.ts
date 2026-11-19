@@ -35,6 +35,7 @@ import {addLayoutRoutes} from "./layout-routes";
 import {protectedRoutes,routeClearance,propRadius} from "./route-clearance";
 import {addCervantesPatioWalls,cervantesPatioWallRings,inCervantesWallReview} from "./cervantes-walls";
 import {addDaliThreshold,inDaliThreshold} from "./dali-threshold";
+import {addDaliStripLevels,daliStripPropLift} from "./dali-strip-levels";
 import {addDaliStreet} from "./dali-street";
 import {addFrontageDivisions,inReviewedFrontage} from "./frontages";
 import {addPoolDecks,onPoolDeck,paintPoolDecks} from "./pool-deck";
@@ -332,7 +333,7 @@ async function boot(): Promise<void> {
   addNorthPoolFrontageStructure(scene);
   if(!layoutOnly)detailSteps.push({build:(into)=>addNorthPoolFrontageDetails(into)});
   // Generated wall details are illustrative; only source-traced walls affect collision.
-  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliStreet(scene);addLoweredLanes(scene,skeleton.boundaryReference,(x,z)=>seaside?.inZone(x,z)?seaside.y(x,z):poolGroundY(x,z));addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addCervantesGardenDoor(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
+  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliStreet(scene);addLoweredLanes(scene,skeleton.boundaryReference,(x,z)=>seaside?.inZone(x,z)?seaside.y(x,z):poolGroundY(x,z));addDaliThreshold(scene);addDaliStripLevels(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addCervantesGardenDoor(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
   addDoorSills(scene); // issue #57: door sills, Dalí footpath kerb, south Dalí arch approach
   addMiddlePool(scene, canPlaceDecoration);
   addMiddleSouthGate(scene);
@@ -1609,11 +1610,11 @@ function addProps(scene: THREE.Scene, poolRings: Vec2[][], props: Skeleton["prop
         // Shown on the master map; not yet built in 3D.
         break;
       default:
-        if (p.kind in SPRITE_SIZE) (sprites[p.kind as SpriteKind] ??= []).push({ x: p.x, z: p.z, ...(p.canopyOverhangs ? { clearance: TRUNK_CLEARANCE } : {}) });
+        if (p.kind in SPRITE_SIZE) (sprites[p.kind as SpriteKind] ??= []).push({ x: p.x, z: p.z, ...(p.turn !== undefined ? { yaw: p.turn * Math.PI / 180 } : {}), ...(p.canopyOverhangs ? { clearance: TRUNK_CLEARANCE } : {}) });
     }
   }
   for (const [kind, places] of Object.entries(fittings)) addPoolFittings(scene, kind as PoolFitting, places, steel);
-  for (const [kind, places] of Object.entries(sprites)) addSprites(scene, kind as SpriteKind, places.map(p=>({...p,y:(p.y??0)+groundY(p.x,p.z)})));
+  for (const [kind, places] of Object.entries(sprites)) addSprites(scene, kind as SpriteKind, places.map(p=>({...p,y:(p.y??0)+groundY(p.x,p.z)+daliStripPropLift(p.x,p.z)})));
 }
 
 /** Upright black bars in a frame, see-through between them. */

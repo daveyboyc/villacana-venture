@@ -3,6 +3,7 @@ import threshold from "../data/dali_cervantes_threshold.json";
 import {closestOnSegment,pointInRing} from "./geom";
 import {plasterMaterial,surfaceTexture} from "./materials";
 import type {Vec2} from "./types";
+import {DALI_STRIP_ZONES} from "./dali-strip-levels";
 
 export const daliThresholdZones=threshold.zones.map(z=>({...z,ring:z.ring as Vec2[]}));
 export const daliThresholdKerbs=threshold.kerbs.map(k=>({...k,points:k.points as Vec2[]}));
@@ -33,6 +34,7 @@ export function addDaliThreshold(scene:THREE.Scene):void {
   const apron=new THREE.Mesh(new THREE.ShapeGeometry(apronShape).rotateX(-Math.PI/2),new THREE.MeshStandardMaterial({color:DALI_THRESHOLD_COLORS.bays,roughness:1}));
   apron.position.y=.276;apron.receiveShadow=true;scene.add(apron);
   for(const zone of daliThresholdZones) {
+    if(DALI_STRIP_ZONES.has(zone.id))continue; // drawn at its own levels by src/dali-strip-levels.ts
     const shape=new THREE.Shape(zone.ring.map(([x,z])=>new THREE.Vector2(x,-z)));
     const geometry=new THREE.ShapeGeometry(shape).rotateX(-Math.PI/2);
     const positions=geometry.getAttribute("position"),uv=geometry.getAttribute("uv");

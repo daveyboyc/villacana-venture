@@ -60,7 +60,8 @@ export const SPRITE_SIZE: Record<SpriteKind, { w: number; h: number; shadow: boo
 };
 
 /** `clearance`: the radius the route-clearance guard checks, when it is the trunk rather than the whole sprite (a canopy that overhangs a route). */
-export type SpritePlacement = { x: number; y?: number; z: number; scale?: number; clearance?: number };
+/** `yaw`: radians about the vertical, for a plant built to face one way (the banana's photographed side); others turn at random. */
+export type SpritePlacement = { x: number; y?: number; z: number; scale?: number; clearance?: number; yaw?: number };
 
 /** How a set is drawn: `far` uses the lighter distant models, unshadowed and hazed instead of fogged. */
 export type SpriteOptions = { far?: boolean };
@@ -87,7 +88,7 @@ export function addSprites(scene: THREE.Scene, kind: SpriteKind, places: SpriteP
   const up = new THREE.Vector3(0, 1, 0);
   places.forEach((p, i) => {
     const s = p.scale ?? 1;
-    q.setFromAxisAngle(up, rand(p.x * 3.3, p.z * 1.9) * Math.PI);
+    q.setFromAxisAngle(up, p.yaw ?? rand(p.x * 3.3, p.z * 1.9) * Math.PI);
     m.compose(new THREE.Vector3(p.x, p.y ?? 0, p.z), q, new THREE.Vector3(s, s, s));
     mesh.setMatrixAt(i, m);
   });
