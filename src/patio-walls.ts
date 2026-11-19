@@ -63,7 +63,8 @@ export async function patioWalls(world:SVGGElement,focus:(points:Vec2[])=>void) 
   results.replaceChildren();layer.replaceChildren();count.textContent=`${rows.length} markings shown. Physical survey incomplete.`;
   for(const row of rows){const b=add('button',results,row.name);b.dataset.wallId=row.id;b.setAttribute('aria-pressed',String(selected?.id===row.id));b.addEventListener('click',()=>select(row));draw(row);}
  }
- function show(on:boolean){panel.hidden=!on;layer.style.display=on?'':'none';toggle.setAttribute('aria-pressed',String(on));const u=new URL(location.href);if(on)u.searchParams.set('walls','1');else {u.searchParams.delete('walls');u.searchParams.delete('wall');}history.replaceState(null,'',u);}
+ function show(on:boolean){panel.hidden=!on;document.body.classList.toggle('patio-walls-open',on);if(on)document.querySelector<HTMLDetailsElement>('#map-options')!.open=false;layer.style.display=on?'':'none';toggle.setAttribute('aria-pressed',String(on));const u=new URL(location.href);if(on)u.searchParams.set('walls','1');else {u.searchParams.delete('walls');u.searchParams.delete('wall');}history.replaceState(null,'',u);}
+ document.querySelector('#app-photo-toggle')!.addEventListener('click',()=>show(false));
  toggle.addEventListener('click',()=>show(panel.hidden));close.addEventListener('click',()=>show(false));search.addEventListener('input',render);filter.addEventListener('change',render);
  const url=new URL(location.href);render();show(url.searchParams.get('walls')==='1');const initial=data.records.find(r=>r.id===url.searchParams.get('wall'));if(initial){show(true);select(initial);}
 }

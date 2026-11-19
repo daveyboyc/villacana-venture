@@ -2,7 +2,8 @@
 
 Open the canonical map and choose **Patio walls**, or use `/?view=map&walls=1`.
 Select a line or a searchable list entry. `wall=<feature ID>` makes a shareable
-selection. The panel links the original photo references and the aerial.
+selection. **Inspect existing model here** frames the selected location in Layout.
+The panel links the original photo references and the aerial.
 
 The inventory covers all active wall axes from the six explicit Cervantes/Elena/
 Jorge patio-wall datasets: 24 walls and two nominal low edges. Retired records are

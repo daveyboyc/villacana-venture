@@ -117,3 +117,5 @@ body[data-app-view="fps"]>.reference-tools,body[data-app-view="fps"]>.reference-
 #patio-walls :focus-visible {outline:3px solid #186aa3;} #patio-wall-detail code {overflow-wrap:anywhere;}
 #patio-wall-detail button,#patio-wall-detail a {display:block;margin:6px 0;}
 @media(max-width:760px) {#patio-walls {top:auto;left:8px;right:8px;bottom:66px;width:auto;max-height:53dvh;} #patio-wall-results {max-height:16dvh;}}
+
+.patio-walls-open #photo-library {visibility:hidden;}

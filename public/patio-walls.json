@@ -3100,7 +3100,6 @@
       ],
       "closed": false,
       "areas": [
-        "barraka-beach",
         "main-pool"
       ],
       "evidence": [
@@ -3122,11 +3121,13 @@
         "IMG_2766.jpg",
         "IMG_2767.jpg",
         "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
-        "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png"
+        "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+        "IMG_2761.jpg",
+        "IMG_2763.jpg"
       ],
       "confidence": "inferred",
       "placement": "unreviewed",
-      "basis": "Model group context, not a traced wall axis or quantity. A wall must close the lawn between the foot of Calle Guillermo and the gateway (IMG_2226 shows white wall there from the beach); its line follows the paseo edge and its height is assumed.",
+      "basis": "Model group context, not a traced wall axis or quantity. Dave, 2026-11-19: the boundary west of the gate is a fence, not a wall. IMG_2759, IMG_2763 and IMG_2766 show a green rigid-mesh fence on a low plinth with the hedge inside it, and a short white wing beside the gate pier; its line follows the paseo edge, and plinth and fence heights are by eye.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {
@@ -3480,26 +3481,6 @@
         [
           24.5,
           96.17
-        ],
-        [
-          23.45,
-          97.78
-        ],
-        [
-          13.77,
-          105.81
-        ],
-        [
-          11.48,
-          111.87
-        ],
-        [
-          7.89,
-          117.78
-        ],
-        [
-          -4.93,
-          127.76
         ]
       ],
       "closed": false,
@@ -3512,7 +3493,7 @@
       ],
       "confidence": "estimated",
       "placement": "unreviewed",
-      "basis": "Model group context, not a traced wall axis or quantity. IMG_2764 looks along this wall from the coastal end of the lawn: a plain white wall on the east side, running back to the pool building. The line is the lawn edge on the aerial, continued to the coastal path. Height by eye. The hedge on the lawn side is the dark strip in the aerial and the Google view, not measured.",
+      "basis": "Model group context, not a traced wall axis or quantity. IMG_2764 and IMG_3077 show a plain white wall with climbers on the east side of the lawn, running back to the pool building. Its line is the lawn edge on the aerial, and it ends at the corner by Barraka. The 30 m run that turned back across the lawn to the gate is removed (Dave, 2026-11-19): no photo shows it, and the stretch from the corner to the sea railing is green bars. Height is by eye.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {
