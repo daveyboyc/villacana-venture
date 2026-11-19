@@ -81,7 +81,12 @@ assert gate['opening'] >= 2 * PLAYER + 0.4 and gate['spring'] + gate['opening'] 
 # Railings follow the path around the lawn and end on its east edge, beside Barraka's west corner, not on a chord across the grass.
 end = (d['railing']['points'][-1][0] * math.cos(angle) + d['railing']['points'][-1][1] * math.sin(angle),
        -d['railing']['points'][-1][0] * math.sin(angle) + d['railing']['points'][-1][1] * math.cos(angle))
-assert math.dist(end, (13.78, 108.21)) < 0.4, 'Railings do not reach the lawn edge beside Barraka'
+# Dave, 2026-11-19: past Barraka's west corner the railing carries on to the corner of the Calle Pintor Picasso
+# wall (data/picasso_lawn_wall.json), where a white wall had stood; it still passes the lawn edge beside Barraka.
+picasso_end = json.loads((ROOT / 'data/picasso_lawn_wall.json').read_text())['points'][-1]
+rail_world = [(q[0] * math.cos(angle) + q[1] * math.sin(angle), -q[0] * math.sin(angle) + q[1] * math.cos(angle)) for q in d['railing']['points']]
+assert min(math.dist(q, (13.78, 108.21)) for q in rail_world) < 0.4, 'Railings do not reach the lawn edge beside Barraka'
+assert math.dist(end, picasso_end) < 1.5, 'Railings do not close on the Calle Pintor Picasso wall'
 houses = [[turned(p) for p in b['ring']] for b in skeleton['buildings'] if b['floors'] > 0 and not b.get('passage')]
 pools = [[turned(p) for p in p_['ring']] for p_ in skeleton['pools']]
 roads = [[turned(p) for p in r['points']] for r in skeleton['boundaryReference']['roads']]
