@@ -18,6 +18,8 @@ import type { Vec2 } from "./types";
  * keep their outlines; only their heights change, so src/dali-threshold.ts no longer lays them flat.
  */
 const DALI_SURFACE = 0.272;
+/** Clear of the old parking-apron sheet (data/dali_cervantes_threshold.json parkingApronRing, drawn 4 mm up), which overlaps the strip. */
+const CLEAR = 0.012;
 type Zone = { id: string; kind: string; ring: Vec2[] };
 const traced = threshold.zones.map((z) => ({ id: z.id, kind: z.kind, ring: z.ring as Vec2[] }));
 const zones: Zone[] = [...traced, ...levels.extension.map((z) => ({ id: z.id, kind: z.kind, ring: z.ring as Vec2[] }))];
@@ -70,15 +72,15 @@ function nearestPath(bed: Bed, x: number, z: number): { x: number; z: number; d:
   return best;
 }
 /** The path's level: the old visible surface, which the laser survey already puts below the lawn and parking. */
-const pathLevel = (x: number, z: number) => base(x, z);
+const pathLevel = (x: number, z: number) => base(x, z) + CLEAR;
 /** Lawn surface: `drop` above the path beside it, flat in the raised bed. In the sloped strip it runs from
  * just above the kerb up to `drop` at the parking edge. It is never below the old surface. */
 function lawnSurface(bed: Bed, x: number, z: number): number {
   const p = nearestPath(bed, x, z), ref = pathLevel(p.x, p.z), d = drop(x, z);
-  if (bed.form === "raised") return Math.max(base(x, z), ref + d);
+  if (bed.form === "raised") return Math.max(base(x, z) + CLEAR, ref + d);
   const toParking = parkingEdge(x, z, edgeOf(bed)).d, w = toParking + p.d > 0 ? p.d / (toParking + p.d) : 1;
   const kerbSide = ref + (bed.lawnAtKerb ?? 0.12);
-  return Math.max(base(x, z), kerbSide, kerbSide + (ref + d - kerbSide) * w);
+  return Math.max(base(x, z) + CLEAR, kerbSide, kerbSide + (ref + d - kerbSide) * w);
 }
 
 /** Visible surface height over the strip, or undefined off it. */
