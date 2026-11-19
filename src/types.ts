@@ -161,7 +161,7 @@ export type MapObject = {
   steps?: { form?: "straight" | "curved"; length?: number; wallAt?: Vec2 };
   /** Pool ladders only: draw this fitting instead, where a photo shows a step handrail. */
   fitting?: "ladder" | "step-rail";
-  /** Pump boxes only: degrees turned anticlockwise seen from above, where a photo shows the box set at an angle. */
+  /** Degrees turned anticlockwise seen from above: a pump box set at an angle, or a plant model built to face one way (the banana's photographed side faces the lane). */
   turn?: number;
   /** Photographed on a raised terrace or patio floor: kept there instead of giving way to the terrace. */
   onTerrace?: boolean;
