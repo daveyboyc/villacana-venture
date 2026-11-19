@@ -86,6 +86,14 @@ window.addEventListener("reference-selected", ((event: CustomEvent<{ id: string;
   el.textContent = event.detail.id.replace(/\.jpg$/, ""); el.title = event.detail.label;
   if(!scenePage.hidden && event.detail.id)setView(document.body.dataset.appView as View,false);
 }) as EventListener);
+window.addEventListener("patio-wall-inspect", ((event: CustomEvent<{point:number[]}>) => {
+  selectedPoint = event.detail.point;
+  const url = new URL(location.href);
+  for (const key of ["photo", "area", "at", "look", "study", "place", "camera"]) url.searchParams.delete(key);
+  url.searchParams.set("details", "0");
+  window.history.replaceState(null, "", url);
+  setView("overview");
+}) as EventListener);
 window.addEventListener("reference-view", ((event: CustomEvent<View>) => {
   if(event.detail==='overview'){const url=new URL(location.href);url.searchParams.delete('area');window.history.replaceState(null,'',url);}
   setView(event.detail);

@@ -3945,6 +3945,25 @@
    "status": "in-progress",
    "owner": "Claude",
    "notes": "18 November 2026: built from unsolved ground photos and the registry house line; structure approved with changes (wall 2.8 m, door 0.8 m moved south, Elena bed face at 0.75 m), all applied. Open: a solved camera (photo request elena-north-corner-square) and the records in data/discrepancies.json."
+  },
+  {
+   "id": "patio-wall-inventory",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Mark patio wall axes, untraced enclosures and level evidence on the canonical map",
+   "photos": [],
+   "build": "Expose existing wall axes, model estimates, source photos and unresolved enclosure boundaries in the canonical map. Include data/levels_survey.json context and model terrain screening without editing geometry.",
+   "avoid": "No extrusion of registry enclosures, invented hidden walls, common resort-wide datum or measured-placement claims.",
+   "accept": [
+    "Selectable searchable markings with stable links and photo navigation",
+    "Quantities restricted to explicit model wall axes; retired walls excluded",
+    "Level context and unresolved evidence clearly stated",
+    "Independent source/UI review and applicable checks recorded"
+   ],
+   "dependsOn": [],
+   "status": "done",
+   "owner": "Codex"
   }
  ]
 }
