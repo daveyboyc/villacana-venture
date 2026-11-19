@@ -20219,7 +20219,9 @@
    "altitude": 6.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "door_sills.json:dali-south-arch-approach"
+  ],
   "looksAt": [
    -94.8,
    199.6
@@ -20410,7 +20412,9 @@
    "altitude": 5.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "door_sills.json:dali-south-arch-approach"
+  ],
   "looksAt": [
    -107.1,
    202.4
@@ -20448,7 +20452,9 @@
    "altitude": 5.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "door_sills.json:dali-south-arch-approach"
+  ],
   "looksAt": [
    -110.4,
    215.3

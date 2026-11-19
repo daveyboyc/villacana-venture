@@ -2,7 +2,7 @@
   "id": "door-sills",
   "name": "Door sills, the Dalí footpath kerb and the south Dalí arch approach",
   "reviewedAt": "2026-10-16",
-  "about": "Small level changes the player steps over (issue #57). Each is a ground-height offset over the lie of the land, not a terrain change: sills and the kerbed footpath are 0.12 m, the arch approach rises 0.25 m over 5 m. House floors are untouched. Heights from data/levels_survey.json (elena-south-sills, dali-footpath-kerb, dali-south-approach), built to the middle of each range.",
+  "about": "Small level changes the player steps over (issue #57). Each is a ground-height offset over the lie of the land, not a terrain change: sills and the kerbed footpath are 0.12 m, the arch approach rises 0.08 m over 5 m (laser survey). House floors are untouched. Heights from data/levels_survey.json (elena-south-sills, dali-footpath-kerb, dali-south-approach), built to the middle of each range.",
   "trust": "Photo-supported: which doors have sills and their red treads, the kerbed lawn strip and tiled footpath along the Dalí frontage with a slot drain at the arched porch, and the flagstone approach with flared white kerbs and a grooved foot strip. Estimated: every height (read by eye, not measured), sill sizes, door positions to about 1 m, the frontage stations to about 2 m, and the approach length and kerb flare to about 1 m. The white wall and its two closed doors west of the Elena lawns are now built on these sills (data/lane_walls.json, 16 November 2026). Not modelled: the covered passage behind the Dalí arch (the registry building stays solid).",
   "sills": [
     {
@@ -138,7 +138,7 @@
       -0.846,
       0.533
     ],
-    "rise": 0.25,
+    "rise": 0.08,
     "level": 1.0,
     "slope": 6.0,
     "foot": 6.5,
@@ -156,9 +156,12 @@
     "evidence": [
       "IMG_2283.jpg",
       "IMG_2294.jpg",
-      "IMG_2295.jpg"
+      "IMG_2295.jpg",
+      "IMG_2978.jpg",
+      "IMG_2983.jpg",
+      "IMG_2984.jpg"
     ],
-    "trust": "Flagstones between rounded white kerbs rise gently, with no step, from a grooved concrete strip at the asphalt to the arched passage (IMG_2283, corroborated by IMG_2294/2295). The arch is put at the back of the recess in registry building 6263501UF1366S_part1; the axis is square to that face and passes within 0.8 m of the IMG_2283 camera, whose heading (60 deg) matches the 58 deg here. The left kerb runs straight and the right one kinks outward towards the parking, as photographed; the foot ends at the edge of the bays beside it. Rise 0.25 m over 5 m (survey 0.15-0.35 m over 5-6 m) and kerbs 0.18 m above the asphalt are by eye. The passage through the building is opened in data/south_pool_passage.json (Calle de Jorge 39-67, estimated to about 2 m).",
+    "trust": "Flagstones between rounded white kerbs rise gently, with no step, from a grooved concrete strip at the asphalt to the arched passage (IMG_2283, corroborated by IMG_2294/2295). The arch is put at the back of the recess in registry building 6263501UF1366S_part1; the axis is square to that face and passes within 0.8 m of the IMG_2283 camera, whose heading (60 deg) matches the 58 deg here. The left kerb runs straight and the right one kinks outward towards the parking, as photographed; the foot ends at the edge of the bays beside it. Rise 0.08 m from the national laser survey (PNOA-LiDAR 2020-21, scripts/lidar_check.py: 0.47 m at the foot to 0.53 m at the arch, against the middle pool deck), not the 0.25 m first read by eye; kerbs 0.18 m above the asphalt by eye. The arcade floor inside is flush with its top (IMG_2984). The passage through the building is opened in data/south_pool_passage.json (Calle de Jorge 39-67, estimated to about 2 m).",
     "photoHeading": {
       "IMG_2283.jpg": 60,
       "IMG_2294.jpg": 55,

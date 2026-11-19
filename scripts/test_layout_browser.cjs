@@ -112,12 +112,7 @@ const path = require("node:path");
     // The tunnel floor takes its level on the lane through it (src/slice.ts SILVIA_DATUM).
     const hostCentre=(await import("/src/geom.ts")).centroid(silvia.silviaFloor);
     const tunnelY=siteY(hostCentre.x,hostCentre.z)+poolGroundY(hostCentre.x,hostCentre.z);
-    const world = {
-      solids: new GatedSolids(base, () => open),
-      coast: new CoastField(map.coast, map.landRef),
-      pools: s.pools.map((p) => p.ring),
-      bounds: map.bounds,
-      groundHeight: (x, z) =>
+    const baseGround = (x, z) =>
         silvia.inSilviaFloor(x,z) ? tunnelY+.06 : sd.inZone(x, z)
           ? sd.y(x, z) + 0.06
           : siteY(x, z) +
@@ -127,7 +122,14 @@ const path = require("node:path");
             raisedTerraceGroundOffset(x, z) +
             gardenGroundOffset(x,z,s.boundaryReference) +
             poolGroundY(x, z) +
-            referenceGroundHeight(s.boundaryReference, x, z),
+            referenceGroundHeight(s.boundaryReference, x, z);
+    const world = {
+      solids: new GatedSolids(base, () => open),
+      coast: new CoastField(map.coast, map.landRef),
+      pools: s.pools.map((p) => p.ring),
+      bounds: map.bounds,
+      // As src/slice.ts: the Calle de Jorge arcade floor runs flush from the Dalí ramp to the lawn path.
+      groundHeight: (x, z) => jorge.passageFloorY(x, z, baseGround) ?? baseGround(x, z),
       maxGroundStep: 0.45,
       seaLevel: sd.seaY,
     };
@@ -518,7 +520,8 @@ const path = require("node:path");
       if (visible.some(delta=>Math.abs(delta)>.01)) throw Error("Dalí footpath tiles do not follow its player ground");
       const a = d.approach, arch = sills.approachPoint(0.6, 0), foot = sills.approachPoint(a.foot + 1, 0);
       const rise = world.groundHeight(...arch) - world.groundHeight(...foot);
-      if (rise < 0.15 || rise > 0.35) throw Error("South Dalí approach rise " + rise.toFixed(2) + " m is outside the survey");
+      // data/levels_survey.json dali-south-approach: the laser survey reads about 0.06-0.08 m (first read by eye as 0.15-0.35 m).
+      if (rise < 0.05 || rise > 0.12) throw Error("South Dalí approach rise " + rise.toFixed(2) + " m is outside the survey");
       // The arch plane itself intersects the unchanged solid registry facade.
       // Check continuity at every reachable player centre, including the whole exterior landing.
       let continuousSamples=0,firstReachable=Infinity;
@@ -556,14 +559,21 @@ const path = require("node:path");
       }
       if(!kerbContacts.left||!kerbContacts.right)throw Error("No reachable shoe-sole check on both approach side kerbs");
       if(Math.abs(world.groundHeight(...sills.approachPoint(a.foot-.01,0))-world.groundHeight(...sills.approachPoint(a.foot+.01,0)))>.005)throw Error("Invisible approach toe step");
+      // The arch opens into the Calle de Jorge arcade (data/south_pool_passage.json): walking in from the landing the player
+      // is not stopped at the facade, and the tiled floor carries on flush from the landing (IMG_2984, IMG_2295, IMG_2983).
       player.place(...sills.approachPoint(1.2,0),0);
-      const yaw=Math.atan2(-a.outward[0],a.outward[1]);let touchedFacade=false;
+      const yaw=Math.atan2(-a.outward[0],a.outward[1]),landing=sills.approachBase()+a.rise+sills.DALI_SURFACE;
+      let lastGround=world.groundHeight(player.x,player.z);
       for(let i=0;i<90;i++){
         const expected=[player.x+Math.sin(yaw)*4.7/120,player.z-Math.cos(yaw)*4.7/120];
         player.update(1/120,{...input,moveZ:1},world,yaw);
-        if(Math.hypot(player.x-expected[0],player.z-expected[1])>.001){touchedFacade=true;break;}
+        if(Math.hypot(player.x-expected[0],player.z-expected[1])>.001)throw Error("Approach is blocked before the open arcade");
+        const g=world.groundHeight(player.x,player.z);
+        if(Math.abs(g-lastGround)>.03)throw Error("Step walking from the approach landing into the arcade");
+        lastGround=g;
       }
-      if(!touchedFacade||Math.abs(world.groundHeight(player.x,player.z)-(sills.approachBase()+a.rise+sills.DALI_SURFACE))>.015)throw Error("Approach landing drops before the solid facade");
+      if(Math.abs(world.groundHeight(...sills.approachPoint(0.05,0))-landing)>.015)throw Error("Approach landing is not at its surveyed rise");
+      if(Math.abs(world.groundHeight(...jorge.passageAt(1.5,0))-landing)>.05)throw Error("Arcade floor is not flush with the approach landing");
       // Inspect old-road/new-apron asphalt contact, then apron/kerb contact on the shared outline.
       const asphaltScene=new THREE.Scene();addBoundaryReference(asphaltScene,s.boundaryReference);drapeScene(asphaltScene,buildings);sills.addDoorSills(asphaltScene);asphaltScene.updateMatrixWorld(true);
       for(const st of [5,10,20,25])for(const c of [-.22,-.18,-.07,-.03]){
