@@ -47,6 +47,7 @@ import {middleGatewayFrame,middleGatewayLeaf,middlePoolPlanter,suppressInMiddleP
 import middlePool from "../data/middle_pool.json";
 import { mapLabels, referenceEditor } from "./references";
 import { asset } from "./asset";
+import { patioWalls as patioWallInventory } from "./patio-walls";
 import { pathNetwork } from "./path-network";
 import {elenaPavingFor,elenaGridLines} from "./elena-lane-paving";
 import { photoLibrary } from "./photo-library";
@@ -889,6 +890,22 @@ async function boot(): Promise<void> {
     });
   } catch(error) {
     const warning=document.createElement("p");warning.id="network-load-error";warning.textContent="Path network inventory could not load. Reload to try again.";
+    document.querySelector("#map-page")!.append(warning);console.error(error);
+  }
+
+  try {
+    await patioWallInventory(world, (points) => {
+      const theta = rotation * Math.PI / 180;
+      const ps = points.map(([x,z]) => [x*Math.cos(theta)-z*Math.sin(theta), x*Math.sin(theta)+z*Math.cos(theta)]);
+      const xs=ps.map(p=>p[0]), ys=ps.map(p=>p[1]);
+      const w=Math.max(45,Math.max(...xs)-Math.min(...xs)+30), h=Math.max(45,Math.max(...ys)-Math.min(...ys)+30);
+      const unit=Math.max(w/Math.max(100,innerWidth-(innerWidth>760?390:0)),h/Math.max(100,innerHeight*.45));
+      view.w=innerWidth*unit; view.h=innerHeight*unit;
+      view.x=(Math.min(...xs)+Math.max(...xs))/2-view.w*(innerWidth>760?.35:.5);
+      view.y=(Math.min(...ys)+Math.max(...ys))/2-view.h*.32; apply();
+    });
+  } catch(error) {
+    const warning=document.createElement("p");warning.id="patio-wall-load-error";warning.textContent="Patio wall inventory could not load. Reload to try again.";
     document.querySelector("#map-page")!.append(warning);console.error(error);
   }
 

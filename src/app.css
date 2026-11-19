@@ -106,3 +106,14 @@ body[data-app-view="map"]>.reference-tools {right:378px;bottom:68px;}
 }
 
 body[data-app-view="fps"]>.reference-tools,body[data-app-view="fps"]>.reference-layer {display:none;}
+
+#patio-walls {position:fixed;top:110px;right:10px;bottom:70px;width:348px;z-index:8;background:#fffdf8;color:#26352e;border:1px solid #c9bfae;border-radius:12px;padding:12px;box-sizing:border-box;overflow:auto;font:13px system-ui;}
+#patio-walls header {display:flex;justify-content:space-between;align-items:center;}
+#patio-walls h2 {margin:0;} #patio-walls p {line-height:1.45;}
+#patio-walls button, #patio-walls input, #patio-walls select {min-height:44px;font:inherit;border:1px solid #b6ab99;border-radius:6px;padding:7px;background:white;color:inherit;}
+#patio-walls input, #patio-walls select {width:100%;box-sizing:border-box;margin-bottom:7px;}
+#patio-wall-results {max-height:180px;overflow:auto;display:grid;gap:4px;}
+#patio-walls button {cursor:pointer;text-align:left;} #patio-walls button[aria-pressed=true] {border:2px solid #bb2374;}
+#patio-walls :focus-visible {outline:3px solid #186aa3;} #patio-wall-detail code {overflow-wrap:anywhere;}
+#patio-wall-detail button,#patio-wall-detail a {display:block;margin:6px 0;}
+@media(max-width:760px) {#patio-walls {top:auto;left:8px;right:8px;bottom:66px;width:auto;max-height:53dvh;} #patio-wall-results {max-height:16dvh;}}
