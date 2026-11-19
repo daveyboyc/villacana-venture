@@ -7,7 +7,7 @@
   "suggested": 267,
   "photos": 502,
   "features": 515,
-  "photosCitedByModel": 221,
+  "photosCitedByModel": 224,
   "modelFeaturesWithPhotoCitations": 259
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
@@ -4217,7 +4217,10 @@
    "evidence": [
     "IMG_2283.jpg",
     "IMG_2294.jpg",
-    "IMG_2295.jpg"
+    "IMG_2295.jpg",
+    "IMG_2978.jpg",
+    "IMG_2983.jpg",
+    "IMG_2984.jpg"
    ]
   },
   {
@@ -24539,6 +24542,12 @@
    "angleOffset": 27.4
   },
   {
+   "from": "photo:IMG_2978.jpg",
+   "to": "door_sills.json:dali-south-arch-approach",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2979.jpg",
    "to": "building:6263501UF1366S_part1",
    "relation": "possibly-in-view",
@@ -24579,6 +24588,18 @@
    "relation": "possibly-in-view",
    "distance": 11.8,
    "angleOffset": 19.1
+  },
+  {
+   "from": "photo:IMG_2983.jpg",
+   "to": "door_sills.json:dali-south-arch-approach",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2984.jpg",
+   "to": "door_sills.json:dali-south-arch-approach",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2985.jpg",

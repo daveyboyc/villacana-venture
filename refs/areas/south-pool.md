@@ -46,12 +46,19 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["South pool"]
-  A --> F0["South pool deck · unreviewed"]
-  F0 --> Pref_web_south_pool_01_looking_north_palm_jpg(["south-pool-01-looking-north-palm"])
-  F0 --> Pref_web_south_pool_02_looking_south_east_sea_jpg(["south-pool-02-looking-south-east-sea"])
-  A --> F1["South lawn above the paseo · unreviewed"]
-  F1 --> PIMG_2188_jpg(["IMG_2188"])
-  F1 --> PIMG_2349_jpg(["IMG_2349"])
+  A --> F0["Pintor Dalí south · flagstone approach to the arch · unreviewed"]
+  F0 --> PIMG_2283_jpg(["IMG_2283"])
+  F0 --> PIMG_2294_jpg(["IMG_2294"])
+  F0 --> PIMG_2295_jpg(["IMG_2295"])
+  F0 --> PIMG_2978_jpg(["IMG_2978"])
+  F0 --> PIMG_2983_jpg(["IMG_2983"])
+  F0 --> PIMG_2984_jpg(["IMG_2984"])
+  A --> F1["South pool deck · unreviewed"]
+  F1 --> Pref_web_south_pool_01_looking_north_palm_jpg(["south-pool-01-looking-north-palm"])
+  F1 --> Pref_web_south_pool_02_looking_south_east_sea_jpg(["south-pool-02-looking-south-east-sea"])
+  A --> F2["South lawn above the paseo · unreviewed"]
+  F2 --> PIMG_2188_jpg(["IMG_2188"])
+  F2 --> PIMG_2349_jpg(["IMG_2349"])
 ```
 
 ## Placement evidence
@@ -60,6 +67,7 @@ graph LR
 
 | Feature | Placement | Photo diagnostics | Blockers |
 | --- | --- | --- | --- |
+| `door_sills.json:dali-south-arch-approach` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `pool_decks.json:south-deck` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `south_pool.json:south-pool-seaward-level` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
@@ -70,21 +78,21 @@ graph LR
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2642.jpg](../../public/photos-ref/IMG_2642.jpg) | ground | layout, materials, planting, view, facades | Open iron gate onto crazy-paving path and south pool lawn **Note:** Pin has +-22 m GPS. The visible pool lobe lies about 45 deg to the left of the heading whereas the south pool centre from the pin is about 17 deg, so the pin is probably roughly 10 m too far south-east; do not use it to place the gate without a camera solve. Glass pool fence is skipped by project decision. _Used by: south_pool_passage.json:south-pool-dali-passage._ |
+| [IMG_2978.jpg](../../public/photos-ref/IMG_2978.jpg) | ground | layout, materials, facades, planting | Arched green iron gate from the south pool lawn into the Calle de Jorge arcade **Looks at:** lawn-side gate of the Calle de Jorge 39-67 arcade (south pool to Pintor Dalí passage). _Used by: door_sills.json:dali-south-arch-approach._ |
 | [IMG_2188.jpg](../../public/photos-ref/IMG_2188.jpg) | ground | layout, view, planting | South pool from a patio: lawn, tall palm, sea beyond **Note:** Shows the glass pool fence, which Dave decided to skip. _Used by: south_pool.json:south-pool-seaward-level._ |
 | [IMG_2645.jpg](../../public/photos-ref/IMG_2645.jpg) | ground | facades, layout, planting | South pool lawn and houses _Used by: south_pool_passage.json:south-pool-dali-passage._ |
+| [IMG_2983.jpg](../../public/photos-ref/IMG_2983.jpg) | ground | layout, materials, facades | Arcade west half: covered tiled walk to the arch onto Pintor Dalí **Looks at:** west half of the Calle de Jorge 39-67 arcade toward the Pintor Dalí arch. _Used by: door_sills.json:dali-south-arch-approach._ |
+| [IMG_2984.jpg](../../public/photos-ref/IMG_2984.jpg) | ground | layout, levels, materials | West mouth of the arcade: tile floor meets the crazy-paved ramp to Pintor Dalí **Looks at:** west mouth of the arcade and the flagstone ramp down to Pintor Dalí. _Used by: door_sills.json:dali-south-arch-approach._ |
 | `reference/web/south-pool-01-looking-north-palm.jpg` | ground | facades, planting | South pool looking north: date palm, two-storey terraces, hedged patios **Note:** Found on the web. Reference only, never publish. _Used by: pool_decks.json:south-deck._ |
 | `reference/web/south-pool-02-looking-south-east-sea.jpg` | ground | layout, view | South pool looking south-east: sea beyond, low white wall and fence at the seaward edge **Note:** Found on the web. Reference only, never publish. _Used by: pool_decks.json:south-deck._ |
 | [IMG_2643.jpg](../../public/photos-ref/IMG_2643.jpg) | ground | planting, view, facades, layout | South lawn towards the east houses: candelabra cactus, palms and paseo fence **Note:** Camera is on the lawn east of the pool; the lawn edge and mesh fence at the right are the seaward edge above the paseo. |
 | [IMG_2644.jpg](../../public/photos-ref/IMG_2644.jpg) | ground | planting, layout, view, facades | South lawn seaward edge: hedges, palms and mesh fence above the paseo **Note:** Good GPS (+-2 m) at the seaward corner of the south lawn. |
 | [IMG_2977.jpg](../../public/photos-ref/IMG_2977.jpg) | ground | materials, levels, layout, planting | Stepped crazy-paving path and white kerb beside the south pool lawn **Looks at:** stepped crazy-paving path and curved planter wall on the south pool lawn. **Note:** Phone altitude reads 9.3 m but the picture is taken standing on the south pool lawn (ground). |
-| [IMG_2978.jpg](../../public/photos-ref/IMG_2978.jpg) | ground | layout, materials, facades, planting | Arched green iron gate from the south pool lawn into the Calle de Jorge arcade **Looks at:** lawn-side gate of the Calle de Jorge 39-67 arcade (south pool to Pintor Dalí passage). |
 | [IMG_2980.jpg](../../public/photos-ref/IMG_2980.jpg) | ground | layout, materials, facades, planting | Open middle bay of the arcade: bougainvillea arch and pebble-mosaic panel **Looks at:** open middle bay of the Calle de Jorge 39-67 arcade. |
 | [IMG_2981.jpg](../../public/photos-ref/IMG_2981.jpg) | ground | facades, materials, planting, layout | Side court off the arcade: door 57, barred windows and planters **Looks at:** house 57 front on the side court off the arcade's open bay. |
 | [IMG_2982.jpg](../../public/photos-ref/IMG_2982.jpg) | ground | layout, materials, facades, planting | Tiled side lane north from the arcade between houses 55 and 57 **Looks at:** tiled side lane running north-north-west from the arcade's open bay. **Note:** New: a tiled side lane leaves the open middle bay of the arcade toward Calle Jorge/Silvia. Not in data/south_pool_passage.json; where it runs is not measured. |
 | [IMG_2635.jpg](../../public/photos-ref/IMG_2635.jpg) | ground | facades, materials, layout | White seafront houses seen over the south-pool sandstone wall, fence and hedge **Note:** Pin is poor (+-15.9 m) and sits on the pool/house block; the pink paving at the lower left shows the camera stood on the paseo looking inland over the wall, so the pin is suspect (likely a few metres seaward). Which houses are seen is not established. |
 | [IMG_2979.jpg](../../public/photos-ref/IMG_2979.jpg) | ground | layout, materials, facades | Through the open gate: the tiled arcade with lantern, mat and arches **Looks at:** Calle de Jorge 39-67 arcade from the lawn-side gate looking toward Pintor Dalí. |
-| [IMG_2983.jpg](../../public/photos-ref/IMG_2983.jpg) | ground | layout, materials, facades | Arcade west half: covered tiled walk to the arch onto Pintor Dalí **Looks at:** west half of the Calle de Jorge 39-67 arcade toward the Pintor Dalí arch. |
-| [IMG_2984.jpg](../../public/photos-ref/IMG_2984.jpg) | ground | layout, levels, materials | West mouth of the arcade: tile floor meets the crazy-paved ramp to Pintor Dalí **Looks at:** west mouth of the arcade and the flagstone ramp down to Pintor Dalí. |
 | `reference/web/south-pool-03-lawn-from-north-west.jpg` | ground | layout, materials | South lawn from the north-west: curved low white wall, bollard lights, loungers **Note:** Found on the web; has people in it. Reference only, never publish. |
 | `reference/apple-maps/03-3d-south-pool-and-promenade.png` | aerial | layout | Apple Maps 3D: south pool, its lawn and the beach promenade |
 | [IMG_2349.jpg](../../public/photos-ref/IMG_2349.jpg) | ground | levels, layout, materials | From the paseo: sandstone retaining wall and fence below the south pool **Note:** Shows the retaining wall right below the south pool. _Used by: paseo_wall.json:paseo-retaining-wall, south_pool.json:south-pool-seaward-level, paseo_details.json:paseo-pool-hedge._ |

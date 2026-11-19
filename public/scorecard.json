@@ -568,7 +568,7 @@
     "generated": 27
    },
    "placement": {
-    "features": 2,
+    "features": 3,
     "verified": 0,
     "disputed": 0
    },
@@ -583,7 +583,7 @@
     ]
    },
    "confidence": {
-    "photographed": 0,
+    "photographed": 1,
     "estimated": 2,
     "inferred": 0,
     "registry": 0,
@@ -594,8 +594,8 @@
     "Footprints: one house, too few to fit against the survey.",
     "Photos: 24, 21 placed; no camera solved.",
     "Facades: 0 of 27 kit parts traced from photos.",
-    "How sure: 0 photographed, 2 estimated, 0 inferred.",
-    "Placement: 0 of 2 features verified.",
+    "How sure: 1 photographed, 2 estimated, 0 inferred.",
+    "Placement: 0 of 3 features verified.",
     "Model loop: 0 tracked findings accepted, 0 still open; 1 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {

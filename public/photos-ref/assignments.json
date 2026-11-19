@@ -7,7 +7,7 @@
   "suggested": 267,
   "photos": 502,
   "features": 515,
-  "photosCitedByModel": 221,
+  "photosCitedByModel": 224,
   "modelFeaturesWithPhotoCitations": 259
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
@@ -20228,7 +20228,9 @@
    ],
    "nearby": [],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "door_sills.json:dali-south-arch-approach"
+   ],
    "geometryReview": "observed",
    "camera": {
     "x": -91.3,
@@ -20362,7 +20364,9 @@
      "angleOffset": 19.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "door_sills.json:dali-south-arch-approach"
+   ],
    "geometryReview": "observed",
    "camera": {
     "x": -98.2,
@@ -20382,7 +20386,9 @@
    ],
    "nearby": [],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "door_sills.json:dali-south-arch-approach"
+   ],
    "geometryReview": "observed",
    "camera": {
     "x": -103.7,
