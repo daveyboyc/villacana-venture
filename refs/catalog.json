@@ -1784,8 +1784,7 @@
   "looksAtFeatures": [
    "ground_plan_main_pool.json:main-lawn",
    "seafront_fence.json:main-pool-lawn-railing",
-   "area:paseo",
-   "picasso_lawn_wall.json:picasso-lawn-wall"
+   "area:paseo"
   ],
   "subject": "big-pool lawn frontage: white railings, Guillermo gateway at left"
  },
@@ -12276,7 +12275,6 @@
   "looksAtFeatures": [
    "seafront_fence.json:main-pool-lawn-railing",
    "ground_plan_main_pool.json:main-lawn",
-   "picasso_lawn_wall.json:picasso-lawn-wall",
    "area:paseo"
   ],
   "subject": "The lawn corner and fence at the foot of the path",
@@ -12736,8 +12734,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:paseo",
-   "ground_plan_main_pool.json:main-lawn",
-   "picasso_lawn_wall.json:picasso-lawn-wall"
+   "seafront_fence.json:main-pool-lawn-railing",
+   "ground_plan_main_pool.json:main-lawn"
   ],
   "subject": "Curved sandstone wall and green railing at Barraka's west corner"
  },
@@ -17367,7 +17365,6 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "ground_plan_main_pool.json:main-lawn",
-   "picasso_lawn_wall.json:picasso-lawn-wall",
    "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "the big lawn towards Barraka, the hedge along the sea railing and the service lid"
@@ -17747,7 +17744,6 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "ground_plan_main_pool.json:main-lawn",
-   "picasso_lawn_wall.json:picasso-lawn-wall",
    "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "The paseo, sandstone wall with green bar fence, white solar lamp and Barraka Beach frontage ahead"

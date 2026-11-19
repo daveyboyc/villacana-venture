@@ -274,8 +274,11 @@ async function boot(): Promise<void> {
   if(!layoutOnly)detailSteps.push({build:(into)=>{addShutters(into, houses, skeleton.floorHeight, kitWalls);addPorches(into, houses, skeleton.floorHeight);}});
   let coast = new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]);
   if (mainPool) {
-    addMainPoolTerraces(scene, buildings.filter((b) => terraceIds.has(b.id)), centroid(pool.ring));
-    addClubhouseFront(scene, buildings, centroid(pool.ring), !layoutOnly);
+    // Face the big pool itself: `pool` is the first pool shown (north when every pool is loaded), which put
+    // the clubhouse glazing and awnings on its back, lane-side walls (Dave, 2026-11-19, "wrong side").
+    const bigPool = centroid((skeleton.pools.find((p) => p.id === "main") ?? pool).ring);
+    addMainPoolTerraces(scene, buildings.filter((b) => terraceIds.has(b.id)), bigPool);
+    addClubhouseFront(scene, buildings, bigPool, !layoutOnly);
     addRoofFins(scene);
     const map = await (await fetch(asset("/map/villacana.json"))).json();
     if (skeleton.seafront) addSeafrontOutlines(scene, skeleton.seafront, true, seaside);

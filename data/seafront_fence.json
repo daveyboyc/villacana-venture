@@ -182,6 +182,14 @@
       [
         -35.051,
         103.299
+      ],
+      [
+        -27.952,
+        99.741
+      ],
+      [
+        -20.418,
+        97.296
       ]
     ],
     "height": 1.1,
@@ -192,6 +200,7 @@
     "bar": 0.13,
     "post": 2.5,
     "paint": "#2a4335",
-    "plinthFinish": "#d7b98d"
+    "plinthFinish": "#d7b98d",
+    "note": "2026-11-19 (Dave): the railing continues from its old end past Barraka's north-west side to the corner of the Calle Pintor Picasso wall, where a white wall stood; Dave marked that stretch as fence."
   }
 }
