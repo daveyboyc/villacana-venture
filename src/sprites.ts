@@ -97,7 +97,7 @@ export function addSprites(scene: THREE.Scene, kind: SpriteKind, places: SpriteP
   scene.add(mesh);
   // Where a 3D plant exists it replaces the cards once loaded, at the same places and sizes.
   // Small screens keep the cards, as they keep the flat shutters instead of the facade kit.
-  if (MODELS[kind] && !matchMedia("(max-width:700px), (max-height:500px)").matches) void plantModel(kind, far).then((model) => {
+  if (MODELS[kind] && (ALWAYS_MODEL.has(kind) || !matchMedia("(max-width:700px), (max-height:500px)").matches)) void plantModel(kind, far).then((model) => {
     if (!model || !mesh.parent) return;
     const parent = mesh.parent, matrix = new THREE.Matrix4();
     model.traverse((o) => {
@@ -124,6 +124,9 @@ const MODELS: Partial<Record<SpriteKind, string>> = {
   tree: "trees/broadleaf", feathery_tree: "trees/spreading-tree", pollarded_tree: "trees/pollarded-tree",
   umbrella_pine: "trees/umbrella-pine", norfolk_pine: "trees/norfolk-pine", eucalyptus: "trees/eucalyptus",
 };
+/** Single photographed plants whose 3D model also loads on small screens, where the others keep their cards:
+ * the banana's card is only a borrowed Strelitzia picture, without the photographed bunch. */
+const ALWAYS_MODEL = new Set<SpriteKind>(["banana"]);
 /** Lighter versions for trees far beyond the resort: a few lumpy clumps, no leaf cards. */
 const FAR_MODELS: Partial<Record<SpriteKind, string>> = {
   palm: "trees/palm-far", tree: "trees/broadleaf-far", umbrella_pine: "trees/umbrella-pine-far",
