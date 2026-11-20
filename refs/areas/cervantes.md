@@ -35,7 +35,7 @@ Cervantes, the straight tiled lane across the block from Pintor Dalí to the Pic
 ## Coverage
 
 Layout: 76, Levels and slopes: 24, Facades and roofs: 38, Materials: 30, Planting: 54, Signs: 18, Views: 5
-86 reviewed, 0 suggested only by camera position.
+86 reviewed, 1 suggested only by camera position.
 
 ## Levels
 
@@ -493,3 +493,11 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2466.jpg](../../public/photos-ref/IMG_2466.jpg) | ground | layout, planting, materials | Elena south footpath beside the junction lawn: kerb, lawn and three clipped trees **Looks at:** Elena south footpath and lawn trees beyond the junction. **Note:** Heading 173 from (-151.5, 56.9). The three clipped trees correspond to the sequence described for IMG_2358/2367. looksAt estimated 7 m along the view. |
 | [IMG_2539.jpg](../../public/photos-ref/IMG_2539.jpg) | ground | layout, levels, planting | Elena north by the Cervantes junction: steps and tiled lane between planted beds |
 | [IMG_2801.jpg](../../public/photos-ref/IMG_2801.jpg) | ground | layout, planting | Lane between a raised planter and a rose bed |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_3097.jpg](../../public/photos-ref/IMG_3097.jpg) | not reviewed | not reviewed | IMG_3097 |

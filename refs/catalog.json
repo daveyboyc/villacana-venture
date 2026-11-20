@@ -23133,6 +23133,616 @@
   "headingOff": 118
  },
  {
+  "id": "IMG_3097.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3097.jpg",
+  "title": "IMG_3097",
+  "shows": [
+   "picasso",
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1iG4hqWVRXB45pifil4vRHLKyFCKBzQD7/view?usp=drivesdk",
+  "camera": {
+   "x": -64.4,
+   "z": 12.7,
+   "heading": 150,
+   "accuracy": 17.1,
+   "altitude": 6.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -61.4,
+   17.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Picasso car park",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_3098.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3098.jpg",
+  "title": "IMG_3098",
+  "shows": [
+   "picasso"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1vIJ_cKxTbWN15wI1_aHn8EtGI5ucX0Bl/view?usp=drivesdk",
+  "camera": {
+   "x": -56.5,
+   "z": 19.5,
+   "heading": 172,
+   "accuracy": 6.5,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -55.7,
+   25.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Picasso car park",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_3099.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3099.jpg",
+  "title": "IMG_3099",
+  "shows": [
+   "picasso"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1NMmC4aUDyyHdwFTIjmAtxXffzpBb8YjA/view?usp=drivesdk",
+  "camera": {
+   "x": -50.7,
+   "z": 20.7,
+   "heading": 94,
+   "accuracy": 3.1,
+   "altitude": 6.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -44.7,
+   21.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Picasso car park",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_3100.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3100.jpg",
+  "title": "IMG_3100",
+  "shows": [
+   "picasso"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1Fbk_kGgAloUJfeYmie_2SGTevo7vsc7b/view?usp=drivesdk",
+  "camera": {
+   "x": -40.3,
+   "z": 22.9,
+   "heading": 312,
+   "accuracy": 4.7,
+   "altitude": 6.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -44.8,
+   18.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Picasso car park",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_3101.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3101.jpg",
+  "title": "IMG_3101",
+  "shows": [
+   "picasso"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1kn-44NfDQoun8HNG1XN4mMOxGeTPJF6A/view?usp=drivesdk",
+  "camera": {
+   "x": -40.5,
+   "z": 22.9,
+   "heading": 58,
+   "accuracy": 4.7,
+   "altitude": 6.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -35.4,
+   19.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Picasso car park",
+   "backdrop.json:aerial-trees",
+   "street:picasso"
+  ]
+ },
+ {
+  "id": "IMG_3103.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3103.jpg",
+  "title": "IMG_3103",
+  "shows": [
+   "picasso"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1VDmyOBFyf4naO2SvzMid-TPfAuRulVC6/view?usp=drivesdk",
+  "camera": {
+   "x": -36.6,
+   "z": 21.3,
+   "heading": 320,
+   "accuracy": 4.7,
+   "altitude": 5.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -40.5,
+   16.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Picasso car park",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_3104.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3104.jpg",
+  "title": "IMG_3104",
+  "shows": [
+   "picasso"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1ZAzz0XLtzagOtVqgI3XVkY1ItTizTXAP/view?usp=drivesdk",
+  "camera": {
+   "x": -36.8,
+   "z": 21.3,
+   "heading": 50,
+   "accuracy": 4.7,
+   "altitude": 6.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -32.2,
+   17.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:picasso",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_3105.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3105.jpg",
+  "title": "IMG_3105",
+  "shows": [
+   "picasso"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1flolpdkYTy5FbEHUbuRDrFKPeB10hztt/view?usp=drivesdk",
+  "camera": {
+   "x": -36.1,
+   "z": 21.6,
+   "heading": 137,
+   "accuracy": 4.7,
+   "altitude": 5.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -32.0,
+   26.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:picasso"
+  ]
+ },
+ {
+  "id": "IMG_3106.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3106.jpg",
+  "title": "IMG_3106",
+  "shows": [
+   "picasso"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1MWOK06OZZbsJc6gnZD8dQhMWUSlKCsKj/view?usp=drivesdk",
+  "camera": {
+   "x": -31.1,
+   "z": 27.2,
+   "heading": 154,
+   "accuracy": 4.7,
+   "altitude": 4.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -28.5,
+   32.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:picasso",
+   "picasso_service_road.json:picasso-boundary-wall"
+  ]
+ },
+ {
+  "id": "IMG_3107.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3107.jpg",
+  "title": "IMG_3107",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/16wS7ZV7pdgZa_9pbEgD_Me3nsZqGnlCa/view?usp=drivesdk",
+  "camera": {
+   "x": 51.5,
+   "z": 116.3,
+   "heading": 277,
+   "accuracy": 4.0,
+   "altitude": 4.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   45.5,
+   115.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_3108.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3108.jpg",
+  "title": "IMG_3108",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1F_TfzlnEiwK7qm_N0FFFbl94Cmch9sXx/view?usp=drivesdk",
+  "camera": {
+   "x": 48.3,
+   "z": 111.9,
+   "heading": 231,
+   "accuracy": 3.6,
+   "altitude": 4.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   43.6,
+   115.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach",
+   "barraka_boardwalk.json:barraka-boardwalk"
+  ]
+ },
+ {
+  "id": "IMG_3109.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3109.jpg",
+  "title": "IMG_3109",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1BeiS8gIgLu1r2PJxKoExcrcv7cjVVrYP/view?usp=drivesdk",
+  "camera": {
+   "x": 48.3,
+   "z": 112.6,
+   "heading": 250,
+   "accuracy": 3.5,
+   "altitude": 4.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   42.7,
+   114.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach",
+   "barraka_boardwalk.json:barraka-boardwalk"
+  ]
+ },
+ {
+  "id": "IMG_3110.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3110.jpg",
+  "title": "IMG_3110",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1YgqD8F_NDUvZVqAN4iVRKMSBOgw3P1q1/view?usp=drivesdk",
+  "camera": {
+   "x": 44.5,
+   "z": 115.3,
+   "heading": 261,
+   "accuracy": 4.1,
+   "altitude": 3.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   38.6,
+   116.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_3111.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3111.jpg",
+  "title": "IMG_3111",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/15fmNxUEGC96Eb3aBqwT7FuGSoLIjUAFK/view?usp=drivesdk",
+  "camera": {
+   "x": 42.3,
+   "z": 118.1,
+   "heading": 209,
+   "accuracy": 4.7,
+   "altitude": 3.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   39.4,
+   123.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_3112.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3112.jpg",
+  "title": "IMG_3112",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1j6r_wT-VrlvCGDNLAE2vfDR5WBlxVqNv/view?usp=drivesdk",
+  "camera": {
+   "x": 36.1,
+   "z": 123.7,
+   "heading": 197,
+   "accuracy": 4.7,
+   "altitude": 3.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   34.3,
+   129.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_3113.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3113.jpg",
+  "title": "IMG_3113",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1BpOr2welNjfq7YDno_Uk7Hc1pD_ZZhin/view?usp=drivesdk",
+  "camera": {
+   "x": 33.8,
+   "z": 125.2,
+   "heading": 259,
+   "accuracy": 2.6,
+   "altitude": 1.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   27.9,
+   126.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_3114.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3114.jpg",
+  "title": "IMG_3114",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1WCu1c5UGR76kChoKboF_6Uw84oweOC4B/view?usp=drivesdk",
+  "camera": {
+   "x": 30.8,
+   "z": 125.2,
+   "heading": 182,
+   "accuracy": 2.4,
+   "altitude": 2.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   30.6,
+   131.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_3115.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3115.jpg",
+  "title": "IMG_3115",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-19",
+  "originalUrl": "https://drive.google.com/file/d/1OYY3CnBuyYjKX1Uv1yNqWmIOT376G77z/view?usp=drivesdk",
+  "camera": {
+   "x": 26.6,
+   "z": 130.5,
+   "heading": 297,
+   "accuracy": 2.6,
+   "altitude": 2.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   21.3,
+   127.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach",
+   "beach_verge.json:barraka-front-verge",
+   "beach_verge.json:barraka-front-shrubs"
+  ]
+ },
+ {
   "id": "ref:apple-maps/01-3d-overview-from-north.png",
   "kind": "map-screenshot",
   "path": "reference/apple-maps/01-3d-overview-from-north.png",

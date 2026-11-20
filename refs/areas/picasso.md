@@ -18,7 +18,7 @@ Calle Pintor Picasso, the inner car-park access aisle and the Picasso car park.
 ## Coverage
 
 Layout: 4, Levels and slopes: 2, Facades and roofs: 1, Materials: 1, Views: 2
-4 reviewed, 0 suggested only by camera position.
+4 reviewed, 9 suggested only by camera position.
 
 ## Open build tasks
 
@@ -64,3 +64,19 @@ graph LR
 | [IMG_2444.jpg](../../public/photos-ref/IMG_2444.jpg) | ground | layout, facades, view | Cervantes east end: looking back east along the lane to the car park side **Looks at:** Lane end opening towards the car park. **Note:** Cars at the far end are probably the Picasso car park but that is not certain from the photo; the lane end is about 15 m away. looksAt is estimated along heading 65. _Used by: cervantes_lane_edges.json:cervantes-east-north-thuja-planter._ |
 | `reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png` | aerial | layout, view | Apple Maps 3D: north pool looking east towards the Picasso car park |
 | `reference/apple-maps/12-3d-main-pool-east-steps-picasso.png` | aerial | layout, levels | Apple Maps 3D: main pool looking north-east, 90 Miles terrace and the east steps **Note:** Dave, 2026-10-21. A narrow flight of steps comes down from an opening in the white wall along Calle Pintor Picasso, between the curved 90 Miles terrace and the east lawn, to the paving north-east of the toddler pool. Not a wide flight off the restaurant roof. |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_3097.jpg](../../public/photos-ref/IMG_3097.jpg) | not reviewed | not reviewed | IMG_3097 |
+| [IMG_3098.jpg](../../public/photos-ref/IMG_3098.jpg) | not reviewed | not reviewed | IMG_3098 |
+| [IMG_3099.jpg](../../public/photos-ref/IMG_3099.jpg) | not reviewed | not reviewed | IMG_3099 |
+| [IMG_3100.jpg](../../public/photos-ref/IMG_3100.jpg) | not reviewed | not reviewed | IMG_3100 |
+| [IMG_3101.jpg](../../public/photos-ref/IMG_3101.jpg) | not reviewed | not reviewed | IMG_3101 |
+| [IMG_3103.jpg](../../public/photos-ref/IMG_3103.jpg) | not reviewed | not reviewed | IMG_3103 |
+| [IMG_3104.jpg](../../public/photos-ref/IMG_3104.jpg) | not reviewed | not reviewed | IMG_3104 |
+| [IMG_3105.jpg](../../public/photos-ref/IMG_3105.jpg) | not reviewed | not reviewed | IMG_3105 |
+| [IMG_3106.jpg](../../public/photos-ref/IMG_3106.jpg) | not reviewed | not reviewed | IMG_3106 |

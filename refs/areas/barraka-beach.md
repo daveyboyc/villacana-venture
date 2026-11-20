@@ -33,7 +33,7 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 ## Coverage
 
 Layout: 52, Levels and slopes: 6, Facades and roofs: 27, Materials: 55, Planting: 16, Signs: 9, Views: 50
-79 reviewed, 0 suggested only by camera position.
+79 reviewed, 9 suggested only by camera position.
 
 ## Levels
 
@@ -222,3 +222,19 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_3062.jpg](../../public/photos-ref/IMG_3062.jpg) | ground | facades, materials | Glazed restaurant pavilion with stepped roof edge and sandstone kerb |
 | [IMG_3063.jpg](../../public/photos-ref/IMG_3063.jpg) | ground | layout, view | Paseo to a white two-storey beach building and a thatched hut on the sand **Looks at:** beach building east of Barraka. **Compass:** the subject is 169° from the phone heading; trust looksAt, not the heading. |
 | [IMG_3064.jpg](../../public/photos-ref/IMG_3064.jpg) | ground | layout, materials | Paseo with a sandstone wall and fence on the right leading to the white beach building |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_3107.jpg](../../public/photos-ref/IMG_3107.jpg) | not reviewed | not reviewed | IMG_3107 |
+| [IMG_3108.jpg](../../public/photos-ref/IMG_3108.jpg) | not reviewed | not reviewed | IMG_3108 |
+| [IMG_3109.jpg](../../public/photos-ref/IMG_3109.jpg) | not reviewed | not reviewed | IMG_3109 |
+| [IMG_3110.jpg](../../public/photos-ref/IMG_3110.jpg) | not reviewed | not reviewed | IMG_3110 |
+| [IMG_3111.jpg](../../public/photos-ref/IMG_3111.jpg) | not reviewed | not reviewed | IMG_3111 |
+| [IMG_3112.jpg](../../public/photos-ref/IMG_3112.jpg) | not reviewed | not reviewed | IMG_3112 |
+| [IMG_3113.jpg](../../public/photos-ref/IMG_3113.jpg) | not reviewed | not reviewed | IMG_3113 |
+| [IMG_3114.jpg](../../public/photos-ref/IMG_3114.jpg) | not reviewed | not reviewed | IMG_3114 |
+| [IMG_3115.jpg](../../public/photos-ref/IMG_3115.jpg) | not reviewed | not reviewed | IMG_3115 |
