@@ -2,14 +2,9 @@ name: Drive photo intake
 
 # Install: copy this file to .github/workflows/drive-intake.yml (see integrations/drive-webhook/README.md).
 # Pure code, no agent: new photos in the Drive folder go on the map as camera pins.
-# Triggers: a 15-minute poll, a `drive-photos` repository_dispatch (the webhook, see
-# integrations/drive-webhook/README.md) and a manual run. Needs two repository secrets:
+# Trigger: manual run only (Actions > Drive photo intake > Run workflow). Needs two repository secrets:
 # GOOGLE_SERVICE_ACCOUNT_JSON and VILLACANA_DRIVE_FOLDER. Until they exist the job does nothing.
 on:
-  schedule:
-    - cron: '*/15 * * * *'
-  repository_dispatch:
-    types: [drive-photos]
   workflow_dispatch:
 
 permissions:
