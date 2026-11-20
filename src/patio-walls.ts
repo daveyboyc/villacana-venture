@@ -53,7 +53,7 @@ export async function patioWalls(world:SVGGElement,focus:(points:Vec2[])=>void) 
   add('h4',detail,'Level check');add('p',detail,row.levelState);add('p',detail,'Keep each patio floor on its own datum; compare wall-top endpoints, door sills and adjoining steps against the photos and laser survey before changing the model.');
   for(const l of row.levelRefs??[])add('p',detail,`Area context only: ${l.id} · rise ${l.rise?.join('–')??'unknown'} m · ${l.confidence}. Not this wall’s top elevation.`);
   for(const id of row.evidence){const b=add('button',detail,'Photo '+id);b.addEventListener('click',()=>{show(false);window.dispatchEvent(new CustomEvent('reference-open',{detail:id}));});}
-  if(row.points.length){const inspect=add('button',detail,'Inspect existing model here');inspect.addEventListener('click',()=>{const point=row.points.reduce((p,q)=>[p[0]+q[0]/row.points.length,p[1]+q[1]/row.points.length],[0,0]);window.dispatchEvent(new CustomEvent('patio-wall-inspect',{detail:{point}}));});}
+  if(row.points.length){const inspect=add('button',detail,'Inspect wall guides here');inspect.addEventListener('click',()=>{const point=row.points.reduce((p,q)=>[p[0]+q[0]/row.points.length,p[1]+q[1]/row.points.length],[0,0]);window.dispatchEvent(new CustomEvent('patio-wall-inspect',{detail:{point,id:row.id}}));});}
   const aerial=add('a',detail,'Open aerial map');aerial.href=asset('/map/ground.jpg');aerial.target='_blank';aerial.rel='noopener';
   const url=new URL(location.href);url.searchParams.set('walls','1');url.searchParams.set('wall',row.id);history.replaceState(null,'',url);
   if(move&&row.points.length)focus(row.points);render();

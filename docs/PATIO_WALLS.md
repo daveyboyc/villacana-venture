@@ -2,7 +2,7 @@
 
 Open the canonical map and choose **Patio walls**, or use `/?view=map&walls=1`.
 Select a line or a searchable list entry. `wall=<feature ID>` makes a shareable
-selection. **Inspect existing model here** frames the selected location in Layout.
+selection. **Inspect wall guides here** opens the selected line in Layout with the 3D guide layer enabled.
 The panel links the original photo references and the aerial.
 
 The inventory covers all active wall axes from the six explicit Cervantes/Elena/
@@ -40,3 +40,26 @@ are regenerated. `npm run build` does this automatically. Check freshness with
 `--check`, and run `python3 scripts/test_patio_walls.py`. This is an inventory and
 estimation tool; physical tracing, wall-specific level decisions and 3D corrections
 remain work to complete against measured evidence.
+
+## Guide lines in the model
+
+Open `/?view=overview&wallGuides=1` or press **Wall guides** beside the Inspect
+area selector. This works in Layout and Show details, including on phones.
+Choose a wall in the guide panel to highlight and frame it; **Check selected wall
+on map / photos** returns to its source record. Map selections open the same
+guide automatically. The guide toggle and selected wall survive reloads and
+Layout/Details switches through the URL.
+
+Blue solid lines follow existing wall axes, teal marks nominal low edges, orange
+dashes show untraced registry enclosure edges, and pink highlights the selection.
+The lines follow model ground at 0.5 m intervals, lifted 0.16 m for visibility.
+They show through buildings as a planning overlay, so an overlapping line does
+not prove a wall should pass through a building. Dashed outlines may include
+openings, building faces or no wall at all. Other model-group extents and point
+gaps are deliberately not converted into 3D wall traces.
+
+Use these lines to compare a proposed wall run with the aerial and photos. Once
+the endpoints and openings are established, author height, thickness and a
+local floor/top datum in the wall source and render a solid wall. The guides do
+not create walls, change collision, flatten the ground or certify placement.
+They remain hidden in Walk and photo-camera renders.
