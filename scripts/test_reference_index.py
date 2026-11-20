@@ -34,8 +34,15 @@ class ReferenceDiscovery(unittest.TestCase):
 
     def test_boat_is_discoverable_with_location_caveat(self):
         rows = find('boat')
-        self.assertEqual({r['id'] for r in rows}, {'IMG_2223.jpg', 'IMG_2346.jpg', 'IMG_2347.jpg'})
+        ids = {r['id'] for r in rows}
+        barbecue = {'IMG_2223.jpg', 'IMG_2346.jpg', 'IMG_2347.jpg'}
+        # Other boats (e.g. IMG_3051, a stranded boat on the beach) may also match 'boat';
+        # the location caveat applies only to the Barraka barbecue boat.
+        self.assertTrue(barbecue <= ids, ids)
         for r in rows:
+            if r['id'] not in barbecue:
+                self.assertNotIn('barbecue', r['label'])
+                continue
             self.assertIn('barbecue', r['label'])
             self.assertIn('not a traced boat footprint', r['locationBasis'])
             self.assertEqual(r['looksAtBasis'], 'reviewed')
