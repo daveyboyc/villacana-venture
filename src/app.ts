@@ -39,7 +39,7 @@ function setView(view: View, history = true): void {
     const phone=navigator.maxTouchPoints>0&&matchMedia("(max-width:900px), (max-height:500px)").matches;
     if(view==="overview"&&phone&&!url.searchParams.has("details"))scene.searchParams.set("details","1");
     // Preserve old bookmarked scene focus/coordinates when opening the canonical app.
-    for (const key of ["details", "at", "look", "study", "place", "camera", "area", "scorecard"]) if (url.searchParams.has(key)) scene.searchParams.set(key, url.searchParams.get(key)!);
+    for (const key of ["details", "at", "look", "study", "place", "camera", "area", "scorecard", "wallGuides", "wall"]) if (url.searchParams.has(key)) scene.searchParams.set(key, url.searchParams.get(key)!);
     if (view === "fps") {
       for (const key of ["photo", "at", "look", "study", "place", "scorecard"]) scene.searchParams.delete(key);
       scene.searchParams.set("pool", "north");
@@ -86,9 +86,10 @@ window.addEventListener("reference-selected", ((event: CustomEvent<{ id: string;
   el.textContent = event.detail.id.replace(/\.jpg$/, ""); el.title = event.detail.label;
   if(!scenePage.hidden && event.detail.id)setView(document.body.dataset.appView as View,false);
 }) as EventListener);
-window.addEventListener("patio-wall-inspect", ((event: CustomEvent<{point:number[]}>) => {
+window.addEventListener("patio-wall-inspect", ((event: CustomEvent<{point:number[];id:string}>) => {
   selectedPoint = event.detail.point;
   const url = new URL(location.href);
+  url.searchParams.set("wallGuides", "1");url.searchParams.set("wall",event.detail.id);
   for (const key of ["photo", "area", "at", "look", "study", "place", "camera"]) url.searchParams.delete(key);
   url.searchParams.set("details", "0");
   window.history.replaceState(null, "", url);
@@ -100,6 +101,11 @@ window.addEventListener("reference-view", ((event: CustomEvent<View>) => {
 }) as EventListener);
 window.addEventListener("message", event => {
   if (event.origin !== location.origin || event.source !== frame.contentWindow) return;
+  if(event.data?.type==='villacana-wall-guides'){
+    const url=new URL(location.href);url.searchParams.set('wallGuides',event.data.on?'1':'0');
+    if(typeof event.data.wall==='string'&&event.data.wall)url.searchParams.set('wall',event.data.wall);else url.searchParams.delete('wall');
+    history.replaceState(null,'',url);
+  }
   if(event.data?.type==='villacana-inspect-area' && typeof event.data.area==='string'){
     const url=new URL(location.href);url.searchParams.set('area',event.data.area);url.searchParams.set('view','overview');window.history.replaceState(null,'',url);
     if (currentView !== null && currentView !== "overview") {

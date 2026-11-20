@@ -1,3 +1,4 @@
+import { wallGuides } from './wall-guides';
 import { createShotgun } from "./shotgun";
 import {replacesLaneGroundOpening,inLaneFrontageBand} from "./middle-pool-lane-frontages";
 import {inspectionTargets} from "./inspection-targets";
@@ -687,6 +688,11 @@ async function boot(): Promise<void> {
   }):null;
 
   if(batching)batchStatic(scene);
+  const patioGuides=wallGuides(scene,liveGroundY,(points)=>{
+    const at=centroid(points);overviewCentre.set(at.x,liveGroundY(at.x,at.z)+.5,at.z);
+    const span=Math.max(...points.map(p=>Math.hypot(p[0]-at.x,p[1]-at.z)));
+    distance=Math.max(22,Math.min(100,span*3));pitch=1.05;resetInspectAnchor();
+  });
   const stroll = (() => {
     let totalWalkDistanceM = 0;
     let totalInspectPanM = 0;
@@ -898,6 +904,7 @@ async function boot(): Promise<void> {
     camera.updateMatrixWorld();
     shotgun?.update(dt,moving);
     document.querySelector<HTMLElement>(".reference-tools")!.style.bottom=`calc(${controls.offsetHeight+24}px + env(safe-area-inset-bottom))`;
+    patioGuides.update(overview&&!photoView);
     checks.visible=overview&&showChecks;
     notes.hidden=!overview||!showChecks;
     const bearing=((Math.round(-camYaw*180/Math.PI)%360)+360)%360;

@@ -3964,6 +3964,27 @@
    "dependsOn": [],
    "status": "done",
    "owner": "Codex"
+  },
+  {
+   "id": "patio-wall-guides",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Show patio wall guide lines directly in Inspect",
+   "photos": [],
+   "build": "Display the existing public/patio-walls.json axes as a switchable 3D planning overlay, with dashed untraced enclosures, selection and map/photo handoff. Ground-following lines are not wall-top levels or new wall solids.",
+   "avoid": "No physical wall placement, changes to Walk/collision, closed registry-wall inference or placement approval.",
+   "accept": [
+    "Guide lines visible in Layout and Show details",
+    "Distinct untraced enclosure style and selected wall highlight",
+    "Map-to-Inspect selection, mobile toggle and source-coordinate tests pass",
+    "Independent implementation and screenshot review recorded"
+   ],
+   "dependsOn": [
+    "patio-wall-inventory"
+   ],
+   "status": "done",
+   "owner": "Codex"
   }
  ]
 }

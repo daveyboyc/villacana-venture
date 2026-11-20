@@ -12,8 +12,10 @@ const assert=require('node:assert/strict');
  assert.match(await page.locator('#patio-wall-detail').innerText(),/3.50 m long/);
  assert.match(await page.locator('#patio-wall-detail').innerText(),/Terrain screening/);
  await page.reload();await page.waitForSelector('#patio-wall-detail h3');
- await page.getByRole('button',{name:'Inspect existing model here',exact:true}).click();
+ await page.getByRole('button',{name:'Inspect wall guides here',exact:true}).click();
  assert.match(await page.locator('#resort-scene').getAttribute('src'),/focus=/);
+ assert.match(await page.locator('#resort-scene').getAttribute('src'),/wallGuides=1/);
+ assert.equal(new URL(await page.locator('#resort-scene').getAttribute('src')).searchParams.get('wall'),wall);
  assert.match(page.url(),/view=overview/);
  await page.getByRole('button',{name:'Map & photos',exact:true}).click();
 
