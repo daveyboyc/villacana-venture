@@ -17,7 +17,7 @@ The northern boundary roads and the lanes round the north pool's upper side.
 ## Coverage
 
 Layout: 2, Levels and slopes: 1, Facades and roofs: 1, Materials: 2, Planting: 1, Signs: 1
-2 reviewed, 0 suggested only by camera position.
+2 reviewed, 33 suggested only by camera position.
 
 ## Open build tasks
 
@@ -34,3 +34,43 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | --- | --- | --- | --- |
 | [IMG_2448.jpg](../../public/photos-ref/IMG_2448.jpg) | ground | signage, layout, materials, levels | Cervantes/Alberto junction: signed wall and paving change, path with three white steps ahead **Looks at:** Lane beyond the Alberto crossing with three white steps. **Note:** Pin is on the blue street line at the Alberto label, but the photo shows the Alberto sign on the wall; the street ID depends on which map street is right, so treat the area as cervantes plus north-lanes. looksAt is estimated 20 m along heading 243. _Used by: lane_walls.json:cervantes-south-garden-wall-alberto, cervantes_lane_edges.json:cervantes-alberto-corner-bed, steps:cervantes-alberto-steps._ |
 | [IMG_2686.jpg](../../public/photos-ref/IMG_2686.jpg) | ground | layout, planting, facades, materials | Calle Elena north from the Cervantes junction: hedged beds and white walls **Note:** Matches the existing Elena north bed and spur description (hedged beds, white wall with window/door). _Used by: lane_walls.json:elena-north-corner-patio-wall, cervantes_lane_edges.json:cervantes-elena-corner-bed, elena_north_corner.json:elena-north-corner-bed._ |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_3132.jpg](../../public/photos-ref/IMG_3132.jpg) | not reviewed | not reviewed | IMG_3132 |
+| [IMG_3133.jpg](../../public/photos-ref/IMG_3133.jpg) | not reviewed | not reviewed | IMG_3133 |
+| [IMG_3134.jpg](../../public/photos-ref/IMG_3134.jpg) | not reviewed | not reviewed | IMG_3134 |
+| [IMG_3135.jpg](../../public/photos-ref/IMG_3135.jpg) | not reviewed | not reviewed | IMG_3135 |
+| [IMG_3136.jpg](../../public/photos-ref/IMG_3136.jpg) | not reviewed | not reviewed | IMG_3136 |
+| [IMG_3137.jpg](../../public/photos-ref/IMG_3137.jpg) | not reviewed | not reviewed | IMG_3137 |
+| [IMG_3138.jpg](../../public/photos-ref/IMG_3138.jpg) | not reviewed | not reviewed | IMG_3138 |
+| [IMG_3139.jpg](../../public/photos-ref/IMG_3139.jpg) | not reviewed | not reviewed | IMG_3139 |
+| [IMG_3140.jpg](../../public/photos-ref/IMG_3140.jpg) | not reviewed | not reviewed | IMG_3140 |
+| [IMG_3141.jpg](../../public/photos-ref/IMG_3141.jpg) | not reviewed | not reviewed | IMG_3141 |
+| [IMG_3142.jpg](../../public/photos-ref/IMG_3142.jpg) | not reviewed | not reviewed | IMG_3142 |
+| [IMG_3143.jpg](../../public/photos-ref/IMG_3143.jpg) | not reviewed | not reviewed | IMG_3143 |
+| [IMG_3144.jpg](../../public/photos-ref/IMG_3144.jpg) | not reviewed | not reviewed | IMG_3144 |
+| [IMG_3145.jpg](../../public/photos-ref/IMG_3145.jpg) | not reviewed | not reviewed | IMG_3145 |
+| [IMG_3146.jpg](../../public/photos-ref/IMG_3146.jpg) | not reviewed | not reviewed | IMG_3146 |
+| [IMG_3147.jpg](../../public/photos-ref/IMG_3147.jpg) | not reviewed | not reviewed | IMG_3147 |
+| [IMG_3148.jpg](../../public/photos-ref/IMG_3148.jpg) | not reviewed | not reviewed | IMG_3148 |
+| [IMG_3149.jpg](../../public/photos-ref/IMG_3149.jpg) | not reviewed | not reviewed | IMG_3149 |
+| [IMG_3150.jpg](../../public/photos-ref/IMG_3150.jpg) | not reviewed | not reviewed | IMG_3150 |
+| [IMG_3151.jpg](../../public/photos-ref/IMG_3151.jpg) | not reviewed | not reviewed | IMG_3151 |
+| [IMG_3152.jpg](../../public/photos-ref/IMG_3152.jpg) | not reviewed | not reviewed | IMG_3152 |
+| [IMG_3153.jpg](../../public/photos-ref/IMG_3153.jpg) | not reviewed | not reviewed | IMG_3153 |
+| [IMG_3154.jpg](../../public/photos-ref/IMG_3154.jpg) | not reviewed | not reviewed | IMG_3154 |
+| [IMG_3155.jpg](../../public/photos-ref/IMG_3155.jpg) | not reviewed | not reviewed | IMG_3155 |
+| [IMG_3156.jpg](../../public/photos-ref/IMG_3156.jpg) | not reviewed | not reviewed | IMG_3156 |
+| [IMG_3157.jpg](../../public/photos-ref/IMG_3157.jpg) | not reviewed | not reviewed | IMG_3157 |
+| [IMG_3158.jpg](../../public/photos-ref/IMG_3158.jpg) | not reviewed | not reviewed | IMG_3158 |
+| [IMG_3159.jpg](../../public/photos-ref/IMG_3159.jpg) | not reviewed | not reviewed | IMG_3159 |
+| [IMG_3161.jpg](../../public/photos-ref/IMG_3161.jpg) | not reviewed | not reviewed | IMG_3161 |
+| [IMG_3162.jpg](../../public/photos-ref/IMG_3162.jpg) | not reviewed | not reviewed | IMG_3162 |
+| [IMG_3169.jpg](../../public/photos-ref/IMG_3169.jpg) | not reviewed | not reviewed | IMG_3169 |
+| [IMG_3170.jpg](../../public/photos-ref/IMG_3170.jpg) | not reviewed | not reviewed | IMG_3170 |
+| [IMG_3130.jpg](../../public/photos-ref/IMG_3130.jpg) | not reviewed | not reviewed | IMG_3130 |

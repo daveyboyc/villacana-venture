@@ -7,8 +7,8 @@
   "sourceObservations": 59,
   "sourcePixelTraces": 57,
   "sourcePixelLocators": 32,
-  "sources": 614,
-  "uninspectedSources": 544,
+  "sources": 670,
+  "uninspectedSources": 600,
   "routes": 24,
   "segments": 181,
   "tracedSides": 0,
@@ -41439,6 +41439,398 @@
    "kind": "phone-photo",
    "name": "IMG_3115",
    "path": "public/photos-ref/IMG_3115.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3118.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3118",
+   "path": "public/photos-ref/IMG_3118.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3119.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3119",
+   "path": "public/photos-ref/IMG_3119.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3120.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3120",
+   "path": "public/photos-ref/IMG_3120.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3121.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3121",
+   "path": "public/photos-ref/IMG_3121.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3122.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3122",
+   "path": "public/photos-ref/IMG_3122.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3123.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3123",
+   "path": "public/photos-ref/IMG_3123.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3124.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3124",
+   "path": "public/photos-ref/IMG_3124.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3125.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3125",
+   "path": "public/photos-ref/IMG_3125.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3126.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3126",
+   "path": "public/photos-ref/IMG_3126.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3127.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3127",
+   "path": "public/photos-ref/IMG_3127.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3128.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3128",
+   "path": "public/photos-ref/IMG_3128.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3129.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3129",
+   "path": "public/photos-ref/IMG_3129.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3130.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3130",
+   "path": "public/photos-ref/IMG_3130.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3131.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3131",
+   "path": "public/photos-ref/IMG_3131.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3132.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3132",
+   "path": "public/photos-ref/IMG_3132.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3133.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3133",
+   "path": "public/photos-ref/IMG_3133.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3134.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3134",
+   "path": "public/photos-ref/IMG_3134.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3135.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3135",
+   "path": "public/photos-ref/IMG_3135.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3136.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3136",
+   "path": "public/photos-ref/IMG_3136.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3137.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3137",
+   "path": "public/photos-ref/IMG_3137.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3138.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3138",
+   "path": "public/photos-ref/IMG_3138.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3139.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3139",
+   "path": "public/photos-ref/IMG_3139.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3140.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3140",
+   "path": "public/photos-ref/IMG_3140.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3141.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3141",
+   "path": "public/photos-ref/IMG_3141.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3142.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3142",
+   "path": "public/photos-ref/IMG_3142.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3143.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3143",
+   "path": "public/photos-ref/IMG_3143.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3144.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3144",
+   "path": "public/photos-ref/IMG_3144.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3145.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3145",
+   "path": "public/photos-ref/IMG_3145.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3146.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3146",
+   "path": "public/photos-ref/IMG_3146.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3147.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3147",
+   "path": "public/photos-ref/IMG_3147.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3148.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3148",
+   "path": "public/photos-ref/IMG_3148.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3149.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3149",
+   "path": "public/photos-ref/IMG_3149.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3150.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3150",
+   "path": "public/photos-ref/IMG_3150.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3151.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3151",
+   "path": "public/photos-ref/IMG_3151.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3152.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3152",
+   "path": "public/photos-ref/IMG_3152.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3153.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3153",
+   "path": "public/photos-ref/IMG_3153.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3154.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3154",
+   "path": "public/photos-ref/IMG_3154.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3155.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3155",
+   "path": "public/photos-ref/IMG_3155.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3156.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3156",
+   "path": "public/photos-ref/IMG_3156.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3157.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3157",
+   "path": "public/photos-ref/IMG_3157.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3158.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3158",
+   "path": "public/photos-ref/IMG_3158.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3159.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3159",
+   "path": "public/photos-ref/IMG_3159.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3160.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3160",
+   "path": "public/photos-ref/IMG_3160.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3161.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3161",
+   "path": "public/photos-ref/IMG_3161.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3162.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3162",
+   "path": "public/photos-ref/IMG_3162.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3163.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3163",
+   "path": "public/photos-ref/IMG_3163.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3164.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3164",
+   "path": "public/photos-ref/IMG_3164.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3165.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3165",
+   "path": "public/photos-ref/IMG_3165.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3166.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3166",
+   "path": "public/photos-ref/IMG_3166.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3167.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3167",
+   "path": "public/photos-ref/IMG_3167.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3168.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3168",
+   "path": "public/photos-ref/IMG_3168.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3169.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3169",
+   "path": "public/photos-ref/IMG_3169.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3170.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3170",
+   "path": "public/photos-ref/IMG_3170.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3171.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3171",
+   "path": "public/photos-ref/IMG_3171.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3172.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3172",
+   "path": "public/photos-ref/IMG_3172.jpg",
+   "viewpoint": null
+  },
+  {
+   "id": "ref:IMG_3173.jpg",
+   "kind": "phone-photo",
+   "name": "IMG_3173",
+   "path": "public/photos-ref/IMG_3173.jpg",
    "viewpoint": null
   },
   {
@@ -108402,6 +108794,744 @@
    ]
   },
   {
+   "id": "path-source:IMG_3118.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3118",
+   "sourceId": "IMG_3118.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3119.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3119",
+   "sourceId": "IMG_3119.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3120.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3120",
+   "sourceId": "IMG_3120.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3121.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3121",
+   "sourceId": "IMG_3121.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3122.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3122",
+   "sourceId": "IMG_3122.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3123.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3123",
+   "sourceId": "IMG_3123.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3124.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3124",
+   "sourceId": "IMG_3124.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3125.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3125",
+   "sourceId": "IMG_3125.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3126.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3126",
+   "sourceId": "IMG_3126.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3127.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3127",
+   "sourceId": "IMG_3127.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3128.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3128",
+   "sourceId": "IMG_3128.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3129.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3129",
+   "sourceId": "IMG_3129.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3130.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3130",
+   "sourceId": "IMG_3130.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso",
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3131.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3131",
+   "sourceId": "IMG_3131.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3132.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3132",
+   "sourceId": "IMG_3132.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3133.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3133",
+   "sourceId": "IMG_3133.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3134.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3134",
+   "sourceId": "IMG_3134.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3135.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3135",
+   "sourceId": "IMG_3135.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3136.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3136",
+   "sourceId": "IMG_3136.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3137.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3137",
+   "sourceId": "IMG_3137.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3138.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3138",
+   "sourceId": "IMG_3138.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3139.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3139",
+   "sourceId": "IMG_3139.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3140.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3140",
+   "sourceId": "IMG_3140.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3141.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3141",
+   "sourceId": "IMG_3141.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3142.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3142",
+   "sourceId": "IMG_3142.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3143.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3143",
+   "sourceId": "IMG_3143.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3144.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3144",
+   "sourceId": "IMG_3144.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3145.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3145",
+   "sourceId": "IMG_3145.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3146.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3146",
+   "sourceId": "IMG_3146.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3147.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3147",
+   "sourceId": "IMG_3147.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3148.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3148",
+   "sourceId": "IMG_3148.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3149.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3149",
+   "sourceId": "IMG_3149.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3150.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3150",
+   "sourceId": "IMG_3150.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3151.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3151",
+   "sourceId": "IMG_3151.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3152.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3152",
+   "sourceId": "IMG_3152.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3153.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3153",
+   "sourceId": "IMG_3153.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3154.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3154",
+   "sourceId": "IMG_3154.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3155.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3155",
+   "sourceId": "IMG_3155.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3156.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3156",
+   "sourceId": "IMG_3156.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3157.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3157",
+   "sourceId": "IMG_3157.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3158.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3158",
+   "sourceId": "IMG_3158.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3159.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3159",
+   "sourceId": "IMG_3159.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3160.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3160",
+   "sourceId": "IMG_3160.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3161.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3161",
+   "sourceId": "IMG_3161.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3162.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3162",
+   "sourceId": "IMG_3162.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3163.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3163",
+   "sourceId": "IMG_3163.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3164.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3164",
+   "sourceId": "IMG_3164.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3165.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3165",
+   "sourceId": "IMG_3165.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3166.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3166",
+   "sourceId": "IMG_3166.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3167.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3167",
+   "sourceId": "IMG_3167.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3168.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3168",
+   "sourceId": "IMG_3168.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3169.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3169",
+   "sourceId": "IMG_3169.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3170.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3170",
+   "sourceId": "IMG_3170.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes",
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3171.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3171",
+   "sourceId": "IMG_3171.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3172.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3172",
+   "sourceId": "IMG_3172.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3173.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3173",
+   "sourceId": "IMG_3173.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
    "id": "path-source:ref:apple-maps/01-3d-overview-from-north.png",
    "kind": "path-source-accounting",
    "name": "Apple Maps 3D: the whole block looking south to the sea",
@@ -109472,8 +110602,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 20,
-   "uninspectedSources": 20,
+   "sourceCount": 32,
+   "uninspectedSources": 32,
    "routes": [],
    "tunnels": [],
    "inventoryComplete": false,
@@ -109547,8 +110677,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 42,
-   "uninspectedSources": 42,
+   "sourceCount": 47,
+   "uninspectedSources": 47,
    "routes": [],
    "tunnels": [],
    "inventoryComplete": false,
@@ -109572,8 +110702,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "partial",
-   "sourceCount": 113,
-   "uninspectedSources": 74,
+   "sourceCount": 117,
+   "uninspectedSources": 78,
    "routes": [
     "path-route:elena-north",
     "path-route:elena-south"
@@ -109722,7 +110852,11 @@
      "IMG_2972.jpg",
      "IMG_2973.jpg",
      "IMG_2974.jpg",
-     "IMG_2975.jpg"
+     "IMG_2975.jpg",
+     "IMG_3170.jpg",
+     "IMG_3171.jpg",
+     "IMG_3172.jpg",
+     "IMG_3173.jpg"
     ],
     "observations": [
      "elena:N01",
@@ -110139,8 +111273,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 13,
-   "uninspectedSources": 13,
+   "sourceCount": 25,
+   "uninspectedSources": 25,
    "routes": [
     "path-route:picasso",
     "path-route:picasso-access"
@@ -110167,8 +111301,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 2,
-   "uninspectedSources": 2,
+   "sourceCount": 35,
+   "uninspectedSources": 35,
    "routes": [
     "path-route:loira",
     "path-route:bolivia",
@@ -115857,6 +116991,336 @@
   {
    "from": "ref:IMG_3115.jpg",
    "to": "area:barraka-beach",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3118.jpg",
+   "to": "area:main-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3119.jpg",
+   "to": "area:main-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3120.jpg",
+   "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3120.jpg",
+   "to": "area:main-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3121.jpg",
+   "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3121.jpg",
+   "to": "area:main-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3122.jpg",
+   "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3122.jpg",
+   "to": "area:main-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3123.jpg",
+   "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3124.jpg",
+   "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3125.jpg",
+   "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3126.jpg",
+   "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3127.jpg",
+   "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3128.jpg",
+   "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3129.jpg",
+   "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3130.jpg",
+   "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3130.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3131.jpg",
+   "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3132.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3133.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3134.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3135.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3136.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3137.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3138.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3139.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3140.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3141.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3142.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3143.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3144.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3145.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3146.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3147.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3148.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3149.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3150.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3151.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3152.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3153.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3154.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3155.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3156.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3157.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3158.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3159.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3160.jpg",
+   "to": "area:north-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3161.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3162.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3163.jpg",
+   "to": "area:north-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3164.jpg",
+   "to": "area:north-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3165.jpg",
+   "to": "area:north-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3166.jpg",
+   "to": "area:north-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3167.jpg",
+   "to": "area:north-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3168.jpg",
+   "to": "area:north-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3169.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3169.jpg",
+   "to": "area:north-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3170.jpg",
+   "to": "area:north-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3170.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3170.jpg",
+   "to": "area:north-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3171.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3171.jpg",
+   "to": "area:north-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3172.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3172.jpg",
+   "to": "area:north-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3173.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_3173.jpg",
+   "to": "area:north-pool",
    "relation": "shows"
   },
   {
@@ -140748,6 +142212,666 @@
    "basis": "estimated 6 m along the heading"
   },
   {
+   "from": "ref:IMG_3118.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3120.jpg",
+   "to": "model:picasso_service_road.json:picasso-utility-front",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3120.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3120.jpg",
+   "to": "model:picasso_service_road.json:picasso-boundary-wall",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3121.jpg",
+   "to": "model:street:picasso",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3121.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3122.jpg",
+   "to": "model:street:picasso",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3122.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3123.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3123.jpg",
+   "to": "model:street:picasso",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3124.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3124.jpg",
+   "to": "model:street:picasso",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3125.jpg",
+   "to": "model:street:picasso",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3125.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3125.jpg",
+   "to": "model:parking:Picasso car park",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3126.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3126.jpg",
+   "to": "model:street:picasso",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3127.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3128.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3129.jpg",
+   "to": "model:street:picasso",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3129.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3129.jpg",
+   "to": "model:parking:Picasso car park",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3130.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3130.jpg",
+   "to": "model:street:bolivia",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3130.jpg",
+   "to": "model:street:picasso",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3131.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3132.jpg",
+   "to": "model:street:loira",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3132.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3133.jpg",
+   "to": "model:street:loira",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3133.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3134.jpg",
+   "to": "model:street:loira",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3134.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3135.jpg",
+   "to": "model:street:loira",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3135.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3136.jpg",
+   "to": "model:street:loira",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3136.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3137.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3138.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3139.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3140.jpg",
+   "to": "model:street:loira",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3140.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3141.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3141.jpg",
+   "to": "model:street:loira",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3142.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3142.jpg",
+   "to": "model:street:loira",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3143.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3143.jpg",
+   "to": "model:street:alberto",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3144.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3144.jpg",
+   "to": "model:street:alberto",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3145.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3145.jpg",
+   "to": "model:street:alberto",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3146.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3146.jpg",
+   "to": "model:street:loira",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3147.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3147.jpg",
+   "to": "model:street:loira",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3148.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3148.jpg",
+   "to": "model:street:loira",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3149.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3150.jpg",
+   "to": "model:street:loira",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3150.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3151.jpg",
+   "to": "model:street:loira",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3151.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3152.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3153.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3154.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3155.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3156.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3157.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3158.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3158.jpg",
+   "to": "model:backdrop.json:photo-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3159.jpg",
+   "to": "model:backdrop.json:photo-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3159.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3160.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3160.jpg",
+   "to": "model:backdrop.json:photo-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3161.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3162.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3163.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3164.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3164.jpg",
+   "to": "model:backdrop.json:photo-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3165.jpg",
+   "to": "model:backdrop.json:photo-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3165.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3166.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3167.jpg",
+   "to": "model:plain_fronts.json:north-pool-parasol-house",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3167.jpg",
+   "to": "model:raised_terraces.json:north-pool-north-patios",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3167.jpg",
+   "to": "model:north_pool_frontages.json:np-alley-arch",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3167.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3168.jpg",
+   "to": "model:ground_plan_north_pool.json:north-pool-lawn",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3168.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3168.jpg",
+   "to": "model:ground_plan_north_pool.json:north-pool-lawn-path",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3168.jpg",
+   "to": "model:raised_terraces.json:north-pool-north-patios",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3169.jpg",
+   "to": "model:ground_plan_north_pool.json:calle-isabel-crazy-paving",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3169.jpg",
+   "to": "model:street:isabel",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3169.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3169.jpg",
+   "to": "model:ground_plan_north_pool.json:calle-isabel-east-paving",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3170.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3170.jpg",
+   "to": "model:elena_lane_paving.json:elena-north-three-column",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3170.jpg",
+   "to": "model:street:elena-north",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3170.jpg",
+   "to": "model:ground_plan_north_pool.json:calle-isabel-crazy-paving",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3171.jpg",
+   "to": "model:elena_north.json:elena-north-visible-patio-floor",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3171.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3171.jpg",
+   "to": "model:elena_north.json:elena-north-patio-divider",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3171.jpg",
+   "to": "model:elena_north.json:elena-north-patio-east",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3172.jpg",
+   "to": "model:elena_north.json:elena-north-patio-east",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3172.jpg",
+   "to": "model:elena_lane_paving.json:elena-north-three-column",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3172.jpg",
+   "to": "model:street:elena-north",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3172.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3173.jpg",
+   "to": "model:elena_lane_paving.json:elena-north-three-column",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3173.jpg",
+   "to": "model:street:elena-north",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3173.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_3173.jpg",
+   "to": "model:elena_north.json:elena-north-magnolia-bed",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
    "from": "task:elena-garden-door",
    "to": "area:elena",
    "relation": "in-area"
@@ -163929,6 +166053,616 @@
    "to": "ref:IMG_3115.jpg",
    "relation": "accounts-for",
    "from": "path-source:IMG_3115.jpg"
+  },
+  {
+   "to": "area:main-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3118.jpg"
+  },
+  {
+   "to": "ref:IMG_3118.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3118.jpg"
+  },
+  {
+   "to": "area:main-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3119.jpg"
+  },
+  {
+   "to": "ref:IMG_3119.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3119.jpg"
+  },
+  {
+   "to": "area:picasso",
+   "relation": "in-area",
+   "from": "path-source:IMG_3120.jpg"
+  },
+  {
+   "to": "area:main-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3120.jpg"
+  },
+  {
+   "to": "ref:IMG_3120.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3120.jpg"
+  },
+  {
+   "to": "area:picasso",
+   "relation": "in-area",
+   "from": "path-source:IMG_3121.jpg"
+  },
+  {
+   "to": "area:main-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3121.jpg"
+  },
+  {
+   "to": "ref:IMG_3121.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3121.jpg"
+  },
+  {
+   "to": "area:picasso",
+   "relation": "in-area",
+   "from": "path-source:IMG_3122.jpg"
+  },
+  {
+   "to": "area:main-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3122.jpg"
+  },
+  {
+   "to": "ref:IMG_3122.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3122.jpg"
+  },
+  {
+   "to": "area:picasso",
+   "relation": "in-area",
+   "from": "path-source:IMG_3123.jpg"
+  },
+  {
+   "to": "ref:IMG_3123.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3123.jpg"
+  },
+  {
+   "to": "area:picasso",
+   "relation": "in-area",
+   "from": "path-source:IMG_3124.jpg"
+  },
+  {
+   "to": "ref:IMG_3124.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3124.jpg"
+  },
+  {
+   "to": "area:picasso",
+   "relation": "in-area",
+   "from": "path-source:IMG_3125.jpg"
+  },
+  {
+   "to": "ref:IMG_3125.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3125.jpg"
+  },
+  {
+   "to": "area:picasso",
+   "relation": "in-area",
+   "from": "path-source:IMG_3126.jpg"
+  },
+  {
+   "to": "ref:IMG_3126.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3126.jpg"
+  },
+  {
+   "to": "area:picasso",
+   "relation": "in-area",
+   "from": "path-source:IMG_3127.jpg"
+  },
+  {
+   "to": "ref:IMG_3127.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3127.jpg"
+  },
+  {
+   "to": "area:picasso",
+   "relation": "in-area",
+   "from": "path-source:IMG_3128.jpg"
+  },
+  {
+   "to": "ref:IMG_3128.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3128.jpg"
+  },
+  {
+   "to": "area:picasso",
+   "relation": "in-area",
+   "from": "path-source:IMG_3129.jpg"
+  },
+  {
+   "to": "ref:IMG_3129.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3129.jpg"
+  },
+  {
+   "to": "area:picasso",
+   "relation": "in-area",
+   "from": "path-source:IMG_3130.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3130.jpg"
+  },
+  {
+   "to": "ref:IMG_3130.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3130.jpg"
+  },
+  {
+   "to": "area:picasso",
+   "relation": "in-area",
+   "from": "path-source:IMG_3131.jpg"
+  },
+  {
+   "to": "ref:IMG_3131.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3131.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3132.jpg"
+  },
+  {
+   "to": "ref:IMG_3132.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3132.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3133.jpg"
+  },
+  {
+   "to": "ref:IMG_3133.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3133.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3134.jpg"
+  },
+  {
+   "to": "ref:IMG_3134.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3134.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3135.jpg"
+  },
+  {
+   "to": "ref:IMG_3135.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3135.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3136.jpg"
+  },
+  {
+   "to": "ref:IMG_3136.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3136.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3137.jpg"
+  },
+  {
+   "to": "ref:IMG_3137.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3137.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3138.jpg"
+  },
+  {
+   "to": "ref:IMG_3138.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3138.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3139.jpg"
+  },
+  {
+   "to": "ref:IMG_3139.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3139.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3140.jpg"
+  },
+  {
+   "to": "ref:IMG_3140.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3140.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3141.jpg"
+  },
+  {
+   "to": "ref:IMG_3141.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3141.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3142.jpg"
+  },
+  {
+   "to": "ref:IMG_3142.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3142.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3143.jpg"
+  },
+  {
+   "to": "ref:IMG_3143.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3143.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3144.jpg"
+  },
+  {
+   "to": "ref:IMG_3144.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3144.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3145.jpg"
+  },
+  {
+   "to": "ref:IMG_3145.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3145.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3146.jpg"
+  },
+  {
+   "to": "ref:IMG_3146.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3146.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3147.jpg"
+  },
+  {
+   "to": "ref:IMG_3147.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3147.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3148.jpg"
+  },
+  {
+   "to": "ref:IMG_3148.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3148.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3149.jpg"
+  },
+  {
+   "to": "ref:IMG_3149.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3149.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3150.jpg"
+  },
+  {
+   "to": "ref:IMG_3150.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3150.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3151.jpg"
+  },
+  {
+   "to": "ref:IMG_3151.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3151.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3152.jpg"
+  },
+  {
+   "to": "ref:IMG_3152.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3152.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3153.jpg"
+  },
+  {
+   "to": "ref:IMG_3153.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3153.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3154.jpg"
+  },
+  {
+   "to": "ref:IMG_3154.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3154.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3155.jpg"
+  },
+  {
+   "to": "ref:IMG_3155.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3155.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3156.jpg"
+  },
+  {
+   "to": "ref:IMG_3156.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3156.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3157.jpg"
+  },
+  {
+   "to": "ref:IMG_3157.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3157.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3158.jpg"
+  },
+  {
+   "to": "ref:IMG_3158.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3158.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3159.jpg"
+  },
+  {
+   "to": "ref:IMG_3159.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3159.jpg"
+  },
+  {
+   "to": "area:north-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3160.jpg"
+  },
+  {
+   "to": "ref:IMG_3160.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3160.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3161.jpg"
+  },
+  {
+   "to": "ref:IMG_3161.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3161.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3162.jpg"
+  },
+  {
+   "to": "ref:IMG_3162.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3162.jpg"
+  },
+  {
+   "to": "area:north-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3163.jpg"
+  },
+  {
+   "to": "ref:IMG_3163.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3163.jpg"
+  },
+  {
+   "to": "area:north-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3164.jpg"
+  },
+  {
+   "to": "ref:IMG_3164.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3164.jpg"
+  },
+  {
+   "to": "area:north-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3165.jpg"
+  },
+  {
+   "to": "ref:IMG_3165.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3165.jpg"
+  },
+  {
+   "to": "area:north-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3166.jpg"
+  },
+  {
+   "to": "ref:IMG_3166.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3166.jpg"
+  },
+  {
+   "to": "area:north-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3167.jpg"
+  },
+  {
+   "to": "ref:IMG_3167.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3167.jpg"
+  },
+  {
+   "to": "area:north-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3168.jpg"
+  },
+  {
+   "to": "ref:IMG_3168.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3168.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3169.jpg"
+  },
+  {
+   "to": "area:north-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3169.jpg"
+  },
+  {
+   "to": "ref:IMG_3169.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3169.jpg"
+  },
+  {
+   "to": "area:north-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_3170.jpg"
+  },
+  {
+   "to": "area:elena",
+   "relation": "in-area",
+   "from": "path-source:IMG_3170.jpg"
+  },
+  {
+   "to": "area:north-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3170.jpg"
+  },
+  {
+   "to": "ref:IMG_3170.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3170.jpg"
+  },
+  {
+   "to": "area:elena",
+   "relation": "in-area",
+   "from": "path-source:IMG_3171.jpg"
+  },
+  {
+   "to": "area:north-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3171.jpg"
+  },
+  {
+   "to": "ref:IMG_3171.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3171.jpg"
+  },
+  {
+   "to": "area:elena",
+   "relation": "in-area",
+   "from": "path-source:IMG_3172.jpg"
+  },
+  {
+   "to": "area:north-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3172.jpg"
+  },
+  {
+   "to": "ref:IMG_3172.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3172.jpg"
+  },
+  {
+   "to": "area:elena",
+   "relation": "in-area",
+   "from": "path-source:IMG_3173.jpg"
+  },
+  {
+   "to": "area:north-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_3173.jpg"
+  },
+  {
+   "to": "ref:IMG_3173.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_3173.jpg"
   },
   {
    "to": "area:whole-resort",

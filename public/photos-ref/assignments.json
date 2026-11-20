@@ -1,11 +1,11 @@
 {
  "version": 1,
- "inputDigest": "28a1300edbec3420a8c84238535da7f68ca75e9e828f119be63c5790304db953",
+ "inputDigest": "e1f0950071a08b19328031fb49bae3a1a4098bdc9b71ab77b6aa8069e87727c4",
  "summary": {
   "unplaced": 4,
-  "needs-review": 246,
-  "suggested": 333,
-  "photos": 583,
+  "needs-review": 271,
+  "suggested": 364,
+  "photos": 639,
   "features": 521,
   "photosCitedByModel": 234,
   "modelFeaturesWithPhotoCitations": 265
@@ -23388,6 +23388,1874 @@
     "basis": "phone location",
     "reportedAccuracy": 2.6,
     "heading": 297,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3118.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part1",
+     "distance": 36.5,
+     "angleOffset": 5.2
+    },
+    {
+     "id": "building:6364501UF1366S_part5",
+     "distance": 40.2,
+     "angleOffset": 30.8
+    },
+    {
+     "id": "building:6465301UF1366N_part2",
+     "distance": 40.2,
+     "angleOffset": 13.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": 7.7,
+    "z": 73.9,
+    "basis": "phone location",
+    "reportedAccuracy": 7.5,
+    "heading": 315,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3119.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part1",
+     "distance": 32.9,
+     "angleOffset": 14.6
+    },
+    {
+     "id": "building:6465301UF1366N_part2",
+     "distance": 35.9,
+     "angleOffset": 6.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": 6.5,
+    "z": 69.6,
+    "basis": "phone location",
+    "reportedAccuracy": 4.2,
+    "heading": 320,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3120.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 4.4
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -18.9,
+    "z": 51.0,
+    "basis": "phone location",
+    "reportedAccuracy": 14.0,
+    "heading": 327,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3121.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6465301UF1366N_part2",
+     "distance": 7.7,
+     "angleOffset": 31.4
+    },
+    {
+     "id": "building:6465301UF1366N_part3",
+     "distance": 32.3,
+     "angleOffset": 2.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -16.9,
+    "z": 46.4,
+    "basis": "phone location",
+    "reportedAccuracy": 4.5,
+    "heading": 357,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3122.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6465301UF1366N_part3",
+     "distance": 29.5,
+     "angleOffset": 25.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -18.2,
+    "z": 43.6,
+    "basis": "phone location",
+    "reportedAccuracy": 4.2,
+    "heading": 337,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3123.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -23.1,
+    "z": 33.1,
+    "basis": "phone location",
+    "reportedAccuracy": 4.8,
+    "heading": 293,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3124.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -25.6,
+    "z": 30.6,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 307,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3125.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "parking:Picasso car park",
+     "name": "Picasso car park",
+     "kind": "parking",
+     "gap": 2.3
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -33.6,
+    "z": 17.0,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 321,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3126.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "parking:Picasso car park",
+     "name": "Picasso car park",
+     "kind": "parking",
+     "gap": 2.6
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -35.8,
+    "z": 11.8,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 2,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3127.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "parking:Picasso car park",
+     "name": "Picasso car park",
+     "kind": "parking",
+     "gap": 2.7
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -39.8,
+    "z": 6.5,
+    "basis": "phone location",
+    "reportedAccuracy": 2.1,
+    "heading": 44,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3128.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "parking:Picasso car park",
+     "name": "Picasso car park",
+     "kind": "parking",
+     "gap": 2.8
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -47.5,
+    "z": -9.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.2,
+    "heading": 3,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3129.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "parking:Picasso car park",
+     "name": "Picasso car park",
+     "kind": "parking",
+     "gap": 0.1
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -58.7,
+    "z": -26.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 334,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3130.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "parking:Picasso car park",
+     "name": "Picasso car park",
+     "kind": "parking",
+     "gap": 4.6
+    },
+    {
+     "id": "street:bolivia",
+     "name": "Calle Bolivia",
+     "kind": "street",
+     "gap": 7.6
+    },
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 18.4
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -87.0,
+    "z": -71.7,
+    "basis": "phone location",
+    "reportedAccuracy": 21.1,
+    "heading": 313,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3131.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "parking:Picasso car park",
+     "name": "Picasso car park",
+     "kind": "parking",
+     "gap": 5.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265501UF1366N_part12",
+     "distance": 34.6,
+     "angleOffset": 33.1
+    },
+    {
+     "id": "building:6265501UF1366N_part9",
+     "distance": 43.2,
+     "angleOffset": 30.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -103.0,
+    "z": -64.6,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 258,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3132.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 2.0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -113.4,
+    "z": -64.6,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 277,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3133.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -117.4,
+    "z": -64.6,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 263,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3134.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265501UF1366N_part12",
+     "distance": 26.1,
+     "angleOffset": 34.1
+    },
+    {
+     "id": "building:6265501UF1366N_part9",
+     "distance": 33.3,
+     "angleOffset": 24.6
+    },
+    {
+     "id": "building:6265501UF1366N_part2",
+     "distance": 42.3,
+     "angleOffset": 31.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -118.6,
+    "z": -64.6,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 234,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3135.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -126.3,
+    "z": -59.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 242,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3136.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -127.3,
+    "z": -58.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 240,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3137.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 1.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265501UF1366N_part9",
+     "distance": 18.3,
+     "angleOffset": 12.8
+    },
+    {
+     "id": "building:6265501UF1366N_part2",
+     "distance": 28.2,
+     "angleOffset": 14.2
+    },
+    {
+     "id": "building:6265501UF1366N_part3",
+     "distance": 29.1,
+     "angleOffset": 6.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -133.6,
+    "z": -53.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 197,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3138.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 1.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265501UF1366N_part12",
+     "distance": 15.1,
+     "angleOffset": 14.3
+    },
+    {
+     "id": "building:6265501UF1366N_part9",
+     "distance": 16.4,
+     "angleOffset": 17.5
+    },
+    {
+     "id": "building:6265501UF1366N_part6",
+     "distance": 23.2,
+     "angleOffset": 27.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -136.8,
+    "z": -51.9,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 156,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3139.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 0.8
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265501UF1366N_part12",
+     "distance": 15.2,
+     "angleOffset": 8.4
+    },
+    {
+     "id": "building:6265501UF1366N_part9",
+     "distance": 16.8,
+     "angleOffset": 22.7
+    },
+    {
+     "id": "building:6265501UF1366N_part6",
+     "distance": 23.2,
+     "angleOffset": 22.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -136.5,
+    "z": -52.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 152,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3140.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 1.0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -136.8,
+    "z": -51.9,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 256,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3141.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 1.2
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -138.8,
+    "z": -50.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 243,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3142.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 1.3
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6266601UF1366N_part2",
+     "distance": 41.7,
+     "angleOffset": 14.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -142.8,
+    "z": -47.9,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 240,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3143.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:alberto",
+     "name": "Calle Alberto",
+     "kind": "street",
+     "gap": 0.1
+    },
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 2.4
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6266601UF1366N_part1",
+     "distance": 17.2,
+     "angleOffset": 12.7
+    },
+    {
+     "id": "building:6266601UF1366N_part2",
+     "distance": 26.3,
+     "angleOffset": 34.2
+    },
+    {
+     "id": "building:6266601UF1366N_part4",
+     "distance": 32.7,
+     "angleOffset": 9.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -155.7,
+    "z": -39.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.2,
+    "heading": 186,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3144.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 1.7
+    },
+    {
+     "id": "street:alberto",
+     "name": "Calle Alberto",
+     "kind": "street",
+     "gap": 2.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6266601UF1366N_part1",
+     "distance": 18.8,
+     "angleOffset": 26.1
+    },
+    {
+     "id": "building:6265501UF1366N_part3",
+     "distance": 21.7,
+     "angleOffset": 16.8
+    },
+    {
+     "id": "building:6265501UF1366N_part2",
+     "distance": 24.4,
+     "angleOffset": 24.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -154.0,
+    "z": -40.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.2,
+    "heading": 153,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3145.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:alberto",
+     "name": "Calle Alberto",
+     "kind": "street",
+     "gap": 1.3
+    },
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 2.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265501UF1366N_part3",
+     "distance": 21.7,
+     "angleOffset": 6.2
+    },
+    {
+     "id": "building:6265501UF1366N_part2",
+     "distance": 24.5,
+     "angleOffset": 13.3
+    },
+    {
+     "id": "building:6265501UF1366N_part10",
+     "distance": 31.2,
+     "angleOffset": 18.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -154.9,
+    "z": -39.9,
+    "basis": "phone location",
+    "reportedAccuracy": 2.2,
+    "heading": 139,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3146.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 2.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6266601UF1366N_part3",
+     "distance": 41.2,
+     "angleOffset": 33.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -162.7,
+    "z": -35.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 249,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3147.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 2.2
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -165.9,
+    "z": -33.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 249,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3148.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 2.4
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6165501UF1366N_part6",
+     "distance": 38.7,
+     "angleOffset": 31.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -172.1,
+    "z": -29.7,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 245,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3149.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 4.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6165501UF1366N_part4",
+     "distance": 40.2,
+     "angleOffset": 34.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -179.1,
+    "z": -24.7,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 261,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3150.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 4.2
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -181.1,
+    "z": -23.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 308,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3151.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -180.6,
+    "z": -23.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 308,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3152.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:loira",
+     "name": "Calle Loira",
+     "kind": "street",
+     "gap": 4.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6165501UF1366N_part4",
+     "distance": 37.1,
+     "angleOffset": 20.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -182.3,
+    "z": -23.5,
+    "basis": "phone location",
+    "reportedAccuracy": 2.2,
+    "heading": 245,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3153.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6165501UF1366N_part4",
+     "distance": 23.8,
+     "angleOffset": 21.3
+    },
+    {
+     "id": "building:6165501UF1366N_part3",
+     "distance": 41.2,
+     "angleOffset": 22.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -193.3,
+    "z": -15.5,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 240,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3154.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6165501UF1366N_part4",
+     "distance": 22.8,
+     "angleOffset": 27.6
+    },
+    {
+     "id": "building:6165501UF1366N_part3",
+     "distance": 40.2,
+     "angleOffset": 28.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -194.0,
+    "z": -14.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 246,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3155.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6165501UF1366N_part4",
+     "distance": 23.6,
+     "angleOffset": 29.1
+    },
+    {
+     "id": "building:6165501UF1366N_part3",
+     "distance": 40.9,
+     "angleOffset": 29.9
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -193.7,
+    "z": -15.5,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 247,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3156.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6266601UF1366N_part3",
+     "distance": 15.6,
+     "angleOffset": 1.0
+    },
+    {
+     "id": "building:6165501UF1366N_part6",
+     "distance": 17.9,
+     "angleOffset": 27.8
+    },
+    {
+     "id": "building:6165501UF1366N_part1",
+     "distance": 30.7,
+     "angleOffset": 27.9
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -194.0,
+    "z": -15.5,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 151,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3157.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6266601UF1366N_part3",
+     "distance": 14.8,
+     "angleOffset": 2.3
+    },
+    {
+     "id": "building:6165501UF1366N_part6",
+     "distance": 17.2,
+     "angleOffset": 25.8
+    },
+    {
+     "id": "building:6165501UF1366N_part1",
+     "distance": 30.0,
+     "angleOffset": 25.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -193.7,
+    "z": -14.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 154,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3158.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6266601UF1366N_part3",
+     "distance": 8.6,
+     "angleOffset": 1.6
+    },
+    {
+     "id": "building:6165501UF1366N_part1",
+     "distance": 24.6,
+     "angleOffset": 33.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -190.8,
+    "z": -9.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.9,
+    "heading": 153,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3159.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6266601UF1366N_part3",
+     "distance": 6.2,
+     "angleOffset": 8.2
+    },
+    {
+     "id": "building:6165501UF1366N_part1",
+     "distance": 22.6,
+     "angleOffset": 31.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -189.8,
+    "z": -7.1,
+    "basis": "phone location",
+    "reportedAccuracy": 3.1,
+    "heading": 158,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3160.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6165501UF1366N_part6",
+     "distance": 10.1,
+     "angleOffset": 11.2
+    },
+    {
+     "id": "building:6165501UF1366N_part1",
+     "distance": 22.3,
+     "angleOffset": 2.9
+    },
+    {
+     "id": "building:6165501UF1366N_part5",
+     "distance": 25.3,
+     "angleOffset": 15.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -189.5,
+    "z": -6.8,
+    "basis": "phone location",
+    "reportedAccuracy": 3.1,
+    "heading": 193,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3161.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6165501UF1366N_part6",
+     "distance": 10.7,
+     "angleOffset": 32.2
+    },
+    {
+     "id": "building:6165501UF1366N_part4",
+     "distance": 21.1,
+     "angleOffset": 7.3
+    },
+    {
+     "id": "building:6165501UF1366N_part5",
+     "distance": 25.9,
+     "angleOffset": 25.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -190.0,
+    "z": -7.7,
+    "basis": "phone location",
+    "reportedAccuracy": 3.3,
+    "heading": 232,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3162.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6266601UF1366N_part2",
+     "distance": 22.2,
+     "angleOffset": 6.0
+    },
+    {
+     "id": "building:6266601UF1366N_part4",
+     "distance": 26.9,
+     "angleOffset": 25.5
+    },
+    {
+     "id": "building:6266601UF1366N_part1",
+     "distance": 40.5,
+     "angleOffset": 5.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -191.3,
+    "z": -6.8,
+    "basis": "phone location",
+    "reportedAccuracy": 3.2,
+    "heading": 63,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3163.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6266601UF1366N_part2",
+     "distance": 22.3,
+     "angleOffset": 5.7
+    },
+    {
+     "id": "building:6266601UF1366N_part4",
+     "distance": 26.4,
+     "angleOffset": 26.5
+    },
+    {
+     "id": "building:6266601UF1366N_part1",
+     "distance": 40.4,
+     "angleOffset": 6.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -190.8,
+    "z": -5.9,
+    "basis": "phone location",
+    "reportedAccuracy": 3.2,
+    "heading": 60,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3164.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6266601UF1366N_part3",
+     "distance": 4.8,
+     "angleOffset": 29.2
+    },
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 44.3,
+     "angleOffset": 2.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -190.8,
+    "z": -4.3,
+    "basis": "phone location",
+    "reportedAccuracy": 3.2,
+    "heading": 151,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3165.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6165501UF1366N_part1",
+     "distance": 17.1,
+     "angleOffset": 29.7
+    },
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 43.0,
+     "angleOffset": 4.2
+    },
+    {
+     "id": "building:6265201UF1366N_part6",
+     "distance": 43.7,
+     "angleOffset": 30.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -192.3,
+    "z": -1.9,
+    "basis": "phone location",
+    "reportedAccuracy": 4.0,
+    "heading": 154,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3166.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 38.0,
+     "angleOffset": 1.4
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 43.6,
+     "angleOffset": 16.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -188.3,
+    "z": 1.5,
+    "basis": "phone location",
+    "reportedAccuracy": 4.9,
+    "heading": 151,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3167.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 35.0,
+     "angleOffset": 12.4
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 41.1,
+     "angleOffset": 27.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -185.3,
+    "z": 3.4,
+    "basis": "phone location",
+    "reportedAccuracy": 5.0,
+    "heading": 143,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3168.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part1",
+     "distance": 26.7,
+     "angleOffset": 20.4
+    },
+    {
+     "id": "building:6265401UF1366N_part3",
+     "distance": 34.3,
+     "angleOffset": 15.9
+    },
+    {
+     "id": "building:6265401UF1366N_part4",
+     "distance": 43.9,
+     "angleOffset": 0.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -176.1,
+    "z": 9.9,
+    "basis": "phone location",
+    "reportedAccuracy": 4.5,
+    "heading": 101,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3169.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:isabel",
+     "name": "Calle Isabel de Oyarzábal",
+     "kind": "street",
+     "gap": 1.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part3",
+     "distance": 25.8,
+     "angleOffset": 27.1
+    },
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 30.0,
+     "angleOffset": 11.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -167.4,
+    "z": 11.8,
+    "basis": "phone location",
+    "reportedAccuracy": 4.0,
+    "heading": 149,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3170.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:isabel",
+     "name": "Calle Isabel de Oyarzábal",
+     "kind": "street",
+     "gap": 1.5
+    },
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 2.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 23.7,
+     "angleOffset": 9.7
+    },
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 40.1,
+     "angleOffset": 33.6
+    },
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 40.3,
+     "angleOffset": 34.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -162.9,
+    "z": 17.0,
+    "basis": "phone location",
+    "reportedAccuracy": 3.6,
+    "heading": 157,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3171.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 1.3
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 31.5,
+     "angleOffset": 26.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -158.2,
+    "z": 26.3,
+    "basis": "phone location",
+    "reportedAccuracy": 3.1,
+    "heading": 140,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3172.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 10.7,
+     "angleOffset": 27.2
+    },
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 43.9,
+     "angleOffset": 25.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -157.4,
+    "z": 29.4,
+    "basis": "phone location",
+    "reportedAccuracy": 3.1,
+    "heading": 153,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_3173.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 1.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 40.0,
+     "angleOffset": 15.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "No recorded photo-to-model comparison",
+   "camera": {
+    "x": -154.5,
+    "z": 33.4,
+    "basis": "phone location",
+    "reportedAccuracy": 3.3,
+    "heading": 167,
     "headingBasis": "EXIF true north"
    }
   }

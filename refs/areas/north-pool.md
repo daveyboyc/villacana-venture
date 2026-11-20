@@ -33,7 +33,7 @@ The clover-shaped north pool, its lawn ring, crazy-paving path, curved garden wa
 ## Coverage
 
 Layout: 15, Levels and slopes: 1, Facades and roofs: 13, Materials: 9, Planting: 8, Signs: 1, Views: 5
-20 reviewed, 0 suggested only by camera position.
+20 reviewed, 12 suggested only by camera position.
 
 ## Levels
 
@@ -328,3 +328,22 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2968.jpg](../../public/photos-ref/IMG_2968.jpg) | ground | layout, materials, planting, facades | Calle Elena north: terracotta path between hedged beds toward the north pool gate **Looks at:** Calle Elena north looking north-north-west along the tiled path to the arch at the north pool end. |
 | [IMG_2972.jpg](../../public/photos-ref/IMG_2972.jpg) | ground | layout, materials, planting, facades | Calle Elena north looking north-north-west past spider-plant bed to north pool gate **Looks at:** Calle Elena north looking north-north-west past the spider-plant bed and pollarded tree toward the north pool arched gateway. |
 | [IMG_2974.jpg](../../public/photos-ref/IMG_2974.jpg) | ground | layout, facades, materials | Calle Elena north from walkway mouth looking north-north-west to north pool gate **Looks at:** Calle Elena north from the covered walkway mouth looking north-north-west toward the north pool arched gateway. |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_3160.jpg](../../public/photos-ref/IMG_3160.jpg) | not reviewed | not reviewed | IMG_3160 |
+| [IMG_3163.jpg](../../public/photos-ref/IMG_3163.jpg) | not reviewed | not reviewed | IMG_3163 |
+| [IMG_3164.jpg](../../public/photos-ref/IMG_3164.jpg) | not reviewed | not reviewed | IMG_3164 |
+| [IMG_3165.jpg](../../public/photos-ref/IMG_3165.jpg) | not reviewed | not reviewed | IMG_3165 |
+| [IMG_3166.jpg](../../public/photos-ref/IMG_3166.jpg) | not reviewed | not reviewed | IMG_3166 |
+| [IMG_3167.jpg](../../public/photos-ref/IMG_3167.jpg) | not reviewed | not reviewed | IMG_3167 |
+| [IMG_3168.jpg](../../public/photos-ref/IMG_3168.jpg) | not reviewed | not reviewed | IMG_3168 |
+| [IMG_3169.jpg](../../public/photos-ref/IMG_3169.jpg) | not reviewed | not reviewed | IMG_3169 |
+| [IMG_3170.jpg](../../public/photos-ref/IMG_3170.jpg) | not reviewed | not reviewed | IMG_3170 |
+| [IMG_3171.jpg](../../public/photos-ref/IMG_3171.jpg) | not reviewed | not reviewed | IMG_3171 |
+| [IMG_3172.jpg](../../public/photos-ref/IMG_3172.jpg) | not reviewed | not reviewed | IMG_3172 |
+| [IMG_3173.jpg](../../public/photos-ref/IMG_3173.jpg) | not reviewed | not reviewed | IMG_3173 |

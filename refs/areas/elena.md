@@ -41,7 +41,7 @@ Calle Elena, north and south sections, from the north pool to the middle pool, i
 ## Coverage
 
 Layout: 90, Levels and slopes: 28, Facades and roofs: 60, Materials: 67, Planting: 61, Signs: 24, Views: 5
-113 reviewed, 0 suggested only by camera position.
+113 reviewed, 4 suggested only by camera position.
 
 ## Levels
 
@@ -527,3 +527,14 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2215.jpg](../../public/photos-ref/IMG_2215.jpg) | roof | facades, view | Roof terrace looking north-east: roofs, a tall tower block beyond |
 | [IMG_2252.jpg](../../public/photos-ref/IMG_2252.jpg) | ground | levels, layout | Cervantes near Elena: tiled lane with a central sloping strip **Note:** Shows a ramp strip in the lane. |
 | [IMG_2462.jpg](../../public/photos-ref/IMG_2462.jpg) | ground | planting | Bougainvillea over a white wall above a plumbago and clipped hedge, Elena junction **Note:** Close planting shot at the junction; heading 289 points at the white garden wall near the brown door (IMG_2196), but the location within the junction is not established. |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_3171.jpg](../../public/photos-ref/IMG_3171.jpg) | not reviewed | not reviewed | IMG_3171 |
+| [IMG_3172.jpg](../../public/photos-ref/IMG_3172.jpg) | not reviewed | not reviewed | IMG_3172 |
+| [IMG_3173.jpg](../../public/photos-ref/IMG_3173.jpg) | not reviewed | not reviewed | IMG_3173 |
+| [IMG_3170.jpg](../../public/photos-ref/IMG_3170.jpg) | not reviewed | not reviewed | IMG_3170 |

@@ -160,9 +160,9 @@
     }
    },
    "photos": {
-    "count": 16,
+    "count": 28,
     "tagged": 16,
-    "placed": 10,
+    "placed": 22,
     "checks": {
      "matches": 4,
      "differs": 9,
@@ -244,7 +244,7 @@
    "status": [
     "Ground: 87% of open ground within 0.25 m of the laser survey.",
     "Footprints: 92% stand on surveyed roof; best fit moves them 1.8 m.",
-    "Photos: 16, 10 placed; 3 cameras solved, 1 station holding.",
+    "Photos: 28, 22 placed; 3 cameras solved, 1 station holding.",
     "Facades: 26 of 108 kit parts traced from photos.",
     "How sure: 24 photographed, 21 estimated, 1 inferred, 5 known gaps.",
     "Placement: 0 of 46 features verified, 9 open discrepancies.",
@@ -680,9 +680,9 @@
     }
    },
    "photos": {
-    "count": 37,
+    "count": 42,
     "tagged": 37,
-    "placed": 37,
+    "placed": 42,
     "checks": {
      "matches": 14,
      "differs": 17,
@@ -791,7 +791,7 @@
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey.",
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
-    "Photos: 37, 37 placed; no camera solved.",
+    "Photos: 42, 42 placed; no camera solved.",
     "Facades: 0 of 32 kit parts traced from photos.",
     "How sure: 2 photographed, 19 estimated, 1 inferred, 2 known gaps.",
     "Placement: 0 of 22 features verified, 17 open discrepancies.",
@@ -1103,9 +1103,9 @@
     }
    },
    "photos": {
-    "count": 113,
+    "count": 117,
     "tagged": 113,
-    "placed": 113,
+    "placed": 117,
     "checks": {
      "matches": 4,
      "differs": 6,
@@ -1172,7 +1172,7 @@
    "status": [
     "Ground: 97% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 97% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 113, 113 placed; 4 cameras solved, 2 stations holding.",
+    "Photos: 117, 117 placed; 4 cameras solved, 2 stations holding.",
     "Facades: 0 of 71 kit parts traced from photos.",
     "How sure: 24 photographed, 25 estimated, 3 inferred, 5 known gaps.",
     "Placement: 0 of 53 features verified, 4 open discrepancies.",
@@ -1815,9 +1815,9 @@
     }
    },
    "photos": {
-    "count": 11,
+    "count": 23,
     "tagged": 2,
-    "placed": 11,
+    "placed": 23,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1856,7 +1856,7 @@
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey; streets within 0.23 m.",
     "Footprints: 46% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
-    "Photos: 11, 11 placed; no camera solved.",
+    "Photos: 23, 23 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
     "How sure: 0 photographed, 3 estimated, 0 inferred.",
     "Placement: 0 of 3 features verified.",
@@ -1943,9 +1943,9 @@
     }
    },
    "photos": {
-    "count": 2,
+    "count": 35,
     "tagged": 2,
-    "placed": 2,
+    "placed": 35,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1984,7 +1984,7 @@
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey; streets within 0.46 m.",
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.8 m.",
-    "Photos: 2, 2 placed; no camera solved.",
+    "Photos: 35, 35 placed; no camera solved.",
     "Facades: 4 of 253 kit parts traced from photos.",
     "How sure: 0 photographed, 0 estimated, 0 inferred, 2 known gaps.",
     "Placement: no model features registered here yet.",
@@ -3104,9 +3104,9 @@
     }
    },
    "photos": {
-    "count": 599,
+    "count": 655,
     "tagged": 581,
-    "placed": 579,
+    "placed": 635,
     "checks": {
      "matches": 55,
      "differs": 46,
@@ -3373,7 +3373,7 @@
    "status": [
     "Ground: 95% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 599, 579 placed; 8 cameras solved, 3 stations holding.",
+    "Photos: 655, 635 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
     "How sure: 95 photographed, 176 estimated, 18 inferred, 40 known gaps.",
     "Placement: 0 of 521 features verified, 53 open discrepancies.",

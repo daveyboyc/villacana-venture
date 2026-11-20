@@ -65287,6 +65287,3900 @@
    "checks": []
   },
   {
+   "id": "IMG_3118.jpg",
+   "label": "IMG_3118",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3118.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3118.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3118.jpg",
+   "areas": [
+    "main-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": 7.7,
+    "z": 73.9,
+    "heading": 315,
+    "accuracy": 7.5,
+    "altitude": 5.4,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    3.5,
+    69.7
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3118.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6364501UF1366S_part1",
+      "distance": 36.5,
+      "angleOffset": 5.2
+     },
+     {
+      "id": "building:6364501UF1366S_part5",
+      "distance": 40.2,
+      "angleOffset": 30.8
+     },
+     {
+      "id": "building:6465301UF1366N_part2",
+      "distance": 40.2,
+      "angleOffset": 13.6
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": 7.7,
+     "z": 73.9,
+     "basis": "phone location",
+     "reportedAccuracy": 7.5,
+     "heading": 315,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1yxxG7qTlVYHvRapPx27mMFmSTHmb6Oso/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3118.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3119.jpg",
+   "label": "IMG_3119",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3119.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3119.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3119.jpg",
+   "areas": [
+    "main-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": 6.5,
+    "z": 69.6,
+    "heading": 320,
+    "accuracy": 4.2,
+    "altitude": 4.8,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    2.6,
+    65.0
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3119.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6364501UF1366S_part1",
+      "distance": 32.9,
+      "angleOffset": 14.6
+     },
+     {
+      "id": "building:6465301UF1366N_part2",
+      "distance": 35.9,
+      "angleOffset": 6.6
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": 6.5,
+     "z": 69.6,
+     "basis": "phone location",
+     "reportedAccuracy": 4.2,
+     "heading": 320,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/16aylIAQykewhcW1YU-5XRz0Ribi3IQ8f/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3119.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3120.jpg",
+   "label": "IMG_3120",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3120.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3120.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3120.jpg",
+   "areas": [
+    "picasso",
+    "main-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -18.9,
+    "z": 51.0,
+    "heading": 327,
+    "accuracy": 14.0,
+    "altitude": 6.8,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -22.2,
+    46.0
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3120.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "GPS uncertainty exceeds 8 m",
+     "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    ],
+    "nearby": [
+     {
+      "id": "street:picasso",
+      "name": "Calle Pintor Picasso",
+      "kind": "street",
+      "gap": 4.4
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -18.9,
+     "z": 51.0,
+     "basis": "phone location",
+     "reportedAccuracy": 14.0,
+     "heading": 327,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1mmp2OvSbwsQIAB3CCmaWbzUTDZb-ROUV/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3120.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3121.jpg",
+   "label": "IMG_3121",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3121.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3121.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3121.jpg",
+   "areas": [
+    "picasso",
+    "main-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -16.9,
+    "z": 46.4,
+    "heading": 357,
+    "accuracy": 4.5,
+    "altitude": 5.8,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -17.2,
+    40.4
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3121.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:picasso",
+      "name": "Calle Pintor Picasso",
+      "kind": "street",
+      "gap": 0.0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6465301UF1366N_part2",
+      "distance": 7.7,
+      "angleOffset": 31.4
+     },
+     {
+      "id": "building:6465301UF1366N_part3",
+      "distance": 32.3,
+      "angleOffset": 2.6
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -16.9,
+     "z": 46.4,
+     "basis": "phone location",
+     "reportedAccuracy": 4.5,
+     "heading": 357,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/14639hXH1JrUv02ZeaLXaAD8hnFNufNu8/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3121.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3122.jpg",
+   "label": "IMG_3122",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3122.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3122.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3122.jpg",
+   "areas": [
+    "picasso",
+    "main-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -18.2,
+    "z": 43.6,
+    "heading": 337,
+    "accuracy": 4.2,
+    "altitude": 5.6,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -20.5,
+    38.1
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3122.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:picasso",
+      "name": "Calle Pintor Picasso",
+      "kind": "street",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6465301UF1366N_part3",
+      "distance": 29.5,
+      "angleOffset": 25.1
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -18.2,
+     "z": 43.6,
+     "basis": "phone location",
+     "reportedAccuracy": 4.2,
+     "heading": 337,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/14tYwGwMaLVkfw_sbTM1BhK7eABSx1kZ4/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3122.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3123.jpg",
+   "label": "IMG_3123",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3123.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3123.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3123.jpg",
+   "areas": [
+    "picasso"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -23.1,
+    "z": 33.1,
+    "heading": 293,
+    "accuracy": 4.8,
+    "altitude": 6.0,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -28.6,
+    30.8
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3123.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:picasso",
+      "name": "Calle Pintor Picasso",
+      "kind": "street",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -23.1,
+     "z": 33.1,
+     "basis": "phone location",
+     "reportedAccuracy": 4.8,
+     "heading": 293,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/11SGX_2ulcA-k402xBgI3LSBxOW6LPsNh/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3123.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3124.jpg",
+   "label": "IMG_3124",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3124.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3124.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3124.jpg",
+   "areas": [
+    "picasso"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -25.6,
+    "z": 30.6,
+    "heading": 307,
+    "accuracy": 4.7,
+    "altitude": 6.3,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -30.4,
+    27.0
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3124.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:picasso",
+      "name": "Calle Pintor Picasso",
+      "kind": "street",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -25.6,
+     "z": 30.6,
+     "basis": "phone location",
+     "reportedAccuracy": 4.7,
+     "heading": 307,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1M5Rgin3tZzElRAmVWTLP4maQ-PuYASPV/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3124.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3125.jpg",
+   "label": "IMG_3125",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3125.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3125.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3125.jpg",
+   "areas": [
+    "picasso"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -33.6,
+    "z": 17.0,
+    "heading": 321,
+    "accuracy": 4.7,
+    "altitude": 6.9,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -37.4,
+    12.3
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3125.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:picasso",
+      "name": "Calle Pintor Picasso",
+      "kind": "street",
+      "gap": 0
+     },
+     {
+      "id": "parking:Picasso car park",
+      "name": "Picasso car park",
+      "kind": "parking",
+      "gap": 2.3
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -33.6,
+     "z": 17.0,
+     "basis": "phone location",
+     "reportedAccuracy": 4.7,
+     "heading": 321,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1M9e6iUjt10TBNwk3tySFbXH9A86-v2Hz/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3125.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3126.jpg",
+   "label": "IMG_3126",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3126.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3126.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3126.jpg",
+   "areas": [
+    "picasso"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -35.8,
+    "z": 11.8,
+    "heading": 2,
+    "accuracy": 4.7,
+    "altitude": 6.9,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -35.6,
+    5.8
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3126.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:picasso",
+      "name": "Calle Pintor Picasso",
+      "kind": "street",
+      "gap": 0
+     },
+     {
+      "id": "parking:Picasso car park",
+      "name": "Picasso car park",
+      "kind": "parking",
+      "gap": 2.6
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -35.8,
+     "z": 11.8,
+     "basis": "phone location",
+     "reportedAccuracy": 4.7,
+     "heading": 2,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1v7pCK_rg0y6ZZS_GxS3DEF2u9HJB1yPD/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3126.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3127.jpg",
+   "label": "IMG_3127",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3127.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3127.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3127.jpg",
+   "areas": [
+    "picasso"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -39.8,
+    "z": 6.5,
+    "heading": 44,
+    "accuracy": 2.1,
+    "altitude": 6.8,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -35.6,
+    2.2
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3127.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:picasso",
+      "name": "Calle Pintor Picasso",
+      "kind": "street",
+      "gap": 0
+     },
+     {
+      "id": "parking:Picasso car park",
+      "name": "Picasso car park",
+      "kind": "parking",
+      "gap": 2.7
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -39.8,
+     "z": 6.5,
+     "basis": "phone location",
+     "reportedAccuracy": 2.1,
+     "heading": 44,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/17FYaKQlSCZdknhkKyqkjFD8ySk9riZgd/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3127.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3128.jpg",
+   "label": "IMG_3128",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3128.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3128.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3128.jpg",
+   "areas": [
+    "picasso"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -47.5,
+    "z": -9.0,
+    "heading": 3,
+    "accuracy": 2.2,
+    "altitude": 5.7,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -47.2,
+    -15.0
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3128.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:picasso",
+      "name": "Calle Pintor Picasso",
+      "kind": "street",
+      "gap": 0
+     },
+     {
+      "id": "parking:Picasso car park",
+      "name": "Picasso car park",
+      "kind": "parking",
+      "gap": 2.8
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -47.5,
+     "z": -9.0,
+     "basis": "phone location",
+     "reportedAccuracy": 2.2,
+     "heading": 3,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1XTV_BAJx7ij6m6-nHS-fhnUjhegBpYs4/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3128.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3129.jpg",
+   "label": "IMG_3129",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3129.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3129.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3129.jpg",
+   "areas": [
+    "picasso"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -58.7,
+    "z": -26.0,
+    "heading": 334,
+    "accuracy": 2.3,
+    "altitude": 6.4,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -61.3,
+    -31.4
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3129.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:picasso",
+      "name": "Calle Pintor Picasso",
+      "kind": "street",
+      "gap": 0
+     },
+     {
+      "id": "parking:Picasso car park",
+      "name": "Picasso car park",
+      "kind": "parking",
+      "gap": 0.1
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -58.7,
+     "z": -26.0,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 334,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1-0bKfaqB7vfHlmhWQ0CpQvay4nwnZupr/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3129.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3130.jpg",
+   "label": "IMG_3130",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3130.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3130.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3130.jpg",
+   "areas": [
+    "picasso",
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -87.0,
+    "z": -71.7,
+    "heading": 313,
+    "accuracy": 21.1,
+    "altitude": 7.5,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -91.4,
+    -75.8
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3130.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "GPS uncertainty exceeds 8 m",
+     "Uncertainty reaches more than one named street"
+    ],
+    "nearby": [
+     {
+      "id": "street:picasso",
+      "name": "Calle Pintor Picasso",
+      "kind": "street",
+      "gap": 0
+     },
+     {
+      "id": "parking:Picasso car park",
+      "name": "Picasso car park",
+      "kind": "parking",
+      "gap": 4.6
+     },
+     {
+      "id": "street:bolivia",
+      "name": "Calle Bolivia",
+      "kind": "street",
+      "gap": 7.6
+     },
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 18.4
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -87.0,
+     "z": -71.7,
+     "basis": "phone location",
+     "reportedAccuracy": 21.1,
+     "heading": 313,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1fg9hvm_5LANFmUV3XK-pHaaLhZsGngxd/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3130.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3131.jpg",
+   "label": "IMG_3131",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3131.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3131.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3131.jpg",
+   "areas": [
+    "picasso"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -103.0,
+    "z": -64.6,
+    "heading": 258,
+    "accuracy": 4.7,
+    "altitude": 5.8,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -108.9,
+    -63.4
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3131.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "parking:Picasso car park",
+      "name": "Picasso car park",
+      "kind": "parking",
+      "gap": 5.2
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265501UF1366N_part12",
+      "distance": 34.6,
+      "angleOffset": 33.1
+     },
+     {
+      "id": "building:6265501UF1366N_part9",
+      "distance": 43.2,
+      "angleOffset": 30.3
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -103.0,
+     "z": -64.6,
+     "basis": "phone location",
+     "reportedAccuracy": 4.7,
+     "heading": 258,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1wBbT9JzfXNGK0FBs4Ty9p228bea7CXkH/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3131.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3132.jpg",
+   "label": "IMG_3132",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3132.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3132.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3132.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -113.4,
+    "z": -64.6,
+    "heading": 277,
+    "accuracy": 2.7,
+    "altitude": 4.9,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -119.4,
+    -65.3
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3132.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 2.0
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -113.4,
+     "z": -64.6,
+     "basis": "phone location",
+     "reportedAccuracy": 2.7,
+     "heading": 277,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1nEjOgo2qoMlgUMYHja-ptCbhGTzLF4QP/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3132.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3133.jpg",
+   "label": "IMG_3133",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3133.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3133.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3133.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -117.4,
+    "z": -64.6,
+    "heading": 263,
+    "accuracy": 2.6,
+    "altitude": 4.9,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -123.4,
+    -63.9
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3133.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -117.4,
+     "z": -64.6,
+     "basis": "phone location",
+     "reportedAccuracy": 2.6,
+     "heading": 263,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1YQGNVbHFvoqU6qkSOeYNjz9aarcub91s/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3133.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3134.jpg",
+   "label": "IMG_3134",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3134.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3134.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3134.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -118.6,
+    "z": -64.6,
+    "heading": 234,
+    "accuracy": 2.5,
+    "altitude": 5.1,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -123.5,
+    -61.1
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3134.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265501UF1366N_part12",
+      "distance": 26.1,
+      "angleOffset": 34.1
+     },
+     {
+      "id": "building:6265501UF1366N_part9",
+      "distance": 33.3,
+      "angleOffset": 24.6
+     },
+     {
+      "id": "building:6265501UF1366N_part2",
+      "distance": 42.3,
+      "angleOffset": 31.2
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -118.6,
+     "z": -64.6,
+     "basis": "phone location",
+     "reportedAccuracy": 2.5,
+     "heading": 234,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1RRP-DFMQBP-IWJpUw6v5hEP1zkfip6nB/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3134.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3135.jpg",
+   "label": "IMG_3135",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3135.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3135.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3135.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -126.3,
+    "z": -59.4,
+    "heading": 242,
+    "accuracy": 2.4,
+    "altitude": 5.3,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -131.6,
+    -56.6
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3135.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -126.3,
+     "z": -59.4,
+     "basis": "phone location",
+     "reportedAccuracy": 2.4,
+     "heading": 242,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1R2-XnQc0RzGzim-wOHa-D7ykwiZLjC1T/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3135.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3136.jpg",
+   "label": "IMG_3136",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3136.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3136.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3136.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -127.3,
+    "z": -58.8,
+    "heading": 240,
+    "accuracy": 2.4,
+    "altitude": 5.7,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -132.5,
+    -55.8
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3136.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -127.3,
+     "z": -58.8,
+     "basis": "phone location",
+     "reportedAccuracy": 2.4,
+     "heading": 240,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1U_d0BoxnvoZJMEtpsT1vU8BdOsEdV0Rg/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3136.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3137.jpg",
+   "label": "IMG_3137",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3137.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3137.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3137.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -133.6,
+    "z": -53.8,
+    "heading": 197,
+    "accuracy": 2.3,
+    "altitude": 5.7,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -135.4,
+    -48.1
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3137.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 1.0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265501UF1366N_part9",
+      "distance": 18.3,
+      "angleOffset": 12.8
+     },
+     {
+      "id": "building:6265501UF1366N_part2",
+      "distance": 28.2,
+      "angleOffset": 14.2
+     },
+     {
+      "id": "building:6265501UF1366N_part3",
+      "distance": 29.1,
+      "angleOffset": 6.4
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -133.6,
+     "z": -53.8,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 197,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1CXhYcSZEacl-w-1YLmCQnKATPxZgZD4X/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3137.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3138.jpg",
+   "label": "IMG_3138",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3138.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3138.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3138.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -136.8,
+    "z": -51.9,
+    "heading": 156,
+    "accuracy": 2.3,
+    "altitude": 6.6,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -134.4,
+    -46.4
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3138.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 1.0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265501UF1366N_part12",
+      "distance": 15.1,
+      "angleOffset": 14.3
+     },
+     {
+      "id": "building:6265501UF1366N_part9",
+      "distance": 16.4,
+      "angleOffset": 17.5
+     },
+     {
+      "id": "building:6265501UF1366N_part6",
+      "distance": 23.2,
+      "angleOffset": 27.3
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -136.8,
+     "z": -51.9,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 156,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/122PcnT6nAc5tjGVoucCSCuYj2NvIdLpH/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3138.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3139.jpg",
+   "label": "IMG_3139",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3139.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3139.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3139.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -136.5,
+    "z": -52.3,
+    "heading": 152,
+    "accuracy": 2.3,
+    "altitude": 6.7,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -133.7,
+    -47.0
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3139.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 0.8
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265501UF1366N_part12",
+      "distance": 15.2,
+      "angleOffset": 8.4
+     },
+     {
+      "id": "building:6265501UF1366N_part9",
+      "distance": 16.8,
+      "angleOffset": 22.7
+     },
+     {
+      "id": "building:6265501UF1366N_part6",
+      "distance": 23.2,
+      "angleOffset": 22.1
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -136.5,
+     "z": -52.3,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 152,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1d4ipQPz_NLsILSV91MB7uRFPGsu6YBrU/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3139.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3140.jpg",
+   "label": "IMG_3140",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3140.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3140.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3140.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -136.8,
+    "z": -51.9,
+    "heading": 256,
+    "accuracy": 2.3,
+    "altitude": 6.6,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -142.6,
+    -50.4
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3140.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 1.0
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -136.8,
+     "z": -51.9,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 256,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/10rRvSn7jDI3nyx2RsPqLBpcEy7B9OZyt/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3140.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3141.jpg",
+   "label": "IMG_3141",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3141.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3141.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3141.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -138.8,
+    "z": -50.4,
+    "heading": 243,
+    "accuracy": 2.3,
+    "altitude": 7.1,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -144.1,
+    -47.7
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3141.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 1.2
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -138.8,
+     "z": -50.4,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 243,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/19ed08YkPS8VhmYbRx521tOZuUmScScpq/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3141.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3142.jpg",
+   "label": "IMG_3142",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3142.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3142.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3142.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -142.8,
+    "z": -47.9,
+    "heading": 240,
+    "accuracy": 2.3,
+    "altitude": 6.5,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -148.0,
+    -44.9
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3142.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 1.3
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6266601UF1366N_part2",
+      "distance": 41.7,
+      "angleOffset": 14.1
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -142.8,
+     "z": -47.9,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 240,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1keUToPCUExoXmaYpQx7X_blHPtFWWxq_/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3142.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3143.jpg",
+   "label": "IMG_3143",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3143.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3143.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3143.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -155.7,
+    "z": -39.0,
+    "heading": 186,
+    "accuracy": 2.2,
+    "altitude": 5.8,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -156.3,
+    -33.0
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3143.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "Uncertainty reaches more than one named street"
+    ],
+    "nearby": [
+     {
+      "id": "street:alberto",
+      "name": "Calle Alberto",
+      "kind": "street",
+      "gap": 0.1
+     },
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 2.4
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6266601UF1366N_part1",
+      "distance": 17.2,
+      "angleOffset": 12.7
+     },
+     {
+      "id": "building:6266601UF1366N_part2",
+      "distance": 26.3,
+      "angleOffset": 34.2
+     },
+     {
+      "id": "building:6266601UF1366N_part4",
+      "distance": 32.7,
+      "angleOffset": 9.5
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -155.7,
+     "z": -39.0,
+     "basis": "phone location",
+     "reportedAccuracy": 2.2,
+     "heading": 186,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1BKq9tNeN-JoBgH9HQRoOccY52uhybrqg/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3143.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3144.jpg",
+   "label": "IMG_3144",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3144.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3144.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3144.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -154.0,
+    "z": -40.8,
+    "heading": 153,
+    "accuracy": 2.2,
+    "altitude": 5.9,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -151.3,
+    -35.5
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3144.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "Uncertainty reaches more than one named street"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 1.7
+     },
+     {
+      "id": "street:alberto",
+      "name": "Calle Alberto",
+      "kind": "street",
+      "gap": 2.5
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6266601UF1366N_part1",
+      "distance": 18.8,
+      "angleOffset": 26.1
+     },
+     {
+      "id": "building:6265501UF1366N_part3",
+      "distance": 21.7,
+      "angleOffset": 16.8
+     },
+     {
+      "id": "building:6265501UF1366N_part2",
+      "distance": 24.4,
+      "angleOffset": 24.4
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -154.0,
+     "z": -40.8,
+     "basis": "phone location",
+     "reportedAccuracy": 2.2,
+     "heading": 153,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/10YaXOc_lH2UuRGjcdr4vcirm-GolmdzW/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3144.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3145.jpg",
+   "label": "IMG_3145",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3145.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3145.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3145.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -154.9,
+    "z": -39.9,
+    "heading": 139,
+    "accuracy": 2.2,
+    "altitude": 5.0,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -151.0,
+    -35.4
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3145.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "Uncertainty reaches more than one named street"
+    ],
+    "nearby": [
+     {
+      "id": "street:alberto",
+      "name": "Calle Alberto",
+      "kind": "street",
+      "gap": 1.3
+     },
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 2.0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265501UF1366N_part3",
+      "distance": 21.7,
+      "angleOffset": 6.2
+     },
+     {
+      "id": "building:6265501UF1366N_part2",
+      "distance": 24.5,
+      "angleOffset": 13.3
+     },
+     {
+      "id": "building:6265501UF1366N_part10",
+      "distance": 31.2,
+      "angleOffset": 18.3
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -154.9,
+     "z": -39.9,
+     "basis": "phone location",
+     "reportedAccuracy": 2.2,
+     "heading": 139,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1H_cA-eu2ap1UN0RXUl4XvpjMiiBq1GPR/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3145.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3146.jpg",
+   "label": "IMG_3146",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3146.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3146.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3146.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -162.7,
+    "z": -35.3,
+    "heading": 249,
+    "accuracy": 2.3,
+    "altitude": 6.7,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -168.3,
+    -33.1
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3146.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 2.0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6266601UF1366N_part3",
+      "distance": 41.2,
+      "angleOffset": 33.4
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -162.7,
+     "z": -35.3,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 249,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1GeNrYFjDJCOZAoEhPE90RSyULUDH7DkZ/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3146.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3147.jpg",
+   "label": "IMG_3147",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3147.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3147.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3147.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -165.9,
+    "z": -33.1,
+    "heading": 249,
+    "accuracy": 2.3,
+    "altitude": 7.1,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -171.5,
+    -30.9
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3147.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 2.2
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -165.9,
+     "z": -33.1,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 249,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1Qr8nFBWYrUgqHO_nSJElrEehkcsvFGhN/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3147.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3148.jpg",
+   "label": "IMG_3148",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3148.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3148.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3148.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -172.1,
+    "z": -29.7,
+    "heading": 245,
+    "accuracy": 2.3,
+    "altitude": 6.4,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -177.5,
+    -27.2
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3148.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 2.4
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6165501UF1366N_part6",
+      "distance": 38.7,
+      "angleOffset": 31.1
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -172.1,
+     "z": -29.7,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 245,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1Lf6TzbXJmvkPsATkaA34nVEZZV82lWc8/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3148.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3149.jpg",
+   "label": "IMG_3149",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3149.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3149.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3149.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -179.1,
+    "z": -24.7,
+    "heading": 261,
+    "accuracy": 2.3,
+    "altitude": 6.2,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -185.0,
+    -23.8
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3149.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 4.2
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6165501UF1366N_part4",
+      "distance": 40.2,
+      "angleOffset": 34.7
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -179.1,
+     "z": -24.7,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 261,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1LZE4vd-gcaK59vlHet2gYlb5aW901VFq/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3149.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3150.jpg",
+   "label": "IMG_3150",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3150.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3150.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3150.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -181.1,
+    "z": -23.8,
+    "heading": 308,
+    "accuracy": 2.3,
+    "altitude": 6.4,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -185.8,
+    -27.5
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3150.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 4.2
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -181.1,
+     "z": -23.8,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 308,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1HGbPW_-ZsckJXi_aAYhfibB1ocmyWCcU/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3150.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3151.jpg",
+   "label": "IMG_3151",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3151.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3151.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3151.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -180.6,
+    "z": -23.8,
+    "heading": 308,
+    "accuracy": 2.3,
+    "altitude": 6.5,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -185.3,
+    -27.5
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3151.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range"
+    ],
+    "nearby": [],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -180.6,
+     "z": -23.8,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 308,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1-57qATCux0PNLApO6yvXEwDCHWIVKCjd/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3151.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3152.jpg",
+   "label": "IMG_3152",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3152.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3152.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3152.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -182.3,
+    "z": -23.5,
+    "heading": 245,
+    "accuracy": 2.2,
+    "altitude": 6.4,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -187.7,
+    -21.0
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3152.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 4.0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6165501UF1366N_part4",
+      "distance": 37.1,
+      "angleOffset": 20.8
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -182.3,
+     "z": -23.5,
+     "basis": "phone location",
+     "reportedAccuracy": 2.2,
+     "heading": 245,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1IPYvtg4cinzNNS8ORBf6Ona-f_nblaKP/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3152.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3153.jpg",
+   "label": "IMG_3153",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3153.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3153.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3153.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -193.3,
+    "z": -15.5,
+    "heading": 240,
+    "accuracy": 2.4,
+    "altitude": 6.9,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -198.5,
+    -12.5
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3153.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6165501UF1366N_part4",
+      "distance": 23.8,
+      "angleOffset": 21.3
+     },
+     {
+      "id": "building:6165501UF1366N_part3",
+      "distance": 41.2,
+      "angleOffset": 22.5
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -193.3,
+     "z": -15.5,
+     "basis": "phone location",
+     "reportedAccuracy": 2.4,
+     "heading": 240,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1Oz6zzPNsSgG3bPyyJK8U89y1MzPc-N-6/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3153.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3154.jpg",
+   "label": "IMG_3154",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3154.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3154.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3154.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -194.0,
+    "z": -14.8,
+    "heading": 246,
+    "accuracy": 2.4,
+    "altitude": 6.9,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -199.5,
+    -12.4
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3154.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6165501UF1366N_part4",
+      "distance": 22.8,
+      "angleOffset": 27.6
+     },
+     {
+      "id": "building:6165501UF1366N_part3",
+      "distance": 40.2,
+      "angleOffset": 28.7
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -194.0,
+     "z": -14.8,
+     "basis": "phone location",
+     "reportedAccuracy": 2.4,
+     "heading": 246,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/18rxdV7e12ipYNg6ieT5wx6KsDW4RlsPV/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3154.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3155.jpg",
+   "label": "IMG_3155",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3155.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3155.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3155.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -193.7,
+    "z": -15.5,
+    "heading": 247,
+    "accuracy": 2.4,
+    "altitude": 7.2,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -199.2,
+    -13.2
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3155.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6165501UF1366N_part4",
+      "distance": 23.6,
+      "angleOffset": 29.1
+     },
+     {
+      "id": "building:6165501UF1366N_part3",
+      "distance": 40.9,
+      "angleOffset": 29.9
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -193.7,
+     "z": -15.5,
+     "basis": "phone location",
+     "reportedAccuracy": 2.4,
+     "heading": 247,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1RVOmK_w0xbpg2HJynlEkoc70H2z4icOK/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3155.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3156.jpg",
+   "label": "IMG_3156",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3156.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3156.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3156.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -194.0,
+    "z": -15.5,
+    "heading": 151,
+    "accuracy": 2.4,
+    "altitude": 7.1,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -191.1,
+    -10.3
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3156.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6266601UF1366N_part3",
+      "distance": 15.6,
+      "angleOffset": 1.0
+     },
+     {
+      "id": "building:6165501UF1366N_part6",
+      "distance": 17.9,
+      "angleOffset": 27.8
+     },
+     {
+      "id": "building:6165501UF1366N_part1",
+      "distance": 30.7,
+      "angleOffset": 27.9
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -194.0,
+     "z": -15.5,
+     "basis": "phone location",
+     "reportedAccuracy": 2.4,
+     "heading": 151,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/19zAiK3LewbX_69B1IFZkfilrdSaKIa7S/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3156.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3157.jpg",
+   "label": "IMG_3157",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3157.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3157.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3157.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -193.7,
+    "z": -14.8,
+    "heading": 154,
+    "accuracy": 2.4,
+    "altitude": 6.7,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -191.1,
+    -9.4
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3157.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6266601UF1366N_part3",
+      "distance": 14.8,
+      "angleOffset": 2.3
+     },
+     {
+      "id": "building:6165501UF1366N_part6",
+      "distance": 17.2,
+      "angleOffset": 25.8
+     },
+     {
+      "id": "building:6165501UF1366N_part1",
+      "distance": 30.0,
+      "angleOffset": 25.4
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -193.7,
+     "z": -14.8,
+     "basis": "phone location",
+     "reportedAccuracy": 2.4,
+     "heading": 154,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1pM87YHCXR4hs9Juhxs5AU5eTa1md-cWA/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3157.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3158.jpg",
+   "label": "IMG_3158",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3158.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3158.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3158.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -190.8,
+    "z": -9.3,
+    "heading": 153,
+    "accuracy": 2.9,
+    "altitude": 5.2,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -188.1,
+    -4.0
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3158.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range",
+     "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6266601UF1366N_part3",
+      "distance": 8.6,
+      "angleOffset": 1.6
+     },
+     {
+      "id": "building:6165501UF1366N_part1",
+      "distance": 24.6,
+      "angleOffset": 33.1
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -190.8,
+     "z": -9.3,
+     "basis": "phone location",
+     "reportedAccuracy": 2.9,
+     "heading": 153,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1bOQ2rVR382PXcFb1nmtlKkljQ6cjnUw9/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3158.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3159.jpg",
+   "label": "IMG_3159",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3159.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3159.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3159.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -189.8,
+    "z": -7.1,
+    "heading": 158,
+    "accuracy": 3.1,
+    "altitude": 4.3,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -187.6,
+    -1.5
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3159.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range",
+     "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6266601UF1366N_part3",
+      "distance": 6.2,
+      "angleOffset": 8.2
+     },
+     {
+      "id": "building:6165501UF1366N_part1",
+      "distance": 22.6,
+      "angleOffset": 31.2
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -189.8,
+     "z": -7.1,
+     "basis": "phone location",
+     "reportedAccuracy": 3.1,
+     "heading": 158,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1DF8Uf8Hmeqkk-fN3Do_Nh6vbLMj1kEG2/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3159.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3160.jpg",
+   "label": "IMG_3160",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3160.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3160.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3160.jpg",
+   "areas": [
+    "north-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -189.5,
+    "z": -6.8,
+    "heading": 193,
+    "accuracy": 3.1,
+    "altitude": 4.6,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -190.8,
+    -1.0
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3160.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range",
+     "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6165501UF1366N_part6",
+      "distance": 10.1,
+      "angleOffset": 11.2
+     },
+     {
+      "id": "building:6165501UF1366N_part1",
+      "distance": 22.3,
+      "angleOffset": 2.9
+     },
+     {
+      "id": "building:6165501UF1366N_part5",
+      "distance": 25.3,
+      "angleOffset": 15.8
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -189.5,
+     "z": -6.8,
+     "basis": "phone location",
+     "reportedAccuracy": 3.1,
+     "heading": 193,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1dLN3ZpY0wjRCkXrF_shp3qSpEy20j8rH/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3160.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3161.jpg",
+   "label": "IMG_3161",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3161.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3161.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3161.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -190.0,
+    "z": -7.7,
+    "heading": 232,
+    "accuracy": 3.3,
+    "altitude": 5.4,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -194.7,
+    -4.0
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3161.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range",
+     "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6165501UF1366N_part6",
+      "distance": 10.7,
+      "angleOffset": 32.2
+     },
+     {
+      "id": "building:6165501UF1366N_part4",
+      "distance": 21.1,
+      "angleOffset": 7.3
+     },
+     {
+      "id": "building:6165501UF1366N_part5",
+      "distance": 25.9,
+      "angleOffset": 25.1
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -190.0,
+     "z": -7.7,
+     "basis": "phone location",
+     "reportedAccuracy": 3.3,
+     "heading": 232,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1VSOMtNKiXlQHTH_9qqSDl4RJKGAEmQdJ/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3161.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3162.jpg",
+   "label": "IMG_3162",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3162.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3162.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3162.jpg",
+   "areas": [
+    "north-lanes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -191.3,
+    "z": -6.8,
+    "heading": 63,
+    "accuracy": 3.2,
+    "altitude": 6.8,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -186.0,
+    -9.5
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3162.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range",
+     "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6266601UF1366N_part2",
+      "distance": 22.2,
+      "angleOffset": 6.0
+     },
+     {
+      "id": "building:6266601UF1366N_part4",
+      "distance": 26.9,
+      "angleOffset": 25.5
+     },
+     {
+      "id": "building:6266601UF1366N_part1",
+      "distance": 40.5,
+      "angleOffset": 5.0
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -191.3,
+     "z": -6.8,
+     "basis": "phone location",
+     "reportedAccuracy": 3.2,
+     "heading": 63,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1ImKjw7nzmkkpl8DP6MIOplQp_hszTkd1/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3162.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3163.jpg",
+   "label": "IMG_3163",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3163.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3163.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3163.jpg",
+   "areas": [
+    "north-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -190.8,
+    "z": -5.9,
+    "heading": 60,
+    "accuracy": 3.2,
+    "altitude": 7.2,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -185.6,
+    -8.9
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3163.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range",
+     "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6266601UF1366N_part2",
+      "distance": 22.3,
+      "angleOffset": 5.7
+     },
+     {
+      "id": "building:6266601UF1366N_part4",
+      "distance": 26.4,
+      "angleOffset": 26.5
+     },
+     {
+      "id": "building:6266601UF1366N_part1",
+      "distance": 40.4,
+      "angleOffset": 6.6
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -190.8,
+     "z": -5.9,
+     "basis": "phone location",
+     "reportedAccuracy": 3.2,
+     "heading": 60,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1xcLXasJvPqKv9fyjrNt6CwCzCYjmULlp/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3163.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3164.jpg",
+   "label": "IMG_3164",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3164.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3164.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3164.jpg",
+   "areas": [
+    "north-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -190.8,
+    "z": -4.3,
+    "heading": 151,
+    "accuracy": 3.2,
+    "altitude": 8.0,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -187.9,
+    0.9
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3164.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6266601UF1366N_part3",
+      "distance": 4.8,
+      "angleOffset": 29.2
+     },
+     {
+      "id": "building:6265201UF1366N_part1",
+      "distance": 44.3,
+      "angleOffset": 2.0
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -190.8,
+     "z": -4.3,
+     "basis": "phone location",
+     "reportedAccuracy": 3.2,
+     "heading": 151,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1_6mgULkER7wmMJydesiQKZuqoLZzXX2a/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3164.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3165.jpg",
+   "label": "IMG_3165",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3165.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3165.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3165.jpg",
+   "areas": [
+    "north-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -192.3,
+    "z": -1.9,
+    "heading": 154,
+    "accuracy": 4.0,
+    "altitude": 8.7,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -189.7,
+    3.5
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3165.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range",
+     "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6165501UF1366N_part1",
+      "distance": 17.1,
+      "angleOffset": 29.7
+     },
+     {
+      "id": "building:6265201UF1366N_part1",
+      "distance": 43.0,
+      "angleOffset": 4.2
+     },
+     {
+      "id": "building:6265201UF1366N_part6",
+      "distance": 43.7,
+      "angleOffset": 30.6
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -192.3,
+     "z": -1.9,
+     "basis": "phone location",
+     "reportedAccuracy": 4.0,
+     "heading": 154,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1T2cYKdwtAq-qMa7bLukrRjeG9UEC3i1E/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3165.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3166.jpg",
+   "label": "IMG_3166",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3166.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3166.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3166.jpg",
+   "areas": [
+    "north-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -188.3,
+    "z": 1.5,
+    "heading": 151,
+    "accuracy": 4.9,
+    "altitude": 8.9,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -185.4,
+    6.7
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3166.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range",
+     "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6265201UF1366N_part1",
+      "distance": 38.0,
+      "angleOffset": 1.4
+     },
+     {
+      "id": "building:6265201UF1366N_part3",
+      "distance": 43.6,
+      "angleOffset": 16.1
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -188.3,
+     "z": 1.5,
+     "basis": "phone location",
+     "reportedAccuracy": 4.9,
+     "heading": 151,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1doGhq5WzgaeHSww243uRmqggYyIwUmhA/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3166.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3167.jpg",
+   "label": "IMG_3167",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3167.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3167.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3167.jpg",
+   "areas": [
+    "north-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -185.3,
+    "z": 3.4,
+    "heading": 143,
+    "accuracy": 5.0,
+    "altitude": 8.6,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -181.7,
+    8.2
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3167.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6265201UF1366N_part1",
+      "distance": 35.0,
+      "angleOffset": 12.4
+     },
+     {
+      "id": "building:6265201UF1366N_part3",
+      "distance": 41.1,
+      "angleOffset": 27.6
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -185.3,
+     "z": 3.4,
+     "basis": "phone location",
+     "reportedAccuracy": 5.0,
+     "heading": 143,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1wkBo5tZBsboik9xk1_tWFye3RIrIpcT-/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3167.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3168.jpg",
+   "label": "IMG_3168",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3168.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3168.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3168.jpg",
+   "areas": [
+    "north-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -176.1,
+    "z": 9.9,
+    "heading": 101,
+    "accuracy": 4.5,
+    "altitude": 8.0,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -170.2,
+    11.0
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3168.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6265401UF1366N_part1",
+      "distance": 26.7,
+      "angleOffset": 20.4
+     },
+     {
+      "id": "building:6265401UF1366N_part3",
+      "distance": 34.3,
+      "angleOffset": 15.9
+     },
+     {
+      "id": "building:6265401UF1366N_part4",
+      "distance": 43.9,
+      "angleOffset": 0.8
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -176.1,
+     "z": 9.9,
+     "basis": "phone location",
+     "reportedAccuracy": 4.5,
+     "heading": 101,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1rrs_87ua5_O7AQlSKMPrfBJnBYsRIgi1/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3168.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3169.jpg",
+   "label": "IMG_3169",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3169.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3169.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3169.jpg",
+   "areas": [
+    "north-lanes",
+    "north-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -167.4,
+    "z": 11.8,
+    "heading": 149,
+    "accuracy": 4.0,
+    "altitude": 7.2,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -164.3,
+    16.9
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3169.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:isabel",
+      "name": "Calle Isabel de Oyarzábal",
+      "kind": "street",
+      "gap": 1.2
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265401UF1366N_part3",
+      "distance": 25.8,
+      "angleOffset": 27.1
+     },
+     {
+      "id": "building:6265201UF1366N_part5",
+      "distance": 30.0,
+      "angleOffset": 11.6
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -167.4,
+     "z": 11.8,
+     "basis": "phone location",
+     "reportedAccuracy": 4.0,
+     "heading": 149,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1L2hLqe3P-nxaHkYXMNVEUKFyTr8S4cRy/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3169.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3170.jpg",
+   "label": "IMG_3170",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3170.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3170.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3170.jpg",
+   "areas": [
+    "north-lanes",
+    "elena",
+    "north-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -162.9,
+    "z": 17.0,
+    "heading": 157,
+    "accuracy": 3.6,
+    "altitude": 6.5,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -160.6,
+    22.5
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3170.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "Uncertainty reaches more than one named street"
+    ],
+    "nearby": [
+     {
+      "id": "street:isabel",
+      "name": "Calle Isabel de Oyarzábal",
+      "kind": "street",
+      "gap": 1.5
+     },
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 2.1
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265201UF1366N_part5",
+      "distance": 23.7,
+      "angleOffset": 9.7
+     },
+     {
+      "id": "building:6265401UF1366N_part2",
+      "distance": 40.1,
+      "angleOffset": 33.6
+     },
+     {
+      "id": "building:6265201UF1366N_part4",
+      "distance": 40.3,
+      "angleOffset": 34.0
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -162.9,
+     "z": 17.0,
+     "basis": "phone location",
+     "reportedAccuracy": 3.6,
+     "heading": 157,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1ZUS587eehtuaiiaRVQ-ocJrRMeyrU6Cy/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3170.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3171.jpg",
+   "label": "IMG_3171",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3171.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3171.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3171.jpg",
+   "areas": [
+    "elena",
+    "north-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -158.2,
+    "z": 26.3,
+    "heading": 140,
+    "accuracy": 3.1,
+    "altitude": 6.4,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -154.3,
+    30.9
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3171.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 1.3
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265401UF1366N_part2",
+      "distance": 31.5,
+      "angleOffset": 26.1
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -158.2,
+     "z": 26.3,
+     "basis": "phone location",
+     "reportedAccuracy": 3.1,
+     "heading": 140,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1bdQNJTl-DTglbHgxI3Kc1I7dxUPl9T6F/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3171.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3172.jpg",
+   "label": "IMG_3172",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3172.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3172.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3172.jpg",
+   "areas": [
+    "elena",
+    "north-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -157.4,
+    "z": 29.4,
+    "heading": 153,
+    "accuracy": 3.1,
+    "altitude": 7.5,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -154.7,
+    34.7
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3172.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 0.5
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265201UF1366N_part5",
+      "distance": 10.7,
+      "angleOffset": 27.2
+     },
+     {
+      "id": "building:6265801UF1366N_part1",
+      "distance": 43.9,
+      "angleOffset": 25.5
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -157.4,
+     "z": 29.4,
+     "basis": "phone location",
+     "reportedAccuracy": 3.1,
+     "heading": 153,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1pg7QrgOYRzwkaWqWO261Wtett6oCo2mb/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3172.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3173.jpg",
+   "label": "IMG_3173",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3173.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3173.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3173.jpg",
+   "areas": [
+    "elena",
+    "north-pool"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -154.5,
+    "z": 33.4,
+    "heading": 167,
+    "accuracy": 3.3,
+    "altitude": 7.6,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -153.2,
+    39.2
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3173.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 1.0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265801UF1366N_part1",
+      "distance": 40.0,
+      "angleOffset": 15.6
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -154.5,
+     "z": 33.4,
+     "basis": "phone location",
+     "reportedAccuracy": 3.3,
+     "heading": 167,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/13Fr2VowJoclRnszSipwNnNRQ0qf_feas/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3173.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
    "id": "ref:apple-maps/01-3d-overview-from-north.png",
    "label": "Apple Maps 3D: the whole block looking south to the sea",
    "kind": "map-screenshot",

@@ -37,7 +37,7 @@ The large main pool, the round toddler pool, the deck and lawn, Bistro Enrique's
 ## Coverage
 
 Layout: 40, Levels and slopes: 12, Facades and roofs: 13, Materials: 24, Planting: 15, Signs: 6, Views: 13
-42 reviewed, 0 suggested only by camera position.
+42 reviewed, 5 suggested only by camera position.
 
 ## Open build tasks
 
@@ -321,3 +321,15 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_3068.jpg](../../public/photos-ref/IMG_3068.jpg) | ground | layout, materials, planting | Green bar fence on a sandstone base at the white pillar, palms and bananas behind |
 | [IMG_3072.jpg](../../public/photos-ref/IMG_3072.jpg) | ground | layout, materials | Paseo curving between the sandstone wall with green bars and grass, white buildings beyond |
 | [IMG_3074.jpg](../../public/photos-ref/IMG_3074.jpg) | ground | layout, materials | Paseo bending south-west with a crossing marking and the gateway of the lawn side **Looks at:** paseo bend and gate pillar. |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_3118.jpg](../../public/photos-ref/IMG_3118.jpg) | not reviewed | not reviewed | IMG_3118 |
+| [IMG_3119.jpg](../../public/photos-ref/IMG_3119.jpg) | not reviewed | not reviewed | IMG_3119 |
+| [IMG_3120.jpg](../../public/photos-ref/IMG_3120.jpg) | not reviewed | not reviewed | IMG_3120 |
+| [IMG_3121.jpg](../../public/photos-ref/IMG_3121.jpg) | not reviewed | not reviewed | IMG_3121 |
+| [IMG_3122.jpg](../../public/photos-ref/IMG_3122.jpg) | not reviewed | not reviewed | IMG_3122 |

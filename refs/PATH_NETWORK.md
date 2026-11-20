@@ -11,8 +11,8 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 - sourceObservations: 59
 - sourcePixelTraces: 57
 - sourcePixelLocators: 32
-- sources: 614
-- uninspectedSources: 544
+- sources: 670
+- uninspectedSources: 600
 - routes: 24
 - segments: 181
 - tracedSides: 0
@@ -24,15 +24,15 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 
 | Area | Sources / uninspected | Routes | Tunnel candidates | Coverage |
 | --- | --- | --- | --- | --- |
-| North pool | 20 / 20 | 0 | 0 | uninspected |
+| North pool | 32 / 32 | 0 | 0 | uninspected |
 | Middle pool | 43 / 43 | 0 | 0 | uninspected |
 | South pool | 28 / 28 | 0 | 0 | uninspected |
-| Main pool | 42 / 42 | 0 | 0 | uninspected |
-| Calle Elena | 113 / 74 | 2 | 2 | partial |
+| Main pool | 47 / 47 | 0 | 0 | uninspected |
+| Calle Elena | 117 / 78 | 2 | 2 | partial |
 | Calle Miguel de Cervantes | 87 / 59 | 1 | 1 | partial |
 | Calle Pintor Dalí | 68 / 68 | 3 | 0 | uninspected |
-| Pintor Picasso and the car park | 13 / 13 | 2 | 0 | uninspected |
-| Loira, Bolivia, Alberto and Isabel | 2 / 2 | 4 | 6 | uninspected |
+| Pintor Picasso and the car park | 25 / 25 | 2 | 0 | uninspected |
+| Loira, Bolivia, Alberto and Isabel | 35 / 35 | 4 | 6 | uninspected |
 | Calle Eva | 61 / 61 | 2 | 0 | uninspected |
 | Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 162 / 162 | 6 | 2 | uninspected |
 | Barraka and the beach | 88 / 88 | 1 | 0 | uninspected |
