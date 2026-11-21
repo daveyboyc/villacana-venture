@@ -19,7 +19,7 @@ house-side supports outside the paved strip. The survey supplies the ground
 datum. The stations, spans, beam count where obscured and support dimensions
 are estimates from unsolved cameras. The western span is the least certain.
 
-[Inspect Layout](inspect-layout.jpg) shows the lane-aligned joints and open
+[Inspect Layout](inspect-layout.jpg) and [Show Details](inspect-details.jpg) show the lane-aligned joints and open
 spans. The independent plan check found the pergola posts clear of the paved
 strip and the pergola footprints clear of the mapped roads and registry
 buildings. Browser checks confirmed four tile courses and four spans.
