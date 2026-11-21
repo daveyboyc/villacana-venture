@@ -24322,7 +24322,10 @@
    "altitude": 5.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "lane_walls.json:juan-gris-east-hedge",
+   "lane_walls.json:juan-gris-east-screen"
+  ],
   "looksAt": [
    -123.5,
    -61.1
@@ -24362,6 +24365,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "lane_walls.json:juan-gris-east-hedge",
    "loira_boundary.json:loira-resort-wall",
    "juan_gris_pergolas.json:juan-gris-pergola-east"
   ],
@@ -24402,6 +24406,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "lane_walls.json:juan-gris-east-hedge",
    "juan_gris_pergolas.json:juan-gris-pergola-east",
    "ground_plan_north_lanes.json:juan-gris-paving"
   ],
@@ -24763,6 +24768,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "lane_walls.json:juan-gris-middle-bed",
    "juan_gris_pergolas.json:juan-gris-pergola-middle",
    "ground_plan_north_lanes.json:juan-gris-paving"
   ],
@@ -24802,6 +24808,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "lane_walls.json:juan-gris-middle-bed",
    "juan_gris_pergolas.json:juan-gris-pergola-middle"
   ],
   "looksAt": [
@@ -25005,6 +25012,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "lane_walls.json:juan-gris-grille-bed",
    "juan_gris_pergolas.json:juan-gris-pergola-grille",
    "juan_gris_pergolas.json:juan-gris-pergola-west",
    "ground_plan_north_lanes.json:juan-gris-paving"
@@ -25048,6 +25056,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "lane_walls.json:juan-gris-west-bed",
    "loira_boundary.json:loira-resort-wall",
    "juan_gris_pergolas.json:juan-gris-pergola-west",
    "ground_plan_north_lanes.json:juan-gris-paving"
@@ -25091,6 +25100,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "lane_walls.json:juan-gris-west-bed",
    "loira_boundary.json:loira-resort-wall"
   ],
   "looksAt": [
@@ -25102,7 +25112,7 @@
    "loira_boundary.json:loira-resort-wall",
    "ground_plan_north_lanes.json:juan-gris-paving",
    "backdrop.json:aerial-trees",
-   "juan_gris_pergolas.json:juan-gris-pergola-west"
+   "lane_walls.json:juan-gris-west-bed"
   ],
   "subject": "Juan Gris west barred opening and low tiled threshold",
   "headingOff": 68
@@ -25134,6 +25144,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "lane_walls.json:juan-gris-west-bed",
    "loira_boundary.json:loira-resort-wall",
    "juan_gris_pergolas.json:juan-gris-pergola-west"
   ],
@@ -25146,7 +25157,7 @@
    "loira_boundary.json:loira-resort-wall",
    "ground_plan_north_lanes.json:juan-gris-paving",
    "backdrop.json:aerial-trees",
-   "juan_gris_pergolas.json:juan-gris-pergola-west"
+   "lane_walls.json:juan-gris-west-bed"
   ],
   "subject": "Alternate Juan Gris west opening view"
  },

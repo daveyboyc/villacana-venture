@@ -2,8 +2,8 @@
   "version": 1,
   "scope": "Existing explicit patio/garden wall axes in six source files, all standing zero-storey registry enclosures, and wall-related recorded gaps. Other renderer-specific retaining walls, planter rims and generated filler are not patio-wall traces. Other wall/patio/terrace model groups are included as context only, without wall quantities. Physical resort-wide wall survey remains incomplete.",
   "totals": {
-    "wall": 24,
-    "kerb": 2,
+    "wall": 27,
+    "kerb": 4,
     "enclosure": 23,
     "gap": 21,
     "context": 39
@@ -2037,6 +2037,176 @@
           ]
         }
       ]
+    },
+    {
+      "id": "lane_walls.json:juan-gris-east-hedge",
+      "name": "Juan Gris · East hedge wall",
+      "kind": "wall",
+      "points": [
+        [
+          -126.8,
+          -56.581
+        ],
+        [
+          -122.4,
+          -59.108
+        ]
+      ],
+      "areas": [
+        "north-lanes"
+      ],
+      "heightM": 0.78,
+      "thicknessM": 0.2,
+      "lengthM": 5.07,
+      "grossFaceM2": 3.96,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_3134.jpg",
+        "IMG_3135.jpg",
+        "IMG_3136.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "The hedge shows over the lowered white wall east of the first pergola. Stations and dimensions are estimated from the unsolved sequence along the mapped paving.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "lane_walls.json:juan-gris-east-screen",
+      "name": "Juan Gris · East garden screen",
+      "kind": "wall",
+      "points": [
+        [
+          -122.4,
+          -59.108
+        ],
+        [
+          -119.7,
+          -60.685
+        ]
+      ],
+      "areas": [
+        "north-lanes"
+      ],
+      "heightM": 1.78,
+      "thicknessM": 0.2,
+      "lengthM": 3.13,
+      "grossFaceM2": 5.57,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_3134.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "The white garden wall steps up beside the hedge near the signed end. Stations and dimensions are estimated from the unsolved sequence along the mapped paving.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "lane_walls.json:juan-gris-middle-bed",
+      "name": "Juan Gris · Middle planting border",
+      "kind": "kerb",
+      "points": [
+        [
+          -162.75,
+          -33.895
+        ],
+        [
+          -160.0,
+          -35.912
+        ]
+      ],
+      "areas": [
+        "north-lanes"
+      ],
+      "heightM": 0.26,
+      "thicknessM": 0.15,
+      "lengthM": 3.41,
+      "grossFaceM2": 0.89,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_3146.jpg",
+        "IMG_3147.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "A narrow white kerb holds back the bed beside the middle span. Stations and dimensions are estimated from the unsolved sequence along the mapped paving.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "lane_walls.json:juan-gris-grille-bed",
+      "name": "Juan Gris · Verge grille planting border",
+      "kind": "kerb",
+      "points": [
+        [
+          -190.0,
+          -16.99
+        ],
+        [
+          -185.7,
+          -19.636
+        ]
+      ],
+      "areas": [
+        "north-lanes"
+      ],
+      "heightM": 0.24,
+      "thicknessM": 0.15,
+      "lengthM": 5.05,
+      "grossFaceM2": 1.21,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_3152.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "Planting follows a low white kerb opposite the Loira grille. Stations and dimensions are estimated from the unsolved sequence along the mapped paving.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
+    },
+    {
+      "id": "lane_walls.json:juan-gris-west-bed",
+      "name": "Juan Gris · West planting border",
+      "kind": "wall",
+      "points": [
+        [
+          -196.2,
+          -14.147
+        ],
+        [
+          -193.1,
+          -15.285
+        ]
+      ],
+      "areas": [
+        "north-lanes"
+      ],
+      "heightM": 0.32,
+      "thicknessM": 0.16,
+      "lengthM": 3.3,
+      "grossFaceM2": 1.06,
+      "openings": [],
+      "routeOpenings": [],
+      "evidence": [
+        "IMG_3153.jpg",
+        "IMG_3154.jpg",
+        "IMG_3155.jpg"
+      ],
+      "confidence": "estimated",
+      "basis": "A low white wall contains the bed before the western span. Stations and dimensions are estimated from the unsolved sequence along the mapped paving.",
+      "placement": "unreviewed",
+      "solvedCameras": [],
+      "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
+      "levelRefs": []
     },
     {
       "id": "paseo_wall.json:paseo-retaining-wall",

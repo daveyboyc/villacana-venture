@@ -27,12 +27,17 @@
     "juan_gris_pergolas.json:juan-gris-pergola-east",
     "juan_gris_pergolas.json:juan-gris-pergola-middle",
     "juan_gris_pergolas.json:juan-gris-pergola-grille",
-    "juan_gris_pergolas.json:juan-gris-pergola-west"
+    "juan_gris_pergolas.json:juan-gris-pergola-west",
+    "lane_walls.json:juan-gris-east-hedge",
+    "lane_walls.json:juan-gris-east-screen",
+    "lane_walls.json:juan-gris-middle-bed",
+    "lane_walls.json:juan-gris-grille-bed",
+    "lane_walls.json:juan-gris-west-bed"
    ],
    "dependsOn": [
     "ground-plan-framework"
    ],
-   "notes": "The wall and footpath extend to Pintor Dalí. Four photo-backed openings are represented. Tile courses are aligned to the lane and four photo-backed open pergolas are represented. Exact stations, profiles and road-side access await exterior photos and solved-camera review.",
+   "notes": "The wall and footpath extend to Pintor Dalí. Four photo-backed openings are represented. Tile courses are aligned to the lane and four photo-backed open pergolas are represented. Exact stations, profiles and road-side access await exterior photos and solved-camera review. The house side has a stepped east garden wall and three low planting borders at visible stations. Side passages and untraced intervals remain open.",
    "status": "in-progress",
    "owner": "Codex"
   },

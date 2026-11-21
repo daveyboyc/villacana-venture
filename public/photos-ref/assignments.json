@@ -6,9 +6,9 @@
   "needs-review": 271,
   "suggested": 364,
   "photos": 639,
-  "features": 529,
-  "photosCitedByModel": 248,
-  "modelFeaturesWithPhotoCitations": 272
+  "features": 534,
+  "photosCitedByModel": 249,
+  "modelFeaturesWithPhotoCitations": 277
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -23932,7 +23932,10 @@
      "angleOffset": 31.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "lane_walls.json:juan-gris-east-hedge",
+    "lane_walls.json:juan-gris-east-screen"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -118.6,
@@ -23959,6 +23962,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "lane_walls.json:juan-gris-east-hedge",
     "loira_boundary.json:loira-resort-wall",
     "juan_gris_pergolas.json:juan-gris-pergola-east"
    ],
@@ -23988,6 +23992,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "lane_walls.json:juan-gris-east-hedge",
     "juan_gris_pergolas.json:juan-gris-pergola-east",
     "ground_plan_north_lanes.json:juan-gris-paving"
    ],
@@ -24382,6 +24387,7 @@
     }
    ],
    "citedBy": [
+    "lane_walls.json:juan-gris-middle-bed",
     "juan_gris_pergolas.json:juan-gris-pergola-middle",
     "ground_plan_north_lanes.json:juan-gris-paving"
    ],
@@ -24411,6 +24417,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "lane_walls.json:juan-gris-middle-bed",
     "juan_gris_pergolas.json:juan-gris-pergola-middle"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -24563,6 +24570,7 @@
     }
    ],
    "citedBy": [
+    "lane_walls.json:juan-gris-grille-bed",
     "juan_gris_pergolas.json:juan-gris-pergola-grille",
     "juan_gris_pergolas.json:juan-gris-pergola-west",
     "ground_plan_north_lanes.json:juan-gris-paving"
@@ -24597,6 +24605,7 @@
     }
    ],
    "citedBy": [
+    "lane_walls.json:juan-gris-west-bed",
     "loira_boundary.json:loira-resort-wall",
     "juan_gris_pergolas.json:juan-gris-pergola-west",
     "ground_plan_north_lanes.json:juan-gris-paving"
@@ -24631,6 +24640,7 @@
     }
    ],
    "citedBy": [
+    "lane_walls.json:juan-gris-west-bed",
     "loira_boundary.json:loira-resort-wall"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -24663,6 +24673,7 @@
     }
    ],
    "citedBy": [
+    "lane_walls.json:juan-gris-west-bed",
     "loira_boundary.json:loira-resort-wall",
     "juan_gris_pergolas.json:juan-gris-pergola-west"
    ],
