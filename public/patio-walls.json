@@ -3136,6 +3136,26 @@
       "kind": "context",
       "points": [
         [
+          -229.3,
+          2.5
+        ],
+        [
+          -225.9,
+          -0.7
+        ],
+        [
+          -216,
+          -6.1
+        ],
+        [
+          -207,
+          -11
+        ],
+        [
+          -199.4,
+          -14.65
+        ],
+        [
           -193,
           -17
         ],
@@ -3177,7 +3197,7 @@
       ],
       "confidence": "estimated",
       "placement": "disputed",
-      "basis": "Model group context, not a traced wall axis or quantity. Photos establish wall and arch form; aerial trace and unsolved camera pins supply approximate extents and opening position.",
+      "basis": "Model group context, not a traced wall axis or quantity. Photos establish the eastern wall and arch form. The west stretch to Dalí follows an aerial band partly obscured by vegetation. The wall height and window station are estimates.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {

@@ -3618,7 +3618,7 @@
    "id": "loira_boundary.json:loira-resort-wall",
    "name": "Calle Loira resort boundary wall",
    "kind": "reference feature",
-   "source": "White wall and a barred arched window photographed from Calle de Juan Gris. Aerial boundary band, approximate limits, height and opening station. No solved photo camera.",
+   "source": "White wall and a barred arched window photographed from Calle de Juan Gris. Aerial boundary band reaches the Pintor Dalí bend. The west run is inferred beneath vegetation. Height and opening station are approximate. No solved photo camera.",
    "evidence": [
     "IMG_3133.jpg",
     "IMG_3141.jpg",
@@ -4471,7 +4471,7 @@
    "id": "ground_plan_north_lanes.json:juan-gris-paving",
    "name": "Calle de Juan Gris terracotta footpath",
    "kind": "reference feature",
-   "source": "Approximate surface edges traced from the Esri aerial and the Calle de Juan Gris photo sequence. No solved ground camera.",
+   "source": "The Esri aerial shows a pale band to Pintor Dalí. Its continuation as Juan Gris paving is inferred from the adjoining photographed lane.",
    "evidence": [
     "IMG_3133.jpg",
     "IMG_3141.jpg",

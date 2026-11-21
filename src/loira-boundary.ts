@@ -22,8 +22,8 @@ export function addLoiraBoundary(scene: THREE.Scene): void {
     const shape = new THREE.Shape();
     const start = i === 0 ? 0 : -thickness / 2;
     const end = i === points.length - 2 ? length : length + thickness / 2;
-    shape.moveTo(start, -0.15);
-    shape.lineTo(end, -0.15);
+    shape.moveTo(start, -0.18);
+    shape.lineTo(end, -0.18);
     shape.lineTo(end, height);
     if (i === window.segment) {
       const left = window.along - window.width / 2, right = window.along + window.width / 2;

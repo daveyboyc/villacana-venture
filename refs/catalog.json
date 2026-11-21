@@ -25025,7 +25025,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "ground_plan_north_lanes.json:juan-gris-paving"
   ],
   "subject": "Terracotta paving, wall and grille along Juan Gris"
  },
@@ -25059,7 +25060,9 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "ground_plan_north_lanes.json:juan-gris-paving",
+   "loira_boundary.json:loira-resort-wall"
   ]
  },
  {
@@ -25092,7 +25095,9 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "ground_plan_north_lanes.json:juan-gris-paving",
+   "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall"
   ]
  },
  {
