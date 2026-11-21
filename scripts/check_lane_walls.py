@@ -50,14 +50,16 @@ def line_gap(p_pts, q_pts, step=0.1):
 
 
 streets = {s['id']: s for s in skeleton['streets']}
+juan_gris = next(s for s in load('data/ground_plan_north_lanes.json')['surfaces'] if s['id'] == 'juan-gris-paving')
 ids = set()
 for w in data['walls']:
     wid = w['id']
     assert wid not in ids, f'{wid}: duplicate id'; ids.add(wid)
-    assert w['area'] in ('elena', 'seaward-lanes', 'cervantes'), f'{wid}: area'
+    assert w['area'] in ('elena', 'seaward-lanes', 'cervantes', 'north-lanes'), f'{wid}: area'
     assert len(w['points']) >= 2 and all(len(p) == 2 for p in w['points']), f'{wid}: polyline'
     assert all(math.hypot(b[0] - a[0], b[1] - a[1]) > 0.2 for a, b in segments(w['points'])), f'{wid}: degenerate segment'
-    assert 0.5 <= w['height'] <= 3.5 and 0.15 <= w['thickness'] <= 0.5 and w['raise'] >= 0, f'{wid}: size'
+    min_height = 0.15 if w.get('kind') == 'planting-border' else 0.5
+    assert min_height <= w['height'] <= 3.5 and 0.15 <= w['thickness'] <= 0.5 and w['raise'] >= 0, f'{wid}: size'
     assert all(p in photos for p in w['evidence']), f'{wid}: unknown photo'
     assert w['basis'].strip(), f'{wid}: basis'
     level = confidence['features'].get('lane_walls.json:' + wid, {}).get('level')
@@ -77,6 +79,9 @@ for w in data['walls']:
     # A photographed wall may stand on the lane's own edge line, where the kerb walls run (0.88 m out; the
     # Cervantes patio wall with a door, 17 Nov 2026): its face still has to clear the 1.2 m paving by 0.1 m.
     assert w['area'] != 'cervantes' or gap - w['thickness'] / 2 >= 0.7, f'{wid}: face {gap - w["thickness"] / 2:.2f} m from the Cervantes centreline'
+    if w['area'] == 'north-lanes':
+        gap = line_gap(w['points'], juan_gris['lines'][0])
+        assert gap - (w['thickness'] + 0.06) / 2 >= juan_gris['width'] / 2, f'{wid}: coping crosses Juan Gris paving'
     for pool in skeleton['pools']:
         ring = pool['ring'] + [pool['ring'][0]]
         assert not any(crosses(a, b, c, e) for a, b in segments(w['points']) for c, e in segments(ring)), f"{wid}: crosses pool {pool['id']}"

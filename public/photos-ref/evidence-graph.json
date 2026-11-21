@@ -6,9 +6,9 @@
   "needs-review": 271,
   "suggested": 364,
   "photos": 639,
-  "features": 529,
-  "photosCitedByModel": 248,
-  "modelFeaturesWithPhotoCitations": 272
+  "features": 534,
+  "photosCitedByModel": 249,
+  "modelFeaturesWithPhotoCitations": 277
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3612,6 +3612,56 @@
     "IMG_2514.jpg",
     "IMG_2686.jpg",
     "IMG_2969.jpg"
+   ]
+  },
+  {
+   "id": "lane_walls.json:juan-gris-east-hedge",
+   "name": "Juan Gris · East hedge wall",
+   "kind": "reference feature",
+   "source": "photo/aerial interpretation; about 1 m",
+   "evidence": [
+    "IMG_3134.jpg",
+    "IMG_3135.jpg",
+    "IMG_3136.jpg"
+   ]
+  },
+  {
+   "id": "lane_walls.json:juan-gris-east-screen",
+   "name": "Juan Gris · East garden screen",
+   "kind": "reference feature",
+   "source": "photo/aerial interpretation; about 1 m",
+   "evidence": [
+    "IMG_3134.jpg"
+   ]
+  },
+  {
+   "id": "lane_walls.json:juan-gris-middle-bed",
+   "name": "Juan Gris · Middle planting border",
+   "kind": "reference feature",
+   "source": "photo/aerial interpretation; about 1 m",
+   "evidence": [
+    "IMG_3146.jpg",
+    "IMG_3147.jpg"
+   ]
+  },
+  {
+   "id": "lane_walls.json:juan-gris-grille-bed",
+   "name": "Juan Gris · Verge grille planting border",
+   "kind": "reference feature",
+   "source": "photo/aerial interpretation; about 1 m",
+   "evidence": [
+    "IMG_3152.jpg"
+   ]
+  },
+  {
+   "id": "lane_walls.json:juan-gris-west-bed",
+   "name": "Juan Gris · West planting border",
+   "kind": "reference feature",
+   "source": "photo/aerial interpretation; about 1 m",
+   "evidence": [
+    "IMG_3153.jpg",
+    "IMG_3154.jpg",
+    "IMG_3155.jpg"
    ]
   },
   {
@@ -27478,10 +27528,28 @@
    "angleOffset": 31.2
   },
   {
+   "from": "photo:IMG_3134.jpg",
+   "to": "lane_walls.json:juan-gris-east-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3134.jpg",
+   "to": "lane_walls.json:juan-gris-east-screen",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3135.jpg",
    "to": "street:loira",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_3135.jpg",
+   "to": "lane_walls.json:juan-gris-east-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3135.jpg",
@@ -27500,6 +27568,12 @@
    "to": "street:loira",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_3136.jpg",
+   "to": "lane_walls.json:juan-gris-east-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3136.jpg",
@@ -27751,6 +27825,12 @@
   },
   {
    "from": "photo:IMG_3146.jpg",
+   "to": "lane_walls.json:juan-gris-middle-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3146.jpg",
    "to": "juan_gris_pergolas.json:juan-gris-pergola-middle",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -27766,6 +27846,12 @@
    "to": "street:loira",
    "relation": "camera-nearby",
    "gap": 2.2
+  },
+  {
+   "from": "photo:IMG_3147.jpg",
+   "to": "lane_walls.json:juan-gris-middle-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3147.jpg",
@@ -27856,6 +27942,12 @@
   },
   {
    "from": "photo:IMG_3152.jpg",
+   "to": "lane_walls.json:juan-gris-grille-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3152.jpg",
    "to": "juan_gris_pergolas.json:juan-gris-pergola-grille",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -27885,6 +27977,12 @@
    "relation": "possibly-in-view",
    "distance": 41.2,
    "angleOffset": 22.5
+  },
+  {
+   "from": "photo:IMG_3153.jpg",
+   "to": "lane_walls.json:juan-gris-west-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3153.jpg",
@@ -27920,6 +28018,12 @@
   },
   {
    "from": "photo:IMG_3154.jpg",
+   "to": "lane_walls.json:juan-gris-west-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3154.jpg",
    "to": "loira_boundary.json:loira-resort-wall",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -27937,6 +28041,12 @@
    "relation": "possibly-in-view",
    "distance": 40.9,
    "angleOffset": 29.9
+  },
+  {
+   "from": "photo:IMG_3155.jpg",
+   "to": "lane_walls.json:juan-gris-west-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3155.jpg",

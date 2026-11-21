@@ -3580,6 +3580,19 @@
      "state": "open"
     },
     {
+     "id": "photo-juan-gris-house-side",
+     "area": "north-lanes",
+     "kind": "photo",
+     "ask": "From the Alberto junction, photograph both directions along the house side of Juan Gris. Include the kerb ends, side passages and pergola posts in overlapping views.",
+     "why": "Locate the endpoints and setbacks of the stepped wall and planting borders relative to the tiled walk.",
+     "photoRequest": "juan-gris-house-side",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
      "id": "photo-alberto",
      "area": "north-lanes",
      "kind": "photo",
@@ -7025,6 +7038,19 @@
       "IMG_2204.jpg",
       "IMG_2205.jpg"
      ],
+     "state": "open"
+    },
+    {
+     "id": "photo-juan-gris-house-side",
+     "area": "north-lanes",
+     "kind": "photo",
+     "ask": "From the Alberto junction, photograph both directions along the house side of Juan Gris. Include the kerb ends, side passages and pergola posts in overlapping views.",
+     "why": "Locate the endpoints and setbacks of the stepped wall and planting borders relative to the tiled walk.",
+     "photoRequest": "juan-gris-house-side",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
      "state": "open"
     },
     {

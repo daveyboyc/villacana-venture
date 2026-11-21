@@ -11,6 +11,26 @@
   "needs-photos": "Worth improving; more photos wanted."
  },
  "features": {
+  "lane_walls.json:juan-gris-east-hedge": {
+   "level": "estimated",
+   "why": "The hedge shows over the lowered white wall east of the first pergola. Exact endpoints, setback and height are unmeasured."
+  },
+  "lane_walls.json:juan-gris-east-screen": {
+   "level": "estimated",
+   "why": "The white garden wall steps up beside the hedge near the signed end. Exact endpoints, setback and height are unmeasured."
+  },
+  "lane_walls.json:juan-gris-middle-bed": {
+   "level": "estimated",
+   "why": "A narrow white kerb holds back the bed beside the middle span. Exact endpoints, setback and height are unmeasured."
+  },
+  "lane_walls.json:juan-gris-grille-bed": {
+   "level": "estimated",
+   "why": "Planting follows a low white kerb opposite the Loira grille. Exact endpoints, setback and height are unmeasured."
+  },
+  "lane_walls.json:juan-gris-west-bed": {
+   "level": "estimated",
+   "why": "A low white wall contains the bed before the western span. Exact endpoints, setback and height are unmeasured."
+  },
   "juan_gris_pergolas.json:juan-gris-pergola-east": {
    "level": "estimated",
    "why": "The open timber span is visible in the Juan Gris photo sequence. Beam spacing, heights and supports are approximated along the traced lane."

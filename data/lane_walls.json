@@ -1,6 +1,6 @@
 {
   "id": "lane-walls",
-  "name": "Garden and patio walls along Calle Elena, Calle Jorge and Calle Cervantes",
+  "name": "Garden and patio walls along Calle Elena, Calle Jorge and Calle Cervantes and Calle de Juan Gris",
   "checkedAt": "2026-11-16",
   "about": "Walls that close gardens and patios off from Calle Elena and Calle Jorge where the model left the ground open (Dave, 2026-11-16: the walls need adding around Calle Jorge and Elena). Each wall is a polyline of [x, z] model metres, built as a white rendered wall with a slightly wider coping, solid for collision, with closed timber doors where a photo shows one. 'raise' lifts the top by the lane's own height above the site ground (Calle Jorge's path stands 0.3 m above it, src/jorge-lane.ts), so 'height' is read from the path the photos were taken on. Levels and reasons are in data/confidence.json. Not a property survey: positions are photo pins, the registry and the Esri aerial, good to about 1 m.",
   "walls": [
@@ -321,6 +321,129 @@
         "IMG_2969.jpg"
       ],
       "basis": "Encloses the walled patio between the house (registry 6265201UF1366N_part4, corner -150.01, 48.72), Elena north and Cervantes. IMG_2455, IMG_2800 and IMG_2965-2967 (on Cervantes, looking west) show the white wall facing the Elena north lane behind the raised fan-palm bed, with the CALLE DE ELENA tiles from the corner to a brown double door, the lantern on the Cervantes face at the corner, and about 2 m of plain wall north of the door to the house; IMG_2463 and IMG_2360 show it turning west along Cervantes behind the hedge to the Elena 24 garden door. The Elena face continues the registry house-front line (2.24 m west of the Elena north centreline); the Cervantes face runs 2.07 m north of the Cervantes axis to the garden-door wall (2.0 m) and the patio partition (2.14 m). Structure review (docs/reviews/elena-north-corner/STRUCTURE-REVIEW.md), rough camera fits of IMG_2455, IMG_2800, IMG_2966 and IMG_2967 to the bed corner agreeing to about 0.2 m: top about 2.8 m (coping 2.65 m in IMG_2966, wall above the 2.5-2.85 m door head), door about 0.8 m wide between its pilasters with its centre 1.85 m from the corner. Estimated to about 0.5 m in plan; no solved camera sees it."
+    },
+    {
+      "id": "juan-gris-east-hedge",
+      "name": "Juan Gris · East hedge wall",
+      "area": "north-lanes",
+      "points": [
+        [
+          -126.8,
+          -56.581
+        ],
+        [
+          -122.4,
+          -59.108
+        ]
+      ],
+      "height": 0.78,
+      "thickness": 0.2,
+      "raise": 0,
+      "doors": [],
+      "evidence": [
+        "IMG_3134.jpg",
+        "IMG_3135.jpg",
+        "IMG_3136.jpg"
+      ],
+      "basis": "The hedge shows over the lowered white wall east of the first pergola. Stations and dimensions are estimated from the unsolved sequence along the mapped paving."
+    },
+    {
+      "id": "juan-gris-east-screen",
+      "name": "Juan Gris · East garden screen",
+      "area": "north-lanes",
+      "points": [
+        [
+          -122.4,
+          -59.108
+        ],
+        [
+          -119.7,
+          -60.685
+        ]
+      ],
+      "height": 1.78,
+      "thickness": 0.2,
+      "raise": 0,
+      "doors": [],
+      "evidence": [
+        "IMG_3134.jpg"
+      ],
+      "basis": "The white garden wall steps up beside the hedge near the signed end. Stations and dimensions are estimated from the unsolved sequence along the mapped paving."
+    },
+    {
+      "id": "juan-gris-middle-bed",
+      "name": "Juan Gris · Middle planting border",
+      "area": "north-lanes",
+      "points": [
+        [
+          -162.75,
+          -33.895
+        ],
+        [
+          -160.0,
+          -35.912
+        ]
+      ],
+      "height": 0.26,
+      "thickness": 0.15,
+      "raise": 0,
+      "doors": [],
+      "evidence": [
+        "IMG_3146.jpg",
+        "IMG_3147.jpg"
+      ],
+      "basis": "A narrow white kerb holds back the bed beside the middle span. Stations and dimensions are estimated from the unsolved sequence along the mapped paving.",
+      "kind": "planting-border"
+    },
+    {
+      "id": "juan-gris-grille-bed",
+      "name": "Juan Gris · Verge grille planting border",
+      "area": "north-lanes",
+      "points": [
+        [
+          -190.0,
+          -16.99
+        ],
+        [
+          -185.7,
+          -19.636
+        ]
+      ],
+      "height": 0.24,
+      "thickness": 0.15,
+      "raise": 0,
+      "doors": [],
+      "evidence": [
+        "IMG_3152.jpg"
+      ],
+      "basis": "Planting follows a low white kerb opposite the Loira grille. Stations and dimensions are estimated from the unsolved sequence along the mapped paving.",
+      "kind": "planting-border"
+    },
+    {
+      "id": "juan-gris-west-bed",
+      "name": "Juan Gris · West planting border",
+      "area": "north-lanes",
+      "points": [
+        [
+          -196.2,
+          -14.147
+        ],
+        [
+          -193.1,
+          -15.285
+        ]
+      ],
+      "height": 0.32,
+      "thickness": 0.16,
+      "raise": 0,
+      "doors": [],
+      "evidence": [
+        "IMG_3153.jpg",
+        "IMG_3154.jpg",
+        "IMG_3155.jpg"
+      ],
+      "basis": "A low white wall contains the bed before the western span. Stations and dimensions are estimated from the unsolved sequence along the mapped paving.",
+      "kind": "planting-border"
     }
   ]
 }

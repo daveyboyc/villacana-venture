@@ -1961,7 +1961,7 @@
     "generated": 249
    },
    "placement": {
-    "features": 7,
+    "features": 12,
     "verified": 0,
     "disputed": 1
    },
@@ -1977,7 +1977,7 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 7,
+    "estimated": 12,
     "inferred": 0,
     "registry": 0,
     "gaps": 3
@@ -1987,9 +1987,9 @@
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.8 m.",
     "Photos: 35, 35 placed; no camera solved.",
     "Facades: 4 of 253 kit parts traced from photos.",
-    "How sure: 0 photographed, 7 estimated, 0 inferred, 3 known gaps.",
-    "Placement: 0 of 7 features verified.",
-    "Model loop: 0 tracked findings accepted, 1 still open; 3 evidence requests. This is not whole-area acceptance."
+    "How sure: 0 photographed, 12 estimated, 0 inferred, 3 known gaps.",
+    "Placement: 0 of 12 features verified.",
+    "Model loop: 0 tracked findings accepted, 1 still open; 4 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
@@ -2017,6 +2017,19 @@
       "sources": [
        "IMG_3150.jpg"
       ],
+      "state": "open"
+     },
+     {
+      "id": "photo-juan-gris-house-side",
+      "area": "north-lanes",
+      "kind": "photo",
+      "ask": "From the Alberto junction, photograph both directions along the house side of Juan Gris. Include the kerb ends, side passages and pergola posts in overlapping views.",
+      "why": "Locate the endpoints and setbacks of the stepped wall and planting borders relative to the tiled walk.",
+      "photoRequest": "juan-gris-house-side",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
       "state": "open"
      },
      {
@@ -2050,7 +2063,7 @@
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 3 spots",
+    "headline": "Photos needed: 4 spots",
     "requests": [
      {
       "id": "alberto",
@@ -2081,6 +2094,22 @@
       "ask": "Calle Isabel: one photo along the lane from the Elena end.",
       "why": "no photos at all in the north lanes",
       "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "juan-gris-house-side",
+      "at": [
+       -155,
+       -40
+      ],
+      "look": [
+       -164,
+       -34
+      ],
+      "ask": "From the Alberto junction, photograph both directions along the house side of Juan Gris. Include the kerb ends, side passages and pergola posts in overlapping views.",
+      "why": "Locate the endpoints and setbacks of the stepped wall and planting borders relative to the tiled walk.",
+      "priority": 2,
       "state": "open",
       "photos": []
      },
@@ -3172,7 +3201,7 @@
     "generated": 2452
    },
    "placement": {
-    "features": 529,
+    "features": 534,
     "verified": 0,
     "disputed": 56
    },
@@ -3401,7 +3430,7 @@
    },
    "confidence": {
     "photographed": 95,
-    "estimated": 183,
+    "estimated": 188,
     "inferred": 19,
     "registry": 232,
     "gaps": 41
@@ -3411,9 +3440,9 @@
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 655, 635 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 95 photographed, 183 estimated, 19 inferred, 41 known gaps.",
-    "Placement: 0 of 529 features verified, 53 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 27 still open; 48 evidence requests. This is not whole-area acceptance."
+    "How sure: 95 photographed, 188 estimated, 19 inferred, 41 known gaps.",
+    "Placement: 0 of 534 features verified, 53 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 27 still open; 49 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
@@ -3521,6 +3550,19 @@
        "IMG_2204.jpg",
        "IMG_2205.jpg"
       ],
+      "state": "open"
+     },
+     {
+      "id": "photo-juan-gris-house-side",
+      "area": "north-lanes",
+      "kind": "photo",
+      "ask": "From the Alberto junction, photograph both directions along the house side of Juan Gris. Include the kerb ends, side passages and pergola posts in overlapping views.",
+      "why": "Locate the endpoints and setbacks of the stepped wall and planting borders relative to the tiled walk.",
+      "photoRequest": "juan-gris-house-side",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
       "state": "open"
      },
      {
@@ -4111,7 +4153,7 @@
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 38 spots",
+    "headline": "Photos needed: 39 spots",
     "requests": [
      {
       "id": "alberto",
@@ -4541,6 +4583,22 @@
       ],
       "ask": "Walk Calle Jorge from the white gateway near the Dalí car park to the bench near the east end, one photo along the lane every 15 m, one of the gateway itself from each side, and one of each side garden wall.",
       "why": "The lane is photographed from the Dalí car park to the gateway (about 28 m) and over its east 50 m; between them it keeps the generic ribbon (gap:jorge-west)",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "juan-gris-house-side",
+      "at": [
+       -155,
+       -40
+      ],
+      "look": [
+       -164,
+       -34
+      ],
+      "ask": "From the Alberto junction, photograph both directions along the house side of Juan Gris. Include the kerb ends, side passages and pergola posts in overlapping views.",
+      "why": "Locate the endpoints and setbacks of the stepped wall and planting borders relative to the tiled walk.",
       "priority": 2,
       "state": "open",
       "photos": []
