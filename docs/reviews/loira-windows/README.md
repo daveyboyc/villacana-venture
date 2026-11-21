@@ -15,3 +15,7 @@ The existing Loira wall alignment and LiDAR ground datum are retained.
 IMG_3146–3148 may show an additional framed feature near a planter. The photos
 do not resolve its far jamb, sill or grille. The exterior photo request remains
 open for this candidate and for the obscured sections toward Dalí.
+
+[Inspect Layout from Loira](inspect-layout.jpg) shows all four grilles in
+sequence. Browser geometry checks found each opening clear through the wall,
+with a solid sill and fixed ironwork.
