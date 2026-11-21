@@ -6,9 +6,9 @@
   "needs-review": 271,
   "suggested": 364,
   "photos": 639,
-  "features": 521,
-  "photosCitedByModel": 234,
-  "modelFeaturesWithPhotoCitations": 265
+  "features": 525,
+  "photosCitedByModel": 239,
+  "modelFeaturesWithPhotoCitations": 268
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -23887,7 +23887,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "loira_boundary.json:loira-resort-wall",
+    "ground_plan_north_lanes.json:juan-gris-paving"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -117.4,
@@ -24159,7 +24162,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "loira_boundary.json:loira-resort-wall",
+    "ground_plan_north_lanes.json:juan-gris-paving"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -138.8,
@@ -24483,7 +24489,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "loira_boundary.json:loira-resort-wall",
+    "ground_plan_north_lanes.json:loira-window-verge"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -181.1,
@@ -24502,7 +24511,10 @@
    ],
    "nearby": [],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "loira_boundary.json:loira-resort-wall",
+    "ground_plan_north_lanes.json:loira-window-verge"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -180.6,
@@ -24564,7 +24576,10 @@
      "angleOffset": 22.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "loira_boundary.json:loira-resort-wall",
+    "ground_plan_north_lanes.json:juan-gris-paving"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -193.3,

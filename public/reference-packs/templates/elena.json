@@ -18,6 +18,11 @@
   "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
   "candidateSources": [
     {
+      "id": "ELENA-ROOF-2026-11-17.jpg",
+      "private": false,
+      "path": "public/photos-ref/ELENA-ROOF-2026-11-17.jpg"
+    },
+    {
       "id": "IMG_2196.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2196.jpg"
@@ -576,6 +581,26 @@
       "id": "IMG_2975.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2975.jpg"
+    },
+    {
+      "id": "IMG_3170.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3170.jpg"
+    },
+    {
+      "id": "IMG_3171.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3171.jpg"
+    },
+    {
+      "id": "IMG_3172.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3172.jpg"
+    },
+    {
+      "id": "IMG_3173.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3173.jpg"
     }
   ],
   "features": [],

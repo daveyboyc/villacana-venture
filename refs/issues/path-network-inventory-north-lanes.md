@@ -6,8 +6,8 @@ Task `path-network-inventory-north-lanes` · area **Loira, Bolivia, Alberto and 
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/north-lanes.md` and the contact sheet `reference/contact-sheets/north-lanes.jpg`
-- docs: `docs/STREET_LAYOUT.md`
-- data: `data/street_layout.json`
+- docs: `docs/STREET_LAYOUT.md`, `docs/reviews/calle-loira/README.md`
+- data: `data/street_layout.json`, `data/loira_boundary.json`, `data/ground_plan_north_lanes.json`
 
 ## Photos to build from
 

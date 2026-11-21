@@ -808,6 +808,11 @@
       "path": "public/photos-ref/IMG_2984.jpg"
     },
     {
+      "id": "IMG_3067.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3067.jpg"
+    },
+    {
       "id": "ref:apple-maps/04-top-down-south-half.png",
       "private": true,
       "path": "reference/apple-maps/04-top-down-south-half.png"

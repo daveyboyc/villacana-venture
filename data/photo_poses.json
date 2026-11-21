@@ -4435,6 +4435,74 @@
     "f": 1201.8
    },
    "initialBasis": "phone pin; reviewed looksAt; eye 1.5 m above the lane (model ground +0.95 m); tilted 10 degrees down by eye; 26 mm-equivalent lens from EXIF"
+  },
+  "IMG_3133.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -117.4,
+    "y": 2.93,
+    "z": -64.6,
+    "yaw": 233.6,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "phone pin; reviewed looksAt; ground eye height; 26 mm-equivalent lens from EXIF"
+  },
+  "IMG_3141.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -138.8,
+    "y": 2.72,
+    "z": -50.4,
+    "yaw": 239.4,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "phone pin; reviewed looksAt; ground eye height; 26 mm-equivalent lens from EXIF"
+  },
+  "IMG_3150.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -181.1,
+    "y": 2.8,
+    "z": -23.8,
+    "yaw": 315.0,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "phone pin; reviewed looksAt; ground eye height; 26 mm-equivalent lens from EXIF"
+  },
+  "IMG_3153.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -193.3,
+    "y": 2.82,
+    "z": -15.5,
+    "yaw": 236.1,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "phone pin; reviewed looksAt; ground eye height; 26 mm-equivalent lens from EXIF"
   }
  }
 }

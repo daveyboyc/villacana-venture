@@ -2,6 +2,25 @@
   "about": "Persistent photo-to-model findings. Open findings are comparison work, not permission to move geometry. Never delete history or close from a software pass. See docs/CONTINUOUS_LOOP.md.",
   "discrepancies": [
     {
+      "id": "loira-outer-frontage",
+      "area": "north-lanes",
+      "kind": "placement",
+      "description": "The outside face of the resort wall, the opposite frontage and the western continuation are only partly visible. The width, opening station and wall foot cannot be fixed from the current unsolved cameras.",
+      "sources": [
+        "IMG_3150.jpg",
+        "IMG_3151.jpg",
+        "map:ground"
+      ],
+      "features": [
+        "loira_boundary.json:loira-resort-wall"
+      ],
+      "task": "calle-loira",
+      "status": "open",
+      "requests": [
+        "loira-outside-wall"
+      ]
+    },
+    {
       "id": "north-deck-shape",
       "area": "north-pool",
       "kind": "placement",

@@ -124,8 +124,10 @@ ready: 0, needs-evidence: 0, needs-source-access: 0, awaiting-review: 0, accepte
 
 ## Loira, Bolivia, Alberto and Isabel
 
-ready: 0, needs-evidence: 0, needs-source-access: 0, awaiting-review: 0, accepted: 0
+ready: 0, needs-evidence: 1, needs-source-access: 0, awaiting-review: 0, accepted: 0
 
+- **needs-evidence** `loira-outer-frontage`: The outside face of the resort wall, the opposite frontage and the western continuation are only partly visible. The width, opening station and wall foot cannot be fixed from the current unsolved cameras.
+- **photo open** `loira-outside-wall`: From the Calle Loira and Pintor Dalí bend, photograph east along the resort wall with both road edges in frame. From outside the Juan Gris grille, photograph the wall square-on with the wall foot and top, then turn to photograph the opposite frontage and grass edge. Why: Locate the wall ends, road-side grass and openings, and obtain a registered view of the wall and the opposite frontage.
 - **photo open** `photo-alberto`: Calle Alberto: one photo along the lane from each end. Why: no photos at all in the north lanes
 - **photo open** `photo-isabel`: Calle Isabel: one photo along the lane from the Elena end. Why: no photos at all in the north lanes
 - Ready task: `ground-plan-north-lanes` — Loira, Bolivia, Alberto and Isabel: smooth paths, patios and green spaces with their edges and boundaries
@@ -182,8 +184,9 @@ ready: 0, needs-evidence: 0, needs-source-access: 0, awaiting-review: 0, accepte
 
 ## The whole resort
 
-ready: 19, needs-evidence: 4, needs-source-access: 0, awaiting-review: 3, accepted: 0
+ready: 19, needs-evidence: 5, needs-source-access: 0, awaiting-review: 3, accepted: 0
 
+- **needs-evidence** `loira-outer-frontage`: The outside face of the resort wall, the opposite frontage and the western continuation are only partly visible. The width, opening station and wall foot cannot be fixed from the current unsolved cameras.
 - **awaiting-review** `north-deck-shape`: Compare the current water/construction/deck edges separately, including the squared deck tongue east of the steps. The approved loop PRD records this difference; measure the current model before correcting it.
 - **ready** `north-pool-fittings`: Inventory and compare the white pool-side box, parasols, plants and trees against the current Inspect Details render. Record individual missing or misplaced items before building; split this finding by feature as needed.
 - **needs-evidence** `north-west-terrace-extents`: Resolve the northwest terrace/stair position and visible floor limits. Existing records flag uncertain concealed ends and a possible eastward offset; do not treat these as a measured correction.
@@ -210,6 +213,7 @@ ready: 19, needs-evidence: 4, needs-source-access: 0, awaiting-review: 3, accept
 - **ready** `elena-north-tree-bed-2-south-face`: Structure review of the Elena north corner (18 November 2026): in IMG_2800 and IMG_2799 the kerb corner of the hedged tree bed east of the mouth lines up with the corner bed's Cervantes face (about 0.9 m north of the Cervantes axis); the model has its south face about 0.6 m further north (1.5 m). Not moved: an existing feature outside this task, from rough fits only.
 - **ready** `cervantes-garden-door-wall-height`: The Elena 24 garden-door wall on Cervantes is modelled 1.9 m high; IMG_2463 reads about 2.4-2.5 m beside the door, stepping up at a pier to 2.6-2.7 m where it meets the corner patio wall (structure review of the Elena north corner, 18 November 2026). Not changed here.
 - **ready** `elena-north-tree-bed-2-magnolia`: The magnolia with seed cones whose crown shows over the CALLE DE ELENA wall (IMG_2455, IMG_2965) stands in the hedged tree bed east of the Elena north mouth (bearing about 283 degrees from IMG_2455's fitted camera, against 289 for elena-north-tree-bed-2), above its lantana; its limbs reach west over the wall and it is most likely the dark canopy over the corner pocket on the aerial. The model has a pollarded tree there. A tree first placed inside the corner patio was removed in the detail review: the house's south gallery shows clear above the wall where it stood.
+- **photo open** `loira-outside-wall`: From the Calle Loira and Pintor Dalí bend, photograph east along the resort wall with both road edges in frame. From outside the Juan Gris grille, photograph the wall square-on with the wall foot and top, then turn to photograph the opposite frontage and grass edge. Why: Locate the wall ends, road-side grass and openings, and obtain a registered view of the wall and the opposite frontage.
 - **photo open** `north-west-stair-views`: Side-on photo from the lawn path of the northwest tiled stair and curved wall, plus a view from the top looking down, showing the floor joins and stair ends. Why: Resolve the stair/terrace position and height transition without guessing concealed limits.
 - **map open** `north-pool-ground-boundaries`: A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead. Why: Existing aerials and elevated photos do not establish every concealed patio boundary or access width. This flags those limits only; visible pool and facade work can continue.
 - **photo open** `north-pool-gated-patio-gates`: Ground-level photos from the north pool's west path looking south at the two white patio walls with brown gates (south of the hibiscus hedge, west of the station roof), showing each gate's foot, the wall ends and a known width such as a door leaf. Why: From the roof the door feet are hidden by planting, so the gates' positions along the walls and the walls' heights cannot be cast through the solved station camera.

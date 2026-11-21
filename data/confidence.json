@@ -11,6 +11,22 @@
   "needs-photos": "Worth improving; more photos wanted."
  },
  "features": {
+  "loira_boundary.json:loira-resort-wall": {
+   "level": "estimated",
+   "why": "Photos establish wall and arch form; aerial trace and unsolved camera pins supply approximate extents and opening position."
+  },
+  "ground_plan_north_lanes.json:juan-gris-paving": {
+   "level": "estimated",
+   "why": "Four terracotta courses visible inside the wall; extents and width inferred from the registry gap and tile count."
+  },
+  "ground_plan_north_lanes.json:loira-west-verge": {
+   "level": "inferred",
+   "why": "Broad green triangle visible on the georeferenced aerial, without a ground-level view."
+  },
+  "ground_plan_north_lanes.json:loira-window-verge": {
+   "level": "estimated",
+   "why": "Grass seen through the window in IMG_3150/3151; ends obscured in the aerial."
+  },
   "elena_lane_paving.json:elena-north-three-column": {
    "level": "photographed",
    "why": "Three tile columns and grey margins seen in IMG_2201 and confirmed by the owner."
@@ -857,6 +873,19 @@
   }
  },
  "gaps": [
+  {
+    "id": "gap:loira-outer-frontage",
+    "name": "Calle Loira opposite frontage and western wall extent",
+    "at": [
+      -211,
+      -19
+    ],
+    "photos": [
+      "IMG_3150.jpg"
+    ],
+    "why": "A window view confirms the opposite wall exists but does not locate its ends. The western wall foot is obscured in the aerial.",
+    "decision": "needs-photos"
+  },
   {
    "id": "gap:main-pool-glass-fence",
    "name": "Glass fence around the main pool",

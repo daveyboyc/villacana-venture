@@ -442,13 +442,17 @@
     ]
    },
    "docs": [
-    "docs/STREET_LAYOUT.md"
+    "docs/STREET_LAYOUT.md",
+     "docs/reviews/calle-loira/README.md"
    ],
    "data": [
-    "data/street_layout.json"
+    "data/street_layout.json",
+     "data/loira_boundary.json",
+     "data/ground_plan_north_lanes.json"
    ],
    "src": [],
    "notes": [
+    "The asphalt Calle Loira and the terracotta Calle de Juan Gris are separate. IMG_3133 reads the Juan Gris plaque and IMG_3150 looks out through the shared wall to Loira. The unsolved photos leave the west wall limit and opposite frontage open.",
     "Open question (8 Nov): the CALLE ALBERTO 22 40 plaque is on a porch off Calle Eva east (IMG_2792), far from the street labelled Calle Alberto here (Google layout, 12 Oct). Either the name covers more than this lane or the label is misplaced; not resolved."
    ]
   },

@@ -8778,5 +8778,91 @@
    64.5
   ],
   "subject": "porch floor off Calle de Miguel"
- }
+ },
+  "IMG_3133.jpg": {
+    "title": "Juan Gris street plaque and inside face of the Loira boundary",
+    "shows": [
+      "north-lanes"
+    ],
+    "viewpoint": "ground",
+    "useFor": [
+      "layout",
+      "materials",
+      "signage"
+    ],
+    "looksAt": [
+      -125,
+      -59
+    ],
+    "subject": "White boundary wall and terracotta path",
+    "note": "Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved."
+  },
+  "IMG_3141.jpg": {
+    "title": "Juan Gris: terracotta lane alongside the white outer wall",
+    "shows": [
+      "north-lanes"
+    ],
+    "viewpoint": "ground",
+    "useFor": [
+      "layout",
+      "materials"
+    ],
+    "looksAt": [
+      -153,
+      -42
+    ],
+    "subject": "Terracotta paving between the white wall and houses",
+    "note": "Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved."
+  },
+  "IMG_3150.jpg": {
+    "title": "Juan Gris barred arch looking over the Loira verge and asphalt",
+    "shows": [
+      "north-lanes"
+    ],
+    "viewpoint": "ground",
+    "useFor": [
+      "layout",
+      "materials"
+    ],
+    "looksAt": [
+      -181.4,
+      -24.1
+    ],
+    "subject": "Barred opening, sill and grass outside",
+    "note": "Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved."
+  },
+  "IMG_3151.jpg": {
+    "title": "Alternate close view through the Juan Gris grille",
+    "shows": [
+      "north-lanes"
+    ],
+    "viewpoint": "ground",
+    "useFor": [
+      "layout",
+      "materials"
+    ],
+    "looksAt": [
+      -181.4,
+      -24.1
+    ],
+    "subject": "Barred opening and opposite frontage",
+    "note": "Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved."
+  },
+  "IMG_3153.jpg": {
+    "title": "Western Juan Gris path with arched grille and raised sill",
+    "shows": [
+      "north-lanes"
+    ],
+    "viewpoint": "ground",
+    "useFor": [
+      "layout",
+      "materials"
+    ],
+    "looksAt": [
+      -200,
+      -11
+    ],
+    "subject": "Terracotta paving, wall and grille along Juan Gris",
+    "note": "Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved."
+  }
 }

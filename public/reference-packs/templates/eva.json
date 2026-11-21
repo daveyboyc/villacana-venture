@@ -306,6 +306,21 @@
       "id": "IMG_2793.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2793.jpg"
+    },
+    {
+      "id": "IMG_3005.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3005.jpg"
+    },
+    {
+      "id": "IMG_3006.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3006.jpg"
+    },
+    {
+      "id": "IMG_3007.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3007.jpg"
     }
   ],
   "features": [],

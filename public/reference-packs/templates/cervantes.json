@@ -18,6 +18,11 @@
   "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
   "candidateSources": [
     {
+      "id": "ELENA-ROOF-2026-11-17.jpg",
+      "private": false,
+      "path": "public/photos-ref/ELENA-ROOF-2026-11-17.jpg"
+    },
+    {
       "id": "IMG_2196.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2196.jpg"
@@ -386,6 +391,66 @@
       "id": "IMG_2967.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2967.jpg"
+    },
+    {
+      "id": "IMG_3084.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3084.jpg"
+    },
+    {
+      "id": "IMG_3086.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3086.jpg"
+    },
+    {
+      "id": "IMG_3087.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3087.jpg"
+    },
+    {
+      "id": "IMG_3088.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3088.jpg"
+    },
+    {
+      "id": "IMG_3090.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3090.jpg"
+    },
+    {
+      "id": "IMG_3091.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3091.jpg"
+    },
+    {
+      "id": "IMG_3092.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3092.jpg"
+    },
+    {
+      "id": "IMG_3093.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3093.jpg"
+    },
+    {
+      "id": "IMG_3094.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3094.jpg"
+    },
+    {
+      "id": "IMG_3095.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3095.jpg"
+    },
+    {
+      "id": "IMG_3096.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3096.jpg"
+    },
+    {
+      "id": "IMG_3097.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3097.jpg"
     }
   ],
   "features": [],

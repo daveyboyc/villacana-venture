@@ -102,6 +102,7 @@ Street-name plaques, house numbers and other readable signs.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_3133.jpg](../../public/photos-ref/IMG_3133.jpg) | ground | layout, materials, signage | Juan Gris street plaque and inside face of the Loira boundary **Looks at:** White boundary wall and terracotta path. **Note:** Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved. _Used by: loira_boundary.json:loira-resort-wall, ground_plan_north_lanes.json:juan-gris-paving._ |
 | [IMG_2448.jpg](../../public/photos-ref/IMG_2448.jpg) | ground | signage, layout, materials, levels | Cervantes/Alberto junction: signed wall and paving change, path with three white steps ahead **Looks at:** Lane beyond the Alberto crossing with three white steps. **Note:** Pin is on the blue street line at the Alberto label, but the photo shows the Alberto sign on the wall; the street ID depends on which map street is right, so treat the area as cervantes plus north-lanes. looksAt is estimated 20 m along heading 243. _Used by: lane_walls.json:cervantes-south-garden-wall-alberto, cervantes_lane_edges.json:cervantes-alberto-corner-bed, steps:cervantes-alberto-steps._ |
 
 ## Calle Eva

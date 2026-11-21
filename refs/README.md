@@ -16,7 +16,7 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 | Calle Miguel de Cervantes | 87 | 86 | [areas/cervantes.md](areas/cervantes.md) |
 | Calle Pintor Dalí | 68 | 68 | [areas/dali.md](areas/dali.md) |
 | Pintor Picasso and the car park | 25 | 4 | [areas/picasso.md](areas/picasso.md) |
-| Loira, Bolivia, Alberto and Isabel | 35 | 2 | [areas/north-lanes.md](areas/north-lanes.md) |
+| Loira, Bolivia, Alberto and Isabel | 35 | 7 | [areas/north-lanes.md](areas/north-lanes.md) |
 | Calle Eva | 61 | 61 | [areas/eva.md](areas/eva.md) |
 | Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 162 | 162 | [areas/seaward-lanes.md](areas/seaward-lanes.md) |
 | Barraka and the beach | 88 | 79 | [areas/barraka-beach.md](areas/barraka-beach.md) |
@@ -25,12 +25,12 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 
 | Topic | Reviewed references | Brief |
 | --- | --- | --- |
-| Layout | 486 | [topics/layout.md](topics/layout.md) |
+| Layout | 491 | [topics/layout.md](topics/layout.md) |
 | Levels and slopes | 91 | [topics/levels.md](topics/levels.md) |
 | Facades and roofs | 260 | [topics/facades.md](topics/facades.md) |
-| Materials | 384 | [topics/materials.md](topics/materials.md) |
+| Materials | 389 | [topics/materials.md](topics/materials.md) |
 | Planting | 283 | [topics/planting.md](topics/planting.md) |
-| Signs | 74 | [topics/signage.md](topics/signage.md) |
+| Signs | 75 | [topics/signage.md](topics/signage.md) |
 | Views | 106 | [topics/view.md](topics/view.md) |
 
 ## Find one reference
@@ -38,11 +38,11 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 Use the canonical app root (`/?view=map`) and search a photo ID, place or visible subject. The same complete index, including unbundled `reference/` and unplaced sources, is `public/reference-index.json`. Agents can run `python3 scripts/find_reference.py boat` or `python3 scripts/find_reference.py --area north-pool --json`. Each entry gives a stable map link, source path, camera uncertainty, separate subject context, citations and current checks. Open full images before editing; images in `reference/` are not bundled in the deployed site.
 
 
-670 references: 596 reviewed, 74 with areas suggested only from the camera position.
+670 references: 601 reviewed, 69 with areas suggested only from the camera position.
 
 Here “reviewed references” means content/area tags were inspected; it does not certify model placement. Placement approval is separate from photo diagnostics: see [graph.json](graph.json) v2, [placement records](../data/placement_reviews.json) and [placement policy](../docs/PLACEMENT_VERIFICATION.md). Citation links and software results do not grant placement approval. Open discrepancies block it.
 
-Photo checks (`data/photo_checks.json`): 173 photo-check records, 55 match, 46 differ. 28 of 43 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).
+Photo checks (`data/photo_checks.json`): 177 photo-check records, 55 match, 46 differ. 28 of 43 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).
 
 Continuous build/validation work and scoped evidence requests: [LOOP.md](LOOP.md).
 

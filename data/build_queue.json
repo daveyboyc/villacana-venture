@@ -2,6 +2,37 @@
  "about": "Build tasks for agents. One task = one branch = one PR. Fields: area (data/areas.json id), priority 1 (first) to 3, kind, photos to build from (public/photos-ref), build (what to make), avoid (what not to do), accept (checks that must pass, beyond the standard set in docs/HANDOVER.md), dependsOn (task ids), status open | in-progress | done, owner (agent or person working on it), issue (GitHub issue number in daveyboyc/villacana-venture; close it from the task's PR). scripts/build_references.py turns this into refs/QUEUE.md, per-area task lists, graph nodes and issue bodies in refs/issues/.",
  "tasks": [
   {
+   "id": "calle-loira",
+   "area": "north-lanes",
+   "priority": 2,
+   "kind": "detail",
+   "title": "Calle Loira resort boundary and the adjacent Juan Gris footpath",
+   "photos": [
+    "IMG_3133.jpg",
+    "IMG_3141.jpg",
+    "IMG_3150.jpg",
+    "IMG_3153.jpg"
+   ],
+   "build": "Model the visible resort-side wall, interior terracotta path and evidence-backed grass verges while retaining the existing Loira asphalt alignment.",
+   "avoid": "Do not invent the opposite frontage or hidden junction connections, or move the road, footprints or survey datum.",
+   "accept": [
+    "Review Layout and Show details in Inspect",
+    "Record estimated placement and request outside coverage"
+   ],
+   "features": [
+    "loira_boundary.json:loira-resort-wall",
+    "ground_plan_north_lanes.json:juan-gris-paving",
+    "ground_plan_north_lanes.json:loira-west-verge",
+    "ground_plan_north_lanes.json:loira-window-verge"
+   ],
+   "dependsOn": [
+    "ground-plan-framework"
+   ],
+   "notes": "Initial build is reviewable in Inspect. The wall and surface placement remain estimated pending the exterior photo request and solved-camera review.",
+   "status": "in-progress",
+   "owner": "Codex"
+  },
+  {
    "id": "elena-garden-door",
    "area": "elena",
    "priority": 2,

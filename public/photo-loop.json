@@ -3529,13 +3529,56 @@
    "name": "Loira, Bolivia, Alberto and Isabel",
    "counts": {
     "ready": 0,
-    "needs-evidence": 0,
+    "needs-evidence": 1,
     "needs-source-access": 0,
     "awaiting-review": 0,
     "accepted": 0
    },
-   "discrepancies": [],
+   "discrepancies": [
+    {
+     "id": "loira-outer-frontage",
+     "area": "north-lanes",
+     "kind": "placement",
+     "description": "The outside face of the resort wall, the opposite frontage and the western continuation are only partly visible. The width, opening station and wall foot cannot be fixed from the current unsolved cameras.",
+     "sources": [
+      "IMG_3150.jpg",
+      "IMG_3151.jpg",
+      "map:ground"
+     ],
+     "features": [
+      "loira_boundary.json:loira-resort-wall"
+     ],
+     "task": "calle-loira",
+     "status": "open",
+     "requests": [
+      "loira-outside-wall"
+     ],
+     "state": "needs-evidence",
+     "blockers": [
+      "From the Calle Loira and Pintor Dalí bend, photograph east along the resort wall with both road edges in frame. From outside the Juan Gris grille, photograph the wall square-on with the wall foot and top, then turn to photograph the opposite frontage and grass edge."
+     ]
+    }
+   ],
    "requests": [
+    {
+     "id": "loira-outside-wall",
+     "area": "north-lanes",
+     "kind": "photo",
+     "ask": "From the Calle Loira and Pintor Dalí bend, photograph east along the resort wall with both road edges in frame. From outside the Juan Gris grille, photograph the wall square-on with the wall foot and top, then turn to photograph the opposite frontage and grass edge.",
+     "why": "Locate the wall ends, road-side grass and openings, and obtain a registered view of the wall and the opposite frontage.",
+     "photoRequest": "loira-outside-wall",
+     "features": [
+      "loira_boundary.json:loira-resort-wall"
+     ],
+     "tasks": [
+      "calle-loira"
+     ],
+     "status": "open",
+     "sources": [
+      "IMG_3150.jpg"
+     ],
+     "state": "open"
+    },
     {
      "id": "photo-alberto",
      "area": "north-lanes",
@@ -6253,12 +6296,35 @@
    "name": "The whole resort",
    "counts": {
     "ready": 19,
-    "needs-evidence": 4,
+    "needs-evidence": 5,
     "needs-source-access": 0,
     "awaiting-review": 3,
     "accepted": 0
    },
    "discrepancies": [
+    {
+     "id": "loira-outer-frontage",
+     "area": "north-lanes",
+     "kind": "placement",
+     "description": "The outside face of the resort wall, the opposite frontage and the western continuation are only partly visible. The width, opening station and wall foot cannot be fixed from the current unsolved cameras.",
+     "sources": [
+      "IMG_3150.jpg",
+      "IMG_3151.jpg",
+      "map:ground"
+     ],
+     "features": [
+      "loira_boundary.json:loira-resort-wall"
+     ],
+     "task": "calle-loira",
+     "status": "open",
+     "requests": [
+      "loira-outside-wall"
+     ],
+     "state": "needs-evidence",
+     "blockers": [
+      "From the Calle Loira and Pintor Dalí bend, photograph east along the resort wall with both road edges in frame. From outside the Juan Gris grille, photograph the wall square-on with the wall foot and top, then turn to photograph the opposite frontage and grass edge."
+     ]
+    },
     {
      "id": "north-deck-shape",
      "area": "north-pool",
@@ -6862,6 +6928,25 @@
     }
    ],
    "requests": [
+    {
+     "id": "loira-outside-wall",
+     "area": "north-lanes",
+     "kind": "photo",
+     "ask": "From the Calle Loira and Pintor Dalí bend, photograph east along the resort wall with both road edges in frame. From outside the Juan Gris grille, photograph the wall square-on with the wall foot and top, then turn to photograph the opposite frontage and grass edge.",
+     "why": "Locate the wall ends, road-side grass and openings, and obtain a registered view of the wall and the opposite frontage.",
+     "photoRequest": "loira-outside-wall",
+     "features": [
+      "loira_boundary.json:loira-resort-wall"
+     ],
+     "tasks": [
+      "calle-loira"
+     ],
+     "status": "open",
+     "sources": [
+      "IMG_3150.jpg"
+     ],
+     "state": "open"
+    },
     {
      "id": "north-west-stair-views",
      "area": "north-pool",

@@ -1,3 +1,4 @@
+import loira from "../data/loira_boundary.json";
 import type { Skeleton, Vec2 } from './types';
 
 export type InspectionTarget = { id: string; name: string; group: string; points: Vec2[] };
@@ -20,6 +21,14 @@ export function inspectionTargets(skeleton: Skeleton): InspectionTarget[] {
     const section = road.id === 'elena-north' || road.id === 'silvia-north' ? ' · north' : road.id === 'elena-south' || road.id === 'silvia-south' ? ' · south' : road.id === 'eva-west-footpath' ? ' · west footpath' : '';
     targets.push({ id: road.id, name: road.name + section, group: 'Lanes & roads', points: road.points });
   }
+  const [west, east] = loira.points;
+  const length = Math.hypot(east[0] - west[0], east[1] - west[1]);
+  const nearWindow = (distance: number): Vec2 => [
+    west[0] + (east[0] - west[0]) * distance / length,
+    west[1] + (east[1] - west[1]) * distance / length,
+  ];
+  targets.push({ id: 'loira-boundary', name: 'Calle Loira · resort wall', group: 'Lanes & roads',
+    points: [nearWindow(loira.window.along - 4), nearWindow(loira.window.along + 4)] });
   // The full Calle Jorge line is too long for the fittings to read. This frames the photographed east end.
   const jorge = skeleton.streets.find((s) => s.id === 'jorge');
   if (jorge?.points && jorge.points.length >= 2) {
