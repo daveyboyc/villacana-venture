@@ -21,16 +21,17 @@ export function inspectionTargets(skeleton: Skeleton): InspectionTarget[] {
     const section = road.id === 'elena-north' || road.id === 'silvia-north' ? ' · north' : road.id === 'elena-south' || road.id === 'silvia-south' ? ' · south' : road.id === 'eva-west-footpath' ? ' · west footpath' : '';
     targets.push({ id: road.id, name: road.name + section, group: 'Lanes & roads', points: road.points });
   }
-  const [west, east] = loira.points.slice(loira.window.segment);
+  const [referenceOpening] = loira.windows;
+  const [west, east] = loira.points.slice(referenceOpening.segment);
   const length = Math.hypot(east[0] - west[0], east[1] - west[1]);
   const nearWindow = (distance: number): Vec2 => [
     west[0] + (east[0] - west[0]) * distance / length,
     west[1] + (east[1] - west[1]) * distance / length,
   ];
   targets.push({ id: 'loira-boundary', name: 'Calle Loira · resort wall', group: 'Lanes & roads',
-    points: [nearWindow(loira.window.along - 4), nearWindow(loira.window.along + 4)] });
+    points: [nearWindow(referenceOpening.along - 4), nearWindow(referenceOpening.along + 4)] });
   targets.push({ id: 'loira-dali', name: 'Calle Loira · Pintor Dalí bend', group: 'Lanes & roads',
-    points: loira.points.slice(0, loira.window.segment + 1) as Vec2[] });
+    points: loira.points.slice(0, referenceOpening.segment + 1) as Vec2[] });
   // The full Calle Jorge line is too long for the fittings to read. This frames the photographed east end.
   const jorge = skeleton.streets.find((s) => s.id === 'jorge');
   if (jorge?.points && jorge.points.length >= 2) {

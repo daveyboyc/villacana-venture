@@ -8864,5 +8864,90 @@
     ],
     "subject": "Terracotta paving, wall and grille along Juan Gris",
     "note": "Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved."
+  },
+  "IMG_3135.jpg": {
+    "title": "Juan Gris east wall opening, cropped reveal and tiled sill",
+    "shows": [
+      "north-lanes"
+    ],
+    "viewpoint": "ground",
+    "useFor": [
+      "layout",
+      "materials"
+    ],
+    "looksAt": [
+      -126.08,
+      -58.85
+    ],
+    "subject": "Juan Gris east wall opening, cropped reveal and tiled sill",
+    "note": "Subject station is estimated along the traced wall using the unsolved camera and its view down the lane."
+  },
+  "IMG_3142.jpg": {
+    "title": "Juan Gris middle wall opening beside raised planter",
+    "shows": [
+      "north-lanes"
+    ],
+    "viewpoint": "ground",
+    "useFor": [
+      "layout",
+      "materials"
+    ],
+    "looksAt": [
+      -144.77,
+      -47.94
+    ],
+    "subject": "Juan Gris middle wall opening beside raised planter",
+    "note": "Subject station is estimated along the traced wall using the unsolved camera and its view down the lane."
+  },
+  "IMG_3149.jpg": {
+    "title": "Juan Gris wall opening over the Loira grass verge",
+    "shows": [
+      "north-lanes"
+    ],
+    "viewpoint": "ground",
+    "useFor": [
+      "layout",
+      "materials"
+    ],
+    "looksAt": [
+      -181.42,
+      -24.13
+    ],
+    "subject": "Juan Gris wall opening over the Loira grass verge",
+    "note": "Subject station is estimated along the traced wall using the unsolved camera and its view down the lane."
+  },
+  "IMG_3154.jpg": {
+    "title": "Juan Gris west barred opening and low tiled threshold",
+    "shows": [
+      "north-lanes"
+    ],
+    "viewpoint": "ground",
+    "useFor": [
+      "layout",
+      "materials"
+    ],
+    "looksAt": [
+      -195.36,
+      -16.13
+    ],
+    "subject": "Juan Gris west barred opening and low tiled threshold",
+    "note": "Subject station is estimated along the traced wall using the unsolved camera and its view down the lane."
+  },
+  "IMG_3155.jpg": {
+    "title": "Alternate Juan Gris west opening view",
+    "shows": [
+      "north-lanes"
+    ],
+    "viewpoint": "ground",
+    "useFor": [
+      "layout",
+      "materials"
+    ],
+    "looksAt": [
+      -195.36,
+      -16.13
+    ],
+    "subject": "Alternate Juan Gris west opening view",
+    "note": "Subject station is estimated along the traced wall using the unsolved camera and its view down the lane."
   }
 }

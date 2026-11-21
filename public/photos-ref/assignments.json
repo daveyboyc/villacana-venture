@@ -7,7 +7,7 @@
   "suggested": 364,
   "photos": 639,
   "features": 525,
-  "photosCitedByModel": 239,
+  "photosCitedByModel": 244,
   "modelFeaturesWithPhotoCitations": 268
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
@@ -23958,7 +23958,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "loira_boundary.json:loira-resort-wall"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -126.3,
@@ -24197,7 +24199,9 @@
      "angleOffset": 14.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "loira_boundary.json:loira-resort-wall"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -142.8,
@@ -24463,7 +24467,9 @@
      "angleOffset": 34.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "loira_boundary.json:loira-resort-wall"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -179.1,
@@ -24609,7 +24615,9 @@
      "angleOffset": 28.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "loira_boundary.json:loira-resort-wall"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -194.0,
@@ -24639,7 +24647,9 @@
      "angleOffset": 29.9
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "loira_boundary.json:loira-resort-wall"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -193.7,
