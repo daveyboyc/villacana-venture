@@ -241,6 +241,13 @@ def features(s):
     det=json.loads((ROOT/'data/elena_junction_details.json').read_text()) # Elena junction planting, lamp and sign (Show details)
     loira=json.loads((ROOT/'data/loira_boundary.json').read_text())
     add('loira_boundary.json:'+loira['id'],loira['name'],'reference feature',loira['trust'],evidence=loira['evidence'],points=loira['points'])
+    juan_gris=json.loads((ROOT/'data/juan_gris_pergolas.json').read_text())
+    for pergola in juan_gris['pergolas']:
+        a,b=pergola['wall']
+        scale=juan_gris['width']/math.dist(a,b)
+        dx,dz=(a[1]-b[1])*scale,(b[0]-a[0])*scale
+        ring=[a,b,[b[0]+dx,b[1]+dz],[a[0]+dx,a[1]+dz]]
+        add('juan_gris_pergolas.json:'+pergola['id'],pergola['name'],'reference feature',juan_gris['trust'],evidence=pergola['evidence'],ring=ring)
     lanewalls={w['id']:w for w in json.loads((ROOT/'data/lane_walls.json').read_text())['walls']}
     bax=json.loads((ROOT/'data/elena_south_beds.json').read_text())['axis']
     lamp=det['lamp']; lamp_at=[bax['origin'][j]+bax['along'][j]*lamp['s']+bax['right'][j]*lamp['o'] for j in range(2)]

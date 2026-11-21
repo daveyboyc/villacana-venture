@@ -18,6 +18,7 @@ import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {elenaWalkway,walkwayPoint,walkwayRing} from "./elena-walkway";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {elenaEastPatioWalls,elenaEastPergola,elenaEastPergolaPosts,inElenaEastPatios} from "./elena-east-patios";
+import { juanGrisPergolas } from "./juan-gris-pergolas";
 import { loiraWall } from "./loira-boundary";
 import {laneWalls,laneWallDoorSpans} from "./lane-walls";
 import {cervantesLaneEdges} from "./cervantes-lane-edges";
@@ -194,6 +195,14 @@ async function boot(): Promise<void> {
     laneWallGroup.append(marker);
   }
 
+  for (const pergola of juanGrisPergolas) {
+    const node = el("path", { d: path(pergola.ring), fill: "#50403a", "fill-opacity": 0.25,
+      stroke: "#50403a", "stroke-width": 0.1, "data-juan-gris-pergola": pergola.id });
+    const title = el("title", {});
+    title.textContent = pergola.name + " · " + pergola.evidence.join(", ");
+    node.append(title);
+    laneWallGroup.append(node);
+  }
   // Cervantes beds and hedge planters along the lane (data/cervantes_lane_edges.json).
   for(const bed of cervantesLaneEdges){
     const node=el("path",{d:path(bed.ring),fill:bed.kind==="raised"?"#4f6b3c":"#5a4634",stroke:"#fffdf5","stroke-width":bed.wall,"data-cervantes-edge-id":bed.id});

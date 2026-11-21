@@ -6,7 +6,7 @@ import northLanes from "../data/ground_plan_north_lanes.json";
 import northPool from "../data/ground_plan_north_pool.json";
 import { clippedHedge, looseShrub } from "./clipped-plants";
 import { closestOnSegment, pointInRing } from "./geom";
-import { plasterMaterial, surfaceTexture } from "./materials";
+import { pavingCanvas, plasterMaterial, surfaceTexture } from "./materials";
 import { crazyPavingTexture } from "./north-pool-gardens";
 import { offsetLine, outlineRing, roundCorners, roundPolyline, smoothLine, smoothUnion, surfaceGeometry } from "./smooth-path";
 import type { Vec2 } from "./types";
@@ -32,6 +32,7 @@ export const GROUND_PLANS = [mainPool, northPool, northLanes] as unknown as Grou
 type Edge = { kind: EdgeKind; side?: "left" | "right" | "both"; span?: number[]; from?: number; to?: number; height?: number; width?: number; planting?: string; flowers?: { colour: string; perMetre: number }; openings?: { at: number; width: number }[] };
 type Surface = {
   id: string; name: string; kind: "path" | "patio" | "apron" | "green"; finish: Finish;
+  laneTiles?: boolean;
   width?: number; lines?: number[][][]; ends?: ("square" | "round")[][]; joins?: number;
   outline?: number[][]; corners?: number; hard?: number[]; cut?: string[]; raise?: number; above?: string[]; edges?: Edge[];
 };
@@ -72,7 +73,9 @@ export const groundSurfaces: Built[] = GROUND_PLANS.flatMap((plan) => plan.surfa
   if (surface.kind === "path") {
     const half = (surface.width ?? 1) / 2, lines = (surface.lines ?? []).map((l) => smoothLine(l as Vec2[]));
     const rings = lines.map((l, i) => outlineRing(l, half, [surface.ends?.[i]?.[0] === "round", surface.ends?.[i]?.[1] === "round"]));
-    return { plan, surface, polys: smoothUnion(rings, surface.joins ?? 1.0, 0.2), centrelines: lines };
+    const polys = surface.laneTiles && lines.length === 1 ? [[rings[0]]]
+      : smoothUnion(rings, surface.joins ?? 1.0, 0.2);
+    return { plan, surface, polys, centrelines: lines };
   }
   const ring = hardRound(surface.outline as Vec2[], surface.corners ?? 0.3, surface.hard ?? []);
   if (!surface.cut?.length) return { plan, surface, polys: [[ring]], centrelines: [] };
@@ -272,6 +275,49 @@ function finishMaterial(finish: Finish): THREE.Material {
   return new THREE.MeshStandardMaterial({ ...base, color: FINISHES[finish].colour });
 }
 
+// Four courses from the shared square-tile swatch, with narrow grey mortar margins.
+const LANE_TILE_WIDTH_FRACTION = 0.92;
+function laneTileMaterial(): THREE.Material {
+  const tiles = pavingCanvas();
+  const canvas = document.createElement("canvas");
+  canvas.width = canvas.height = tiles.width;
+  const context = canvas.getContext("2d")!;
+  context.fillStyle = "#807b71";
+  context.fillRect(0, 0, canvas.width, canvas.height);
+  const width = canvas.width * LANE_TILE_WIDTH_FRACTION;
+  context.drawImage(tiles, (canvas.width - width) / 2, 0, width, canvas.height);
+  const map = new THREE.CanvasTexture(canvas);
+  map.colorSpace = THREE.SRGBColorSpace;
+  map.wrapT = THREE.RepeatWrapping;
+  map.anisotropy = 8;
+  return new THREE.MeshStandardMaterial({ map, color: "#d5c7c1", roughness: 0.9, side: THREE.DoubleSide,
+    polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
+}
+
+/** Map each sampled cross-section to the swatch, keeping joints aligned through bends. */
+function laneTileGeometry(line: Vec2[], width: number, ground: (x: number, z: number) => number, lift: number): THREE.BufferGeometry {
+  const positions: number[] = [], uv: number[] = [], faces: number[] = [];
+  const left = offsetLine(line, width / 2), right = offsetLine(line, -width / 2);
+  let distance = 0;
+  for (const [i, point] of line.entries()) {
+    if (i) distance += Math.hypot(point[0] - line[i - 1][0], point[1] - line[i - 1][1]);
+    for (const [column, [x, z]] of [left[i], point, right[i]].entries()) {
+      positions.push(x, ground(x, z) + lift, z);
+      uv.push(column / 2, distance / (width * LANE_TILE_WIDTH_FRACTION));
+    }
+    if (i) {
+      const start = (i - 1) * 3;
+      for (const a of [start, start + 1]) faces.push(a, a + 1, a + 3, a + 1, a + 4, a + 3);
+    }
+  }
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+  geometry.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
+  geometry.setIndex(faces);
+  geometry.computeVertexNormals();
+  return geometry;
+}
+
 /** A vertical strip of `width` along a line, from below the ground to `height` above it, with a flat top. */
 function edgeGeometry(line: Vec2[], width: number, height: number, ground: (x: number, z: number) => number): THREE.BufferGeometry {
   const l = offsetLine(line, width / 2), r = offsetLine(line, -width / 2), pos: number[] = [];
@@ -308,7 +354,12 @@ export function addGroundPlan(scene: THREE.Scene, ground: (x: number, z: number)
   for (const b of groundSurfaces) {
     // Lawn and pool deck are painted into the ground texture (paintGroundPlan); paved finishes and planted beds are meshes.
     if (!inScene(b) || b.surface.finish === "lawn" || b.surface.finish === "pool-deck") continue;
-    const mesh = new THREE.Mesh(surfaceGeometry(b.polys, ground, FINISHES[b.surface.finish].lift + (b.surface.raise ?? 0), 2), material(b.surface.finish, () => finishMaterial(b.surface.finish)));
+    const lift = FINISHES[b.surface.finish].lift + (b.surface.raise ?? 0);
+    const laneTiles = b.surface.laneTiles && b.centrelines.length === 1 && b.surface.width;
+    const geometry = laneTiles ? laneTileGeometry(b.centrelines[0], laneTiles, ground, lift)
+      : surfaceGeometry(b.polys, ground, lift, 2);
+    const mesh = new THREE.Mesh(geometry, laneTiles ? material("lane-tiles", laneTileMaterial)
+      : material(b.surface.finish, () => finishMaterial(b.surface.finish)));
     mesh.name = b.surface.id; mesh.receiveShadow = true; mesh.userData.groundPlan = b.plan.area; group.add(mesh);
   }
   let seed = 400;

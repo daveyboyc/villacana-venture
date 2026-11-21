@@ -25,7 +25,7 @@ export const elenaEastPergolaPosts = (): Vec2[][] => elenaEastPergola.ring.map((
 /** Collision: the two enclosure walls (and the pergola posts, unreachable inside the patio). */
 export const elenaEastPatioRings = (): Vec2[][] => [...elenaEastPatioWalls.map((w) => strip(w.points, w.thickness)), ...elenaEastPergolaPosts()];
 
-function beam(a: Vec2, b: Vec2, y: number, width: number, height: number, material: THREE.Material, name: string): THREE.Mesh {
+export function beam(a: Vec2, b: Vec2, y: number, width: number, height: number, material: THREE.Material, name: string): THREE.Mesh {
   const length = Math.hypot(b[0] - a[0], b[1] - a[1]);
   const mesh = new THREE.Mesh(new THREE.BoxGeometry(length, height, width), material);
   mesh.position.set((a[0] + b[0]) / 2, y + height / 2, (a[1] + b[1]) / 2);
