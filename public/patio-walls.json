@@ -5,8 +5,8 @@
     "wall": 24,
     "kerb": 2,
     "enclosure": 23,
-    "gap": 20,
-    "context": 38
+    "gap": 21,
+    "context": 39
   },
   "records": [
     {
@@ -3131,6 +3131,56 @@
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {
+      "id": "loira_boundary.json:loira-resort-wall",
+      "name": "Calle Loira resort boundary wall",
+      "kind": "context",
+      "points": [
+        [
+          -193,
+          -17
+        ],
+        [
+          -180,
+          -25
+        ],
+        [
+          -168,
+          -32
+        ],
+        [
+          -153,
+          -43
+        ],
+        [
+          -138,
+          -52
+        ],
+        [
+          -121.2,
+          -61.65
+        ],
+        [
+          -113.6,
+          -66.3
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "north-lanes"
+      ],
+      "evidence": [
+        "IMG_3133.jpg",
+        "IMG_3141.jpg",
+        "IMG_3150.jpg",
+        "IMG_3151.jpg",
+        "IMG_3153.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. Photos establish wall and arch form; aerial trace and unsolved camera pins supply approximate extents and opening position.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
       "id": "elena_south_beds.json:elena-south-east-bed-mouth",
       "name": "Elena south · hedge bed in front of the corner patio wall",
       "kind": "context",
@@ -5042,6 +5092,25 @@
       "placement": "unreviewed",
       "basis": "Registry zero-storey outline only. Each edge may be wall, building face, opening or no boundary. Do not extrude this polygon into walls.",
       "levelState": "Floor and wall-top datums unresolved."
+    },
+    {
+      "id": "gap:loira-outer-frontage",
+      "name": "Calle Loira opposite frontage and western wall extent",
+      "kind": "gap",
+      "points": [
+        [
+          -211,
+          -19
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_3150.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "A window view confirms the opposite wall exists but does not locate its ends. The western wall foot is obscured in the aerial.",
+      "levelState": "Evidence required before tracing or levelling."
     },
     {
       "id": "gap:elena-east-patios",

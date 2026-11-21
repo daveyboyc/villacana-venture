@@ -24250,21 +24250,27 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:loira",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving"
   ]
  },
  {
   "id": "IMG_3133.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3133.jpg",
-  "title": "IMG_3133",
+  "title": "Juan Gris street plaque and inside face of the Loira boundary",
   "shows": [
    "north-lanes"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "signage"
+  ],
+  "note": "Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1YQGNVbHFvoqU6qkSOeYNjz9aarcub91s/view?usp=drivesdk",
@@ -24276,16 +24282,22 @@
    "altitude": 4.9,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -123.4,
-   -63.9
+  "citedBy": [
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -125,
+   -59
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:loira",
-   "backdrop.json:aerial-trees"
-  ]
+   "ground_plan_north_lanes.json:juan-gris-paving",
+   "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall",
+   "street:loira"
+  ],
+  "subject": "White boundary wall and terracotta path"
  },
  {
   "id": "IMG_3134.jpg",
@@ -24318,7 +24330,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:loira",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving"
   ]
  },
  {
@@ -24352,7 +24366,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:loira",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving"
   ]
  },
  {
@@ -24386,7 +24402,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:loira",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving"
   ]
  },
  {
@@ -24519,21 +24537,26 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:loira",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving"
   ]
  },
  {
   "id": "IMG_3141.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3141.jpg",
-  "title": "IMG_3141",
+  "title": "Juan Gris: terracotta lane alongside the white outer wall",
   "shows": [
    "north-lanes"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/19ed08YkPS8VhmYbRx521tOZuUmScScpq/view?usp=drivesdk",
@@ -24545,16 +24568,22 @@
    "altitude": 7.1,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -144.1,
-   -47.7
+  "citedBy": [
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -153,
+   -42
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "ground_plan_north_lanes.json:juan-gris-paving",
    "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall",
    "street:loira"
-  ]
+  ],
+  "subject": "Terracotta paving between the white wall and houses"
  },
  {
   "id": "IMG_3142.jpg",
@@ -24586,7 +24615,9 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "ground_plan_north_lanes.json:juan-gris-paving",
    "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall",
    "street:loira"
   ]
  },
@@ -24723,7 +24754,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "street:loira"
+   "street:loira",
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving"
   ]
  },
  {
@@ -24757,6 +24790,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving",
    "street:loira"
   ]
  },
@@ -24790,8 +24825,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "ground_plan_north_lanes.json:loira-window-verge",
    "backdrop.json:aerial-trees",
-   "street:loira"
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving"
   ]
  },
  {
@@ -24824,21 +24861,27 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "ground_plan_north_lanes.json:loira-window-verge",
+   "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving"
   ]
  },
  {
   "id": "IMG_3150.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3150.jpg",
-  "title": "IMG_3150",
+  "title": "Juan Gris barred arch looking over the Loira verge and asphalt",
   "shows": [
    "north-lanes"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1HGbPW_-ZsckJXi_aAYhfibB1ocmyWCcU/view?usp=drivesdk",
@@ -24850,29 +24893,38 @@
    "altitude": 6.4,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -185.8,
-   -27.5
+  "citedBy": [
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:loira-window-verge"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -181.4,
+   -24.1
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:loira",
-   "backdrop.json:aerial-trees"
-  ]
+   "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving",
+   "ground_plan_north_lanes.json:loira-window-verge"
+  ],
+  "subject": "Barred opening, sill and grass outside"
  },
  {
   "id": "IMG_3151.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3151.jpg",
-  "title": "IMG_3151",
+  "title": "Alternate close view through the Juan Gris grille",
   "shows": [
    "north-lanes"
   ],
-  "areasBasis": "nearest lane, 4 m from the camera (weak)",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1-57qATCux0PNLApO6yvXEwDCHWIVKCjd/view?usp=drivesdk",
@@ -24884,16 +24936,22 @@
    "altitude": 6.5,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -185.3,
-   -27.5
+  "citedBy": [
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:loira-window-verge"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -181.4,
+   -24.1
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:loira",
-   "backdrop.json:aerial-trees"
-  ]
+   "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving",
+   "ground_plan_north_lanes.json:loira-window-verge"
+  ],
+  "subject": "Barred opening and opposite frontage"
  },
  {
   "id": "IMG_3152.jpg",
@@ -24925,21 +24983,27 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving",
+   "ground_plan_north_lanes.json:loira-window-verge"
   ]
  },
  {
   "id": "IMG_3153.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3153.jpg",
-  "title": "IMG_3153",
+  "title": "Western Juan Gris path with arched grille and raised sill",
   "shows": [
    "north-lanes"
   ],
-  "areasBasis": "nearest lane, 7 m from the camera (weak)",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1Oz6zzPNsSgG3bPyyJK8U89y1MzPc-N-6/view?usp=drivesdk",
@@ -24951,15 +25015,19 @@
    "altitude": 6.9,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -198.5,
-   -12.5
+  "citedBy": [
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -200,
+   -11
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "Terracotta paving, wall and grille along Juan Gris"
  },
  {
   "id": "IMG_3154.jpg",

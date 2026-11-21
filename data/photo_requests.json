@@ -2,6 +2,24 @@
   "about": "Photos wanted, one request per spot. at: where to stand ([x, z] map metres, +x east, +z south); look: what to point at (null for a roof station: several directions); radius: how close a photo's camera must be (plus up to 5 m of its GPS accuracy). status: open until photos taken on or after `since` are matched by scripts/photo_requests.py (it reports them as received); an agent who has looked at them sets status answered with answeredBy photo ids and a note, or keeps it open and says what is still missing. The scorecard colours an area red while it has open requests, amber while received or reviewed photos and open build tasks wait, green when nothing is open. See docs/SCORECARD.md.",
   "requests": [
     {
+      "id": "loira-outside-wall",
+      "area": "north-lanes",
+      "at": [
+        -225,
+        -10
+      ],
+      "look": [
+        -190,
+        -21
+      ],
+      "priority": 2,
+      "radius": 9,
+      "since": "2026-11-20",
+      "status": "open",
+      "ask": "From the Calle Loira and Pintor Dalí bend, photograph east along the resort wall with both road edges in frame. From outside the Juan Gris grille, photograph the wall square-on with the wall foot and top, then turn to photograph the opposite frontage and grass edge.",
+      "why": "Locate the wall ends, road-side grass and openings, and obtain a registered view of the wall and the opposite frontage."
+    },
+    {
       "id": "elena-25-far-end",
       "area": "elena",
       "at": [

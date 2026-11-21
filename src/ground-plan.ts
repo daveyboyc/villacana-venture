@@ -2,6 +2,7 @@ import * as THREE from "three";
 import clipping from "polygon-clipping";
 import skeleton from "../public/map/skeleton.json";
 import mainPool from "../data/ground_plan_main_pool.json";
+import northLanes from "../data/ground_plan_north_lanes.json";
 import northPool from "../data/ground_plan_north_pool.json";
 import { clippedHedge, looseShrub } from "./clipped-plants";
 import { closestOnSegment, pointInRing } from "./geom";
@@ -26,7 +27,7 @@ import type { Vec2 } from "./types";
  *   omitted). `openings` leave gaps ({at: metres along the edge, width}). Edges follow the same smooth
  *   line as the surface, so the floor, its edge and the ground beside it agree.
  */
-export const GROUND_PLANS = [mainPool, northPool] as unknown as GroundPlan[];
+export const GROUND_PLANS = [mainPool, northPool, northLanes] as unknown as GroundPlan[];
 
 type Edge = { kind: EdgeKind; side?: "left" | "right" | "both"; span?: number[]; from?: number; to?: number; height?: number; width?: number; planting?: string; flowers?: { colour: string; perMetre: number }; openings?: { at: number; width: number }[] };
 type Surface = {

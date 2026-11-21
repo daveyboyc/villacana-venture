@@ -6,9 +6,9 @@
   "needs-review": 271,
   "suggested": 364,
   "photos": 639,
-  "features": 521,
-  "photosCitedByModel": 234,
-  "modelFeaturesWithPhotoCitations": 265
+  "features": 525,
+  "photosCitedByModel": 239,
+  "modelFeaturesWithPhotoCitations": 268
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3615,6 +3615,19 @@
    ]
   },
   {
+   "id": "loira_boundary.json:loira-resort-wall",
+   "name": "Calle Loira resort boundary wall",
+   "kind": "reference feature",
+   "source": "White wall and a barred arched window photographed from Calle de Juan Gris. Aerial boundary band, approximate limits, height and opening station. No solved photo camera.",
+   "evidence": [
+    "IMG_3133.jpg",
+    "IMG_3141.jpg",
+    "IMG_3150.jpg",
+    "IMG_3151.jpg",
+    "IMG_3153.jpg"
+   ]
+  },
+  {
    "id": "elena_junction_details.json:cypresses",
    "name": "Elena south · cypresses at the far wall",
    "kind": "reference feature",
@@ -4453,6 +4466,34 @@
    "kind": "reference feature",
    "source": "Inferred from the aerial only: a pale line about 0.7 m wide runs from the deck's east corner north-east across the lawn to the Picasso-side wall. No ground photo shows it; what it is (a path, stepping stones, a service trench) and where it ends at the wall are unknown (photo request lawn-east-path).",
    "evidence": []
+  },
+  {
+   "id": "ground_plan_north_lanes.json:juan-gris-paving",
+   "name": "Calle de Juan Gris terracotta footpath",
+   "kind": "reference feature",
+   "source": "Approximate surface edges traced from the Esri aerial and the Calle de Juan Gris photo sequence. No solved ground camera.",
+   "evidence": [
+    "IMG_3133.jpg",
+    "IMG_3141.jpg",
+    "IMG_3153.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_north_lanes.json:loira-west-verge",
+   "name": "Calle Loira grass at the Dalí bend",
+   "kind": "reference feature",
+   "source": "Approximate surface edges traced from the Esri aerial and the Calle de Juan Gris photo sequence. No solved ground camera.",
+   "evidence": []
+  },
+  {
+   "id": "ground_plan_north_lanes.json:loira-window-verge",
+   "name": "Calle Loira grass outside the Juan Gris grille",
+   "kind": "reference feature",
+   "source": "Approximate surface edges traced from the Esri aerial and the Calle de Juan Gris photo sequence. No solved ground camera.",
+   "evidence": [
+    "IMG_3150.jpg",
+    "IMG_3151.jpg"
+   ]
   },
   {
    "id": "ground_plan_north_pool.json:north-pool-lawn",
@@ -27349,6 +27390,18 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_3133.jpg",
+   "to": "loira_boundary.json:loira-resort-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3133.jpg",
+   "to": "ground_plan_north_lanes.json:juan-gris-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3134.jpg",
    "to": "street:loira",
    "relation": "camera-nearby",
@@ -27479,6 +27532,18 @@
    "to": "street:loira",
    "relation": "camera-nearby",
    "gap": 1.2
+  },
+  {
+   "from": "photo:IMG_3141.jpg",
+   "to": "loira_boundary.json:loira-resort-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3141.jpg",
+   "to": "ground_plan_north_lanes.json:juan-gris-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3142.jpg",
@@ -27644,6 +27709,30 @@
    "gap": 4.2
   },
   {
+   "from": "photo:IMG_3150.jpg",
+   "to": "loira_boundary.json:loira-resort-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3150.jpg",
+   "to": "ground_plan_north_lanes.json:loira-window-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3151.jpg",
+   "to": "loira_boundary.json:loira-resort-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3151.jpg",
+   "to": "ground_plan_north_lanes.json:loira-window-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3152.jpg",
    "to": "street:loira",
    "relation": "camera-nearby",
@@ -27669,6 +27758,18 @@
    "relation": "possibly-in-view",
    "distance": 41.2,
    "angleOffset": 22.5
+  },
+  {
+   "from": "photo:IMG_3153.jpg",
+   "to": "loira_boundary.json:loira-resort-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3153.jpg",
+   "to": "ground_plan_north_lanes.json:juan-gris-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3154.jpg",

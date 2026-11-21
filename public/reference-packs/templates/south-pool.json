@@ -123,6 +123,16 @@
       "path": "public/photos-ref/IMG_2984.jpg"
     },
     {
+      "id": "IMG_3033.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3033.jpg"
+    },
+    {
+      "id": "IMG_3034.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_3034.jpg"
+    },
+    {
       "id": "ref:apple-maps/03-3d-south-pool-and-promenade.png",
       "private": true,
       "path": "reference/apple-maps/03-3d-south-pool-and-promenade.png"

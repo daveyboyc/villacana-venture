@@ -1,6 +1,42 @@
 {
  "about": "Render-versus-photo checks: the structured modern record of comparisons with cited photos; earlier manual reviews can also exist in task documentation and committed render pairs. A 'cites' edge in refs/graph.json only says an author used a photo; a check says someone rendered the game from that photo's camera (scripts/shoot_views.cjs --task=<id> --as=after) and compared the two. Each check: task (data/build_queue.json id), feature (evidence-graph feature id), photo, render (committed after-render, usually docs/reviews/<task>/<photo>-after.png), before (optional), checked (date), by, result matches | differs | not-comparable, notes, and for differs a followUp task id that is not done. A photo used for a check needs a reviewed looksAt in data/reference_tags.json so the render faces the photo's subject. build_references.py --check fails when a done task has a photo without a check, unless the task is in legacyUnchecked; that list may only shrink.",
  "checks": [
+    {
+      "task": "calle-loira",
+      "feature": "loira_boundary.json:loira-resort-wall",
+      "photo": "IMG_3133.jpg",
+      "checked": "2026-11-21",
+      "by": "Codex",
+      "result": "not-comparable",
+      "notes": "The review view shows the continuous white boundary beside the terracotta paving. The photo looks along the wall from its signed eastern entrance. The pin and heading do not fix this perspective; the plaque and planters remain outside this build."
+    },
+    {
+      "task": "calle-loira",
+      "feature": "loira_boundary.json:loira-resort-wall",
+      "photo": "IMG_3141.jpg",
+      "checked": "2026-11-21",
+      "by": "Codex",
+      "result": "not-comparable",
+      "notes": "The review view shows the wall and a narrow tiled strip on its inside face. The unsolved camera and uncertain house-side boundaries prevent comparing the widths and far end to the photo."
+    },
+    {
+      "task": "calle-loira",
+      "feature": "loira_boundary.json:loira-resort-wall",
+      "photo": "IMG_3150.jpg",
+      "checked": "2026-11-21",
+      "by": "Codex",
+      "result": "not-comparable",
+      "notes": "The arched opening, iron grille, terracotta sill and asphalt beyond are visible in the Inspect review. The window station and facade heights are estimates and the opposite frontage is still unresolved. The phone position is too close to establish a matching view."
+    },
+    {
+      "task": "calle-loira",
+      "feature": "loira_boundary.json:loira-resort-wall",
+      "photo": "IMG_3153.jpg",
+      "checked": "2026-11-21",
+      "by": "Codex",
+      "result": "not-comparable",
+      "notes": "The striped terracotta path beside the white wall is represented. The western grille and covered connection farther along the photo have unresolved positions and are outside the built wall run."
+    },
   {
    "task": "middle-pool-south-gate",
    "feature": "middle_pool_south_gate.json:middle-pool-south-gate",

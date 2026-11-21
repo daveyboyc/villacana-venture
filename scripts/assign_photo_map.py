@@ -239,6 +239,8 @@ def features(s):
     for w in lane_walls['walls']:
         add('lane_walls.json:'+w['id'],w['name'],'reference feature','photo/aerial interpretation; about 1 m' if w['evidence'] else 'inferred from the aerial and the registry; about 1 m',evidence=w['evidence'],points=w['points'])
     det=json.loads((ROOT/'data/elena_junction_details.json').read_text()) # Elena junction planting, lamp and sign (Show details)
+    loira=json.loads((ROOT/'data/loira_boundary.json').read_text())
+    add('loira_boundary.json:'+loira['id'],loira['name'],'reference feature',loira['trust'],evidence=loira['evidence'],points=loira['points'])
     lanewalls={w['id']:w for w in json.loads((ROOT/'data/lane_walls.json').read_text())['walls']}
     bax=json.loads((ROOT/'data/elena_south_beds.json').read_text())['axis']
     lamp=det['lamp']; lamp_at=[bax['origin'][j]+bax['along'][j]*lamp['s']+bax['right'][j]*lamp['o'] for j in range(2)]

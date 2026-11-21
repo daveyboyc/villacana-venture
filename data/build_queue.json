@@ -28,6 +28,7 @@
    "dependsOn": [
     "ground-plan-framework"
    ],
+   "notes": "Initial build is reviewable in Inspect. The wall and surface placement remain estimated pending the exterior photo request and solved-camera review.",
    "status": "in-progress",
    "owner": "Codex"
   },
