@@ -11,6 +11,22 @@
   "needs-photos": "Worth improving; more photos wanted."
  },
  "features": {
+  "juan_gris_pergolas.json:juan-gris-pergola-east": {
+   "level": "estimated",
+   "why": "The open timber span is visible in the Juan Gris photo sequence. Beam spacing, heights and supports are approximated along the traced lane."
+  },
+  "juan_gris_pergolas.json:juan-gris-pergola-middle": {
+   "level": "estimated",
+   "why": "The open timber span is visible in the Juan Gris photo sequence. Beam spacing, heights and supports are approximated along the traced lane."
+  },
+  "juan_gris_pergolas.json:juan-gris-pergola-grille": {
+   "level": "estimated",
+   "why": "The open timber span is visible in the Juan Gris photo sequence. Beam spacing, heights and supports are approximated along the traced lane."
+  },
+  "juan_gris_pergolas.json:juan-gris-pergola-west": {
+   "level": "estimated",
+   "why": "The open timber span is visible in the Juan Gris photo sequence. Beam spacing, heights and supports are approximated along the traced lane."
+  },
   "loira_boundary.json:loira-resort-wall": {
    "level": "estimated",
    "why": "Photos show four boundary openings from Juan Gris. The east and middle window heads are partly visible and use an estimated arch. Stations and elevations are approximate."

@@ -6,9 +6,9 @@
   "needs-review": 271,
   "suggested": 364,
   "photos": 639,
-  "features": 525,
-  "photosCitedByModel": 244,
-  "modelFeaturesWithPhotoCitations": 268
+  "features": 529,
+  "photosCitedByModel": 248,
+  "modelFeaturesWithPhotoCitations": 272
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3633,6 +3633,47 @@
    ]
   },
   {
+   "id": "juan_gris_pergolas.json:juan-gris-pergola-east",
+   "name": "Juan Gris east pergola",
+   "kind": "reference feature",
+   "source": "Unsolved views show four overhead beam groups. Stations follow the existing wall axis and photo sequence. Heights, spans and hidden support dimensions are estimates.",
+   "evidence": [
+    "IMG_3135.jpg",
+    "IMG_3136.jpg"
+   ]
+  },
+  {
+   "id": "juan_gris_pergolas.json:juan-gris-pergola-middle",
+   "name": "Juan Gris close-spaced pergola",
+   "kind": "reference feature",
+   "source": "Unsolved views show four overhead beam groups. Stations follow the existing wall axis and photo sequence. Heights, spans and hidden support dimensions are estimates.",
+   "evidence": [
+    "IMG_3146.jpg",
+    "IMG_3147.jpg"
+   ]
+  },
+  {
+   "id": "juan_gris_pergolas.json:juan-gris-pergola-grille",
+   "name": "Juan Gris pergola west of the verge grille",
+   "kind": "reference feature",
+   "source": "Unsolved views show four overhead beam groups. Stations follow the existing wall axis and photo sequence. Heights, spans and hidden support dimensions are estimates.",
+   "evidence": [
+    "IMG_3149.jpg",
+    "IMG_3152.jpg"
+   ]
+  },
+  {
+   "id": "juan_gris_pergolas.json:juan-gris-pergola-west",
+   "name": "Juan Gris west pergola",
+   "kind": "reference feature",
+   "source": "Unsolved views show four overhead beam groups. Stations follow the existing wall axis and photo sequence. Heights, spans and hidden support dimensions are estimates.",
+   "evidence": [
+    "IMG_3152.jpg",
+    "IMG_3153.jpg",
+    "IMG_3155.jpg"
+   ]
+  },
+  {
    "id": "elena_junction_details.json:cypresses",
    "name": "Elena south · cypresses at the far wall",
    "kind": "reference feature",
@@ -4476,10 +4517,13 @@
    "id": "ground_plan_north_lanes.json:juan-gris-paving",
    "name": "Calle de Juan Gris terracotta footpath",
    "kind": "reference feature",
-   "source": "The Esri aerial shows a pale band to Pintor Dalí. Its continuation as Juan Gris paving is inferred from the adjoining photographed lane.",
+   "source": "The Esri aerial shows a pale band to Pintor Dalí. Its continuation as Juan Gris paving is inferred from the adjoining photographed lane. IMG_3136, IMG_3146 and IMG_3152 show four square courses with pale grout and grey edge mortar.",
    "evidence": [
     "IMG_3133.jpg",
+    "IMG_3136.jpg",
     "IMG_3141.jpg",
+    "IMG_3146.jpg",
+    "IMG_3152.jpg",
     "IMG_3153.jpg"
    ]
   },
@@ -27446,10 +27490,28 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_3135.jpg",
+   "to": "juan_gris_pergolas.json:juan-gris-pergola-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3136.jpg",
    "to": "street:loira",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_3136.jpg",
+   "to": "juan_gris_pergolas.json:juan-gris-pergola-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3136.jpg",
+   "to": "ground_plan_north_lanes.json:juan-gris-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3137.jpg",
@@ -27688,10 +27750,28 @@
    "angleOffset": 33.4
   },
   {
+   "from": "photo:IMG_3146.jpg",
+   "to": "juan_gris_pergolas.json:juan-gris-pergola-middle",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3146.jpg",
+   "to": "ground_plan_north_lanes.json:juan-gris-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3147.jpg",
    "to": "street:loira",
    "relation": "camera-nearby",
    "gap": 2.2
+  },
+  {
+   "from": "photo:IMG_3147.jpg",
+   "to": "juan_gris_pergolas.json:juan-gris-pergola-middle",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3148.jpg",
@@ -27722,6 +27802,12 @@
   {
    "from": "photo:IMG_3149.jpg",
    "to": "loira_boundary.json:loira-resort-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3149.jpg",
+   "to": "juan_gris_pergolas.json:juan-gris-pergola-grille",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -27769,6 +27855,24 @@
    "angleOffset": 20.8
   },
   {
+   "from": "photo:IMG_3152.jpg",
+   "to": "juan_gris_pergolas.json:juan-gris-pergola-grille",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3152.jpg",
+   "to": "juan_gris_pergolas.json:juan-gris-pergola-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3152.jpg",
+   "to": "ground_plan_north_lanes.json:juan-gris-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3153.jpg",
    "to": "building:6165501UF1366N_part4",
    "relation": "possibly-in-view",
@@ -27785,6 +27889,12 @@
   {
    "from": "photo:IMG_3153.jpg",
    "to": "loira_boundary.json:loira-resort-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3153.jpg",
+   "to": "juan_gris_pergolas.json:juan-gris-pergola-west",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -27831,6 +27941,12 @@
   {
    "from": "photo:IMG_3155.jpg",
    "to": "loira_boundary.json:loira-resort-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3155.jpg",
+   "to": "juan_gris_pergolas.json:juan-gris-pergola-west",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

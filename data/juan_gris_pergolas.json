@@ -1,0 +1,39 @@
+{
+  "width": 1.66,
+  "beamHeight": 0.16,
+  "beamWidth": 0.23,
+  "underside": 2.12,
+  "wallTop": 1.85,
+  "postWidth": 0.17,
+  "trust": "Unsolved views show four overhead beam groups. Stations follow the existing wall axis and photo sequence. Heights, spans and hidden support dimensions are estimates.",
+  "pergolas": [
+    {
+      "id": "juan-gris-pergola-east",
+      "name": "Juan Gris east pergola",
+      "wall": [[-130.3,-56.42],[-128,-57.74]],
+      "beams": 5,
+      "evidence": ["IMG_3135.jpg", "IMG_3136.jpg"]
+    },
+    {
+      "id": "juan-gris-pergola-middle",
+      "name": "Juan Gris close-spaced pergola",
+      "wall": [[-167.7,-32.22],[-164,-34.93]],
+      "beams": 9,
+      "evidence": ["IMG_3146.jpg", "IMG_3147.jpg"]
+    },
+    {
+      "id": "juan-gris-pergola-grille",
+      "name": "Juan Gris pergola west of the verge grille",
+      "wall": [[-185.1,-21.86],[-182.75,-23.31]],
+      "beams": 3,
+      "evidence": ["IMG_3149.jpg", "IMG_3152.jpg"]
+    },
+    {
+      "id": "juan-gris-pergola-west",
+      "name": "Juan Gris west pergola",
+      "wall": [[-200.5,-14.12],[-197,-15.53]],
+      "beams": 5,
+      "evidence": ["IMG_3152.jpg", "IMG_3153.jpg", "IMG_3155.jpg"]
+    }
+  ]
+}

@@ -23,12 +23,16 @@
     "loira_boundary.json:loira-resort-wall",
     "ground_plan_north_lanes.json:juan-gris-paving",
     "ground_plan_north_lanes.json:loira-west-verge",
-    "ground_plan_north_lanes.json:loira-window-verge"
+    "ground_plan_north_lanes.json:loira-window-verge",
+    "juan_gris_pergolas.json:juan-gris-pergola-east",
+    "juan_gris_pergolas.json:juan-gris-pergola-middle",
+    "juan_gris_pergolas.json:juan-gris-pergola-grille",
+    "juan_gris_pergolas.json:juan-gris-pergola-west"
    ],
    "dependsOn": [
     "ground-plan-framework"
    ],
-   "notes": "The wall and footpath extend to Pintor Dalí. Four photo-backed openings are represented. Exact stations, opening profiles and road-side access await exterior photos and solved-camera review.",
+   "notes": "The wall and footpath extend to Pintor Dalí. Four photo-backed openings are represented. Tile courses are aligned to the lane and four photo-backed open pergolas are represented. Exact stations, profiles and road-side access await exterior photos and solved-camera review.",
    "status": "in-progress",
    "owner": "Codex"
   },

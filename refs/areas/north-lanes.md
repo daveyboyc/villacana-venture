@@ -39,22 +39,38 @@ graph LR
   A["Loira, Bolivia, Alberto and Isabel"]
   A --> F0["Calle de Juan Gris terracotta footpath · unreviewed"]
   F0 --> PIMG_3133_jpg(["IMG_3133"])
+  F0 --> PIMG_3136_jpg(["IMG_3136"])
   F0 --> PIMG_3141_jpg(["IMG_3141"])
+  F0 --> PIMG_3146_jpg(["IMG_3146"])
+  F0 --> PIMG_3152_jpg(["IMG_3152"])
   F0 --> PIMG_3153_jpg(["IMG_3153"])
   A --> F1["Calle Loira grass outside the Juan Gris grille · unreviewed"]
   F1 --> PIMG_3150_jpg(["IMG_3150"])
   F1 --> PIMG_3151_jpg(["IMG_3151"])
-  A --> F2["Calle Loira resort boundary wall · disputed"]
-  F2 --> PIMG_3133_jpg(["IMG_3133"])
+  A --> F2["Juan Gris east pergola · unreviewed"]
   F2 --> PIMG_3135_jpg(["IMG_3135"])
-  F2 --> PIMG_3141_jpg(["IMG_3141"])
-  F2 --> PIMG_3142_jpg(["IMG_3142"])
-  F2 --> PIMG_3149_jpg(["IMG_3149"])
-  F2 --> PIMG_3150_jpg(["IMG_3150"])
-  F2 --> PIMG_3151_jpg(["IMG_3151"])
-  F2 --> PIMG_3153_jpg(["IMG_3153"])
-  F2 --> PIMG_3154_jpg(["IMG_3154"])
-  F2 --> PIMG_3155_jpg(["IMG_3155"])
+  F2 --> PIMG_3136_jpg(["IMG_3136"])
+  A --> F3["Juan Gris pergola west of the verge grille · unreviewed"]
+  F3 --> PIMG_3149_jpg(["IMG_3149"])
+  F3 --> PIMG_3152_jpg(["IMG_3152"])
+  A --> F4["Juan Gris close-spaced pergola · unreviewed"]
+  F4 --> PIMG_3146_jpg(["IMG_3146"])
+  F4 --> PIMG_3147_jpg(["IMG_3147"])
+  A --> F5["Juan Gris west pergola · unreviewed"]
+  F5 --> PIMG_3152_jpg(["IMG_3152"])
+  F5 --> PIMG_3153_jpg(["IMG_3153"])
+  F5 --> PIMG_3155_jpg(["IMG_3155"])
+  A --> F6["Calle Loira resort boundary wall · disputed"]
+  F6 --> PIMG_3133_jpg(["IMG_3133"])
+  F6 --> PIMG_3135_jpg(["IMG_3135"])
+  F6 --> PIMG_3141_jpg(["IMG_3141"])
+  F6 --> PIMG_3142_jpg(["IMG_3142"])
+  F6 --> PIMG_3149_jpg(["IMG_3149"])
+  F6 --> PIMG_3150_jpg(["IMG_3150"])
+  F6 --> PIMG_3151_jpg(["IMG_3151"])
+  F6 --> PIMG_3153_jpg(["IMG_3153"])
+  F6 --> PIMG_3154_jpg(["IMG_3154"])
+  F6 --> PIMG_3155_jpg(["IMG_3155"])
 ```
 
 ## Placement evidence
@@ -65,6 +81,10 @@ graph LR
 | --- | --- | --- | --- |
 | `ground_plan_north_lanes.json:juan-gris-paving` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `ground_plan_north_lanes.json:loira-window-verge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `juan_gris_pergolas.json:juan-gris-pergola-east` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `juan_gris_pergolas.json:juan-gris-pergola-grille` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `juan_gris_pergolas.json:juan-gris-pergola-middle` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `juan_gris_pergolas.json:juan-gris-pergola-west` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `loira_boundary.json:loira-resort-wall` | disputed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy loira-outer-frontage |
 
 ## Photo checks
@@ -82,16 +102,16 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_3153.jpg](../../public/photos-ref/IMG_3153.jpg) | ground | layout, materials | Western Juan Gris path with arched grille and raised sill **Looks at:** Terracotta paving, wall and grille along Juan Gris. **Note:** Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved. _Used by: loira_boundary.json:loira-resort-wall, juan_gris_pergolas.json:juan-gris-pergola-west, ground_plan_north_lanes.json:juan-gris-paving._ |
 | [IMG_3133.jpg](../../public/photos-ref/IMG_3133.jpg) | ground | layout, materials, signage | Juan Gris street plaque and inside face of the Loira boundary **Looks at:** White boundary wall and terracotta path. **Note:** Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved. _Used by: loira_boundary.json:loira-resort-wall, ground_plan_north_lanes.json:juan-gris-paving._ |
+| [IMG_3135.jpg](../../public/photos-ref/IMG_3135.jpg) | ground | layout, materials | Juan Gris east wall opening, cropped reveal and tiled sill **Looks at:** Juan Gris east wall opening, cropped reveal and tiled sill. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. _Used by: loira_boundary.json:loira-resort-wall, juan_gris_pergolas.json:juan-gris-pergola-east._ |
 | [IMG_3141.jpg](../../public/photos-ref/IMG_3141.jpg) | ground | layout, materials | Juan Gris: terracotta lane alongside the white outer wall **Looks at:** Terracotta paving between the white wall and houses. **Note:** Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved. _Used by: loira_boundary.json:loira-resort-wall, ground_plan_north_lanes.json:juan-gris-paving._ |
+| [IMG_3149.jpg](../../public/photos-ref/IMG_3149.jpg) | ground | layout, materials | Juan Gris wall opening over the Loira grass verge **Looks at:** Juan Gris wall opening over the Loira grass verge. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. _Used by: loira_boundary.json:loira-resort-wall, juan_gris_pergolas.json:juan-gris-pergola-grille._ |
 | [IMG_3150.jpg](../../public/photos-ref/IMG_3150.jpg) | ground | layout, materials | Juan Gris barred arch looking over the Loira verge and asphalt **Looks at:** Barred opening, sill and grass outside. **Note:** Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved. _Used by: loira_boundary.json:loira-resort-wall, ground_plan_north_lanes.json:loira-window-verge._ |
 | [IMG_3151.jpg](../../public/photos-ref/IMG_3151.jpg) | ground | layout, materials | Alternate close view through the Juan Gris grille **Looks at:** Barred opening and opposite frontage. **Note:** Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved. _Used by: loira_boundary.json:loira-resort-wall, ground_plan_north_lanes.json:loira-window-verge._ |
-| [IMG_3153.jpg](../../public/photos-ref/IMG_3153.jpg) | ground | layout, materials | Western Juan Gris path with arched grille and raised sill **Looks at:** Terracotta paving, wall and grille along Juan Gris. **Note:** Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved. _Used by: loira_boundary.json:loira-resort-wall, ground_plan_north_lanes.json:juan-gris-paving._ |
-| [IMG_3135.jpg](../../public/photos-ref/IMG_3135.jpg) | ground | layout, materials | Juan Gris east wall opening, cropped reveal and tiled sill **Looks at:** Juan Gris east wall opening, cropped reveal and tiled sill. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. _Used by: loira_boundary.json:loira-resort-wall._ |
+| [IMG_3155.jpg](../../public/photos-ref/IMG_3155.jpg) | ground | layout, materials | Alternate Juan Gris west opening view **Looks at:** Alternate Juan Gris west opening view. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. _Used by: loira_boundary.json:loira-resort-wall, juan_gris_pergolas.json:juan-gris-pergola-west._ |
 | [IMG_3142.jpg](../../public/photos-ref/IMG_3142.jpg) | ground | layout, materials | Juan Gris middle wall opening beside raised planter **Looks at:** Juan Gris middle wall opening beside raised planter. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. _Used by: loira_boundary.json:loira-resort-wall._ |
-| [IMG_3149.jpg](../../public/photos-ref/IMG_3149.jpg) | ground | layout, materials | Juan Gris wall opening over the Loira grass verge **Looks at:** Juan Gris wall opening over the Loira grass verge. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. _Used by: loira_boundary.json:loira-resort-wall._ |
 | [IMG_3154.jpg](../../public/photos-ref/IMG_3154.jpg) | ground | layout, materials | Juan Gris west barred opening and low tiled threshold **Looks at:** Juan Gris west barred opening and low tiled threshold. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. **Compass:** the subject is 68° from the phone heading; trust looksAt, not the heading. _Used by: loira_boundary.json:loira-resort-wall._ |
-| [IMG_3155.jpg](../../public/photos-ref/IMG_3155.jpg) | ground | layout, materials | Alternate Juan Gris west opening view **Looks at:** Alternate Juan Gris west opening view. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. _Used by: loira_boundary.json:loira-resort-wall._ |
 | [IMG_2448.jpg](../../public/photos-ref/IMG_2448.jpg) | ground | signage, layout, materials, levels | Cervantes/Alberto junction: signed wall and paving change, path with three white steps ahead **Looks at:** Lane beyond the Alberto crossing with three white steps. **Note:** Pin is on the blue street line at the Alberto label, but the photo shows the Alberto sign on the wall; the street ID depends on which map street is right, so treat the area as cervantes plus north-lanes. looksAt is estimated 20 m along heading 243. _Used by: lane_walls.json:cervantes-south-garden-wall-alberto, cervantes_lane_edges.json:cervantes-alberto-corner-bed, steps:cervantes-alberto-steps._ |
 | [IMG_2686.jpg](../../public/photos-ref/IMG_2686.jpg) | ground | layout, planting, facades, materials | Calle Elena north from the Cervantes junction: hedged beds and white walls **Note:** Matches the existing Elena north bed and spur description (hedged beds, white wall with window/door). _Used by: lane_walls.json:elena-north-corner-patio-wall, cervantes_lane_edges.json:cervantes-elena-corner-bed, elena_north_corner.json:elena-north-corner-bed._ |
 
@@ -101,9 +121,12 @@ The camera stood in or near this area. Check what the picture actually shows bef
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_3152.jpg](../../public/photos-ref/IMG_3152.jpg) | not reviewed | not reviewed | IMG_3152 _Used by: juan_gris_pergolas.json:juan-gris-pergola-grille, juan_gris_pergolas.json:juan-gris-pergola-west, ground_plan_north_lanes.json:juan-gris-paving._ |
+| [IMG_3136.jpg](../../public/photos-ref/IMG_3136.jpg) | not reviewed | not reviewed | IMG_3136 _Used by: juan_gris_pergolas.json:juan-gris-pergola-east, ground_plan_north_lanes.json:juan-gris-paving._ |
+| [IMG_3146.jpg](../../public/photos-ref/IMG_3146.jpg) | not reviewed | not reviewed | IMG_3146 _Used by: juan_gris_pergolas.json:juan-gris-pergola-middle, ground_plan_north_lanes.json:juan-gris-paving._ |
+| [IMG_3147.jpg](../../public/photos-ref/IMG_3147.jpg) | not reviewed | not reviewed | IMG_3147 _Used by: juan_gris_pergolas.json:juan-gris-pergola-middle._ |
 | [IMG_3132.jpg](../../public/photos-ref/IMG_3132.jpg) | not reviewed | not reviewed | IMG_3132 |
 | [IMG_3134.jpg](../../public/photos-ref/IMG_3134.jpg) | not reviewed | not reviewed | IMG_3134 |
-| [IMG_3136.jpg](../../public/photos-ref/IMG_3136.jpg) | not reviewed | not reviewed | IMG_3136 |
 | [IMG_3137.jpg](../../public/photos-ref/IMG_3137.jpg) | not reviewed | not reviewed | IMG_3137 |
 | [IMG_3138.jpg](../../public/photos-ref/IMG_3138.jpg) | not reviewed | not reviewed | IMG_3138 |
 | [IMG_3139.jpg](../../public/photos-ref/IMG_3139.jpg) | not reviewed | not reviewed | IMG_3139 |
@@ -111,10 +134,7 @@ The camera stood in or near this area. Check what the picture actually shows bef
 | [IMG_3143.jpg](../../public/photos-ref/IMG_3143.jpg) | not reviewed | not reviewed | IMG_3143 |
 | [IMG_3144.jpg](../../public/photos-ref/IMG_3144.jpg) | not reviewed | not reviewed | IMG_3144 |
 | [IMG_3145.jpg](../../public/photos-ref/IMG_3145.jpg) | not reviewed | not reviewed | IMG_3145 |
-| [IMG_3146.jpg](../../public/photos-ref/IMG_3146.jpg) | not reviewed | not reviewed | IMG_3146 |
-| [IMG_3147.jpg](../../public/photos-ref/IMG_3147.jpg) | not reviewed | not reviewed | IMG_3147 |
 | [IMG_3148.jpg](../../public/photos-ref/IMG_3148.jpg) | not reviewed | not reviewed | IMG_3148 |
-| [IMG_3152.jpg](../../public/photos-ref/IMG_3152.jpg) | not reviewed | not reviewed | IMG_3152 |
 | [IMG_3156.jpg](../../public/photos-ref/IMG_3156.jpg) | not reviewed | not reviewed | IMG_3156 |
 | [IMG_3157.jpg](../../public/photos-ref/IMG_3157.jpg) | not reviewed | not reviewed | IMG_3157 |
 | [IMG_3158.jpg](../../public/photos-ref/IMG_3158.jpg) | not reviewed | not reviewed | IMG_3158 |
