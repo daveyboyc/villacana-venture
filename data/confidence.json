@@ -13,11 +13,11 @@
  "features": {
   "loira_boundary.json:loira-resort-wall": {
    "level": "estimated",
-   "why": "Photos establish wall and arch form; aerial trace and unsolved camera pins supply approximate extents and opening position."
+   "why": "Photos establish the eastern wall and arch form. The west stretch to Dalí follows an aerial band partly obscured by vegetation. The wall height and window station are estimates."
   },
   "ground_plan_north_lanes.json:juan-gris-paving": {
    "level": "estimated",
-   "why": "Four terracotta courses visible inside the wall; extents and width inferred from the registry gap and tile count."
+   "why": "Four terracotta courses are visible inside the wall. The west extension follows the aerial path band to Dalí and reuses the adjacent lane finish."
   },
   "ground_plan_north_lanes.json:loira-west-verge": {
    "level": "inferred",
