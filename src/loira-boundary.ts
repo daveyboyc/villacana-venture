@@ -5,6 +5,8 @@ import { plasterMaterial, surfaceTexture } from "./materials";
 import { siteY } from "./terrain";
 import type { Vec2 } from "./types";
 
+type WallWindow = (typeof data.windows)[number];
+
 export const loiraWall = { ...data, points: data.points as Vec2[] };
 export const loiraWallRings = () => barrierRings([{ ...loiraWall, solid: true }]);
 
@@ -14,7 +16,9 @@ export function addLoiraBoundary(scene: THREE.Scene): void {
   wall.userData.noDrape = true;
   wall.userData.structural = true;
   const plaster = plasterMaterial("#fffdf5");
-  const { points, thickness, height, window } = loiraWall;
+  const { points, thickness, height, windows } = loiraWall;
+  const iron = new THREE.MeshStandardMaterial({ color: "#302e2c", roughness: 0.68 });
+  const tile = new THREE.MeshStandardMaterial({ map: surfaceTexture("paving"), color: "#ba8068", roughness: 0.88 });
 
   for (const [i, a] of points.slice(0, -1).entries()) {
     const b = points[i + 1], length = Math.hypot(b[0] - a[0], b[1] - a[1]);
@@ -25,7 +29,8 @@ export function addLoiraBoundary(scene: THREE.Scene): void {
     shape.moveTo(start, -0.18);
     shape.lineTo(end, -0.18);
     shape.lineTo(end, height);
-    if (i === window.segment) {
+    const openings = windows.filter(window => window.segment === i).sort((a, b) => b.along - a.along);
+    for (const window of openings) {
       const left = window.along - window.width / 2, right = window.along + window.width / 2;
       shape.lineTo(right + 0.22, height);
       shape.lineTo(right + 0.22, window.cap);
@@ -34,7 +39,11 @@ export function addLoiraBoundary(scene: THREE.Scene): void {
       const opening = new THREE.Path();
       opening.moveTo(left, window.sill);
       opening.lineTo(left, window.spring);
-      opening.absellipse(window.along, window.spring, window.width / 2, window.rise, Math.PI, 0, true);
+      if (window.rise > 0) {
+        opening.absellipse(window.along, window.spring, window.width / 2, window.rise, Math.PI, 0, true);
+      } else {
+        opening.lineTo(right, window.spring);
+      }
       opening.lineTo(right, window.sill);
       opening.closePath();
       shape.holes.push(opening);
@@ -53,9 +62,9 @@ export function addLoiraBoundary(scene: THREE.Scene): void {
     mesh.name = loiraWall.id;
     mesh.castShadow = mesh.receiveShadow = true;
     wall.add(mesh);
-    if (i === window.segment) {
+    for (const window of openings) {
       const x = a[0] + dx * window.along, z = a[1] + dz * window.along;
-      const frame = windowFittings();
+      const frame = windowFittings(window, thickness, iron, tile);
       frame.position.set(x, siteY(x, z) + 0.06, z);
       frame.rotation.y = -Math.atan2(dz, dx);
       wall.add(frame);
@@ -65,12 +74,9 @@ export function addLoiraBoundary(scene: THREE.Scene): void {
 }
 
 /** Fixed ironwork and terracotta sill at the photographed opening. */
-function windowFittings(): THREE.Group {
-  const { thickness, window } = loiraWall;
+function windowFittings(window: WallWindow, thickness: number, iron: THREE.Material, tile: THREE.Material): THREE.Group {
   const frame = new THREE.Group();
-  frame.name = "loira-window-fittings";
-  const iron = new THREE.MeshStandardMaterial({ color: "#302e2c", roughness: 0.68 });
-  const tile = new THREE.MeshStandardMaterial({ map: surfaceTexture("paving"), color: "#ba8068", roughness: 0.88 });
+  frame.name = window.id + "-fittings";
   const add = (width: number, height: number, depth: number, x: number, y: number, material: THREE.Material) => {
     const mesh = new THREE.Mesh(new THREE.BoxGeometry(width, height, depth), material);
     mesh.position.set(x, y, 0);
@@ -84,6 +90,9 @@ function windowFittings(): THREE.Group {
     const top = window.spring + window.rise * Math.sqrt(1 - (x / halfWidth) ** 2);
     add(0.022, top - window.sill, 0.022, x, (top + window.sill) / 2, iron);
   }
-  for (const y of [0.88, 1.49, 1.84]) add(window.width, 0.022, 0.025, 0, y, iron);
+  for (const fraction of [0.25, 0.70, 0.95]) {
+    const y = window.sill + fraction * (window.spring - window.sill);
+    add(window.width, 0.022, 0.025, 0, y, iron);
+  }
   return frame;
 }

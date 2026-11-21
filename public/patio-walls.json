@@ -3190,14 +3190,19 @@
       ],
       "evidence": [
         "IMG_3133.jpg",
+        "IMG_3135.jpg",
         "IMG_3141.jpg",
+        "IMG_3142.jpg",
+        "IMG_3149.jpg",
         "IMG_3150.jpg",
         "IMG_3151.jpg",
-        "IMG_3153.jpg"
+        "IMG_3153.jpg",
+        "IMG_3154.jpg",
+        "IMG_3155.jpg"
       ],
       "confidence": "estimated",
       "placement": "disputed",
-      "basis": "Model group context, not a traced wall axis or quantity. Photos establish the eastern wall and arch form. The west stretch to Dalí follows an aerial band partly obscured by vegetation. The wall height and window station are estimates.",
+      "basis": "Model group context, not a traced wall axis or quantity. Photos show four boundary openings from Juan Gris. The east and middle window heads are partly visible and use an estimated arch. Stations and elevations are approximate.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {

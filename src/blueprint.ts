@@ -183,6 +183,17 @@ async function boot(): Promise<void> {
   loiraTitle.textContent = loiraWall.name + " · " + loiraWall.trust;
   loira.append(loiraTitle);
   laneWallGroup.append(loira);
+  for (const opening of loiraWall.windows) {
+    const a = loiraWall.points[opening.segment], b = loiraWall.points[opening.segment + 1];
+    const fraction = opening.along / Math.hypot(b[0] - a[0], b[1] - a[1]);
+    const marker = el("circle", { cx: a[0] + (b[0] - a[0]) * fraction, cy: a[1] + (b[1] - a[1]) * fraction,
+      r: 0.45, fill: "#302e2c", "data-loira-window": opening.id });
+    const title = el("title", {});
+    title.textContent = "Estimated Loira wall opening · " + opening.evidence.join(", ");
+    marker.append(title);
+    laneWallGroup.append(marker);
+  }
+
   // Cervantes beds and hedge planters along the lane (data/cervantes_lane_edges.json).
   for(const bed of cervantesLaneEdges){
     const node=el("path",{d:path(bed.ring),fill:bed.kind==="raised"?"#4f6b3c":"#5a4634",stroke:"#fffdf5","stroke-width":bed.wall,"data-cervantes-edge-id":bed.id});

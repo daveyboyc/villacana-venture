@@ -24339,14 +24339,17 @@
   "id": "IMG_3135.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3135.jpg",
-  "title": "IMG_3135",
+  "title": "Juan Gris east wall opening, cropped reveal and tiled sill",
   "shows": [
    "north-lanes"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "Subject station is estimated along the traced wall using the unsolved camera and its view down the lane.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1R2-XnQc0RzGzim-wOHa-D7ykwiZLjC1T/view?usp=drivesdk",
@@ -24358,18 +24361,21 @@
    "altitude": 5.3,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -131.6,
-   -56.6
+  "citedBy": [
+   "loira_boundary.json:loira-resort-wall"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -126.08,
+   -58.85
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:loira",
-   "backdrop.json:aerial-trees",
    "loira_boundary.json:loira-resort-wall",
-   "ground_plan_north_lanes.json:juan-gris-paving"
-  ]
+   "backdrop.json:aerial-trees",
+   "ground_plan_north_lanes.json:juan-gris-paving",
+   "street:loira"
+  ],
+  "subject": "Juan Gris east wall opening, cropped reveal and tiled sill"
  },
  {
   "id": "IMG_3136.jpg",
@@ -24589,14 +24595,17 @@
   "id": "IMG_3142.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3142.jpg",
-  "title": "IMG_3142",
+  "title": "Juan Gris middle wall opening beside raised planter",
   "shows": [
    "north-lanes"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "Subject station is estimated along the traced wall using the unsolved camera and its view down the lane.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1keUToPCUExoXmaYpQx7X_blHPtFWWxq_/view?usp=drivesdk",
@@ -24608,18 +24617,21 @@
    "altitude": 6.5,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -148.0,
-   -44.9
+  "citedBy": [
+   "loira_boundary.json:loira-resort-wall"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -144.77,
+   -47.94
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "ground_plan_north_lanes.json:juan-gris-paving",
-   "backdrop.json:aerial-trees",
    "loira_boundary.json:loira-resort-wall",
+   "backdrop.json:aerial-trees",
+   "ground_plan_north_lanes.json:juan-gris-paving",
    "street:loira"
-  ]
+  ],
+  "subject": "Juan Gris middle wall opening beside raised planter"
  },
  {
   "id": "IMG_3143.jpg",
@@ -24835,14 +24847,17 @@
   "id": "IMG_3149.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3149.jpg",
-  "title": "IMG_3149",
+  "title": "Juan Gris wall opening over the Loira grass verge",
   "shows": [
    "north-lanes"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "Subject station is estimated along the traced wall using the unsolved camera and its view down the lane.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1LZE4vd-gcaK59vlHet2gYlb5aW901VFq/view?usp=drivesdk",
@@ -24854,18 +24869,21 @@
    "altitude": 6.2,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -185.0,
-   -23.8
+  "citedBy": [
+   "loira_boundary.json:loira-resort-wall"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -181.42,
+   -24.13
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "ground_plan_north_lanes.json:loira-window-verge",
-   "backdrop.json:aerial-trees",
    "loira_boundary.json:loira-resort-wall",
+   "backdrop.json:aerial-trees",
+   "ground_plan_north_lanes.json:loira-window-verge",
    "ground_plan_north_lanes.json:juan-gris-paving"
-  ]
+  ],
+  "subject": "Juan Gris wall opening over the Loira grass verge"
  },
  {
   "id": "IMG_3150.jpg",
@@ -25034,14 +25052,17 @@
   "id": "IMG_3154.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3154.jpg",
-  "title": "IMG_3154",
+  "title": "Juan Gris west barred opening and low tiled threshold",
   "shows": [
    "north-lanes"
   ],
-  "areasBasis": "nearest lane, 7 m from the camera (weak)",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "Subject station is estimated along the traced wall using the unsolved camera and its view down the lane.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/18rxdV7e12ipYNg6ieT5wx6KsDW4RlsPV/view?usp=drivesdk",
@@ -25053,30 +25074,37 @@
    "altitude": 6.9,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -199.5,
-   -12.4
-  ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": [
-   "backdrop.json:aerial-trees",
-   "ground_plan_north_lanes.json:juan-gris-paving",
+  "citedBy": [
    "loira_boundary.json:loira-resort-wall"
-  ]
+  ],
+  "looksAt": [
+   -195.36,
+   -16.13
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving",
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "Juan Gris west barred opening and low tiled threshold",
+  "headingOff": 68
  },
  {
   "id": "IMG_3155.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3155.jpg",
-  "title": "IMG_3155",
+  "title": "Alternate Juan Gris west opening view",
   "shows": [
    "north-lanes"
   ],
-  "areasBasis": "nearest lane, 7 m from the camera (weak)",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "Subject station is estimated along the traced wall using the unsolved camera and its view down the lane.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1RVOmK_w0xbpg2HJynlEkoc70H2z4icOK/view?usp=drivesdk",
@@ -25088,17 +25116,20 @@
    "altitude": 7.2,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -199.2,
-   -13.2
-  ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": [
-   "ground_plan_north_lanes.json:juan-gris-paving",
-   "backdrop.json:aerial-trees",
+  "citedBy": [
    "loira_boundary.json:loira-resort-wall"
-  ]
+  ],
+  "looksAt": [
+   -195.36,
+   -16.13
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "loira_boundary.json:loira-resort-wall",
+   "ground_plan_north_lanes.json:juan-gris-paving",
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "Alternate Juan Gris west opening view"
  },
  {
   "id": "IMG_3156.jpg",
