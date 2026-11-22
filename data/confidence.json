@@ -563,6 +563,10 @@
    "level": "inferred",
    "why": "Seen only on the aerial as a pale line; no ground photo. Built so the lawn shows it; what it is and where it ends are open (photo request lawn-east-path)."
   },
+  "ground_plan_north_pool.json:north-pool-dali-link": {
+   "level": "estimated",
+   "why": "IMG_2551-2553 and IMG_2705-2707 show the tiled Dalí-side link and its kerbs/planting, but the camera pins do not fit the registry footprints precisely and no solved crossing camera exists. The proposed line avoids all solid house polygons and the walled north-pool patio and ties into the existing south-west crazy-paving path; its exact plan shape, width and thresholds are unverified. See docs/reviews/north-pool-dali-link/README.md."
+  },
   "ground_plan_north_pool.json:north-pool-lawn-path": {
    "level": "estimated",
    "why": "Photo-supported paving. The west side, the south-west branch along the hibiscus hedge and the gap path through the south hedges are cast through the solved IMG_2204 camera (about half a metre). The north stretch keeps the earlier trace against the patio fronts; the camera casts it 1-3 m north (open discrepancy). Width estimated."

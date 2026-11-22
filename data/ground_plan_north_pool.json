@@ -538,6 +538,125 @@
       "evidence": [
         "IMG_2205.jpg"
       ]
+    },
+    {
+      "id": "north-pool-dali-link",
+      "name": "North pool south-west · tiled connector towards Calle Pintor Dalí",
+      "kind": "path",
+      "finish": "terracotta-squares",
+      "width": 1.2,
+      "lines": [
+        [
+          [
+            -208,
+            44
+          ],
+          [
+            -204,
+            45
+          ],
+          [
+            -200,
+            46.5
+          ],
+          [
+            -197.5,
+            46.5
+          ],
+          [
+            -195,
+            45.5
+          ],
+          [
+            -193,
+            44.5
+          ],
+          [
+            -191.5,
+            43
+          ],
+          [
+            -190,
+            42
+          ],
+          [
+            -188.5,
+            40.5
+          ],
+          [
+            -188.5,
+            37.5
+          ],
+          [
+            -188.5,
+            34.5
+          ],
+          [
+            -188.5,
+            31.5
+          ],
+          [
+            -188.5,
+            28.5
+          ],
+          [
+            -187,
+            28
+          ],
+          [
+            -184,
+            28
+          ],
+          [
+            -182.5,
+            28.5
+          ],
+          [
+            -181,
+            30
+          ],
+          [
+            -179.7,
+            31.3
+          ]
+        ]
+      ],
+      "ends": [
+        [
+          "square",
+          "square"
+        ]
+      ],
+      "joins": 0.5,
+      "above": [
+        "north-pool-lawn-path"
+      ],
+      "edges": [
+        {
+          "kind": "kerb",
+          "side": "both",
+          "span": [
+            0,
+            10
+          ],
+          "height": 0.1,
+          "width": 0.12,
+          "note": "Low white curbs and a curved approach are photographed at the Dalí-side mouth; only the first 10 m of the connector receives them. The exact endpoints are estimates.",
+          "evidence": [
+            "IMG_2552.jpg",
+            "IMG_2705.jpg"
+          ]
+        }
+      ],
+      "note": "Ground-level IMG_2551/2552 face the Dalí junction and show a square terracotta-tiled approach, low white kerbs and planting; IMG_2553/2706/2707 face east along the same tiled link between house fronts. The full centreline is an estimated corridor following the free space between unchanged registry footprints, bending around the west side of the photographed gated patio and meeting the existing north-pool south-west crazy-paving path at (-179.7, 31.3). The phones' camera pins disagree with the building polygons by several metres, so this is provisional plan geometry, NOT a solved-camera or surveyed trace. Do not infer public access through private gates, unseen walls or house footprints. Verify the path ends, widths and corner shape against additional ground-level photos before placement approval.",
+      "evidence": [
+        "IMG_2551.jpg",
+        "IMG_2552.jpg",
+        "IMG_2553.jpg",
+        "IMG_2705.jpg",
+        "IMG_2706.jpg",
+        "IMG_2707.jpg"
+      ]
     }
   ]
 }
