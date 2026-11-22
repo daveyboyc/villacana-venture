@@ -69958,6 +69958,651 @@
    "checks": []
   },
   {
+   "id": "IMG_3184.jpg",
+   "label": "IMG_3184",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3184.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3184.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3184.jpg",
+   "areas": [
+    "picasso"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -41.8,
+    "z": 23.2,
+    "heading": 213,
+    "accuracy": 2.2,
+    "altitude": 6.9,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -45.1,
+    28.2
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3184.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "parking:Picasso car park",
+      "name": "Picasso car park",
+      "kind": "parking",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6365201UF1366N_part18",
+      "distance": 34.1,
+      "angleOffset": 8.4
+     },
+     {
+      "id": "building:6365201UF1366N_part17",
+      "distance": 36.8,
+      "angleOffset": 22.0
+     },
+     {
+      "id": "building:6365201UF1366N_part10",
+      "distance": 39.1,
+      "angleOffset": 16.4
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -41.8,
+     "z": 23.2,
+     "basis": "phone location",
+     "reportedAccuracy": 2.2,
+     "heading": 213,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/12KT-2mB6ry6oZn-KTA_0_pb_9eTrEIy5/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3184.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3189.jpg",
+   "label": "IMG_3189",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3189.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3189.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3189.jpg",
+   "areas": [
+    "picasso"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -45.8,
+    "z": 25.0,
+    "heading": 255,
+    "accuracy": 2.8,
+    "altitude": 6.9,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -51.6,
+    26.6
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3189.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "parking:Picasso car park",
+      "name": "Picasso car park",
+      "kind": "parking",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6365201UF1366N_part16",
+      "distance": 31.5,
+      "angleOffset": 5.7
+     },
+     {
+      "id": "building:6365201UF1366N_part17",
+      "distance": 32.5,
+      "angleOffset": 21.5
+     },
+     {
+      "id": "building:6365201UF1366N_part10",
+      "distance": 34.9,
+      "angleOffset": 27.7
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -45.8,
+     "z": 25.0,
+     "basis": "phone location",
+     "reportedAccuracy": 2.8,
+     "heading": 255,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1VbnZL42RdH38ws4QHpUwxdQ79YmYisHq/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3189.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3194.jpg",
+   "label": "IMG_3194",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3194.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3194.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3194.jpg",
+   "areas": [
+    "picasso"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -52.5,
+    "z": 30.9,
+    "heading": 177,
+    "accuracy": 4.7,
+    "altitude": 7.1,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -52.2,
+    36.9
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3194.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "parking:Picasso car park",
+      "name": "Picasso car park",
+      "kind": "parking",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6364501UF1366S_part5",
+      "distance": 39.4,
+      "angleOffset": 29.7
+     },
+     {
+      "id": "building:6365101UF1366N_part6",
+      "distance": 39.8,
+      "angleOffset": 20.0
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -52.5,
+     "z": 30.9,
+     "basis": "phone location",
+     "reportedAccuracy": 4.7,
+     "heading": 177,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/12NH4pecTFhttoP3ykVXA7Lbxa_IiMa_J/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3194.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3196.jpg",
+   "label": "IMG_3196",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3196.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3196.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3196.jpg",
+   "areas": [
+    "picasso"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -55.0,
+    "z": 34.3,
+    "heading": 255,
+    "accuracy": 4.7,
+    "altitude": 7.4,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -60.8,
+    35.9
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3196.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "parking:Picasso car park",
+      "name": "Picasso car park",
+      "kind": "parking",
+      "gap": 0.7
+     },
+     {
+      "id": "street:picasso-access",
+      "name": "Picasso car-park access",
+      "kind": "street",
+      "gap": 5.1
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6365201UF1366N_part17",
+      "distance": 19.7,
+      "angleOffset": 15.6
+     },
+     {
+      "id": "building:6365201UF1366N_part16",
+      "distance": 20.4,
+      "angleOffset": 9.8
+     },
+     {
+      "id": "building:6365201UF1366N_part10",
+      "distance": 21.9,
+      "angleOffset": 26.1
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -55.0,
+     "z": 34.3,
+     "basis": "phone location",
+     "reportedAccuracy": 4.7,
+     "heading": 255,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1wmMbXsALfrmqRpd4n4oSr4wNpawv2RZK/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3196.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3202.jpg",
+   "label": "IMG_3202",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3202.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3202.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3202.jpg",
+   "areas": [
+    "picasso",
+    "cervantes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -73.9,
+    "z": 8.0,
+    "heading": 256,
+    "accuracy": 2.4,
+    "altitude": 7.6,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -79.7,
+    9.5
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3202.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "Uncertainty reaches more than one named street"
+    ],
+    "nearby": [
+     {
+      "id": "parking:Picasso car park",
+      "name": "Picasso car park",
+      "kind": "parking",
+      "gap": 0
+     },
+     {
+      "id": "street:picasso-access",
+      "name": "Picasso car-park access",
+      "kind": "street",
+      "gap": 2.1
+     },
+     {
+      "id": "street:cervantes",
+      "name": "Calle Miguel de Cervantes",
+      "kind": "street",
+      "gap": 3.2
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6266801UF1366N_part7",
+      "distance": 20.2,
+      "angleOffset": 0.6
+     },
+     {
+      "id": "building:6266801UF1366N_part2",
+      "distance": 27.2,
+      "angleOffset": 0.4
+     },
+     {
+      "id": "building:6266801UF1366N_part5",
+      "distance": 33.2,
+      "angleOffset": 6.3
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -73.9,
+     "z": 8.0,
+     "basis": "phone location",
+     "reportedAccuracy": 2.4,
+     "heading": 256,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1LUX_fSa9jFjt3P9RdGgEShy6v6ckblp7/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3202.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3203.jpg",
+   "label": "IMG_3203",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3203.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3203.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3203.jpg",
+   "areas": [
+    "cervantes",
+    "picasso",
+    "north-lanes",
+    "eva",
+    "seaward-lanes",
+    "elena"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -89.5,
+    "z": 12.4,
+    "heading": 160,
+    "accuracy": 103.7,
+    "altitude": 7.3,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -87.4,
+    18.0
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3203.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "GPS uncertainty exceeds 8 m",
+     "Uncertainty reaches more than one named street"
+    ],
+    "nearby": [
+     {
+      "id": "street:cervantes",
+      "name": "Calle Miguel de Cervantes",
+      "kind": "street",
+      "gap": 5.6
+     },
+     {
+      "id": "parking:Picasso car park",
+      "name": "Picasso car park",
+      "kind": "parking",
+      "gap": 8.8
+     },
+     {
+      "id": "street:picasso-access",
+      "name": "Picasso car-park access",
+      "kind": "street",
+      "gap": 9.6
+     },
+     {
+      "id": "street:alberto",
+      "name": "Calle Alberto",
+      "kind": "street",
+      "gap": 29.7
+     },
+     {
+      "id": "street:picasso",
+      "name": "Calle Pintor Picasso",
+      "kind": "street",
+      "gap": 41.6
+     },
+     {
+      "id": "street:eva",
+      "name": "Calle Eva",
+      "kind": "street",
+      "gap": 47.5
+     },
+     {
+      "id": "street:guillermo",
+      "name": "Calle Guillermo",
+      "kind": "street",
+      "gap": 47.5
+     },
+     {
+      "id": "street:isabel",
+      "name": "Calle Isabel de Oyarzábal",
+      "kind": "street",
+      "gap": 51.6
+     },
+     {
+      "id": "street:teodoro-rojo",
+      "name": "Calle Teodoro Rojo",
+      "kind": "street",
+      "gap": 62.5
+     },
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 67.7
+     },
+     {
+      "id": "street:elena-south",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 78.0
+     },
+     {
+      "id": "street:loira",
+      "name": "Calle Loira",
+      "kind": "street",
+      "gap": 80.4
+     },
+     {
+      "id": "street:bolivia",
+      "name": "Calle Bolivia",
+      "kind": "street",
+      "gap": 85.4
+     },
+     {
+      "id": "street:patricia",
+      "name": "Calle Patricia",
+      "kind": "street",
+      "gap": 89.1
+     },
+     {
+      "id": "street:silvia-north",
+      "name": "Calle Silvia",
+      "kind": "street",
+      "gap": 96.3
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6365201UF1366N_part2",
+      "distance": 10.4,
+      "angleOffset": 22.9
+     },
+     {
+      "id": "building:6365201UF1366N_part7",
+      "distance": 13.3,
+      "angleOffset": 2.2
+     },
+     {
+      "id": "building:6365201UF1366N_part15",
+      "distance": 17.4,
+      "angleOffset": 7.2
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -89.5,
+     "z": 12.4,
+     "basis": "phone location",
+     "reportedAccuracy": 103.7,
+     "heading": 160,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1aF3v8RrFsSPBReb5sD1HeqAoSKoBWfCF/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3203.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_3206.jpg",
+   "label": "IMG_3206",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_3206.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_3206.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_3206.jpg",
+   "areas": [
+    "cervantes"
+   ],
+   "viewpoint": null,
+   "useFor": [],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -100.0,
+    "z": 24.1,
+    "heading": 244,
+    "accuracy": 4.7,
+    "altitude": 6.7,
+    "trust": "phone location"
+   },
+   "subject": null,
+   "looksAt": [
+    -105.4,
+    26.7
+   ],
+   "looksAtBasis": "estimated 6 m along the heading",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_3206.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:cervantes",
+      "name": "Calle Miguel de Cervantes",
+      "kind": "street",
+      "gap": 0.9
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265401UF1366N_part2",
+      "distance": 33.0,
+      "angleOffset": 0.9
+     },
+     {
+      "id": "building:6265601UF1366N_part1",
+      "distance": 41.3,
+      "angleOffset": 32.3
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -100.0,
+     "z": 24.1,
+     "basis": "phone location",
+     "reportedAccuracy": 4.7,
+     "heading": 244,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/17q05A5-1K_oZ-f53vLX2I_oVAhmfWC6p/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_3206.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
    "id": "ref:apple-maps/01-3d-overview-from-north.png",
    "label": "Apple Maps 3D: the whole block looking south to the sea",
    "kind": "map-screenshot",

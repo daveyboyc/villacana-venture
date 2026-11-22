@@ -28,7 +28,7 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 ## Coverage
 
 Layout: 55, Levels and slopes: 6, Facades and roofs: 26, Materials: 50, Planting: 40, Signs: 9, Views: 2
-61 reviewed, 0 suggested only by camera position.
+61 reviewed, 1 suggested only by camera position.
 
 ## Open build tasks
 
@@ -197,3 +197,11 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2558.jpg](../../public/photos-ref/IMG_2558.jpg) | ground | layout, materials, planting | Terracotta footpath with kerbed planters leading to a brown gate **Note:** Pin altitude 9.3 m reads 'above ground', but the picture is at ground level (GPS height noise). |
 | [IMG_2701.jpg](../../public/photos-ref/IMG_2701.jpg) | ground | layout, materials, planting | Small tiled forecourt at the Dali kerb with a lantern **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
 | [IMG_2711.jpg](../../public/photos-ref/IMG_2711.jpg) | ground | layout, materials, planting | Through the gate: tiled path into the middle pool garden |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_3203.jpg](../../public/photos-ref/IMG_3203.jpg) | not reviewed | not reviewed | IMG_3203 |

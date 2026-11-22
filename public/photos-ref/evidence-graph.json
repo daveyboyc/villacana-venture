@@ -1,11 +1,11 @@
 {
  "version": 1,
- "inputDigest": "e1f0950071a08b19328031fb49bae3a1a4098bdc9b71ab77b6aa8069e87727c4",
+ "inputDigest": "097fe372ef36febcb6e0fc1509b89f6143dacc34d2a4d6a8d6d4f3e025c952a5",
  "summary": {
   "unplaced": 4,
-  "needs-review": 271,
-  "suggested": 364,
-  "photos": 639,
+  "needs-review": 273,
+  "suggested": 369,
+  "photos": 646,
   "features": 534,
   "photosCitedByModel": 249,
   "modelFeaturesWithPhotoCitations": 277
@@ -9463,6 +9463,55 @@
    "kind": "photo",
    "name": "IMG_3173",
    "file": "IMG_3173.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3184.jpg",
+   "kind": "photo",
+   "name": "IMG_3184",
+   "file": "IMG_3184.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3189.jpg",
+   "kind": "photo",
+   "name": "IMG_3189",
+   "file": "IMG_3189.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3194.jpg",
+   "kind": "photo",
+   "name": "IMG_3194",
+   "file": "IMG_3194.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3196.jpg",
+   "kind": "photo",
+   "name": "IMG_3196",
+   "file": "IMG_3196.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_3202.jpg",
+   "kind": "photo",
+   "name": "IMG_3202",
+   "file": "IMG_3202.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_3203.jpg",
+   "kind": "photo",
+   "name": "IMG_3203",
+   "file": "IMG_3203.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_3206.jpg",
+   "kind": "photo",
+   "name": "IMG_3206",
+   "file": "IMG_3206.jpg",
    "status": "suggested"
   },
   {
@@ -28396,6 +28445,283 @@
    "relation": "possibly-in-view",
    "distance": 40.0,
    "angleOffset": 15.6
+  },
+  {
+   "from": "photo:IMG_3184.jpg",
+   "to": "parking:Picasso car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_3184.jpg",
+   "to": "building:6365201UF1366N_part18",
+   "relation": "possibly-in-view",
+   "distance": 34.1,
+   "angleOffset": 8.4
+  },
+  {
+   "from": "photo:IMG_3184.jpg",
+   "to": "building:6365201UF1366N_part17",
+   "relation": "possibly-in-view",
+   "distance": 36.8,
+   "angleOffset": 22.0
+  },
+  {
+   "from": "photo:IMG_3184.jpg",
+   "to": "building:6365201UF1366N_part10",
+   "relation": "possibly-in-view",
+   "distance": 39.1,
+   "angleOffset": 16.4
+  },
+  {
+   "from": "photo:IMG_3189.jpg",
+   "to": "parking:Picasso car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_3189.jpg",
+   "to": "building:6365201UF1366N_part16",
+   "relation": "possibly-in-view",
+   "distance": 31.5,
+   "angleOffset": 5.7
+  },
+  {
+   "from": "photo:IMG_3189.jpg",
+   "to": "building:6365201UF1366N_part17",
+   "relation": "possibly-in-view",
+   "distance": 32.5,
+   "angleOffset": 21.5
+  },
+  {
+   "from": "photo:IMG_3189.jpg",
+   "to": "building:6365201UF1366N_part10",
+   "relation": "possibly-in-view",
+   "distance": 34.9,
+   "angleOffset": 27.7
+  },
+  {
+   "from": "photo:IMG_3194.jpg",
+   "to": "parking:Picasso car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_3194.jpg",
+   "to": "building:6364501UF1366S_part5",
+   "relation": "possibly-in-view",
+   "distance": 39.4,
+   "angleOffset": 29.7
+  },
+  {
+   "from": "photo:IMG_3194.jpg",
+   "to": "building:6365101UF1366N_part6",
+   "relation": "possibly-in-view",
+   "distance": 39.8,
+   "angleOffset": 20.0
+  },
+  {
+   "from": "photo:IMG_3196.jpg",
+   "to": "parking:Picasso car park",
+   "relation": "camera-nearby",
+   "gap": 0.7
+  },
+  {
+   "from": "photo:IMG_3196.jpg",
+   "to": "street:picasso-access",
+   "relation": "camera-nearby",
+   "gap": 5.1
+  },
+  {
+   "from": "photo:IMG_3196.jpg",
+   "to": "building:6365201UF1366N_part17",
+   "relation": "possibly-in-view",
+   "distance": 19.7,
+   "angleOffset": 15.6
+  },
+  {
+   "from": "photo:IMG_3196.jpg",
+   "to": "building:6365201UF1366N_part16",
+   "relation": "possibly-in-view",
+   "distance": 20.4,
+   "angleOffset": 9.8
+  },
+  {
+   "from": "photo:IMG_3196.jpg",
+   "to": "building:6365201UF1366N_part10",
+   "relation": "possibly-in-view",
+   "distance": 21.9,
+   "angleOffset": 26.1
+  },
+  {
+   "from": "photo:IMG_3202.jpg",
+   "to": "parking:Picasso car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_3202.jpg",
+   "to": "street:picasso-access",
+   "relation": "camera-nearby",
+   "gap": 2.1
+  },
+  {
+   "from": "photo:IMG_3202.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 3.2
+  },
+  {
+   "from": "photo:IMG_3202.jpg",
+   "to": "building:6266801UF1366N_part7",
+   "relation": "possibly-in-view",
+   "distance": 20.2,
+   "angleOffset": 0.6
+  },
+  {
+   "from": "photo:IMG_3202.jpg",
+   "to": "building:6266801UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 27.2,
+   "angleOffset": 0.4
+  },
+  {
+   "from": "photo:IMG_3202.jpg",
+   "to": "building:6266801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 33.2,
+   "angleOffset": 6.3
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 5.6
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "parking:Picasso car park",
+   "relation": "camera-nearby",
+   "gap": 8.8
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:picasso-access",
+   "relation": "camera-nearby",
+   "gap": 9.6
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:alberto",
+   "relation": "camera-nearby",
+   "gap": 29.7
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:picasso",
+   "relation": "camera-nearby",
+   "gap": 41.6
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 47.5
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:guillermo",
+   "relation": "camera-nearby",
+   "gap": 47.5
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:isabel",
+   "relation": "camera-nearby",
+   "gap": 51.6
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 62.5
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 67.7
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 78.0
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:loira",
+   "relation": "camera-nearby",
+   "gap": 80.4
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:bolivia",
+   "relation": "camera-nearby",
+   "gap": 85.4
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:patricia",
+   "relation": "camera-nearby",
+   "gap": 89.1
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 96.3
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "building:6365201UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 10.4,
+   "angleOffset": 22.9
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "building:6365201UF1366N_part7",
+   "relation": "possibly-in-view",
+   "distance": 13.3,
+   "angleOffset": 2.2
+  },
+  {
+   "from": "photo:IMG_3203.jpg",
+   "to": "building:6365201UF1366N_part15",
+   "relation": "possibly-in-view",
+   "distance": 17.4,
+   "angleOffset": 7.2
+  },
+  {
+   "from": "photo:IMG_3206.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0.9
+  },
+  {
+   "from": "photo:IMG_3206.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 33.0,
+   "angleOffset": 0.9
+  },
+  {
+   "from": "photo:IMG_3206.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 41.3,
+   "angleOffset": 32.3
   },
   {
    "from": "ref:apple-maps/02-3d-north-pool.png",

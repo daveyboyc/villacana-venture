@@ -2278,6 +2278,11 @@
      "photo": "IMG_3173.jpg",
      "state": "needs-solving",
      "station": null
+    },
+    {
+     "photo": "IMG_3203.jpg",
+     "state": "needs-solving",
+     "station": null
     }
    ],
    "readyTasks": [
@@ -2474,10 +2479,12 @@
      "why": "no photo covers this half of Cervantes",
      "photoRequest": "cervantes-east-from-picasso",
      "status": "open",
-     "sources": [],
+     "sources": [
+      "IMG_3202.jpg"
+     ],
      "features": [],
      "tasks": [],
-     "state": "open"
+     "state": "received"
     },
     {
      "id": "photo-cervantes-junction-patio",
@@ -2941,6 +2948,21 @@
     },
     {
      "photo": "IMG_3097.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3202.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3203.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3206.jpg",
      "state": "needs-solving",
      "station": null
     }
@@ -3504,6 +3526,36 @@
      "photo": "IMG_3131.jpg",
      "state": "needs-solving",
      "station": null
+    },
+    {
+     "photo": "IMG_3184.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3189.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3194.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3196.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3202.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3203.jpg",
+     "state": "needs-solving",
+     "station": null
     }
    ],
    "readyTasks": [
@@ -3792,6 +3844,11 @@
     },
     {
      "photo": "IMG_3170.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3203.jpg",
      "state": "needs-solving",
      "station": null
     }
@@ -4143,6 +4200,11 @@
     },
     {
      "photo": "IMG_3007.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3203.jpg",
      "state": "needs-solving",
      "station": null
     }
@@ -5194,6 +5256,11 @@
     },
     {
      "photo": "IMG_3067.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3203.jpg",
      "state": "needs-solving",
      "station": null
     }
@@ -7116,10 +7183,12 @@
      "why": "no photo covers this half of Cervantes",
      "photoRequest": "cervantes-east-from-picasso",
      "status": "open",
-     "sources": [],
+     "sources": [
+      "IMG_3202.jpg"
+     ],
      "features": [],
      "tasks": [],
-     "state": "open"
+     "state": "received"
     },
     {
      "id": "photo-cervantes-junction-patio",
@@ -10830,6 +10899,41 @@
     },
     {
      "photo": "IMG_3173.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3184.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3189.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3194.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3196.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3202.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3203.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3206.jpg",
      "state": "needs-solving",
      "station": null
     },

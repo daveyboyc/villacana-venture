@@ -25788,6 +25788,254 @@
   ]
  },
  {
+  "id": "IMG_3184.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3184.jpg",
+  "title": "IMG_3184",
+  "shows": [
+   "picasso"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-21",
+  "originalUrl": "https://drive.google.com/file/d/12KT-2mB6ry6oZn-KTA_0_pb_9eTrEIy5/view?usp=drivesdk",
+  "camera": {
+   "x": -41.8,
+   "z": 23.2,
+   "heading": 213,
+   "accuracy": 2.2,
+   "altitude": 6.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -45.1,
+   28.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Picasso car park",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_3189.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3189.jpg",
+  "title": "IMG_3189",
+  "shows": [
+   "picasso"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-21",
+  "originalUrl": "https://drive.google.com/file/d/1VbnZL42RdH38ws4QHpUwxdQ79YmYisHq/view?usp=drivesdk",
+  "camera": {
+   "x": -45.8,
+   "z": 25.0,
+   "heading": 255,
+   "accuracy": 2.8,
+   "altitude": 6.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -51.6,
+   26.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Picasso car park",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_3194.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3194.jpg",
+  "title": "IMG_3194",
+  "shows": [
+   "picasso"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-21",
+  "originalUrl": "https://drive.google.com/file/d/12NH4pecTFhttoP3ykVXA7Lbxa_IiMa_J/view?usp=drivesdk",
+  "camera": {
+   "x": -52.5,
+   "z": 30.9,
+   "heading": 177,
+   "accuracy": 4.7,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -52.2,
+   36.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_3196.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3196.jpg",
+  "title": "IMG_3196",
+  "shows": [
+   "picasso"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-21",
+  "originalUrl": "https://drive.google.com/file/d/1wmMbXsALfrmqRpd4n4oSr4wNpawv2RZK/view?usp=drivesdk",
+  "camera": {
+   "x": -55.0,
+   "z": 34.3,
+   "heading": 255,
+   "accuracy": 4.7,
+   "altitude": 7.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -60.8,
+   35.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Picasso car park",
+   "street:picasso-access",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_3202.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3202.jpg",
+  "title": "IMG_3202",
+  "shows": [
+   "picasso",
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-21",
+  "originalUrl": "https://drive.google.com/file/d/1LUX_fSa9jFjt3P9RdGgEShy6v6ckblp7/view?usp=drivesdk",
+  "camera": {
+   "x": -73.9,
+   "z": 8.0,
+   "heading": 256,
+   "accuracy": 2.4,
+   "altitude": 7.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -79.7,
+   9.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Picasso car park",
+   "street:picasso-access",
+   "backdrop.json:aerial-trees",
+   "cervantes_lane_edges.json:cervantes-east-north-thuja-planter"
+  ]
+ },
+ {
+  "id": "IMG_3203.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3203.jpg",
+  "title": "IMG_3203",
+  "shows": [
+   "cervantes",
+   "picasso",
+   "north-lanes",
+   "eva",
+   "seaward-lanes",
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-21",
+  "originalUrl": "https://drive.google.com/file/d/1aF3v8RrFsSPBReb5sD1HeqAoSKoBWfCF/view?usp=drivesdk",
+  "camera": {
+   "x": -89.5,
+   "z": 12.4,
+   "heading": 160,
+   "accuracy": 103.7,
+   "altitude": 7.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -87.4,
+   18.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:cervantes",
+   "backdrop.json:aerial-trees",
+   "cervantes_lane_edges.json:cervantes-east-north-thuja-planter",
+   "cervantes_lane_edges.json:cervantes-east-north-brick-planter"
+  ]
+ },
+ {
+  "id": "IMG_3206.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_3206.jpg",
+  "title": "IMG_3206",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-21",
+  "originalUrl": "https://drive.google.com/file/d/17q05A5-1K_oZ-f53vLX2I_oVAhmfWC6p/view?usp=drivesdk",
+  "camera": {
+   "x": -100.0,
+   "z": 24.1,
+   "heading": 244,
+   "accuracy": 4.7,
+   "altitude": 6.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -105.4,
+   26.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:cervantes"
+  ]
+ },
+ {
   "id": "ref:apple-maps/01-3d-overview-from-north.png",
   "kind": "map-screenshot",
   "path": "reference/apple-maps/01-3d-overview-from-north.png",

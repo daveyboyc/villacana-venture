@@ -35,7 +35,7 @@ Cervantes, the straight tiled lane across the block from Pintor Dalí to the Pic
 ## Coverage
 
 Layout: 76, Levels and slopes: 24, Facades and roofs: 38, Materials: 30, Planting: 54, Signs: 18, Views: 5
-86 reviewed, 1 suggested only by camera position.
+86 reviewed, 4 suggested only by camera position.
 
 ## Levels
 
@@ -500,4 +500,7 @@ The camera stood in or near this area. Check what the picture actually shows bef
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_3203.jpg](../../public/photos-ref/IMG_3203.jpg) | not reviewed | not reviewed | IMG_3203 |
+| [IMG_3206.jpg](../../public/photos-ref/IMG_3206.jpg) | not reviewed | not reviewed | IMG_3206 |
 | [IMG_3097.jpg](../../public/photos-ref/IMG_3097.jpg) | not reviewed | not reviewed | IMG_3097 |
+| [IMG_3202.jpg](../../public/photos-ref/IMG_3202.jpg) | not reviewed | not reviewed | IMG_3202 |

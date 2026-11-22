@@ -18,7 +18,7 @@ The northern boundary roads and the lanes round the north pool's upper side.
 ## Coverage
 
 Layout: 12, Levels and slopes: 1, Facades and roofs: 1, Materials: 12, Planting: 1, Signs: 2
-12 reviewed, 23 suggested only by camera position.
+12 reviewed, 24 suggested only by camera position.
 
 ## Open build tasks
 
@@ -164,3 +164,4 @@ The camera stood in or near this area. Check what the picture actually shows bef
 | [IMG_3169.jpg](../../public/photos-ref/IMG_3169.jpg) | not reviewed | not reviewed | IMG_3169 |
 | [IMG_3170.jpg](../../public/photos-ref/IMG_3170.jpg) | not reviewed | not reviewed | IMG_3170 |
 | [IMG_3130.jpg](../../public/photos-ref/IMG_3130.jpg) | not reviewed | not reviewed | IMG_3130 |
+| [IMG_3203.jpg](../../public/photos-ref/IMG_3203.jpg) | not reviewed | not reviewed | IMG_3203 |

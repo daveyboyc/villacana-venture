@@ -41,7 +41,7 @@ Calle Elena, north and south sections, from the north pool to the middle pool, i
 ## Coverage
 
 Layout: 90, Levels and slopes: 28, Facades and roofs: 60, Materials: 67, Planting: 61, Signs: 24, Views: 5
-113 reviewed, 4 suggested only by camera position.
+113 reviewed, 5 suggested only by camera position.
 
 ## Levels
 
@@ -538,3 +538,4 @@ The camera stood in or near this area. Check what the picture actually shows bef
 | [IMG_3172.jpg](../../public/photos-ref/IMG_3172.jpg) | not reviewed | not reviewed | IMG_3172 |
 | [IMG_3173.jpg](../../public/photos-ref/IMG_3173.jpg) | not reviewed | not reviewed | IMG_3173 |
 | [IMG_3170.jpg](../../public/photos-ref/IMG_3170.jpg) | not reviewed | not reviewed | IMG_3170 |
+| [IMG_3203.jpg](../../public/photos-ref/IMG_3203.jpg) | not reviewed | not reviewed | IMG_3203 |

@@ -45,7 +45,7 @@ The lanes between the middle pool and the beach.
 ## Coverage
 
 Layout: 136, Levels and slopes: 31, Facades and roofs: 84, Materials: 124, Planting: 85, Signs: 23, Views: 15
-162 reviewed, 0 suggested only by camera position.
+162 reviewed, 1 suggested only by camera position.
 
 ## Open build tasks
 
@@ -448,3 +448,11 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels | Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west **Note:** Dave, 2026-10-21. Wider version of apple-maps/11. Apple's 3D mesh is coarse: it shows order, sides and which way the ground falls, not measured heights. |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |
 | `reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_3203.jpg](../../public/photos-ref/IMG_3203.jpg) | not reviewed | not reviewed | IMG_3203 |

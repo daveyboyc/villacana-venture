@@ -17,8 +17,8 @@
   "sourceObservations": 59,
   "sourcePixelTraces": 57,
   "sourcePixelLocators": 32,
-  "sources": 670,
-  "uninspectedSources": 600,
+  "sources": 677,
+  "uninspectedSources": 607,
   "routes": 24,
   "segments": 181,
   "tracedSides": 0,
@@ -170,7 +170,8 @@
     "IMG_3170.jpg",
     "IMG_3171.jpg",
     "IMG_3172.jpg",
-    "IMG_3173.jpg"
+    "IMG_3173.jpg",
+    "IMG_3203.jpg"
    ],
    "observations": [
     "elena:N01",
@@ -417,7 +418,10 @@
     "IMG_3094.jpg",
     "IMG_3095.jpg",
     "IMG_3096.jpg",
-    "IMG_3097.jpg"
+    "IMG_3097.jpg",
+    "IMG_3202.jpg",
+    "IMG_3203.jpg",
+    "IMG_3206.jpg"
    ],
    "observations": [
     "cervantes:W01",
@@ -54347,6 +54351,103 @@
    ]
   },
   {
+   "id": "path-source:IMG_3184.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3184",
+   "sourceId": "IMG_3184.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3189.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3189",
+   "sourceId": "IMG_3189.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3194.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3194",
+   "sourceId": "IMG_3194.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3196.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3196",
+   "sourceId": "IMG_3196.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3202.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3202",
+   "sourceId": "IMG_3202.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "picasso",
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3203.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3203",
+   "sourceId": "IMG_3203.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "picasso",
+    "north-lanes",
+    "eva",
+    "seaward-lanes",
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_3206.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_3206",
+   "sourceId": "IMG_3206.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
    "id": "path-source:ref:apple-maps/01-3d-overview-from-north.png",
    "kind": "path-source-accounting",
    "name": "Apple Maps 3D: the whole block looking south to the sea",
@@ -55517,8 +55618,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "partial",
-   "sourceCount": 117,
-   "uninspectedSources": 78,
+   "sourceCount": 118,
+   "uninspectedSources": 79,
    "routes": [
     "path-route:elena-north",
     "path-route:elena-south"
@@ -55671,7 +55772,8 @@
      "IMG_3170.jpg",
      "IMG_3171.jpg",
      "IMG_3172.jpg",
-     "IMG_3173.jpg"
+     "IMG_3173.jpg",
+     "IMG_3203.jpg"
     ],
     "observations": [
      "elena:N01",
@@ -55822,8 +55924,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "partial",
-   "sourceCount": 87,
-   "uninspectedSources": 59,
+   "sourceCount": 90,
+   "uninspectedSources": 62,
    "routes": [
     "path-route:cervantes"
    ],
@@ -55946,7 +56048,10 @@
      "IMG_3094.jpg",
      "IMG_3095.jpg",
      "IMG_3096.jpg",
-     "IMG_3097.jpg"
+     "IMG_3097.jpg",
+     "IMG_3202.jpg",
+     "IMG_3203.jpg",
+     "IMG_3206.jpg"
     ],
     "observations": [
      "cervantes:W01",
@@ -56088,8 +56193,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 25,
-   "uninspectedSources": 25,
+   "sourceCount": 31,
+   "uninspectedSources": 31,
    "routes": [
     "path-route:picasso",
     "path-route:picasso-access"
@@ -56116,8 +56221,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 35,
-   "uninspectedSources": 35,
+   "sourceCount": 36,
+   "uninspectedSources": 36,
    "routes": [
     "path-route:loira",
     "path-route:bolivia",
@@ -56153,8 +56258,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 61,
-   "uninspectedSources": 61,
+   "sourceCount": 62,
+   "uninspectedSources": 62,
    "routes": [
     "path-route:eva",
     "path-route:eva-west-footpath"
@@ -56181,8 +56286,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 162,
-   "uninspectedSources": 162,
+   "sourceCount": 163,
+   "uninspectedSources": 163,
    "routes": [
     "path-route:patricia",
     "path-route:silvia-north",

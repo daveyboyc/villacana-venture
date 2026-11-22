@@ -18,7 +18,7 @@ Calle Pintor Picasso, the inner car-park access aisle and the Picasso car park.
 ## Coverage
 
 Layout: 4, Levels and slopes: 2, Facades and roofs: 1, Materials: 1, Views: 2
-4 reviewed, 21 suggested only by camera position.
+4 reviewed, 27 suggested only by camera position.
 
 ## Open build tasks
 
@@ -92,3 +92,9 @@ The camera stood in or near this area. Check what the picture actually shows bef
 | [IMG_3129.jpg](../../public/photos-ref/IMG_3129.jpg) | not reviewed | not reviewed | IMG_3129 |
 | [IMG_3130.jpg](../../public/photos-ref/IMG_3130.jpg) | not reviewed | not reviewed | IMG_3130 |
 | [IMG_3131.jpg](../../public/photos-ref/IMG_3131.jpg) | not reviewed | not reviewed | IMG_3131 |
+| [IMG_3184.jpg](../../public/photos-ref/IMG_3184.jpg) | not reviewed | not reviewed | IMG_3184 |
+| [IMG_3189.jpg](../../public/photos-ref/IMG_3189.jpg) | not reviewed | not reviewed | IMG_3189 |
+| [IMG_3194.jpg](../../public/photos-ref/IMG_3194.jpg) | not reviewed | not reviewed | IMG_3194 |
+| [IMG_3196.jpg](../../public/photos-ref/IMG_3196.jpg) | not reviewed | not reviewed | IMG_3196 |
+| [IMG_3202.jpg](../../public/photos-ref/IMG_3202.jpg) | not reviewed | not reviewed | IMG_3202 |
+| [IMG_3203.jpg](../../public/photos-ref/IMG_3203.jpg) | not reviewed | not reviewed | IMG_3203 |
