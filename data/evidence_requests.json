@@ -66,6 +66,69 @@
       "tasks": ["north-pool-north-frontage"],
       "status": "open",
       "sources": ["IMG_2204.jpg", "IMG_2205.jpg"]
+    },
+    {
+      "id": "picasso-car-park-centre-row",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "Stand at the north tip of the round palm island and photograph north-west along the central row of bays and palms with the long white wall in frame; then the same from the north end of the row looking back south-east to the island.",
+      "why": "the central bay row is rotated in the model; two opposed ground views along it, with the wall as a known line, fix its position (one camera fixes direction only)",
+      "photoRequest": "picasso-car-park-centre-row",
+      "features": [
+        "parking:Picasso car park"
+      ],
+      "status": "open",
+      "sources": [
+        "map:ground"
+      ]
+    },
+    {
+      "id": "picasso-car-park-west-side",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the middle aisle, photograph square-on to the west row of angled bays and the hedge behind them, then along the row in both directions; if there is a path behind the hedge, one photo along it.",
+      "why": "no photo shows the west side of the car park, its hedge, or whether a footpath runs behind it",
+      "photoRequest": "picasso-car-park-west-side",
+      "features": [
+        "parking:Picasso car park",
+        "street:picasso-access"
+      ],
+      "status": "open",
+      "sources": [
+        "map:ground"
+      ]
+    },
+    {
+      "id": "picasso-car-park-wall-inner-face",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot.",
+      "why": "the wall's height and its car-park side are only seen from the road",
+      "photoRequest": "picasso-car-park-wall-inner-face",
+      "features": [
+        "parking:Picasso car park",
+        "street:picasso"
+      ],
+      "status": "open",
+      "sources": [
+        "map:ground"
+      ]
+    },
+    {
+      "id": "picasso-car-park-north-entrance",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame.",
+      "why": "IMG_3130 and IMG_3131 have pins ±5-21 m; which corner the barrier and plinth stand on is not settled",
+      "photoRequest": "picasso-car-park-north-entrance",
+      "features": [
+        "parking:Picasso car park",
+        "street:picasso"
+      ],
+      "status": "open",
+      "sources": [
+        "map:ground"
+      ]
     }
   ]
 }

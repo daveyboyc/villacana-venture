@@ -1,0 +1,254 @@
+{
+ "source": "Esri World Imagery zoom 19 (public/map/ground.jpg, about 0.24 m per pixel), read by eye on 4-5x gridded zooms; \u00b10.5-1 m",
+ "aerial": {
+  "longWall": [
+   [
+    -91.4,
+    -67.8
+   ],
+   [
+    -35.7,
+    23.9
+   ]
+  ],
+  "westBayRowCarLine": [
+   [
+    -110.2,
+    -57.2
+   ],
+   [
+    -61.5,
+    26.3
+   ]
+  ],
+  "centreBayMidline": [
+   [
+    -88.5,
+    -45.0
+   ],
+   [
+    -61.5,
+    0.0
+   ]
+  ],
+  "roundIsland": {
+   "centre": [
+    -55.9,
+    10.8
+   ],
+   "radius": 5.3,
+   "basis": "brightness profiles across the island: west edge x -61.3, east edge -50.3, south edge z 15.7 (independent review, 24 Nov 2026); first eye reading (-56.1, 11.9) r 5.5 overshot the south edge"
+  },
+  "centreBayMidlineExtent": "parallel to the wall from about z -56 to the island; at z -55.9 about x -95.0",
+  "picassoRoad": "road edges wall to hedge about 7-8 m apart where visible; centre about 3.5-4 m east of the wall"
+ },
+ "model": {
+  "mainParkingRing": [
+   [
+    -117.56,
+    -51.7
+   ],
+   [
+    -80.26,
+    -69.89
+   ],
+   [
+    -42.56,
+    7.41
+   ],
+   [
+    -38.14,
+    13.04
+   ],
+   [
+    -33.32,
+    22.93
+   ],
+   [
+    -63.88,
+    37.83
+   ],
+   [
+    -75.32,
+    18.94
+   ]
+  ],
+  "parkingRows": [
+   {
+    "points": [
+     [
+      -103.83,
+      -56.17
+     ],
+     [
+      -63.06,
+      27.42
+     ]
+    ],
+    "nose": "east"
+   },
+   {
+    "points": [
+     [
+      -90.68,
+      -55.9
+     ],
+     [
+      -58.68,
+      9.71
+     ]
+    ],
+    "nose": "west"
+   },
+   {
+    "points": [
+     [
+      -90.68,
+      -55.9
+     ],
+     [
+      -58.68,
+      9.71
+     ]
+    ],
+    "nose": "east"
+   },
+   {
+    "points": [
+     [
+      -53.51,
+      29.44
+     ],
+     [
+      -43.62,
+      24.61
+     ]
+    ],
+    "nose": "north"
+   }
+  ],
+  "middleKerb": [
+   [
+    -85.92,
+    -67.13
+   ],
+   [
+    -51.73,
+    2.98
+   ]
+  ],
+  "roundPlanter": {
+   "centre": [
+    -56.03,
+    12.86
+   ],
+   "radius": 4.5
+  },
+  "picassoStreet": [
+   [
+    -87.74,
+    -82.37
+   ],
+   [
+    -82.37,
+    -64.57
+   ],
+   [
+    -47.68,
+    -4.34
+   ],
+   [
+    -13.66,
+    45.75
+   ]
+  ],
+  "picassoAccess": [
+   [
+    -112.82,
+    -50.09
+   ],
+   [
+    -61.78,
+    36.73
+   ],
+   [
+    -55.38,
+    48.14
+   ]
+  ]
+ },
+ "stations": [
+  {
+   "z": -60,
+   "wall": -86.7,
+   "ringEast": -75.4,
+   "modelKerb": -82.4,
+   "aerialCentreRow": -97.5,
+   "modelCentreRow": -92.7,
+   "aerialWestEdge": -111.8,
+   "modelWestRow": -105.7,
+   "picassoCentre": -79.7,
+   "accessAisle": -118.6
+  },
+  {
+   "z": -45,
+   "wall": -77.6,
+   "ringEast": -68.1,
+   "modelKerb": -75.1,
+   "aerialCentreRow": -88.5,
+   "modelCentreRow": -85.4,
+   "aerialWestEdge": -103.1,
+   "modelWestRow": -98.4,
+   "picassoCentre": -71.1,
+   "accessAisle": -109.8
+  },
+  {
+   "z": -30,
+   "wall": -68.4,
+   "ringEast": -60.8,
+   "modelKerb": -67.8,
+   "aerialCentreRow": -79.5,
+   "modelCentreRow": -78.0,
+   "aerialWestEdge": -94.3,
+   "modelWestRow": -91.1,
+   "picassoCentre": -62.5,
+   "accessAisle": -101.0
+  },
+  {
+   "z": -15,
+   "wall": -59.3,
+   "ringEast": -53.5,
+   "modelKerb": -60.5,
+   "aerialCentreRow": -70.5,
+   "modelCentreRow": -70.7,
+   "aerialWestEdge": -85.6,
+   "modelWestRow": -83.7,
+   "picassoCentre": -53.8,
+   "accessAisle": -92.2
+  },
+  {
+   "z": 0,
+   "wall": -50.2,
+   "ringEast": -46.2,
+   "modelKerb": -53.2,
+   "aerialCentreRow": -61.5,
+   "modelCentreRow": -63.4,
+   "aerialWestEdge": -76.8,
+   "modelWestRow": -76.4,
+   "picassoCentre": null,
+   "accessAisle": -83.4
+  },
+  {
+   "z": 10,
+   "wall": -44.1,
+   "ringEast": -41.3,
+   "modelKerb": -48.3,
+   "aerialCentreRow": -55.5,
+   "modelCentreRow": -58.5,
+   "aerialWestEdge": -71.0,
+   "modelWestRow": -71.6,
+   "picassoCentre": null,
+   "accessAisle": -77.5
+  }
+ ]
+}

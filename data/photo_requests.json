@@ -420,7 +420,17 @@
       "priority": 2,
       "radius": 12,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "answered",
+      "note": "Reviewed 24 Nov 2026: IMG_3120-3122 look north-west along the service road from its seaward end (hotel ground floor right, utility buildings left); IMG_3125 and IMG_3129 look north along the long white wall that bounds the car park, cypress hedge opposite; IMG_3105/3106 look south-east towards the sea. No gate in the wall is seen. Cameras are unsolved.",
+      "answeredBy": [
+        "IMG_3105.jpg",
+        "IMG_3120.jpg",
+        "IMG_3122.jpg",
+        "IMG_3125.jpg",
+        "IMG_3129.jpg",
+        "IMG_3106.jpg",
+        "IMG_3121.jpg"
+      ]
     },
     {
       "id": "calle-alberto-22-40-inside",
@@ -912,6 +922,78 @@
       "status": "open",
       "ask": "On Cervantes at the mouth of Calle Elena north, stand on the south-side kerb opposite the CALLE DE ELENA corner and face it square-on: get the fan-palm bed's corner, the foot of the white wall behind it, the brown double door and the hedged tree bed across the mouth in one frame. Then one from 4-5 m up Elena north looking back down at the corner.",
       "why": "gap:elena-north-west-corner: the corner patio wall and the raised bed are built from unsolved photos and the registry house line; a solved ground view would fix the wall foot and the bed faces."
+    },
+    {
+      "id": "picasso-car-park-centre-row",
+      "area": "picasso",
+      "at": [
+        -56.0,
+        4.0
+      ],
+      "look": [
+        -80.0,
+        -36.0
+      ],
+      "ask": "Stand at the north tip of the round palm island and photograph north-west along the central row of bays and palms with the long white wall in frame; then the same from the north end of the row looking back south-east to the island.",
+      "why": "the central bay row is rotated in the model; two opposed ground views along it, with the wall as a known line, fix its position (one camera fixes direction only)",
+      "priority": 1,
+      "radius": 8,
+      "since": "2026-11-24",
+      "status": "open"
+    },
+    {
+      "id": "picasso-car-park-west-side",
+      "area": "picasso",
+      "at": [
+        -80.0,
+        -15.0
+      ],
+      "look": [
+        -88.0,
+        -12.0
+      ],
+      "ask": "From the middle aisle, photograph square-on to the west row of angled bays and the hedge behind them, then along the row in both directions; if there is a path behind the hedge, one photo along it.",
+      "why": "no photo shows the west side of the car park, its hedge, or whether a footpath runs behind it",
+      "priority": 2,
+      "radius": 8,
+      "since": "2026-11-24",
+      "status": "open"
+    },
+    {
+      "id": "picasso-car-park-wall-inner-face",
+      "area": "picasso",
+      "at": [
+        -68.0,
+        -12.0
+      ],
+      "look": [
+        -55.0,
+        -20.0
+      ],
+      "ask": "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot.",
+      "why": "the wall's height and its car-park side are only seen from the road",
+      "priority": 2,
+      "radius": 8,
+      "since": "2026-11-24",
+      "status": "open"
+    },
+    {
+      "id": "picasso-car-park-north-entrance",
+      "area": "picasso",
+      "at": [
+        -95.0,
+        -62.0
+      ],
+      "look": [
+        -105.0,
+        -66.0
+      ],
+      "ask": "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame.",
+      "why": "IMG_3130 and IMG_3131 have pins ±5-21 m; which corner the barrier and plinth stand on is not settled",
+      "priority": 2,
+      "radius": 8,
+      "since": "2026-11-24",
+      "status": "open"
     }
   ]
 }

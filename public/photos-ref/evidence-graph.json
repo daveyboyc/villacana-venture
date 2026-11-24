@@ -6,9 +6,9 @@
   "needs-review": 273,
   "suggested": 369,
   "photos": 646,
-  "features": 534,
-  "photosCitedByModel": 249,
-  "modelFeaturesWithPhotoCitations": 277
+  "features": 535,
+  "photosCitedByModel": 252,
+  "modelFeaturesWithPhotoCitations": 278
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -4644,6 +4644,20 @@
    "source": "Photo-supported (IMG_2205 x 850-1200, y 600-700): continuous irregular pale stone paving from the lawn's east edge right up to the iron gate's foot (cast at about (-162.55..-161.8, 7.2-7.5)) and along the east block's face, where the model had the lane's terracotta squares and a generated wall and hedge. Raised over the lane mesh as the Calle Isabel paving is. Estimated: its south end, hidden by the yucca and the tree.",
    "evidence": [
     "IMG_2205.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_north_pool.json:north-pool-dali-link",
+   "name": "North pool south-west · tiled connector towards Calle Pintor Dalí",
+   "kind": "reference feature",
+   "source": "Ground-level IMG_2551/2552 face the Dalí junction and show a square terracotta-tiled approach, low white kerbs and planting; IMG_2553/2706/2707 face east along the same tiled link between house fronts. The full centreline is an estimated corridor following the free space between unchanged registry footprints, bending around the west side of the photographed gated patio and meeting the existing north-pool south-west crazy-paving path at (-179.7, 31.3). The phones' camera pins disagree with the building polygons by several metres, so this is provisional plan geometry, NOT a solved-camera or surveyed trace. Do not infer public access through private gates, unseen walls or house footprints. Verify the path ends, widths and corner shape against additional ground-level photos before placement approval.",
+   "evidence": [
+    "IMG_2551.jpg",
+    "IMG_2552.jpg",
+    "IMG_2553.jpg",
+    "IMG_2705.jpg",
+    "IMG_2706.jpg",
+    "IMG_2707.jpg"
    ]
   },
   {
@@ -18832,6 +18846,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2551.jpg",
+   "to": "ground_plan_north_pool.json:north-pool-dali-link",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2552.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
@@ -18846,6 +18866,12 @@
   {
    "from": "photo:IMG_2552.jpg",
    "to": "eva_lane.json:eva-lane-west-edges",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2552.jpg",
+   "to": "ground_plan_north_pool.json:north-pool-dali-link",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -18876,6 +18902,12 @@
   {
    "from": "photo:IMG_2553.jpg",
    "to": "eva_lane.json:eva-lane-west-edges",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2553.jpg",
+   "to": "ground_plan_north_pool.json:north-pool-dali-link",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -22961,6 +22993,12 @@
    "angleOffset": 29.1
   },
   {
+   "from": "photo:IMG_2705.jpg",
+   "to": "ground_plan_north_pool.json:north-pool-dali-link",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2706.jpg",
    "to": "parking:Dalí car park",
    "relation": "camera-nearby",
@@ -22980,6 +23018,12 @@
    "angleOffset": 34.3
   },
   {
+   "from": "photo:IMG_2706.jpg",
+   "to": "ground_plan_north_pool.json:north-pool-dali-link",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2707.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
@@ -22991,6 +23035,12 @@
    "relation": "possibly-in-view",
    "distance": 43.1,
    "angleOffset": 17.4
+  },
+  {
+   "from": "photo:IMG_2707.jpg",
+   "to": "ground_plan_north_pool.json:north-pool-dali-link",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2708.jpg",

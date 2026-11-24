@@ -498,6 +498,132 @@
       "features": [
         "elena_north.json:elena-north-tree-bed-2"
       ]
+    },
+    {
+      "id": "picasso-car-park-long-wall-missing",
+      "area": "picasso",
+      "kind": "completeness",
+      "task": "ground-plan-picasso",
+      "status": "open",
+      "requests": [
+        "picasso-car-park-wall-inner-face"
+      ],
+      "description": "A plain white rendered wall about 2.5-3 m high, with no openings, separates the car park from the Calle Pintor Picasso service road along its whole length (IMG_3125 and IMG_3129 look along it from the road side; IMG_3124 shows its south end at the white utility building). On the aerial it is a straight bright line with a shadow from about (-91.4, -67.8) to (-35.7, 23.9), about 107 m, read to ±0.5-1 m. The model has no wall there: Inspect shows the car park and the road as one continuous grey surface, and the blueprint's middle kerb (build_skeleton.py KERBS) is about 5° off the wall's line, 4 m east of it at the north end and 3 m west of it at z=0.",
+      "sources": [
+        "IMG_3124.jpg",
+        "IMG_3125.jpg",
+        "IMG_3129.jpg",
+        "map:ground"
+      ],
+      "features": [
+        "parking:Picasso car park",
+        "street:picasso"
+      ]
+    },
+    {
+      "id": "picasso-car-park-ring-over-road",
+      "area": "picasso",
+      "kind": "placement",
+      "task": "ground-plan-picasso",
+      "status": "open",
+      "requests": [],
+      "description": "The car park outline (street_layout.json mainParkingRing) runs its east edge over the service road and the hotel garden: at the north end it lies about 11 m east of the long wall that bounds the car park, closing to about 3 m at z=0. Its east edge should follow the wall line (see picasso-car-park-long-wall-missing), with the road outside it.",
+      "sources": [
+        "IMG_3125.jpg",
+        "IMG_3129.jpg",
+        "map:ground"
+      ],
+      "features": [
+        "parking:Picasso car park"
+      ]
+    },
+    {
+      "id": "picasso-car-park-centre-row-rotated",
+      "area": "picasso",
+      "kind": "placement",
+      "task": "ground-plan-picasso",
+      "status": "open",
+      "requests": [
+        "picasso-car-park-centre-row"
+      ],
+      "description": "The central nose-to-nose row of bays (with palms between) runs parallel to the long wall on the aerial, about 18 m west of it, from about z -56 to the round island. The model's central row (build_skeleton.py PARKING_ROWS) is about 6° off that line: it matches near z=-15 but is about 4.3 m east of the aerial row at its north end (z -55.9: model x -90.7, aerial about -95.0) and about 3.4 m west of it at its south end (z 9.7). The west row of angled bays matches within about 1-2 m. The aerial row midline is read from car positions to ±1.5 m. Palm crowns are not used, because tall palms lean and are displaced on the imagery.",
+      "sources": [
+        "IMG_3100.jpg",
+        "map:ground"
+      ],
+      "features": [
+        "parking:Picasso car park"
+      ]
+    },
+    {
+      "id": "picasso-car-park-island-and-palms",
+      "area": "picasso",
+      "kind": "completeness",
+      "task": "ground-plan-picasso",
+      "status": "open",
+      "requests": [],
+      "description": "IMG_3100 shows the round island near the south end as a hedge-ringed bed on a white kerb with tall Canary or date palms, a candelabra euphorbia and a fan palm clump. Brightness profiles across the aerial put its west and east edges at about x -61.3 and -50.3 and its south edge at about z 15.7, so its centre is about (-55.9, 10.8) with a radius of about 5.3 m. The model's round planter is centred about 2 m further south, at (-56.0, 12.9), with radius 4.5 m, and in Inspect it carries no kerb, hedge or palms. The central bay row carries a line of palms on the aerial that the model does not have.",
+      "sources": [
+        "IMG_3100.jpg",
+        "IMG_3189.jpg",
+        "map:ground"
+      ],
+      "features": [
+        "parking:Picasso car park"
+      ]
+    },
+    {
+      "id": "picasso-car-park-south-step",
+      "area": "picasso",
+      "kind": "completeness",
+      "task": "ground-plan-picasso",
+      "status": "open",
+      "requests": [],
+      "description": "At the south end two accessible bays nose onto a low step with blue-and-white azulejo risers up to a terracotta-tiled walk between hedged palm beds that leads to the community office (IMG_3097, IMG_3098, IMG_3189, IMG_3194); white kerbs edge the walk and a kerb ramp sits beside the accessible bay. The model ends the car park in a flat asphalt edge with no step, kerbs or walk. Step height is not measured.",
+      "sources": [
+        "IMG_3097.jpg",
+        "IMG_3098.jpg",
+        "IMG_3189.jpg",
+        "IMG_3194.jpg"
+      ],
+      "features": [
+        "parking:Picasso car park"
+      ]
+    },
+    {
+      "id": "picasso-access-off-aisle",
+      "area": "picasso",
+      "kind": "placement",
+      "task": "ground-plan-picasso",
+      "status": "open",
+      "requests": [
+        "picasso-car-park-west-side"
+      ],
+      "description": "The mapped 'Picasso car-park access' line (street_layout.json picasso-access, from Google's standard map) runs about 7 m west of the west row of bays, through the hedge strip and house gardens, not along any aisle seen on the aerial: the aisle between the west row and the central row lies about 8-10 m further east. No photo shows the west side of the car park, so whether a footpath runs behind the west hedge is not known.",
+      "sources": [
+        "map:ground"
+      ],
+      "features": [
+        "street:picasso-access"
+      ]
+    },
+    {
+      "id": "picasso-road-north-east-of-wall",
+      "area": "picasso",
+      "kind": "placement",
+      "task": "ground-plan-picasso",
+      "status": "open",
+      "requests": [],
+      "description": "IMG_3125 and IMG_3129 show the service road running along the long wall with a cypress hedge on its east side. On the aerial the road edges (the wall, and the hedge where trees do not hide it) are about 7-8 m apart, so the road centre lies about 3.5-4 m east of the wall. The mapped Calle Pintor Picasso centreline sits 5.5-7 m east of the wall at every station from z -60 to -15: a whole-length offset of about 2-3 m, worst at the north end, where it reaches the hedge and trees. Tree crowns overhang the road's east edge, so the road width is uncertain there.",
+      "sources": [
+        "IMG_3125.jpg",
+        "IMG_3128.jpg",
+        "IMG_3129.jpg",
+        "map:ground"
+      ],
+      "features": [
+        "street:picasso"
+      ]
     }
   ]
 }

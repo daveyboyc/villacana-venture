@@ -680,9 +680,9 @@
     }
    },
    "photos": {
-    "count": 42,
+    "count": 39,
     "tagged": 37,
-    "placed": 42,
+    "placed": 39,
     "checks": {
      "matches": 14,
      "differs": 17,
@@ -791,7 +791,7 @@
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey.",
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
-    "Photos: 42, 42 placed; no camera solved.",
+    "Photos: 39, 39 placed; no camera solved.",
     "Facades: 0 of 32 kit parts traced from photos.",
     "How sure: 2 photographed, 19 estimated, 1 inferred, 2 known gaps.",
     "Placement: 0 of 22 features verified, 17 open discrepancies.",
@@ -1103,9 +1103,9 @@
     }
    },
    "photos": {
-    "count": 118,
+    "count": 117,
     "tagged": 113,
-    "placed": 118,
+    "placed": 117,
     "checks": {
      "matches": 4,
      "differs": 6,
@@ -1172,7 +1172,7 @@
    "status": [
     "Ground: 97% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 97% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 118, 118 placed; 4 cameras solved, 2 stations holding.",
+    "Photos: 117, 117 placed; 4 cameras solved, 2 stations holding.",
     "Facades: 0 of 71 kit parts traced from photos.",
     "How sure: 24 photographed, 25 estimated, 3 inferred, 5 known gaps.",
     "Placement: 0 of 53 features verified, 4 open discrepancies.",
@@ -1443,9 +1443,9 @@
     }
    },
    "photos": {
-    "count": 90,
-    "tagged": 86,
-    "placed": 90,
+    "count": 89,
+    "tagged": 88,
+    "placed": 89,
     "checks": {
      "matches": 0,
      "differs": 4,
@@ -1503,7 +1503,7 @@
    "status": [
     "Ground: 99% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.2 m.",
-    "Photos: 90, 90 placed; 4 cameras solved, 2 stations holding.",
+    "Photos: 89, 89 placed; 4 cameras solved, 2 stations holding.",
     "Facades: 0 of 147 kit parts traced from photos.",
     "How sure: 18 photographed, 31 estimated, 2 inferred, 7 known gaps.",
     "Placement: 0 of 51 features verified, 2 open discrepancies.",
@@ -1819,9 +1819,9 @@
     }
    },
    "photos": {
-    "count": 29,
-    "tagged": 2,
-    "placed": 29,
+    "count": 25,
+    "tagged": 25,
+    "placed": 25,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1860,32 +1860,86 @@
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey; streets within 0.23 m.",
     "Footprints: 46% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
-    "Photos: 29, 29 placed; no camera solved.",
+    "Photos: 25, 25 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
     "How sure: 0 photographed, 3 estimated, 0 inferred.",
     "Placement: 0 of 3 features verified.",
-    "Model loop: 0 tracked findings accepted, 0 still open; 1 evidence requests. This is not whole-area acceptance."
+    "Model loop: 0 tracked findings accepted, 7 still open; 4 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 0,
-     "needs-evidence": 0,
+     "ready": 4,
+     "needs-evidence": 3,
      "needs-source-access": 0,
      "awaiting-review": 0,
      "accepted": 0
     },
     "requests": [
      {
-      "id": "photo-picasso-lane",
+      "id": "picasso-car-park-centre-row",
       "area": "picasso",
       "kind": "photo",
-      "ask": "Calle Pintor Picasso beside the resort: one photo along the street from each end, with the resort walls and gates in frame.",
-      "why": "only one photo in the Picasso area",
-      "photoRequest": "picasso-lane",
+      "ask": "Stand at the north tip of the round palm island and photograph north-west along the central row of bays and palms with the long white wall in frame; then the same from the north end of the row looking back south-east to the island.",
+      "why": "the central bay row is rotated in the model; two opposed ground views along it, with the wall as a known line, fix its position (one camera fixes direction only)",
+      "photoRequest": "picasso-car-park-centre-row",
+      "features": [
+       "parking:Picasso car park"
+      ],
       "status": "open",
-      "sources": [],
-      "features": [],
-      "tasks": [],
+      "sources": [
+       "map:ground"
+      ],
+      "state": "open"
+     },
+     {
+      "id": "picasso-car-park-west-side",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the middle aisle, photograph square-on to the west row of angled bays and the hedge behind them, then along the row in both directions; if there is a path behind the hedge, one photo along it.",
+      "why": "no photo shows the west side of the car park, its hedge, or whether a footpath runs behind it",
+      "photoRequest": "picasso-car-park-west-side",
+      "features": [
+       "parking:Picasso car park",
+       "street:picasso-access"
+      ],
+      "status": "open",
+      "sources": [
+       "map:ground"
+      ],
+      "state": "open"
+     },
+     {
+      "id": "picasso-car-park-wall-inner-face",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot.",
+      "why": "the wall's height and its car-park side are only seen from the road",
+      "photoRequest": "picasso-car-park-wall-inner-face",
+      "features": [
+       "parking:Picasso car park",
+       "street:picasso"
+      ],
+      "status": "open",
+      "sources": [
+       "map:ground"
+      ],
+      "state": "open"
+     },
+     {
+      "id": "picasso-car-park-north-entrance",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame.",
+      "why": "IMG_3130 and IMG_3131 have pins ±5-21 m; which corner the barrier and plinth stand on is not settled",
+      "photoRequest": "picasso-car-park-north-entrance",
+      "features": [
+       "parking:Picasso car park",
+       "street:picasso"
+      ],
+      "status": "open",
+      "sources": [
+       "map:ground"
+      ],
       "state": "open"
      }
     ],
@@ -1893,20 +1947,68 @@
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 1 spot",
+    "headline": "Photos needed: 4 spots",
     "requests": [
      {
-      "id": "picasso-lane",
+      "id": "picasso-car-park-centre-row",
       "at": [
-       -60.0,
-       -30.0
+       -56.0,
+       4.0
       ],
       "look": [
-       -40.0,
-       5.0
+       -80.0,
+       -36.0
       ],
-      "ask": "Calle Pintor Picasso beside the resort: one photo along the street from each end, with the resort walls and gates in frame.",
-      "why": "only one photo in the Picasso area",
+      "ask": "Stand at the north tip of the round palm island and photograph north-west along the central row of bays and palms with the long white wall in frame; then the same from the north end of the row looking back south-east to the island.",
+      "why": "the central bay row is rotated in the model; two opposed ground views along it, with the wall as a known line, fix its position (one camera fixes direction only)",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-car-park-north-entrance",
+      "at": [
+       -95.0,
+       -62.0
+      ],
+      "look": [
+       -105.0,
+       -66.0
+      ],
+      "ask": "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame.",
+      "why": "IMG_3130 and IMG_3131 have pins ±5-21 m; which corner the barrier and plinth stand on is not settled",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-car-park-wall-inner-face",
+      "at": [
+       -68.0,
+       -12.0
+      ],
+      "look": [
+       -55.0,
+       -20.0
+      ],
+      "ask": "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot.",
+      "why": "the wall's height and its car-park side are only seen from the road",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-car-park-west-side",
+      "at": [
+       -80.0,
+       -15.0
+      ],
+      "look": [
+       -88.0,
+       -12.0
+      ],
+      "ask": "From the middle aisle, photograph square-on to the west row of angled bays and the hedge behind them, then along the row in both directions; if there is a path behind the hedge, one photo along it.",
+      "why": "no photo shows the west side of the car park, its hedge, or whether a footpath runs behind it",
       "priority": 2,
       "state": "open",
       "photos": []
@@ -1948,7 +2050,7 @@
    },
    "photos": {
     "count": 36,
-    "tagged": 12,
+    "tagged": 14,
     "placed": 36,
     "checks": {
      "matches": 0,
@@ -2169,9 +2271,9 @@
     }
    },
    "photos": {
-    "count": 62,
+    "count": 61,
     "tagged": 61,
-    "placed": 62,
+    "placed": 61,
     "checks": {
      "matches": 15,
      "differs": 2,
@@ -2187,7 +2289,7 @@
     "generated": 146
    },
    "placement": {
-    "features": 9,
+    "features": 10,
     "verified": 0,
     "disputed": 2
    },
@@ -2212,7 +2314,7 @@
    },
    "confidence": {
     "photographed": 4,
-    "estimated": 4,
+    "estimated": 5,
     "inferred": 1,
     "registry": 0,
     "gaps": 2
@@ -2220,10 +2322,10 @@
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 0.45 m.",
     "Footprints: 80% stand on surveyed roof; best fit moves them 1.5 m.",
-    "Photos: 62, 62 placed; no camera solved.",
+    "Photos: 61, 61 placed; no camera solved.",
     "Facades: 0 of 146 kit parts traced from photos.",
-    "How sure: 4 photographed, 4 estimated, 1 inferred, 2 known gaps.",
-    "Placement: 0 of 9 features verified, 2 open discrepancies.",
+    "How sure: 4 photographed, 5 estimated, 1 inferred, 2 known gaps.",
+    "Placement: 0 of 10 features verified, 2 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 0 still open; 1 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -2307,9 +2409,9 @@
     }
    },
    "photos": {
-    "count": 160,
+    "count": 159,
     "tagged": 159,
-    "placed": 160,
+    "placed": 159,
     "checks": {
      "matches": 26,
      "differs": 14,
@@ -2366,7 +2468,7 @@
    "status": [
     "Ground: 99% of open ground within 0.25 m of the laser survey; streets within 0.25 m.",
     "Footprints: 84% stand on surveyed roof; best fit moves them 1.6 m.",
-    "Photos: 160, 160 placed; no camera solved.",
+    "Photos: 159, 159 placed; no camera solved.",
     "Facades: 0 of 597 kit parts traced from photos.",
     "How sure: 1 photographed, 17 estimated, 4 inferred, 5 known gaps.",
     "Placement: 0 of 22 features verified, 4 open discrepancies.",
@@ -3174,7 +3276,7 @@
    },
    "photos": {
     "count": 662,
-    "tagged": 591,
+    "tagged": 618,
     "placed": 642,
     "checks": {
      "matches": 55,
@@ -3205,9 +3307,9 @@
     "generated": 2452
    },
    "placement": {
-    "features": 534,
+    "features": 535,
     "verified": 0,
-    "disputed": 56
+    "disputed": 59
    },
    "discrepancies": [
     {
@@ -3434,7 +3536,7 @@
    },
    "confidence": {
     "photographed": 95,
-    "estimated": 188,
+    "estimated": 189,
     "inferred": 19,
     "registry": 232,
     "gaps": 41
@@ -3444,14 +3546,14 @@
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 662, 642 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 95 photographed, 188 estimated, 19 inferred, 41 known gaps.",
-    "Placement: 0 of 534 features verified, 53 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 27 still open; 49 evidence requests. This is not whole-area acceptance."
+    "How sure: 95 photographed, 189 estimated, 19 inferred, 41 known gaps.",
+    "Placement: 0 of 535 features verified, 53 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 34 still open; 52 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 19,
-     "needs-evidence": 5,
+     "ready": 23,
+     "needs-evidence": 8,
      "needs-source-access": 0,
      "awaiting-review": 3,
      "accepted": 0
@@ -3553,6 +3655,73 @@
       "sources": [
        "IMG_2204.jpg",
        "IMG_2205.jpg"
+      ],
+      "state": "open"
+     },
+     {
+      "id": "picasso-car-park-centre-row",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "Stand at the north tip of the round palm island and photograph north-west along the central row of bays and palms with the long white wall in frame; then the same from the north end of the row looking back south-east to the island.",
+      "why": "the central bay row is rotated in the model; two opposed ground views along it, with the wall as a known line, fix its position (one camera fixes direction only)",
+      "photoRequest": "picasso-car-park-centre-row",
+      "features": [
+       "parking:Picasso car park"
+      ],
+      "status": "open",
+      "sources": [
+       "map:ground"
+      ],
+      "state": "open"
+     },
+     {
+      "id": "picasso-car-park-west-side",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the middle aisle, photograph square-on to the west row of angled bays and the hedge behind them, then along the row in both directions; if there is a path behind the hedge, one photo along it.",
+      "why": "no photo shows the west side of the car park, its hedge, or whether a footpath runs behind it",
+      "photoRequest": "picasso-car-park-west-side",
+      "features": [
+       "parking:Picasso car park",
+       "street:picasso-access"
+      ],
+      "status": "open",
+      "sources": [
+       "map:ground"
+      ],
+      "state": "open"
+     },
+     {
+      "id": "picasso-car-park-wall-inner-face",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot.",
+      "why": "the wall's height and its car-park side are only seen from the road",
+      "photoRequest": "picasso-car-park-wall-inner-face",
+      "features": [
+       "parking:Picasso car park",
+       "street:picasso"
+      ],
+      "status": "open",
+      "sources": [
+       "map:ground"
+      ],
+      "state": "open"
+     },
+     {
+      "id": "picasso-car-park-north-entrance",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame.",
+      "why": "IMG_3130 and IMG_3131 have pins ±5-21 m; which corner the barrier and plinth stand on is not settled",
+      "photoRequest": "picasso-car-park-north-entrance",
+      "features": [
+       "parking:Picasso car park",
+       "street:picasso"
+      ],
+      "status": "open",
+      "sources": [
+       "map:ground"
       ],
       "state": "open"
      },
@@ -3782,19 +3951,6 @@
       "ask": "Calle Isabel: one photo along the lane from the Elena end.",
       "why": "no photos at all in the north lanes",
       "photoRequest": "isabel",
-      "status": "open",
-      "sources": [],
-      "features": [],
-      "tasks": [],
-      "state": "open"
-     },
-     {
-      "id": "photo-picasso-lane",
-      "area": "picasso",
-      "kind": "photo",
-      "ask": "Calle Pintor Picasso beside the resort: one photo along the street from each end, with the resort walls and gates in frame.",
-      "why": "only one photo in the Picasso area",
-      "photoRequest": "picasso-lane",
       "status": "open",
       "sources": [],
       "features": [],
@@ -4159,7 +4315,7 @@
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 38 spots",
+    "headline": "Photos needed: 41 spots",
     "requests": [
      {
       "id": "alberto",
@@ -4381,6 +4537,22 @@
       ],
       "ask": "Where the Calle Silvia lane crosses: one photo along Calle Jorge towards the sea showing the second white portal seen through the gateway, and one down each arm of the cross lane.",
       "why": "The second portal is photographed only through the gateway; where it stands is a guess",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-car-park-centre-row",
+      "at": [
+       -56.0,
+       4.0
+      ],
+      "look": [
+       -80.0,
+       -36.0
+      ],
+      "ask": "Stand at the north tip of the round palm island and photograph north-west along the central row of bays and palms with the long white wall in frame; then the same from the north end of the row looking back south-east to the island.",
+      "why": "the central bay row is rotated in the model; two opposed ground views along it, with the wall as a known line, fix its position (one camera fixes direction only)",
       "priority": 1,
       "state": "open",
       "photos": []
@@ -4690,17 +4862,49 @@
       "photos": []
      },
      {
-      "id": "picasso-lane",
+      "id": "picasso-car-park-north-entrance",
       "at": [
-       -60.0,
-       -30.0
+       -95.0,
+       -62.0
       ],
       "look": [
-       -40.0,
-       5.0
+       -105.0,
+       -66.0
       ],
-      "ask": "Calle Pintor Picasso beside the resort: one photo along the street from each end, with the resort walls and gates in frame.",
-      "why": "only one photo in the Picasso area",
+      "ask": "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame.",
+      "why": "IMG_3130 and IMG_3131 have pins ±5-21 m; which corner the barrier and plinth stand on is not settled",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-car-park-wall-inner-face",
+      "at": [
+       -68.0,
+       -12.0
+      ],
+      "look": [
+       -55.0,
+       -20.0
+      ],
+      "ask": "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot.",
+      "why": "the wall's height and its car-park side are only seen from the road",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-car-park-west-side",
+      "at": [
+       -80.0,
+       -15.0
+      ],
+      "look": [
+       -88.0,
+       -12.0
+      ],
+      "ask": "From the middle aisle, photograph square-on to the west row of angled bays and the hedge behind them, then along the row in both directions; if there is a path behind the hedge, one photo along it.",
+      "why": "no photo shows the west side of the car park, its hedge, or whether a footpath runs behind it",
       "priority": 2,
       "state": "open",
       "photos": []

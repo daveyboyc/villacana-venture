@@ -10365,7 +10365,8 @@
   },
   "citedBy": [
    "eva_lane.json:eva-lane-west",
-   "eva_lane.json:eva-lane-west-edges"
+   "eva_lane.json:eva-lane-west-edges",
+   "ground_plan_north_pool.json:north-pool-dali-link"
   ],
   "looksAt": [
    -161.5,
@@ -10410,7 +10411,8 @@
   },
   "citedBy": [
    "eva_lane.json:eva-lane-west",
-   "eva_lane.json:eva-lane-west-edges"
+   "eva_lane.json:eva-lane-west-edges",
+   "ground_plan_north_pool.json:north-pool-dali-link"
   ],
   "looksAt": [
    -168.0,
@@ -10455,7 +10457,8 @@
   },
   "citedBy": [
    "eva_lane.json:eva-lane-west",
-   "eva_lane.json:eva-lane-west-edges"
+   "eva_lane.json:eva-lane-west-edges",
+   "ground_plan_north_pool.json:north-pool-dali-link"
   ],
   "looksAt": [
    -161.4,
@@ -16413,7 +16416,9 @@
    "altitude": 9.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "ground_plan_north_pool.json:north-pool-dali-link"
+  ],
   "looksAt": [
    -168.2,
    114.7
@@ -16450,7 +16455,9 @@
    "altitude": 9.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "ground_plan_north_pool.json:north-pool-dali-link"
+  ],
   "looksAt": [
    -164.9,
    113.3
@@ -16487,7 +16494,9 @@
    "altitude": 8.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "ground_plan_north_pool.json:north-pool-dali-link"
+  ],
   "looksAt": [
    -158.3,
    112.6
@@ -23136,15 +23145,19 @@
   "id": "IMG_3097.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3097.jpg",
-  "title": "IMG_3097",
+  "title": "Car park south end: accessible bays and the tiled step up to the office walk",
   "shows": [
-   "picasso",
-   "cervantes"
+   "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials",
+   "signage"
+  ],
+  "note": "Two accessible bays (blue symbol, white lines) nose south to a low step with blue-and-white azulejo risers onto a terracotta-tiled walk that leads between clipped hedges to the community office; Canary and fan palms, resort directory sign and a solar lamp beside it. GPS pin ±17 m.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1iG4hqWVRXB45pifil4vRHLKyFCKBzQD7/view?usp=drivesdk",
@@ -23158,27 +23171,33 @@
   },
   "citedBy": [],
   "looksAt": [
-   -61.4,
-   17.9
+   -58,
+   24
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "accessible bays and tiled plaza edge at the car park's south end"
  },
  {
   "id": "IMG_3098.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3098.jpg",
-  "title": "IMG_3098",
+  "title": "Car park south end: accessible bays, tiled step and hedged palm beds",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials",
+   "planting"
+  ],
+  "note": "Same step as IMG_3097 from closer: two tiled risers with a blue-and-white azulejo band, red-white bollard by the east bed, hedged beds with palms and a Norfolk pine behind the office.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1vIJ_cKxTbWN15wI1_aHn8EtGI5ucX0Bl/view?usp=drivesdk",
@@ -23192,27 +23211,32 @@
   },
   "citedBy": [],
   "looksAt": [
-   -55.7,
-   25.4
+   -56,
+   27
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "tiled step and hedged palm beds at the car park's south end"
  },
  {
   "id": "IMG_3099.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3099.jpg",
-  "title": "IMG_3099",
+  "title": "Bin store front: RUBBISH COLLECTION / DEPOSITO BASURA, hotel block behind",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "signage"
+  ],
+  "note": "Low white building with bougainvillea along its top, a blue bicycle-parking sign, red fire-extinguisher box, a dark doorway under the RUBBISH COLLECTION / DEPOSITO BASURA sign, and painted bays in front. The long four-storey hotel block with balconies stands behind it to the east.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1NMmC4aUDyyHdwFTIjmAtxXffzpBb8YjA/view?usp=drivesdk",
@@ -23226,27 +23250,32 @@
   },
   "citedBy": [],
   "looksAt": [
-   -44.7,
-   21.1
+   -42,
+   21
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "bin store front wall on the car park's south-east corner"
  },
  {
   "id": "IMG_3100.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3100.jpg",
-  "title": "IMG_3100",
+  "title": "From the bin store looking north-west across the car park to the round palm island",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "view"
+  ],
+  "note": "Round island ringed by a clipped hedge on a white kerb, with tall Canary/date palms, a candelabra euphorbia and a fan palm clump; cars parked round it. The bin store wall with its sign is at the right edge.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1Fbk_kGgAloUJfeYmie_2SGTevo7vsc7b/view?usp=drivesdk",
@@ -23260,27 +23289,32 @@
   },
   "citedBy": [],
   "looksAt": [
-   -44.8,
-   18.9
+   -55,
+   10
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "round hedged palm island in the car park"
  },
  {
   "id": "IMG_3101.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3101.jpg",
-  "title": "IMG_3101",
+  "title": "BASURA / RUBBISH BINS sign and green door of the bin store",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "signage",
+   "materials"
+  ],
+  "note": "White wall over a grey-painted plinth band, BASURA RUBBISH BINS sign with arrow pointing left, recycling sign, green steel door under an arch.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1kn-44NfDQoun8HNG1XN4mMOxGeTPJF6A/view?usp=drivesdk",
@@ -23294,28 +23328,32 @@
   },
   "citedBy": [],
   "looksAt": [
-   -35.4,
-   19.7
+   -38,
+   24
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
-   "backdrop.json:aerial-trees",
-   "street:picasso"
-  ]
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "bin store side wall and green door",
+  "headingOff": 56
  },
  {
   "id": "IMG_3103.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3103.jpg",
-  "title": "IMG_3103",
+  "title": "Inside the walled bin yard: yellow wheeled containers",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "Open-topped yard between white walls with grey plinth band, gravelly concrete floor, a row of yellow wheeled containers, a wall lantern on the right wall. Not a roofed building.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1VDmyOBFyf4naO2SvzMid-TPfAuRulVC6/view?usp=drivesdk",
@@ -23329,27 +23367,31 @@
   },
   "citedBy": [],
   "looksAt": [
-   -40.5,
-   16.7
+   -40,
+   17
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "walled bin yard"
  },
  {
   "id": "IMG_3104.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3104.jpg",
-  "title": "IMG_3104",
+  "title": "Recycling igloos against the hotel's lower wall",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": "Green glass igloos and grey/blue containers on the asphalt in front of a low stone base and steel rail, under the hotel's white ground-floor wall with two pierced vent panels.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1ZAzz0XLtzagOtVqgI3XVkY1ItTizTXAP/view?usp=drivesdk",
@@ -23363,27 +23405,33 @@
   },
   "citedBy": [],
   "looksAt": [
-   -32.2,
-   17.4
+   -33,
+   18
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
-   "backdrop.json:aerial-trees"
-  ]
+   "backdrop.json:aerial-trees",
+   "parking:Picasso car park"
+  ],
+  "subject": "recycling bins at the foot of the hotel wall"
  },
  {
   "id": "IMG_3105.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3105.jpg",
-  "title": "IMG_3105",
+  "title": "Calle Pintor Picasso service road looking south-east towards the sea",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "view",
+   "levels"
+  ],
+  "note": "Asphalt service road between the hotel's ground floor (left, with steps and rails) and white utility buildings with a raised kerbed footpath (right); the sea at the end.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1flolpdkYTy5FbEHUbuRDrFKPeB10hztt/view?usp=drivesdk",
@@ -23397,27 +23445,32 @@
   },
   "citedBy": [],
   "looksAt": [
-   -32.0,
-   26.0
+   -20,
+   40
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees",
-   "street:picasso"
-  ]
+   "street:picasso",
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "service road south of the bin store"
  },
  {
   "id": "IMG_3106.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3106.jpg",
-  "title": "IMG_3106",
+  "title": "Service road south-east: maroon utility doors and the white tower",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "view"
+  ],
+  "note": "White utility buildings with maroon panelled doors (warning signs, graffiti) and drain grilles along a kerbed footway; the white tower and beach buildings at the end.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1MWOK06OZZbsJc6gnZD8dQhMWUSlKCsKj/view?usp=drivesdk",
@@ -23431,15 +23484,16 @@
   },
   "citedBy": [],
   "looksAt": [
-   -28.5,
-   32.6
+   -22,
+   45
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "street:picasso",
+   "picasso_service_road.json:picasso-utility-front",
    "picasso_service_road.json:picasso-boundary-wall"
-  ]
+  ],
+  "subject": "utility doors along the service road"
  },
  {
   "id": "IMG_3107.jpg",
@@ -23810,15 +23864,17 @@
   "id": "IMG_3120.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3120.jpg",
-  "title": "IMG_3120",
+  "title": "Service road looking back north-west to the car park, hotel on the right",
   "shows": [
-   "picasso",
-   "main-pool"
+   "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "view"
+  ],
+  "note": "From the seaward end: hotel ground floor with loading ramps, a sliding gate and stacked materials on the right; maroon utility doors on the left; plane trees and palms beyond. GPS ±14 m.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1mmp2OvSbwsQIAB3CCmaWbzUTDZb-ROUV/view?usp=drivesdk",
@@ -23832,29 +23888,32 @@
   },
   "citedBy": [],
   "looksAt": [
-   -22.2,
-   46.0
+   -30,
+   33
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "picasso_service_road.json:picasso-utility-front",
    "backdrop.json:aerial-trees",
    "picasso_service_road.json:picasso-boundary-wall"
-  ]
+  ],
+  "subject": "service road between hotel and utility buildings"
  },
  {
   "id": "IMG_3121.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3121.jpg",
-  "title": "IMG_3121",
+  "title": "Hotel ground floor along the service road: ramps, sliding gate, vent panels",
   "shows": [
-   "picasso",
-   "main-pool"
+   "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "layout",
+   "levels"
+  ],
+  "note": "Four-storey hotel block with continuous balconies above a white ground-floor wall with pierced vent panels, two concrete ramps with red rails, a corrugated canopy over a grey sliding gate, and a street lamp.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/14639hXH1JrUv02ZeaLXaAD8hnFNufNu8/view?usp=drivesdk",
@@ -23868,27 +23927,30 @@
   },
   "citedBy": [],
   "looksAt": [
-   -17.2,
-   40.4
+   -12,
+   38
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:picasso",
-   "backdrop.json:aerial-trees"
-  ]
+   "backdrop.json:aerial-trees",
+   "picasso_service_road.json:picasso-stone-plinth"
+  ],
+  "subject": "hotel ground-floor frontage on the service road"
  },
  {
   "id": "IMG_3122.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3122.jpg",
-  "title": "IMG_3122",
+  "title": "Service road looking north-north-west, hotel ramps right, utility doors left",
   "shows": [
-   "picasso",
-   "main-pool"
+   "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "view"
+  ],
   "note": null,
   "observation": null,
   "taken": "2026-11-19",
@@ -23903,27 +23965,31 @@
   },
   "citedBy": [],
   "looksAt": [
-   -20.5,
-   38.1
+   -26,
+   30
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "service road towards the car park"
  },
  {
   "id": "IMG_3123.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3123.jpg",
-  "title": "IMG_3123",
+  "title": "Electrical substation doors and white utility building beside the service road",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "layout"
+  ],
+  "note": "Maroon steel doors with high-voltage signs and floor grilles, then a white flat-roofed utility building with a dark green door, a low rounded white block and a sloping door ramp; the long white wall continues north.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/11SGX_2ulcA-k402xBgI3LSBxOW6LPsNh/view?usp=drivesdk",
@@ -23937,27 +24003,31 @@
   },
   "citedBy": [],
   "looksAt": [
-   -28.6,
-   30.8
+   -30,
+   30
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "street:picasso"
-  ]
+  ],
+  "subject": "substation and utility building west of the service road"
  },
  {
   "id": "IMG_3124.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3124.jpg",
-  "title": "IMG_3124",
+  "title": "White utility building and the start of the long boundary wall",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "layout"
+  ],
+  "note": "Flat-roofed white building with dark green door, a low rounded white block beside a sloping door ramp, and a kerbed footway; the long plain white wall runs on north-west along the road.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1M5Rgin3tZzElRAmVWTLP4maQ-PuYASPV/view?usp=drivesdk",
@@ -23971,27 +24041,32 @@
   },
   "citedBy": [],
   "looksAt": [
-   -30.4,
-   27.0
+   -32,
+   25
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "street:picasso",
    "backdrop.json:aerial-trees",
-   "street:picasso"
-  ]
+   "parking:Picasso car park"
+  ],
+  "subject": "utility building at the south end of the long wall"
  },
  {
   "id": "IMG_3125.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3125.jpg",
-  "title": "IMG_3125",
+  "title": "Long white wall between the car park and Calle Pintor Picasso, cypress hedge opposite",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "Plain white rendered wall about 2.5-3 m high, no openings, running straight to the north end; asphalt road with a cypress hedge on its east side. The car park is behind the wall.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1M9e6iUjt10TBNwk3tySFbXH9A86-v2Hz/view?usp=drivesdk",
@@ -24005,28 +24080,32 @@
   },
   "citedBy": [],
   "looksAt": [
-   -37.4,
-   12.3
+   -45,
+   0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
    "backdrop.json:aerial-trees",
    "parking:Picasso car park"
-  ]
+  ],
+  "subject": "long boundary wall along the service road"
  },
  {
   "id": "IMG_3126.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3126.jpg",
-  "title": "IMG_3126",
+  "title": "Opening in the cypress and ivy hedges east of the service road",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "Clipped cypress hedge with a gap and an ivy-clad hedge; plane trees and an apartment block behind.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1v7pCK_rg0y6ZZS_GxS3DEF2u9HJB1yPD/view?usp=drivesdk",
@@ -24041,26 +24120,31 @@
   "citedBy": [],
   "looksAt": [
    -35.6,
-   5.8
+   4
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "street:picasso"
-  ]
+  ],
+  "subject": "hedge gap east of the road"
  },
  {
   "id": "IMG_3127.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3127.jpg",
-  "title": "IMG_3127",
+  "title": "Pale drive into the hotel garden between cypress hedge and chain-link fence",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": "A pale concrete or compacted drive runs off the road between a clipped cypress hedge (left) and a green chain-link fence with a kerb (right), under plane trees.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/17FYaKQlSCZdknhkKyqkjFD8ySk9riZgd/view?usp=drivesdk",
@@ -24074,26 +24158,30 @@
   },
   "citedBy": [],
   "looksAt": [
-   -35.6,
-   2.2
+   -34,
+   1
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "pale drive heading north-east off the service road"
  },
  {
   "id": "IMG_3128.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3128.jpg",
-  "title": "IMG_3128",
+  "title": "Cypress hedge along the service road, tall apartment tower behind",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "view"
+  ],
+  "note": "Tall clipped cypress hedge on a white kerb; the eight-storey apartment tower with balconies and a scaffold-like stair rises behind it.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1XTV_BAJx7ij6m6-nHS-fhnUjhegBpYs4/view?usp=drivesdk",
@@ -24107,26 +24195,31 @@
   },
   "citedBy": [],
   "looksAt": [
-   -47.2,
-   -15.0
+   -47,
+   -17
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "cypress hedge on the east side of the service road"
  },
  {
   "id": "IMG_3129.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3129.jpg",
-  "title": "IMG_3129",
+  "title": "Service road looking north: long white wall left, cypress hedge right",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": "The wall continues straight and plain to a white building at the north end; tall cypress and pine hedge on the right.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1-0bKfaqB7vfHlmhWQ0CpQvay4nwnZupr/view?usp=drivesdk",
@@ -24140,29 +24233,32 @@
   },
   "citedBy": [],
   "looksAt": [
-   -61.3,
-   -31.4
+   -66,
+   -42
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
    "backdrop.json:aerial-trees",
    "parking:Picasso car park"
-  ]
+  ],
+  "subject": "service road along the long wall"
  },
  {
   "id": "IMG_3130.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3130.jpg",
-  "title": "IMG_3130",
+  "title": "Low white wall with sign post at the north end of the car park",
   "shows": [
-   "picasso",
    "north-lanes"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "signage"
+  ],
+  "note": "A white wall about 1.1 m high with a sign post at its end, flowering bougainvillea garden walls beyond, a Zantza Seguridad security sign and a Comunidad Villacana sign; the sign post shows only the back of a road sign. GPS ±21 m, so which corner it is still needs confirming.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1fg9hvm_5LANFmUV3XK-pHaaLhZsGngxd/view?usp=drivesdk",
@@ -24176,28 +24272,32 @@
   },
   "citedBy": [],
   "looksAt": [
-   -91.4,
-   -75.8
+   -92,
+   -76
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "street:bolivia",
-   "street:picasso"
-  ]
+   "street:bolivia"
+  ],
+  "subject": "low white wall and sign post at the north entrance"
  },
  {
   "id": "IMG_3131.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3131.jpg",
-  "title": "IMG_3131",
+  "title": "CALLE DE PICASSO plinth, barrier arm and ramp between white walls",
   "shows": [
-   "picasso"
+   "north-lanes"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "signage",
+   "levels"
+  ],
+  "note": "A red-and-white barrier arm (with a fixed red-white post) across the asphalt; beyond, a terracotta path with a brick edge, a white plinth lettered CALLE DE PICASSO on a lawn, a hedged garden wall, lantern post and a ramp rising between white walls with a tiled name plaque. Which side of the car park the barrier stands on is not settled from this photo.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1wBbT9JzfXNGK0FBs4Ty9p228bea7CXkH/view?usp=drivesdk",
@@ -24211,13 +24311,14 @@
   },
   "citedBy": [],
   "looksAt": [
-   -108.9,
-   -63.4
+   -110,
+   -66
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "barrier and CALLE DE PICASSO plinth at the north end"
  },
  {
   "id": "IMG_3132.jpg",
@@ -25791,14 +25892,18 @@
   "id": "IMG_3184.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3184.jpg",
-  "title": "IMG_3184",
+  "title": "Formal hedged garden by the office, resort directory sign and solar lamp",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "layout",
+   "signage"
+  ],
+  "note": "Low clipped hedges on white kerbs round gravel and lantana beds, a topiary drum, yucca; a VILLACANA directory sign (office, 90 Miles, laundrette, restaurant) and a solar street lamp on the tiled walk.",
   "observation": null,
   "taken": "2026-11-21",
   "originalUrl": "https://drive.google.com/file/d/12KT-2mB6ry6oZn-KTA_0_pb_9eTrEIy5/view?usp=drivesdk",
@@ -25812,27 +25917,32 @@
   },
   "citedBy": [],
   "looksAt": [
-   -45.1,
-   28.2
+   -46,
+   30
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "parking:Picasso car park",
-   "backdrop.json:aerial-trees"
-  ]
+   "backdrop.json:aerial-trees",
+   "parking:Picasso car park"
+  ],
+  "subject": "formal garden south-east of the car park"
  },
  {
   "id": "IMG_3189.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3189.jpg",
-  "title": "IMG_3189",
+  "title": "Kerbed tiled path meeting the accessible bay, hedged palm island with bollard",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ],
+  "note": "Terracotta walk between white kerbs ends at the asphalt; a kerb ramp and a tiled azulejo riser beside the accessible bay; a hedge-ringed bed with fan palms and a red-white bollard. Houses behind.",
   "observation": null,
   "taken": "2026-11-21",
   "originalUrl": "https://drive.google.com/file/d/1VbnZL42RdH38ws4QHpUwxdQ79YmYisHq/view?usp=drivesdk",
@@ -25846,27 +25956,33 @@
   },
   "citedBy": [],
   "looksAt": [
-   -51.6,
-   26.6
+   -52,
+   23
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "kerb and tiled path at the accessible bays"
  },
  {
   "id": "IMG_3194.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3194.jpg",
-  "title": "IMG_3194",
+  "title": "Hedged palm bed beside the tiled walk to the community office",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "facades",
+   "signage"
+  ],
+  "note": "Curving clipped hedge on a white kerb round a fan-palm bed; square terracotta tiles; the white single-storey office with a Casitas Villacana sign, AT plaque, site map board and bougainvillea.",
   "observation": null,
   "taken": "2026-11-21",
   "originalUrl": "https://drive.google.com/file/d/12NH4pecTFhttoP3ykVXA7Lbxa_IiMa_J/view?usp=drivesdk",
@@ -25880,26 +25996,30 @@
   },
   "citedBy": [],
   "looksAt": [
-   -52.2,
-   36.9
+   -52,
+   38
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "tiled walk and community office front"
  },
  {
   "id": "IMG_3196.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3196.jpg",
-  "title": "IMG_3196",
+  "title": "House front with tiled porch roof behind hedged front gardens",
   "shows": [
    "picasso"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "planting"
+  ],
+  "note": "Two-storey white house with a terracotta-tiled porch roof, white chimney, low walled front gardens with timber gates and clipped hedges; a palm trunk in the foreground. Which house is not yet matched.",
   "observation": null,
   "taken": "2026-11-21",
   "originalUrl": "https://drive.google.com/file/d/1wmMbXsALfrmqRpd4n4oSr4wNpawv2RZK/view?usp=drivesdk",
@@ -25913,29 +26033,33 @@
   },
   "citedBy": [],
   "looksAt": [
-   -60.8,
-   35.9
+   -62,
+   32
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
    "street:picasso-access",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "house fronts south-west of the car park's south end"
  },
  {
   "id": "IMG_3202.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3202.jpg",
-  "title": "IMG_3202",
+  "title": "Cervantes east end: octagonal terracotta tiles, lawn and pollarded trees",
   "shows": [
-   "picasso",
    "cervantes"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": "Octagon-and-square terracotta tiling with a pebble band and service covers, a raised white-kerbed lawn with a pollarded tree and lamp post, a narrow tiled path on between white houses.",
   "observation": null,
   "taken": "2026-11-21",
   "originalUrl": "https://drive.google.com/file/d/1LUX_fSa9jFjt3P9RdGgEShy6v6ckblp7/view?usp=drivesdk",
@@ -25949,34 +26073,32 @@
   },
   "citedBy": [],
   "looksAt": [
-   -79.7,
-   9.5
+   -85,
+   5
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "parking:Picasso car park",
-   "street:picasso-access",
    "backdrop.json:aerial-trees",
-   "cervantes_lane_edges.json:cervantes-east-north-thuja-planter"
-  ]
+   "parking:Picasso car park",
+   "street:picasso-access"
+  ],
+  "subject": "Cervantes lane at its east end"
  },
  {
   "id": "IMG_3203.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3203.jpg",
-  "title": "IMG_3203",
+  "title": "Octagonal terracotta tiled path beside a low white wall and brick-edged steps",
   "shows": [
-   "cervantes",
-   "picasso",
-   "north-lanes",
-   "eva",
-   "seaward-lanes",
-   "elena"
+   "cervantes"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "levels"
+  ],
+  "note": "Same octagon-and-square tiling as IMG_3202, between a low white wall and brick-edged steps; no door is in frame. The phone pin is ±104 m, so the location is not established; probably near IMG_3202.",
   "observation": null,
   "taken": "2026-11-21",
   "originalUrl": "https://drive.google.com/file/d/1aF3v8RrFsSPBReb5sD1HeqAoSKoBWfCF/view?usp=drivesdk",
@@ -25990,16 +26112,14 @@
   },
   "citedBy": [],
   "looksAt": [
-   -87.4,
-   18.0
+   -90,
+   12
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:cervantes",
-   "backdrop.json:aerial-trees",
-   "cervantes_lane_edges.json:cervantes-east-north-thuja-planter",
-   "cervantes_lane_edges.json:cervantes-east-north-brick-planter"
-  ]
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "octagon-tiled path"
  },
  {
   "id": "IMG_3206.jpg",
