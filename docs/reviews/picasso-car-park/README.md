@@ -123,3 +123,57 @@ today. The reasons are recorded on each photo in `data/photo_poses.json`:
 A measured correction here therefore needs either the requested ground views from inside the car
 park (`picasso-car-park-centre-row`), which add a second station seeing the same terrace from a
 different angle, or new photos that frame closer registry corners.
+
+## Built as estimates (24 November 2026)
+
+These are built from `data/picasso_car_park.json` with `src/picasso-car-park.ts`, and graded `estimated`
+in `data/confidence.json`. They are not measured placements, because no camera is solved.
+
+- **Long east wall:** about 107 m on the aerial line (-91.4, -67.8) to (-35.7, 23.9), 0.25 m thick and
+  solid. Its foot and top follow the ground, sampled every metre, so the height above the paving stays the
+  same as the road falls about 1.7 m towards the sea. A first version used flat boxes, which made the wall
+  about 4.5 m high at the south end; the layout review caught it. It is 2.8 m high (±0.3 m), from IMG_3125: the wall's foot and top meet at row 584, and at column
+  100 the wall spans 1.9 times the foot-to-horizon distance at a 1.4–1.6 m phone height. The blueprint's
+  stand-in "middle kerb", about 5° off the wall's line, is removed.
+- **Car-park outline (`mainParkingRing`):** the east edge is now on the wall's inner face, from where it
+  meets the old north edge, at (-89.95, -65.17), to the wall's south end. The west and south edges are
+  unchanged.
+- **Central bay row:** now on the aerial midline, parallel to the wall, from (-95.0, -55.9) to (-59.1, 4.0).
+- **Round island:** centre (-55.9, 10.8), radius 5.3 m, with a white kerb about 0.18 m high and an earth
+  bed. The hedge and palms are left for the detail stage.
+
+The island and the wall are measured from the paving level, 0.27 m above the terrain grid, as the car park
+and road surfaces are drawn.
+
+| View | Layout and Show details |
+| --- | --- |
+| Island and wall from the north | [after-island-pair.jpg](after-island-pair.jpg) |
+| Wall from the road side | [after-wall-pair.jpg](after-wall-pair.jpg) |
+| Overhead | [after-overhead-pair.jpg](after-overhead-pair.jpg) |
+
+Still open:
+- The Picasso road centreline is 2–3 m east of the photographed road. A terracotta ground-cover strip
+  shows along the wall's road side, where IMG_3125 shows asphalt to the wall foot.
+- The south-end step and walk are not built.
+- The `picasso-access` line still runs through gardens.
+- The bin store is not built.
+- The north end is not settled. The wall runs on about 3 m north of the outline's north edge, as the aerial
+  suggests, but the barrier and plinth corner is unknown.
+- The west bay row is about 4° off the aerial car line, up to about 5 m at the north end
+  (`picasso-car-park-west-row-angle`).
+- The outline's west edge covers house gardens at the north end, about 31 m from the wall where the bays
+  end at 22–25 m (`picasso-car-park-west-edge-gardens`).
+
+### Through the photo cameras (pin poses, unsolved)
+
+Each pair shows the photo on the left and the model on the right, rendered through the phone pin and heading
+(`shoot_views.cjs --pose --initial`). These are diagnostics, not measurements.
+
+| Photo | Pair | What it shows |
+| --- | --- | --- |
+| IMG_3125 | [pin-IMG_3125.jpg](pin-IMG_3125.jpg) | The wall is on the correct side, plain and continuous to the north end. It sits further from the camera than in the photo, because the pin (±4.7 m) and the mapped road (2–3 m east) are both off. The model shows terracotta and lawn ground cover at the wall foot where the photo has asphalt, and lawn where it has the cypress hedge. |
+| IMG_3129 | [pin-IMG_3129.jpg](pin-IMG_3129.jpg) | The same, further north. |
+| IMG_3100 | [pin-IMG_3100.jpg](pin-IMG_3100.jpg) | The island's kerb ellipse lies in about the photographed place. The photo is pitched about 5° down, the render level. The bin store at the right edge is not built. |
+
+The layout browser test (`npm run test:layout`) passes every street walk and collision check on this branch,
+then stops at the coastal-gate button step (`test_layout_browser.cjs:795`). `main` stops at the same step.

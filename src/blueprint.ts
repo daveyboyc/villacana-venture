@@ -43,6 +43,7 @@ import seafrontFence from "../data/seafront_fence.json";
 import { seafrontFenceRings } from "./seafront-fence";
 import { lawnSolidRings } from "./main-pool-lawn";
 import { picassoLawnWallRings } from "./picasso-lawn-wall";
+import { picassoCarParkPlan } from "./picasso-car-park";
 import { EDGES, FINISHES, groundEdges, groundPlanSolidRings, groundSurfaces } from "./ground-plan";
 import elenaNorth from "../data/elena_north.json";
 import {middleGatewayFrame,middleGatewayLeaf,middlePoolPlanter,suppressInMiddlePoolReview} from "./middle-pool";
@@ -312,6 +313,12 @@ async function boot(): Promise<void> {
   world.append(traced);
   for (const area of skeleton.areas) {
     traced.append(el("path", { d: path(area.ring), fill: areaFill[area.kind] ?? "#ccc", stroke: "#8a8172", "stroke-width": 0.2 }));
+  }
+  // The main car park's long east wall (data/picasso_car_park.json), estimated from the aerial and IMG_3125/3129.
+  for (const ring of picassoCarParkPlan().wall) {
+    const wallPath = el("path", { d: path(ring), fill: "#f7f4ee", stroke: "#5d5a52", "stroke-width": 0.06, "data-picasso-car-park": "wall" });
+    const title = el("title", {}); title.textContent = "Long white wall between the car park and Calle Pintor Picasso · estimated from the aerial; IMG_3125, IMG_3129"; wallPath.append(title);
+    traced.append(wallPath);
   }
   for (const kerb of skeleton.kerbs) {
     traced.append(el("path", { d: "M" + kerb.map((p) => `${p[0]} ${p[1]}`).join("L"), fill: "none", stroke: "#e9e4da", "stroke-width": 0.6 }));

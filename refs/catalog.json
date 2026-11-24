@@ -12281,8 +12281,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "seafront_fence.json:main-pool-lawn-railing",
-   "ground_plan_main_pool.json:main-lawn",
-   "area:paseo"
+   "ground_plan_main_pool.json:main-lawn"
   ],
   "subject": "The lawn corner and fence at the foot of the path",
   "headingOff": 47
@@ -12595,8 +12594,7 @@
   "looksAtFeatures": [
    "beach_verge.json:barraka-front-verge",
    "barraka_frontage.json:barraka-lounge-garden",
-   "area:beach",
-   "area:paseo"
+   "area:beach"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge",
   "headingOff": 52
@@ -12694,9 +12692,9 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "area:paseo",
    "barraka_frontage.json:barraka-lounge-garden",
-   "beach_verge.json:barraka-front-verge"
+   "beach_verge.json:barraka-front-verge",
+   "area:paseo"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge"
  },
@@ -13574,9 +13572,9 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "area:paseo",
    "barraka_frontage.json:barraka-lounge-garden",
-   "beach_verge.json:barraka-front-verge"
+   "beach_verge.json:barraka-front-verge",
+   "area:paseo"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge"
  },
@@ -17378,6 +17376,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "ground_plan_main_pool.json:main-lawn",
+   "area:paseo",
    "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "the big lawn towards Barraka, the hedge along the sea railing and the service lid"
@@ -17757,6 +17756,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "ground_plan_main_pool.json:main-lawn",
+   "area:paseo",
    "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "The paseo, sandstone wall with green bar fence, white solar lamp and Barraka Beach frontage ahead"
@@ -23287,7 +23287,9 @@
    "altitude": 6.0,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_car_park.json:picasso-car-park-island"
+  ],
   "looksAt": [
    -55,
    10
@@ -23295,6 +23297,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
+   "picasso_car_park.json:picasso-car-park-island",
    "backdrop.json:aerial-trees"
   ],
   "subject": "round hedged palm island in the car park"
@@ -23334,7 +23337,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "picasso_car_park.json:picasso-car-park-wall"
   ],
   "subject": "bin store side wall and green door",
   "headingOff": 56
@@ -23373,6 +23377,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
+   "picasso_car_park.json:picasso-car-park-wall",
    "backdrop.json:aerial-trees"
   ],
   "subject": "walled bin yard"
@@ -23411,8 +23416,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
-   "backdrop.json:aerial-trees",
-   "parking:Picasso car park"
+   "backdrop.json:aerial-trees"
   ],
   "subject": "recycling bins at the foot of the hotel wall"
  },
@@ -24039,7 +24043,9 @@
    "altitude": 6.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_car_park.json:picasso-car-park-wall"
+  ],
   "looksAt": [
    -32,
    25
@@ -24047,8 +24053,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
-   "backdrop.json:aerial-trees",
-   "parking:Picasso car park"
+   "backdrop.json:aerial-trees"
   ],
   "subject": "utility building at the south end of the long wall"
  },
@@ -24078,7 +24083,9 @@
    "altitude": 6.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_car_park.json:picasso-car-park-wall"
+  ],
   "looksAt": [
    -45,
    0
@@ -24086,8 +24093,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
-   "backdrop.json:aerial-trees",
-   "parking:Picasso car park"
+   "backdrop.json:aerial-trees"
   ],
   "subject": "long boundary wall along the service road"
  },
@@ -24231,7 +24237,9 @@
    "altitude": 6.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_car_park.json:picasso-car-park-wall"
+  ],
   "looksAt": [
    -66,
    -42
@@ -24239,8 +24247,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
-   "backdrop.json:aerial-trees",
-   "parking:Picasso car park"
+   "backdrop.json:aerial-trees"
   ],
   "subject": "service road along the long wall"
  },
@@ -25954,7 +25961,9 @@
    "altitude": 6.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_car_park.json:picasso-car-park-island"
+  ],
   "looksAt": [
    -52,
    23
