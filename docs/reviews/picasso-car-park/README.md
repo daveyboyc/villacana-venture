@@ -106,3 +106,20 @@ approved stage 1 once these fixes were made: the island re-read, the centre-row 
 restated, the same-spot camera pairing corrected, the older photos IMG_2345 and IMG_2444 added, the
 inner-face photo request moved back to the central aisle, and tag wording corrected for IMG_3123,
 3124, 3127, 3130 and 3203.
+
+## Camera solves attempted (24 November 2026)
+
+None of the four best candidates can be solved to measurement quality with what the model holds
+today. The reasons are recorded on each photo in `data/photo_poses.json`:
+
+- **IMG_3100.** The only registry building in view is the stepped terrace 6266801UF1366N_part3,
+  46-68 m away and mostly behind palms. Its parapets and chimneys do not tie to the flat registry
+  footprint's corners unambiguously. The pin pose is already close: the rooftops land within about
+  15 px. A pose fitted from a single cluster of uncertain corners would fix direction but not position.
+- **IMG_3099.** The bin store is not in the registry, and the hotel's registry part has 0 floors.
+- **IMG_3125, IMG_3129.** These show the wall, road and hedge only, with no registry geometry. Once
+  the wall is placed, they can check its direction and height.
+
+A measured correction here therefore needs either the requested ground views from inside the car
+park (`picasso-car-park-centre-row`), which add a second station seeing the same terrace from a
+different angle, or new photos that frame closer registry corners.
