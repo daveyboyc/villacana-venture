@@ -11,6 +11,10 @@
   "needs-photos": "Worth improving; more photos wanted."
  },
  "features": {
+  "street:picasso": {
+   "level": "estimated",
+   "why": "Along the car park the road is placed against the long wall (aerial line; IMG_3125, IMG_3129 show asphalt to the wall foot), 6 m wide; the north and south ends are the earlier map trace."
+  },
   "picasso_car_park.json:picasso-car-park-wall": {
    "level": "estimated",
    "why": "Plain white wall photographed from the road (IMG_3125, IMG_3129, IMG_3124). Line read from the aerial to about 0.3-1 m; height about 2.8 m from IMG_3125's vanishing lines at an assumed phone height. No camera is solved."

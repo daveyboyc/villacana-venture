@@ -582,7 +582,9 @@
       "kind": "completeness",
       "task": "ground-plan-picasso",
       "status": "open",
-      "requests": [],
+      "requests": [
+        "picasso-car-park-south-end"
+      ],
       "description": "At the south end two accessible bays nose onto a low step with blue-and-white azulejo risers up to a terracotta-tiled walk between hedged palm beds that leads to the community office (IMG_3097, IMG_3098, IMG_3189, IMG_3194); white kerbs edge the walk and a kerb ramp sits beside the accessible bay. The model ends the car park in a flat asphalt edge with no step, kerbs or walk. Step height is not measured.",
       "sources": [
         "IMG_3097.jpg",
@@ -592,7 +594,8 @@
       ],
       "features": [
         "parking:Picasso car park"
-      ]
+      ],
+      "note": "25 Nov 2026: not built yet. On the aerial the tiled walk leaves the asphalt at about (-56..-52, 29) and splits around a round planted bed at about (-52, 37) before reaching the office; the IMG_3194 pin puts that bed on the walk's left, IMG_3097/3098 headings put the walk on its east side, and the asphalt's south edge reads 2-4 m north of the outline's. The layout needs a solved camera or the requested south-end views (picasso-car-park-south-end) before it is built."
     },
     {
       "id": "picasso-access-off-aisle",
@@ -627,7 +630,8 @@
       ],
       "features": [
         "street:picasso"
-      ]
+      ],
+      "note": "25 Nov 2026: the stretch along the car park moved onto a line 3.1 m east of the wall's centreline (6 m wide), so the asphalt meets the wall foot as IMG_3125/3129 show. Width kept at 6 m: 7.5 m (the aerial's wall-to-hedge gap) cuts the photographed service-road ramp further south. Estimated; stays open until measured."
     },
     {
       "id": "picasso-car-park-west-row-angle",

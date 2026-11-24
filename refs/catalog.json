@@ -23378,7 +23378,8 @@
   "looksAtFeatures": [
    "parking:Picasso car park",
    "picasso_car_park.json:picasso-car-park-wall",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "street:picasso"
   ],
   "subject": "walled bin yard"
  },
@@ -24130,8 +24131,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees",
-   "street:picasso"
+   "backdrop.json:aerial-trees"
   ],
   "subject": "hedge gap east of the road"
  },
@@ -24246,8 +24246,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:picasso",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "street:picasso"
   ],
   "subject": "service road along the long wall"
  },
@@ -24285,7 +24285,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "street:bolivia"
+   "street:bolivia",
+   "street:picasso"
   ],
   "subject": "low white wall and sign post at the north entrance"
  },
