@@ -27,14 +27,14 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 | North pool | 32 / 32 | 0 | 0 | uninspected |
 | Middle pool | 43 / 43 | 0 | 0 | uninspected |
 | South pool | 28 / 28 | 0 | 0 | uninspected |
-| Main pool | 47 / 47 | 0 | 0 | uninspected |
-| Calle Elena | 118 / 79 | 2 | 2 | partial |
-| Calle Miguel de Cervantes | 90 / 62 | 1 | 1 | partial |
+| Main pool | 44 / 44 | 0 | 0 | uninspected |
+| Calle Elena | 117 / 78 | 2 | 2 | partial |
+| Calle Miguel de Cervantes | 89 / 61 | 1 | 1 | partial |
 | Calle Pintor Dalí | 68 / 68 | 3 | 0 | uninspected |
-| Pintor Picasso and the car park | 31 / 31 | 2 | 0 | uninspected |
+| Pintor Picasso and the car park | 27 / 27 | 2 | 0 | uninspected |
 | Loira, Bolivia, Alberto and Isabel | 36 / 36 | 4 | 6 | uninspected |
-| Calle Eva | 62 / 62 | 2 | 0 | uninspected |
-| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 163 / 163 | 6 | 2 | uninspected |
+| Calle Eva | 61 / 61 | 2 | 0 | uninspected |
+| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 162 / 162 | 6 | 2 | uninspected |
 | Barraka and the beach | 88 / 88 | 1 | 0 | uninspected |
 | The paseo | 104 / 104 | 4 | 0 | uninspected |
 | The whole resort | 34 / 34 | 0 | 0 | uninspected |

@@ -37,7 +37,7 @@ The large main pool, the round toddler pool, the deck and lawn, Bistro Enrique's
 ## Coverage
 
 Layout: 40, Levels and slopes: 12, Facades and roofs: 13, Materials: 24, Planting: 15, Signs: 6, Views: 13
-42 reviewed, 5 suggested only by camera position.
+42 reviewed, 2 suggested only by camera position.
 
 ## Open build tasks
 
@@ -330,6 +330,3 @@ The camera stood in or near this area. Check what the picture actually shows bef
 | --- | --- | --- | --- |
 | [IMG_3118.jpg](../../public/photos-ref/IMG_3118.jpg) | not reviewed | not reviewed | IMG_3118 |
 | [IMG_3119.jpg](../../public/photos-ref/IMG_3119.jpg) | not reviewed | not reviewed | IMG_3119 |
-| [IMG_3120.jpg](../../public/photos-ref/IMG_3120.jpg) | not reviewed | not reviewed | IMG_3120 |
-| [IMG_3121.jpg](../../public/photos-ref/IMG_3121.jpg) | not reviewed | not reviewed | IMG_3121 |
-| [IMG_3122.jpg](../../public/photos-ref/IMG_3122.jpg) | not reviewed | not reviewed | IMG_3122 |

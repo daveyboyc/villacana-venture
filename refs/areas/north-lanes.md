@@ -17,8 +17,8 @@ The northern boundary roads and the lanes round the north pool's upper side.
 
 ## Coverage
 
-Layout: 12, Levels and slopes: 1, Facades and roofs: 1, Materials: 12, Planting: 1, Signs: 2
-12 reviewed, 24 suggested only by camera position.
+Layout: 14, Levels and slopes: 2, Facades and roofs: 1, Materials: 12, Planting: 1, Signs: 4
+14 reviewed, 22 suggested only by camera position.
 
 ## Open build tasks
 
@@ -132,6 +132,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_3151.jpg](../../public/photos-ref/IMG_3151.jpg) | ground | layout, materials | Alternate close view through the Juan Gris grille **Looks at:** Barred opening and opposite frontage. **Note:** Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved. _Used by: loira_boundary.json:loira-resort-wall, ground_plan_north_lanes.json:loira-window-verge._ |
 | [IMG_3154.jpg](../../public/photos-ref/IMG_3154.jpg) | ground | layout, materials | Juan Gris west barred opening and low tiled threshold **Looks at:** Juan Gris west barred opening and low tiled threshold. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. **Compass:** the subject is 68° from the phone heading; trust looksAt, not the heading. _Used by: lane_walls.json:juan-gris-west-bed, loira_boundary.json:loira-resort-wall._ |
 | [IMG_3142.jpg](../../public/photos-ref/IMG_3142.jpg) | ground | layout, materials | Juan Gris middle wall opening beside raised planter **Looks at:** Juan Gris middle wall opening beside raised planter. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. _Used by: loira_boundary.json:loira-resort-wall._ |
+| [IMG_3131.jpg](../../public/photos-ref/IMG_3131.jpg) | ground | layout, signage, levels | CALLE DE PICASSO plinth, barrier arm and ramp between white walls **Looks at:** barrier and CALLE DE PICASSO plinth at the north end. **Note:** A red-and-white barrier arm (with a fixed red-white post) across the asphalt; beyond, a terracotta path with a brick edge, a white plinth lettered CALLE DE PICASSO on a lawn, a hedged garden wall, lantern post and a ramp rising between white walls with a tiled name plaque. Which side of the car park the barrier stands on is not settled from this photo. |
+| [IMG_3130.jpg](../../public/photos-ref/IMG_3130.jpg) | ground | layout, signage | Low white wall with sign post at the north end of the car park **Looks at:** low white wall and sign post at the north entrance. **Note:** A white wall about 1.1 m high with a sign post at its end, flowering bougainvillea garden walls beyond and an estate agent board. GPS ±21 m, so which corner it is still needs confirming. |
 | [IMG_2448.jpg](../../public/photos-ref/IMG_2448.jpg) | ground | signage, layout, materials, levels | Cervantes/Alberto junction: signed wall and paving change, path with three white steps ahead **Looks at:** Lane beyond the Alberto crossing with three white steps. **Note:** Pin is on the blue street line at the Alberto label, but the photo shows the Alberto sign on the wall; the street ID depends on which map street is right, so treat the area as cervantes plus north-lanes. looksAt is estimated 20 m along heading 243. _Used by: lane_walls.json:cervantes-south-garden-wall-alberto, cervantes_lane_edges.json:cervantes-alberto-corner-bed, steps:cervantes-alberto-steps._ |
 | [IMG_2686.jpg](../../public/photos-ref/IMG_2686.jpg) | ground | layout, planting, facades, materials | Calle Elena north from the Cervantes junction: hedged beds and white walls **Note:** Matches the existing Elena north bed and spur description (hedged beds, white wall with window/door). _Used by: lane_walls.json:elena-north-corner-patio-wall, cervantes_lane_edges.json:cervantes-elena-corner-bed, elena_north_corner.json:elena-north-corner-bed._ |
 
@@ -163,5 +165,3 @@ The camera stood in or near this area. Check what the picture actually shows bef
 | [IMG_3162.jpg](../../public/photos-ref/IMG_3162.jpg) | not reviewed | not reviewed | IMG_3162 |
 | [IMG_3169.jpg](../../public/photos-ref/IMG_3169.jpg) | not reviewed | not reviewed | IMG_3169 |
 | [IMG_3170.jpg](../../public/photos-ref/IMG_3170.jpg) | not reviewed | not reviewed | IMG_3170 |
-| [IMG_3130.jpg](../../public/photos-ref/IMG_3130.jpg) | not reviewed | not reviewed | IMG_3130 |
-| [IMG_3203.jpg](../../public/photos-ref/IMG_3203.jpg) | not reviewed | not reviewed | IMG_3203 |

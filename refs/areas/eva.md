@@ -28,7 +28,7 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 ## Coverage
 
 Layout: 55, Levels and slopes: 6, Facades and roofs: 26, Materials: 50, Planting: 40, Signs: 9, Views: 2
-61 reviewed, 1 suggested only by camera position.
+61 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -84,12 +84,19 @@ graph LR
   F6 --> PIMG_2338_jpg(["IMG_2338"])
   F6 --> PIMG_2339_jpg(["IMG_2339"])
   F6 --> PIMG_2503_jpg(["IMG_2503"])
-  A --> F7["Middle pool · east gateway from Calle Eva · unreviewed"]
-  F7 --> PIMG_2244_jpg(["IMG_2244"])
-  F7 --> PIMG_2340_jpg(["IMG_2340"])
-  A --> F8["Middle pool · stone steps up to Calle Eva · unreviewed"]
-  F8 --> PIMG_2248_jpg(["IMG_2248"])
-  F8 --> PIMG_2333_jpg(["IMG_2333"])
+  A --> F7["North pool south-west · tiled connector towards Calle Pintor Dalí · unreviewed"]
+  F7 --> PIMG_2551_jpg(["IMG_2551"])
+  F7 --> PIMG_2552_jpg(["IMG_2552"])
+  F7 --> PIMG_2553_jpg(["IMG_2553"])
+  F7 --> PIMG_2705_jpg(["IMG_2705"])
+  F7 --> PIMG_2706_jpg(["IMG_2706"])
+  F7 --> PIMG_2707_jpg(["IMG_2707"])
+  A --> F8["Middle pool · east gateway from Calle Eva · unreviewed"]
+  F8 --> PIMG_2244_jpg(["IMG_2244"])
+  F8 --> PIMG_2340_jpg(["IMG_2340"])
+  A --> F9["Middle pool · stone steps up to Calle Eva · unreviewed"]
+  F9 --> PIMG_2248_jpg(["IMG_2248"])
+  F9 --> PIMG_2333_jpg(["IMG_2333"])
 ```
 
 ## Placement evidence
@@ -105,6 +112,7 @@ graph LR
 | `eva_lane.json:eva-lane-west` | unreviewed | matches | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `eva_lane.json:eva-lane-west-edges` | disputed | differs | open discrepancy photo-discrepancy:144ccc942e819053 |
 | `eva_walled_lawn.json:eva-walled-lawn` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `ground_plan_north_pool.json:north-pool-dali-link` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool.json:middle-pool-east-gateway` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `steps:middle-pool-sw-steps` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
@@ -197,11 +205,3 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2558.jpg](../../public/photos-ref/IMG_2558.jpg) | ground | layout, materials, planting | Terracotta footpath with kerbed planters leading to a brown gate **Note:** Pin altitude 9.3 m reads 'above ground', but the picture is at ground level (GPS height noise). |
 | [IMG_2701.jpg](../../public/photos-ref/IMG_2701.jpg) | ground | layout, materials, planting | Small tiled forecourt at the Dali kerb with a lantern **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
 | [IMG_2711.jpg](../../public/photos-ref/IMG_2711.jpg) | ground | layout, materials, planting | Through the gate: tiled path into the middle pool garden |
-
-## Suggested by camera position, not yet reviewed
-
-The camera stood in or near this area. Check what the picture actually shows before relying on it.
-
-| Reference | Viewpoint | Use for | What it shows |
-| --- | --- | --- | --- |
-| [IMG_3203.jpg](../../public/photos-ref/IMG_3203.jpg) | not reviewed | not reviewed | IMG_3203 |

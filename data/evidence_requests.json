@@ -26,7 +26,9 @@
       "ask": "Side-on photo from the lawn path of the northwest tiled stair and curved wall, plus a view from the top looking down, showing the floor joins and stair ends.",
       "why": "Resolve the stair/terrace position and height transition without guessing concealed limits.",
       "photoRequest": "north-pool-west-stair",
-      "features": ["raised_terraces.json:north-pool-west-terrace"],
+      "features": [
+        "raised_terraces.json:north-pool-west-terrace"
+      ],
       "tasks": [],
       "status": "open",
       "sources": []
@@ -36,7 +38,11 @@
       "area": "north-pool",
       "kind": "map",
       "ask": "A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead.",
-      "requirements": ["Georeference the source with scale and registration controls", "Report held-out landmarks and uncertainty", "Distinguish ground walls from projecting roofs"],
+      "requirements": [
+        "Georeference the source with scale and registration controls",
+        "Report held-out landmarks and uncertainty",
+        "Distinguish ground walls from projecting roofs"
+      ],
       "why": "Existing aerials and elevated photos do not establish every concealed patio boundary or access width. This flags those limits only; visible pool and facade work can continue.",
       "features": [],
       "tasks": [],
@@ -48,24 +54,109 @@
       "area": "north-pool",
       "kind": "photo",
       "ask": "Ground-level photos from the north pool's west path looking south at the two white patio walls with brown gates (south of the hibiscus hedge, west of the station roof), showing each gate's foot, the wall ends and a known width such as a door leaf.",
-      "requirements": ["Wall feet and door sills visible", "One photo square to each wall", "Note which house each patio belongs to"],
+      "requirements": [
+        "Wall feet and door sills visible",
+        "One photo square to each wall",
+        "Note which house each patio belongs to"
+      ],
       "why": "From the roof the door feet are hidden by planting, so the gates' positions along the walls and the walls' heights cannot be cast through the solved station camera.",
-      "features": ["plain_fronts.json:north-pool-gated-patio-walls"],
-      "tasks": ["north-pool-station-details"],
+      "features": [
+        "plain_fronts.json:north-pool-gated-patio-walls"
+      ],
+      "tasks": [
+        "north-pool-station-details"
+      ],
       "status": "open",
-      "sources": ["IMG_2206.jpg", "IMG_2208.jpg"]
+      "sources": [
+        "IMG_2206.jpg",
+        "IMG_2208.jpg"
+      ]
     },
     {
       "id": "north-pool-north-row-ground",
       "area": "north-pool",
       "kind": "photo",
       "ask": "Two or three photos from the north pool lawn, standing on the grass about 3-5 m from the north path, looking north at the north row's patios: the white plinth wall with its three white steps, the hedges, and the house fronts with the awnings behind. Include the whole width from the alley arch (west) to the iron gate by Calle Isabel (east).",
-      "requirements": ["Wall foot and steps visible", "At least two positions a few metres apart", "House door sills visible where possible"],
+      "requirements": [
+        "Wall foot and steps visible",
+        "At least two positions a few metres apart",
+        "House door sills visible where possible"
+      ],
       "why": "The roof station sees these patios from one place, so depth near the house fronts is uncertain by 1-3 m. A second station gives a measured position for the patio front and the house fronts.",
-      "features": ["raised_terraces.json:north-pool-north-patios"],
-      "tasks": ["north-pool-north-frontage"],
+      "features": [
+        "raised_terraces.json:north-pool-north-patios"
+      ],
+      "tasks": [
+        "north-pool-north-frontage"
+      ],
       "status": "open",
-      "sources": ["IMG_2204.jpg", "IMG_2205.jpg"]
+      "sources": [
+        "IMG_2204.jpg",
+        "IMG_2205.jpg"
+      ]
+    },
+    {
+      "id": "picasso-car-park-centre-row",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "Stand at the north tip of the round palm island and photograph north-west along the central row of bays and palms with the long white wall in frame; then the same from the north end of the row looking back south-east to the island.",
+      "why": "the central bay row is rotated in the model; two opposed ground views along it, with the wall as a known line, fix its position (one camera fixes direction only)",
+      "photoRequest": "picasso-car-park-centre-row",
+      "features": [
+        "parking:Picasso car park"
+      ],
+      "status": "open",
+      "sources": [
+        "map:ground"
+      ]
+    },
+    {
+      "id": "picasso-car-park-west-side",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the middle aisle, photograph square-on to the west row of angled bays and the hedge behind them, then along the row in both directions; if there is a path behind the hedge, one photo along it.",
+      "why": "no photo shows the west side of the car park, its hedge, or whether a footpath runs behind it",
+      "photoRequest": "picasso-car-park-west-side",
+      "features": [
+        "parking:Picasso car park",
+        "street:picasso-access"
+      ],
+      "status": "open",
+      "sources": [
+        "map:ground"
+      ]
+    },
+    {
+      "id": "picasso-car-park-wall-inner-face",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "Photograph the inner (car-park) face of the long white wall square-on with a person or car for scale, and one along it from each end, showing any kerb or footway at its foot.",
+      "why": "the wall's height and its car-park side are only seen from the road",
+      "photoRequest": "picasso-car-park-wall-inner-face",
+      "features": [
+        "parking:Picasso car park",
+        "street:picasso"
+      ],
+      "status": "open",
+      "sources": [
+        "map:ground"
+      ]
+    },
+    {
+      "id": "picasso-car-park-north-entrance",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame.",
+      "why": "IMG_3130 and IMG_3131 have pins ±5-21 m; which corner the barrier and plinth stand on is not settled",
+      "photoRequest": "picasso-car-park-north-entrance",
+      "features": [
+        "parking:Picasso car park",
+        "street:picasso"
+      ],
+      "status": "open",
+      "sources": [
+        "map:ground"
+      ]
     }
   ]
 }

@@ -34,8 +34,8 @@ Cervantes, the straight tiled lane across the block from Pintor Dalí to the Pic
 
 ## Coverage
 
-Layout: 76, Levels and slopes: 24, Facades and roofs: 38, Materials: 30, Planting: 54, Signs: 18, Views: 5
-86 reviewed, 4 suggested only by camera position.
+Layout: 77, Levels and slopes: 25, Facades and roofs: 38, Materials: 32, Planting: 55, Signs: 18, Views: 5
+88 reviewed, 1 suggested only by camera position.
 
 ## Levels
 
@@ -469,12 +469,14 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_3090.jpg](../../public/photos-ref/IMG_3090.jpg) | ground | layout, planting, facades | Calle de Miguel from its west end: narrow tiled lane, banana plant over the north gardens **Looks at:** Calle de Miguel lane and banana plant. |
 | [IMG_3093.jpg](../../public/photos-ref/IMG_3093.jpg) | ground | layout, facades, planting | Calle de Miguel looking east: wall lanterns, grilled windows, shrub border **Looks at:** Calle de Miguel east of the sign. |
 | [IMG_3094.jpg](../../public/photos-ref/IMG_3094.jpg) | ground | facades, materials, layout | Arched porch on the south side of Calle de Miguel with a potted kentia palm **Looks at:** arched porch off Calle de Miguel. |
+| [IMG_3202.jpg](../../public/photos-ref/IMG_3202.jpg) | ground | layout, materials, planting | Cervantes east end: octagonal terracotta tiles, lawn and pollarded trees **Looks at:** Cervantes lane at its east end. **Note:** Octagon-and-square terracotta tiling with a pebble band and service covers, a raised white-kerbed lawn with a pollarded tree and lamp post, a narrow tiled path on between white houses. |
 | [IMG_2252.jpg](../../public/photos-ref/IMG_2252.jpg) | ground | levels, layout | Cervantes near Elena: tiled lane with a central sloping strip **Note:** Shows a ramp strip in the lane. |
 | [IMG_2288.jpg](../../public/photos-ref/IMG_2288.jpg) | ground | signage, layout | Cervantes area: passage signed Calle Miguel |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |
 | [IMG_2798.jpg](../../public/photos-ref/IMG_2798.jpg) | ground | layout, planting | Lane between flowering hedges, looking south-west |
 | [IMG_3091.jpg](../../public/photos-ref/IMG_3091.jpg) | ground | signage, facades | CALLE DE MIGUEL street sign on the white wall at the lane's west end **Looks at:** Calle de Miguel name sign. **Note:** Ground shot despite the 9.4 m phone altitude: the sign is at eye level and the neighbouring shots from the same spot (IMG_3088-3090) read 7.7-7.9 m. |
 | [IMG_3096.jpg](../../public/photos-ref/IMG_3096.jpg) | ground | materials, planting | Inside the arched porch: terracotta tiles with blue-and-white insets, pebble mat, schefflera **Looks at:** porch floor off Calle de Miguel. **Compass:** the subject is 118° from the phone heading; trust looksAt, not the heading. |
+| [IMG_3203.jpg](../../public/photos-ref/IMG_3203.jpg) | ground | materials, levels | Octagonal terracotta tiled path beside a low white wall and steps **Looks at:** octagon-tiled path. **Note:** Same octagon-and-square tiling as IMG_3202, between a low white wall and brick-edged steps up to a front door. The phone pin is ±104 m, so the location is not established; probably near IMG_3202. |
 | [IMG_2266.jpg](../../public/photos-ref/IMG_2266.jpg) | ground | layout | Calle Cervantes exit onto Pintor Dalí: planter and opposite hedge |
 | [IMG_2445.jpg](../../public/photos-ref/IMG_2445.jpg) | ground | materials | Octagonal terracotta paving close-up on Cervantes **Note:** Camera looks down at the floor so only the pattern is usable; heading 240 (along the lane) comes from the pin metadata. Octagon pattern here (about 0.4 m octagons) differs from the square tiles used west of Elena. |
 | [IMG_2462.jpg](../../public/photos-ref/IMG_2462.jpg) | ground | planting | Bougainvillea over a white wall above a plumbago and clipped hedge, Elena junction **Note:** Close planting shot at the junction; heading 289 points at the white garden wall near the brown door (IMG_2196), but the location within the junction is not established. |
@@ -500,7 +502,4 @@ The camera stood in or near this area. Check what the picture actually shows bef
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_3203.jpg](../../public/photos-ref/IMG_3203.jpg) | not reviewed | not reviewed | IMG_3203 |
 | [IMG_3206.jpg](../../public/photos-ref/IMG_3206.jpg) | not reviewed | not reviewed | IMG_3206 |
-| [IMG_3097.jpg](../../public/photos-ref/IMG_3097.jpg) | not reviewed | not reviewed | IMG_3097 |
-| [IMG_3202.jpg](../../public/photos-ref/IMG_3202.jpg) | not reviewed | not reviewed | IMG_3202 |
