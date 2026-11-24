@@ -3391,6 +3391,7 @@
       "parking:Picasso car park",
       "street:picasso"
      ],
+     "note": "24 Nov 2026: built as an estimate (data/picasso_car_park.json, src/picasso-car-park.ts): aerial line, 2.8 m high, solid. Stays open until a solved camera measures it.",
      "state": "needs-evidence",
      "blockers": [
       "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot."
@@ -3412,6 +3413,7 @@
      "features": [
       "parking:Picasso car park"
      ],
+     "note": "24 Nov 2026: east edge moved onto the wall's inner face as an estimate. Stays open until measured.",
      "state": "ready",
      "blockers": []
     },
@@ -3432,6 +3434,7 @@
      "features": [
       "parking:Picasso car park"
      ],
+     "note": "24 Nov 2026: central row moved onto the aerial midline, parallel to the wall, as an estimate (±1.5 m). Stays open until measured.",
      "state": "needs-evidence",
      "blockers": [
       "Stand at the north tip of the round palm island and photograph north-west along the central row of bays and palms with the long white wall in frame; then the same from the north end of the row looking back south-east to the island."
@@ -3453,6 +3456,7 @@
      "features": [
       "parking:Picasso car park"
      ],
+     "note": "24 Nov 2026: island moved to (-55.9, 10.8), radius 5.3 m, with a white kerb and bed in 3D, as an estimate. Hedge and palms not built yet (detail stage). Stays open.",
      "state": "ready",
      "blockers": []
     },
@@ -7172,6 +7176,7 @@
       "parking:Picasso car park",
       "street:picasso"
      ],
+     "note": "24 Nov 2026: built as an estimate (data/picasso_car_park.json, src/picasso-car-park.ts): aerial line, 2.8 m high, solid. Stays open until a solved camera measures it.",
      "state": "needs-evidence",
      "blockers": [
       "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot."
@@ -7193,6 +7198,7 @@
      "features": [
       "parking:Picasso car park"
      ],
+     "note": "24 Nov 2026: east edge moved onto the wall's inner face as an estimate. Stays open until measured.",
      "state": "ready",
      "blockers": []
     },
@@ -7213,6 +7219,7 @@
      "features": [
       "parking:Picasso car park"
      ],
+     "note": "24 Nov 2026: central row moved onto the aerial midline, parallel to the wall, as an estimate (±1.5 m). Stays open until measured.",
      "state": "needs-evidence",
      "blockers": [
       "Stand at the north tip of the round palm island and photograph north-west along the central row of bays and palms with the long white wall in frame; then the same from the north end of the row looking back south-east to the island."
@@ -7234,6 +7241,7 @@
      "features": [
       "parking:Picasso car park"
      ],
+     "note": "24 Nov 2026: island moved to (-55.9, 10.8), radius 5.3 m, with a white kerb and bed in 3D, as an estimate. Hedge and palms not built yet (detail stage). Stays open.",
      "state": "ready",
      "blockers": []
     },

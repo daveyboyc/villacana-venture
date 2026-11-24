@@ -11,6 +11,18 @@
   "needs-photos": "Worth improving; more photos wanted."
  },
  "features": {
+  "picasso_car_park.json:picasso-car-park-wall": {
+   "level": "estimated",
+   "why": "Plain white wall photographed from the road (IMG_3125, IMG_3129, IMG_3124). Line read from the aerial to about 0.3-1 m; height about 2.8 m from IMG_3125's vanishing lines at an assumed phone height. No camera is solved."
+  },
+  "picasso_car_park.json:picasso-car-park-island": {
+   "level": "estimated",
+   "why": "Hedge-ringed island on a white kerb in IMG_3100; centre and radius from the aerial to about 0.5 m. Kerb height is a guess; the hedge and palms are not built yet."
+  },
+  "parking:Picasso car park": {
+   "level": "estimated",
+   "why": "East edge on the long wall's inner face (aerial). The west and south edges and the north end are still the earlier map trace; the central bay row is read from car positions on the aerial (±1.5 m)."
+  },
   "lane_walls.json:juan-gris-east-hedge": {
    "level": "estimated",
    "why": "The hedge shows over the lowered white wall east of the first pergola. Exact endpoints, setback and height are unmeasured."

@@ -1,0 +1,55 @@
+{
+ "id": "picasso-car-park",
+ "name": "Picasso (main) car park: long east wall, outline, central bay row and round island",
+ "evidence": [
+  "IMG_3124.jpg",
+  "IMG_3125.jpg",
+  "IMG_3129.jpg",
+  "IMG_3100.jpg",
+  "IMG_3189.jpg"
+ ],
+ "wall": {
+  "id": "picasso-car-park-wall",
+  "name": "Long white wall between the car park and Calle Pintor Picasso",
+  "points": [
+   [
+    -91.4,
+    -67.8
+   ],
+   [
+    -35.7,
+    23.9
+   ]
+  ],
+  "height": 2.8,
+  "thickness": 0.25,
+  "trust": "Estimated. Line read from the Esri World Imagery zoom 19 aerial (the wall's bright top and shadow, straight over its whole length; an independent reviewer found it within about 0.3 m of this line). Plain, rendered, no openings in IMG_3125 and IMG_3129; south end at the white utility building in IMG_3124. Height about 2.8 m (±0.3) from IMG_3125: wall foot and top converge at row 584, and at column 100 the wall spans 1.9 times the foot-to-horizon distance, at an assumed 1.4-1.6 m phone height. No camera is solved (data/photo_poses.json notes), so this is not a measured placement."
+ },
+ "centreRow": {
+  "points": [
+   [
+    -95.04,
+    -55.9
+   ],
+   [
+    -59.1,
+    4.0
+   ]
+  ],
+  "trust": "Estimated. Midline of the central nose-to-nose bays read from car positions on the aerial (±1.5 m), parallel to the wall, ending short of the round island."
+ },
+ "island": {
+  "id": "picasso-car-park-island",
+  "centre": [
+   -55.9,
+   10.8
+  ],
+  "radius": 5.3,
+  "kerbHeight": 0.18,
+  "kerbWidth": 0.22,
+  "trust": "Estimated. Edges from brightness profiles on the aerial (west -61.3, east -50.3, south edge z 15.7; independent review 24 Nov 2026), ±0.5 m. IMG_3100 shows a white kerb about a hand high under a clipped hedge; kerb height is a guess. The bed inside is level with the kerb top under the hedge."
+ },
+ "outline": {
+  "trust": "East edge pulled onto the wall's inner face (data/street_layout.json mainParkingRing). The west and south edges are unchanged."
+ }
+}

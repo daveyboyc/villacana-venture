@@ -6,7 +6,7 @@
     "kerb": 4,
     "enclosure": 23,
     "gap": 21,
-    "context": 39
+    "context": 40
   },
   "records": [
     {
@@ -3739,6 +3739,34 @@
       "confidence": "estimated",
       "placement": "unreviewed",
       "basis": "Model group context, not a traced wall axis or quantity. IMG_2764 and IMG_3077 show a plain white wall with climbers on the east side of the lawn, running back to the pool building. Its line is the lawn edge on the aerial, and it ends at the corner by Barraka. The 30 m run that turned back across the lawn to the gate is removed (Dave, 2026-11-19): no photo shows it, and the stretch from the corner to the sea railing is green bars. Height is by eye.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "picasso_car_park.json:picasso-car-park-wall",
+      "name": "Long white wall between the car park and Calle Pintor Picasso",
+      "kind": "context",
+      "points": [
+        [
+          -91.4,
+          -67.8
+        ],
+        [
+          -35.7,
+          23.9
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "picasso"
+      ],
+      "evidence": [
+        "IMG_3124.jpg",
+        "IMG_3125.jpg",
+        "IMG_3129.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Plain white wall photographed from the road (IMG_3125, IMG_3129, IMG_3124). Line read from the aerial to about 0.3-1 m; height about 2.8 m from IMG_3125's vanishing lines at an assumed phone height. No camera is solved.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {

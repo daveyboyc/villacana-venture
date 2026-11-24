@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "097fe372ef36febcb6e0fc1509b89f6143dacc34d2a4d6a8d6d4f3e025c952a5",
+ "inputDigest": "c206e2d88488a147b52974049cad8a5d96555ad95028ecc0eaf4b98b0bb78e5e",
  "summary": {
   "unplaced": 4,
   "needs-review": 273,
   "suggested": 369,
   "photos": 646,
-  "features": 535,
-  "photosCitedByModel": 252,
-  "modelFeaturesWithPhotoCitations": 278
+  "features": 537,
+  "photosCitedByModel": 257,
+  "modelFeaturesWithPhotoCitations": 280
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -4066,6 +4066,27 @@
    "evidence": [
     "IMG_2764.jpg",
     "IMG_2765.jpg"
+   ]
+  },
+  {
+   "id": "picasso_car_park.json:picasso-car-park-wall",
+   "name": "Long white wall between the car park and Calle Pintor Picasso",
+   "kind": "reference feature",
+   "source": "aerial line (about 0.3-1 m) and unsolved photos; height from IMG_3125 vanishing lines",
+   "evidence": [
+    "IMG_3124.jpg",
+    "IMG_3125.jpg",
+    "IMG_3129.jpg"
+   ]
+  },
+  {
+   "id": "picasso_car_park.json:picasso-car-park-island",
+   "name": "Round hedged palm island in the main car park",
+   "kind": "reference feature",
+   "source": "aerial brightness profiles, about 0.5 m; unsolved IMG_3100",
+   "evidence": [
+    "IMG_3100.jpg",
+    "IMG_3189.jpg"
    ]
   },
   {
@@ -20308,7 +20329,7 @@
    "from": "photo:IMG_2607.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 1.9
+   "gap": 0
   },
   {
    "from": "photo:IMG_2607.jpg",
@@ -20346,7 +20367,7 @@
    "from": "photo:IMG_2608.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 0.9
+   "gap": 0
   },
   {
    "from": "photo:IMG_2608.jpg",
@@ -20384,7 +20405,7 @@
    "from": "photo:IMG_2609.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 2.4
+   "gap": 0
   },
   {
    "from": "photo:IMG_2609.jpg",
@@ -20494,7 +20515,7 @@
    "from": "photo:IMG_2610.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 3.5
+   "gap": 5.1
   },
   {
    "from": "photo:IMG_2610.jpg",
@@ -20532,7 +20553,7 @@
    "from": "photo:IMG_2611.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 0.2
+   "gap": 0.7
   },
   {
    "from": "photo:IMG_2611.jpg",
@@ -21076,7 +21097,7 @@
    "from": "photo:IMG_2631.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 1.1
+   "gap": 1.8
   },
   {
    "from": "photo:IMG_2631.jpg",
@@ -23465,7 +23486,7 @@
    "from": "photo:IMG_2759.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 10.5
+   "gap": 7.6
   },
   {
    "from": "photo:IMG_2759.jpg",
@@ -24032,7 +24053,7 @@
    "from": "photo:IMG_2771.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 10.6
+   "gap": 11.0
   },
   {
    "from": "photo:IMG_2771.jpg",
@@ -26599,7 +26620,7 @@
    "from": "photo:IMG_3071.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 0.5
+   "gap": 0.9
   },
   {
    "from": "photo:IMG_3071.jpg",
@@ -26616,13 +26637,13 @@
   },
   {
    "from": "photo:IMG_3072.jpg",
-   "to": "area:paseo",
+   "to": "area:barraka",
    "relation": "camera-nearby",
-   "gap": 0.3
+   "gap": 1.2
   },
   {
    "from": "photo:IMG_3072.jpg",
-   "to": "area:barraka",
+   "to": "area:paseo",
    "relation": "camera-nearby",
    "gap": 1.2
   },
@@ -26637,7 +26658,7 @@
    "from": "photo:IMG_3073.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 0.5
+   "gap": 0
   },
   {
    "from": "photo:IMG_3073.jpg",
@@ -26656,7 +26677,7 @@
    "from": "photo:IMG_3074.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 1.5
+   "gap": 0
   },
   {
    "from": "photo:IMG_3074.jpg",
@@ -26710,7 +26731,7 @@
    "from": "photo:IMG_3076.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 2.4
+   "gap": 2.6
   },
   {
    "from": "photo:IMG_3076.jpg",
@@ -27181,6 +27202,12 @@
    "gap": 6.2
   },
   {
+   "from": "photo:IMG_3100.jpg",
+   "to": "picasso_car_park.json:picasso-car-park-island",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3101.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
@@ -27210,7 +27237,7 @@
    "from": "photo:IMG_3103.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
-   "gap": 0
+   "gap": 0.7
   },
   {
    "from": "photo:IMG_3103.jpg",
@@ -27222,7 +27249,7 @@
    "from": "photo:IMG_3104.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
-   "gap": 0
+   "gap": 0.5
   },
   {
    "from": "photo:IMG_3104.jpg",
@@ -27248,7 +27275,7 @@
    "from": "photo:IMG_3105.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
-   "gap": 0
+   "gap": 1.0
   },
   {
    "from": "photo:IMG_3105.jpg",
@@ -27280,7 +27307,7 @@
    "from": "photo:IMG_3106.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
-   "gap": 4.8
+   "gap": 5.7
   },
   {
    "from": "photo:IMG_3106.jpg",
@@ -27472,6 +27499,12 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_3124.jpg",
+   "to": "picasso_car_park.json:picasso-car-park-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3125.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
@@ -27481,7 +27514,13 @@
    "from": "photo:IMG_3125.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
-   "gap": 2.3
+   "gap": 5.5
+  },
+  {
+   "from": "photo:IMG_3125.jpg",
+   "to": "picasso_car_park.json:picasso-car-park-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3126.jpg",
@@ -27493,7 +27532,7 @@
    "from": "photo:IMG_3126.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
-   "gap": 2.6
+   "gap": 6.3
   },
   {
    "from": "photo:IMG_3127.jpg",
@@ -27502,22 +27541,10 @@
    "gap": 0
   },
   {
-   "from": "photo:IMG_3127.jpg",
-   "to": "parking:Picasso car park",
-   "relation": "camera-nearby",
-   "gap": 2.7
-  },
-  {
    "from": "photo:IMG_3128.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
    "gap": 0
-  },
-  {
-   "from": "photo:IMG_3128.jpg",
-   "to": "parking:Picasso car park",
-   "relation": "camera-nearby",
-   "gap": 2.8
   },
   {
    "from": "photo:IMG_3129.jpg",
@@ -27527,9 +27554,9 @@
   },
   {
    "from": "photo:IMG_3129.jpg",
-   "to": "parking:Picasso car park",
-   "relation": "camera-nearby",
-   "gap": 0.1
+   "to": "picasso_car_park.json:picasso-car-park-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3130.jpg",
@@ -27541,7 +27568,7 @@
    "from": "photo:IMG_3130.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
-   "gap": 4.6
+   "gap": 7.2
   },
   {
    "from": "photo:IMG_3130.jpg",
@@ -28551,6 +28578,12 @@
    "angleOffset": 27.7
   },
   {
+   "from": "photo:IMG_3189.jpg",
+   "to": "picasso_car_park.json:picasso-car-park-island",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3194.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
@@ -28574,7 +28607,7 @@
    "from": "photo:IMG_3196.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
-   "gap": 0.7
+   "gap": 0.8
   },
   {
    "from": "photo:IMG_3196.jpg",

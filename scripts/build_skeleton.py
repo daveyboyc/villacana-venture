@@ -291,25 +291,31 @@ STREET_TYPES = {"CL": "Calle", "AV": "Avenida", "PS": "Paseo", "PZ": "Plaza", "C
 # standard maps and Dave's ground photos. Registry names provide corroboration.
 
 
+# The main (Picasso) car park's estimated structure, read from the aerial and photos.
+CAR_PARK = json.loads((ROOT / "data" / "picasso_car_park.json").read_text())
+
 # Open ground that is neither building, pool nor garden, traced by hand from the
 # aerial photo. Turned block frame, metres.
 AREAS = [
     # The car park east of the houses. Calle Pintor Picasso is its western aisle.
     ("car_park", "Car park", [(-73, -98), (-41.5, -98), (-41.5, -12), (-40, -5), (-40, 6), (-73, 6)]),
-    # The round planter at its southern end.
-    ("planter", "", [(-56 + 4.5 * math.cos(i * math.pi / 8), -13 + 4.5 * math.sin(i * math.pi / 8)) for i in range(16)]),
+    # The round planter at its southern end: data/picasso_car_park.json (model frame, turned here).
+    ("planter", "", [turned((CAR_PARK["island"]["centre"][0] + CAR_PARK["island"]["radius"] * math.cos(i * math.pi / 12),
+                            CAR_PARK["island"]["centre"][1] + CAR_PARK["island"]["radius"] * math.sin(i * math.pi / 12))) for i in range(24)]),
     # The formal garden south of the car park.
     ("planter", "", [(-55, 9), (-45, 9), (-45, 26), (-55, 26)]),
 ]
 # Rows of parking bays: where the row runs, and which way the cars nose in.
 PARKING_ROWS = [
     ((-68.7, -96), (-68.7, -3), "east"),
-    ((-57, -90), (-57, -17), "west"),
-    ((-57, -90), (-57, -17), "east"),
+    # The central nose-to-nose row, parallel to the long east wall (data/picasso_car_park.json).
+    (turned(CAR_PARK["centreRow"]["points"][0]), turned(CAR_PARK["centreRow"]["points"][1]), "west"),
+    (turned(CAR_PARK["centreRow"]["points"][0]), turned(CAR_PARK["centreRow"]["points"][1]), "east"),
     ((-61, 3), (-50, 3), "north"),
 ]
-# The kerb down the middle of the car park.
-KERBS = [[(-47.8, -98), (-47.8, -20)]]
+# Kerbs drawn on the map. The old "kerb down the middle" stood in for the long east wall, about
+# 5 degrees off its line; the wall is now built from data/picasso_car_park.json.
+KERBS: list = []
 
 
 # Named places not covered by a street, area or seafront outline. Turned frame.
