@@ -43,22 +43,22 @@
    "..............................iiiiiiiiihhhhhh...........................................",
    "............................iiiiiiiiiiihhhhhh...........................................",
    "..........................iiiiiiiiiiiiihhhhhh...........................................",
-   ".........................iiiiiiiiiiiiihhhhhhhh..........................................",
+   ".........................iiiiiiiiiiiiihhhhhhh...........................................",
    ".......................iiiiiiiiiiiiihhhhhhhhhh..........................................",
-   ".....................iiiiiiiiiiiiihhhhhhhhhhhhh.........................................",
-   "....................iiiiiiiiiiiiihhhhhhhhhhhhhhh........................................",
-   "..................iiiiiiiiiiiiihhhhhhhhhhhhhhhhh........................................",
-   "................iiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhh.......................................",
+   ".....................iiiiiiiiiiiiihhhhhhhhhhhh..........................................",
+   "....................iiiiiiiiiiiiihhhhhhhhhhhhhh.........................................",
+   "..................iiiiiiiiiiiiihhhhhhhhhhhhhhhh.........................................",
+   "................iiiiiiiiiiiiiiihhhhhhhhhhhhhhhhh........................................",
    "..............iiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhh.......................................",
-   "...........iiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhh......................................",
+   "...........iiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhh.......................................",
    ".........iiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhh......................................",
-   ".......iiiiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhh.....................................",
-   "....iiiiiiiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhhh....................................",
+   ".......iiiiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhh......................................",
+   "....iiiiiiiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhh.....................................",
    "..iiiiiiiiiiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhh....................................",
-   ".iiiiiiiiiiiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhhh...................................",
+   ".iiiiiiiiiiiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhh....................................",
    ".iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhh...................................",
-   "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhh..................................",
-   "giiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhhh..hhhhh..........................",
+   "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhh...................................",
+   "giiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhh...hhhhh..........................",
    "ggiiiiiiiiiiigiiaaaaiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhhh.hhhhhhh.........................",
    "giigiiiiiiigggaaaaaaiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh........................",
    "iiggggggiggggaaaaaaaiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhhhhhhhhhhh........................",
@@ -71,7 +71,7 @@
    "..ggggggggggaaaaaaaaaeeeeeeefffiiifffffffhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh....mmmmmmmmmmmmm",
    "...gggggggggaaaaaaaaaeeeeeeffffffffffffffhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh....mmmmmmmmmmmml",
    "...ggggggggggaaaaaaaaeeeeeeffffffffffffffhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhmm.mmmmmmmmmmmll",
-   "....ggggggggggaaaaaaaeeeeefffffffffffffjjjhhhhhhhhhhdhhhhhhhhhhhhhhhhhhhmmmmmmmmmmmmmlll",
+   "....ggggggggggaaaaaaaeeeeefffffffffffffjjjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhmmmmmmmmmmmmmlll",
    "....gggggggggggaaaaaeeeeeeffffffffffjjjjjjjjjhhhhhhhdhhhhhhhhhhhhhhhhhhmmmmmmmmmmmmmllll",
    ".....ggggggggggaaafffffeeefffffffffffjjjjjjjjjjjhhhhddhhhhhhhhhhhhhhhhmmmmmmmmmmmmmlllll",
    ".....gggggggggggaffffffffffffffffffffjjjjjjjjjjjhhhhddhhhhhhhhhhhhhhmmmmmmmmmmmmmmllllll",
@@ -1864,12 +1864,12 @@
     "Facades: 0 of 274 kit parts traced from photos.",
     "How sure: 0 photographed, 5 estimated, 0 inferred.",
     "Placement: 0 of 5 features verified.",
-    "Model loop: 0 tracked findings accepted, 9 still open; 4 evidence requests. This is not whole-area acceptance."
+    "Model loop: 0 tracked findings accepted, 9 still open; 5 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 4,
-     "needs-evidence": 5,
+     "ready": 3,
+     "needs-evidence": 6,
      "needs-source-access": 0,
      "awaiting-review": 0,
      "accepted": 0
@@ -1941,13 +1941,32 @@
        "map:ground"
       ],
       "state": "open"
+     },
+     {
+      "id": "picasso-car-park-south-end",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "Standing in the accessible bays at the car park's south end, photograph the tiled step square-on with both ends in frame; then walk up onto it and photograph where the walk divides round the hedged palm bed, once to each side, with the community office in frame.",
+      "why": "the step's ends, its height and the walk's layout around the planted bed are not fixed by the current pins and the aerial",
+      "photoRequest": "picasso-car-park-south-end",
+      "features": [
+       "parking:Picasso car park"
+      ],
+      "status": "open",
+      "sources": [
+       "IMG_3097.jpg",
+       "IMG_3098.jpg",
+       "IMG_3194.jpg",
+       "map:ground"
+      ],
+      "state": "open"
      }
     ],
     "readyTasks": 2
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 4 spots",
+    "headline": "Photos needed: 5 spots",
     "requests": [
      {
       "id": "picasso-car-park-centre-row",
@@ -1961,6 +1980,22 @@
       ],
       "ask": "Stand at the north tip of the round palm island and photograph north-west along the central row of bays and palms with the long white wall in frame; then the same from the north end of the row looking back south-east to the island.",
       "why": "the central bay row is rotated in the model; two opposed ground views along it, with the wall as a known line, fix its position (one camera fixes direction only)",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-car-park-south-end",
+      "at": [
+       -55.0,
+       24.0
+      ],
+      "look": [
+       -54.0,
+       36.0
+      ],
+      "ask": "Standing in the accessible bays at the car park's south end, photograph the tiled step square-on with both ends in frame; then walk up onto it and photograph where the walk divides round the hedged palm bed, once to each side, with the community office in frame.",
+      "why": "the step's ends, its height and the walk's layout around the planted bed are not fixed by the current pins and the aerial",
       "priority": 1,
       "state": "open",
       "photos": []
@@ -3548,12 +3583,12 @@
     "Facades: 30 of 2482 kit parts traced from photos.",
     "How sure: 95 photographed, 191 estimated, 19 inferred, 41 known gaps.",
     "Placement: 0 of 537 features verified, 53 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 36 still open; 52 evidence requests. This is not whole-area acceptance."
+    "Model loop: 0 tracked findings accepted, 36 still open; 53 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 23,
-     "needs-evidence": 10,
+     "ready": 22,
+     "needs-evidence": 11,
      "needs-source-access": 0,
      "awaiting-review": 3,
      "accepted": 0
@@ -3721,6 +3756,25 @@
       ],
       "status": "open",
       "sources": [
+       "map:ground"
+      ],
+      "state": "open"
+     },
+     {
+      "id": "picasso-car-park-south-end",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "Standing in the accessible bays at the car park's south end, photograph the tiled step square-on with both ends in frame; then walk up onto it and photograph where the walk divides round the hedged palm bed, once to each side, with the community office in frame.",
+      "why": "the step's ends, its height and the walk's layout around the planted bed are not fixed by the current pins and the aerial",
+      "photoRequest": "picasso-car-park-south-end",
+      "features": [
+       "parking:Picasso car park"
+      ],
+      "status": "open",
+      "sources": [
+       "IMG_3097.jpg",
+       "IMG_3098.jpg",
+       "IMG_3194.jpg",
        "map:ground"
       ],
       "state": "open"
@@ -4315,7 +4369,7 @@
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 41 spots",
+    "headline": "Photos needed: 42 spots",
     "requests": [
      {
       "id": "alberto",
@@ -4553,6 +4607,22 @@
       ],
       "ask": "Stand at the north tip of the round palm island and photograph north-west along the central row of bays and palms with the long white wall in frame; then the same from the north end of the row looking back south-east to the island.",
       "why": "the central bay row is rotated in the model; two opposed ground views along it, with the wall as a known line, fix its position (one camera fixes direction only)",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-car-park-south-end",
+      "at": [
+       -55.0,
+       24.0
+      ],
+      "look": [
+       -54.0,
+       36.0
+      ],
+      "ask": "Standing in the accessible bays at the car park's south end, photograph the tiled step square-on with both ends in frame; then walk up onto it and photograph where the walk divides round the hedged palm bed, once to each side, with the community office in frame.",
+      "why": "the step's ends, its height and the walk's layout around the planted bed are not fixed by the current pins and the aerial",
       "priority": 1,
       "state": "open",
       "photos": []

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "c206e2d88488a147b52974049cad8a5d96555ad95028ecc0eaf4b98b0bb78e5e",
+ "inputDigest": "dcc747c6ef515605f0af0049b54c42a5a578bb9a2b50472c3709a26c0dd702f8",
  "summary": {
   "unplaced": 4,
   "needs-review": 273,
@@ -22812,6 +22812,12 @@
      "name": "Calle Miguel de Cervantes",
      "kind": "street",
      "gap": 10.8
+    },
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 18.8
     }
    ],
    "inViewCandidates": [
@@ -22918,7 +22924,7 @@
      "id": "street:picasso",
      "name": "Calle Pintor Picasso",
      "kind": "street",
-     "gap": 6.2
+     "gap": 3.5
     }
    ],
    "inViewCandidates": [],
@@ -22952,7 +22958,7 @@
      "id": "street:picasso",
      "name": "Calle Pintor Picasso",
      "kind": "street",
-     "gap": 6.4
+     "gap": 3.7
     }
    ],
    "inViewCandidates": [
@@ -22986,16 +22992,16 @@
    ],
    "nearby": [
     {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0
+    },
+    {
      "id": "parking:Picasso car park",
      "name": "Picasso car park",
      "kind": "parking",
      "gap": 0.7
-    },
-    {
-     "id": "street:picasso",
-     "name": "Calle Pintor Picasso",
-     "kind": "street",
-     "gap": 2.2
     }
    ],
    "inViewCandidates": [],
@@ -23018,16 +23024,16 @@
    ],
    "nearby": [
     {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0
+    },
+    {
      "id": "parking:Picasso car park",
      "name": "Picasso car park",
      "kind": "parking",
      "gap": 0.5
-    },
-    {
-     "id": "street:picasso",
-     "name": "Calle Pintor Picasso",
-     "kind": "street",
-     "gap": 2.4
     }
    ],
    "inViewCandidates": [
@@ -23061,16 +23067,16 @@
    ],
    "nearby": [
     {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0
+    },
+    {
      "id": "parking:Picasso car park",
      "name": "Picasso car park",
      "kind": "parking",
      "gap": 1.0
-    },
-    {
-     "id": "street:picasso",
-     "name": "Calle Pintor Picasso",
-     "kind": "street",
-     "gap": 2.0
     }
    ],
    "inViewCandidates": [
@@ -23107,7 +23113,7 @@
      "id": "street:picasso",
      "name": "Calle Pintor Picasso",
      "kind": "street",
-     "gap": 1.0
+     "gap": 0
     },
     {
      "id": "parking:Picasso car park",
@@ -23505,7 +23511,7 @@
      "id": "street:picasso",
      "name": "Calle Pintor Picasso",
      "kind": "street",
-     "gap": 0.0
+     "gap": 0
     }
    ],
    "inViewCandidates": [
@@ -23662,7 +23668,7 @@
      "id": "street:picasso",
      "name": "Calle Pintor Picasso",
      "kind": "street",
-     "gap": 0
+     "gap": 0.1
     },
     {
      "id": "parking:Picasso car park",
@@ -23720,7 +23726,7 @@
      "id": "street:picasso",
      "name": "Calle Pintor Picasso",
      "kind": "street",
-     "gap": 0
+     "gap": 0.9
     }
    ],
    "inViewCandidates": [],
@@ -23746,7 +23752,7 @@
      "id": "street:picasso",
      "name": "Calle Pintor Picasso",
      "kind": "street",
-     "gap": 0
+     "gap": 0.1
     }
    ],
    "inViewCandidates": [],
@@ -25571,7 +25577,7 @@
      "id": "street:picasso",
      "name": "Calle Pintor Picasso",
      "kind": "street",
-     "gap": 41.6
+     "gap": 40.1
     },
     {
      "id": "street:eva",

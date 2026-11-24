@@ -129,6 +129,24 @@
       "sources": [
         "map:ground"
       ]
+    },
+    {
+      "id": "picasso-car-park-south-end",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "Standing in the accessible bays at the car park's south end, photograph the tiled step square-on with both ends in frame; then walk up onto it and photograph where the walk divides round the hedged palm bed, once to each side, with the community office in frame.",
+      "why": "the step's ends, its height and the walk's layout around the planted bed are not fixed by the current pins and the aerial",
+      "photoRequest": "picasso-car-park-south-end",
+      "features": [
+        "parking:Picasso car park"
+      ],
+      "status": "open",
+      "sources": [
+        "IMG_3097.jpg",
+        "IMG_3098.jpg",
+        "IMG_3194.jpg",
+        "map:ground"
+      ]
     }
   ]
 }

@@ -23338,7 +23338,8 @@
   "looksAtFeatures": [
    "parking:Picasso car park",
    "backdrop.json:aerial-trees",
-   "picasso_car_park.json:picasso-car-park-wall"
+   "picasso_car_park.json:picasso-car-park-wall",
+   "street:picasso"
   ],
   "subject": "bin store side wall and green door",
   "headingOff": 56
@@ -23378,7 +23379,8 @@
   "looksAtFeatures": [
    "parking:Picasso car park",
    "picasso_car_park.json:picasso-car-park-wall",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "street:picasso"
   ],
   "subject": "walled bin yard"
  },
@@ -23898,7 +23900,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "picasso_service_road.json:picasso-boundary-wall"
+   "picasso_service_road.json:picasso-boundary-wall",
+   "street:picasso"
   ],
   "subject": "service road between hotel and utility buildings"
  },
@@ -24012,8 +24015,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees",
-   "street:picasso"
+   "street:picasso",
+   "backdrop.json:aerial-trees"
   ],
   "subject": "substation and utility building west of the service road"
  },
@@ -24130,8 +24133,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees",
-   "street:picasso"
+   "backdrop.json:aerial-trees"
   ],
   "subject": "hedge gap east of the road"
  },
@@ -24246,8 +24248,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:picasso",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "street:picasso"
   ],
   "subject": "service road along the long wall"
  },
@@ -24285,7 +24287,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "street:bolivia"
+   "street:bolivia",
+   "street:picasso"
   ],
   "subject": "low white wall and sign post at the north entrance"
  },
