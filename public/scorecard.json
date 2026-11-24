@@ -1912,7 +1912,7 @@
       "id": "picasso-car-park-wall-inner-face",
       "area": "picasso",
       "kind": "photo",
-      "ask": "Photograph the inner (car-park) face of the long white wall square-on with a person or car for scale, and one along it from each end, showing any kerb or footway at its foot.",
+      "ask": "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot.",
       "why": "the wall's height and its car-park side are only seen from the road",
       "photoRequest": "picasso-car-park-wall-inner-face",
       "features": [
@@ -1984,14 +1984,14 @@
      {
       "id": "picasso-car-park-wall-inner-face",
       "at": [
-       -62.0,
-       -15.0
+       -68.0,
+       -12.0
       ],
       "look": [
        -55.0,
        -20.0
       ],
-      "ask": "Photograph the inner (car-park) face of the long white wall square-on with a person or car for scale, and one along it from each end, showing any kerb or footway at its foot.",
+      "ask": "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot.",
       "why": "the wall's height and its car-park side are only seen from the road",
       "priority": 2,
       "state": "open",
@@ -3695,7 +3695,7 @@
       "id": "picasso-car-park-wall-inner-face",
       "area": "picasso",
       "kind": "photo",
-      "ask": "Photograph the inner (car-park) face of the long white wall square-on with a person or car for scale, and one along it from each end, showing any kerb or footway at its foot.",
+      "ask": "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot.",
       "why": "the wall's height and its car-park side are only seen from the road",
       "photoRequest": "picasso-car-park-wall-inner-face",
       "features": [
@@ -4880,14 +4880,14 @@
      {
       "id": "picasso-car-park-wall-inner-face",
       "at": [
-       -62.0,
-       -15.0
+       -68.0,
+       -12.0
       ],
       "look": [
        -55.0,
        -20.0
       ],
-      "ask": "Photograph the inner (car-park) face of the long white wall square-on with a person or car for scale, and one along it from each end, showing any kerb or footway at its foot.",
+      "ask": "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot.",
       "why": "the wall's height and its car-park side are only seen from the road",
       "priority": 2,
       "state": "open",

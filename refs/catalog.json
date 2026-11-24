@@ -10365,7 +10365,8 @@
   },
   "citedBy": [
    "eva_lane.json:eva-lane-west",
-   "eva_lane.json:eva-lane-west-edges"
+   "eva_lane.json:eva-lane-west-edges",
+   "ground_plan_north_pool.json:north-pool-dali-link"
   ],
   "looksAt": [
    -161.5,
@@ -10410,7 +10411,8 @@
   },
   "citedBy": [
    "eva_lane.json:eva-lane-west",
-   "eva_lane.json:eva-lane-west-edges"
+   "eva_lane.json:eva-lane-west-edges",
+   "ground_plan_north_pool.json:north-pool-dali-link"
   ],
   "looksAt": [
    -168.0,
@@ -10455,7 +10457,8 @@
   },
   "citedBy": [
    "eva_lane.json:eva-lane-west",
-   "eva_lane.json:eva-lane-west-edges"
+   "eva_lane.json:eva-lane-west-edges",
+   "ground_plan_north_pool.json:north-pool-dali-link"
   ],
   "looksAt": [
    -161.4,
@@ -16413,7 +16416,9 @@
    "altitude": 9.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "ground_plan_north_pool.json:north-pool-dali-link"
+  ],
   "looksAt": [
    -168.2,
    114.7
@@ -16450,7 +16455,9 @@
    "altitude": 9.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "ground_plan_north_pool.json:north-pool-dali-link"
+  ],
   "looksAt": [
    -164.9,
    113.3
@@ -16487,7 +16494,9 @@
    "altitude": 8.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "ground_plan_north_pool.json:north-pool-dali-link"
+  ],
   "looksAt": [
    -158.3,
    112.6
@@ -23980,7 +23989,7 @@
    "facades",
    "layout"
   ],
-  "note": "Maroon steel doors with high-voltage signs and floor grilles, then a white flat-roofed utility building with a dark green door and a sloping white buttress; the long white wall continues north.",
+  "note": "Maroon steel doors with high-voltage signs and floor grilles, then a white flat-roofed utility building with a dark green door, a low rounded white block and a sloping door ramp; the long white wall continues north.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/11SGX_2ulcA-k402xBgI3LSBxOW6LPsNh/view?usp=drivesdk",
@@ -24018,7 +24027,7 @@
    "facades",
    "layout"
   ],
-  "note": "Flat-roofed white building with dark green door, the sloping white buttress and a kerbed footway; the long plain white wall runs on north-west along the road.",
+  "note": "Flat-roofed white building with dark green door, a low rounded white block beside a sloping door ramp, and a kerbed footway; the long plain white wall runs on north-west along the road.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1M5Rgin3tZzElRAmVWTLP4maQ-PuYASPV/view?usp=drivesdk",
@@ -24124,7 +24133,7 @@
   "id": "IMG_3127.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3127.jpg",
-  "title": "Gravel drive into the hotel garden between cypress hedge and chain-link fence",
+  "title": "Pale drive into the hotel garden between cypress hedge and chain-link fence",
   "shows": [
    "picasso"
   ],
@@ -24135,7 +24144,7 @@
    "materials",
    "planting"
   ],
-  "note": "A pale gravel drive runs off the road between a clipped cypress hedge (left) and a green chain-link fence with a kerb (right), under plane trees.",
+  "note": "A pale concrete or compacted drive runs off the road between a clipped cypress hedge (left) and a green chain-link fence with a kerb (right), under plane trees.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/17FYaKQlSCZdknhkKyqkjFD8ySk9riZgd/view?usp=drivesdk",
@@ -24156,7 +24165,7 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees"
   ],
-  "subject": "gravel drive heading north-east off the service road"
+  "subject": "pale drive heading north-east off the service road"
  },
  {
   "id": "IMG_3128.jpg",
@@ -24249,7 +24258,7 @@
    "layout",
    "signage"
   ],
-  "note": "A white wall about 1.1 m high with a sign post at its end, flowering bougainvillea garden walls beyond and an estate agent board. GPS ±21 m, so which corner it is still needs confirming.",
+  "note": "A white wall about 1.1 m high with a sign post at its end, flowering bougainvillea garden walls beyond, a Zantza Seguridad security sign and a Comunidad Villacana sign; the sign post shows only the back of a road sign. GPS ±21 m, so which corner it is still needs confirming.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1fg9hvm_5LANFmUV3XK-pHaaLhZsGngxd/view?usp=drivesdk",
@@ -26079,7 +26088,7 @@
   "id": "IMG_3203.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3203.jpg",
-  "title": "Octagonal terracotta tiled path beside a low white wall and steps",
+  "title": "Octagonal terracotta tiled path beside a low white wall and brick-edged steps",
   "shows": [
    "cervantes"
   ],
@@ -26089,7 +26098,7 @@
    "materials",
    "levels"
   ],
-  "note": "Same octagon-and-square tiling as IMG_3202, between a low white wall and brick-edged steps up to a front door. The phone pin is ±104 m, so the location is not established; probably near IMG_3202.",
+  "note": "Same octagon-and-square tiling as IMG_3202, between a low white wall and brick-edged steps; no door is in frame. The phone pin is ±104 m, so the location is not established; probably near IMG_3202.",
   "observation": null,
   "taken": "2026-11-21",
   "originalUrl": "https://drive.google.com/file/d/1aF3v8RrFsSPBReb5sD1HeqAoSKoBWfCF/view?usp=drivesdk",

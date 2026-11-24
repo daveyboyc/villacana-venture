@@ -11,7 +11,7 @@
     23.9
    ]
   ],
-  "westAsphaltEdge": [
+  "westBayRowCarLine": [
    [
     -110.2,
     -57.2
@@ -33,11 +33,14 @@
   ],
   "roundIsland": {
    "centre": [
-    -56.1,
-    11.9
+    -55.9,
+    10.8
    ],
-   "radius": 5.5
-  }
+   "radius": 5.3,
+   "basis": "brightness profiles across the island: west edge x -61.3, east edge -50.3, south edge z 15.7 (independent review, 24 Nov 2026); first eye reading (-56.1, 11.9) r 5.5 overshot the south edge"
+  },
+  "centreBayMidlineExtent": "parallel to the wall from about z -56 to the island; at z -55.9 about x -95.0",
+  "picassoRoad": "road edges wall to hedge about 7-8 m apart where visible; centre about 3.5-4 m east of the wall"
  },
  "model": {
   "mainParkingRing": [
