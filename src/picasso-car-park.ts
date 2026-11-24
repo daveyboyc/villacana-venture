@@ -11,6 +11,8 @@ import type { Vec2 } from "./types";
  * for the detail stage.
  */
 const wall = data.wall, island = data.island;
+/** The car-park and road paving is drawn this far above the terrain (boundaries.ts); kerb and wall heights are measured from it. */
+const PAVING = 0.27;
 const wallPoints = wall.points as Vec2[];
 
 function strip(a: Vec2, b: Vec2, thickness: number): Vec2[] {
@@ -46,7 +48,7 @@ export function addPicassoCarPark(scene: THREE.Scene): void {
     const a = wallPoints[i];
     const length = Math.hypot(b[0] - a[0], b[1] - a[1]);
     // The wall stands on the lower end's ground and is tall enough to meet the higher end's.
-    const ya = siteY(a[0], a[1]), yb = siteY(b[0], b[1]), y = Math.min(ya, yb), height = wall.height + Math.abs(ya - yb);
+    const ya = siteY(a[0], a[1]), yb = siteY(b[0], b[1]), y = Math.min(ya, yb), height = wall.height + PAVING + Math.abs(ya - yb);
     const mesh = new THREE.Mesh(new THREE.BoxGeometry(length, height, wall.thickness), white);
     mesh.position.set((a[0] + b[0]) / 2, y + height / 2, (a[1] + b[1]) / 2);
     mesh.rotation.y = -Math.atan2(b[1] - a[1], b[0] - a[0]);
@@ -55,7 +57,7 @@ export function addPicassoCarPark(scene: THREE.Scene): void {
     group.add(mesh);
   });
   // The island: a white kerb ring and an earth bed inside it, just below the kerb top.
-  const [cx, cz] = island.centre, ground = siteY(cx, cz);
+  const [cx, cz] = island.centre, ground = siteY(cx, cz) + PAVING;
   const kerb = new THREE.Mesh(new THREE.RingGeometry(island.radius - island.kerbWidth, island.radius, 64, 1), white);
   kerb.rotation.x = -Math.PI / 2;
   kerb.position.set(cx, ground + island.kerbHeight, cz);
