@@ -123,3 +123,36 @@ today. The reasons are recorded on each photo in `data/photo_poses.json`:
 A measured correction here therefore needs either the requested ground views from inside the car
 park (`picasso-car-park-centre-row`), which add a second station seeing the same terrace from a
 different angle, or new photos that frame closer registry corners.
+
+## Built as estimates (24 November 2026)
+
+These are built from `data/picasso_car_park.json` with `src/picasso-car-park.ts`, and graded `estimated`
+in `data/confidence.json`. They are not measured placements, because no camera is solved.
+
+- **Long east wall:** about 107 m on the aerial line (-91.4, -67.8) to (-35.7, 23.9), 0.25 m thick and
+  solid. It is 2.8 m high (±0.3 m), from IMG_3125: the wall's foot and top meet at row 584, and at column
+  100 the wall spans 1.9 times the foot-to-horizon distance at a 1.4–1.6 m phone height. The blueprint's
+  stand-in "middle kerb", about 5° off the wall's line, is removed.
+- **Car-park outline (`mainParkingRing`):** the east edge is now on the wall's inner face, from where it
+  meets the old north edge, at (-89.95, -65.17), to the wall's south end. The west and south edges are
+  unchanged.
+- **Central bay row:** now on the aerial midline, parallel to the wall, from (-95.0, -55.9) to (-59.1, 4.0).
+- **Round island:** centre (-55.9, 10.8), radius 5.3 m, with a white kerb about 0.18 m high and an earth
+  bed. The hedge and palms are left for the detail stage.
+
+The island and the wall are measured from the paving level, 0.27 m above the terrain grid, as the car park
+and road surfaces are drawn.
+
+| View | Layout and Show details |
+| --- | --- |
+| Island and wall from the north | [after-island-pair.jpg](after-island-pair.jpg) |
+| Wall from the road side | [after-wall-pair.jpg](after-wall-pair.jpg) |
+| Overhead | [after-overhead-pair.jpg](after-overhead-pair.jpg) |
+
+Still open:
+- The Picasso road centreline is 2–3 m east of the photographed road. A terracotta ground-cover strip
+  shows along the wall's road side, where IMG_3125 shows asphalt to the wall foot.
+- The south-end step and walk are not built.
+- The `picasso-access` line still runs through gardens.
+- The bin store is not built.
+- The north end is not settled.
