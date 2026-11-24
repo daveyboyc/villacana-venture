@@ -163,3 +163,17 @@ Still open:
   (`picasso-car-park-west-row-angle`).
 - The outline's west edge covers house gardens at the north end, about 31 m from the wall where the bays
   end at 22–25 m (`picasso-car-park-west-edge-gardens`).
+
+### Through the photo cameras (pin poses, unsolved)
+
+Each pair shows the photo on the left and the model on the right, rendered through the phone pin and heading
+(`shoot_views.cjs --pose --initial`). These are diagnostics, not measurements.
+
+| Photo | Pair | What it shows |
+| --- | --- | --- |
+| IMG_3125 | [pin-IMG_3125.jpg](pin-IMG_3125.jpg) | The wall is on the correct side, plain and continuous to the north end. It sits further from the camera than in the photo, because the pin (±4.7 m) and the mapped road (2–3 m east) are both off. The model shows terracotta and lawn ground cover at the wall foot where the photo has asphalt, and lawn where it has the cypress hedge. |
+| IMG_3129 | [pin-IMG_3129.jpg](pin-IMG_3129.jpg) | The same, further north. |
+| IMG_3100 | [pin-IMG_3100.jpg](pin-IMG_3100.jpg) | The island's kerb ellipse lies in about the photographed place. The photo is pitched about 5° down, the render level. The bin store at the right edge is not built. |
+
+The layout browser test (`npm run test:layout`) passes every street walk and collision check on this branch,
+then stops at the coastal-gate button step (`test_layout_browser.cjs:795`). `main` stops at the same step.
