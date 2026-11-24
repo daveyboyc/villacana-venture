@@ -4503,6 +4503,78 @@
     "f": 1201.8
    },
    "initialBasis": "phone pin; reviewed looksAt; ground eye height; 26 mm-equivalent lens from EXIF"
+  },
+  "IMG_3100.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -40.3,
+    "y": 1.6,
+    "z": 22.9,
+    "yaw": 311.3,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "phone pin; reviewed looksAt; ground eye height; 26 mm-equivalent lens from EXIF",
+   "note": "24 Nov 2026, not solved. The only registry geometry in view is terrace 6266801UF1366N_part3 (and part2/part7 edges), 46-68 m away inside a 24-degree slice of the frame, mostly behind palms, a yucca and trees. Its real roofline is stepped Andalusian parapets with chimneys over a flat 6.7 m registry extrusion, and the visible edges cannot be tied to footprint corners unambiguously: with the pin pose (pitch about -5) corner 3 projects 14 px right of the far house's left edge while the near house's right edge falls between corners 5 and 4. Pin pose is close (roof tops project at v 560-600 as photographed). The island kerb is the measurement target, so it cannot be a control. Needs a second view of the same houses from another spot (photo request picasso-car-park-centre-row) or closer registry corners."
+  },
+  "IMG_3099.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -50.7,
+    "y": 1.6,
+    "z": 20.7,
+    "yaw": 92.0,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "phone pin; reviewed looksAt; ground eye height; 26 mm-equivalent lens from EXIF",
+   "note": "24 Nov 2026, not solved. Looks east at the bin store and the hotel: the bin store is not in the registry, and the hotel's registry part (6465301UF1366N_part3) has 0 floors, so there is no roofline or upright corner to fit to."
+  },
+  "IMG_3125.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -33.6,
+    "y": 1.6,
+    "z": 17.0,
+    "yaw": 326.2,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "phone pin; reviewed looksAt; ground eye height; 26 mm-equivalent lens from EXIF",
+   "note": "24 Nov 2026, not solved. Shows the long wall (not modelled), the service road and the cypress hedge; no registry building is in frame. Its wall foot and top converge cleanly, so once the wall is placed from the aerial this photo can check its direction and, with eye height, its height; it cannot fix the wall's offset across the road on its own."
+  },
+  "IMG_3129.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -58.7,
+    "y": 1.6,
+    "z": -26.0,
+    "yaw": 335.5,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "phone pin; reviewed looksAt; ground eye height; 26 mm-equivalent lens from EXIF",
+   "note": "24 Nov 2026, not solved. Same limitation as IMG_3125, further north: wall, road and hedge only, with a white building at the far end too distant and small to fit."
   }
  }
 }
