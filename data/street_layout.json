@@ -92,8 +92,8 @@
           -63.06
         ],
         [
-          -48.79,
-          -3.67
+          -33.03,
+          22.28
         ],
         [
           -13.66,
@@ -101,7 +101,7 @@
         ]
       ],
       "surface": "asphalt",
-      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision); 25 Nov 2026: the stretch along the car park moved onto a line 3.1 m east of the long wall's centreline, so the 6 m asphalt meets the wall foot as IMG_3125 and IMG_3129 show (estimated, data/picasso_car_park.json). The aerial puts the cypress hedge 7-8 m from the wall; a wider road here would cut the photographed service-road ramp further south",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision); 24 Nov 2026: the whole stretch along the car park, to the wall's south end, moved onto a line 3.1 m east of the long wall's centreline, so the 6 m asphalt meets the wall foot as IMG_3125 and IMG_3129 show (estimated, data/picasso_car_park.json). The aerial puts the cypress hedge 7-8 m from the wall; street width is one value for the whole street, and 7.5 m would cut the photographed service-road ramp further south, so the 1-2 m strip towards the hedge is a known shortfall",
       "referenceId": "street-Calle Pintor Picasso",
       "aliases": [
         "Calle Picasso",

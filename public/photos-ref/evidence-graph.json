@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "c206e2d88488a147b52974049cad8a5d96555ad95028ecc0eaf4b98b0bb78e5e",
+ "inputDigest": "dcc747c6ef515605f0af0049b54c42a5a578bb9a2b50472c3709a26c0dd702f8",
  "summary": {
   "unplaced": 4,
   "needs-review": 273,
@@ -27151,6 +27151,12 @@
   },
   {
    "from": "photo:IMG_3097.jpg",
+   "to": "street:picasso",
+   "relation": "camera-nearby",
+   "gap": 18.8
+  },
+  {
+   "from": "photo:IMG_3097.jpg",
    "to": "building:6365201UF1366N_part18",
    "relation": "possibly-in-view",
    "distance": 36.1,
@@ -27199,7 +27205,7 @@
    "from": "photo:IMG_3100.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
-   "gap": 6.2
+   "gap": 3.5
   },
   {
    "from": "photo:IMG_3100.jpg",
@@ -27217,7 +27223,7 @@
    "from": "photo:IMG_3101.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
-   "gap": 6.4
+   "gap": 3.7
   },
   {
    "from": "photo:IMG_3101.jpg",
@@ -27235,27 +27241,27 @@
   },
   {
    "from": "photo:IMG_3103.jpg",
+   "to": "street:picasso",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_3103.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
    "gap": 0.7
   },
   {
-   "from": "photo:IMG_3103.jpg",
+   "from": "photo:IMG_3104.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
-   "gap": 2.2
+   "gap": 0
   },
   {
    "from": "photo:IMG_3104.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
    "gap": 0.5
-  },
-  {
-   "from": "photo:IMG_3104.jpg",
-   "to": "street:picasso",
-   "relation": "camera-nearby",
-   "gap": 2.4
   },
   {
    "from": "photo:IMG_3104.jpg",
@@ -27273,15 +27279,15 @@
   },
   {
    "from": "photo:IMG_3105.jpg",
-   "to": "parking:Picasso car park",
+   "to": "street:picasso",
    "relation": "camera-nearby",
-   "gap": 1.0
+   "gap": 0
   },
   {
    "from": "photo:IMG_3105.jpg",
-   "to": "street:picasso",
+   "to": "parking:Picasso car park",
    "relation": "camera-nearby",
-   "gap": 2.0
+   "gap": 1.0
   },
   {
    "from": "photo:IMG_3105.jpg",
@@ -27301,7 +27307,7 @@
    "from": "photo:IMG_3106.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
-   "gap": 1.0
+   "gap": 0
   },
   {
    "from": "photo:IMG_3106.jpg",
@@ -27457,7 +27463,7 @@
    "from": "photo:IMG_3121.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
-   "gap": 0.0
+   "gap": 0
   },
   {
    "from": "photo:IMG_3121.jpg",
@@ -27526,7 +27532,7 @@
    "from": "photo:IMG_3126.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
-   "gap": 0
+   "gap": 0.1
   },
   {
    "from": "photo:IMG_3126.jpg",
@@ -27544,13 +27550,13 @@
    "from": "photo:IMG_3128.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
-   "gap": 0
+   "gap": 0.9
   },
   {
    "from": "photo:IMG_3129.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
-   "gap": 0
+   "gap": 0.1
   },
   {
    "from": "photo:IMG_3129.jpg",
@@ -28703,7 +28709,7 @@
    "from": "photo:IMG_3203.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
-   "gap": 41.6
+   "gap": 40.1
   },
   {
    "from": "photo:IMG_3203.jpg",

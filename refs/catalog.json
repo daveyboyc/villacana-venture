@@ -23338,7 +23338,8 @@
   "looksAtFeatures": [
    "parking:Picasso car park",
    "backdrop.json:aerial-trees",
-   "picasso_car_park.json:picasso-car-park-wall"
+   "picasso_car_park.json:picasso-car-park-wall",
+   "street:picasso"
   ],
   "subject": "bin store side wall and green door",
   "headingOff": 56
@@ -23899,7 +23900,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "picasso_service_road.json:picasso-boundary-wall"
+   "picasso_service_road.json:picasso-boundary-wall",
+   "street:picasso"
   ],
   "subject": "service road between hotel and utility buildings"
  },
@@ -24013,8 +24015,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees",
-   "street:picasso"
+   "street:picasso",
+   "backdrop.json:aerial-trees"
   ],
   "subject": "substation and utility building west of the service road"
  },

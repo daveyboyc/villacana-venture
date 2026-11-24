@@ -1010,7 +1010,7 @@
       "why": "the step's ends, its height and the walk's layout around the planted bed are not fixed by the current pins and the aerial",
       "priority": 1,
       "radius": 6,
-      "since": "2026-11-25",
+      "since": "2026-11-24",
       "status": "open"
     }
   ]

@@ -152,9 +152,15 @@ and road surfaces are drawn.
 | Overhead | [after-overhead-pair.jpg](after-overhead-pair.jpg) |
 
 Still open:
-- The Picasso road centreline is 2–3 m east of the photographed road. A terracotta ground-cover strip
-  shows along the wall's road side, where IMG_3125 shows asphalt to the wall foot.
-- The south-end step and walk are not built.
+- ~~The Picasso road centreline is 2–3 m east of the photographed road.~~ 24 November (later): the road along
+  the whole car park, to the wall's south end, now sits 3.1 m east of the wall's centreline, 6 m wide, so its asphalt meets the wall foot
+  ([after-road-layout.jpg](after-road-layout.jpg), [pin-IMG_3125.jpg](pin-IMG_3125.jpg)). Street width is one value per street, and at 7.5 m, the aerial's wall-to-hedge width, it would cut the
+  photographed service-road ramp further south, so the 1-2 m strip towards the hedge is a known shortfall. The
+  cypress hedge on the east side is not built yet (detail stage).
+- The south-end step and walk are deliberately not built. The walk divides round a planted bed
+  (IMG_3097 shows it passing on one side, IMG_3098 on the other), and neither the bed's position nor the
+  step's ends are fixed by the pins and the aerial; see the note on `picasso-car-park-south-step` and the new photo request
+  `picasso-car-park-south-end`.
 - The `picasso-access` line still runs through gardens.
 - The bin store is not built.
 - The north end is not settled. The wall runs on about 3 m north of the outline's north edge, as the aerial
