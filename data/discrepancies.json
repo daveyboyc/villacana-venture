@@ -548,7 +548,7 @@
       "requests": [
         "picasso-car-park-centre-row"
       ],
-      "description": "The central nose-to-nose row of bays (with palms between) runs parallel to the long wall on the aerial, about 18 m west of it, from about z -56 to the round island. The model's central row (build_skeleton.py PARKING_ROWS) is about 6° off that line: it matches near z=-15 but is about 4.3 m east of the aerial row at its north end (z -55.9: model x -90.7, aerial about -95.0) and about 3.4 m west of it at its south end (z 9.7). The west row of angled bays matches within about 1-2 m. The aerial row midline is read from car positions to ±1.5 m. Palm crowns are not used, because tall palms lean and are displaced on the imagery.",
+      "description": "The central nose-to-nose row of bays (with palms between) runs parallel to the long wall on the aerial, about 9.5 m west of it, from about z -56 to the round island. The model's central row (build_skeleton.py PARKING_ROWS) is about 6° off that line: it matches near z=-15 but is about 4.3 m east of the aerial row at its north end (z -55.9: model x -90.7, aerial about -95.0) and about 3.4 m west of it at its south end (z 9.7). The west row of angled bays is a separate finding (picasso-car-park-west-row-angle). The aerial row midline is read from car positions to ±1.5 m. Palm crowns are not used, because tall palms lean and are displaced on the imagery.",
       "sources": [
         "IMG_3100.jpg",
         "map:ground"
@@ -627,6 +627,40 @@
       ],
       "features": [
         "street:picasso"
+      ]
+    },
+    {
+      "id": "picasso-car-park-west-row-angle",
+      "area": "picasso",
+      "kind": "placement",
+      "task": "ground-plan-picasso",
+      "status": "open",
+      "requests": [
+        "picasso-car-park-west-side"
+      ],
+      "description": "The model's west row of angled bays (build_skeleton.py PARKING_ROWS, first row) runs at about 26 degrees in plan, while the line of cars along the west hedge on the aerial runs at about 30 degrees. They agree near z=0 but drift apart to about 5 m at the north end. Found by the independent layout review on 24 Nov 2026. No photo shows the west side.",
+      "sources": [
+        "map:ground"
+      ],
+      "features": [
+        "parking:Picasso car park"
+      ]
+    },
+    {
+      "id": "picasso-car-park-west-edge-gardens",
+      "area": "picasso",
+      "kind": "placement",
+      "task": "ground-plan-picasso",
+      "status": "open",
+      "requests": [
+        "picasso-car-park-west-side"
+      ],
+      "description": "The car park outline's west edge (street_layout.json mainParkingRing, from (-117.56, -51.7) to (-75.32, 18.94)) lies about 31 m from the long wall at the north end, while the west bays end about 22-25 m from it on the aerial: the north-west part of the outline covers house gardens and the hedge strip. Found by the independent layout review on 24 Nov 2026.",
+      "sources": [
+        "map:ground"
+      ],
+      "features": [
+        "parking:Picasso car park"
       ]
     }
   ]

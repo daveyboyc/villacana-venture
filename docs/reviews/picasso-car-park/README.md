@@ -130,7 +130,9 @@ These are built from `data/picasso_car_park.json` with `src/picasso-car-park.ts`
 in `data/confidence.json`. They are not measured placements, because no camera is solved.
 
 - **Long east wall:** about 107 m on the aerial line (-91.4, -67.8) to (-35.7, 23.9), 0.25 m thick and
-  solid. It is 2.8 m high (±0.3 m), from IMG_3125: the wall's foot and top meet at row 584, and at column
+  solid. Its foot and top follow the ground, sampled every metre, so the height above the paving stays the
+  same as the road falls about 1.7 m towards the sea. A first version used flat boxes, which made the wall
+  about 4.5 m high at the south end; the layout review caught it. It is 2.8 m high (±0.3 m), from IMG_3125: the wall's foot and top meet at row 584, and at column
   100 the wall spans 1.9 times the foot-to-horizon distance at a 1.4–1.6 m phone height. The blueprint's
   stand-in "middle kerb", about 5° off the wall's line, is removed.
 - **Car-park outline (`mainParkingRing`):** the east edge is now on the wall's inner face, from where it
@@ -155,4 +157,9 @@ Still open:
 - The south-end step and walk are not built.
 - The `picasso-access` line still runs through gardens.
 - The bin store is not built.
-- The north end is not settled.
+- The north end is not settled. The wall runs on about 3 m north of the outline's north edge, as the aerial
+  suggests, but the barrier and plinth corner is unknown.
+- The west bay row is about 4° off the aerial car line, up to about 5 m at the north end
+  (`picasso-car-park-west-row-angle`).
+- The outline's west edge covers house gardens at the north end, about 31 m from the wall where the bays
+  end at 22–25 m (`picasso-car-park-west-edge-gardens`).

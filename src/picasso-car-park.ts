@@ -44,14 +44,36 @@ export function addPicassoCarPark(scene: THREE.Scene): void {
   group.userData.noDrape = true;
   group.userData.structural = true;
   const white = plasterMaterial("#f4f1e8");
+  // The wall follows the ground: its foot and top are sampled every metre along it, so it keeps
+  // its photographed height above the paving as the road falls towards the sea.
   wallPoints.slice(1).forEach((b, i) => {
     const a = wallPoints[i];
-    const length = Math.hypot(b[0] - a[0], b[1] - a[1]);
-    // The wall stands on the lower end's ground and is tall enough to meet the higher end's.
-    const ya = siteY(a[0], a[1]), yb = siteY(b[0], b[1]), y = Math.min(ya, yb), height = wall.height + PAVING + Math.abs(ya - yb);
-    const mesh = new THREE.Mesh(new THREE.BoxGeometry(length, height, wall.thickness), white);
-    mesh.position.set((a[0] + b[0]) / 2, y + height / 2, (a[1] + b[1]) / 2);
-    mesh.rotation.y = -Math.atan2(b[1] - a[1], b[0] - a[0]);
+    const length = Math.hypot(b[0] - a[0], b[1] - a[1]), steps = Math.max(1, Math.ceil(length));
+    const ux = (b[0] - a[0]) / length, uz = (b[1] - a[1]) / length, half = wall.thickness / 2;
+    const nx = uz * half, nz = -ux * half;
+    const positions: number[] = [], index: number[] = [];
+    // Four corners per station: left foot, left top, right top, right foot.
+    for (let s = 0; s <= steps; s++) {
+      const x = a[0] + ux * length * s / steps, z = a[1] + uz * length * s / steps, ground = siteY(x, z);
+      const foot = ground - 0.2, top = ground + PAVING + wall.height;
+      positions.push(x + nx, foot, z + nz, x + nx, top, z + nz, x - nx, top, z - nz, x - nx, foot, z - nz);
+    }
+    const quad = (p: number, q: number, r: number, u: number) => index.push(p, q, r, p, r, u);
+    for (let s = 0; s < steps; s++) {
+      const k = s * 4, n = k + 4;
+      quad(k, n, n + 1, k + 1);         // left face
+      quad(k + 1, n + 1, n + 2, k + 2); // top
+      quad(k + 2, n + 2, n + 3, k + 3); // right face
+    }
+    const last = steps * 4;
+    quad(0, 1, 2, 3);                    // end caps
+    quad(last, last + 3, last + 2, last + 1);
+    const geometry = new THREE.BufferGeometry();
+    geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+    geometry.setIndex(index);
+    geometry.computeVertexNormals();
+    const mesh = new THREE.Mesh(geometry, white);
+    (mesh.material as THREE.Material).side = THREE.DoubleSide;
     mesh.name = wall.id;
     mesh.castShadow = mesh.receiveShadow = true;
     group.add(mesh);
