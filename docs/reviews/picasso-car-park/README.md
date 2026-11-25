@@ -290,7 +290,7 @@ generic terracotta ground.
 | --- | --- |
 | From above | [ne-overhead-pair.jpg](../picasso-car-park-barrier/ne-overhead-pair.jpg) |
 | From Calle Loira, as Street View 03 | [ne-loira-pair.jpg](../picasso-car-park-barrier/ne-loira-pair.jpg) |
-| From Calle Bolivia, as Street View 04 | [ne-bolivia-pair.jpg](../picasso-car-park-barrier/ne-bolivia-pair.jpg) |
+| From Calle Bolivia, as Street View 04 (Layout only) | [ne-bolivia-pair.jpg](../picasso-car-park-barrier/ne-bolivia-pair.jpg) |
 | The map (Map & photos), zoomed to the entrance | [map-north-entrance.png](../picasso-car-park-barrier/map-north-entrance.png) |
 
 Still open, on `picasso-car-park-north-entrance-apron`:
