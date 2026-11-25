@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import { asset } from "./asset";
+import { shortRequestAsk } from "./coverage";
 
 /**
  * The area scorecard (public/scorecard.json, scripts/build_scorecard.py) for the area the player
@@ -57,7 +58,10 @@ export function areaScorecard(scene?: THREE.Scene, groundY?: (x: number, z: numb
     #scorecard ol { margin:0 0 8px; padding-left:20px; }
     #scorecard ol li { margin:5px 0; }
     #scorecard .where { font-weight:600; }
-    #scorecard .why { color:#666; font-size:11px; }
+    #scorecard .why { color:#666; font-size:11px; margin-top:3px; }
+    #scorecard details.req-item > summary { cursor:pointer; }
+    #scorecard details.req-item > summary::marker { color:#235f94; }
+    #scorecard details.req-item .req-detail { margin:4px 0 2px; font-size:12px; color:#333; }
     #scorecard details.more > summary { cursor:pointer; color:#235f94; margin:4px 0; }
     body.embedded #scorecard { top:100px; }
     body.mobile-inspect #scorecard[data-requested="true"] { display:block !important; }
@@ -130,11 +134,15 @@ export function areaScorecard(scene?: THREE.Scene, groundY?: (x: number, z: numb
     const headline = document.createElement("div"); headline.className = "headline"; headline.textContent = c.light.headline;
     const asks = document.createElement("ol");
     for (const r of c.light.requests) {
-      const li = document.createElement("li"), where = document.createElement("span"), why = document.createElement("div");
+      const li = document.createElement("li"), det = document.createElement("details"), sum = document.createElement("summary"),
+        where = document.createElement("span"), detail = document.createElement("div"), why = document.createElement("div");
       li.value = spotNumber(r.id) ?? asks.children.length + 1;
+      det.className = "req-item";
       where.className = "where"; where.dataset.at = r.at.join(","); where.textContent = whereFrom(r.at);
+      sum.append(where, " · ", shortRequestAsk(r.ask));
+      detail.className = "req-detail"; detail.textContent = r.ask;
       why.className = "why"; why.textContent = r.state === "received" ? `Photos in (${r.photos.join(", ")}), waiting for review. For: ${r.why}` : `For: ${r.why}`;
-      li.append(where, ": ", r.ask, why); asks.append(li);
+      det.append(sum, detail, why); li.append(det); asks.append(li);
     }
     const evidence = document.createElement("ul");
     evidence.className = "evidence-needed";
@@ -172,7 +180,7 @@ export function areaScorecard(scene?: THREE.Scene, groundY?: (x: number, z: numb
     note.textContent = `Numbered beacons mark the photo spots; the arrow shows what to photograph. Survey measured ${data?.measuredAt ?? "never"}; see docs/SCORECARD.md.`;
     body.replaceChildren(headline, ...(c.light.requests.length ? [asks] : []), ...(evidence.children.length ? [evidence] : []), more, links, note);
   }
-  const showBeacons = () => { beacons.visible = panel.open; };
+  const showBeacons = () => { beacons.visible = panel.open && !document.body.classList.contains("coverage-requests-on"); };
   panel.addEventListener("toggle", showBeacons);
   let last: [number, number] = [Infinity, Infinity];
 
@@ -184,7 +192,8 @@ export function areaScorecard(scene?: THREE.Scene, groundY?: (x: number, z: numb
       if (panel.style.top !== top) panel.style.top = top;
       if (!data) return;
       here = [x, z];
-      if (!spots.length) { const all = data.areas.find((a) => a.id === WHOLE); if (all) placeBeacons(all); showBeacons(); }
+      if (!spots.length) { const all = data.areas.find((a) => a.id === WHOLE); if (all) placeBeacons(all); }
+      showBeacons();
       // Distances to the spots follow the player, a metre at a time.
       if (Math.hypot(x - last[0], z - last[1]) > 1) {
         last = [x, z];
