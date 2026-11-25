@@ -44,9 +44,9 @@ about 1.5-2 m; 1.8 m is used.
 Two neighbouring estimates stood on the path and are moved, with the reason in each one's basis:
 
 - `lane_walls.json juan-gris-east-screen` (1.78 m, estimated from unsolved IMG_3134) stood right across
-  the path's mouth where it leaves Juan Gris, which IMG_3131 and the Google top-down view show open. It and
-  the low hedge wall west of it are slid 3.1 m west along their line, so the screen ends at the path's west
-  edge. IMG_3134 may show the two in the opposite order (discrepancy `juan-gris-east-walls-order`).
+  the path's mouth where it leaves Juan Gris, which IMG_3131 and the Google top-down view show open. The
+  screen is slid 3.1 m west along its line, so it ends at the path's west edge; the low hedge wall
+  west of it keeps its west end and is shortened from 5.1 to 1.9 m. IMG_3134 may show the two in the opposite order (discrepancy `juan-gris-east-walls-order`).
   `check_lane_walls.py` now keeps every lane wall off Calle de Picasso.
 - `cervantes_lane_edges.json cervantes-east-north-thuja-planter` ran 0.4 m onto the path at the
   Cervantes crossing; it now stops 0.1 m short of the path's west edge (s 134.5 along Cervantes).
@@ -102,3 +102,13 @@ Each image is Layout (left) and Show details (right), rendered with `scripts/sho
 
 The path reads as a white-edged terracotta strip beside the generic terracotta ground of the gardens; its
 tiles are not yet the octagon pattern IMG_3131 shows at the north end.
+
+## Independent review
+
+[REVIEW.md](REVIEW.md): approved with notes for layout and levels (25 November 2026). Its readings are
+recorded: the bank between the bays and the hedge strip lies mostly 1.5-3.5 m west of the car line, so the
+outline's west edge at 4.0 m probably runs part way up it, and at the north end the aerial path line and the
+Google-traced lawn strip leave a 0.2-1.0 m gap (both in discrepancy `picasso-west-path-open-levels`). The
+garden wall along the path's north end, seen in IMG_3131, is recorded as a gap; the retaining edge at the
+back of the bays is not, because no photo shows it (gaps need one), so it stays in the discrepancy. The upper
+flight's three 0.15 m risers read faintly in Inspect from above.

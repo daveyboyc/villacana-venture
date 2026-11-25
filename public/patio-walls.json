@@ -5,7 +5,7 @@
     "wall": 27,
     "kerb": 4,
     "enclosure": 23,
-    "gap": 21,
+    "gap": 22,
     "context": 42
   },
   "records": [
@@ -5804,6 +5804,26 @@
       "confidence": "gap",
       "placement": "unreviewed",
       "basis": "IMG_2448 shows the tall south wall turning the corner at about 93 m, its ALBERTO-plaque face running south along Calle Alberto, with a clipped hedge about 1.5 m tall in front of it at the corner. The lane-side wall stops at the corner; the return and the hedge are not built, because Calle Alberto south of Cervantes is not traced.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:picasso-west-path-garden-wall",
+      "name": "Low hedged garden wall along Calle de Picasso's north end",
+      "kind": "gap",
+      "points": [
+        [
+          -120.6,
+          -57.6
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_3131.jpg",
+        "IMG_3134.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "IMG_3131 shows a low white garden wall with a clipped hedge on top behind the CALLE DE PICASSO plinth, along the house side of the path, and IMG_3134 the same kind of wall at the east end of Juan Gris; it probably turns the corner between the two (discrepancy juan-gris-east-walls-order). Its line and length along the path are not traced, so it is not built.",
       "levelState": "Evidence required before tracing or levelling."
     }
   ]

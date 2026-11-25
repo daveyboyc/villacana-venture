@@ -1545,6 +1545,20 @@
     "IMG_3084.jpg"
    ],
    "why": "Short green bollard lamps with white globes stand on the lawn by the path kerb (IMG_3082-3084); not placed. The main-pool lawn bollard model (public/models/lawn/bollard.glb) may fit; their spacing needs a longer view."
+  },
+  {
+   "id": "gap:picasso-west-path-garden-wall",
+   "name": "Low hedged garden wall along Calle de Picasso's north end",
+   "at": [
+    -120.6,
+    -57.6
+   ],
+   "photos": [
+    "IMG_3131.jpg",
+    "IMG_3134.jpg"
+   ],
+   "why": "IMG_3131 shows a low white garden wall with a clipped hedge on top behind the CALLE DE PICASSO plinth, along the house side of the path, and IMG_3134 the same kind of wall at the east end of Juan Gris; it probably turns the corner between the two (discrepancy juan-gris-east-walls-order). Its line and length along the path are not traced, so it is not built.",
+   "decision": "needs-photos"
   }
  ]
 }
