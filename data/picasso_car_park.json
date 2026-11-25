@@ -7,7 +7,10 @@
   "IMG_3129.jpg",
   "IMG_3100.jpg",
   "IMG_3189.jpg",
-  "IMG_3131.jpg"
+  "IMG_3131.jpg",
+  "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+  "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+  "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg"
  ],
  "wall": {
   "id": "picasso-car-park-wall",
@@ -57,25 +60,47 @@
  "barriers": [
   {
    "id": "picasso-car-park-north-barrier",
-   "name": "Security barrier at the car park's north entrance (boom, rest post and bollard)",
+   "name": "Entry barrier, west lane of the car park's north entrance (boom, rest post and bollard)",
    "evidence": [
-    "IMG_3131.jpg"
+    "IMG_3131.jpg",
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg"
    ],
    "restPost": [
-    -105.65,
-    -64.75
+    -110.46,
+    -62.02
    ],
    "pivot": [
-    -101.74,
-    -65.58
+    -104.95,
+    -62.87
    ],
-   "armLength": 4.0,
+   "armLength": 5.58,
    "bollard": [
-    -106.53,
-    -64.58
+    -111.3,
+    -61.87
    ],
    "cabinetSide": "north",
-   "trust": "Estimated. IMG_3131 shows the barrier closed: a white boom with red top and bottom edges at about 1 m, its free end in the V fork of a red square rest post (about 1.0 m, 0.08 m, bolted base plate, black photocell box on the face towards the pivot, the post bent from a knock) and a red-white bollard about 0.87 m high just beyond it. Read in the photo against the ground plane at an assumed 1.5 m phone height: the rest post foot stands 2.6 m ahead and 0.7 m right of the camera, the bollard 3.5 m ahead and 0.7 m right, and the boom runs back along the view direction past the camera's right, so it lies on the camera heading (258, EXIF compass). Positions follow the phone pin (-103.0, -64.6, about 4.7 m) and are good to about 5 m; the direction to about 25 degrees (compass heading 258; the photo's reviewed looksAt points about 23 degrees further right; the compass heading keeps the photographed brick path edge parallel to the car-park aisles, which is an assumption). The pivot end and its drive cabinet are out of frame: the 4.0 m boom and the cabinet (a plain box of a usual size, colour unseen) are inferred. Which aisle the barrier closes and whether the other aisle has a second barrier are open (photo request picasso-car-park-north-entrance)."
+   "trust": "Estimated. The west lane, between the gatehouse island and the narrow planter, is the entry: IMG_3131 shows the lane arrow pointing into the car park and Street View from Calle Loira (Oct 2024, Imagery © Google) shows the boom closed across it from a white drive cabinet on the island side to a red rest post with a red-white bollard beyond. IMG_3131 gives the parts: a white boom with red top and bottom edges at about 1 m in the V fork of a red square rest post (about 1.0 m, 0.08 m, bolted plate, black photocell box towards the pivot, bent from a knock) and the bollard about 0.87 m high. Ends: the boom and the two post shadows in the Google top-down view. Registered from Dave's Google Maps 3D top-down screenshot (reference/google-maps/05-3d-top-down-car-park-north-entrance.jpg, Imagery © Google 2026; taken 25 Nov 2026, capture date not shown): north-up, 0.0385 m per pixel (car lengths 0.040, island-to-wall 0.044), the long wall's north end on its aerial position (-91.4, -67.8); the gatehouse island, narrow planter, brick-and-lawn strip and wall line then sit within about 1-2 m of the Esri aerial. Good to about 1.5 m and 5 degrees. The rest post is 5.5 m from the first estimate from IMG_3131's phone pin (4.7 m): the pin was off, and IMG_3131's camera is moved to match. The boom's direction (81 degrees towards the pivot) agrees with IMG_3131's compass heading (78)."
+  },
+  {
+   "id": "picasso-car-park-exit-barrier",
+   "name": "Exit barrier, east lane of the car park's north entrance, between the gatehouse island and the long wall",
+   "evidence": [
+    "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg"
+   ],
+   "restPost": [
+    -90.36,
+    -64.84
+   ],
+   "pivot": [
+    -95.21,
+    -64.22
+   ],
+   "armLength": 4.89,
+   "bollard": null,
+   "cabinetSide": "north",
+   "trust": "Estimated. Street View from Calle Bolivia (Oct 2024, Imagery © Google) shows the east lane closed by a red-and-white boom from a white drive cabinet on the gatehouse island, under a no-entry sign (so this lane is the exit), to the north end of the long wall. Its parts are taken to match the entry barrier; its rest post is not seen close up and no bollard shows beside it. Ends: the boom and the cabinet in the Google top-down view. Registered from Dave's Google Maps 3D top-down screenshot (reference/google-maps/05-3d-top-down-car-park-north-entrance.jpg, Imagery © Google 2026; taken 25 Nov 2026, capture date not shown): north-up, 0.0385 m per pixel (car lengths 0.040, island-to-wall 0.044), the long wall's north end on its aerial position (-91.4, -67.8); the gatehouse island, narrow planter, brick-and-lawn strip and wall line then sit within about 1-2 m of the Esri aerial. Good to about 1.5 m and 5 degrees."
   }
  ]
 }

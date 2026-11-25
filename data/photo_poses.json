@@ -4583,15 +4583,15 @@
    ],
    "points": [],
    "initial": {
-    "x": -103.0,
+    "x": -107.8,
     "y": 2.86,
-    "z": -64.6,
+    "z": -61.9,
     "yaw": 258.0,
     "pitch": -15.0,
     "roll": 0.0,
     "f": 1201.8
    },
-   "initialBasis": "phone pin; EXIF compass heading 258 (the reviewed looksAt points about 23 degrees further right, which would turn the brick path edge off the car-park aisles); pitch 15 degrees down from the plinth's top and foot at an assumed 1.5 m eye height above the paving (paving about 1.36 m in model metres: laser-survey ground 6.09 m at the wall's north end, less the 5.00 m datum, plus the 0.27 m paving lift); 26 mm-equivalent lens from EXIF",
+   "initialBasis": "corrected camera position (data/photo_positions.json); EXIF compass heading 258 (the reviewed looksAt points about 23 degrees further right, which would turn the brick path edge off the car-park aisles); pitch 15 degrees down from the plinth's top and foot at an assumed 1.5 m eye height above the paving (paving about 1.36 m in model metres: laser-survey ground 6.09 m at the wall's north end, less the 5.00 m datum, plus the 0.27 m paving lift); 26 mm-equivalent lens from EXIF",
    "note": "25 Nov 2026, not solved. Shows the north-entrance barrier closed (boom, rest post with fork and photocell, bollard), the CALLE DE PICASSO plinth, the brick-edged terracotta path and the ramp between white walls. No registry building corner is clearly in frame. Ground-plane readings at the assumed eye height put the rest post 2.6 m ahead and 0.7 m right, the bollard 3.5 m ahead, and the brick path edge about 6.4-7.7 m ahead, running about 76 degrees right of the view axis (data/picasso_car_park.json barriers)."
   }
  }

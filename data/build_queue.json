@@ -4035,15 +4035,16 @@
    "photos": [
     "IMG_3131.jpg"
    ],
-   "build": "Dave, 25 November 2026: in the main car park add the security barriers, create the asset and place it. Build a reusable barrier asset from IMG_3131 (white boom with red edges, red rest post with fork and photocell, red-white bollard, drive cabinet inferred) and place the photographed barrier, closed, at the north entrance from the camera pin and the photo's ground-plane measurements.",
-   "avoid": "No change to Walk. Do not invent a second barrier that no photo shows. Do not grade the position photographed or measured: no camera is solved and the pin is good to about 5 m.",
+   "build": "Dave, 25 November 2026: in the main car park add the security barriers, create the asset and place it. Build a reusable barrier asset from IMG_3131 (white boom with red edges, red rest post with fork and photocell, red-white bollard, drive cabinet inferred) and place the barriers, closed, at the north entrance: the entry barrier in the west lane and the exit barrier in the east lane (Dave, 25 November: there is a second barrier; Street View Oct 2024 and a Google 3D top-down screenshot).",
+   "avoid": "No change to Walk. Do not grade the positions photographed or measured: no camera is solved; the Google screenshot registration is good to about 1.5 m.",
    "accept": [
     "Visible in Inspect in Layout and with Show details",
     "Photo check recorded for IMG_3131",
     "scripts/check_car_park_barrier.py passes"
    ],
    "features": [
-    "picasso_car_park.json:picasso-car-park-north-barrier"
+    "picasso_car_park.json:picasso-car-park-north-barrier",
+    "picasso_car_park.json:picasso-car-park-exit-barrier"
    ],
    "dependsOn": [],
    "status": "in-progress",
@@ -4059,8 +4060,8 @@
     "IMG_3131.jpg",
     "IMG_3130.jpg"
    ],
-   "build": "Lay out the car park's north entrance between Calle Loira, Calle Bolivia and the planted island: the asphalt apron and its lanes, the white kerb nose and bougainvillea bed beside the barrier's rest post, the brick-edged terracotta path, lawn strip and CALLE DE PICASSO plinth, and the ramp between white walls. Then move the barrier (data/picasso_car_park.json barriers) onto the traced lane and decide from photos whether the other lane has a second barrier.",
-   "avoid": "No change to Walk. No second barrier without a photo. Do not grade positions measured without a solved camera.",
+   "build": "Lay out the car park's north entrance between Calle Loira, Calle Bolivia and the planted island: the asphalt apron and its lanes, the white kerb nose and bougainvillea bed beside the barrier's rest post, the brick-edged terracotta path, lawn strip and CALLE DE PICASSO plinth, and the ramp between white walls. Then check both barriers (data/picasso_car_park.json barriers) against the traced lanes.",
+   "avoid": "No change to Walk. Do not grade positions measured without a solved camera.",
    "accept": [
     "Visible in Inspect in Layout and with Show details",
     "Photo checks recorded for IMG_3131 and IMG_3130",

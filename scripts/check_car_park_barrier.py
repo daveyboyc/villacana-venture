@@ -21,19 +21,20 @@ assert 'carParkBarrier(' in module and 'barrierBollard(' in module, 'src/picasso
 assert 'picassoCarParkPlan().barriers' in blueprint, 'the map must draw the barrier'
 
 barriers = data['barriers']
-assert barriers, 'no barrier placed'
+assert {b['id'] for b in barriers} == {'picasso-car-park-north-barrier', 'picasso-car-park-exit-barrier'}, 'entry and exit barriers'
 for b in barriers:
     assert b['evidence'] and all(e in photos for e in b['evidence']), f"{b['id']}: evidence must be indexed photos"
     span = math.dist(b['pivot'], b['restPost'])
     assert abs(span - b['armLength']) < 0.05, f"{b['id']}: pivot and rest post are {span:.2f} m apart, armLength {b['armLength']}"
     assert 2.5 <= span <= 6.5, f"{b['id']}: boom of {span:.2f} m is not a single-lane barrier"
-    assert 0.3 <= math.dist(b['bollard'], b['restPost']) <= 2.0, f"{b['id']}: the bollard stands just beside the rest post"
+    assert b['bollard'] is None or 0.3 <= math.dist(b['bollard'], b['restPost']) <= 2.0, f"{b['id']}: the bollard stands just beside the rest post"
     assert b['cabinetSide'] in ('north', 'south')
-    assert 'Estimated' in b['trust'] and 'inferred' in b['trust'], 'trust must say what is estimated and inferred'
+    assert 'Estimated' in b['trust'] and 'Imagery © Google' in b['trust'], 'trust must say it is estimated and credit the Google imagery'
 
-feature = 'picasso_car_park.json:' + barriers[0]['id']
 confidence = json.loads((ROOT / 'data/confidence.json').read_text())
-assert confidence['features'][feature]['level'] in ('estimated', 'inferred'), 'no camera is solved: never photographed or measured'
+for b in barriers:
+    assert confidence['features']['picasso_car_park.json:' + b['id']]['level'] in ('estimated', 'inferred'), 'no camera is solved: never photographed or measured'
+feature = 'picasso_car_park.json:' + barriers[0]['id']
 checks = [c for c in json.loads((ROOT / 'data/photo_checks.json').read_text())['checks'] if c['feature'] == feature]
 assert any(c['photo'] == 'IMG_3131.jpg' and (ROOT / c['render']).exists() for c in checks), 'IMG_3131 photo check with a committed render'
-print(f'Car-park barrier: shared asset, {len(barriers)} placed ({barriers[0]["armLength"]} m boom), collision, map, confidence and photo check PASS')
+print(f'Car-park barriers: shared asset, entry and exit placed ({", ".join(str(b["armLength"]) for b in barriers)} m booms), collision, map, confidence and photo check PASS')

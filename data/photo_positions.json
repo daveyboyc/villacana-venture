@@ -233,5 +233,19 @@
   "headingBasis": "read from the photo: looks down Calle Elena south to the middle pool, as IMG_2358/IMG_2367",
   "trust": "checked against photo content",
   "locationBasis": "Sent by Dave in chat on 17 November 2026 without location data. Same roof as IMG_2358 and IMG_2367 (Elena 24, east end of 6265201UF1366N_part4): the same lamp post, lawns, garden door with the painted plate and blue-tiled patio below, seen from a little further west."
+ },
+ "IMG_3131.HEIC": {
+  "x": -107.8,
+  "z": -61.9,
+  "accuracy": 1.5,
+  "heading": 258,
+  "headingBasis": "EXIF true north; the boom's direction in the Google top-down view agrees within 3 degrees",
+  "trust": "checked against photo content",
+  "locationBasis": "Moved so the photo's rest post (2.6 m ahead, 0.7 m right, compass heading 258) stands on the entry barrier's rest post as registered from Dave's Google 3D top-down screenshot (data/picasso_car_park.json); the phone pin was 5.5 m east.",
+  "gps": {
+   "x": -103.0,
+   "z": -64.6,
+   "accuracy": 4.7
+  }
  }
 }

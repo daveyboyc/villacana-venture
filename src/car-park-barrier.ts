@@ -7,8 +7,9 @@ import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js
  * at about 1 m; at its free end a red square-section rest post on a bolted base plate, with a V-shaped
  * fork of two red rods that cradles the boom and a small black photocell box on the face towards the
  * pivot; and beside the rest post a fixed red-and-white bollard (red foot, white band, red top).
- * The drive cabinet at the pivot end is off the photo: it is drawn as a plain painted box of a usual
- * size and marked inferred. Built from numbers; no photo pixels are used.
+ * The drive cabinet at the pivot end is off that photo; Street View (Oct 2024, Imagery © Google, reference/google-maps/03
+ * and 04) shows it as a plain white box about 1 m high on the island side of each lane. Built from numbers; no photo
+ * pixels are used.
  *
  * Local frame: y up, standing on y = 0; the boom runs along +x from the pivot (x = 0) to the rest
  * post (x = armLength). Sizes read from IMG_3131 at an assumed 1.5 m phone height: rest post about
@@ -18,7 +19,7 @@ export const BOOM_HEIGHT = 1.0;
 export const BOOM_DEPTH = 0.1, BOOM_WIDTH = 0.065;
 export const REST_POST = { height: 1.0, size: 0.08, plate: 0.22 };
 export const BOLLARD = { height: 0.87, radius: 0.05, band: [0.29, 0.64] as const };
-/** The drive cabinet: not photographed, a usual size for a single-lane barrier. */
+/** The drive cabinet: white and about 1 m high in Street View; its plan size is a usual one for a single-lane barrier. */
 export const CABINET = { width: 0.34, depth: 0.3, height: 1.02 };
 /** Half the widest part of each post-like piece: the footprint collision keeps. */
 export const BARRIER_POST_RADIUS = 0.12;
@@ -34,7 +35,7 @@ function materials(): Kit {
     red: new THREE.MeshStandardMaterial({ color: RED, roughness: 0.5, metalness: 0.25 }),
     white: new THREE.MeshStandardMaterial({ color: WHITE, roughness: 0.35, metalness: 0.3 }),
     black: new THREE.MeshStandardMaterial({ color: "#16181a", roughness: 0.6 }),
-    cabinet: new THREE.MeshStandardMaterial({ color: "#d7d4cc", roughness: 0.55, metalness: 0.2 }),
+    cabinet: new THREE.MeshStandardMaterial({ color: "#ecebe5", roughness: 0.5, metalness: 0.15 }),
     plate: new THREE.MeshStandardMaterial({ color: "#8f2a26", roughness: 0.7, metalness: 0.2 }),
   };
 }
@@ -77,7 +78,7 @@ export function carParkBarrier(o: BarrierOptions): THREE.Group {
   g.add(mesh([box(p.size, p.height, p.size, L, p.height / 2, 0), ...fork], kit.red, `${name}-rest-post`));
   g.add(mesh([box(p.plate, 0.012, p.plate, L, 0.006, 0)], kit.plate, `${name}-rest-plate`));
   g.add(mesh([box(0.035, 0.12, 0.05, L - p.size / 2 - 0.0175, 0.55, 0)], kit.black, `${name}-photocell`));
-  // Drive cabinet (inferred): a plain box at the pivot, the boom hub on its lane side and a short tail behind.
+  // Drive cabinet: a plain white box at the pivot, the boom hub on its lane side and a short tail behind.
   const c = CABINET;
   g.add(mesh([box(c.width, c.height + 0.25, c.depth, -c.width / 2 - 0.02, (c.height - 0.25) / 2, -side * (c.depth / 2 + BOOM_WIDTH / 2 + 0.02))], kit.cabinet, `${name}-cabinet`));
   g.add(mesh([rod(new THREE.Vector3(0, y, -side * 0.02), new THREE.Vector3(0, y, -side * 0.12), 0.06), box(0.35, BOOM_DEPTH * 0.8, BOOM_WIDTH, -0.2, y, 0)], kit.red, `${name}-hub`));

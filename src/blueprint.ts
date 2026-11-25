@@ -320,10 +320,10 @@ async function boot(): Promise<void> {
     const title = el("title", {}); title.textContent = "Long white wall between the car park and Calle Pintor Picasso · estimated from the aerial; IMG_3125, IMG_3129"; wallPath.append(title);
     traced.append(wallPath);
   }
-  // The security barrier at the north entrance (IMG_3131), closed: the boom from its pivot to the rest post, and its posts.
+  // The security barriers at the north entrance (entry west, exit east), closed: the boom from its pivot to the rest post, and its posts.
   for (const b of picassoCarParkPlan().barriers) {
     const boom = el("polyline", { points: b.boom.map((p) => p.join(",")).join(" "), fill: "none", stroke: "#c3242a", "stroke-width": 0.18, "stroke-dasharray": "0.5 0.3", "data-picasso-car-park": "barrier" });
-    const title = el("title", {}); title.textContent = "Car-park security barrier, closed · IMG_3131; position from the phone pin, about 5 m"; boom.append(title);
+    const title = el("title", {}); title.textContent = `Car-park ${b.id.includes("exit") ? "exit" : "entry"} barrier, closed · IMG_3131, Street View Oct 2024 and Google 3D (Imagery © Google); about 1.5 m`; boom.append(title);
     traced.append(boom);
     for (const [x, z] of b.posts) traced.append(el("circle", { cx: x, cy: z, r: 0.15, fill: "#c3242a", "data-picasso-car-park": "barrier-post" }));
   }
