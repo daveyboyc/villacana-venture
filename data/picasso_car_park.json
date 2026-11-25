@@ -21,9 +21,10 @@
     23.9
    ]
   ],
-  "height": 2.8,
   "thickness": 0.25,
-  "trust": "Estimated. Line read from the Esri World Imagery zoom 19 aerial (the wall's bright top and shadow, straight over its whole length; an independent reviewer found it within about 0.3 m of this line). Plain, rendered, no openings in IMG_3125 and IMG_3129; south end at the white utility building in IMG_3124. Height about 2.8 m (±0.3) from IMG_3125: wall foot and top converge at row 584, and at column 100 the wall spans 1.9 times the foot-to-horizon distance, at an assumed 1.4-1.6 m phone height. No camera is solved (data/photo_poses.json notes), so this is not a measured placement."
+  "trust": "Estimated. Line read from the Esri World Imagery zoom 19 aerial (the wall's bright top and shadow, straight over its whole length; an independent reviewer found it within about 0.3 m of this line). Plain, rendered, no openings in IMG_3125 and IMG_3129; south end at the white utility building in IMG_3124. Height from the laser survey: a level top at 2.57 m (topBasis). No camera is solved (data/photo_poses.json notes), so the line is not a measured placement.",
+  "top": 2.57,
+  "topBasis": "Level top. PNOA-LiDAR 2014-15 2 m surface model (MDS) along the wall line: where the grid catches the wall its top reads 7.53-7.63 m (median 7.57) at 6, 30, 54, 60, 72, 78 and 96 m from the north end, while the ground (2020-21 1 m MDT) falls from 6.09 to 4.51 m; the ground on both sides agrees to 0.1-0.2 m, so it is a free-standing wall, not a retaining wall. Model zero is the middle pool deck, 5.00 m in the 2014-15 survey, so the top is 2.57 m in model metres above the visible paving level. The wall is about 1.4 m high at the uphill north end and about 3.1 m at the south end (Dave, 25 Nov 2026: it should get lower up the slope; IMG_3125 near the south end agrees with about 3 m)."
  },
  "centreRow": {
   "points": [

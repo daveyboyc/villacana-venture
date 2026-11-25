@@ -44,8 +44,8 @@ export function addPicassoCarPark(scene: THREE.Scene): void {
   group.userData.noDrape = true;
   group.userData.structural = true;
   const white = plasterMaterial("#f4f1e8");
-  // The wall follows the ground: its foot and top are sampled every metre along it, so it keeps
-  // its photographed height above the paving as the road falls towards the sea.
+  // The wall's foot follows the ground, sampled every metre, while its top is level (laser survey):
+  // about 1.4 m high at the uphill north end and 3.1 m at the seaward south end.
   wallPoints.slice(1).forEach((b, i) => {
     const a = wallPoints[i];
     const length = Math.hypot(b[0] - a[0], b[1] - a[1]), steps = Math.max(1, Math.ceil(length));
@@ -55,7 +55,7 @@ export function addPicassoCarPark(scene: THREE.Scene): void {
     // Four corners per station: left foot, left top, right top, right foot.
     for (let s = 0; s <= steps; s++) {
       const x = a[0] + ux * length * s / steps, z = a[1] + uz * length * s / steps, ground = siteY(x, z);
-      const foot = ground - 0.2, top = ground + PAVING + wall.height;
+      const foot = ground - 0.2, top = wall.top + PAVING;
       positions.push(x + nx, foot, z + nz, x + nx, top, z + nz, x - nx, top, z - nz, x - nx, foot, z - nz);
     }
     const quad = (p: number, q: number, r: number, u: number) => index.push(p, q, r, p, r, u);

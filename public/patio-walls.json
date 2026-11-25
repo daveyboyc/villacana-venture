@@ -3766,7 +3766,7 @@
       ],
       "confidence": "estimated",
       "placement": "unreviewed",
-      "basis": "Model group context, not a traced wall axis or quantity. Plain white wall photographed from the road (IMG_3125, IMG_3129, IMG_3124). Line read from the aerial to about 0.3-1 m; height about 2.8 m from IMG_3125's vanishing lines at an assumed phone height. No camera is solved.",
+      "basis": "Model group context, not a traced wall axis or quantity. Plain white wall photographed from the road (IMG_3125, IMG_3129, IMG_3124). Line read from the aerial to about 0.3-1 m. Level top from the laser survey (2014-15 surface model, 2.57 m in model metres): about 1.4 m high at the uphill north end, 3.1 m at the south end. No camera is solved.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {
