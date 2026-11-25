@@ -308,6 +308,19 @@
      "state": "open"
     },
     {
+     "id": "photo-north-pool-dali-approach",
+     "area": "north-pool",
+     "kind": "photo",
+     "ask": "From the south-west crazy-paving path at the north pool, photograph the approach towards Pintor Dalí. Include the west patio corner and adjacent house fronts. Take overlapping views from the Dalí side looking back, including any boundaries or openings.",
+     "why": "Determine whether a path connects these points and locate its edges. The previously cited tiled-lane photos show Calle Eva at the middle pool.",
+     "photoRequest": "north-pool-dali-approach",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
      "id": "photo-north-pool-north-row-ground",
      "area": "north-pool",
      "kind": "photo",
@@ -7606,6 +7619,19 @@
       "IMG_3194.jpg",
       "map:ground"
      ],
+     "state": "open"
+    },
+    {
+     "id": "photo-north-pool-dali-approach",
+     "area": "north-pool",
+     "kind": "photo",
+     "ask": "From the south-west crazy-paving path at the north pool, photograph the approach towards Pintor Dalí. Include the west patio corner and adjacent house fronts. Take overlapping views from the Dalí side looking back, including any boundaries or openings.",
+     "why": "Determine whether a path connects these points and locate its edges. The previously cited tiled-lane photos show Calle Eva at the middle pool.",
+     "photoRequest": "north-pool-dali-approach",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
      "state": "open"
     },
     {
