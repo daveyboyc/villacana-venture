@@ -137,11 +137,14 @@ These are built from `data/picasso_car_park.json` with `src/picasso-car-park.ts`
 in `data/confidence.json`. They are not measured placements, because no camera is solved.
 
 - **Long east wall:** about 107 m on the aerial line (-91.4, -67.8) to (-35.7, 23.9), 0.25 m thick and
-  solid. Its foot and top follow the ground, sampled every metre, so the height above the paving stays the
-  same as the road falls about 1.7 m towards the sea. A first version used flat boxes, which made the wall
-  about 4.5 m high at the south end; the layout review caught it. It is 2.8 m high (±0.3 m), from IMG_3125: the wall's foot and top meet at row 584, and at column
-  100 the wall spans 1.9 times the foot-to-horizon distance at a 1.4–1.6 m phone height. The blueprint's
-  stand-in "middle kerb", about 5° off the wall's line, is removed.
+  solid. **Its top is level and its height falls going uphill** (Dave, 25 November). The PNOA-LiDAR
+  2014–15 surface model catches the wall top at 7.53–7.63 m (median 7.57) at 6, 30, 54, 60, 72, 78 and
+  96 m from the north end. Over the same stretch the ground falls from 6.09 to 4.51 m and is the same on
+  both sides to within 0.1–0.2 m, so this is a free-standing wall, not a retaining wall. The wall is about
+  1.4 m high at the north end, 2.0 m at 30 m, 2.3–2.5 m mid-way, 2.6–2.7 m at 72–78 m and 3.1 m at the
+  south end. In model metres (zero at the middle pool deck, 5.00 m in that survey) the top is 2.57 m above
+  the visible paving. Earlier versions are superseded: a constant 2.8 m height read from IMG_3125 near the
+  south end, and before that flat boxes that put about 4.5 m at the south end.
 - **Car-park outline (`mainParkingRing`):** the east edge is now on the wall's inner face, from where it
   meets the old north edge, at (-89.95, -65.17), to the wall's south end. The west and south edges are
   unchanged.
