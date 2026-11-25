@@ -260,3 +260,38 @@ placement as an estimate after fixes: the boom's end cap removed, "read" not "me
 cabinet's collision sized to its box. It also flagged the aerial's reddish ground at the first position, which the
 Google registration resolved by moving the barrier 5.5 m west. This is a photographic sign-off of an estimate, not
 measured placement approval.
+
+## North entrance ground and gatehouse (25 November 2026)
+
+Task `picasso-car-park-north-entrance`, stage 2 (layout), traced from the same registered Google 3D top-down view
+(about 1.5 m) and read against both Street View frames and IMG_3131. The model used to draw the whole entrance as
+generic terracotta ground.
+
+- **`data/ground_plan_picasso.json`.** This is the Picasso area's first ground plan, drawn by `src/ground-plan.ts`. It
+  adds an `asphalt` finish at the street ribbons' height and four surfaces:
+  - `picasso-north-entrance-asphalt`: both lanes and the strip west of the narrow planter. It runs from the Loira and
+    Bolivia ribbons to the car-park outline, between the long wall and the brick strip.
+  - `picasso-gatehouse-island`: a terracotta apron on a white kerb, where both barrier cabinets stand.
+  - `picasso-gatehouse-lawn`: the round lawn bed north and west of the gatehouse, with a brick border facing the entry
+    lane.
+  - `picasso-entry-planter`: the narrow bed, about 5 m long, on a white kerb. Its tip is just north of the entry
+    barrier's bollard (the white kerb nose in IMG_3131).
+- **Gatehouse (`picasso_car_park.json` `gatehouse`).** About 3.4 m square and 2.9 m high, white and flat-roofed. It is
+  not in the land registry. It is built as a plain block: the window grille, door and signs are left for the detail
+  stage.
+- All are graded `estimated`. `check_ground_plan.py` passes.
+
+| View | Layout / Show details |
+| --- | --- |
+| From above | [ne-overhead-pair.jpg](../picasso-car-park-barrier/ne-overhead-pair.jpg) |
+| From Calle Loira, as Street View 03 | [ne-loira-pair.jpg](../picasso-car-park-barrier/ne-loira-pair.jpg) |
+| From Calle Bolivia, as Street View 04 | [ne-bolivia-pair.jpg](../picasso-car-park-barrier/ne-bolivia-pair.jpg) |
+
+Still open, on `picasso-car-park-north-entrance-apron`:
+- the brick path, lawn strip and CALLE DE PICASSO plinth west of the entry lane;
+- the ramp between white walls;
+- the island's trees and palms;
+- the planter's bougainvillea and notice pillar;
+- the STOP, ACCESO PLAYA and no-entry signs.
+
+These are photographed in Street View and IMG_3131, but their outlines are partly hidden in the top-down view.

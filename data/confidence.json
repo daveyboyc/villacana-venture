@@ -11,6 +11,26 @@
   "needs-photos": "Worth improving; more photos wanted."
  },
  "features": {
+  "picasso_car_park.json:picasso-car-park-gatehouse": {
+   "level": "estimated",
+   "why": "White single-storey gatehouse with a grilled window in Street View from Calle Loira and Calle Bolivia (Oct 2024); not in the land registry. Footprint from the registered Google top-down view (about 1.5 m), height judged from the window (about 2.9 m)."
+  },
+  "ground_plan_picasso.json:picasso-north-entrance-asphalt": {
+   "level": "estimated",
+   "why": "Asphalt in IMG_3131 and Street View from Calle Loira and Calle Bolivia (Oct 2024). Outline from Dave's Google 3D top-down screenshot registered to the aerial, about 1.5 m; road-side edges follow the mapped Loira and Bolivia ribbons."
+  },
+  "ground_plan_picasso.json:picasso-gatehouse-island": {
+   "level": "estimated",
+   "why": "Terracotta apron and white kerbs in Street View (Oct 2024); outline from the registered Google top-down view, about 1.5 m. Kerb height is a guess."
+  },
+  "ground_plan_picasso.json:picasso-gatehouse-lawn": {
+   "level": "estimated",
+   "why": "Lawn with a brick-edged kerb in Street View from Calle Loira; outline from the registered Google top-down view, where trees hide its north edge (about 1.5-2 m)."
+  },
+  "ground_plan_picasso.json:picasso-entry-planter": {
+   "level": "estimated",
+   "why": "Brick-edged white-kerbed bed in Street View from Calle Loira and IMG_3131; outline from the registered Google top-down view, about 1.5 m."
+  },
   "picasso_car_park.json:picasso-car-park-north-barrier": {
    "level": "estimated",
    "why": "Entry barrier: its parts are photographed in IMG_3131 and Street View from Calle Loira (Oct 2024). Its ends are read from Dave's Google 3D top-down screenshot, registered to the aerial by the long wall's north end and a scale from car lengths, good to about 1.5 m. No camera is solved."

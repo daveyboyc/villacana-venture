@@ -4,6 +4,7 @@ import skeleton from "../public/map/skeleton.json";
 import mainPool from "../data/ground_plan_main_pool.json";
 import northLanes from "../data/ground_plan_north_lanes.json";
 import northPool from "../data/ground_plan_north_pool.json";
+import picasso from "../data/ground_plan_picasso.json";
 import { clippedHedge, looseShrub } from "./clipped-plants";
 import { closestOnSegment, pointInRing } from "./geom";
 import { pavingCanvas, plasterMaterial, surfaceTexture } from "./materials";
@@ -27,7 +28,7 @@ import type { Vec2 } from "./types";
  *   omitted). `openings` leave gaps ({at: metres along the edge, width}). Edges follow the same smooth
  *   line as the surface, so the floor, its edge and the ground beside it agree.
  */
-export const GROUND_PLANS = [mainPool, northPool, northLanes] as unknown as GroundPlan[];
+export const GROUND_PLANS = [mainPool, northPool, northLanes, picasso] as unknown as GroundPlan[];
 
 type Edge = { kind: EdgeKind; side?: "left" | "right" | "both"; span?: number[]; from?: number; to?: number; height?: number; width?: number; planting?: string; flowers?: { colour: string; perMetre: number }; openings?: { at: number; width: number }[] };
 type Surface = {
@@ -46,6 +47,8 @@ export const FINISHES = {
   "octagon-tiles": { colour: "#c6765a", lift: 0.05, paved: true },
   "concrete": { colour: "#cfc8ba", lift: 0.05, paved: true },
   "gravel": { colour: "#c9bea8", lift: 0.04, paved: true },
+  // Road asphalt, at the height the street and car-park ribbons are drawn (src/boundaries.ts, 0.27 m over the terrain).
+  "asphalt": { colour: "#7f8384", lift: 0.27, paved: true },
   "crazy-paving": { colour: "#d8cfb9", lift: 0.073, paved: true },
   "lawn": { colour: "#6b8a4e", lift: 0, paved: false },
   "planted-bed": { colour: "#4b3a2c", lift: 0.03, paved: false },

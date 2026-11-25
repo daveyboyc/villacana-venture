@@ -320,6 +320,9 @@ async function boot(): Promise<void> {
     const title = el("title", {}); title.textContent = "Long white wall between the car park and Calle Pintor Picasso · estimated from the aerial; IMG_3125, IMG_3129"; wallPath.append(title);
     traced.append(wallPath);
   }
+  // The gatehouse on the entrance island (Street View Oct 2024, Google 3D; not in the registry).
+  { const house = el("path", { d: path(picassoCarParkPlan().gatehouse), fill: "#f7f4ee", stroke: "#5d5a52", "stroke-width": 0.06, "data-picasso-car-park": "gatehouse" });
+    const title = el("title", {}); title.textContent = "Gatehouse on the car park's entrance island · Street View Oct 2024, Google 3D (Imagery © Google); about 1.5 m"; house.append(title); traced.append(house); }
   // The security barriers at the north entrance (entry west, exit east), closed: the boom from its pivot to the rest post, and its posts.
   for (const b of picassoCarParkPlan().barriers) {
     const boom = el("polyline", { points: b.boom.map((p) => p.join(",")).join(" "), fill: "none", stroke: "#c3242a", "stroke-width": 0.18, "stroke-dasharray": "0.5 0.3", "data-picasso-car-park": "barrier" });
