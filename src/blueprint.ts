@@ -44,6 +44,7 @@ import { seafrontFenceRings } from "./seafront-fence";
 import { lawnSolidRings } from "./main-pool-lawn";
 import { picassoLawnWallRings } from "./picasso-lawn-wall";
 import { picassoCarParkPlan } from "./picasso-car-park";
+import { picassoEntranceRings } from "./picasso-entrance-details";
 import { EDGES, FINISHES, groundEdges, groundPlanSolidRings, groundSurfaces } from "./ground-plan";
 import elenaNorth from "../data/elena_north.json";
 import {middleGatewayFrame,middleGatewayLeaf,middlePoolPlanter,suppressInMiddlePoolReview} from "./middle-pool";
@@ -323,6 +324,8 @@ async function boot(): Promise<void> {
   // The gatehouse on the entrance island (Street View Oct 2024, Google 3D; not in the registry).
   { const house = el("path", { d: path(picassoCarParkPlan().gatehouse), fill: "#f7f4ee", stroke: "#5d5a52", "stroke-width": 0.06, "data-picasso-car-park": "gatehouse" });
     const title = el("title", {}); title.textContent = "Gatehouse on the car park's entrance island · Street View Oct 2024, Google 3D (Imagery © Google); about 1.5 m"; house.append(title); traced.append(house); }
+  // The gatehouse's wing walls and the CALLE DE PICASSO plinth (data/picasso_entrance_details.json).
+  for (const ring of picassoEntranceRings()) traced.append(el("path", { d: path(ring), fill: "#f7f4ee", stroke: "#5d5a52", "stroke-width": 0.05, "data-picasso-car-park": "entrance" }));
   // The security barriers at the north entrance (entry west, exit east), closed: the boom from its pivot to the rest post, and its posts.
   for (const b of picassoCarParkPlan().barriers) {
     const boom = el("polyline", { points: b.boom.map((p) => p.join(",")).join(" "), fill: "none", stroke: "#c3242a", "stroke-width": 0.6, "stroke-linecap": "round", "data-picasso-car-park": "barrier" });

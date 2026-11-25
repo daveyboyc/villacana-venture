@@ -301,3 +301,44 @@ Still open, on `picasso-car-park-north-entrance-apron`:
 - the STOP, ACCESO PLAYA and no-entry signs.
 
 These are photographed in Street View and IMG_3131, but their outlines are partly hidden in the top-down view.
+
+## North entrance details (25 November 2026)
+
+Dave sent three more Street View frames from Calle Bolivia (Oct 2024, Imagery © Google), now
+`reference/google-maps/06-08`. They show the gatehouse island's north side, the gatehouse window and the exit lane.
+With them, Street View 03 and 04, the registered Google top-down view and IMG_3131, the entrance's detail is built in
+`data/picasso_entrance_details.json` and drawn by `src/picasso-entrance-details.ts`.
+
+**Structure (Layout).** These pieces get collision and are drawn on the map:
+- **Wing walls:** two sloping white wing walls from the gatehouse towards the two barrier cabinets, 1.6 m at the
+  gatehouse falling to 0.7 m (Street View 03, 06, 08).
+- **Plinth:** the white CALLE DE PICASSO plinth on the lawn strip, facing the entry lane, with black lettered tiles
+  (IMG_3131).
+
+**Show details.**
+- **Gatehouse:** arched windows with black bars on the faces towards Bolivia and Loira, and a blue plaque.
+- **Island signs:** the STOP and ACCESO PLAYA / TO THE BEACH signs.
+- **Exit lane:** the no-entry sign over the exit cabinet, and the blue dead-end sign at the long wall's north end.
+- **Board:** the COMUNIDAD VILLACANA board on two posts.
+- **Narrow planter:** the white notice pillar with its ZONA VIDEOVIGILADA plate.
+- **Lantern:** the resort lantern behind the plinth.
+- **Planting:** three giant strelitzias, two sago palms, the feathery tree and a tall palm on the island, and
+  bougainvillea in the planter. These are the existing plant sprites, with the shared route guard.
+
+**Ground.** `ground_plan_picasso.json` gains:
+- the terracotta path with a brick edge along the entry-lane asphalt;
+- the lawn strip, cut short at the car-park outline (discrepancy `picasso-car-park-west-edge-gardens`).
+
+All of it is graded `estimated`: positions are read from unsolved Street View frames and the registered top-down view,
+about 1 m.
+
+Still open:
+- the ramp between white walls with the CALLE JUAN GRIS plaque (IMG_3131);
+- the path's octagon-pattern tiles, drawn as squares.
+
+| View | Layout / Show details |
+| --- | --- |
+| From Calle Loira (as Street View 03) | [ent-loira-pair.jpg](../picasso-car-park-barrier/ent-loira-pair.jpg) |
+| From Calle Bolivia (as Street View 06, 07) | [ent-bolivia-pair.jpg](../picasso-car-park-barrier/ent-bolivia-pair.jpg) |
+| Down the exit lane (as Street View 08) | [ent-exit-pair.jpg](../picasso-car-park-barrier/ent-exit-pair.jpg) |
+| West of the entry lane: path, lawn strip and plinth | [ent-west-pair.jpg](../picasso-car-park-barrier/ent-west-pair.jpg) |

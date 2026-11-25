@@ -11,18 +11,19 @@ Calle Pintor Picasso, the inner car-park access aisle and the Picasso car park.
 - 25 November 2026 (picasso-car-park-barrier): the security barrier at the north entrance is built from IMG_3131 as a shared asset (src/car-park-barrier.ts), closed: a white boom with red edges at about 1 m resting in the V fork of a red rest post with a black photocell box, and a red-white bollard just beyond. Ground-plane readings at an assumed 1.5 m eye height put the rest post 2.6 m ahead and 0.7 m right of the camera, so with the phone pin and compass it stands at about (-105.7, -64.8), good to about 5 m and 25 degrees. The pivot end and drive cabinet are out of frame (inferred). Open: the ground there is asphalt in the photo but terracotta in the model; the brick path, CALLE DE PICASSO plinth, lane separator and whether the other lane has a second barrier are not built (picasso-car-park-north-entrance-apron, gap:picasso-car-park-second-barrier, task picasso-car-park-north-entrance). IMG_3131's reviewed looksAt points about 23 degrees right of its compass heading; the brick path edge in the photo runs parallel to the car-park aisles only with the compass heading.
 - 25 November 2026 (later; Dave: there is a second barrier, with Street View from Calle Loira and Calle Bolivia, Oct 2024, and a Google 3D top-down screenshot, reference/google-maps/03-05, Imagery © Google): the north entrance has two lanes either side of the gatehouse island. The west lane, between the island and the narrow planter, is the entry (lane arrow inward); the east lane, between the island and the long wall's north end, is the exit (no-entry sign towards Bolivia). Each has a boom from a white drive cabinet about 1 m high on the island to a rest post; the entry rest post has a red-white bollard beyond it. Both are placed from the Google top-down view registered to the aerial (0.0385 m per pixel, wall north end on (-91.4, -67.8)), good to about 1.5 m: entry rest post (-110.46, -62.02), cabinet end (-104.95, -62.87), boom 5.6 m; exit rest post (-90.36, -64.84), cabinet end (-95.21, -64.22), boom 4.9 m. IMG_3131's pin was 5.5 m east; its camera is corrected to (-107.8, -61.9).
 - 25 November 2026 (picasso-car-park-north-entrance): the north entrance's ground is traced in data/ground_plan_picasso.json from Dave's Google 3D top-down screenshot registered to the aerial (about 1.5 m): asphalt round both lanes and west of the narrow planter (the model had generic terracotta), the gatehouse island with a terracotta apron and white kerb, its round lawn bed with a brick border, and the narrow planter with its kerb. The gatehouse (about 3.4 m square, 2.9 m high, white, flat-roofed, grilled window; not in the registry) is built plain from picasso_car_park.json. Still to build: the brick path, lawn strip and CALLE DE PICASSO plinth west of the entry lane, the ramp, the island's trees and palms, the planter's bougainvillea and notice pillar, and the signs.
+- 25 November 2026 (detail pass; Dave's Street View from Calle Bolivia, reference/google-maps/06-08, Oct 2024, Imagery © Google): the north entrance now has the gatehouse's arched grilled windows, blue plaque and sloping white wing walls; the STOP and ACCESO PLAYA signs on the island, the no-entry sign over the exit cabinet, the blue dead-end sign at the long wall's north end and the COMUNIDAD VILLACANA board; the notice pillar at the narrow planter; the island's strelitzias, sago palms, feathery tree and palm and the planter's bougainvillea; and west of the entry lane the terracotta path with its brick edge, the lawn strip, the CALLE DE PICASSO plinth and a lantern (data/picasso_entrance_details.json, data/ground_plan_picasso.json). All estimated. Still to build: the ramp between white walls with the CALLE JUAN GRIS plaque.
 
 ## Read first
 
 - docs: `docs/STREET_LAYOUT.md`, `docs/reviews/picasso-car-park/README.md`
-- data: `data/street_layout.json`, `data/picasso_service_road.json`, `data/picasso_car_park.json`, `data/ground_plan_picasso.json`
-- src: `src/picasso-service-road.ts`, `src/picasso-car-park.ts`, `src/car-park-barrier.ts`
+- data: `data/street_layout.json`, `data/picasso_service_road.json`, `data/picasso_car_park.json`, `data/ground_plan_picasso.json`, `data/picasso_entrance_details.json`
+- src: `src/picasso-service-road.ts`, `src/picasso-car-park.ts`, `src/car-park-barrier.ts`, `src/picasso-entrance-details.ts`
 - contact sheet: `reference/contact-sheets/picasso.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
 
-Layout: 27, Levels and slopes: 7, Facades and roofs: 10, Materials: 9, Planting: 9, Signs: 7, Views: 8
-30 reviewed, 0 suggested only by camera position.
+Layout: 29, Levels and slopes: 7, Facades and roofs: 11, Materials: 9, Planting: 11, Signs: 10, Views: 8
+33 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -33,7 +34,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | P2 | `ground-plan-picasso` | Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries (after ground-plan-framework) | open · placement: not-verified |  |
 | P2 | `path-network-inventory-picasso` [#132](https://github.com/daveyboyc/villacana-venture/issues/132) | Pintor Picasso and the car park: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P2 | `picasso-car-park-barrier` | Main car park: the security barrier at the north entrance (asset and placement) | in-progress · Claude · placement: not-verified | [IMG_3131](../../public/photos-ref/IMG_3131.jpg) |
-| P2 | `picasso-car-park-north-entrance` | Main car park north entrance: asphalt apron, lanes, separator and the CALLE DE PICASSO plinth | in-progress · Claude · placement: not-verified | [IMG_3131](../../public/photos-ref/IMG_3131.jpg), [IMG_3130](../../public/photos-ref/IMG_3130.jpg), `google-maps/03-street-view-loira-entry-barrier-2024-10.jpg`, `google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg`, `google-maps/05-3d-top-down-car-park-north-entrance.jpg` |
+| P2 | `picasso-car-park-north-entrance` | Main car park north entrance: asphalt apron, lanes, separator and the CALLE DE PICASSO plinth | in-progress · Claude · placement: not-verified | [IMG_3131](../../public/photos-ref/IMG_3131.jpg), [IMG_3130](../../public/photos-ref/IMG_3130.jpg), `google-maps/03-street-view-loira-entry-barrier-2024-10.jpg`, `google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg`, `google-maps/05-3d-top-down-car-park-north-entrance.jpg`, `google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg`, `google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg`, `google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg` |
 
 ## Built from these photos
 
@@ -58,30 +59,92 @@ graph LR
   F3 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
   F3 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
   F3 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  A --> F4["Exit barrier, east lane of the car park's north entrance, between the gatehouse island and the long wall · disputed"]
-  F4 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  A --> F4["Terracotta path between the entry lane and the lawn strip · unreviewed"]
+  F4 --> PIMG_3131_jpg(["IMG_3131"])
   F4 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  A --> F5["Gatehouse on the island between the car park's entry and exit lanes · unreviewed"]
-  F5 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
-  F5 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  A --> F5["Lawn strip west of the entry lane, with the CALLE DE PICASSO plinth · unreviewed"]
+  F5 --> PIMG_3131_jpg(["IMG_3131"])
   F5 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  A --> F6["Round hedged palm island in the main car park · unreviewed"]
-  F6 --> PIMG_3100_jpg(["IMG_3100"])
-  F6 --> PIMG_3189_jpg(["IMG_3189"])
-  A --> F7["Entry barrier, west lane of the car park's north entrance (boom, rest post and bollard) · disputed"]
-  F7 --> PIMG_3131_jpg(["IMG_3131"])
+  A --> F6["Exit barrier, east lane of the car park's north entrance, between the gatehouse island and the long wall · disputed"]
+  F6 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  F6 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  A --> F7["Gatehouse on the island between the car park's entry and exit lanes · unreviewed"]
   F7 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F7 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
   F7 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  A --> F8["Long white wall between the car park and Calle Pintor Picasso · unreviewed"]
-  F8 --> PIMG_3124_jpg(["IMG_3124"])
-  F8 --> PIMG_3125_jpg(["IMG_3125"])
-  F8 --> PIMG_3129_jpg(["IMG_3129"])
-  A --> F9["picasso boundary wall · unreviewed"]
-  F9 --> PIMG_2345_jpg(["IMG_2345"])
-  A --> F10["picasso stone plinth · unreviewed"]
-  F10 --> PIMG_2345_jpg(["IMG_2345"])
-  A --> F11["picasso utility front · unreviewed"]
-  F11 --> PIMG_2345_jpg(["IMG_2345"])
+  A --> F8["Round hedged palm island in the main car park · unreviewed"]
+  F8 --> PIMG_3100_jpg(["IMG_3100"])
+  F8 --> PIMG_3189_jpg(["IMG_3189"])
+  A --> F9["Entry barrier, west lane of the car park's north entrance (boom, rest post and bollard) · disputed"]
+  F9 --> PIMG_3131_jpg(["IMG_3131"])
+  F9 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F9 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  A --> F10["Long white wall between the car park and Calle Pintor Picasso · unreviewed"]
+  F10 --> PIMG_3124_jpg(["IMG_3124"])
+  F10 --> PIMG_3125_jpg(["IMG_3125"])
+  F10 --> PIMG_3129_jpg(["IMG_3129"])
+  A --> F11["North entrance · lantern by the plinth · unreviewed"]
+  F11 --> PIMG_3131_jpg(["IMG_3131"])
+  F11 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F11 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  F11 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  F11 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
+  F11 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
+  F11 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
+  A --> F12["North entrance · notice pillar at the narrow planter · unreviewed"]
+  F12 --> PIMG_3131_jpg(["IMG_3131"])
+  F12 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F12 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  F12 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  F12 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
+  F12 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
+  F12 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
+  A --> F13["North entrance · island strelitzias, cycads, tree and palm, planter bougainvillea · unreviewed"]
+  F13 --> PIMG_3131_jpg(["IMG_3131"])
+  F13 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F13 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  F13 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  F13 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
+  F13 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
+  F13 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
+  A --> F14["North entrance · CALLE DE PICASSO plinth · unreviewed"]
+  F14 --> PIMG_3131_jpg(["IMG_3131"])
+  F14 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F14 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  F14 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  F14 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
+  F14 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
+  F14 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
+  A --> F15["North entrance · STOP, beach, no-entry and dead-end signs and the community board · unreviewed"]
+  F15 --> PIMG_3131_jpg(["IMG_3131"])
+  F15 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F15 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  F15 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  F15 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
+  F15 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
+  F15 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
+  A --> F16["North entrance · gatehouse arched grilled windows · unreviewed"]
+  F16 --> PIMG_3131_jpg(["IMG_3131"])
+  F16 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F16 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  F16 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  F16 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
+  F16 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
+  F16 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
+  A --> F17["North entrance · gatehouse wing walls · unreviewed"]
+  F17 --> PIMG_3131_jpg(["IMG_3131"])
+  F17 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F17 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  F17 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  F17 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
+  F17 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
+  F17 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
+  A --> F18["picasso boundary wall · unreviewed"]
+  F18 --> PIMG_2345_jpg(["IMG_2345"])
+  A --> F19["picasso stone plinth · unreviewed"]
+  F19 --> PIMG_2345_jpg(["IMG_2345"])
+  A --> F20["picasso utility front · unreviewed"]
+  F20 --> PIMG_2345_jpg(["IMG_2345"])
 ```
 
 ## Placement evidence
@@ -94,11 +157,20 @@ graph LR
 | `ground_plan_picasso.json:picasso-gatehouse-island` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `ground_plan_picasso.json:picasso-gatehouse-lawn` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `ground_plan_picasso.json:picasso-north-entrance-asphalt` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `ground_plan_picasso.json:picasso-west-brick-path` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `ground_plan_picasso.json:picasso-west-lawn-strip` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `picasso_car_park.json:picasso-car-park-exit-barrier` | disputed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy picasso-car-park-north-entrance-apron |
 | `picasso_car_park.json:picasso-car-park-gatehouse` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `picasso_car_park.json:picasso-car-park-island` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `picasso_car_park.json:picasso-car-park-north-barrier` | disputed | differs | open discrepancy photo-discrepancy:00bed1bbb938338a; open model-loop discrepancy picasso-car-park-north-entrance-apron |
 | `picasso_car_park.json:picasso-car-park-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `picasso_entrance_details.json:lantern` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `picasso_entrance_details.json:pillar` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `picasso_entrance_details.json:planting` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `picasso_entrance_details.json:plinth` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `picasso_entrance_details.json:signs` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `picasso_entrance_details.json:windows` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `picasso_entrance_details.json:wings` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `picasso_service_road.json:picasso-boundary-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `picasso_service_road.json:picasso-stone-plinth` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `picasso_service_road.json:picasso-utility-front` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -118,9 +190,12 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| `reference/google-maps/05-3d-top-down-car-park-north-entrance.jpg` | aerial | layout | Google 3D top-down: the car park's north entrance with both barrier booms **Note:** Google Maps 3D view, nearly top-down and north-up, screenshot sent by Dave on 25 Nov 2026 (Imagery © Google 2026; capture date not shown). Shows the Calle Loira / Bolivia / Pintor Picasso junction, the gatehouse island (Villacana pin) with its round bed and terracotta apron, the narrow planter, the brick-and-lawn strip west of the entry lane, the long wall, and both closed booms as thin lines with their cabinets and post shadows. Registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8); features agree to about 1-2 m (data/picasso_car_park.json barriers). _Used by: picasso_car_park.json:picasso-car-park-gatehouse, picasso_car_park.json:picasso-car-park-north-barrier, picasso_car_park.json:picasso-car-park-exit-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-gatehouse-island, ground_plan_picasso.json:picasso-gatehouse-lawn, ground_plan_picasso.json:picasso-entry-planter._ |
-| `reference/google-maps/03-street-view-loira-entry-barrier-2024-10.jpg` | ground | layout, signage | Street View from Calle Loira into the car park: the entry barrier closed **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south into the car park's west (entry) lane: the red-and-white boom closed from a plain white drive cabinet about 1 m high on the gatehouse island (left) to a red rest post with a red-white bollard beyond it (right), a lane arrow by the rest post. Left: the gatehouse's grilled window, STOP sign, ACCESO PLAYA / TO THE BEACH sign, lawn with a brick-edged white kerb. Right: a white pillar with notices and a ZONA VIDEOVIGILADA sign, bougainvillea over the brick-edged narrow planter. _Used by: picasso_car_park.json:picasso-car-park-gatehouse, picasso_car_park.json:picasso-car-park-north-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-gatehouse-island, ground_plan_picasso.json:picasso-gatehouse-lawn, ground_plan_picasso.json:picasso-entry-planter._ |
-| `reference/google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg` | ground | layout, signage | Street View from Calle Bolivia: the exit barrier between the gatehouse island and the long wall **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south-west from Calle Bolivia: on the left the Calle Pintor Picasso service road runs down beside the long white wall; in the centre the east (exit) lane is closed by a red-and-white boom from a white drive cabinet on the gatehouse island, under a no-entry sign, to the wall's north end with a blue sign. Right: the gatehouse with its grilled window and the round island lawn on a brick-edged kerb; the entry barrier shows beyond it with its red-white posts and STOP sign. _Used by: picasso_car_park.json:picasso-car-park-gatehouse, picasso_car_park.json:picasso-car-park-exit-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-gatehouse-island._ |
+| `reference/google-maps/05-3d-top-down-car-park-north-entrance.jpg` | aerial | layout | Google 3D top-down: the car park's north entrance with both barrier booms **Note:** Google Maps 3D view, nearly top-down and north-up, screenshot sent by Dave on 25 Nov 2026 (Imagery © Google 2026; capture date not shown). Shows the Calle Loira / Bolivia / Pintor Picasso junction, the gatehouse island (Villacana pin) with its round bed and terracotta apron, the narrow planter, the brick-and-lawn strip west of the entry lane, the long wall, and both closed booms as thin lines with their cabinets and post shadows. Registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8); features agree to about 1-2 m (data/picasso_car_park.json barriers). _Used by: picasso_car_park.json:picasso-car-park-gatehouse, picasso_entrance_details.json:wings, picasso_entrance_details.json:plinth, picasso_entrance_details.json:windows, picasso_entrance_details.json:signs, picasso_entrance_details.json:pillar, picasso_entrance_details.json:lantern, picasso_entrance_details.json:planting, picasso_car_park.json:picasso-car-park-north-barrier, picasso_car_park.json:picasso-car-park-exit-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-gatehouse-island, ground_plan_picasso.json:picasso-gatehouse-lawn, ground_plan_picasso.json:picasso-entry-planter, ground_plan_picasso.json:picasso-west-lawn-strip, ground_plan_picasso.json:picasso-west-brick-path._ |
+| `reference/google-maps/03-street-view-loira-entry-barrier-2024-10.jpg` | ground | layout, signage | Street View from Calle Loira into the car park: the entry barrier closed **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south into the car park's west (entry) lane: the red-and-white boom closed from a plain white drive cabinet about 1 m high on the gatehouse island (left) to a red rest post with a red-white bollard beyond it (right), a lane arrow by the rest post. Left: the gatehouse's grilled window, STOP sign, ACCESO PLAYA / TO THE BEACH sign, lawn with a brick-edged white kerb. Right: a white pillar with notices and a ZONA VIDEOVIGILADA sign, bougainvillea over the brick-edged narrow planter. _Used by: picasso_car_park.json:picasso-car-park-gatehouse, picasso_entrance_details.json:wings, picasso_entrance_details.json:plinth, picasso_entrance_details.json:windows, picasso_entrance_details.json:signs, picasso_entrance_details.json:pillar, picasso_entrance_details.json:lantern, picasso_entrance_details.json:planting, picasso_car_park.json:picasso-car-park-north-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-gatehouse-island, ground_plan_picasso.json:picasso-gatehouse-lawn, ground_plan_picasso.json:picasso-entry-planter._ |
+| `reference/google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg` | ground | layout, signage | Street View from Calle Bolivia: the exit barrier between the gatehouse island and the long wall **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south-west from Calle Bolivia: on the left the Calle Pintor Picasso service road runs down beside the long white wall; in the centre the east (exit) lane is closed by a red-and-white boom from a white drive cabinet on the gatehouse island, under a no-entry sign, to the wall's north end with a blue sign. Right: the gatehouse with its grilled window and the round island lawn on a brick-edged kerb; the entry barrier shows beyond it with its red-white posts and STOP sign. _Used by: picasso_car_park.json:picasso-car-park-gatehouse, picasso_entrance_details.json:wings, picasso_entrance_details.json:plinth, picasso_entrance_details.json:windows, picasso_entrance_details.json:signs, picasso_entrance_details.json:pillar, picasso_entrance_details.json:lantern, picasso_entrance_details.json:planting, picasso_car_park.json:picasso-car-park-exit-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-gatehouse-island._ |
+| `reference/google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg` | ground | layout, planting, signage | Street View from Calle Bolivia: the gatehouse island's north side **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), phone screenshot sent by Dave on 25 Nov 2026. The island's round lawn bed on a brick border over a white kerb, a giant strelitzia clump and sago palms, the gatehouse's grilled window, and a white wing wall sloping down from the gatehouse towards the entry barrier with its STOP sign beyond. _Used by: picasso_entrance_details.json:wings, picasso_entrance_details.json:plinth, picasso_entrance_details.json:windows, picasso_entrance_details.json:signs, picasso_entrance_details.json:pillar, picasso_entrance_details.json:lantern, picasso_entrance_details.json:planting._ |
+| `reference/google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg` | ground | facades, planting, signage | Street View from Calle Bolivia: the gatehouse's arched grilled window **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), phone screenshot sent by Dave on 25 Nov 2026. The gatehouse's arched window with black bars and a blue plaque beside it, bougainvillea on its wall, strelitzias, a feathery-leaved tree, the COMUNIDAD VILLACANA board on posts at the left and the entry barrier's red-white posts beyond the bed. _Used by: picasso_entrance_details.json:wings, picasso_entrance_details.json:plinth, picasso_entrance_details.json:windows, picasso_entrance_details.json:signs, picasso_entrance_details.json:pillar, picasso_entrance_details.json:lantern, picasso_entrance_details.json:planting._ |
+| `reference/google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg` | ground | layout, signage | Street View from Calle Bolivia down the exit lane **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), phone screenshot sent by Dave on 25 Nov 2026. The exit lane closed by its boom from the grey cabinet, a no-entry sign above it, the blue dead-end sign and ACCESO PLAYA sign at the long wall's sloping north end, the COMUNIDAD VILLACANA board, the gatehouse window and a white wing wall with a brick-edged bed on the right. _Used by: picasso_entrance_details.json:wings, picasso_entrance_details.json:plinth, picasso_entrance_details.json:windows, picasso_entrance_details.json:signs, picasso_entrance_details.json:pillar, picasso_entrance_details.json:lantern, picasso_entrance_details.json:planting._ |
 | [IMG_2345.jpg](../../public/photos-ref/IMG_2345.jpg) | ground | layout, materials, levels | Pintor Picasso: service road, utility sheds and bins _Used by: picasso_service_road.json:picasso-utility-front, picasso_service_road.json:picasso-boundary-wall, picasso_service_road.json:picasso-stone-plinth._ |
 | [IMG_3100.jpg](../../public/photos-ref/IMG_3100.jpg) | ground | layout, planting, view | From the bin store looking north-west across the car park to the round palm island **Looks at:** round hedged palm island in the car park. **Note:** Round island ringed by a clipped hedge on a white kerb, with tall Canary/date palms, a candelabra euphorbia and a fan palm clump; cars parked round it. The bin store wall with its sign is at the right edge. _Used by: picasso_car_park.json:picasso-car-park-island._ |
 | [IMG_3129.jpg](../../public/photos-ref/IMG_3129.jpg) | ground | layout, materials, planting | Service road looking north: long white wall left, cypress hedge right **Looks at:** service road along the long wall. **Note:** The wall continues straight and plain to a white building at the north end; tall cypress and pine hedge on the right. _Used by: picasso_car_park.json:picasso-car-park-wall._ |

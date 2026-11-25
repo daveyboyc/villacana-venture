@@ -1624,6 +1624,50 @@
   ],
   "note": "Google Maps 3D view, nearly top-down and north-up, screenshot sent by Dave on 25 Nov 2026 (Imagery © Google 2026; capture date not shown). Shows the Calle Loira / Bolivia / Pintor Picasso junction, the gatehouse island (Villacana pin) with its round bed and terracotta apron, the narrow planter, the brick-and-lawn strip west of the entry lane, the long wall, and both closed booms as thin lines with their cabinets and post shadows. Registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8); features agree to about 1-2 m (data/picasso_car_park.json barriers)."
  },
+ "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg": {
+  "kind": "map-screenshot",
+  "title": "Street View from Calle Bolivia: the gatehouse island's north side",
+  "shows": [
+   "picasso",
+   "north-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "signage"
+  ],
+  "note": "Google Street View, image capture Oct 2024 (Imagery © Google), phone screenshot sent by Dave on 25 Nov 2026. The island's round lawn bed on a brick border over a white kerb, a giant strelitzia clump and sago palms, the gatehouse's grilled window, and a white wing wall sloping down from the gatehouse towards the entry barrier with its STOP sign beyond."
+ },
+ "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg": {
+  "kind": "map-screenshot",
+  "title": "Street View from Calle Bolivia: the gatehouse's arched grilled window",
+  "shows": [
+   "picasso",
+   "north-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "planting",
+   "signage"
+  ],
+  "note": "Google Street View, image capture Oct 2024 (Imagery © Google), phone screenshot sent by Dave on 25 Nov 2026. The gatehouse's arched window with black bars and a blue plaque beside it, bougainvillea on its wall, strelitzias, a feathery-leaved tree, the COMUNIDAD VILLACANA board on posts at the left and the entry barrier's red-white posts beyond the bed."
+ },
+ "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg": {
+  "kind": "map-screenshot",
+  "title": "Street View from Calle Bolivia down the exit lane",
+  "shows": [
+   "picasso",
+   "north-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "signage"
+  ],
+  "note": "Google Street View, image capture Oct 2024 (Imagery © Google), phone screenshot sent by Dave on 25 Nov 2026. The exit lane closed by its boom from the grey cabinet, a no-entry sign above it, the blue dead-end sign and ACCESO PLAYA sign at the long wall's sloping north end, the COMUNIDAD VILLACANA board, the gatehouse window and a white wing wall with a brick-edged bed on the right."
+ },
  "ref:photos/01-north-pool-lawn-ground-level-2021-04.png": {
   "kind": "own-photo",
   "title": "North pool lawn at ground level, April 2021. The key style reference.",

@@ -279,6 +279,16 @@ def features(s):
     add('picasso_car_park.json:'+isle['id'],'Round hedged palm island in the main car park','reference feature','aerial brightness profiles, about 0.5 m; unsolved IMG_3100',evidence=['IMG_3100.jpg','IMG_3189.jpg'],ring=[[round(isle['centre'][0]+isle['radius']*math.cos(i*math.pi/12),2),round(isle['centre'][1]+isle['radius']*math.sin(i*math.pi/12),2)] for i in range(24)])
     gh=car_park['gatehouse'] # the entrance island's gatehouse (not in the registry)
     add('picasso_car_park.json:'+gh['id'],gh['name'],'reference feature','Google 3D top-down screenshot registered to the aerial, about 1.5 m; Street View Oct 2024',evidence=gh['evidence'],ring=gh['ring'])
+    ent=json.loads((ROOT/'data/picasso_entrance_details.json').read_text()) # north entrance: wings, plinth, windows, signs, pillar, lantern, planting
+    gh_ring=car_park['gatehouse']['ring']
+    for key,name,geom in (('wings','North entrance · gatehouse wing walls',dict(points=[p for w in ent['wings'] for p in (w['from'],w['to'])])),
+                          ('plinth','North entrance · CALLE DE PICASSO plinth',dict(points=[ent['plinth']['at'],ent['plinth']['at']])),
+                          ('windows','North entrance · gatehouse arched grilled windows',dict(ring=gh_ring)),
+                          ('signs','North entrance · STOP, beach, no-entry and dead-end signs and the community board',dict(points=[s['at'] for s in ent['signs']])),
+                          ('pillar','North entrance · notice pillar at the narrow planter',dict(points=[ent['pillar']['at'],ent['pillar']['at']])),
+                          ('lantern','North entrance · lantern by the plinth',dict(points=[ent['lantern']['at'],ent['lantern']['at']])),
+                          ('planting','North entrance · island strelitzias, cycads, tree and palm, planter bougainvillea',dict(points=[p['at'] for p in ent['planting']]))):
+        add('picasso_entrance_details.json:'+key,name,'reference feature','Street View Oct 2024 and the registered Google 3D top-down view; positions about 1 m',evidence=ent['evidence'],**geom)
     for bar in car_park.get('barriers',[]): # the north-entrance security barrier (boom line, closed)
         add('picasso_car_park.json:'+bar['id'],bar['name'],'reference feature','phone pin (about 5 m) and ground-plane readings in unsolved IMG_3131; pivot end inferred',evidence=bar['evidence'],points=[bar['pivot'],bar['restPost']])
     garden=json.loads((ROOT/'data/cervantes_garden_door.json').read_text())

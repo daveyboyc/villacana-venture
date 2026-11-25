@@ -1,0 +1,56 @@
+{
+ "id": "picasso-entrance-details",
+ "name": "Main car park north entrance · gatehouse windows and wing walls, signs, plinth, lantern, notice pillar and planting",
+ "about": "Pieces at the car park's north entrance round the gatehouse island (data/picasso_car_park.json gatehouse, data/ground_plan_picasso.json). 'wings' and 'plinth' are structure, drawn in Layout; the rest is Show details. Positions are map metres (+x east, +z south); 'face' is the outward normal of a sign or plinth face as [x, z]. Read from Dave's Street View screenshots (Oct 2024, Imagery © Google, reference/google-maps/03, 04, 06-08), the Google 3D top-down view registered to the aerial (reference/google-maps/05, about 1.5 m) and IMG_3131. Drawn by src/picasso-entrance-details.ts.",
+ "evidence": [
+  "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+  "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+  "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+  "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+  "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+  "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+  "IMG_3131.jpg"
+ ],
+ "windows": [
+  {"id": "gatehouse-window-north-east", "face": [0, 1], "along": 0.5, "width": 1.1, "sill": 0.55, "height": 1.55,
+   "basis": "Arched window with black iron bars on the face towards Calle Bolivia, centred, its sill about knee height (Street View 06, 07, 08)."},
+  {"id": "gatehouse-window-north-west", "face": [3, 0], "along": 0.5, "width": 1.1, "sill": 0.55, "height": 1.55,
+   "basis": "A matching grilled window on the face towards Calle Loira (Street View 03); whether it is the same opening seen round the corner is not certain."}
+ ],
+ "plaque": {"face": [0, 1], "along": 0.85, "y": 1.35, "width": 0.3, "height": 0.4, "basis": "Small blue plaque right of the north-east window (Street View 07)."},
+ "wings": [
+  {"id": "gatehouse-wing-east", "from": [-97.96, -66.84], "to": [-95.94, -65.74], "heights": [1.6, 0.7], "thickness": 0.25,
+   "basis": "Sloping white wing wall continuing the gatehouse's north-east face towards the exit barrier's cabinet (Street View 06, 08). Length and heights judged against the cabinet and signs; estimated."},
+  {"id": "gatehouse-wing-west", "from": [-102.87, -65.68], "to": [-104.17, -63.78], "heights": [1.6, 0.7], "thickness": 0.25,
+   "basis": "Sloping white wing wall from the gatehouse's west corner towards the entry barrier's cabinet, beside the STOP sign (Street View 03, 06). Direction and length estimated."}
+ ],
+ "signs": [
+  {"id": "entry-stop-sign", "kind": "stop", "at": [-104.7, -65.1], "face": [-0.6, -0.8], "height": 2.1, "size": 0.6,
+   "basis": "STOP sign on the island beside the gatehouse, facing Calle Loira (Street View 03, 06; IMG_3131 shows the island edge)."},
+  {"id": "entry-beach-sign", "kind": "beach", "at": [-105.4, -66.0], "face": [-0.6, -0.8], "height": 1.3, "size": 0.9,
+   "basis": "White arrow sign ACCESO PLAYA / TO THE BEACH pointing left, on its own post on the island lawn (Street View 03)."},
+  {"id": "exit-no-entry-sign", "kind": "no-entry", "at": [-95.8, -64.9], "face": [0.3, -0.95], "height": 2.2, "size": 0.6,
+   "basis": "No-entry sign on a post above the exit barrier's cabinet, facing Calle Bolivia (Street View 04, 08)."},
+  {"id": "exit-dead-end-sign", "kind": "dead-end", "at": [-92.1, -68.4], "face": [0.3, -0.95], "height": 2.2, "size": 0.6,
+   "basis": "Blue dead-end (T) sign on a post at the long wall's north end, facing Calle Bolivia (Street View 08)."},
+  {"id": "community-board", "kind": "board", "at": [-96.95, -67.7], "face": [0.6, -0.8], "height": 1.75, "size": 1.0,
+   "basis": "Board on two posts reading COMUNIDAD VILLACANA with the community's emblem, at the island's north-east edge by the exit lane (Street View 07, 08)."}
+ ],
+ "pillar": {"id": "planter-notice-pillar", "at": [-111.3, -62.75], "face": [0.95, 0.3], "size": 0.45, "height": 1.7,
+   "basis": "White pillar at the narrow planter's south end carrying a notice sheet and a blue ZONA VIDEOVIGILADA plate, facing the entry lane (Street View 03)."},
+ "plinth": {"id": "calle-de-picasso-plinth", "at": [-116.4, -59.3], "face": [0.92, -0.39], "width": 1.35, "height": 0.95, "depth": 0.35, "text": "CALLE DE PICASSO",
+   "basis": "White rendered plinth with CALLE DE PICASSO in black tiles near its top, standing on the lawn strip facing the entry lane (IMG_3131). Position from the white block in the Google top-down view, within about 1 m of IMG_3131's corrected camera reading; size judged in IMG_3131."},
+ "lantern": {"id": "plinth-lantern", "at": [-117.4, -60.6],
+   "basis": "The resort's lantern post just behind and right of the plinth (IMG_3131), at the lawn strip's north end; position estimated."},
+ "planting": [
+  {"kind": "bird_of_paradise", "at": [-102.6, -68.6], "scale": 1.15, "basis": "Giant strelitzia clump in front of the north-east window (Street View 06, 07)."},
+  {"kind": "bird_of_paradise", "at": [-103.7, -67.5], "scale": 1.0, "basis": "Strelitzia west of the gatehouse (Street View 06, 07)."},
+  {"kind": "bird_of_paradise", "at": [-101.4, -69.8], "scale": 0.9, "basis": "Strelitzia on the north side of the bed (Street View 06)."},
+  {"kind": "cycad", "at": [-104.7, -68.4], "scale": 1.0, "basis": "Sago palms at the west end of the lawn bed (Street View 06)."},
+  {"kind": "cycad", "at": [-104.0, -70.1], "scale": 0.9, "basis": "Sago palms at the west end of the lawn bed (Street View 06)."},
+  {"kind": "feathery_tree", "at": [-98.6, -69.6], "scale": 0.85, "basis": "Feathery-leaved tree at the island's north-east, over the community board (Street View 07, 08; a crown in the Google top-down view)."},
+  {"kind": "palm", "at": [-100.4, -70.6], "scale": 1.0, "canopy": true, "basis": "Tall palm rising behind the feathery tree (Street View 07, 08)."},
+  {"kind": "bougainvillea", "at": [-112.7, -65.8], "scale": 0.8, "basis": "Bougainvillea in the narrow planter (Street View 03)."},
+  {"kind": "bougainvillea", "at": [-112.0, -63.8], "scale": 0.75, "basis": "Bougainvillea in the narrow planter (Street View 03; IMG_3131's pink flowers beyond the rest post)."}
+ ]
+}

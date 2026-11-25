@@ -6,9 +6,9 @@
   "needs-review": 274,
   "suggested": 368,
   "photos": 646,
-  "features": 543,
+  "features": 552,
   "photosCitedByModel": 258,
-  "modelFeaturesWithPhotoCitations": 286
+  "modelFeaturesWithPhotoCitations": 295
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -4104,6 +4104,111 @@
    ]
   },
   {
+   "id": "picasso_entrance_details.json:wings",
+   "name": "North entrance · gatehouse wing walls",
+   "kind": "reference feature",
+   "source": "Street View Oct 2024 and the registered Google 3D top-down view; positions about 1 m",
+   "evidence": [
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+    "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+    "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+    "IMG_3131.jpg"
+   ]
+  },
+  {
+   "id": "picasso_entrance_details.json:plinth",
+   "name": "North entrance · CALLE DE PICASSO plinth",
+   "kind": "reference feature",
+   "source": "Street View Oct 2024 and the registered Google 3D top-down view; positions about 1 m",
+   "evidence": [
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+    "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+    "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+    "IMG_3131.jpg"
+   ]
+  },
+  {
+   "id": "picasso_entrance_details.json:windows",
+   "name": "North entrance · gatehouse arched grilled windows",
+   "kind": "reference feature",
+   "source": "Street View Oct 2024 and the registered Google 3D top-down view; positions about 1 m",
+   "evidence": [
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+    "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+    "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+    "IMG_3131.jpg"
+   ]
+  },
+  {
+   "id": "picasso_entrance_details.json:signs",
+   "name": "North entrance · STOP, beach, no-entry and dead-end signs and the community board",
+   "kind": "reference feature",
+   "source": "Street View Oct 2024 and the registered Google 3D top-down view; positions about 1 m",
+   "evidence": [
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+    "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+    "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+    "IMG_3131.jpg"
+   ]
+  },
+  {
+   "id": "picasso_entrance_details.json:pillar",
+   "name": "North entrance · notice pillar at the narrow planter",
+   "kind": "reference feature",
+   "source": "Street View Oct 2024 and the registered Google 3D top-down view; positions about 1 m",
+   "evidence": [
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+    "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+    "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+    "IMG_3131.jpg"
+   ]
+  },
+  {
+   "id": "picasso_entrance_details.json:lantern",
+   "name": "North entrance · lantern by the plinth",
+   "kind": "reference feature",
+   "source": "Street View Oct 2024 and the registered Google 3D top-down view; positions about 1 m",
+   "evidence": [
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+    "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+    "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+    "IMG_3131.jpg"
+   ]
+  },
+  {
+   "id": "picasso_entrance_details.json:planting",
+   "name": "North entrance · island strelitzias, cycads, tree and palm, planter bougainvillea",
+   "kind": "reference feature",
+   "source": "Street View Oct 2024 and the registered Google 3D top-down view; positions about 1 m",
+   "evidence": [
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+    "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+    "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+    "IMG_3131.jpg"
+   ]
+  },
+  {
    "id": "picasso_car_park.json:picasso-car-park-north-barrier",
    "name": "Entry barrier, west lane of the car park's north entrance (boom, rest post and bollard)",
    "kind": "reference feature",
@@ -4743,6 +4848,26 @@
    "evidence": [
     "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
     "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "IMG_3131.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_picasso.json:picasso-west-lawn-strip",
+   "name": "Lawn strip west of the entry lane, with the CALLE DE PICASSO plinth",
+   "kind": "reference feature",
+   "source": "The narrow lawn between the brick path and the house gardens, with the white CALLE DE PICASSO plinth on it (IMG_3131). Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the aerial, about 1.5 m. It is cut short at the car-park outline's north edge, which overlies the rest (discrepancy picasso-car-park-west-edge-gardens).",
+   "evidence": [
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "IMG_3131.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_picasso.json:picasso-west-brick-path",
+   "name": "Terracotta path between the entry lane and the lawn strip",
+   "kind": "reference feature",
+   "source": "Terracotta tiles with a brick edge along the asphalt (IMG_3131); the photo shows octagon-pattern tiles, drawn here like the Juan Gris paving it joins at the north end. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the aerial, about 1.5 m.",
+   "evidence": [
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
     "IMG_3131.jpg"
    ]
   },
@@ -9653,6 +9778,21 @@
    "id": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
    "kind": "reference",
    "name": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg"
+  },
+  {
+   "id": "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+   "kind": "reference",
+   "name": "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg"
+  },
+  {
+   "id": "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+   "kind": "reference",
+   "name": "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg"
+  },
+  {
+   "id": "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+   "kind": "reference",
+   "name": "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg"
   },
   {
    "id": "ref:web/south-pool-01-looking-north-palm.jpg",
@@ -27659,6 +27799,48 @@
   },
   {
    "from": "photo:IMG_3131.jpg",
+   "to": "picasso_entrance_details.json:wings",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3131.jpg",
+   "to": "picasso_entrance_details.json:plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3131.jpg",
+   "to": "picasso_entrance_details.json:windows",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3131.jpg",
+   "to": "picasso_entrance_details.json:signs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3131.jpg",
+   "to": "picasso_entrance_details.json:pillar",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3131.jpg",
+   "to": "picasso_entrance_details.json:lantern",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3131.jpg",
+   "to": "picasso_entrance_details.json:planting",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3131.jpg",
    "to": "picasso_car_park.json:picasso-car-park-north-barrier",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -27672,6 +27854,18 @@
   {
    "from": "photo:IMG_3131.jpg",
    "to": "ground_plan_picasso.json:picasso-entry-planter",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3131.jpg",
+   "to": "ground_plan_picasso.json:picasso-west-lawn-strip",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3131.jpg",
+   "to": "ground_plan_picasso.json:picasso-west-brick-path",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -28977,6 +29171,48 @@
   },
   {
    "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:wings",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:windows",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:signs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:pillar",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:lantern",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:planting",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
    "to": "picasso_car_park.json:picasso-car-park-north-barrier",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -29013,6 +29249,48 @@
   },
   {
    "from": "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:wings",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:windows",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:signs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:pillar",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:lantern",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+   "to": "picasso_entrance_details.json:planting",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
    "to": "picasso_car_park.json:picasso-car-park-exit-barrier",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -29032,6 +29310,48 @@
   {
    "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
    "to": "picasso_car_park.json:picasso-car-park-gatehouse",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "picasso_entrance_details.json:wings",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "picasso_entrance_details.json:plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "picasso_entrance_details.json:windows",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "picasso_entrance_details.json:signs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "picasso_entrance_details.json:pillar",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "picasso_entrance_details.json:lantern",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "picasso_entrance_details.json:planting",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -29068,6 +29388,144 @@
   {
    "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
    "to": "ground_plan_picasso.json:picasso-entry-planter",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "ground_plan_picasso.json:picasso-west-lawn-strip",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "ground_plan_picasso.json:picasso-west-brick-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+   "to": "picasso_entrance_details.json:wings",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+   "to": "picasso_entrance_details.json:plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+   "to": "picasso_entrance_details.json:windows",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+   "to": "picasso_entrance_details.json:signs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+   "to": "picasso_entrance_details.json:pillar",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+   "to": "picasso_entrance_details.json:lantern",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+   "to": "picasso_entrance_details.json:planting",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+   "to": "picasso_entrance_details.json:wings",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+   "to": "picasso_entrance_details.json:plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+   "to": "picasso_entrance_details.json:windows",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+   "to": "picasso_entrance_details.json:signs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+   "to": "picasso_entrance_details.json:pillar",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+   "to": "picasso_entrance_details.json:lantern",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+   "to": "picasso_entrance_details.json:planting",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+   "to": "picasso_entrance_details.json:wings",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+   "to": "picasso_entrance_details.json:plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+   "to": "picasso_entrance_details.json:windows",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+   "to": "picasso_entrance_details.json:signs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+   "to": "picasso_entrance_details.json:pillar",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+   "to": "picasso_entrance_details.json:lantern",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+   "to": "picasso_entrance_details.json:planting",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

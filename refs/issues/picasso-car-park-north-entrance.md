@@ -7,8 +7,8 @@ Task `picasso-car-park-north-entrance` · area **Pintor Picasso and the car park
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/picasso.md` and the contact sheet `reference/contact-sheets/picasso.jpg`
 - docs: `docs/STREET_LAYOUT.md`, `docs/reviews/picasso-car-park/README.md`
-- data: `data/street_layout.json`, `data/picasso_service_road.json`, `data/picasso_car_park.json`, `data/ground_plan_picasso.json`
-- src: `src/picasso-service-road.ts`, `src/picasso-car-park.ts`, `src/car-park-barrier.ts`
+- data: `data/street_layout.json`, `data/picasso_service_road.json`, `data/picasso_car_park.json`, `data/ground_plan_picasso.json`, `data/picasso_entrance_details.json`
+- src: `src/picasso-service-road.ts`, `src/picasso-car-park.ts`, `src/car-park-barrier.ts`, `src/picasso-entrance-details.ts`
 
 ## Photos to build from
 
@@ -17,6 +17,9 @@ Task `picasso-car-park-north-entrance` · area **Pintor Picasso and the car park
 - `public/photos-ref/ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg`: Street View from Calle Loira into the car park: the entry barrier closed (ground)
 - `public/photos-ref/ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg`: Street View from Calle Bolivia: the exit barrier between the gatehouse island and the long wall (ground)
 - `public/photos-ref/ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg`: Google 3D top-down: the car park's north entrance with both barrier booms (aerial)
+- `public/photos-ref/ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg`: Street View from Calle Bolivia: the gatehouse island's north side (ground)
+- `public/photos-ref/ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg`: Street View from Calle Bolivia: the gatehouse's arched grilled window (ground)
+- `public/photos-ref/ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg`: Street View from Calle Bolivia down the exit lane (ground)
 
 ## Build
 

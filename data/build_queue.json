@@ -4061,7 +4061,10 @@
     "IMG_3130.jpg",
     "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
     "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
-    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg"
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+    "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+    "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg"
    ],
    "build": "Lay out the car park's north entrance between Calle Loira, Calle Bolivia and the planted island: the asphalt apron and its lanes, the white kerb nose and bougainvillea bed beside the barrier's rest post, the brick-edged terracotta path, lawn strip and CALLE DE PICASSO plinth, and the ramp between white walls. Then check both barriers (data/picasso_car_park.json barriers) against the traced lanes.",
    "avoid": "No change to Walk. Do not grade positions measured without a solved camera.",
@@ -4077,7 +4080,16 @@
     "ground_plan_picasso.json:picasso-gatehouse-island",
     "ground_plan_picasso.json:picasso-gatehouse-lawn",
     "ground_plan_picasso.json:picasso-entry-planter",
-    "picasso_car_park.json:picasso-car-park-gatehouse"
+    "picasso_car_park.json:picasso-car-park-gatehouse",
+    "ground_plan_picasso.json:picasso-west-lawn-strip",
+    "ground_plan_picasso.json:picasso-west-brick-path",
+    "picasso_entrance_details.json:wings",
+    "picasso_entrance_details.json:plinth",
+    "picasso_entrance_details.json:windows",
+    "picasso_entrance_details.json:signs",
+    "picasso_entrance_details.json:pillar",
+    "picasso_entrance_details.json:lantern",
+    "picasso_entrance_details.json:planting"
    ],
    "dependsOn": [],
    "status": "in-progress",

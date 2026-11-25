@@ -11,6 +11,42 @@
   "needs-photos": "Worth improving; more photos wanted."
  },
  "features": {
+  "ground_plan_picasso.json:picasso-west-lawn-strip": {
+   "level": "estimated",
+   "why": "Lawn strip with the plinth in IMG_3131; outline from the registered Google top-down view (about 1.5 m), cut short at the car-park outline."
+  },
+  "ground_plan_picasso.json:picasso-west-brick-path": {
+   "level": "estimated",
+   "why": "Terracotta path with a brick edge in IMG_3131; outline from the registered Google top-down view (about 1.5 m). The photo's octagon tiles are drawn as squares."
+  },
+  "picasso_entrance_details.json:wings": {
+   "level": "estimated",
+   "why": "Sloping white wing walls beside the gatehouse in Street View 03, 06 and 08 (Oct 2024); their direction, length and heights are judged, not measured."
+  },
+  "picasso_entrance_details.json:plinth": {
+   "level": "estimated",
+   "why": "CALLE DE PICASSO plinth photographed in IMG_3131; position from the Google top-down view, within about 1 m of the photo's corrected camera reading; size judged."
+  },
+  "picasso_entrance_details.json:windows": {
+   "level": "estimated",
+   "why": "Arched grilled windows on the gatehouse in Street View 03, 06-08; size and height judged against the signs and people-height posts."
+  },
+  "picasso_entrance_details.json:signs": {
+   "level": "estimated",
+   "why": "STOP, beach, no-entry and dead-end signs and the community board in Street View 03, 04, 07 and 08; positions read against the island, cabinets and wall end, about 1 m."
+  },
+  "picasso_entrance_details.json:pillar": {
+   "level": "estimated",
+   "why": "Notice pillar at the planter's south end in Street View 03; size judged."
+  },
+  "picasso_entrance_details.json:lantern": {
+   "level": "estimated",
+   "why": "Lantern post behind the plinth in IMG_3131; position estimated, about 1-2 m."
+  },
+  "picasso_entrance_details.json:planting": {
+   "level": "estimated",
+   "why": "Strelitzias, cycads, a feathery tree and a palm on the island and bougainvillea in the planter, in Street View 03 and 06-08; positions read by eye, about 1 m."
+  },
   "picasso_car_park.json:picasso-car-park-gatehouse": {
    "level": "estimated",
    "why": "White single-storey gatehouse with a grilled window in Street View from Calle Loira and Calle Bolivia (Oct 2024); not in the land registry. Footprint from the registered Google top-down view (about 1.5 m), height judged from the window (about 2.9 m)."
