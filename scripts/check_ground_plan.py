@@ -147,6 +147,7 @@ for path in files:
             lo, hi = HEIGHTS[e['kind']]
             h = e.get('height', DEFAULT_HEIGHT[e['kind']])
             assert lo <= h <= hi, f'{name}: {e["kind"]} height {h} outside {lo}-{hi} m'
+            assert 0 <= e.get('base', 0) <= 0.6, f'{name}: {e["kind"]} base {e.get("base")} outside 0-0.6 m'
             assert e.get('evidence') and e.get('note'), f'{name}: {e["kind"]} edge needs evidence and a note'
             if f['kind'] == 'path':
                 assert e.get('side', 'left') in ('left', 'right', 'both'), f'{name}: edge side'

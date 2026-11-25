@@ -6,9 +6,9 @@
   "needs-review": 274,
   "suggested": 368,
   "photos": 646,
-  "features": 538,
+  "features": 543,
   "photosCitedByModel": 258,
-  "modelFeaturesWithPhotoCitations": 281
+  "modelFeaturesWithPhotoCitations": 286
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -4093,6 +4093,17 @@
    ]
   },
   {
+   "id": "picasso_car_park.json:picasso-car-park-gatehouse",
+   "name": "Gatehouse on the island between the car park's entry and exit lanes",
+   "kind": "reference feature",
+   "source": "Google 3D top-down screenshot registered to the aerial, about 1.5 m; Street View Oct 2024",
+   "evidence": [
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg"
+   ]
+  },
+  {
    "id": "picasso_car_park.json:picasso-car-park-north-barrier",
    "name": "Entry barrier, west lane of the car park's north entrance (boom, rest post and bollard)",
    "kind": "reference feature",
@@ -4689,6 +4700,50 @@
    "source": "Photo-supported (IMG_2205 x 850-1200, y 600-700): continuous irregular pale stone paving from the lawn's east edge right up to the iron gate's foot (cast at about (-162.55..-161.8, 7.2-7.5)) and along the east block's face, where the model had the lane's terracotta squares and a generated wall and hedge. Raised over the lane mesh as the Calle Isabel paving is. Estimated: its south end, hidden by the yucca and the tree.",
    "evidence": [
     "IMG_2205.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_picasso.json:picasso-north-entrance-asphalt",
+   "name": "Car park north entrance: asphalt round the gatehouse island",
+   "kind": "reference feature",
+   "source": "Both lanes either side of the gatehouse island and the strip west of the narrow planter are asphalt in the photos (IMG_3131, Street View) and the Google view, joining Calle Loira and Calle Bolivia to the car park. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8), good to about 1.5 m. Its north edge runs just under the road ribbons; its south edge is the car-park outline's north edge, its east edge the long wall's inner face, its west edge the brick strip's east edge. The model drew this as generic terracotta before. The gatehouse island and the narrow planter are cut out of it and stand raised in the holes.",
+   "evidence": [
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+    "IMG_3131.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_picasso.json:picasso-gatehouse-island",
+   "name": "Gatehouse island: terracotta apron on a white kerb",
+   "kind": "reference feature",
+   "source": "The island between the entry and exit lanes: a round lawn bed to the north, the gatehouse in the middle and a terracotta apron to the south and east, where both barrier cabinets stand. White kerbs in Street View from Calle Loira. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8), good to about 1.5 m. The apron stands at the kerb top, about 0.15 m above the asphalt.",
+   "evidence": [
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_picasso.json:picasso-gatehouse-lawn",
+   "name": "Gatehouse island: round lawn bed",
+   "kind": "reference feature",
+   "source": "Lawn round the gatehouse's north and west sides under trees and palms; a brick border on a white kerb faces the entry lane (Street View from Calle Loira; Google view). The trees and palms are left for the detail stage. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8), good to about 1.5 m.",
+   "evidence": [
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_picasso.json:picasso-entry-planter",
+   "name": "Narrow planter west of the entry lane",
+   "kind": "reference feature",
+   "source": "A narrow bed about 5 m long with a brick-edged white kerb and bougainvillea, its south tip just north of the entry barrier's bollard (Street View from Calle Loira, IMG_3131's white kerb nose; Google view). The white pillar with notices at its south end and the planting are left for the detail stage. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8), good to about 1.5 m.",
+   "evidence": [
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "IMG_3131.jpg"
    ]
   },
   {
@@ -27609,6 +27664,18 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_3131.jpg",
+   "to": "ground_plan_picasso.json:picasso-north-entrance-asphalt",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3131.jpg",
+   "to": "ground_plan_picasso.json:picasso-entry-planter",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3132.jpg",
    "to": "street:loira",
    "relation": "camera-nearby",
@@ -28904,7 +28971,43 @@
   },
   {
    "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+   "to": "picasso_car_park.json:picasso-car-park-gatehouse",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
    "to": "picasso_car_park.json:picasso-car-park-north-barrier",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+   "to": "ground_plan_picasso.json:picasso-north-entrance-asphalt",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+   "to": "ground_plan_picasso.json:picasso-gatehouse-island",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+   "to": "ground_plan_picasso.json:picasso-gatehouse-lawn",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+   "to": "ground_plan_picasso.json:picasso-entry-planter",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+   "to": "picasso_car_park.json:picasso-car-park-gatehouse",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -28915,6 +29018,24 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+   "to": "ground_plan_picasso.json:picasso-north-entrance-asphalt",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+   "to": "ground_plan_picasso.json:picasso-gatehouse-island",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "picasso_car_park.json:picasso-car-park-gatehouse",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
    "to": "picasso_car_park.json:picasso-car-park-north-barrier",
    "relation": "cited-as-source",
@@ -28923,6 +29044,30 @@
   {
    "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
    "to": "picasso_car_park.json:picasso-car-park-exit-barrier",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "ground_plan_picasso.json:picasso-north-entrance-asphalt",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "ground_plan_picasso.json:picasso-gatehouse-island",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "ground_plan_picasso.json:picasso-gatehouse-lawn",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "to": "ground_plan_picasso.json:picasso-entry-planter",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

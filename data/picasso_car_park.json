@@ -102,5 +102,34 @@
    "cabinetSide": "north",
    "trust": "Estimated. Street View from Calle Bolivia (Oct 2024, Imagery © Google) shows the east lane closed by a red-and-white boom from a white drive cabinet on the gatehouse island, under a no-entry sign (so this lane is the exit), to the north end of the long wall. Its parts are taken to match the entry barrier; its rest post is not seen close up and no bollard shows beside it. Ends: the boom and the cabinet in the Google top-down view. Registered from Dave's Google Maps 3D top-down screenshot (reference/google-maps/05-3d-top-down-car-park-north-entrance.jpg, Imagery © Google 2026; taken 25 Nov 2026, capture date not shown): north-up, 0.0385 m per pixel (car lengths 0.040, island-to-wall 0.044), the long wall's north end on its aerial position (-91.4, -67.8); the gatehouse island, narrow planter, brick-and-lawn strip and wall line then sit within about 1-2 m of the Esri aerial. Good to about 1.5 m and 5 degrees."
   }
- ]
+ ],
+ "gatehouse": {
+  "id": "picasso-car-park-gatehouse",
+  "name": "Gatehouse on the island between the car park's entry and exit lanes",
+  "ring": [
+   [
+    -100.95,
+    -68.47
+   ],
+   [
+    -97.96,
+    -66.84
+   ],
+   [
+    -99.79,
+    -63.95
+   ],
+   [
+    -102.87,
+    -65.68
+   ]
+  ],
+  "height": 2.9,
+  "evidence": [
+   "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+   "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+   "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg"
+  ],
+  "trust": "Estimated. A small white single-storey building with a flat roof and a large grilled window facing the entry lane, in Street View from Calle Loira and Calle Bolivia (Oct 2024, Imagery © Google); it is the Villacana pin in Google Maps and is not in the land registry. Footprint about 3.4 m square from Dave's Google 3D top-down screenshot registered to the aerial (about 1.5 m); height about 2.9 m judged from the window and the people-height signs beside it. Built plain: the window grille, door and signs are left for the detail stage."
+ }
 }

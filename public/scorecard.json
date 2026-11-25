@@ -1866,7 +1866,7 @@
     "generated": 274
    },
    "placement": {
-    "features": 7,
+    "features": 12,
     "verified": 0,
     "disputed": 2
    },
@@ -1877,8 +1877,8 @@
     }
    ],
    "tasks": {
-    "open": 3,
-    "inProgress": 1,
+    "open": 2,
+    "inProgress": 2,
     "titles": [
      "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory",
      "Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries",
@@ -1887,7 +1887,7 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 7,
+    "estimated": 12,
     "inferred": 0,
     "registry": 0,
     "gaps": 0
@@ -1897,14 +1897,14 @@
     "Footprints: 46% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 25, 25 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
-    "How sure: 0 photographed, 7 estimated, 0 inferred.",
-    "Placement: 0 of 7 features verified, 1 open discrepancy.",
-    "Model loop: 0 tracked findings accepted, 10 still open; 5 evidence requests. This is not whole-area acceptance."
+    "How sure: 0 photographed, 12 estimated, 0 inferred.",
+    "Placement: 0 of 12 features verified, 1 open discrepancy.",
+    "Model loop: 0 tracked findings accepted, 10 still open; 4 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 3,
-     "needs-evidence": 7,
+     "ready": 4,
+     "needs-evidence": 6,
      "needs-source-access": 0,
      "awaiting-review": 0,
      "accepted": 0
@@ -1961,23 +1961,6 @@
       "state": "open"
      },
      {
-      "id": "picasso-car-park-north-entrance",
-      "area": "picasso",
-      "kind": "photo",
-      "ask": "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame.",
-      "why": "IMG_3130 and IMG_3131 have pins ±5-21 m; which corner the barrier and plinth stand on is not settled",
-      "photoRequest": "picasso-car-park-north-entrance",
-      "features": [
-       "parking:Picasso car park",
-       "street:picasso"
-      ],
-      "status": "open",
-      "sources": [
-       "map:ground"
-      ],
-      "state": "open"
-     },
-     {
       "id": "picasso-car-park-south-end",
       "area": "picasso",
       "kind": "photo",
@@ -1997,11 +1980,11 @@
       "state": "open"
      }
     ],
-    "readyTasks": 3
+    "readyTasks": 2
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 5 spots",
+    "headline": "Photos needed: 4 spots",
     "requests": [
      {
       "id": "picasso-car-park-centre-row",
@@ -2032,22 +2015,6 @@
       "ask": "Standing in the accessible bays at the car park's south end, photograph the tiled step square-on with both ends in frame; then walk up onto it and photograph where the walk divides round the hedged palm bed, once to each side, with the community office in frame.",
       "why": "the step's ends, its height and the walk's layout around the planted bed are not fixed by the current pins and the aerial",
       "priority": 1,
-      "state": "open",
-      "photos": []
-     },
-     {
-      "id": "picasso-car-park-north-entrance",
-      "at": [
-       -95.0,
-       -62.0
-      ],
-      "look": [
-       -105.0,
-       -66.0
-      ],
-      "ask": "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame.",
-      "why": "IMG_3130 and IMG_3131 have pins ±5-21 m; which corner the barrier and plinth stand on is not settled",
-      "priority": 2,
       "state": "open",
       "photos": []
      },
@@ -3377,7 +3344,7 @@
     "generated": 2452
    },
    "placement": {
-    "features": 538,
+    "features": 543,
     "verified": 0,
     "disputed": 61
    },
@@ -3600,8 +3567,8 @@
     }
    ],
    "tasks": {
-    "open": 53,
-    "inProgress": 60,
+    "open": 52,
+    "inProgress": 61,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -3610,7 +3577,7 @@
    },
    "confidence": {
     "photographed": 95,
-    "estimated": 192,
+    "estimated": 197,
     "inferred": 19,
     "registry": 232,
     "gaps": 41
@@ -3620,14 +3587,14 @@
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 662, 642 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 95 photographed, 192 estimated, 19 inferred, 41 known gaps.",
-    "Placement: 0 of 538 features verified, 54 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 37 still open; 54 evidence requests. This is not whole-area acceptance."
+    "How sure: 95 photographed, 197 estimated, 19 inferred, 41 known gaps.",
+    "Placement: 0 of 543 features verified, 54 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 37 still open; 53 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 22,
-     "needs-evidence": 12,
+     "ready": 23,
+     "needs-evidence": 11,
      "needs-source-access": 0,
      "awaiting-review": 3,
      "accepted": 0
@@ -3772,23 +3739,6 @@
       "ask": "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot.",
       "why": "the wall's height and its car-park side are only seen from the road",
       "photoRequest": "picasso-car-park-wall-inner-face",
-      "features": [
-       "parking:Picasso car park",
-       "street:picasso"
-      ],
-      "status": "open",
-      "sources": [
-       "map:ground"
-      ],
-      "state": "open"
-     },
-     {
-      "id": "picasso-car-park-north-entrance",
-      "area": "picasso",
-      "kind": "photo",
-      "ask": "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame.",
-      "why": "IMG_3130 and IMG_3131 have pins ±5-21 m; which corner the barrier and plinth stand on is not settled",
-      "photoRequest": "picasso-car-park-north-entrance",
       "features": [
        "parking:Picasso car park",
        "street:picasso"
@@ -4417,11 +4367,11 @@
       "state": "open"
      }
     ],
-    "readyTasks": 41
+    "readyTasks": 40
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 43 spots",
+    "headline": "Photos needed: 42 spots",
     "requests": [
      {
       "id": "alberto",
@@ -4995,22 +4945,6 @@
       ],
       "ask": "At the east end of the sandstone wall by Calle Guillermo, side-on: paseo surface, wall foot, top and the garden behind, with a person beside the wall for scale.",
       "why": "levels item paseo-east-end-height; the survey shows little or no step there",
-      "priority": 2,
-      "state": "open",
-      "photos": []
-     },
-     {
-      "id": "picasso-car-park-north-entrance",
-      "at": [
-       -95.0,
-       -62.0
-      ],
-      "look": [
-       -105.0,
-       -66.0
-      ],
-      "ask": "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame.",
-      "why": "IMG_3130 and IMG_3131 have pins ±5-21 m; which corner the barrier and plinth stand on is not settled",
       "priority": 2,
       "state": "open",
       "photos": []

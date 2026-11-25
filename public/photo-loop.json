@@ -3377,8 +3377,8 @@
    "id": "picasso",
    "name": "Pintor Picasso and the car park",
    "counts": {
-    "ready": 3,
-    "needs-evidence": 7,
+    "ready": 4,
+    "needs-evidence": 6,
     "needs-source-access": 0,
     "awaiting-review": 0,
     "accepted": 0
@@ -3601,11 +3601,9 @@
       "picasso_car_park.json:picasso-car-park-north-barrier",
       "picasso_car_park.json:picasso-car-park-exit-barrier"
      ],
-     "note": "25 Nov 2026: found when placing the barrier (docs/reviews/picasso-car-park-barrier). Needs the north-entrance layout (aisles either side of the planted island, the separator, the asphalt apron to Calle Loira and Calle Bolivia) traced from a solved camera or the requested view (picasso-car-park-north-entrance) before it is built.",
-     "state": "needs-evidence",
-     "blockers": [
-      "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame."
-     ]
+     "note": "25 Nov 2026: found when placing the barrier (docs/reviews/picasso-car-park-barrier). Needs the north-entrance layout (aisles either side of the planted island, the separator, the asphalt apron to Calle Loira and Calle Bolivia) traced from a solved camera or the requested view (picasso-car-park-north-entrance) before it is built. 25 Nov (later): the asphalt round both lanes, the gatehouse island (terracotta apron, lawn bed, white kerbs), the gatehouse and the narrow planter are now built from the registered Google top-down view (data/ground_plan_picasso.json, picasso_car_park.json gatehouse). Still missing: the brick path, lawn strip and CALLE DE PICASSO plinth west of the entry lane, the ramp between white walls, the island's trees and palms, the planter's bougainvillea and notice pillar, and the STOP, ACCESO PLAYA and no-entry signs.",
+     "state": "ready",
+     "blockers": []
     }
    ],
    "requests": [
@@ -3649,23 +3647,6 @@
      "ask": "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot.",
      "why": "the wall's height and its car-park side are only seen from the road",
      "photoRequest": "picasso-car-park-wall-inner-face",
-     "features": [
-      "parking:Picasso car park",
-      "street:picasso"
-     ],
-     "status": "open",
-     "sources": [
-      "map:ground"
-     ],
-     "state": "open"
-    },
-    {
-     "id": "picasso-car-park-north-entrance",
-     "area": "picasso",
-     "kind": "photo",
-     "ask": "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame.",
-     "why": "IMG_3130 and IMG_3131 have pins ±5-21 m; which corner the barrier and plinth stand on is not settled",
-     "photoRequest": "picasso-car-park-north-entrance",
      "features": [
       "parking:Picasso car park",
       "street:picasso"
@@ -3834,13 +3815,6 @@
     {
      "id": "path-network-inventory-picasso",
      "title": "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory",
-     "priority": 2,
-     "dependencies": [],
-     "requests": []
-    },
-    {
-     "id": "picasso-car-park-north-entrance",
-     "title": "Main car park north entrance: asphalt apron, lanes, separator and the CALLE DE PICASSO plinth",
      "priority": 2,
      "dependencies": [],
      "requests": []
@@ -6637,8 +6611,8 @@
    "id": "whole-resort",
    "name": "The whole resort",
    "counts": {
-    "ready": 22,
-    "needs-evidence": 12,
+    "ready": 23,
+    "needs-evidence": 11,
     "needs-source-access": 0,
     "awaiting-review": 3,
     "accepted": 0
@@ -7485,11 +7459,9 @@
       "picasso_car_park.json:picasso-car-park-north-barrier",
       "picasso_car_park.json:picasso-car-park-exit-barrier"
      ],
-     "note": "25 Nov 2026: found when placing the barrier (docs/reviews/picasso-car-park-barrier). Needs the north-entrance layout (aisles either side of the planted island, the separator, the asphalt apron to Calle Loira and Calle Bolivia) traced from a solved camera or the requested view (picasso-car-park-north-entrance) before it is built.",
-     "state": "needs-evidence",
-     "blockers": [
-      "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame."
-     ]
+     "note": "25 Nov 2026: found when placing the barrier (docs/reviews/picasso-car-park-barrier). Needs the north-entrance layout (aisles either side of the planted island, the separator, the asphalt apron to Calle Loira and Calle Bolivia) traced from a solved camera or the requested view (picasso-car-park-north-entrance) before it is built. 25 Nov (later): the asphalt round both lanes, the gatehouse island (terracotta apron, lawn bed, white kerbs), the gatehouse and the narrow planter are now built from the registered Google top-down view (data/ground_plan_picasso.json, picasso_car_park.json gatehouse). Still missing: the brick path, lawn strip and CALLE DE PICASSO plinth west of the entry lane, the ramp between white walls, the island's trees and palms, the planter's bougainvillea and notice pillar, and the STOP, ACCESO PLAYA and no-entry signs.",
+     "state": "ready",
+     "blockers": []
     }
    ],
    "requests": [
@@ -7632,23 +7604,6 @@
      "ask": "From the central aisle, 8-10 m back from the long white wall, photograph its inner (car-park) face square-on with a person or car for scale; then one along it from each end, showing any kerb or footway at its foot.",
      "why": "the wall's height and its car-park side are only seen from the road",
      "photoRequest": "picasso-car-park-wall-inner-face",
-     "features": [
-      "parking:Picasso car park",
-      "street:picasso"
-     ],
-     "status": "open",
-     "sources": [
-      "map:ground"
-     ],
-     "state": "open"
-    },
-    {
-     "id": "picasso-car-park-north-entrance",
-     "area": "picasso",
-     "kind": "photo",
-     "ask": "From inside the car park at its north end, photograph the barrier, the CALLE DE PICASSO plinth and the road it opens onto, with the end of the long wall in frame.",
-     "why": "IMG_3130 and IMG_3131 have pins ±5-21 m; which corner the barrier and plinth stand on is not settled",
-     "photoRequest": "picasso-car-park-north-entrance",
      "features": [
       "parking:Picasso car park",
       "street:picasso"
@@ -11859,13 +11814,6 @@
     {
      "id": "patricia-passage-reference-pack",
      "title": "Patricia covered passage: trace the arch chain from the CALLE DE PATRICIA arch to the Silvia 22-44 mouth",
-     "priority": 2,
-     "dependencies": [],
-     "requests": []
-    },
-    {
-     "id": "picasso-car-park-north-entrance",
-     "title": "Main car park north entrance: asphalt apron, lanes, separator and the CALLE DE PICASSO plinth",
      "priority": 2,
      "dependencies": [],
      "requests": []

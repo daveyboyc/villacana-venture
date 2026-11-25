@@ -14,6 +14,7 @@ import type { Vec2 } from "./types";
 const wall = data.wall, island = data.island;
 type Barrier = { id: string; restPost: Vec2; pivot: Vec2; armLength: number; bollard: Vec2 | null; cabinetSide: string };
 const barriers = data.barriers as unknown as Barrier[];
+const gatehouse = data.gatehouse as unknown as { id: string; ring: Vec2[]; height: number };
 /** The car-park and road paving is drawn this far above the terrain (boundaries.ts); kerb and wall heights are measured from it. */
 const PAVING = 0.27;
 const wallPoints = wall.points as Vec2[];
@@ -45,12 +46,13 @@ function cabinetCentre(b: Barrier): Vec2 {
 /** Collision for the wall, the island (kerb and bed together) and the barrier's fixed posts and cabinet; the boom lifts, so it is left open. */
 export function picassoCarParkRings(): Vec2[][] {
   const posts = barriers.flatMap((b) => [circle(BARRIER_POST_RADIUS, 8, b.restPost), ...(b.bollard ? [circle(BARRIER_POST_RADIUS, 8, b.bollard)] : []), circle(CABINET_RADIUS, 8, cabinetCentre(b))]);
-  return [...wallPoints.slice(1).map((b, i) => strip(wallPoints[i], b, wall.thickness)), circle(island.radius, 24), ...posts];
+  return [...wallPoints.slice(1).map((b, i) => strip(wallPoints[i], b, wall.thickness)), circle(island.radius, 24), ...posts, gatehouse.ring];
 }
 
 /** Plan outlines for the map: the wall strip, the island and each barrier's boom line with its posts. */
-export function picassoCarParkPlan(): { wall: Vec2[][]; island: Vec2[]; barriers: { id: string; boom: Vec2[]; posts: Vec2[] }[] } {
+export function picassoCarParkPlan(): { wall: Vec2[][]; island: Vec2[]; gatehouse: Vec2[]; barriers: { id: string; boom: Vec2[]; posts: Vec2[] }[] } {
   return {
+    gatehouse: gatehouse.ring,
     wall: wallPoints.slice(1).map((b, i) => strip(wallPoints[i], b, wall.thickness)), island: circle(island.radius),
     barriers: barriers.map((b) => ({ id: b.id, boom: [b.pivot, b.restPost], posts: [b.restPost, ...(b.bollard ? [b.bollard] : []), cabinetCentre(b)] })),
   };
@@ -126,5 +128,12 @@ export function addPicassoCarPark(scene: THREE.Scene): void {
       group.add(bollard);
     }
   }
+  // The gatehouse on the entrance island: a plain white block standing on the paving, flat-roofed.
+  const footY = Math.min(...gatehouse.ring.map(([x, z]) => siteY(x, z))) + PAVING - 0.1;
+  const shape = new THREE.Shape(gatehouse.ring.map(([x, z]) => new THREE.Vector2(x, -z)));
+  const block = new THREE.Mesh(new THREE.ExtrudeGeometry(shape, { depth: gatehouse.height + 0.1, bevelEnabled: false }), white);
+  block.rotation.x = -Math.PI / 2; block.position.y = footY;
+  block.name = gatehouse.id; block.castShadow = block.receiveShadow = true;
+  group.add(block);
   scene.add(group);
 }

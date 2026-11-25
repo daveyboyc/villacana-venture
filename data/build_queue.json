@@ -4058,7 +4058,10 @@
    "title": "Main car park north entrance: asphalt apron, lanes, separator and the CALLE DE PICASSO plinth",
    "photos": [
     "IMG_3131.jpg",
-    "IMG_3130.jpg"
+    "IMG_3130.jpg",
+    "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+    "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg"
    ],
    "build": "Lay out the car park's north entrance between Calle Loira, Calle Bolivia and the planted island: the asphalt apron and its lanes, the white kerb nose and bougainvillea bed beside the barrier's rest post, the brick-edged terracotta path, lawn strip and CALLE DE PICASSO plinth, and the ramp between white walls. Then check both barriers (data/picasso_car_park.json barriers) against the traced lanes.",
    "avoid": "No change to Walk. Do not grade positions measured without a solved camera.",
@@ -4069,11 +4072,16 @@
    ],
    "features": [
     "parking:Picasso car park",
-    "picasso_car_park.json:picasso-car-park-north-barrier"
+    "picasso_car_park.json:picasso-car-park-north-barrier",
+    "ground_plan_picasso.json:picasso-north-entrance-asphalt",
+    "ground_plan_picasso.json:picasso-gatehouse-island",
+    "ground_plan_picasso.json:picasso-gatehouse-lawn",
+    "ground_plan_picasso.json:picasso-entry-planter",
+    "picasso_car_park.json:picasso-car-park-gatehouse"
    ],
    "dependsOn": [],
-   "status": "open",
-   "owner": null
+   "status": "in-progress",
+   "owner": "Claude"
   }
  ]
 }

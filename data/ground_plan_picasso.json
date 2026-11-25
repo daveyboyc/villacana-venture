@@ -1,0 +1,323 @@
+{
+  "about": "Ground plan for the Picasso area (docs/SMOOTH_PATHS.md, drawn by src/ground-plan.ts, checked by scripts/check_ground_plan.py). World metres: x east, z south. So far the car park's north entrance: its asphalt, the gatehouse island and the narrow planter.",
+  "area": "picasso",
+  "trust": "The north entrance is traced from Dave's Google 3D top-down screenshot registered to the aerial (about 1.5 m) and read against Street View from Calle Loira and Calle Bolivia (Oct 2024) and IMG_3131. The apron's road-side edges follow the mapped Loira and Bolivia ribbons.",
+  "surfaces": [
+    {
+      "id": "picasso-north-entrance-asphalt",
+      "name": "Car park north entrance: asphalt round the gatehouse island",
+      "kind": "apron",
+      "finish": "asphalt",
+      "outline": [
+        [
+          -114.8,
+          -62.6
+        ],
+        [
+          -114.6,
+          -66.48
+        ],
+        [
+          -108.0,
+          -70.41
+        ],
+        [
+          -106.5,
+          -71.76
+        ],
+        [
+          -90.4,
+          -78.72
+        ],
+        [
+          -91.55,
+          -67.75
+        ],
+        [
+          -90.07,
+          -65.2
+        ],
+        [
+          -111.68,
+          -54.57
+        ]
+      ],
+      "corners": 0.3,
+      "hard": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "note": "Both lanes either side of the gatehouse island and the strip west of the narrow planter are asphalt in the photos (IMG_3131, Street View) and the Google view, joining Calle Loira and Calle Bolivia to the car park. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8), good to about 1.5 m. Its north edge runs just under the road ribbons; its south edge is the car-park outline's north edge, its east edge the long wall's inner face, its west edge the brick strip's east edge. The model drew this as generic terracotta before. The gatehouse island and the narrow planter are cut out of it and stand raised in the holes.",
+      "evidence": [
+        "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+        "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+        "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+        "IMG_3131.jpg"
+      ],
+      "traced": "map:ground",
+      "cut": [
+        "surface:picasso-gatehouse-island",
+        "surface:picasso-entry-planter"
+      ]
+    },
+    {
+      "id": "picasso-gatehouse-island",
+      "name": "Gatehouse island: terracotta apron on a white kerb",
+      "kind": "patio",
+      "finish": "terracotta-squares",
+      "outline": [
+        [
+          -106.2,
+          -66.8
+        ],
+        [
+          -106.2,
+          -68.2
+        ],
+        [
+          -105.6,
+          -70.3
+        ],
+        [
+          -104.0,
+          -71.4
+        ],
+        [
+          -102.1,
+          -71.8
+        ],
+        [
+          -100.0,
+          -71.6
+        ],
+        [
+          -98.3,
+          -70.9
+        ],
+        [
+          -97.4,
+          -69.5
+        ],
+        [
+          -96.6,
+          -67.5
+        ],
+        [
+          -95.4,
+          -65.3
+        ],
+        [
+          -95.5,
+          -63.6
+        ],
+        [
+          -104.2,
+          -62.6
+        ],
+        [
+          -104.8,
+          -63.0
+        ],
+        [
+          -105.6,
+          -64.6
+        ]
+      ],
+      "corners": 0.8,
+      "hard": [
+        10,
+        11
+      ],
+      "note": "The island between the entry and exit lanes: a round lawn bed to the north, the gatehouse in the middle and a terracotta apron to the south and east, where both barrier cabinets stand. White kerbs in Street View from Calle Loira. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8), good to about 1.5 m. The apron stands at the kerb top, about 0.15 m above the asphalt.",
+      "evidence": [
+        "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+        "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+        "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg"
+      ],
+      "traced": "map:ground",
+      "edges": [
+        {
+          "kind": "kerb",
+          "from": 0,
+          "to": 14,
+          "height": 0.15,
+          "note": "White kerb round the island, standing about 0.15 m on the asphalt (Street View from Calle Loira and Calle Bolivia); its height is a guess.",
+          "evidence": [
+            "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+            "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg"
+          ],
+          "base": 0.27
+        }
+      ],
+      "raise": 0.365,
+      "above": [
+        "picasso-north-entrance-asphalt"
+      ],
+      "cut": [
+        "surface:picasso-gatehouse-lawn"
+      ]
+    },
+    {
+      "id": "picasso-gatehouse-lawn",
+      "name": "Gatehouse island: round lawn bed",
+      "kind": "green",
+      "finish": "lawn",
+      "outline": [
+        [
+          -105.9,
+          -66.9
+        ],
+        [
+          -105.9,
+          -68.2
+        ],
+        [
+          -105.35,
+          -70.1
+        ],
+        [
+          -103.9,
+          -71.1
+        ],
+        [
+          -102.1,
+          -71.5
+        ],
+        [
+          -100.0,
+          -71.3
+        ],
+        [
+          -98.5,
+          -70.65
+        ],
+        [
+          -97.75,
+          -69.5
+        ],
+        [
+          -98.4,
+          -67.75
+        ],
+        [
+          -100.95,
+          -68.47
+        ],
+        [
+          -102.87,
+          -65.68
+        ],
+        [
+          -104.0,
+          -65.5
+        ],
+        [
+          -105.1,
+          -66.1
+        ]
+      ],
+      "corners": 0.8,
+      "hard": [
+        8,
+        9,
+        10
+      ],
+      "above": [
+        "picasso-gatehouse-island",
+        "picasso-north-entrance-asphalt"
+      ],
+      "note": "Lawn round the gatehouse's north and west sides under trees and palms; a brick border on a white kerb faces the entry lane (Street View from Calle Loira; Google view). The trees and palms are left for the detail stage. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8), good to about 1.5 m.",
+      "evidence": [
+        "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+        "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg"
+      ],
+      "traced": "map:ground",
+      "edges": [
+        {
+          "kind": "brick-border",
+          "from": 0,
+          "to": 3,
+          "note": "Brick border on the kerb top (Street View from Calle Loira).",
+          "evidence": [
+            "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg"
+          ],
+          "height": 0.05,
+          "base": 0.42
+        }
+      ],
+      "raise": 0.43
+    },
+    {
+      "id": "picasso-entry-planter",
+      "name": "Narrow planter west of the entry lane",
+      "kind": "patio",
+      "finish": "planted-bed",
+      "outline": [
+        [
+          -113.65,
+          -67.03
+        ],
+        [
+          -112.11,
+          -67.03
+        ],
+        [
+          -111.6,
+          -65.0
+        ],
+        [
+          -110.86,
+          -62.6
+        ],
+        [
+          -111.2,
+          -62.3
+        ],
+        [
+          -111.6,
+          -62.45
+        ],
+        [
+          -112.69,
+          -64.14
+        ],
+        [
+          -113.73,
+          -66.07
+        ]
+      ],
+      "corners": 0.5,
+      "note": "A narrow bed about 5 m long with a brick-edged white kerb and bougainvillea, its south tip just north of the entry barrier's bollard (Street View from Calle Loira, IMG_3131's white kerb nose; Google view). The white pillar with notices at its south end and the planting are left for the detail stage. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8), good to about 1.5 m.",
+      "evidence": [
+        "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+        "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+        "IMG_3131.jpg"
+      ],
+      "traced": "map:ground",
+      "edges": [
+        {
+          "kind": "kerb",
+          "from": 0,
+          "to": 8,
+          "height": 0.25,
+          "note": "White kerb with a brick edge about 0.25 m on the asphalt (Street View from Calle Loira, IMG_3131); the bed stands at its top.",
+          "evidence": [
+            "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+            "IMG_3131.jpg"
+          ],
+          "base": 0.27
+        }
+      ],
+      "raise": 0.5,
+      "above": [
+        "picasso-north-entrance-asphalt"
+      ]
+    }
+  ]
+}

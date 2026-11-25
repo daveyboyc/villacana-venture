@@ -1011,7 +1011,9 @@
       "priority": 2,
       "radius": 8,
       "since": "2026-11-24",
-      "status": "open"
+      "status": "answered",
+      "answeredBy": ["google-maps/03-street-view-loira-entry-barrier-2024-10.jpg", "google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg", "google-maps/05-3d-top-down-car-park-north-entrance.jpg"],
+      "note": "25 Nov 2026: answered by Dave's Google imagery rather than a new ground photo. Street View from Calle Loira and Calle Bolivia (Oct 2024) and the Google 3D top-down view (reference/google-maps/03-05) settle the corner: the entry barrier closes the west lane beside the gatehouse island and the exit barrier the east lane at the long wall's north end; both are built (data/picasso_car_park.json barriers, data/ground_plan_picasso.json). The CALLE DE PICASSO plinth, lawn strip and brick path west of the entry lane are still to trace (task picasso-car-park-north-entrance)."
     },
     {
       "id": "picasso-car-park-south-end",
