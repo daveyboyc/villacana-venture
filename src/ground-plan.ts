@@ -30,7 +30,7 @@ import type { Vec2 } from "./types";
  */
 export const GROUND_PLANS = [mainPool, northPool, northLanes, picasso] as unknown as GroundPlan[];
 
-type Edge = { kind: EdgeKind; side?: "left" | "right" | "both"; span?: number[]; from?: number; to?: number; height?: number; width?: number; planting?: string; flowers?: { colour: string; perMetre: number }; openings?: { at: number; width: number }[] };
+type Edge = { kind: EdgeKind; side?: "left" | "right" | "both"; span?: number[]; from?: number; to?: number; height?: number; width?: number; base?: number; planting?: string; flowers?: { colour: string; perMetre: number }; openings?: { at: number; width: number }[] };
 type Surface = {
   id: string; name: string; kind: "path" | "patio" | "apron" | "green"; finish: Finish;
   laneTiles?: boolean;
@@ -82,13 +82,19 @@ export const groundSurfaces: Built[] = GROUND_PLANS.flatMap((plan) => plan.surfa
   }
   const ring = hardRound(surface.outline as Vec2[], surface.corners ?? 0.3, surface.hard ?? []);
   if (!surface.cut?.length) return { plan, surface, polys: [[ring]], centrelines: [] };
-  // Holes: "deck:<pool>" (the measured deck's outer edge) or "pool:<pool>" (the water), from the skeleton.
+  // Holes: "deck:<pool>" (the measured deck's outer edge) or "pool:<pool>" (the water), from the skeleton, or
+  // "surface:<id>" (another outline surface, such as an island standing in an apron, drawn raised over the hole).
   const holes = surface.cut.map(cutRing).map((r) => [[...r, r[0]]] as clipping.Polygon);
   const rest = clipping.difference([[...ring, ring[0]]] as clipping.Polygon, ...holes) as unknown as Vec2[][][];
   return { plan, surface, polys: rest.map((poly) => poly.map((r) => r.slice(0, -1))), centrelines: [] };
 }));
 
 function cutRing(ref: string): Vec2[] {
+  if (ref.startsWith("surface:")) {
+    const other = GROUND_PLANS.flatMap((p) => p.surfaces).find((s) => s.id === ref.slice(8) && s.outline);
+    if (!other) throw new Error(`ground plan: unknown cut ${ref}`);
+    return hardRound(other.outline as Vec2[], other.corners ?? 0.3, other.hard ?? []);
+  }
   const [kind, id] = ref.split(":"), pool = (skeleton.pools as { id: string; ring: number[][]; deck?: number[][] }[]).find((p) => p.id === id);
   const ring = kind === "deck" ? pool?.deck : kind === "pool" ? pool?.ring : undefined;
   if (!ring) throw new Error(`ground plan: unknown cut ${ref}`);
@@ -121,7 +127,7 @@ export function groundPathLine(id: string): Vec2[] {
 }
 
 /** Each edge as the smooth lines it is drawn along, with its kind and size, gaps left for openings. */
-export function groundEdges(): { surface: string; kind: EdgeKind; height: number; width: number; planting?: string; flowers?: { colour: string; perMetre: number }; runs: Vec2[][] }[] {
+export function groundEdges(): { surface: string; kind: EdgeKind; height: number; width: number; base: number; planting?: string; flowers?: { colour: string; perMetre: number }; runs: Vec2[][] }[] {
   const out: ReturnType<typeof groundEdges> = [];
   for (const b of groundSurfaces) for (const e of b.surface.edges ?? []) {
     if (e.kind === "none") continue;
@@ -144,7 +150,7 @@ export function groundEdges(): { surface: string; kind: EdgeKind; height: number
       const inward = pointInRing(probe[0], probe[1], ring) ? 1 : -1;
       lines = [mid ? offsetLine(line, -inward * width / 2) : line];
     }
-    out.push({ surface: b.surface.id, kind: e.kind, height, width, planting: e.planting, flowers: e.flowers, runs: lines.flatMap((l) => cutOpenings(resample(l, 0.4), e.openings ?? [])) });
+    out.push({ surface: b.surface.id, kind: e.kind, height, width, base: e.base ?? 0, planting: e.planting, flowers: e.flowers, runs: lines.flatMap((l) => cutOpenings(resample(l, 0.4), e.openings ?? [])) });
   }
   return out;
 }
@@ -355,8 +361,9 @@ export function addGroundPlan(scene: THREE.Scene, ground: (x: number, z: number)
   const material = (key: string, make: () => THREE.Material) => { if (!materials.has(key)) materials.set(key, make()); return materials.get(key)!; };
   const inScene = (b: Built) => b.polys.some((poly) => poly[0].some(([x, z]) => near(x, z)));
   for (const b of groundSurfaces) {
-    // Lawn and pool deck are painted into the ground texture (paintGroundPlan); paved finishes and planted beds are meshes.
-    if (!inScene(b) || b.surface.finish === "lawn" || b.surface.finish === "pool-deck") continue;
+    // Lawn and pool deck are painted into the ground texture (paintGroundPlan); paved finishes, planted beds and a
+    // raised lawn (a bed standing above its kerb) are meshes.
+    if (!inScene(b) || (b.surface.finish === "lawn" && !b.surface.raise) || b.surface.finish === "pool-deck") continue;
     const lift = FINISHES[b.surface.finish].lift + (b.surface.raise ?? 0);
     const laneTiles = b.surface.laneTiles && b.centrelines.length === 1 && b.surface.width;
     const geometry = laneTiles ? laneTileGeometry(b.centrelines[0], laneTiles, ground, lift)
@@ -384,7 +391,8 @@ export function addGroundPlan(scene: THREE.Scene, ground: (x: number, z: number)
         continue;
       }
       const mat = material(`edge:${e.kind}`, () => e.kind === "planter-wall" || e.kind === "wall" ? plasterMaterial(spec.colour) : new THREE.MeshStandardMaterial({ color: spec.colour, roughness: 0.8 }));
-      const mesh = new THREE.Mesh(edgeGeometry(run, e.width, e.height, ground), mat);
+      // `base` stands the edge on raised paving (a kerb on the road asphalt) instead of the terrain.
+      const mesh = new THREE.Mesh(edgeGeometry(run, e.width, e.height, e.base ? (x, z) => ground(x, z) + e.base : ground), mat);
       mesh.name = `${e.surface}-${e.kind}`; mesh.castShadow = mesh.receiveShadow = true; group.add(mesh);
       if (e.planting && details) {
         // Planting in a planter: low shrubs along the top every metre or so.
