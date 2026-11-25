@@ -11,6 +11,14 @@
   "needs-photos": "Worth improving; more photos wanted."
  },
  "features": {
+  "picasso_car_park.json:picasso-car-park-north-barrier": {
+   "level": "estimated",
+   "why": "Entry barrier: its parts are photographed in IMG_3131 and Street View from Calle Loira (Oct 2024). Its ends are read from Dave's Google 3D top-down screenshot, registered to the aerial by the long wall's north end and a scale from car lengths, good to about 1.5 m. No camera is solved."
+  },
+  "picasso_car_park.json:picasso-car-park-exit-barrier": {
+   "level": "estimated",
+   "why": "Exit barrier: boom, white cabinet and no-entry sign in Street View from Calle Bolivia (Oct 2024); ends from the registered Google 3D top-down screenshot, about 1.5 m. Its rest post is not seen close up and is drawn like the entry barrier's."
+  },
   "street:picasso": {
    "level": "estimated",
    "why": "Along the car park the road is placed against the long wall (aerial line; IMG_3125, IMG_3129 show asphalt to the wall foot), 6 m wide; the north and south ends are the earlier map trace."

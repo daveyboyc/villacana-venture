@@ -6,7 +6,7 @@
     "kerb": 4,
     "enclosure": 23,
     "gap": 21,
-    "context": 40
+    "context": 41
   },
   "records": [
     {
@@ -3767,6 +3767,33 @@
       "confidence": "estimated",
       "placement": "unreviewed",
       "basis": "Model group context, not a traced wall axis or quantity. Plain white wall photographed from the road (IMG_3125, IMG_3129, IMG_3124). Line read from the aerial to about 0.3-1 m. Level top from the laser survey (2014-15 surface model, 2.57 m in model metres): about 1.4 m high at the uphill north end, 3.1 m at the south end. No camera is solved.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "picasso_car_park.json:picasso-car-park-exit-barrier",
+      "name": "Exit barrier, east lane of the car park's north entrance, between the gatehouse island and the long wall",
+      "kind": "context",
+      "points": [
+        [
+          -95.21,
+          -64.22
+        ],
+        [
+          -90.36,
+          -64.84
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "picasso"
+      ],
+      "evidence": [
+        "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+        "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. Exit barrier: boom, white cabinet and no-entry sign in Street View from Calle Bolivia (Oct 2024); ends from the registered Google 3D top-down screenshot, about 1.5 m. Its rest post is not seen close up and is drawn like the entry barrier's.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {

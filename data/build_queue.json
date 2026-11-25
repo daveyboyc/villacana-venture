@@ -4025,6 +4025,55 @@
    ],
    "status": "done",
    "owner": "Codex"
+  },
+  {
+   "id": "picasso-car-park-barrier",
+   "area": "picasso",
+   "priority": 2,
+   "kind": "detail",
+   "title": "Main car park: the security barrier at the north entrance (asset and placement)",
+   "photos": [
+    "IMG_3131.jpg"
+   ],
+   "build": "Dave, 25 November 2026: in the main car park add the security barriers, create the asset and place it. Build a reusable barrier asset from IMG_3131 (white boom with red edges, red rest post with fork and photocell, red-white bollard, drive cabinet inferred) and place the barriers, closed, at the north entrance: the entry barrier in the west lane and the exit barrier in the east lane (Dave, 25 November: there is a second barrier; Street View Oct 2024 and a Google 3D top-down screenshot).",
+   "avoid": "No change to Walk. Do not grade the positions photographed or measured: no camera is solved; the Google screenshot registration is good to about 1.5 m.",
+   "accept": [
+    "Visible in Inspect in Layout and with Show details",
+    "Photo check recorded for IMG_3131",
+    "scripts/check_car_park_barrier.py passes"
+   ],
+   "features": [
+    "picasso_car_park.json:picasso-car-park-north-barrier",
+    "picasso_car_park.json:picasso-car-park-exit-barrier"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude"
+  },
+  {
+   "id": "picasso-car-park-north-entrance",
+   "area": "picasso",
+   "priority": 2,
+   "kind": "layout",
+   "title": "Main car park north entrance: asphalt apron, lanes, separator and the CALLE DE PICASSO plinth",
+   "photos": [
+    "IMG_3131.jpg",
+    "IMG_3130.jpg"
+   ],
+   "build": "Lay out the car park's north entrance between Calle Loira, Calle Bolivia and the planted island: the asphalt apron and its lanes, the white kerb nose and bougainvillea bed beside the barrier's rest post, the brick-edged terracotta path, lawn strip and CALLE DE PICASSO plinth, and the ramp between white walls. Then check both barriers (data/picasso_car_park.json barriers) against the traced lanes.",
+   "avoid": "No change to Walk. Do not grade positions measured without a solved camera.",
+   "accept": [
+    "Visible in Inspect in Layout and with Show details",
+    "Photo checks recorded for IMG_3131 and IMG_3130",
+    "Structure signed off by a reviewer subagent"
+   ],
+   "features": [
+    "parking:Picasso car park",
+    "picasso_car_park.json:picasso-car-park-north-barrier"
+   ],
+   "dependsOn": [],
+   "status": "open",
+   "owner": null
   }
  ]
 }

@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "dcc747c6ef515605f0af0049b54c42a5a578bb9a2b50472c3709a26c0dd702f8",
+ "inputDigest": "11def09dd65f79d06a5e7ff6fddaff0cf0789c1376cd62d1849aaad9db3d67df",
  "summary": {
   "unplaced": 4,
-  "needs-review": 273,
-  "suggested": 369,
+  "needs-review": 274,
+  "suggested": 368,
   "photos": 646,
-  "features": 536,
-  "photosCitedByModel": 254,
-  "modelFeaturesWithPhotoCitations": 279
+  "features": 538,
+  "photosCitedByModel": 258,
+  "modelFeaturesWithPhotoCitations": 281
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -16494,7 +16494,9 @@
      "angleOffset": 29.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "eva_lane.json:eva-lane-west"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -170.4,
@@ -16532,7 +16534,9 @@
      "angleOffset": 34.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "eva_lane.json:eva-lane-west"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -170.1,
@@ -16564,7 +16568,9 @@
      "angleOffset": 17.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "eva_lane.json:eva-lane-west"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -164.2,
@@ -23807,37 +23813,27 @@
   },
   {
    "file": "IMG_3131.jpg",
-   "status": "suggested",
+   "status": "needs-review",
    "reasons": [
-    "Compatible map context; metadata association remains a suggestion"
+    "No mapped street/area within the uncertainty range"
    ],
-   "nearby": [
-    {
-     "id": "parking:Picasso car park",
-     "name": "Picasso car park",
-     "kind": "parking",
-     "gap": 5.2
-    }
-   ],
+   "nearby": [],
    "inViewCandidates": [
     {
-     "id": "building:6265501UF1366N_part12",
-     "distance": 34.6,
-     "angleOffset": 33.1
-    },
-    {
      "id": "building:6265501UF1366N_part9",
-     "distance": 43.2,
-     "angleOffset": 30.3
+     "distance": 37.8,
+     "angleOffset": 32.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "picasso_car_park.json:picasso-car-park-north-barrier"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
-    "x": -103.0,
-    "z": -64.6,
-    "basis": "phone location",
-    "reportedAccuracy": 4.7,
+    "x": -107.8,
+    "z": -61.9,
+    "basis": "checked against photo content",
+    "reportedAccuracy": 1.5,
     "heading": 258,
     "headingBasis": "EXIF true north"
    }

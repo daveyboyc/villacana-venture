@@ -666,6 +666,27 @@
       "features": [
         "parking:Picasso car park"
       ]
+    },
+    {
+      "id": "picasso-car-park-north-entrance-apron",
+      "area": "picasso",
+      "kind": "completeness",
+      "task": "picasso-car-park-north-entrance",
+      "status": "open",
+      "requests": [
+        "picasso-car-park-north-entrance"
+      ],
+      "description": "Through IMG_3131's starting pose the barrier stands where the photo has it, but the ground round it is generic terracotta paving in the model: the photo shows asphalt with a painted lane arrow, then a brick-edged terracotta path, a lawn strip with the CALLE DE PICASSO plinth, a hedged white garden wall and a ramp rising between white walls; and a white kerb nose with a brick-edged bougainvillea bed just beyond the rest post. The car-park outline stops short of the entrance, so the barrier stands outside the modelled asphalt. (25 Nov, later: both barriers are now placed from Dave's Google 3D top-down screenshot; the entry barrier moved 5.5 m west onto the asphalt of the west lane.)",
+      "sources": [
+        "IMG_3131.jpg",
+        "IMG_3130.jpg"
+      ],
+      "features": [
+        "parking:Picasso car park",
+        "picasso_car_park.json:picasso-car-park-north-barrier",
+    "picasso_car_park.json:picasso-car-park-exit-barrier"
+      ],
+      "note": "25 Nov 2026: found when placing the barrier (docs/reviews/picasso-car-park-barrier). Needs the north-entrance layout (aisles either side of the planted island, the separator, the asphalt apron to Calle Loira and Calle Bolivia) traced from a solved camera or the requested view (picasso-car-park-north-entrance) before it is built."
     }
   ]
 }

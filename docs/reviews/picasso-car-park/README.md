@@ -193,3 +193,70 @@ Each pair shows the photo on the left and the model on the right, rendered throu
 
 The layout browser test (`npm run test:layout`) passes every street walk and collision check on this branch,
 then stops at the coastal-gate button step (`test_layout_browser.cjs:795`). `main` stops at the same step.
+
+## North-entrance security barriers (25 November 2026)
+
+Task `picasso-car-park-barrier`. Dave asked for the car park's security barriers as an asset, placed. The first pass
+built the one barrier in IMG_3131 from its phone pin. Dave then confirmed a second barrier and sent two Street View
+frames and a Google 3D top-down view, now in `reference/google-maps/`:
+
+| Reference | Source | Shows |
+| --- | --- | --- |
+| [03-street-view-loira-entry-barrier-2024-10.jpg](../../../reference/google-maps/03-street-view-loira-entry-barrier-2024-10.jpg) | Google Street View, Oct 2024 (Imagery © Google) | The west (entry) lane from Calle Loira, closed: white cabinet on the gatehouse island, boom, red rest post, red-white bollard |
+| [04-street-view-bolivia-exit-barrier-2024-10.jpg](../../../reference/google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg) | Google Street View, Oct 2024 (Imagery © Google) | The east (exit) lane from Calle Bolivia, closed from a white cabinet under a no-entry sign to the long wall's north end |
+| [05-3d-top-down-car-park-north-entrance.jpg](../../../reference/google-maps/05-3d-top-down-car-park-north-entrance.jpg) | Google Maps 3D, screenshot 25 Nov 2026 (Imagery © Google 2026) | Both booms as thin lines with their cabinets and post shadows |
+
+**Layout.** The north entrance has two lanes either side of the gatehouse island. The west lane, between the island
+and the narrow planter, is the entry: IMG_3131 has an inward lane arrow. The east lane, between the island and the
+long wall's north end, is the exit: it has a no-entry sign facing Bolivia. Each lane has a boom from a white drive
+cabinet about 1 m high on the island side to a rest post on the far side. The entry rest post has a red-white bollard
+just beyond it. No bollard shows at the exit.
+
+**What IMG_3131 shows of the entry barrier.** It is closed. A white aluminium boom with red top and bottom edges rests
+at about 1 m in the V fork of a red square-section rest post on a bolted plate. The post carries a small black
+photocell box on its face towards the pivot and is bent from a knock. The red-white bollard (red foot, white band,
+red top, about 0.87 m) stands just beyond. At an assumed 1.5 m eye height and 15° down, the rest post foot is 2.6 m
+ahead and 0.7 m right of the camera, the bollard 3.5 m ahead, and the boom lies along the view direction.
+
+**Where they are.** The Google top-down view is north-up. It is registered to the Esri aerial at 0.0385 m per pixel,
+taken from car lengths (0.040) and the island-to-wall distance (0.044). The long wall's north end is set on its aerial
+position (-91.4, -67.8). The gatehouse island, narrow planter, brick-and-lawn strip and wall line then agree with the
+aerial to about 1–2 m. Both booms' ends are read from it to about 1.5 m:
+
+| Barrier | Rest post | Cabinet end of boom | Boom | Bollard |
+| --- | --- | --- | --- | --- |
+| Entry (west lane) | (-110.46, -62.02) | (-104.95, -62.87) | 5.6 m, 81° towards the cabinet | (-111.30, -61.87) |
+| Exit (east lane) | (-90.36, -64.84), 0.8 m inside the wall line | (-95.21, -64.22) | 4.9 m | none seen |
+
+The entry rest post is 5.5 m west of the first estimate from IMG_3131's phone pin (±4.7 m). The pin was off, so
+IMG_3131's camera is corrected to (-107.8, -61.9) in `data/photo_positions.json` and the manifest, with the GPS kept.
+The boom's direction in the Google view agrees with IMG_3131's compass heading to within 3°. So the photo's `looksAt`
+now follows the compass, replacing the earlier reviewed point, which was 23° off.
+
+**Built.** `src/car-park-barrier.ts` is the asset: `carParkBarrier({ armLength, side })` (white cabinet, hub, boom with
+red edges, rest post with fork, plate and photocell) and `barrierBollard()`. Geometry and materials are shared.
+`data/picasso_car_park.json` `barriers` holds both placements. `src/picasso-car-park.ts` places them closed on the
+paving level, in Layout and with Show details. The rest posts, bollard and cabinets get collision; the booms lift, so
+they have none. The map draws each boom line and its posts. Both are graded `estimated` in `data/confidence.json`. The
+exit barrier's rest post is not seen close up and is drawn like the entry one.
+
+| View | Image |
+| --- | --- |
+| IMG_3131 beside the model through its corrected camera (Layout) | [IMG_3131-pair.jpg](../picasso-car-park-barrier/IMG_3131-pair.jpg) |
+| Through the same camera with Show details | [IMG_3131-after-details.png](../picasso-car-park-barrier/IMG_3131-after-details.png) |
+| Inspect, both barriers from the north (Layout / Show details) | [inspect-both-pair.jpg](../picasso-car-park-barrier/inspect-both-pair.jpg) |
+| Inspect, entry barrier close | [inspect-entry-pair.jpg](../picasso-car-park-barrier/inspect-entry-pair.jpg) |
+| Inspect, exit barrier close | [inspect-exit-pair.jpg](../picasso-car-park-barrier/inspect-exit-pair.jpg) |
+
+Still open (`picasso-car-park-north-entrance-apron`, task `picasso-car-park-north-entrance`): the barriers stand on
+terracotta where the photos have asphalt. The gatehouse island's lawn and kerb, the narrow planter, the brick path,
+lawn strip and CALLE DE PICASSO plinth, the ramp, the STOP and ACCESO PLAYA signs and the no-entry sign are not built.
+The car-park outline stops short of the entrance.
+
+**Review (25 November 2026, first pass).** An independent reviewer agent opened IMG_3131 at full size and re-derived the
+readings at f = 1201.8 px and 15° pitch: rest post 2.68 m ahead and 0.68 m right (2.38–3.04 m for ±3° of pitch),
+bollard 3.59 m ahead, and the boom's edges converging about 3° right of the view axis. It approved the pin-based
+placement as an estimate after fixes: the boom's end cap removed, "read" not "measured" in the trust, and the
+cabinet's collision sized to its box. It also flagged the aerial's reddish ground at the first position, which the
+Google registration resolved by moving the barrier 5.5 m west. This is a photographic sign-off of an estimate, not
+measured placement approval.

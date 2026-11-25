@@ -277,6 +277,8 @@ def features(s):
     add('picasso_car_park.json:'+car_park['wall']['id'],car_park['wall']['name'],'reference feature','aerial line (about 0.3-1 m) and unsolved photos; height from IMG_3125 vanishing lines',evidence=['IMG_3124.jpg','IMG_3125.jpg','IMG_3129.jpg'],points=car_park['wall']['points'])
     isle=car_park['island']
     add('picasso_car_park.json:'+isle['id'],'Round hedged palm island in the main car park','reference feature','aerial brightness profiles, about 0.5 m; unsolved IMG_3100',evidence=['IMG_3100.jpg','IMG_3189.jpg'],ring=[[round(isle['centre'][0]+isle['radius']*math.cos(i*math.pi/12),2),round(isle['centre'][1]+isle['radius']*math.sin(i*math.pi/12),2)] for i in range(24)])
+    for bar in car_park.get('barriers',[]): # the north-entrance security barrier (boom line, closed)
+        add('picasso_car_park.json:'+bar['id'],bar['name'],'reference feature','phone pin (about 5 m) and ground-plane readings in unsolved IMG_3131; pivot end inferred',evidence=bar['evidence'],points=[bar['pivot'],bar['restPost']])
     garden=json.loads((ROOT/'data/cervantes_garden_door.json').read_text())
     wall_points=[[garden['origin'][i]+a*garden['along'][i] for i in range(2)] for a in [-garden['wallWidth']/2,garden['wallWidth']/2]]
     add('cervantes_garden_door.json:'+garden['id'],garden['name'],'reference feature','authored photo/levels interpretation',points=wall_points,evidence=garden['evidence'])
