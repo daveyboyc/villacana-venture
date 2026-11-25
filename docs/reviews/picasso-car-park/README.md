@@ -144,7 +144,7 @@ in `data/confidence.json`. They are not measured placements, because no camera i
   1.4 m high at the north end, 2.0 m at 30 m, 2.3–2.5 m mid-way, 2.6–2.7 m at 72–78 m and 3.1 m at the
   south end. In model metres (zero at the middle pool deck, 5.00 m in that survey) the top is 2.57 m above
   the visible paving. Earlier versions are superseded: a constant 2.8 m height read from IMG_3125 near the
-  south end, and before that flat boxes that put about 4.5 m at the south end.
+  south end, and before that flat boxes that put about 4.5 m at the south end. Inspect after the change: [after-wall-level-top.jpg](after-wall-level-top.jpg) (left: from above, the wall tapers going uphill; right: at the north end, under head height). The IMG_3129 pin now lands just east of the moved road, so its pin render ([pin-IMG_3129.jpg](pin-IMG_3129.jpg)) stands off the asphalt and is not a fair comparison.
 - **Car-park outline (`mainParkingRing`):** the east edge is now on the wall's inner face, from where it
   meets the old north edge, at (-89.95, -65.17), to the wall's south end. The west and south edges are
   unchanged.
