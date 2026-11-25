@@ -14,8 +14,8 @@
   },
   "mainParkingRing": [
     [
-      -117.56,
-      -51.7
+      -112.94,
+      -53.95
     ],
     [
       -89.95,
@@ -26,12 +26,24 @@
       23.96
     ],
     [
-      -63.88,
-      37.83
+      -60.41,
+      36.11
     ],
     [
-      -75.32,
-      18.94
+      -74.11,
+      12.62
+    ],
+    [
+      -76.01,
+      13.73
+    ],
+    [
+      -78.02,
+      10.28
+    ],
+    [
+      -76.12,
+      9.17
     ]
   ],
   "streets": [
@@ -104,30 +116,32 @@
       "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision); 24 Nov 2026: the whole stretch along the car park, to the wall's south end, moved onto a line 3.1 m east of the long wall's centreline, so the 6 m asphalt meets the wall foot as IMG_3125 and IMG_3129 show (estimated, data/picasso_car_park.json). The aerial puts the cypress hedge 7-8 m from the wall; street width is one value for the whole street, and 7.5 m would cut the photographed service-road ramp further south, so the 1-2 m strip towards the hedge is a known shortfall",
       "referenceId": "street-Calle Pintor Picasso",
       "aliases": [
-        "Calle Picasso",
-        "Calle de Picasso"
+        "Calle Picasso"
       ]
     },
     {
       "id": "picasso-access",
-      "name": "Picasso car-park access",
-      "width": 4,
+      "name": "Calle de Picasso",
+      "width": 1.8,
       "points": [
         [
-          -112.82,
-          -50.09
+          -121.87,
+          -60.35
         ],
         [
-          -61.78,
-          36.73
+          -61.1,
+          41.5
         ],
         [
           -55.38,
           48.14
         ]
       ],
-      "surface": "asphalt",
-      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)"
+      "surface": "terracotta",
+      "trust": "25 Nov 2026 (Dave: this is Calle Picasso): the footpath along the main car park's west side, behind the hedge strip at the back of the west bays, from the CALLE DE PICASSO plinth and lantern where it meets the Juan Gris paving (IMG_3131) to the end of Calle Eva. The Esri aerial, straightened along the west bay row, shows a pale tiled band 8.4 m west of the bays' car line (brightness and colour profiles every 3 m, straight to 0.45 m rms), about 1.5-2 m wide, between the house garden walls and the green hedge strip; Google's standard map labels this line C. Pintor Picasso (reference/google-maps/01). Width 1.8 m estimated. Its last 9 m to Calle Eva follow the old map line. Levels from the laser survey: three level stretches (+1.17, +0.71 and +0.20 m) joined by two flights of steps beside a ramp (data/picasso_path_steps.json). Not photographed between the plinth and Calle Eva. Earlier this id was a 4 m asphalt 'car-park access' line from Google's map, about 2 m east of the path.",
+      "aliases": [
+        "Picasso car-park access"
+      ]
     },
     {
       "id": "elena-north",

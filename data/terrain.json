@@ -104,6 +104,54 @@
    ],
    "surveyRise": 0.27,
    "from": "survey"
+  },
+  {
+   "id": "picasso-path-upper-steps",
+   "foot": [
+    -100.66,
+    -24.8
+   ],
+   "toward": [
+    -101.89,
+    -26.86
+   ],
+   "start": 0.0,
+   "run": 2.4,
+   "halfWidth": 2.0,
+   "behind": 3.0,
+   "base": 0.71,
+   "rise": 0.45,
+   "photoRise": [
+    0.4,
+    0.5
+   ],
+   "surveyRise": 0.45,
+   "from": "survey",
+   "unphotographed": "no photo shows this flight; photoRise is the range in data/picasso_path_steps.json"
+  },
+  {
+   "id": "picasso-path-cervantes-steps",
+   "foot": [
+    -79.08,
+    11.36
+   ],
+   "toward": [
+    -80.52,
+    8.95
+   ],
+   "start": 0.0,
+   "run": 2.8,
+   "halfWidth": 2.0,
+   "behind": 3.0,
+   "base": 0.22,
+   "rise": 0.42,
+   "photoRise": [
+    0.36,
+    0.48
+   ],
+   "surveyRise": 0.42,
+   "from": "survey",
+   "unphotographed": "no photo shows this flight; photoRise is the range in data/picasso_path_steps.json"
   }
  ],
  "loweredDrop": 3,

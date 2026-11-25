@@ -304,6 +304,8 @@ def features(s):
     for name in ('cervantes_elena_steps','cervantes_alberto_steps','middle_pool_steps'):
         steps=json.loads((ROOT/f'data/{name}.json').read_text())
         add('steps:'+steps['id'],steps['name'],'reference feature','authored photo/map interpretation',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])
+    for steps in json.loads((ROOT/'data/picasso_path_steps.json').read_text())['flights']: # Calle de Picasso: drops from the laser survey, form inferred
+        add('steps:'+steps['id'],steps['name'],'reference feature','laser-survey drop; steps beside a ramp inferred, not photographed',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])
 
     dali_street=json.loads((ROOT/'data/dali_street.json').read_text())
     dressed=next(b['points'] for b in s['boundaryReference']['barriers'] if b['id']==dali_street['fence']['barrierId'])[:-dali_street['fence']['stopBeforeLastSegments']]

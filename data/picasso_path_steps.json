@@ -1,0 +1,31 @@
+{
+ "about": "The two level changes on Calle de Picasso, the footpath along the main car park's west side (street_layout.json picasso-access). The laser survey (PNOA-LiDAR 2020-21, 1 m ground model) has the path on three level stretches, +1.17 m from the plinth, +0.71 m and +0.20 m at Calle Cervantes, with a drop between each pair over about 2.5 m. No photo shows either drop, so the form is inferred from the resort's other lane drops (Cervantes at Elena and at Alberto, the middle pool's south-west corner): white-faced steps on one half of the lane beside a smooth tiled ramp on the other. Each flight is drawn by src/ramp-steps.ts over the ramp that scripts/lidar_check.py grid writes into data/terrain.json. 'survey' holds the comparison points (low and high, on the path centreline 1 m beyond each end of the drop), the survey's rise between them and the range the flight is held to. Model metres, +x east, +z south; 'across' is metres to the left of uphill, so negative is the house (west) side.",
+ "flights": [
+  {
+   "id": "picasso-path-upper-steps",
+   "name": "Calle de Picasso · three steps beside a ramp, below the plinth stretch",
+   "road": "picasso-access",
+   "foot": [-100.66, -24.8],
+   "toward": [-101.89, -26.86],
+   "across": [-0.86, -0.02],
+   "risers": [0.2, 0.75, 1.3],
+   "end": 2.4,
+   "survey": {"low": [-100.14, -23.94], "high": [-102.35, -27.63], "rise": [0.4, 0.5], "read": 0.45},
+   "evidence": [],
+   "trust": "Inferred. The survey holds the path level at +1.16-1.17 m from the Juan Gris paving to about 39 m along it and at +0.71 m from about 41.5 m on, so the drop is 0.45 m over about 2.4 m; the 2014-15 survey puts it about 1 m further north. The hedge strip beside the path drops with it; the car park below does not. On the aerial a pale band crosses the hedge strip from the house gardens to the bays at the same place, as Calle Cervantes does at the lower drop, so a side path or opening probably meets the path here (not built). Steps or a ramp are not visible on the aerial under the trees, and no photo covers this stretch (photo request picasso-west-path-drops). Three risers of about 0.15 m on the house side and a ramp of about 19 % on the hedge side follow the resort's other lane drops; their number, side and spacing are guesses. Position along the path good to about 1 m."
+  },
+  {
+   "id": "picasso-path-cervantes-steps",
+   "name": "Calle de Picasso · three steps beside a ramp, down to Calle Cervantes",
+   "road": "picasso-access",
+   "foot": [-79.08, 11.36],
+   "toward": [-80.52, 8.95],
+   "across": [-0.86, -0.02],
+   "risers": [0.25, 0.85, 1.45],
+   "end": 2.8,
+   "survey": {"low": [-78.62, 12.13], "high": [-80.93, 8.27], "rise": [0.36, 0.48], "read": 0.42},
+   "evidence": [],
+   "trust": "Inferred. The survey holds the path at +0.60-0.65 m to about 80 m along it and at +0.20-0.22 m from about 83.5 m, which is the level of Calle Cervantes where it crosses the path 1.7 m further on; the drop is about 0.42 m over 2.8 m, most of it in the last 2 m. No photo covers it (photo request picasso-west-path-drops). Three risers of about 0.14 m on the house side beside a ramp of about 15 % follow the resort's other lane drops; their number, side and spacing are guesses. Position good to about 1 m."
+  }
+ ]
+}

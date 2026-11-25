@@ -332,8 +332,8 @@
           -56.581
         ],
         [
-          -122.4,
-          -59.108
+          -125.109,
+          -57.526
         ]
       ],
       "height": 0.78,
@@ -345,7 +345,7 @@
         "IMG_3135.jpg",
         "IMG_3136.jpg"
       ],
-      "basis": "The hedge shows over the lowered white wall east of the first pergola. Stations and dimensions are estimated from the unsolved sequence along the mapped paving."
+      "basis": "The hedge shows over the lowered white wall east of the first pergola. Stations and dimensions are estimated from the unsolved sequence along the mapped paving. 25 Nov 2026: its east end moves 3.1 m west with the garden screen, which now ends at Calle de Picasso."
     },
     {
       "id": "juan-gris-east-screen",
@@ -353,12 +353,12 @@
       "area": "north-lanes",
       "points": [
         [
-          -122.4,
-          -59.108
+          -125.109,
+          -57.526
         ],
         [
-          -119.7,
-          -60.685
+          -122.409,
+          -59.103
         ]
       ],
       "height": 1.78,
@@ -368,7 +368,7 @@
       "evidence": [
         "IMG_3134.jpg"
       ],
-      "basis": "The white garden wall steps up beside the hedge near the signed end. Stations and dimensions are estimated from the unsolved sequence along the mapped paving."
+      "basis": "The white garden wall steps up beside the hedge near the signed end. Stations and dimensions are estimated from the unsolved sequence along the mapped paving. 25 Nov 2026: moved 3.1 m west along its line, so that it ends at the west edge of Calle de Picasso, which leaves Juan Gris southward here between the corner garden and the lawn strip (IMG_3131, Google 3D top-down view); it had stood across the path's mouth. IMG_3134 may show the low hedged wall nearer the corner and this taller wall further west (discrepancy juan-gris-east-walls-order)."
     },
     {
       "id": "juan-gris-middle-bed",

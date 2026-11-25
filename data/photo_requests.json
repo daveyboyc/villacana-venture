@@ -1032,6 +1032,24 @@
       "radius": 6,
       "since": "2026-11-24",
       "status": "open"
+    },
+    {
+      "id": "picasso-west-path-drops",
+      "area": "picasso",
+      "at": [
+        -100.2,
+        -23.9
+      ],
+      "look": [
+        -101.9,
+        -26.9
+      ],
+      "ask": "On Calle de Picasso, the footpath behind the hedge at the back of the car park's west bays: stand on the path below each place where it steps down (about 40 m south of the CALLE DE PICASSO plinth, and just north of where Calle Cervantes crosses it) and photograph up the path at the steps or ramp, then one from the side; also one photo along the path showing the hedge strip and the drop to the parked cars.",
+      "why": "the laser survey shows the path on three level stretches with two drops of about 0.45 m and 0.42 m, but no photo shows whether each is steps, a ramp or both, or how the hedge strip is held up above the car park",
+      "priority": 2,
+      "radius": 8,
+      "since": "2026-11-25",
+      "status": "open"
     }
   ]
 }

@@ -66,11 +66,11 @@ graph LR
   F7 --> PIMG_3152_jpg(["IMG_3152"])
   F7 --> PIMG_3153_jpg(["IMG_3153"])
   F7 --> PIMG_3155_jpg(["IMG_3155"])
-  A --> F8["Juan Gris · East hedge wall · unreviewed"]
+  A --> F8["Juan Gris · East hedge wall · disputed"]
   F8 --> PIMG_3134_jpg(["IMG_3134"])
   F8 --> PIMG_3135_jpg(["IMG_3135"])
   F8 --> PIMG_3136_jpg(["IMG_3136"])
-  A --> F9["Juan Gris · East garden screen · unreviewed"]
+  A --> F9["Juan Gris · East garden screen · disputed"]
   F9 --> PIMG_3134_jpg(["IMG_3134"])
   A --> F10["Juan Gris · Verge grille planting border · unreviewed"]
   F10 --> PIMG_3152_jpg(["IMG_3152"])
@@ -108,8 +108,8 @@ graph LR
 | `juan_gris_pergolas.json:juan-gris-pergola-grille` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `juan_gris_pergolas.json:juan-gris-pergola-middle` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `juan_gris_pergolas.json:juan-gris-pergola-west` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `lane_walls.json:juan-gris-east-hedge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `lane_walls.json:juan-gris-east-screen` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `lane_walls.json:juan-gris-east-hedge` | disputed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy juan-gris-east-walls-order |
+| `lane_walls.json:juan-gris-east-screen` | disputed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy juan-gris-east-walls-order |
 | `lane_walls.json:juan-gris-grille-bed` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `lane_walls.json:juan-gris-middle-bed` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `lane_walls.json:juan-gris-west-bed` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |

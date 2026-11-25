@@ -149,6 +149,23 @@
         "IMG_3194.jpg",
         "map:ground"
       ]
+    },
+    {
+      "id": "picasso-west-path-drops",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "Photos up Calle de Picasso at its two drops (steps, ramp or both) and of the edge between its hedge strip and the car park below.",
+      "why": "Both flights and the edge to the car park are inferred from the laser survey and the aerial; no photo covers the path between the plinth and Calle Eva.",
+      "photoRequest": "picasso-west-path-drops",
+      "features": [
+        "street:picasso-access",
+        "steps:picasso-path-upper-steps",
+        "steps:picasso-path-cervantes-steps"
+      ],
+      "status": "open",
+      "sources": [
+        "map:ground"
+      ]
     }
   ]
 }

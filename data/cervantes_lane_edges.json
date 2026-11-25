@@ -448,7 +448,7 @@
    "kind": "raised",
    "s": [
     123.0,
-    135.0
+    134.5
    ],
    "o": [
     -0.95,
@@ -462,12 +462,12 @@
      18.43
     ],
     [
-     -79.14,
-     12.28
+     -79.57,
+     12.54
     ],
     [
-     -79.55,
-     11.6
+     -79.98,
+     11.85
     ],
     [
      -89.86,
@@ -481,7 +481,7 @@
      {
       "s": [
        123.0,
-       135.0
+       134.5
       ],
       "look": "thuja"
      }
@@ -491,7 +491,7 @@
     "IMG_2444.jpg",
     "IMG_2443.jpg"
    ],
-   "basis": "IMG_2444 looks east along the last stretch to the car park: the house wall stands on the lane on the right (south), and on the left a white planter wall about 0.6 m high carries a tall clipped thuja hedge to the end of the lane, where the lawn and the car park open out."
+   "basis": "IMG_2444 looks east along the last stretch to the car park: the house wall stands on the lane on the right (south), and on the left a white planter wall about 0.6 m high carries a tall clipped thuja hedge to the end of the lane, where the lawn and the car park open out. 25 Nov 2026: its east end stops at s 134.5, 0.1 m short of the west edge of Calle de Picasso, the footpath the lane meets (task picasso-west-path); it had run 0.4 m onto the path."
   },
   {
    "id": "cervantes-east-south-planter",

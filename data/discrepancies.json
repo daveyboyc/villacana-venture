@@ -604,9 +604,10 @@
       "task": "ground-plan-picasso",
       "status": "open",
       "requests": [
-        "picasso-car-park-west-side"
+        "picasso-car-park-west-side",
+        "picasso-west-path-drops"
       ],
-      "description": "The mapped 'Picasso car-park access' line (street_layout.json picasso-access, from Google's standard map) runs about 7 m west of the west row of bays, through the hedge strip and house gardens, not along any aisle seen on the aerial: the aisle between the west row and the central row lies about 8-10 m further east. No photo shows the west side of the car park, so whether a footpath runs behind the west hedge is not known.",
+      "description": "The mapped 'Picasso car-park access' line (street_layout.json picasso-access, from Google's standard map) runs about 7 m west of the west row of bays, through the hedge strip and house gardens, not along any aisle seen on the aerial: the aisle between the west row and the central row lies about 8-10 m further east. No photo shows the west side of the car park, so whether a footpath runs behind the west hedge is not known. 25 Nov 2026: Dave confirmed this is Calle Picasso, a footpath on the car park's west side. The line is retraced as a 1.8 m terracotta footpath on the pale band the straightened aerial shows 8.4 m west of the bays' car line (0.45 m rms over 120 m), about 2 m west of the old line, with its levels and two flights from the laser survey (street_layout.json picasso-access, data/picasso_path_steps.json). Still open: the trace is from the aerial alone, no camera is solved and no photo shows the path south of the plinth (photo request picasso-west-path-drops).",
       "sources": [
         "map:ground"
       ],
@@ -659,7 +660,7 @@
       "requests": [
         "picasso-car-park-west-side"
       ],
-      "description": "The car park outline's west edge (street_layout.json mainParkingRing, from (-117.56, -51.7) to (-75.32, 18.94)) lies about 31 m from the long wall at the north end, while the west bays end about 22-25 m from it on the aerial: the north-west part of the outline covers house gardens and the hedge strip. Found by the independent layout review on 24 Nov 2026.",
+      "description": "The car park outline's west edge (street_layout.json mainParkingRing, from (-117.56, -51.7) to (-75.32, 18.94)) lies about 31 m from the long wall at the north end, while the west bays end about 22-25 m from it on the aerial: the north-west part of the outline covers house gardens and the hedge strip. Found by the independent layout review on 24 Nov 2026. 25 Nov 2026: the outline's west edge also overlay the retraced Calle de Picasso footpath and the hedge strip between it and the bays, which the laser survey has 0.4-0.9 m above the car park from about 15 m south of the plinth. It is moved to the back of the bays, 4.0 m west of the bays' car line on the straightened aerial (where a white kerb line shows at about 4.3 m), with a 4 m gap out to 6.2 m where Calle Cervantes comes through the hedge strip. The north and south edges are unchanged, so the north-west corner is still the earlier trace's line. Estimated from the aerial and the survey; still open until photographed (photo requests picasso-car-park-west-side, picasso-west-path-drops).",
       "sources": [
         "map:ground"
       ],
@@ -687,6 +688,46 @@
     "picasso_car_park.json:picasso-car-park-exit-barrier"
       ],
       "note": "25 Nov 2026: found when placing the barrier (docs/reviews/picasso-car-park-barrier). Needs the north-entrance layout (aisles either side of the planted island, the separator, the asphalt apron to Calle Loira and Calle Bolivia) traced from a solved camera or the requested view (picasso-car-park-north-entrance) before it is built. 25 Nov (later): the asphalt round both lanes, the gatehouse island (terracotta apron, lawn bed, white kerbs), the gatehouse and the narrow planter are now built from the registered Google top-down view (data/ground_plan_picasso.json, picasso_car_park.json gatehouse). Still missing: the brick path, lawn strip and CALLE DE PICASSO plinth west of the entry lane, the ramp between white walls, the island's trees and palms, the planter's bougainvillea and notice pillar, and the STOP, ACCESO PLAYA and no-entry signs. 25 Nov (detail pass, with Street View 06-08): the brick path and lawn strip west of the entry lane, the CALLE DE PICASSO plinth, the lantern, the gatehouse's wing walls and windows, the STOP, beach, no-entry and dead-end signs, the community board, the notice pillar and the island and planter planting are built (data/picasso_entrance_details.json). Still missing: the ramp between white walls with the CALLE JUAN GRIS plaque (IMG_3131), and the octagon pattern of the path tiles."
+    },
+    {
+      "id": "juan-gris-east-walls-order",
+      "area": "north-lanes",
+      "kind": "placement",
+      "task": "calle-loira",
+      "status": "open",
+      "requests": [
+        "picasso-west-path-drops"
+      ],
+      "description": "At the east end of Calle de Juan Gris, IMG_3134 (looking west from the end of the lane) shows a low white wall with a hedge on top in front of a window nearest the camera, and a taller plain white wall further on; IMG_3131 shows the same low hedged wall behind the CALLE DE PICASSO plinth, so it probably turns the corner down Calle de Picasso. The data has the tall garden screen at the east end and the low hedge wall west of it. On 25 Nov 2026 the screen was slid 3.1 m west along its line and the hedge wall shortened from 5.1 to 1.9 m to meet it (lane_walls.json juan-gris-east-screen, juan-gris-east-hedge), because the screen stood across the mouth of Calle de Picasso, which the Google 3D top-down view and IMG_3131 show open. Their order, lengths and the corner wall down Calle de Picasso are still to settle.",
+      "sources": [
+        "IMG_3134.jpg",
+        "IMG_3131.jpg",
+        "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg"
+      ],
+      "features": [
+        "lane_walls.json:juan-gris-east-screen",
+        "lane_walls.json:juan-gris-east-hedge",
+        "street:picasso-access"
+      ]
+    },
+    {
+      "id": "picasso-west-path-open-levels",
+      "area": "picasso",
+      "kind": "completeness",
+      "task": "picasso-west-path",
+      "status": "open",
+      "requests": [
+        "picasso-west-path-drops"
+      ],
+      "description": "Calle de Picasso's levels are built from the laser survey, but three things it shows are not built because no photo shows their form. (1) The hedge strip between the footpath and the west bays stands at the path's level, up to about 0.9 m above the car park about 40 m south of the plinth and 0.4-0.6 m above it further south, so a retaining kerb or wall must stand at the back of the bays; the model keeps the survey's slope there. (2) The path drops about 0.24 m over 2 m just before it meets Calle Eva; the model keeps it as a slope. (3) At the upper drop a pale band crosses the hedge strip from the house gardens to the bays on the aerial, probably a side path or opening. (4) The independent review found the survey's rise from the bays to the hedge strip mostly between 1.5 and 3.5 m west of the bays' car line (about 40 m south of the plinth: +0.39 m at 2 m, +0.93 m at 3 m, +1.18 m at 4 m), so the car-park outline's west edge at 4.0 m probably runs 0.5-1.5 m up that bank. (5) At the north end the path line (aerial, 8.45 m west of the car line) leaves a 0.2-1.0 m strip of plain ground between it and the lawn strip traced from the Google top-down view (west edge 6.6-7.4 m), where IMG_3131 shows the path against the lawn; the two traces differ within the Google view's 1.5 m registration and are to be reconciled.",
+      "sources": [
+        "map:ground"
+      ],
+      "features": [
+        "street:picasso-access",
+        "steps:picasso-path-upper-steps",
+        "parking:Picasso car park"
+      ]
     }
   ]
 }

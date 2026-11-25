@@ -24430,7 +24430,8 @@
   "path": "public/photos-ref/IMG_3134.jpg",
   "title": "IMG_3134",
   "shows": [
-   "north-lanes"
+   "north-lanes",
+   "picasso"
   ],
   "areasBasis": "camera position",
   "viewpoint": null,
@@ -26065,7 +26066,6 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
-   "street:picasso-access",
    "backdrop.json:aerial-trees"
   ],
   "subject": "house fronts south-west of the car park's south end"
@@ -26105,7 +26105,6 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "parking:Picasso car park",
    "street:picasso-access"
   ],
   "subject": "Cervantes lane at its east end"

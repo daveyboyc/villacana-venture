@@ -31,9 +31,18 @@ for road in roads.values():
     assert clearance>.45, f"{road['name']} lacks player clearance from {building['id']}"
    assert not any(inside(*p,pool['ring']) for pool in s['pools']), f"{road['name']} crosses pool water"
 # Each join is checked against its parent street, not against a duplicate endpoint record.
-joins=[('cervantes',0,'dali'),('cervantes',-1,'picasso-access'),('elena-north',0,'isabel'),('elena-north',-1,'cervantes'),('elena-south',0,'cervantes'),('elena-south',-1,'eva'),('isabel',-1,'alberto'),('alberto',0,'loira'),('alberto',-1,'cervantes'),('eva',0,'dali'),('eva',-1,'picasso-access'),('eva-west-footpath',0,'eva'),('eva-west-footpath',-1,'patricia'),('silvia-north',0,'eva'),('silvia-north',-1,'patricia'),('silvia-south',0,'patricia'),('silvia-south',-1,'jorge'),('teodoro-rojo',0,'eva'),('teodoro-rojo',-1,'jorge'),('guillermo',0,'eva'),('patricia',-1,'guillermo'),('jorge',0,'dali'),('jorge',-1,'guillermo'),('bolivia',0,'loira'),('bolivia',-1,'picasso')]
+joins=[('cervantes',0,'dali'),('elena-north',0,'isabel'),('elena-north',-1,'cervantes'),('elena-south',0,'cervantes'),('elena-south',-1,'eva'),('isabel',-1,'alberto'),('alberto',0,'loira'),('alberto',-1,'cervantes'),('eva',0,'dali'),('eva',-1,'picasso-access'),('eva-west-footpath',0,'eva'),('eva-west-footpath',-1,'patricia'),('silvia-north',0,'eva'),('silvia-north',-1,'patricia'),('silvia-south',0,'patricia'),('silvia-south',-1,'jorge'),('teodoro-rojo',0,'eva'),('teodoro-rojo',-1,'jorge'),('guillermo',0,'eva'),('patricia',-1,'guillermo'),('jorge',0,'dali'),('jorge',-1,'guillermo'),('bolivia',0,'loira'),('bolivia',-1,'picasso')]
 for child,index,parent in joins:
  assert to_line(roads[child]['points'][index],roads[parent]['points'])<.03, f'{child} misses {parent}'
+# Cervantes runs on across Calle de Picasso, the footpath behind the west bays, into the car park
+# (the survey has it flush at about +0.2 m from the path to the bays), so it must cross the path's line.
+def crosses(line, other):
+ for a,b in zip(line,line[1:]):
+  for c,d in zip(other,other[1:]):
+   side=lambda p,q,r:(q[0]-p[0])*(r[1]-p[1])-(q[1]-p[1])*(r[0]-p[0])
+   if side(a,b,c)*side(a,b,d)<=0 and side(c,d,a)*side(c,d,b)<=0:return True
+ return False
+assert crosses(roads['cervantes']['points'],roads['picasso-access']['points']), 'cervantes misses Calle de Picasso'
 # Streets and house boundaries must agree: no carriageway or parking bay may touch a house.
 def ring_gap(ring, building):
  pts=[]
@@ -59,4 +68,4 @@ reference=s['streetReference']
 assert reference['checkedAt']=='2026-10-12' and reference['imageryCaptureDate'] is None
 assert all('key=' not in url for url in reference['referenceLinks'].values())
 assert not any(b.get('registryRing') or b.get('layoutCorrection') for b in s['buildings'])
-print('18 Google/photo-checked street segments, house/player clearances, 25 joins, canonical names, original registry frontages and key-free reference links PASS')
+print('18 Google/photo-checked street segments, house/player clearances, 25 joins (Cervantes crossing Calle de Picasso), canonical names, original registry frontages and key-free reference links PASS')

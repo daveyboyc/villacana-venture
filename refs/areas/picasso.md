@@ -12,18 +12,19 @@ Calle Pintor Picasso, the inner car-park access aisle and the Picasso car park.
 - 25 November 2026 (later; Dave: there is a second barrier, with Street View from Calle Loira and Calle Bolivia, Oct 2024, and a Google 3D top-down screenshot, reference/google-maps/03-05, Imagery © Google): the north entrance has two lanes either side of the gatehouse island. The west lane, between the island and the narrow planter, is the entry (lane arrow inward); the east lane, between the island and the long wall's north end, is the exit (no-entry sign towards Bolivia). Each has a boom from a white drive cabinet about 1 m high on the island to a rest post; the entry rest post has a red-white bollard beyond it. Both are placed from the Google top-down view registered to the aerial (0.0385 m per pixel, wall north end on (-91.4, -67.8)), good to about 1.5 m: entry rest post (-110.46, -62.02), cabinet end (-104.95, -62.87), boom 5.6 m; exit rest post (-90.36, -64.84), cabinet end (-95.21, -64.22), boom 4.9 m. IMG_3131's pin was 5.5 m east; its camera is corrected to (-107.8, -61.9).
 - 25 November 2026 (picasso-car-park-north-entrance): the north entrance's ground is traced in data/ground_plan_picasso.json from Dave's Google 3D top-down screenshot registered to the aerial (about 1.5 m): asphalt round both lanes and west of the narrow planter (the model had generic terracotta), the gatehouse island with a terracotta apron and white kerb, its round lawn bed with a brick border, and the narrow planter with its kerb. The gatehouse (about 3.4 m square, 2.9 m high, white, flat-roofed, grilled window; not in the registry) is built plain from picasso_car_park.json. Still to build: the brick path, lawn strip and CALLE DE PICASSO plinth west of the entry lane, the ramp, the island's trees and palms, the planter's bougainvillea and notice pillar, and the signs.
 - 25 November 2026 (detail pass; Dave's Street View from Calle Bolivia, reference/google-maps/06-08, Oct 2024, Imagery © Google): the north entrance now has the gatehouse's arched grilled windows, blue plaque and sloping white wing walls; the STOP and ACCESO PLAYA signs on the island, the no-entry sign over the exit cabinet, the blue dead-end sign at the long wall's north end and the COMUNIDAD VILLACANA board; the notice pillar at the narrow planter; the island's strelitzias, sago palms, feathery tree and palm and the planter's bougainvillea; and west of the entry lane the terracotta path with its brick edge, the lawn strip, the CALLE DE PICASSO plinth and a lantern (data/picasso_entrance_details.json, data/ground_plan_picasso.json). All estimated. Still to build: the ramp between white walls with the CALLE JUAN GRIS plaque.
+- 25 November 2026 (Dave: the path on the car park's west side is Calle Picasso; task picasso-west-path): Calle de Picasso is the footpath behind the hedge strip at the back of the west bays, from the CALLE DE PICASSO plinth and lantern, where it meets the Juan Gris paving, to the end of Calle Eva. It is retraced on the pale band the straightened aerial shows 8.4 m west of the bays' car line (0.45 m rms), 1.8 m wide (street_layout.json picasso-access, which was a 4 m asphalt 'car-park access' line about 2 m further east). The laser survey has it on three level stretches, +1.17 m from the plinth, +0.71 m from about 41 m along and +0.20 m from about 83 m, where Calle Cervantes crosses it into the car park; each drop (0.45 and 0.42 m) is built as three steps on the house side beside a ramp (data/picasso_path_steps.json), inferred from the resort's other lane drops because no photo shows them. The hedge strip stands at the path's level, 0.4-0.9 m above the bays, so the car-park outline's west edge is pulled back to the bays with a gap for Cervantes. Open: the form of each drop, the edge between the hedge strip and the bays, a 0.24 m dip just before Calle Eva, and the path's paving (photo request picasso-west-path-drops).
 
 ## Read first
 
 - docs: `docs/STREET_LAYOUT.md`, `docs/reviews/picasso-car-park/README.md`
-- data: `data/street_layout.json`, `data/picasso_service_road.json`, `data/picasso_car_park.json`, `data/ground_plan_picasso.json`, `data/picasso_entrance_details.json`
-- src: `src/picasso-service-road.ts`, `src/picasso-car-park.ts`, `src/car-park-barrier.ts`, `src/picasso-entrance-details.ts`
+- data: `data/street_layout.json`, `data/picasso_service_road.json`, `data/picasso_car_park.json`, `data/ground_plan_picasso.json`, `data/picasso_entrance_details.json`, `data/picasso_path_steps.json`, `data/terrain.json`
+- src: `src/picasso-service-road.ts`, `src/picasso-car-park.ts`, `src/car-park-barrier.ts`, `src/picasso-entrance-details.ts`, `src/ramp-steps.ts`
 - contact sheet: `reference/contact-sheets/picasso.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
 
 Layout: 29, Levels and slopes: 7, Facades and roofs: 11, Materials: 9, Planting: 11, Signs: 10, Views: 8
-33 reviewed, 0 suggested only by camera position.
+33 reviewed, 1 suggested only by camera position.
 
 ## Open build tasks
 
@@ -35,6 +36,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | P2 | `path-network-inventory-picasso` [#132](https://github.com/daveyboyc/villacana-venture/issues/132) | Pintor Picasso and the car park: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P2 | `picasso-car-park-barrier` | Main car park: the security barrier at the north entrance (asset and placement) | in-progress · Claude · placement: not-verified | [IMG_3131](../../public/photos-ref/IMG_3131.jpg) |
 | P2 | `picasso-car-park-north-entrance` | Main car park north entrance: asphalt apron, lanes, separator and the CALLE DE PICASSO plinth | in-progress · Claude · placement: not-verified | [IMG_3131](../../public/photos-ref/IMG_3131.jpg), [IMG_3130](../../public/photos-ref/IMG_3130.jpg), `google-maps/03-street-view-loira-entry-barrier-2024-10.jpg`, `google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg`, `google-maps/05-3d-top-down-car-park-north-entrance.jpg`, `google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg`, `google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg`, `google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg` |
+| P2 | `picasso-west-path` | Calle de Picasso: the footpath on the car park's west side, its levels, steps and ramps | in-progress · Claude · placement: not-verified | [IMG_3131](../../public/photos-ref/IMG_3131.jpg), `google-maps/01-street-map-lane-names.png`, `google-maps/05-3d-top-down-car-park-north-entrance.jpg` |
 
 ## Built from these photos
 
@@ -223,3 +225,11 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2444.jpg](../../public/photos-ref/IMG_2444.jpg) | ground | layout, facades, view | Cervantes east end: looking back east along the lane to the car park side **Looks at:** Lane end opening towards the car park. **Note:** Cars at the far end are probably the Picasso car park but that is not certain from the photo; the lane end is about 15 m away. looksAt is estimated along heading 65. _Used by: cervantes_lane_edges.json:cervantes-east-north-thuja-planter._ |
 | `reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png` | aerial | layout, view | Apple Maps 3D: north pool looking east towards the Picasso car park |
 | `reference/apple-maps/12-3d-main-pool-east-steps-picasso.png` | aerial | layout, levels | Apple Maps 3D: main pool looking north-east, 90 Miles terrace and the east steps **Note:** Dave, 2026-10-21. A narrow flight of steps comes down from an opening in the white wall along Calle Pintor Picasso, between the curved 90 Miles terrace and the east lawn, to the paving north-east of the toddler pool. Not a wide flight off the restaurant roof. |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_3134.jpg](../../public/photos-ref/IMG_3134.jpg) | not reviewed | not reviewed | IMG_3134 _Used by: lane_walls.json:juan-gris-east-hedge, lane_walls.json:juan-gris-east-screen._ |
