@@ -10,6 +10,7 @@ module = (ROOT / 'src/picasso-car-park.ts').read_text()
 blueprint = (ROOT / 'src/blueprint.ts').read_text()
 data = json.loads((ROOT / 'data/picasso_car_park.json').read_text())
 photos = {p['file'] for p in json.loads((ROOT / 'public/photos-ref/manifest.json').read_text())}
+photos |= {r['id'] for r in json.loads((ROOT / 'public/reference-index.json').read_text())['references']}
 
 assert 'IMG_3131' in asset[:asset.index('export const BOOM_HEIGHT')], 'asset must cite the photo it is modelled on'
 for part in ('-boom`', '-boom-edges`', '-rest-post`', '-photocell`', '-cabinet`', '-red`', '-white`'):
@@ -23,7 +24,7 @@ assert 'picassoCarParkPlan().barriers' in blueprint, 'the map must draw the barr
 barriers = data['barriers']
 assert {b['id'] for b in barriers} == {'picasso-car-park-north-barrier', 'picasso-car-park-exit-barrier'}, 'entry and exit barriers'
 for b in barriers:
-    assert b['evidence'] and all(e in photos for e in b['evidence']), f"{b['id']}: evidence must be indexed photos"
+    assert b['evidence'] and all(e in photos for e in b['evidence']), f"{b['id']}: evidence must be indexed photos or references"
     span = math.dist(b['pivot'], b['restPost'])
     assert abs(span - b['armLength']) < 0.05, f"{b['id']}: pivot and rest post are {span:.2f} m apart, armLength {b['armLength']}"
     assert 2.5 <= span <= 6.5, f"{b['id']}: boom of {span:.2f} m is not a single-lane barrier"

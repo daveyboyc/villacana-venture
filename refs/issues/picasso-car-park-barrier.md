@@ -12,15 +12,15 @@ Task `picasso-car-park-barrier` · area **Pintor Picasso and the car park** · p
 
 ## Photos to build from
 
-- `public/photos-ref/IMG_3131.jpg`: CALLE DE PICASSO plinth, barrier arm and ramp between white walls (ground — pin ±4.7 m; looks at barrier and CALLE DE PICASSO plinth at the north end)
+- `public/photos-ref/IMG_3131.jpg`: CALLE DE PICASSO plinth, barrier arm and ramp between white walls (ground — pin ±1.5 m; looks at barrier and CALLE DE PICASSO plinth at the north end)
 
 ## Build
 
-Dave, 25 November 2026: in the main car park add the security barriers, create the asset and place it. Build a reusable barrier asset from IMG_3131 (white boom with red edges, red rest post with fork and photocell, red-white bollard, drive cabinet inferred) and place the photographed barrier, closed, at the north entrance from the camera pin and the photo's ground-plane measurements.
+Dave, 25 November 2026: in the main car park add the security barriers, create the asset and place it. Build a reusable barrier asset from IMG_3131 (white boom with red edges, red rest post with fork and photocell, red-white bollard, drive cabinet inferred) and place the barriers, closed, at the north entrance: the entry barrier in the west lane and the exit barrier in the east lane (Dave, 25 November: there is a second barrier; Street View Oct 2024 and a Google 3D top-down screenshot).
 
 ## Do not
 
-No change to Walk. Do not invent a second barrier that no photo shows. Do not grade the position photographed or measured: no camera is solved and the pin is good to about 5 m.
+No change to Walk. Do not grade the positions photographed or measured: no camera is solved; the Google screenshot registration is good to about 1.5 m.
 
 ## Done when
 

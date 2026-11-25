@@ -1837,11 +1837,16 @@
     "generated": 274
    },
    "placement": {
-    "features": 5,
+    "features": 7,
     "verified": 0,
-    "disputed": 0
+    "disputed": 2
    },
-   "discrepancies": [],
+   "discrepancies": [
+    {
+     "id": "photo-discrepancy:00bed1bbb938338a",
+     "feature": "picasso_car_park.json:picasso-car-park-north-barrier"
+    }
+   ],
    "tasks": {
     "open": 3,
     "inProgress": 1,
@@ -1853,7 +1858,7 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 5,
+    "estimated": 7,
     "inferred": 0,
     "registry": 0,
     "gaps": 0
@@ -1863,8 +1868,8 @@
     "Footprints: 46% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 25, 25 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
-    "How sure: 0 photographed, 5 estimated, 0 inferred.",
-    "Placement: 0 of 5 features verified.",
+    "How sure: 0 photographed, 7 estimated, 0 inferred.",
+    "Placement: 0 of 7 features verified, 1 open discrepancy.",
     "Model loop: 0 tracked findings accepted, 10 still open; 5 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -2103,16 +2108,11 @@
     "generated": 249
    },
    "placement": {
-    "features": 13,
+    "features": 12,
     "verified": 0,
-    "disputed": 2
+    "disputed": 1
    },
-   "discrepancies": [
-    {
-     "id": "photo-discrepancy:00bed1bbb938338a",
-     "feature": "picasso_car_park.json:picasso-car-park-north-barrier"
-    }
-   ],
+   "discrepancies": [],
    "tasks": {
     "open": 2,
     "inProgress": 1,
@@ -2124,18 +2124,18 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 13,
+    "estimated": 12,
     "inferred": 0,
     "registry": 0,
-    "gaps": 4
+    "gaps": 3
    },
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey; streets within 0.46 m.",
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.8 m.",
     "Photos: 36, 36 placed; no camera solved.",
     "Facades: 4 of 253 kit parts traced from photos.",
-    "How sure: 0 photographed, 13 estimated, 0 inferred, 4 known gaps.",
-    "Placement: 0 of 13 features verified, 1 open discrepancy.",
+    "How sure: 0 photographed, 12 estimated, 0 inferred, 3 known gaps.",
+    "Placement: 0 of 12 features verified.",
     "Model loop: 0 tracked findings accepted, 1 still open; 4 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -3348,9 +3348,9 @@
     "generated": 2452
    },
    "placement": {
-    "features": 538,
+    "features": 539,
     "verified": 0,
-    "disputed": 60
+    "disputed": 61
    },
    "discrepancies": [
     {
@@ -3581,18 +3581,18 @@
    },
    "confidence": {
     "photographed": 95,
-    "estimated": 192,
+    "estimated": 193,
     "inferred": 19,
     "registry": 232,
-    "gaps": 42
+    "gaps": 41
    },
    "status": [
     "Ground: 95% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 662, 642 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 95 photographed, 192 estimated, 19 inferred, 42 known gaps.",
-    "Placement: 0 of 538 features verified, 54 open discrepancies.",
+    "How sure: 95 photographed, 193 estimated, 19 inferred, 41 known gaps.",
+    "Placement: 0 of 539 features verified, 54 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 37 still open; 53 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {

@@ -9,6 +9,7 @@ Calle Pintor Picasso, the inner car-park access aisle and the Picasso car park.
 - IMG_2345 supports bounded utility fronts/brown doors, boundary wall, stone plinth/railings, short ramp and Details-only bins. Frontage offsets and dimensions remain estimated at the existing Picasso road; registry houses, asphalt route and site levels are retained. Ramp is solid inaccessible private-frontage geometry; no new walkable elevated platform or unseen wall continuation is asserted.
 - 24 November 2026 (photo coverage, IMG_3097-3131 and 3184-3203): the car park is bounded on the east by a plain white wall with a level top (laser survey: about 1.4 m high at the uphill north end, 3.1 m at the south end), about 107 m long, from (-91.4, -67.8) to (-35.7, 23.9) on the aerial, with the Calle Pintor Picasso service road and a cypress hedge outside it (IMG_3125, IMG_3129). Inside: a west row of angled bays against a hedge, a central nose-to-nose row with palms, a hedge-ringed round palm island near the south end (IMG_3100), and two accessible bays at the south end facing a low azulejo-tiled step onto the terracotta walk to the community office (IMG_3097, 3098, 3189, 3194). In the south-east corner stand the bin store (RUBBISH COLLECTION / DEPOSITO BASURA, IMG_3099, 3101) with a walled yard of yellow containers (IMG_3103) and recycling igloos at the hotel wall (IMG_3104). The service road continues south-east between the hotel's ground floor (ramps, sliding gate, IMG_3121) and white utility buildings with maroon substation doors (IMG_3106, 3123). The model has none of the wall, island planting or south step, and its car-park outline, central row and access line are off the aerial: see the picasso-car-park-* and picasso-access-off-aisle discrepancies and docs/reviews/picasso-car-park. No camera is solved yet.
 - 25 November 2026 (picasso-car-park-barrier): the security barrier at the north entrance is built from IMG_3131 as a shared asset (src/car-park-barrier.ts), closed: a white boom with red edges at about 1 m resting in the V fork of a red rest post with a black photocell box, and a red-white bollard just beyond. Ground-plane readings at an assumed 1.5 m eye height put the rest post 2.6 m ahead and 0.7 m right of the camera, so with the phone pin and compass it stands at about (-105.7, -64.8), good to about 5 m and 25 degrees. The pivot end and drive cabinet are out of frame (inferred). Open: the ground there is asphalt in the photo but terracotta in the model; the brick path, CALLE DE PICASSO plinth, lane separator and whether the other lane has a second barrier are not built (picasso-car-park-north-entrance-apron, gap:picasso-car-park-second-barrier, task picasso-car-park-north-entrance). IMG_3131's reviewed looksAt points about 23 degrees right of its compass heading; the brick path edge in the photo runs parallel to the car-park aisles only with the compass heading.
+- 25 November 2026 (later; Dave: there is a second barrier, with Street View from Calle Loira and Calle Bolivia, Oct 2024, and a Google 3D top-down screenshot, reference/google-maps/03-05, Imagery © Google): the north entrance has two lanes either side of the gatehouse island. The west lane, between the island and the narrow planter, is the entry (lane arrow inward); the east lane, between the island and the long wall's north end, is the exit (no-entry sign towards Bolivia). Each has a boom from a white drive cabinet about 1 m high on the island to a rest post; the entry rest post has a red-white bollard beyond it. Both are placed from the Google top-down view registered to the aerial (0.0385 m per pixel, wall north end on (-91.4, -67.8)), good to about 1.5 m: entry rest post (-110.46, -62.02), cabinet end (-104.95, -62.87), boom 5.6 m; exit rest post (-90.36, -64.84), cabinet end (-95.21, -64.22), boom 4.9 m. IMG_3131's pin was 5.5 m east; its camera is corrected to (-107.8, -61.9).
 
 ## Read first
 
@@ -19,8 +20,8 @@ Calle Pintor Picasso, the inner car-park access aisle and the Picasso car park.
 
 ## Coverage
 
-Layout: 24, Levels and slopes: 7, Facades and roofs: 10, Materials: 9, Planting: 9, Signs: 5, Views: 8
-27 reviewed, 0 suggested only by camera position.
+Layout: 27, Levels and slopes: 7, Facades and roofs: 10, Materials: 9, Planting: 9, Signs: 7, Views: 8
+30 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -40,19 +41,26 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Pintor Picasso and the car park"]
-  A --> F0["Round hedged palm island in the main car park · unreviewed"]
-  F0 --> PIMG_3100_jpg(["IMG_3100"])
-  F0 --> PIMG_3189_jpg(["IMG_3189"])
-  A --> F1["Long white wall between the car park and Calle Pintor Picasso · unreviewed"]
-  F1 --> PIMG_3124_jpg(["IMG_3124"])
-  F1 --> PIMG_3125_jpg(["IMG_3125"])
-  F1 --> PIMG_3129_jpg(["IMG_3129"])
-  A --> F2["picasso boundary wall · unreviewed"]
-  F2 --> PIMG_2345_jpg(["IMG_2345"])
-  A --> F3["picasso stone plinth · unreviewed"]
-  F3 --> PIMG_2345_jpg(["IMG_2345"])
-  A --> F4["picasso utility front · unreviewed"]
+  A --> F0["Exit barrier, east lane of the car park's north entrance, between the gatehouse island and the long wall · disputed"]
+  F0 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  F0 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  A --> F1["Round hedged palm island in the main car park · unreviewed"]
+  F1 --> PIMG_3100_jpg(["IMG_3100"])
+  F1 --> PIMG_3189_jpg(["IMG_3189"])
+  A --> F2["Entry barrier, west lane of the car park's north entrance (boom, rest post and bollard) · disputed"]
+  F2 --> PIMG_3131_jpg(["IMG_3131"])
+  F2 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F2 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  A --> F3["Long white wall between the car park and Calle Pintor Picasso · unreviewed"]
+  F3 --> PIMG_3124_jpg(["IMG_3124"])
+  F3 --> PIMG_3125_jpg(["IMG_3125"])
+  F3 --> PIMG_3129_jpg(["IMG_3129"])
+  A --> F4["picasso boundary wall · unreviewed"]
   F4 --> PIMG_2345_jpg(["IMG_2345"])
+  A --> F5["picasso stone plinth · unreviewed"]
+  F5 --> PIMG_2345_jpg(["IMG_2345"])
+  A --> F6["picasso utility front · unreviewed"]
+  F6 --> PIMG_2345_jpg(["IMG_2345"])
 ```
 
 ## Placement evidence
@@ -61,7 +69,9 @@ graph LR
 
 | Feature | Placement | Photo diagnostics | Blockers |
 | --- | --- | --- | --- |
+| `picasso_car_park.json:picasso-car-park-exit-barrier` | disputed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy picasso-car-park-north-entrance-apron |
 | `picasso_car_park.json:picasso-car-park-island` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `picasso_car_park.json:picasso-car-park-north-barrier` | disputed | differs | open discrepancy photo-discrepancy:00bed1bbb938338a; open model-loop discrepancy picasso-car-park-north-entrance-apron |
 | `picasso_car_park.json:picasso-car-park-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `picasso_service_road.json:picasso-boundary-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `picasso_service_road.json:picasso-stone-plinth` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -73,7 +83,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 
 | Task | Photo | Result | Render | Notes |
 | --- | --- | --- | --- | --- |
-| `picasso-car-park-barrier` | [IMG_3131](../../public/photos-ref/IMG_3131.jpg) | **differs** → `picasso-car-park-north-entrance` | [after](../../docs/reviews/picasso-car-park-barrier/IMG_3131-after.png) | Layout, through the unsolved starting pose (pin, compass heading 258, 15 degrees down, 1.5 m eye height): the rest post, its fork and photocell, the bollard beyond it and the boom running back past the camera's right stand where the photo has them (side by side in IMG_3131-pair.jpg). This agreement follows from reading the photo with the same camera, so it checks the build, not the position. Still different: the post is bent in the photo and straight in the model; the ground is terracotta where the photo has asphalt; the brick path, lawn, plinth, garden wall, ramp and the kerb nose and bed beyond the rest post are missing (picasso-car-park-north-entrance-apron). A photographic diagnostic, not placement approval. |
+| `picasso-car-park-barrier` | [IMG_3131](../../public/photos-ref/IMG_3131.jpg) | **differs** → `picasso-car-park-north-entrance` | [after](../../docs/reviews/picasso-car-park-barrier/IMG_3131-after.png) | Layout, through the unsolved starting pose (camera corrected to (-107.8, -61.9) from the Google-registered rest post, compass heading 258, 15 degrees down, 1.5 m eye height): the entry barrier's rest post, fork and photocell, the bollard beyond it and the boom running back past the camera's right stand where the photo has them (side by side in IMG_3131-pair.jpg). The camera was placed from the same rest post, so this checks the build, not the position; the position comes from the Google top-down view. Still different: the post is bent in the photo and straight in the model; the ground is terracotta where the photo has asphalt; the brick path, lawn, plinth, garden wall, ramp and the kerb nose and bed beyond the rest post are missing (picasso-car-park-north-entrance-apron). A photographic diagnostic, not placement approval. |
 | `picasso-car-park-barrier` | [IMG_3131](../../public/photos-ref/IMG_3131.jpg) | **differs** → `picasso-car-park-north-entrance` | [after](../../docs/reviews/picasso-car-park-barrier/IMG_3131-after-details.png) | Show details, same starting pose: the barrier, bollard and photocell are drawn as in Layout. The surroundings differ as in the Layout check. A photographic diagnostic, not placement approval. |
 
 **Built without complete newer photo-check records:** `picasso-service-road`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
@@ -83,11 +93,14 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2345.jpg](../../public/photos-ref/IMG_2345.jpg) | ground | layout, materials, levels | Pintor Picasso: service road, utility sheds and bins _Used by: picasso_service_road.json:picasso-utility-front, picasso_service_road.json:picasso-boundary-wall, picasso_service_road.json:picasso-stone-plinth._ |
+| `reference/google-maps/05-3d-top-down-car-park-north-entrance.jpg` | aerial | layout | Google 3D top-down: the car park's north entrance with both barrier booms **Note:** Google Maps 3D view, nearly top-down and north-up, screenshot sent by Dave on 25 Nov 2026 (Imagery © Google 2026; capture date not shown). Shows the Calle Loira / Bolivia / Pintor Picasso junction, the gatehouse island (Villacana pin) with its round bed and terracotta apron, the narrow planter, the brick-and-lawn strip west of the entry lane, the long wall, and both closed booms as thin lines with their cabinets and post shadows. Registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8); features agree to about 1-2 m (data/picasso_car_park.json barriers). _Used by: picasso_car_park.json:picasso-car-park-north-barrier, picasso_car_park.json:picasso-car-park-exit-barrier._ |
 | [IMG_3100.jpg](../../public/photos-ref/IMG_3100.jpg) | ground | layout, planting, view | From the bin store looking north-west across the car park to the round palm island **Looks at:** round hedged palm island in the car park. **Note:** Round island ringed by a clipped hedge on a white kerb, with tall Canary/date palms, a candelabra euphorbia and a fan palm clump; cars parked round it. The bin store wall with its sign is at the right edge. _Used by: picasso_car_park.json:picasso-car-park-island._ |
 | [IMG_3129.jpg](../../public/photos-ref/IMG_3129.jpg) | ground | layout, materials, planting | Service road looking north: long white wall left, cypress hedge right **Looks at:** service road along the long wall. **Note:** The wall continues straight and plain to a white building at the north end; tall cypress and pine hedge on the right. _Used by: picasso_car_park.json:picasso-car-park-wall._ |
 | [IMG_3189.jpg](../../public/photos-ref/IMG_3189.jpg) | ground | layout, levels, materials | Kerbed tiled path meeting the accessible bay, hedged palm island with bollard **Looks at:** kerb and tiled path at the accessible bays. **Note:** Terracotta walk between white kerbs ends at the asphalt; a kerb ramp and a tiled azulejo riser beside the accessible bay; a hedge-ringed bed with fan palms and a red-white bollard. Houses behind. _Used by: picasso_car_park.json:picasso-car-park-island._ |
 | [IMG_3124.jpg](../../public/photos-ref/IMG_3124.jpg) | ground | facades, layout | White utility building and the start of the long boundary wall **Looks at:** utility building at the south end of the long wall. **Note:** Flat-roofed white building with dark green door, a low rounded white block beside a sloping door ramp, and a kerbed footway; the long plain white wall runs on north-west along the road. _Used by: picasso_car_park.json:picasso-car-park-wall._ |
 | [IMG_3125.jpg](../../public/photos-ref/IMG_3125.jpg) | ground | layout, materials | Long white wall between the car park and Calle Pintor Picasso, cypress hedge opposite **Looks at:** long boundary wall along the service road. **Note:** Plain white rendered wall about 2.5-3 m high, no openings, running straight to the north end; asphalt road with a cypress hedge on its east side. The car park is behind the wall. _Used by: picasso_car_park.json:picasso-car-park-wall._ |
+| `reference/google-maps/03-street-view-loira-entry-barrier-2024-10.jpg` | ground | layout, signage | Street View from Calle Loira into the car park: the entry barrier closed **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south into the car park's west (entry) lane: the red-and-white boom closed from a plain white drive cabinet about 1 m high on the gatehouse island (left) to a red rest post with a red-white bollard beyond it (right), a lane arrow by the rest post. Left: the gatehouse's grilled window, STOP sign, ACCESO PLAYA / TO THE BEACH sign, lawn with a brick-edged white kerb. Right: a white pillar with notices and a ZONA VIDEOVIGILADA sign, bougainvillea over the brick-edged narrow planter. _Used by: picasso_car_park.json:picasso-car-park-north-barrier._ |
+| `reference/google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg` | ground | layout, signage | Street View from Calle Bolivia: the exit barrier between the gatehouse island and the long wall **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south-west from Calle Bolivia: on the left the Calle Pintor Picasso service road runs down beside the long white wall; in the centre the east (exit) lane is closed by a red-and-white boom from a white drive cabinet on the gatehouse island, under a no-entry sign, to the wall's north end with a blue sign. Right: the gatehouse with its grilled window and the round island lawn on a brick-edged kerb; the entry barrier shows beyond it with its red-white posts and STOP sign. _Used by: picasso_car_park.json:picasso-car-park-exit-barrier._ |
 | [IMG_3097.jpg](../../public/photos-ref/IMG_3097.jpg) | ground | layout, levels, materials, signage | Car park south end: accessible bays and the tiled step up to the office walk **Looks at:** accessible bays and tiled plaza edge at the car park's south end. **Note:** Two accessible bays (blue symbol, white lines) nose south to a low step with blue-and-white azulejo risers onto a terracotta-tiled walk that leads between clipped hedges to the community office; Canary and fan palms, resort directory sign and a solar lamp beside it. GPS pin ±17 m. |
 | [IMG_3098.jpg](../../public/photos-ref/IMG_3098.jpg) | ground | layout, levels, materials, planting | Car park south end: accessible bays, tiled step and hedged palm beds **Looks at:** tiled step and hedged palm beds at the car park's south end. **Note:** Same step as IMG_3097 from closer: two tiled risers with a blue-and-white azulejo band, red-white bollard by the east bed, hedged beds with palms and a Norfolk pine behind the office. |
 | [IMG_3194.jpg](../../public/photos-ref/IMG_3194.jpg) | ground | layout, planting, facades, signage | Hedged palm bed beside the tiled walk to the community office **Looks at:** tiled walk and community office front. **Note:** Curving clipped hedge on a white kerb round a fan-palm bed; square terracotta tiles; the white single-storey office with a Casitas Villacana sign, AT plaque, site map board and bougainvillea. |

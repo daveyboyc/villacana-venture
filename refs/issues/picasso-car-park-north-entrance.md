@@ -12,16 +12,16 @@ Task `picasso-car-park-north-entrance` · area **Pintor Picasso and the car park
 
 ## Photos to build from
 
-- `public/photos-ref/IMG_3131.jpg`: CALLE DE PICASSO plinth, barrier arm and ramp between white walls (ground — pin ±4.7 m; looks at barrier and CALLE DE PICASSO plinth at the north end)
+- `public/photos-ref/IMG_3131.jpg`: CALLE DE PICASSO plinth, barrier arm and ramp between white walls (ground — pin ±1.5 m; looks at barrier and CALLE DE PICASSO plinth at the north end)
 - `public/photos-ref/IMG_3130.jpg`: Low white wall with sign post at the north end of the car park (ground — pin ±21.1 m; looks at low white wall and sign post at the north entrance)
 
 ## Build
 
-Lay out the car park's north entrance between Calle Loira, Calle Bolivia and the planted island: the asphalt apron and its lanes, the white kerb nose and bougainvillea bed beside the barrier's rest post, the brick-edged terracotta path, lawn strip and CALLE DE PICASSO plinth, and the ramp between white walls. Then move the barrier (data/picasso_car_park.json barriers) onto the traced lane and decide from photos whether the other lane has a second barrier.
+Lay out the car park's north entrance between Calle Loira, Calle Bolivia and the planted island: the asphalt apron and its lanes, the white kerb nose and bougainvillea bed beside the barrier's rest post, the brick-edged terracotta path, lawn strip and CALLE DE PICASSO plinth, and the ramp between white walls. Then check both barriers (data/picasso_car_park.json barriers) against the traced lanes.
 
 ## Do not
 
-No change to Walk. No second barrier without a photo. Do not grade positions measured without a solved camera.
+No change to Walk. Do not grade positions measured without a solved camera.
 
 ## Done when
 

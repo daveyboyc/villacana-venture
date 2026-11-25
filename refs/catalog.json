@@ -24307,24 +24307,24 @@
    "signage",
    "levels"
   ],
-  "note": "A red-and-white barrier arm (with a fixed red-white post) across the asphalt; beyond, a terracotta path with a brick edge, a white plinth lettered CALLE DE PICASSO on a lawn, a hedged garden wall, lantern post and a ramp rising between white walls with a tiled name plaque. Which side of the car park the barrier stands on is not settled from this photo. The barrier is closed and its boom rests in the fork of a red rest post with a black photocell box; it is built from this photo, placed from the pin and compass heading (data/picasso_car_park.json barriers).",
+  "note": "A red-and-white barrier arm (with a fixed red-white post) across the asphalt; beyond, a terracotta path with a brick edge, a white plinth lettered CALLE DE PICASSO on a lawn, a hedged garden wall, lantern post and a ramp rising between white walls with a tiled name plaque. Which side of the car park the barrier stands on is not settled from this photo. The barrier is closed and its boom rests in the fork of a red rest post with a black photocell box; it is the entry barrier in the west lane of the north entrance, built from this photo and placed from Dave's Google 3D top-down screenshot (data/picasso_car_park.json barriers); the camera pin is corrected to match, and looksAt now follows the compass heading, which the boom's direction in the Google view confirms to within 3 degrees.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1wBbT9JzfXNGK0FBs4Ty9p228bea7CXkH/view?usp=drivesdk",
   "camera": {
-   "x": -103.0,
-   "z": -64.6,
+   "x": -107.8,
+   "z": -61.9,
    "heading": 258,
-   "accuracy": 4.7,
+   "accuracy": 1.5,
    "altitude": 5.8,
-   "trust": "phone location"
+   "trust": "checked against photo content"
   },
   "citedBy": [
    "picasso_car_park.json:picasso-car-park-north-barrier"
   ],
   "looksAt": [
-   -110,
-   -66
+   -115.6,
+   -60.2
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
@@ -26463,6 +26463,69 @@
   "sourceRevision": null,
   "note": null,
   "citedBy": []
+ },
+ {
+  "id": "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+  "kind": "map-screenshot",
+  "path": "reference/google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+  "title": "Street View from Calle Loira into the car park: the entry barrier closed",
+  "shows": [
+   "picasso",
+   "north-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "signage"
+  ],
+  "sourceRevision": null,
+  "note": "Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south into the car park's west (entry) lane: the red-and-white boom closed from a plain white drive cabinet about 1 m high on the gatehouse island (left) to a red rest post with a red-white bollard beyond it (right), a lane arrow by the rest post. Left: the gatehouse's grilled window, STOP sign, ACCESO PLAYA / TO THE BEACH sign, lawn with a brick-edged white kerb. Right: a white pillar with notices and a ZONA VIDEOVIGILADA sign, bougainvillea over the brick-edged narrow planter.",
+  "citedBy": [
+   "picasso_car_park.json:picasso-car-park-north-barrier"
+  ]
+ },
+ {
+  "id": "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+  "kind": "map-screenshot",
+  "path": "reference/google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+  "title": "Street View from Calle Bolivia: the exit barrier between the gatehouse island and the long wall",
+  "shows": [
+   "picasso",
+   "north-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "signage"
+  ],
+  "sourceRevision": null,
+  "note": "Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south-west from Calle Bolivia: on the left the Calle Pintor Picasso service road runs down beside the long white wall; in the centre the east (exit) lane is closed by a red-and-white boom from a white drive cabinet on the gatehouse island, under a no-entry sign, to the wall's north end with a blue sign. Right: the gatehouse with its grilled window and the round island lawn on a brick-edged kerb; the entry barrier shows beyond it with its red-white posts and STOP sign.",
+  "citedBy": [
+   "picasso_car_park.json:picasso-car-park-exit-barrier"
+  ]
+ },
+ {
+  "id": "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+  "kind": "map-screenshot",
+  "path": "reference/google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+  "title": "Google 3D top-down: the car park's north entrance with both barrier booms",
+  "shows": [
+   "picasso",
+   "north-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout"
+  ],
+  "sourceRevision": null,
+  "note": "Google Maps 3D view, nearly top-down and north-up, screenshot sent by Dave on 25 Nov 2026 (Imagery © Google 2026; capture date not shown). Shows the Calle Loira / Bolivia / Pintor Picasso junction, the gatehouse island (Villacana pin) with its round bed and terracotta apron, the narrow planter, the brick-and-lawn strip west of the entry lane, the long wall, and both closed booms as thin lines with their cabinets and post shadows. Registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8); features agree to about 1-2 m (data/picasso_car_park.json barriers).",
+  "citedBy": [
+   "picasso_car_park.json:picasso-car-park-north-barrier",
+   "picasso_car_park.json:picasso-car-park-exit-barrier"
+  ]
  },
  {
   "id": "ref:photos/01-north-pool-lawn-ground-level-2021-04.png",
