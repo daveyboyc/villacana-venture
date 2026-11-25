@@ -6,7 +6,7 @@
     "kerb": 4,
     "enclosure": 23,
     "gap": 21,
-    "context": 41
+    "context": 42
   },
   "records": [
     {
@@ -3767,6 +3767,46 @@
       "confidence": "estimated",
       "placement": "unreviewed",
       "basis": "Model group context, not a traced wall axis or quantity. Plain white wall photographed from the road (IMG_3125, IMG_3129, IMG_3124). Line read from the aerial to about 0.3-1 m. Level top from the laser survey (2014-15 surface model, 2.57 m in model metres): about 1.4 m high at the uphill north end, 3.1 m at the south end. No camera is solved.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "picasso_entrance_details.json:wings",
+      "name": "North entrance · gatehouse wing walls",
+      "kind": "context",
+      "points": [
+        [
+          -97.96,
+          -66.84
+        ],
+        [
+          -95.94,
+          -65.74
+        ],
+        [
+          -102.87,
+          -65.68
+        ],
+        [
+          -104.17,
+          -63.78
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "picasso"
+      ],
+      "evidence": [
+        "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
+        "ref:google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg",
+        "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+        "ref:google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg",
+        "ref:google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg",
+        "ref:google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg",
+        "IMG_3131.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Sloping white wing walls beside the gatehouse in Street View 03, 06 and 08 (Oct 2024); their direction, length and heights are judged, not measured.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {
