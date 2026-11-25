@@ -10,7 +10,10 @@
   "IMG_2553.jpg",
   "IMG_2551.jpg",
   "IMG_2552.jpg",
-  "IMG_2549.jpg"
+  "IMG_2549.jpg",
+  "IMG_2705.jpg",
+  "IMG_2706.jpg",
+  "IMG_2707.jpg"
  ],
  "trust": "Photographed along the two stretches: four large square terracotta tiles across with pale grey joints, a grey exposed-aggregate margin either side, white rounded kerbs where a bed or lawn is kerbed, flush lawn where it is not (IMG_2336, IMG_2504, IMG_2676, IMG_2677, IMG_2549, IMG_2551, IMG_2552, IMG_2553). Widths are estimates: 0.40 m tiles with 0.03 m joints (four across, 1.72 m), 0.14 m margins and 0.12 m kerbs read from the tile proportions, not surveyed. Bed depths and lawn extents are estimates bounded by the registry fronts. The mapped Eva centreline and its walking width are unchanged.",
  "about": "s is metres along a run's axis from its first point; c is metres across it, positive to the right (south-east on both runs). Every surface is laid on the surveyed ground (siteY).",
@@ -277,7 +280,10 @@
     "IMG_2553.jpg",
     "IMG_2551.jpg",
     "IMG_2552.jpg",
-    "IMG_2549.jpg"
+    "IMG_2549.jpg",
+    "IMG_2705.jpg",
+    "IMG_2706.jpg",
+    "IMG_2707.jpg"
    ],
    "clip": [
     -1.7,

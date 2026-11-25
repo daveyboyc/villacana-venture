@@ -248,7 +248,7 @@
     "Facades: 26 of 108 kit parts traced from photos.",
     "How sure: 24 photographed, 21 estimated, 1 inferred, 5 known gaps.",
     "Placement: 0 of 46 features verified, 9 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 10 still open; 5 evidence requests. This is not whole-area acceptance."
+    "Model loop: 0 tracked findings accepted, 10 still open; 6 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
@@ -340,6 +340,19 @@
       "state": "open"
      },
      {
+      "id": "photo-north-pool-dali-approach",
+      "area": "north-pool",
+      "kind": "photo",
+      "ask": "From the south-west crazy-paving path at the north pool, photograph the approach towards Pintor Dalí. Include the west patio corner and adjacent house fronts. Take overlapping views from the Dalí side looking back, including any boundaries or openings.",
+      "why": "Determine whether a path connects these points and locate its edges. The previously cited tiled-lane photos show Calle Eva at the middle pool.",
+      "photoRequest": "north-pool-dali-approach",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
+      "state": "open"
+     },
+     {
       "id": "photo-north-pool-north-row-ground",
       "area": "north-pool",
       "kind": "photo",
@@ -357,8 +370,24 @@
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 2 spots",
+    "headline": "Photos needed: 3 spots",
     "requests": [
+     {
+      "id": "north-pool-dali-approach",
+      "at": [
+       -180,
+       31
+      ],
+      "look": [
+       -208,
+       44
+      ],
+      "ask": "From the south-west crazy-paving path at the north pool, photograph the approach towards Pintor Dalí. Include the west patio corner and adjacent house fronts. Take overlapping views from the Dalí side looking back, including any boundaries or openings.",
+      "why": "Determine whether a path connects these points and locate its edges. The previously cited tiled-lane photos show Calle Eva at the middle pool.",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
      {
       "id": "north-pool-north-row-ground",
       "at": [
@@ -2330,7 +2359,7 @@
     "generated": 146
    },
    "placement": {
-    "features": 10,
+    "features": 9,
     "verified": 0,
     "disputed": 2
    },
@@ -2355,7 +2384,7 @@
    },
    "confidence": {
     "photographed": 4,
-    "estimated": 5,
+    "estimated": 4,
     "inferred": 1,
     "registry": 0,
     "gaps": 2
@@ -2365,8 +2394,8 @@
     "Footprints: 80% stand on surveyed roof; best fit moves them 1.5 m.",
     "Photos: 61, 61 placed; no camera solved.",
     "Facades: 0 of 146 kit parts traced from photos.",
-    "How sure: 4 photographed, 5 estimated, 1 inferred, 2 known gaps.",
-    "Placement: 0 of 10 features verified, 2 open discrepancies.",
+    "How sure: 4 photographed, 4 estimated, 1 inferred, 2 known gaps.",
+    "Placement: 0 of 9 features verified, 2 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 0 still open; 1 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -3348,7 +3377,7 @@
     "generated": 2452
    },
    "placement": {
-    "features": 539,
+    "features": 538,
     "verified": 0,
     "disputed": 61
    },
@@ -3581,7 +3610,7 @@
    },
    "confidence": {
     "photographed": 95,
-    "estimated": 193,
+    "estimated": 192,
     "inferred": 19,
     "registry": 232,
     "gaps": 41
@@ -3591,9 +3620,9 @@
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 662, 642 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 95 photographed, 193 estimated, 19 inferred, 41 known gaps.",
-    "Placement: 0 of 539 features verified, 54 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 37 still open; 53 evidence requests. This is not whole-area acceptance."
+    "How sure: 95 photographed, 192 estimated, 19 inferred, 41 known gaps.",
+    "Placement: 0 of 538 features verified, 54 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 37 still open; 54 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
@@ -3787,6 +3816,19 @@
        "IMG_3194.jpg",
        "map:ground"
       ],
+      "state": "open"
+     },
+     {
+      "id": "photo-north-pool-dali-approach",
+      "area": "north-pool",
+      "kind": "photo",
+      "ask": "From the south-west crazy-paving path at the north pool, photograph the approach towards Pintor Dalí. Include the west patio corner and adjacent house fronts. Take overlapping views from the Dalí side looking back, including any boundaries or openings.",
+      "why": "Determine whether a path connects these points and locate its edges. The previously cited tiled-lane photos show Calle Eva at the middle pool.",
+      "photoRequest": "north-pool-dali-approach",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
       "state": "open"
      },
      {
@@ -4379,7 +4421,7 @@
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 42 spots",
+    "headline": "Photos needed: 43 spots",
     "requests": [
      {
       "id": "alberto",
@@ -4889,6 +4931,22 @@
       ],
       "ask": "From the Calle Loira and Pintor Dalí bend, photograph east along the resort wall with both road edges in frame. From outside the Juan Gris grille, photograph the wall square-on with the wall foot and top, then turn to photograph the opposite frontage and grass edge.",
       "why": "Locate the wall ends, road-side grass and openings, and obtain a registered view of the wall and the opposite frontage.",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "north-pool-dali-approach",
+      "at": [
+       -180,
+       31
+      ],
+      "look": [
+       -208,
+       44
+      ],
+      "ask": "From the south-west crazy-paving path at the north pool, photograph the approach towards Pintor Dalí. Include the west patio corner and adjacent house fronts. Take overlapping views from the Dalí side looking back, including any boundaries or openings.",
+      "why": "Determine whether a path connects these points and locate its edges. The previously cited tiled-lane photos show Calle Eva at the middle pool.",
       "priority": 2,
       "state": "open",
       "photos": []
