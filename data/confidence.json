@@ -13,7 +13,7 @@
  "features": {
   "picasso_car_park.json:picasso-car-park-north-barrier": {
    "level": "estimated",
-   "why": "The barrier itself is photographed (IMG_3131): boom, rest post with fork and photocell, bollard. Its position comes from the phone pin (about 5 m) and ground-plane readings at an assumed eye height, its direction from the compass (about 10 degrees). The pivot end and drive cabinet are out of frame: the 4 m boom length and the cabinet are inferred. No camera is solved."
+   "why": "The barrier itself is photographed (IMG_3131): boom, rest post with fork and photocell, bollard. Its position comes from the phone pin (about 5 m) and ground-plane readings at an assumed eye height, its direction from the compass heading 258, about 25 degrees (the reviewed looksAt is 23 degrees further right). The pivot end and drive cabinet are out of frame: the 4 m boom length and the cabinet are inferred. No camera is solved."
   },
   "street:picasso": {
    "level": "estimated",

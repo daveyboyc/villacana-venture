@@ -209,13 +209,13 @@ its face towards the pivot and is bent from a knock. A red-white bollard (red fo
 at an assumed 1.5 m eye height (pitch 15° down from the plinth's top and foot), the rest post foot is 2.6 m ahead and
 0.7 m right of the camera, the bollard 3.5 m ahead, and the boom lies along the view direction. With the phone pin
 (-103.0, -64.6, ±4.7 m) and compass heading 258° that puts the rest post at (-105.65, -64.75) and the boom on a
-78° bearing towards its pivot. The photo's brick path edge, about 6.4–7.7 m ahead, runs about 76° right of the view
+78° bearing towards its pivot, good to about 5 m and 25°. The photo's brick path edge, about 6.4–7.7 m ahead, runs about 76° right of the view
 axis, parallel to the car-park aisles with the compass heading; the photo's reviewed `looksAt` is about 23° further
-right, which would turn that edge off the aisles, so the compass heading is used. The boom length (4.0 m) and the
+right, which would turn that edge off the aisles, so the compass heading is used; that the path runs parallel to the aisles is an assumption, and the aerial shows reddish, tree-shaded ground at the placed point with asphalt 4–6 m north, so the position may be several metres off. The boom length (4.0 m) and the
 cabinet (a plain light-grey box of a usual size) are inferred.
 
 **Built.** `src/car-park-barrier.ts` is the asset: `carParkBarrier({ armLength, side })` (cabinet, hub, boom with red
-edges and end cap, rest post with fork, plate and photocell) and `barrierBollard()`. Geometry and materials are
+edges, rest post with fork, plate and photocell) and `barrierBollard()`. Geometry and materials are
 shared. `data/picasso_car_park.json` `barriers` holds the placement; `src/picasso-car-park.ts` places it closed on the
 paving level, in Layout and with Show details, gives the rest post, bollard and cabinet collision (the boom lifts, so it
 has none) and the map draws the boom line and posts. Graded `estimated` in `data/confidence.json`.
@@ -237,3 +237,11 @@ so it checks the build, not the position. Still open:
 - `gap:picasso-car-park-second-barrier`: asphalt continues about 4 m past the rest post, which suggests an exit lane.
   No photo shows whether it has its own barrier, so none is built. The photo request `picasso-car-park-north-entrance`
   would settle this and the corner.
+
+**Review (25 November 2026).** An independent reviewer agent opened IMG_3131 at full size and re-derived the readings at
+f = 1201.8 px and 15° pitch: rest post 2.68 m ahead and 0.68 m right (2.38–3.04 m for ±3° of pitch), bollard 3.59 m ahead,
+the boom's edges converging about 3° right of the view axis. Its placed coordinates agree to within 0.05 m. It approved
+the barrier as an estimated placement once these fixes were made: the boom's dark end cap removed (the photo has none), the
+direction widened to about 25° with both headings named, "read" not "measured" in the trust, the aerial's reddish ground at
+the placed point added to the apron discrepancy, and the cabinet's collision sized to its box. This is a photographic
+sign-off of an estimate, not measured placement approval.

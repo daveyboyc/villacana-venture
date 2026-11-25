@@ -3,7 +3,7 @@ import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js
 
 /**
  * The car-park security barrier at the north entrance of the main (Picasso) car park, as in IMG_3131:
- * a white aluminium boom with red top and bottom edges and a dark end cap, lying closed across the lane
+ * a white aluminium boom with red top and bottom edges, lying closed across the lane
  * at about 1 m; at its free end a red square-section rest post on a bolted base plate, with a V-shaped
  * fork of two red rods that cradles the boom and a small black photocell box on the face towards the
  * pivot; and beside the rest post a fixed red-and-white bollard (red foot, white band, red top).
@@ -22,6 +22,8 @@ export const BOLLARD = { height: 0.87, radius: 0.05, band: [0.29, 0.64] as const
 export const CABINET = { width: 0.34, depth: 0.3, height: 1.02 };
 /** Half the widest part of each post-like piece: the footprint collision keeps. */
 export const BARRIER_POST_RADIUS = 0.12;
+/** Half the cabinet's plan diagonal: its collision footprint. */
+export const CABINET_RADIUS = Math.hypot(CABINET.width, CABINET.depth) / 2 + 0.02;
 
 const RED = "#c3242a", WHITE = "#f2f1ec";
 
@@ -69,7 +71,6 @@ export function carParkBarrier(o: BarrierOptions): THREE.Group {
   const strip = 0.018;
   g.add(mesh([box(length, BOOM_DEPTH - 2 * strip, BOOM_WIDTH, mid, y, 0)], kit.white, `${name}-boom`));
   g.add(mesh([box(length, strip, BOOM_WIDTH + 0.004, mid, y + BOOM_DEPTH / 2 - strip / 2, 0), box(length, strip, BOOM_WIDTH + 0.004, mid, y - BOOM_DEPTH / 2 + strip / 2, 0)], kit.red, `${name}-boom-edges`));
-  g.add(mesh([box(0.03, BOOM_DEPTH + 0.004, BOOM_WIDTH + 0.008, end + 0.015, y, 0)], kit.black, `${name}-boom-cap`));
   // Rest post: square red tube on a base plate, a V fork of two rods above it, a black photocell box facing the pivot.
   const p = REST_POST;
   const fork = [-1, 1].map((s) => rod(new THREE.Vector3(L, p.height - 0.01, s * 0.02), new THREE.Vector3(L + 0.01, p.height + 0.12, s * 0.09), 0.007));

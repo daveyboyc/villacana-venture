@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import data from "../data/picasso_car_park.json";
-import { barrierBollard, carParkBarrier, BARRIER_POST_RADIUS, CABINET } from "./car-park-barrier";
+import { barrierBollard, carParkBarrier, BARRIER_POST_RADIUS, CABINET, CABINET_RADIUS } from "./car-park-barrier";
 import { plasterMaterial } from "./materials";
 import { siteY } from "./terrain";
 import type { Vec2 } from "./types";
@@ -44,7 +44,7 @@ function cabinetCentre(b: Barrier): Vec2 {
 
 /** Collision for the wall, the island (kerb and bed together) and the barrier's fixed posts and cabinet; the boom lifts, so it is left open. */
 export function picassoCarParkRings(): Vec2[][] {
-  const posts = barriers.flatMap((b) => [b.restPost, b.bollard, cabinetCentre(b)].map((c) => circle(BARRIER_POST_RADIUS, 8, c)));
+  const posts = barriers.flatMap((b) => [circle(BARRIER_POST_RADIUS, 8, b.restPost), circle(BARRIER_POST_RADIUS, 8, b.bollard), circle(CABINET_RADIUS, 8, cabinetCentre(b))]);
   return [...wallPoints.slice(1).map((b, i) => strip(wallPoints[i], b, wall.thickness)), circle(island.radius, 24), ...posts];
 }
 
