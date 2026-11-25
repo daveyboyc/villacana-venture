@@ -58,6 +58,13 @@ west) for the bin store's registry corners, then IMG_3125 against the road edges
 `picasso-car-park-west-side`, `picasso-car-park-wall-inner-face` and `picasso-car-park-north-entrance`.
 The old `picasso-lane` request is answered by IMG_3105, 3106 and 3120-3129.
 
+## Where photos are needed
+
+[photo-spots.jpg](photo-spots.jpg) marks each photo spot on the aerial: a red dot shows where to stand and
+an arrow shows which way to point, with what to photograph. Priority goes 1 and 1b (the central row from
+both ends), then 2 (the south step), then 3 to 5. In the app, opening the area scorecard panel shows the
+same spots as numbered red beacons in 3D and as pins on the map.
+
 ## Layout against the aerial (stage 2 readings)
 
 Read by eye on 4-5x gridded zooms (the island by brightness profiles, in the independent review) of the Esri World Imagery zoom 19 mosaic (`public/map/ground.jpg`,
