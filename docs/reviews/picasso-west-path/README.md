@@ -91,4 +91,14 @@ beside a ramp, the number and side of the risers) is a guess from the resort's o
 
 ## Inspect
 
-Renders in this folder: `inspect-*.png` (Layout and Show details).
+Each image is Layout (left) and Show details (right), rendered with `scripts/shoot_inspect.cjs`:
+
+| View | Image | Camera |
+| --- | --- | --- |
+| West side from above | [inspect-overview.jpg](inspect-overview.jpg) | `-95,-15,70,60,350` |
+| Upper flight | [inspect-upper-flight.jpg](inspect-upper-flight.jpg) | `-100.9,-25.6,10,30,240` |
+| Flight down to Cervantes | [inspect-cervantes-flight.jpg](inspect-cervantes-flight.jpg) | `-80.2,9.6,11,32,60` |
+| North end at Juan Gris | [inspect-north-end.jpg](inspect-north-end.jpg) | `-119,-57,16,35,200` |
+
+The path reads as a white-edged terracotta strip beside the generic terracotta ground of the gardens; its
+tiles are not yet the octagon pattern IMG_3131 shows at the north end.
