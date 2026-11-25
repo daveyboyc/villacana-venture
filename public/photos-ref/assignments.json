@@ -6,9 +6,9 @@
   "needs-review": 274,
   "suggested": 368,
   "photos": 646,
-  "features": 543,
+  "features": 552,
   "photosCitedByModel": 258,
-  "modelFeaturesWithPhotoCitations": 286
+  "modelFeaturesWithPhotoCitations": 295
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -23826,9 +23826,18 @@
     }
    ],
    "citedBy": [
+    "picasso_entrance_details.json:wings",
+    "picasso_entrance_details.json:plinth",
+    "picasso_entrance_details.json:windows",
+    "picasso_entrance_details.json:signs",
+    "picasso_entrance_details.json:pillar",
+    "picasso_entrance_details.json:lantern",
+    "picasso_entrance_details.json:planting",
     "picasso_car_park.json:picasso-car-park-north-barrier",
     "ground_plan_picasso.json:picasso-north-entrance-asphalt",
-    "ground_plan_picasso.json:picasso-entry-planter"
+    "ground_plan_picasso.json:picasso-entry-planter",
+    "ground_plan_picasso.json:picasso-west-lawn-strip",
+    "ground_plan_picasso.json:picasso-west-brick-path"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {

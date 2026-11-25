@@ -15,6 +15,7 @@ import {paintElenaPaving,elenaSurfaceSamples} from "./elena-lane-paving";
 import {paintSeawardPaving} from "./seaward-paving";
 import {addPicassoServiceRoad,picassoServiceRings} from "./picasso-service-road";
 import { addPicassoCarPark, picassoCarParkRings } from "./picasso-car-park";
+import { addPicassoEntranceDetails, addPicassoEntranceStructure, picassoEntranceRings } from "./picasso-entrance-details";
 import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-lawn";
 import {addEvaLane,inEvaLane,suppressInEvaLane} from "./eva-lane";
 import {addAlbertoPassage,inAlbertoPorch,suppressInAlbertoPorch} from "./alberto-passage";
@@ -359,6 +360,8 @@ async function boot(): Promise<void> {
   if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addElenaNorthCornerDetails(into,keep)}); // Elena north corner: bougainvillea, lantern and CALLE DE ELENA tiles (data/elena_north_corner_details.json)
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   addPicassoCarPark(scene); // main car park: long east wall and round island kerb (data/picasso_car_park.json)
+  addPicassoEntranceStructure(scene); // north entrance: gatehouse wing walls and the CALLE DE PICASSO plinth (data/picasso_entrance_details.json)
+  if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addPicassoEntranceDetails(into,keep)}); // north entrance windows, signs, pillar, lantern and planting
   addMiddleSwGateway(scene);
   addNorthWestCanopies(scene,skeleton.buildings);
   addRaisedTerraces(scene);
@@ -375,6 +378,7 @@ async function boot(): Promise<void> {
   fenceRings.push(...cervantesLaneEdgeRings()); // Cervantes beds and hedge planters
   fenceRings.push(...picassoServiceRings());
   fenceRings.push(...picassoCarParkRings()); // long car-park wall and the island are solid
+  fenceRings.push(...picassoEntranceRings()); // north-entrance wing walls and plinth
   fenceRings.push(...raisedTerraceRings()); // terrace faces and stair cheeks; openings stay open
   fenceRings.push(...middleSwRings(),...middleSouthRings(),...middlePoolRings()); // traced middle pool gateway and planter are solid
   // Covered walk-throughs remain open; traced patio walls use their own rings.

@@ -7,8 +7,8 @@ Task `ground-plan-picasso` · area **Pintor Picasso and the car park** · priori
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/picasso.md` and the contact sheet `reference/contact-sheets/picasso.jpg`
 - docs: `docs/STREET_LAYOUT.md`, `docs/reviews/picasso-car-park/README.md`
-- data: `data/street_layout.json`, `data/picasso_service_road.json`, `data/picasso_car_park.json`, `data/ground_plan_picasso.json`
-- src: `src/picasso-service-road.ts`, `src/picasso-car-park.ts`, `src/car-park-barrier.ts`
+- data: `data/street_layout.json`, `data/picasso_service_road.json`, `data/picasso_car_park.json`, `data/ground_plan_picasso.json`, `data/picasso_entrance_details.json`
+- src: `src/picasso-service-road.ts`, `src/picasso-car-park.ts`, `src/car-park-barrier.ts`, `src/picasso-entrance-details.ts`
 
 ## Photos to build from
 

@@ -17,8 +17,8 @@ The northern boundary roads and the lanes round the north pool's upper side.
 
 ## Coverage
 
-Layout: 17, Levels and slopes: 2, Facades and roofs: 1, Materials: 12, Planting: 1, Signs: 6
-17 reviewed, 22 suggested only by camera position.
+Layout: 19, Levels and slopes: 2, Facades and roofs: 2, Materials: 12, Planting: 3, Signs: 9
+20 reviewed, 22 suggested only by camera position.
 
 ## Open build tasks
 
@@ -47,45 +47,51 @@ graph LR
   A --> F1["Calle Loira grass outside the Juan Gris grille · unreviewed"]
   F1 --> PIMG_3150_jpg(["IMG_3150"])
   F1 --> PIMG_3151_jpg(["IMG_3151"])
-  A --> F2["Juan Gris east pergola · unreviewed"]
-  F2 --> PIMG_3135_jpg(["IMG_3135"])
-  F2 --> PIMG_3136_jpg(["IMG_3136"])
-  A --> F3["Juan Gris pergola west of the verge grille · unreviewed"]
-  F3 --> PIMG_3149_jpg(["IMG_3149"])
-  F3 --> PIMG_3152_jpg(["IMG_3152"])
-  A --> F4["Juan Gris close-spaced pergola · unreviewed"]
-  F4 --> PIMG_3146_jpg(["IMG_3146"])
-  F4 --> PIMG_3147_jpg(["IMG_3147"])
-  A --> F5["Juan Gris west pergola · unreviewed"]
+  A --> F2["Terracotta path between the entry lane and the lawn strip · unreviewed"]
+  F2 --> PIMG_3131_jpg(["IMG_3131"])
+  F2 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  A --> F3["Lawn strip west of the entry lane, with the CALLE DE PICASSO plinth · unreviewed"]
+  F3 --> PIMG_3131_jpg(["IMG_3131"])
+  F3 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  A --> F4["Juan Gris east pergola · unreviewed"]
+  F4 --> PIMG_3135_jpg(["IMG_3135"])
+  F4 --> PIMG_3136_jpg(["IMG_3136"])
+  A --> F5["Juan Gris pergola west of the verge grille · unreviewed"]
+  F5 --> PIMG_3149_jpg(["IMG_3149"])
   F5 --> PIMG_3152_jpg(["IMG_3152"])
-  F5 --> PIMG_3153_jpg(["IMG_3153"])
-  F5 --> PIMG_3155_jpg(["IMG_3155"])
-  A --> F6["Juan Gris · East hedge wall · unreviewed"]
-  F6 --> PIMG_3134_jpg(["IMG_3134"])
-  F6 --> PIMG_3135_jpg(["IMG_3135"])
-  F6 --> PIMG_3136_jpg(["IMG_3136"])
-  A --> F7["Juan Gris · East garden screen · unreviewed"]
-  F7 --> PIMG_3134_jpg(["IMG_3134"])
-  A --> F8["Juan Gris · Verge grille planting border · unreviewed"]
-  F8 --> PIMG_3152_jpg(["IMG_3152"])
-  A --> F9["Juan Gris · Middle planting border · unreviewed"]
-  F9 --> PIMG_3146_jpg(["IMG_3146"])
-  F9 --> PIMG_3147_jpg(["IMG_3147"])
-  A --> F10["Juan Gris · West planting border · unreviewed"]
-  F10 --> PIMG_3153_jpg(["IMG_3153"])
-  F10 --> PIMG_3154_jpg(["IMG_3154"])
-  F10 --> PIMG_3155_jpg(["IMG_3155"])
-  A --> F11["Calle Loira resort boundary wall · disputed"]
-  F11 --> PIMG_3133_jpg(["IMG_3133"])
-  F11 --> PIMG_3135_jpg(["IMG_3135"])
-  F11 --> PIMG_3141_jpg(["IMG_3141"])
-  F11 --> PIMG_3142_jpg(["IMG_3142"])
-  F11 --> PIMG_3149_jpg(["IMG_3149"])
-  F11 --> PIMG_3150_jpg(["IMG_3150"])
-  F11 --> PIMG_3151_jpg(["IMG_3151"])
-  F11 --> PIMG_3153_jpg(["IMG_3153"])
-  F11 --> PIMG_3154_jpg(["IMG_3154"])
-  F11 --> PIMG_3155_jpg(["IMG_3155"])
+  A --> F6["Juan Gris close-spaced pergola · unreviewed"]
+  F6 --> PIMG_3146_jpg(["IMG_3146"])
+  F6 --> PIMG_3147_jpg(["IMG_3147"])
+  A --> F7["Juan Gris west pergola · unreviewed"]
+  F7 --> PIMG_3152_jpg(["IMG_3152"])
+  F7 --> PIMG_3153_jpg(["IMG_3153"])
+  F7 --> PIMG_3155_jpg(["IMG_3155"])
+  A --> F8["Juan Gris · East hedge wall · unreviewed"]
+  F8 --> PIMG_3134_jpg(["IMG_3134"])
+  F8 --> PIMG_3135_jpg(["IMG_3135"])
+  F8 --> PIMG_3136_jpg(["IMG_3136"])
+  A --> F9["Juan Gris · East garden screen · unreviewed"]
+  F9 --> PIMG_3134_jpg(["IMG_3134"])
+  A --> F10["Juan Gris · Verge grille planting border · unreviewed"]
+  F10 --> PIMG_3152_jpg(["IMG_3152"])
+  A --> F11["Juan Gris · Middle planting border · unreviewed"]
+  F11 --> PIMG_3146_jpg(["IMG_3146"])
+  F11 --> PIMG_3147_jpg(["IMG_3147"])
+  A --> F12["Juan Gris · West planting border · unreviewed"]
+  F12 --> PIMG_3153_jpg(["IMG_3153"])
+  F12 --> PIMG_3154_jpg(["IMG_3154"])
+  F12 --> PIMG_3155_jpg(["IMG_3155"])
+  A --> F13["Calle Loira resort boundary wall · disputed"]
+  F13 --> PIMG_3133_jpg(["IMG_3133"])
+  F13 --> PIMG_3135_jpg(["IMG_3135"])
+  F13 --> PIMG_3141_jpg(["IMG_3141"])
+  F13 --> PIMG_3142_jpg(["IMG_3142"])
+  F13 --> PIMG_3149_jpg(["IMG_3149"])
+  F13 --> PIMG_3150_jpg(["IMG_3150"])
+  F13 --> PIMG_3151_jpg(["IMG_3151"])
+  F13 --> PIMG_3153_jpg(["IMG_3153"])
+  F13 --> PIMG_3154_jpg(["IMG_3154"])
+  F13 --> PIMG_3155_jpg(["IMG_3155"])
 ```
 
 ## Placement evidence
@@ -96,6 +102,8 @@ graph LR
 | --- | --- | --- | --- |
 | `ground_plan_north_lanes.json:juan-gris-paving` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `ground_plan_north_lanes.json:loira-window-verge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `ground_plan_picasso.json:picasso-west-brick-path` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `ground_plan_picasso.json:picasso-west-lawn-strip` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `juan_gris_pergolas.json:juan-gris-pergola-east` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `juan_gris_pergolas.json:juan-gris-pergola-grille` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `juan_gris_pergolas.json:juan-gris-pergola-middle` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -122,8 +130,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_3131.jpg](../../public/photos-ref/IMG_3131.jpg) | ground | layout, signage, levels | CALLE DE PICASSO plinth, barrier arm and ramp between white walls **Looks at:** barrier and CALLE DE PICASSO plinth at the north end. **Note:** A red-and-white barrier arm (with a fixed red-white post) across the asphalt; beyond, a terracotta path with a brick edge, a white plinth lettered CALLE DE PICASSO on a lawn, a hedged garden wall, lantern post and a ramp rising between white walls with a tiled name plaque. Which side of the car park the barrier stands on is not settled from this photo. The barrier is closed and its boom rests in the fork of a red rest post with a black photocell box; it is the entry barrier in the west lane of the north entrance, built from this photo and placed from Dave's Google 3D top-down screenshot (data/picasso_car_park.json barriers); the camera pin is corrected to match, and looksAt now follows the compass heading, which the boom's direction in the Google view confirms to within 3 degrees. _Used by: picasso_entrance_details.json:wings, picasso_entrance_details.json:plinth, picasso_entrance_details.json:windows, picasso_entrance_details.json:signs, picasso_entrance_details.json:pillar, picasso_entrance_details.json:lantern, picasso_entrance_details.json:planting, picasso_car_park.json:picasso-car-park-north-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-entry-planter, ground_plan_picasso.json:picasso-west-lawn-strip, ground_plan_picasso.json:picasso-west-brick-path._ |
 | [IMG_3153.jpg](../../public/photos-ref/IMG_3153.jpg) | ground | layout, materials | Western Juan Gris path with arched grille and raised sill **Looks at:** Terracotta paving, wall and grille along Juan Gris. **Note:** Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved. _Used by: lane_walls.json:juan-gris-west-bed, loira_boundary.json:loira-resort-wall, juan_gris_pergolas.json:juan-gris-pergola-west, ground_plan_north_lanes.json:juan-gris-paving._ |
-| [IMG_3131.jpg](../../public/photos-ref/IMG_3131.jpg) | ground | layout, signage, levels | CALLE DE PICASSO plinth, barrier arm and ramp between white walls **Looks at:** barrier and CALLE DE PICASSO plinth at the north end. **Note:** A red-and-white barrier arm (with a fixed red-white post) across the asphalt; beyond, a terracotta path with a brick edge, a white plinth lettered CALLE DE PICASSO on a lawn, a hedged garden wall, lantern post and a ramp rising between white walls with a tiled name plaque. Which side of the car park the barrier stands on is not settled from this photo. The barrier is closed and its boom rests in the fork of a red rest post with a black photocell box; it is the entry barrier in the west lane of the north entrance, built from this photo and placed from Dave's Google 3D top-down screenshot (data/picasso_car_park.json barriers); the camera pin is corrected to match, and looksAt now follows the compass heading, which the boom's direction in the Google view confirms to within 3 degrees. _Used by: picasso_car_park.json:picasso-car-park-north-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-entry-planter._ |
 | [IMG_3135.jpg](../../public/photos-ref/IMG_3135.jpg) | ground | layout, materials | Juan Gris east wall opening, cropped reveal and tiled sill **Looks at:** Juan Gris east wall opening, cropped reveal and tiled sill. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. _Used by: lane_walls.json:juan-gris-east-hedge, loira_boundary.json:loira-resort-wall, juan_gris_pergolas.json:juan-gris-pergola-east._ |
 | [IMG_3155.jpg](../../public/photos-ref/IMG_3155.jpg) | ground | layout, materials | Alternate Juan Gris west opening view **Looks at:** Alternate Juan Gris west opening view. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. _Used by: lane_walls.json:juan-gris-west-bed, loira_boundary.json:loira-resort-wall, juan_gris_pergolas.json:juan-gris-pergola-west._ |
 | [IMG_3133.jpg](../../public/photos-ref/IMG_3133.jpg) | ground | layout, materials, signage | Juan Gris street plaque and inside face of the Loira boundary **Looks at:** White boundary wall and terracotta path. **Note:** Subject position is approximate. The phone pin locates the camera on Juan Gris; this camera is unsolved. _Used by: loira_boundary.json:loira-resort-wall, ground_plan_north_lanes.json:juan-gris-paving._ |
@@ -134,9 +142,12 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_3154.jpg](../../public/photos-ref/IMG_3154.jpg) | ground | layout, materials | Juan Gris west barred opening and low tiled threshold **Looks at:** Juan Gris west barred opening and low tiled threshold. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. **Compass:** the subject is 68° from the phone heading; trust looksAt, not the heading. _Used by: lane_walls.json:juan-gris-west-bed, loira_boundary.json:loira-resort-wall._ |
 | [IMG_3142.jpg](../../public/photos-ref/IMG_3142.jpg) | ground | layout, materials | Juan Gris middle wall opening beside raised planter **Looks at:** Juan Gris middle wall opening beside raised planter. **Note:** Subject station is estimated along the traced wall using the unsolved camera and its view down the lane. _Used by: loira_boundary.json:loira-resort-wall._ |
 | [IMG_3130.jpg](../../public/photos-ref/IMG_3130.jpg) | ground | layout, signage | Low white wall with sign post at the north end of the car park **Looks at:** low white wall and sign post at the north entrance. **Note:** A white wall about 1.1 m high with a sign post at its end, flowering bougainvillea garden walls beyond, a Zantza Seguridad security sign and a Comunidad Villacana sign; the sign post shows only the back of a road sign. GPS ±21 m, so which corner it is still needs confirming. |
-| `reference/google-maps/05-3d-top-down-car-park-north-entrance.jpg` | aerial | layout | Google 3D top-down: the car park's north entrance with both barrier booms **Note:** Google Maps 3D view, nearly top-down and north-up, screenshot sent by Dave on 25 Nov 2026 (Imagery © Google 2026; capture date not shown). Shows the Calle Loira / Bolivia / Pintor Picasso junction, the gatehouse island (Villacana pin) with its round bed and terracotta apron, the narrow planter, the brick-and-lawn strip west of the entry lane, the long wall, and both closed booms as thin lines with their cabinets and post shadows. Registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8); features agree to about 1-2 m (data/picasso_car_park.json barriers). _Used by: picasso_car_park.json:picasso-car-park-gatehouse, picasso_car_park.json:picasso-car-park-north-barrier, picasso_car_park.json:picasso-car-park-exit-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-gatehouse-island, ground_plan_picasso.json:picasso-gatehouse-lawn, ground_plan_picasso.json:picasso-entry-planter._ |
-| `reference/google-maps/03-street-view-loira-entry-barrier-2024-10.jpg` | ground | layout, signage | Street View from Calle Loira into the car park: the entry barrier closed **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south into the car park's west (entry) lane: the red-and-white boom closed from a plain white drive cabinet about 1 m high on the gatehouse island (left) to a red rest post with a red-white bollard beyond it (right), a lane arrow by the rest post. Left: the gatehouse's grilled window, STOP sign, ACCESO PLAYA / TO THE BEACH sign, lawn with a brick-edged white kerb. Right: a white pillar with notices and a ZONA VIDEOVIGILADA sign, bougainvillea over the brick-edged narrow planter. _Used by: picasso_car_park.json:picasso-car-park-gatehouse, picasso_car_park.json:picasso-car-park-north-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-gatehouse-island, ground_plan_picasso.json:picasso-gatehouse-lawn, ground_plan_picasso.json:picasso-entry-planter._ |
-| `reference/google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg` | ground | layout, signage | Street View from Calle Bolivia: the exit barrier between the gatehouse island and the long wall **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south-west from Calle Bolivia: on the left the Calle Pintor Picasso service road runs down beside the long white wall; in the centre the east (exit) lane is closed by a red-and-white boom from a white drive cabinet on the gatehouse island, under a no-entry sign, to the wall's north end with a blue sign. Right: the gatehouse with its grilled window and the round island lawn on a brick-edged kerb; the entry barrier shows beyond it with its red-white posts and STOP sign. _Used by: picasso_car_park.json:picasso-car-park-gatehouse, picasso_car_park.json:picasso-car-park-exit-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-gatehouse-island._ |
+| `reference/google-maps/05-3d-top-down-car-park-north-entrance.jpg` | aerial | layout | Google 3D top-down: the car park's north entrance with both barrier booms **Note:** Google Maps 3D view, nearly top-down and north-up, screenshot sent by Dave on 25 Nov 2026 (Imagery © Google 2026; capture date not shown). Shows the Calle Loira / Bolivia / Pintor Picasso junction, the gatehouse island (Villacana pin) with its round bed and terracotta apron, the narrow planter, the brick-and-lawn strip west of the entry lane, the long wall, and both closed booms as thin lines with their cabinets and post shadows. Registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8); features agree to about 1-2 m (data/picasso_car_park.json barriers). _Used by: picasso_car_park.json:picasso-car-park-gatehouse, picasso_entrance_details.json:wings, picasso_entrance_details.json:plinth, picasso_entrance_details.json:windows, picasso_entrance_details.json:signs, picasso_entrance_details.json:pillar, picasso_entrance_details.json:lantern, picasso_entrance_details.json:planting, picasso_car_park.json:picasso-car-park-north-barrier, picasso_car_park.json:picasso-car-park-exit-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-gatehouse-island, ground_plan_picasso.json:picasso-gatehouse-lawn, ground_plan_picasso.json:picasso-entry-planter, ground_plan_picasso.json:picasso-west-lawn-strip, ground_plan_picasso.json:picasso-west-brick-path._ |
+| `reference/google-maps/03-street-view-loira-entry-barrier-2024-10.jpg` | ground | layout, signage | Street View from Calle Loira into the car park: the entry barrier closed **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south into the car park's west (entry) lane: the red-and-white boom closed from a plain white drive cabinet about 1 m high on the gatehouse island (left) to a red rest post with a red-white bollard beyond it (right), a lane arrow by the rest post. Left: the gatehouse's grilled window, STOP sign, ACCESO PLAYA / TO THE BEACH sign, lawn with a brick-edged white kerb. Right: a white pillar with notices and a ZONA VIDEOVIGILADA sign, bougainvillea over the brick-edged narrow planter. _Used by: picasso_car_park.json:picasso-car-park-gatehouse, picasso_entrance_details.json:wings, picasso_entrance_details.json:plinth, picasso_entrance_details.json:windows, picasso_entrance_details.json:signs, picasso_entrance_details.json:pillar, picasso_entrance_details.json:lantern, picasso_entrance_details.json:planting, picasso_car_park.json:picasso-car-park-north-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-gatehouse-island, ground_plan_picasso.json:picasso-gatehouse-lawn, ground_plan_picasso.json:picasso-entry-planter._ |
+| `reference/google-maps/04-street-view-bolivia-exit-barrier-2024-10.jpg` | ground | layout, signage | Street View from Calle Bolivia: the exit barrier between the gatehouse island and the long wall **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south-west from Calle Bolivia: on the left the Calle Pintor Picasso service road runs down beside the long white wall; in the centre the east (exit) lane is closed by a red-and-white boom from a white drive cabinet on the gatehouse island, under a no-entry sign, to the wall's north end with a blue sign. Right: the gatehouse with its grilled window and the round island lawn on a brick-edged kerb; the entry barrier shows beyond it with its red-white posts and STOP sign. _Used by: picasso_car_park.json:picasso-car-park-gatehouse, picasso_entrance_details.json:wings, picasso_entrance_details.json:plinth, picasso_entrance_details.json:windows, picasso_entrance_details.json:signs, picasso_entrance_details.json:pillar, picasso_entrance_details.json:lantern, picasso_entrance_details.json:planting, picasso_car_park.json:picasso-car-park-exit-barrier, ground_plan_picasso.json:picasso-north-entrance-asphalt, ground_plan_picasso.json:picasso-gatehouse-island._ |
+| `reference/google-maps/06-street-view-bolivia-gatehouse-north-2024-10.jpg` | ground | layout, planting, signage | Street View from Calle Bolivia: the gatehouse island's north side **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), phone screenshot sent by Dave on 25 Nov 2026. The island's round lawn bed on a brick border over a white kerb, a giant strelitzia clump and sago palms, the gatehouse's grilled window, and a white wing wall sloping down from the gatehouse towards the entry barrier with its STOP sign beyond. _Used by: picasso_entrance_details.json:wings, picasso_entrance_details.json:plinth, picasso_entrance_details.json:windows, picasso_entrance_details.json:signs, picasso_entrance_details.json:pillar, picasso_entrance_details.json:lantern, picasso_entrance_details.json:planting._ |
+| `reference/google-maps/07-street-view-bolivia-gatehouse-window-2024-10.jpg` | ground | facades, planting, signage | Street View from Calle Bolivia: the gatehouse's arched grilled window **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), phone screenshot sent by Dave on 25 Nov 2026. The gatehouse's arched window with black bars and a blue plaque beside it, bougainvillea on its wall, strelitzias, a feathery-leaved tree, the COMUNIDAD VILLACANA board on posts at the left and the entry barrier's red-white posts beyond the bed. _Used by: picasso_entrance_details.json:wings, picasso_entrance_details.json:plinth, picasso_entrance_details.json:windows, picasso_entrance_details.json:signs, picasso_entrance_details.json:pillar, picasso_entrance_details.json:lantern, picasso_entrance_details.json:planting._ |
+| `reference/google-maps/08-street-view-bolivia-exit-lane-2024-10.jpg` | ground | layout, signage | Street View from Calle Bolivia down the exit lane **Note:** Google Street View, image capture Oct 2024 (Imagery © Google), phone screenshot sent by Dave on 25 Nov 2026. The exit lane closed by its boom from the grey cabinet, a no-entry sign above it, the blue dead-end sign and ACCESO PLAYA sign at the long wall's sloping north end, the COMUNIDAD VILLACANA board, the gatehouse window and a white wing wall with a brick-edged bed on the right. _Used by: picasso_entrance_details.json:wings, picasso_entrance_details.json:plinth, picasso_entrance_details.json:windows, picasso_entrance_details.json:signs, picasso_entrance_details.json:pillar, picasso_entrance_details.json:lantern, picasso_entrance_details.json:planting._ |
 | [IMG_2448.jpg](../../public/photos-ref/IMG_2448.jpg) | ground | signage, layout, materials, levels | Cervantes/Alberto junction: signed wall and paving change, path with three white steps ahead **Looks at:** Lane beyond the Alberto crossing with three white steps. **Note:** Pin is on the blue street line at the Alberto label, but the photo shows the Alberto sign on the wall; the street ID depends on which map street is right, so treat the area as cervantes plus north-lanes. looksAt is estimated 20 m along heading 243. _Used by: lane_walls.json:cervantes-south-garden-wall-alberto, cervantes_lane_edges.json:cervantes-alberto-corner-bed, steps:cervantes-alberto-steps._ |
 | [IMG_2686.jpg](../../public/photos-ref/IMG_2686.jpg) | ground | layout, planting, facades, materials | Calle Elena north from the Cervantes junction: hedged beds and white walls **Note:** Matches the existing Elena north bed and spur description (hedged beds, white wall with window/door). _Used by: lane_walls.json:elena-north-corner-patio-wall, cervantes_lane_edges.json:cervantes-elena-corner-bed, elena_north_corner.json:elena-north-corner-bed._ |
 

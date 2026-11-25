@@ -318,6 +318,95 @@
       "above": [
         "picasso-north-entrance-asphalt"
       ]
+    },
+    {
+      "id": "picasso-west-lawn-strip",
+      "name": "Lawn strip west of the entry lane, with the CALLE DE PICASSO plinth",
+      "kind": "green",
+      "finish": "lawn",
+      "outline": [
+        [
+          -120.0,
+          -61.0
+        ],
+        [
+          -117.0,
+          -61.0
+        ],
+        [
+          -114.05,
+          -54.1
+        ],
+        [
+          -117.0,
+          -54.1
+        ]
+      ],
+      "corners": 0.3,
+      "hard": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "note": "The narrow lawn between the brick path and the house gardens, with the white CALLE DE PICASSO plinth on it (IMG_3131). Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the aerial, about 1.5 m. It is cut short at the car-park outline's north edge, which overlies the rest (discrepancy picasso-car-park-west-edge-gardens).",
+      "evidence": [
+        "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+        "IMG_3131.jpg"
+      ],
+      "traced": "map:ground"
+    },
+    {
+      "id": "picasso-west-brick-path",
+      "name": "Terracotta path between the entry lane and the lawn strip",
+      "kind": "patio",
+      "finish": "terracotta-squares",
+      "outline": [
+        [
+          -117.0,
+          -61.0
+        ],
+        [
+          -115.4,
+          -62.9
+        ],
+        [
+          -114.8,
+          -62.6
+        ],
+        [
+          -111.68,
+          -54.57
+        ],
+        [
+          -114.05,
+          -54.1
+        ]
+      ],
+      "corners": 0.3,
+      "hard": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "note": "Terracotta tiles with a brick edge along the asphalt (IMG_3131); the photo shows octagon-pattern tiles, drawn here like the Juan Gris paving it joins at the north end. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the aerial, about 1.5 m.",
+      "evidence": [
+        "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
+        "IMG_3131.jpg"
+      ],
+      "traced": "map:ground",
+      "edges": [
+        {
+          "kind": "brick-border",
+          "from": 2,
+          "to": 3,
+          "note": "Brick edge between the path and the asphalt (IMG_3131).",
+          "evidence": [
+            "IMG_3131.jpg"
+          ]
+        }
+      ]
     }
   ]
 }
