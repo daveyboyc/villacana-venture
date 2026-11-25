@@ -141,6 +141,20 @@ assert abs(site_y([photos['IMG_2248.jpg']['x'], photos['IMG_2248.jpg']['z']]) - 
 # the survey has it falling about 0.35 m over 15 m, too gentle to see).
 es = list(along(roads['elena-south']['points'][1:], 1.0))
 assert all(abs(site_y(q) - site_y(p)) <= 0.05 for p, q in zip(es, es[1:]) if not (near_flight(p) or near_flight(q))), 'Elena south has a step'
+# Calle de Picasso, the footpath behind the car park's west bays, lies on three level stretches joined by two
+# flights the survey shows and no photo does (data/picasso_path_steps.json): each climbs the survey's rise,
+# every tread stays above the ramp beside it, and the path is level for 4-6 m either side.
+for pf in json.loads((ROOT / 'data/picasso_path_steps.json').read_text())['flights']:
+    r, f0, f1 = flights[pf['id']], pf['foot'], pf['toward']
+    pu = [(f1[0] - f0[0]) / math.dist(f0, f1), (f1[1] - f0[1]) / math.dist(f0, f1)]
+    assert r['from'] == 'survey' and pf['survey']['rise'][0] <= r['rise'] <= pf['survey']['rise'][1], f"{pf['id']}: rise is not the survey's"
+    for i, end in enumerate(pf['risers'][1:] + [pf['end']]):
+        for across in pf['across']:
+            p = [f0[0] + pu[0] * end - pu[1] * across, f0[1] + pu[1] * end + pu[0] * across]
+            assert site_y(p) <= site_y(f0) + r['rise'] * (i + 1) / len(pf['risers']) + 0.005, f"{pf['id']}: tread {i + 1} below the ramp"
+    for d in (4.0, 6.0):
+        assert abs(site_y([f0[0] - pu[0] * d, f0[1] - pu[1] * d]) - r['base']) < 0.08, f"{pf['id']}: path below the flight is not level"
+        assert abs(site_y([f0[0] + pu[0] * (pf['end'] + d), f0[1] + pu[1] * (pf['end'] + d)]) - r['base'] - r['rise']) < 0.08, f"{pf['id']}: path above the flight is not level"
 # Seaward of the fade line the seafront heights take over.
 assert all(site_y([x, z]) == 0 for x in range(-260, 120, 20) for z in range(170, 260, 20) if x * SIN + z * COS >= grid['fade'][1])
 # The lane itself carries no hump of its own.

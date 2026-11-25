@@ -1,12 +1,12 @@
 {
  "version": 1,
- "inputDigest": "11def09dd65f79d06a5e7ff6fddaff0cf0789c1376cd62d1849aaad9db3d67df",
+ "inputDigest": "20387125befa96eed6db0554dc2ecf3a14c3cf627c7e7b2715fd32eab849d82c",
  "summary": {
   "unplaced": 4,
-  "needs-review": 274,
-  "suggested": 368,
+  "needs-review": 275,
+  "suggested": 367,
   "photos": 646,
-  "features": 552,
+  "features": 554,
   "photosCitedByModel": 258,
   "modelFeaturesWithPhotoCitations": 295
  },
@@ -6303,16 +6303,16 @@
      "gap": 5.6
     },
     {
+     "id": "street:picasso-access",
+     "name": "Calle de Picasso",
+     "kind": "street",
+     "gap": 7.4
+    },
+    {
      "id": "parking:Picasso car park",
      "name": "Picasso car park",
      "kind": "parking",
-     "gap": 7.6
-    },
-    {
-     "id": "street:picasso-access",
-     "name": "Picasso car-park access",
-     "kind": "street",
-     "gap": 8.4
+     "gap": 10.6
     }
    ],
    "inViewCandidates": [
@@ -22799,16 +22799,16 @@
      "gap": 0
     },
     {
-     "id": "street:picasso-access",
-     "name": "Picasso car-park access",
-     "kind": "street",
-     "gap": 7.9
-    },
-    {
      "id": "street:cervantes",
      "name": "Calle Miguel de Cervantes",
      "kind": "street",
      "gap": 10.8
+    },
+    {
+     "id": "street:picasso-access",
+     "name": "Calle de Picasso",
+     "kind": "street",
+     "gap": 11.0
     },
     {
      "id": "street:picasso",
@@ -23906,9 +23906,9 @@
   },
   {
    "file": "IMG_3134.jpg",
-   "status": "suggested",
+   "status": "needs-review",
    "reasons": [
-    "Compatible map context; metadata association remains a suggestion"
+    "Uncertainty reaches more than one named street"
    ],
    "nearby": [
     {
@@ -23916,6 +23916,12 @@
      "name": "Calle Loira",
      "kind": "street",
      "gap": 0
+    },
+    {
+     "id": "street:picasso-access",
+     "name": "Calle de Picasso",
+     "kind": "street",
+     "gap": 4.5
     }
    ],
    "inViewCandidates": [
@@ -23951,9 +23957,9 @@
   },
   {
    "file": "IMG_3135.jpg",
-   "status": "suggested",
+   "status": "needs-review",
    "reasons": [
-    "Compatible map context; metadata association remains a suggestion"
+    "Uncertainty reaches more than one named street"
    ],
    "nearby": [
     {
@@ -23961,6 +23967,12 @@
      "name": "Calle Loira",
      "kind": "street",
      "gap": 0
+    },
+    {
+     "id": "street:picasso-access",
+     "name": "Calle de Picasso",
+     "kind": "street",
+     "gap": 3.6
     }
    ],
    "inViewCandidates": [],
@@ -25449,12 +25461,6 @@
      "name": "Picasso car park",
      "kind": "parking",
      "gap": 0.8
-    },
-    {
-     "id": "street:picasso-access",
-     "name": "Picasso car-park access",
-     "kind": "street",
-     "gap": 5.1
     }
    ],
    "inViewCandidates": [
@@ -25487,9 +25493,9 @@
   },
   {
    "file": "IMG_3202.jpg",
-   "status": "needs-review",
+   "status": "suggested",
    "reasons": [
-    "Uncertainty reaches more than one named street"
+    "Compatible map context; metadata association remains a suggestion"
    ],
    "nearby": [
     {
@@ -25497,12 +25503,6 @@
      "name": "Picasso car park",
      "kind": "parking",
      "gap": 0
-    },
-    {
-     "id": "street:picasso-access",
-     "name": "Picasso car-park access",
-     "kind": "street",
-     "gap": 2.1
     },
     {
      "id": "street:cervantes",
@@ -25554,16 +25554,16 @@
      "gap": 5.6
     },
     {
+     "id": "street:picasso-access",
+     "name": "Calle de Picasso",
+     "kind": "street",
+     "gap": 8.6
+    },
+    {
      "id": "parking:Picasso car park",
      "name": "Picasso car park",
      "kind": "parking",
-     "gap": 8.8
-    },
-    {
-     "id": "street:picasso-access",
-     "name": "Picasso car-park access",
-     "kind": "street",
-     "gap": 9.6
+     "gap": 11.7
     },
     {
      "id": "street:alberto",

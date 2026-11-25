@@ -4094,6 +4094,34 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude"
+  },
+  {
+   "id": "picasso-west-path",
+   "area": "picasso",
+   "priority": 2,
+   "kind": "layout",
+   "title": "Calle de Picasso: the footpath on the car park's west side, its levels, steps and ramps",
+   "photos": [
+    "IMG_3131.jpg",
+    "ref:google-maps/01-street-map-lane-names.png",
+    "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg"
+   ],
+   "build": "Trace the footpath behind the hedge strip at the back of the main car park's west bays, from the CALLE DE PICASSO plinth to Calle Eva (street_layout.json picasso-access), and build its levels from the laser survey (scripts/lidar_check.py, data/levels_survey.json for the method): three level stretches joined by steps beside a ramp (data/picasso_path_steps.json, src/ramp-steps.ts). Pull the car-park outline's west edge back to the bays. When photos arrive (photo request picasso-west-path-drops), replace the inferred form of each drop and build the edge between the hedge strip and the bays.",
+   "avoid": "No change to Walk. Do not grade the path or flights above inferred without photos; do not move them without a solved camera or a measured aerial reading.",
+   "accept": [
+    "Visible in Inspect in Layout and with Show details",
+    "Flights climb the survey's rise (scripts/check_terrain.py)",
+    "Structure signed off by a reviewer subagent"
+   ],
+   "features": [
+    "street:picasso-access",
+    "steps:picasso-path-upper-steps",
+    "steps:picasso-path-cervantes-steps",
+    "parking:Picasso car park"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude"
   }
- ]
+]
 }

@@ -2048,8 +2048,8 @@
           -56.581
         ],
         [
-          -122.4,
-          -59.108
+          -125.109,
+          -57.526
         ]
       ],
       "areas": [
@@ -2057,8 +2057,8 @@
       ],
       "heightM": 0.78,
       "thicknessM": 0.2,
-      "lengthM": 5.07,
-      "grossFaceM2": 3.96,
+      "lengthM": 1.94,
+      "grossFaceM2": 1.51,
       "openings": [],
       "routeOpenings": [],
       "evidence": [
@@ -2067,8 +2067,8 @@
         "IMG_3136.jpg"
       ],
       "confidence": "estimated",
-      "basis": "The hedge shows over the lowered white wall east of the first pergola. Stations and dimensions are estimated from the unsolved sequence along the mapped paving.",
-      "placement": "unreviewed",
+      "basis": "The hedge shows over the lowered white wall east of the first pergola. Stations and dimensions are estimated from the unsolved sequence along the mapped paving. 25 Nov 2026: its east end moves 3.1 m west with the garden screen, which now ends at Calle de Picasso.",
+      "placement": "disputed",
       "solvedCameras": [],
       "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
       "levelRefs": []
@@ -2079,12 +2079,12 @@
       "kind": "wall",
       "points": [
         [
-          -122.4,
-          -59.108
+          -125.109,
+          -57.526
         ],
         [
-          -119.7,
-          -60.685
+          -122.409,
+          -59.103
         ]
       ],
       "areas": [
@@ -2100,8 +2100,8 @@
         "IMG_3134.jpg"
       ],
       "confidence": "estimated",
-      "basis": "The white garden wall steps up beside the hedge near the signed end. Stations and dimensions are estimated from the unsolved sequence along the mapped paving.",
-      "placement": "unreviewed",
+      "basis": "The white garden wall steps up beside the hedge near the signed end. Stations and dimensions are estimated from the unsolved sequence along the mapped paving. 25 Nov 2026: moved 3.1 m west along its line, so that it ends at the west edge of Calle de Picasso, which leaves Juan Gris southward here between the corner garden and the lawn strip (IMG_3131, Google 3D top-down view); it had stood across the path's mouth. IMG_3134 may show the low hedged wall nearer the corner and this taller wall further west (discrepancy juan-gris-east-walls-order).",
+      "placement": "disputed",
       "solvedCameras": [],
       "levelState": "Unresolved wall-top datum; model height is not a surveyed elevation.",
       "levelRefs": []
@@ -3494,12 +3494,12 @@
           18.43
         ],
         [
-          -79.14,
-          12.28
+          -79.57,
+          12.54
         ],
         [
-          -79.55,
-          11.6
+          -79.98,
+          11.85
         ],
         [
           -89.86,

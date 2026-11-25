@@ -31,7 +31,7 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 | Calle Elena | 117 / 78 | 2 | 2 | partial |
 | Calle Miguel de Cervantes | 89 / 61 | 1 | 1 | partial |
 | Calle Pintor Dalí | 68 / 68 | 3 | 0 | uninspected |
-| Pintor Picasso and the car park | 33 / 33 | 2 | 0 | uninspected |
+| Pintor Picasso and the car park | 34 / 34 | 2 | 0 | uninspected |
 | Loira, Bolivia, Alberto and Isabel | 42 / 42 | 4 | 6 | uninspected |
 | Calle Eva | 61 / 61 | 2 | 0 | uninspected |
 | Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 162 / 162 | 6 | 2 | uninspected |

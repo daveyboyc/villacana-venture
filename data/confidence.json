@@ -89,7 +89,7 @@
   },
   "parking:Picasso car park": {
    "level": "estimated",
-   "why": "East edge on the long wall's inner face (aerial). The west and south edges and the north end are still the earlier map trace; the central bay row is read from car positions on the aerial (±1.5 m)."
+   "why": "East edge on the long wall's inner face (aerial). West edge at the back of the west bays, 4 m west of their car line, with a gap where Calle Cervantes comes in (aerial and laser survey, 25 Nov 2026). The south edge and the north end are still the earlier map trace; the central bay row is read from car positions on the aerial (±1.5 m)."
   },
   "lane_walls.json:juan-gris-east-hedge": {
    "level": "estimated",
@@ -986,6 +986,18 @@
   "dali_strip_levels.json:dali-apron-bed-pier": {
    "level": "estimated",
    "why": "The pier and mailbox are photographed in IMG_3086 and IMG_3087. The pier's size is judged from the mailbox, and its position is ±0.5 m."
+  },
+  "street:picasso-access": {
+   "level": "inferred",
+   "why": "Calle de Picasso: seen at its north end behind the CALLE DE PICASSO plinth (IMG_3131); the rest traced from the pale band on the aerial (0.45 m rms) and Google's map label, not photographed. Width 1.8 m estimated; levels from the laser survey."
+  },
+  "steps:picasso-path-upper-steps": {
+   "level": "inferred",
+   "why": "The 0.45 m drop and where it is come from the laser survey; steps beside a ramp is the resort's usual form, not seen. Number, side and spacing of the risers are guesses."
+  },
+  "steps:picasso-path-cervantes-steps": {
+   "level": "inferred",
+   "why": "The 0.42 m drop just north of the Cervantes crossing comes from the laser survey; steps beside a ramp is the resort's usual form, not seen. Number, side and spacing of the risers are guesses."
   }
  },
  "gaps": [

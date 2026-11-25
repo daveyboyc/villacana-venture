@@ -82,6 +82,10 @@ for w in data['walls']:
     if w['area'] == 'north-lanes':
         gap = line_gap(w['points'], juan_gris['lines'][0])
         assert gap - (w['thickness'] + 0.06) / 2 >= juan_gris['width'] / 2, f'{wid}: coping crosses Juan Gris paving'
+    # Calle de Picasso leaves Juan Gris southward, open between the corner garden and the lawn strip (IMG_3131).
+    picasso = streets['picasso-access']
+    gap = line_gap(w['points'], picasso['points'])
+    assert gap - (w['thickness'] + 0.06) / 2 >= picasso['width'] / 2, f'{wid}: stands on Calle de Picasso'
     for pool in skeleton['pools']:
         ring = pool['ring'] + [pool['ring'][0]]
         assert not any(crosses(a, b, c, e) for a, b in segments(w['points']) for c, e in segments(ring)), f"{wid}: crosses pool {pool['id']}"
