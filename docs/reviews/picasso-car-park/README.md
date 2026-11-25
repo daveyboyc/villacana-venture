@@ -193,3 +193,47 @@ Each pair shows the photo on the left and the model on the right, rendered throu
 
 The layout browser test (`npm run test:layout`) passes every street walk and collision check on this branch,
 then stops at the coastal-gate button step (`test_layout_browser.cjs:795`). `main` stops at the same step.
+
+## North-entrance security barrier (25 November 2026)
+
+Task `picasso-car-park-barrier`. Dave asked for the car park's security barriers as an asset, placed. IMG_3131 is
+the only photo of one: no other photo in the area shows a barrier (the red-white posts in IMG_3098 and IMG_3189 are
+flexible bollards at the accessible bays).
+
+**What the photo shows.** The barrier is closed. A white aluminium boom with red top and bottom edges rests at about
+1 m in the V fork of a red square-section rest post on a bolted plate; the post carries a small black photocell box on
+its face towards the pivot and is bent from a knock. A red-white bollard (red foot, white band, red top, about
+0.87 m) stands just beyond it. The boom runs back past the camera's right; its pivot and drive cabinet are out of frame.
+
+**Where it is.** No camera here is solved, so the position is an estimate. Reading the photo against the ground plane
+at an assumed 1.5 m eye height (pitch 15° down from the plinth's top and foot), the rest post foot is 2.6 m ahead and
+0.7 m right of the camera, the bollard 3.5 m ahead, and the boom lies along the view direction. With the phone pin
+(-103.0, -64.6, ±4.7 m) and compass heading 258° that puts the rest post at (-105.65, -64.75) and the boom on a
+78° bearing towards its pivot. The photo's brick path edge, about 6.4–7.7 m ahead, runs about 76° right of the view
+axis, parallel to the car-park aisles with the compass heading; the photo's reviewed `looksAt` is about 23° further
+right, which would turn that edge off the aisles, so the compass heading is used. The boom length (4.0 m) and the
+cabinet (a plain light-grey box of a usual size) are inferred.
+
+**Built.** `src/car-park-barrier.ts` is the asset: `carParkBarrier({ armLength, side })` (cabinet, hub, boom with red
+edges and end cap, rest post with fork, plate and photocell) and `barrierBollard()`. Geometry and materials are
+shared. `data/picasso_car_park.json` `barriers` holds the placement; `src/picasso-car-park.ts` places it closed on the
+paving level, in Layout and with Show details, gives the rest post, bollard and cabinet collision (the boom lifts, so it
+has none) and the map draws the boom line and posts. Graded `estimated` in `data/confidence.json`.
+
+| View | Image |
+| --- | --- |
+| IMG_3131 beside the model through its starting pose (Layout) | [IMG_3131-pair.jpg](../picasso-car-park-barrier/IMG_3131-pair.jpg) |
+| Through the starting pose with Show details | [IMG_3131-after-details.png](../picasso-car-park-barrier/IMG_3131-after-details.png) |
+| Inspect, close (Layout / Show details) | [inspect-close-pair.jpg](../picasso-car-park-barrier/inspect-close-pair.jpg) |
+| Inspect, the north end from above | [inspect-wide-pair.jpg](../picasso-car-park-barrier/inspect-wide-pair.jpg) |
+
+The barrier lines up with the photo through the starting pose. That follows from reading the photo with the same camera,
+so it checks the build, not the position. Still open:
+
+- `picasso-car-park-north-entrance-apron`: the barrier stands on terracotta where the photo has asphalt. The brick path,
+  lawn and CALLE DE PICASSO plinth, the garden wall, the ramp, and the white kerb nose with its bougainvillea bed just
+  beyond the rest post are not built. The car-park outline stops short of the entrance. This is follow-up task
+  `picasso-car-park-north-entrance`.
+- `gap:picasso-car-park-second-barrier`: asphalt continues about 4 m past the rest post, which suggests an exit lane.
+  No photo shows whether it has its own barrier, so none is built. The photo request `picasso-car-park-north-entrance`
+  would settle this and the corner.

@@ -6,7 +6,8 @@
   "IMG_3125.jpg",
   "IMG_3129.jpg",
   "IMG_3100.jpg",
-  "IMG_3189.jpg"
+  "IMG_3189.jpg",
+  "IMG_3131.jpg"
  ],
  "wall": {
   "id": "picasso-car-park-wall",
@@ -52,5 +53,29 @@
  },
  "outline": {
   "trust": "East edge pulled onto the wall's inner face (data/street_layout.json mainParkingRing). The west and south edges are unchanged."
- }
+ },
+ "barriers": [
+  {
+   "id": "picasso-car-park-north-barrier",
+   "name": "Security barrier at the car park's north entrance (boom, rest post and bollard)",
+   "evidence": [
+    "IMG_3131.jpg"
+   ],
+   "restPost": [
+    -105.65,
+    -64.75
+   ],
+   "pivot": [
+    -101.74,
+    -65.58
+   ],
+   "armLength": 4.0,
+   "bollard": [
+    -106.53,
+    -64.58
+   ],
+   "cabinetSide": "north",
+   "trust": "Estimated. IMG_3131 shows the barrier closed: a white boom with red top and bottom edges at about 1 m, its free end in the V fork of a red square rest post (about 1.0 m, 0.08 m, bolted base plate, black photocell box on the face towards the pivot, the post bent from a knock) and a red-white bollard about 0.87 m high just beyond it. Measured in the photo against the ground plane at an assumed 1.5 m phone height: the rest post foot stands 2.6 m ahead and 0.7 m right of the camera, the bollard 3.5 m ahead and 0.7 m right, and the boom runs back along the view direction past the camera's right, so it lies on the camera heading (258, EXIF compass). Positions follow the phone pin (-103.0, -64.6, about 4.7 m) and are good to about 5 m; the direction to about 10 degrees. The pivot end and its drive cabinet are out of frame: the 4.0 m boom and the cabinet (a plain box of a usual size, colour unseen) are inferred. Which aisle the barrier closes and whether the other aisle has a second barrier are open (photo request picasso-car-park-north-entrance)."
+  }
+ ]
 }

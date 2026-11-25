@@ -1843,11 +1843,12 @@
    },
    "discrepancies": [],
    "tasks": {
-    "open": 2,
-    "inProgress": 0,
+    "open": 3,
+    "inProgress": 1,
     "titles": [
      "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory",
-     "Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries"
+     "Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries",
+     "Main car park: the security barrier at the north entrance (asset and placement)"
     ]
    },
    "confidence": {
@@ -1864,12 +1865,12 @@
     "Facades: 0 of 274 kit parts traced from photos.",
     "How sure: 0 photographed, 5 estimated, 0 inferred.",
     "Placement: 0 of 5 features verified.",
-    "Model loop: 0 tracked findings accepted, 9 still open; 5 evidence requests. This is not whole-area acceptance."
+    "Model loop: 0 tracked findings accepted, 10 still open; 5 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
      "ready": 3,
-     "needs-evidence": 6,
+     "needs-evidence": 7,
      "needs-source-access": 0,
      "awaiting-review": 0,
      "accepted": 0
@@ -1962,7 +1963,7 @@
       "state": "open"
      }
     ],
-    "readyTasks": 2
+    "readyTasks": 3
    },
    "light": {
     "colour": "red",
@@ -2089,7 +2090,7 @@
     "placed": 36,
     "checks": {
      "matches": 0,
-     "differs": 0,
+     "differs": 2,
      "not-comparable": 4
     },
     "camerasSolved": 0,
@@ -2102,11 +2103,16 @@
     "generated": 249
    },
    "placement": {
-    "features": 12,
+    "features": 13,
     "verified": 0,
-    "disputed": 1
+    "disputed": 2
    },
-   "discrepancies": [],
+   "discrepancies": [
+    {
+     "id": "photo-discrepancy:00bed1bbb938338a",
+     "feature": "picasso_car_park.json:picasso-car-park-north-barrier"
+    }
+   ],
    "tasks": {
     "open": 2,
     "inProgress": 1,
@@ -2118,18 +2124,18 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 12,
+    "estimated": 13,
     "inferred": 0,
     "registry": 0,
-    "gaps": 3
+    "gaps": 4
    },
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey; streets within 0.46 m.",
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.8 m.",
     "Photos: 36, 36 placed; no camera solved.",
     "Facades: 4 of 253 kit parts traced from photos.",
-    "How sure: 0 photographed, 12 estimated, 0 inferred, 3 known gaps.",
-    "Placement: 0 of 12 features verified.",
+    "How sure: 0 photographed, 13 estimated, 0 inferred, 4 known gaps.",
+    "Placement: 0 of 13 features verified, 1 open discrepancy.",
     "Model loop: 0 tracked findings accepted, 1 still open; 4 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -3315,7 +3321,7 @@
     "placed": 642,
     "checks": {
      "matches": 55,
-     "differs": 46,
+     "differs": 48,
      "not-comparable": 67
     },
     "camerasSolved": 8,
@@ -3342,9 +3348,9 @@
     "generated": 2452
    },
    "placement": {
-    "features": 537,
+    "features": 538,
     "verified": 0,
-    "disputed": 59
+    "disputed": 60
    },
    "discrepancies": [
     {
@@ -3558,11 +3564,15 @@
     {
      "id": "photo-discrepancy:f9066c474190b9a5",
      "feature": "elena_junction_details.json:climbers"
+    },
+    {
+     "id": "photo-discrepancy:00bed1bbb938338a",
+     "feature": "picasso_car_park.json:picasso-car-park-north-barrier"
     }
    ],
    "tasks": {
-    "open": 52,
-    "inProgress": 59,
+    "open": 53,
+    "inProgress": 60,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -3571,24 +3581,24 @@
    },
    "confidence": {
     "photographed": 95,
-    "estimated": 191,
+    "estimated": 192,
     "inferred": 19,
     "registry": 232,
-    "gaps": 41
+    "gaps": 42
    },
    "status": [
     "Ground: 95% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 662, 642 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 95 photographed, 191 estimated, 19 inferred, 41 known gaps.",
-    "Placement: 0 of 537 features verified, 53 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 36 still open; 53 evidence requests. This is not whole-area acceptance."
+    "How sure: 95 photographed, 192 estimated, 19 inferred, 42 known gaps.",
+    "Placement: 0 of 538 features verified, 54 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 37 still open; 53 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
      "ready": 22,
-     "needs-evidence": 11,
+     "needs-evidence": 12,
      "needs-source-access": 0,
      "awaiting-review": 3,
      "accepted": 0
@@ -4365,7 +4375,7 @@
       "state": "open"
      }
     ],
-    "readyTasks": 40
+    "readyTasks": 41
    },
    "light": {
     "colour": "red",

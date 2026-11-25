@@ -6,9 +6,9 @@
   "needs-review": 273,
   "suggested": 369,
   "photos": 646,
-  "features": 537,
-  "photosCitedByModel": 257,
-  "modelFeaturesWithPhotoCitations": 280
+  "features": 538,
+  "photosCitedByModel": 258,
+  "modelFeaturesWithPhotoCitations": 281
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -4087,6 +4087,15 @@
    "evidence": [
     "IMG_3100.jpg",
     "IMG_3189.jpg"
+   ]
+  },
+  {
+   "id": "picasso_car_park.json:picasso-car-park-north-barrier",
+   "name": "Security barrier at the car park's north entrance (boom, rest post and bollard)",
+   "kind": "reference feature",
+   "source": "phone pin (about 5 m) and ground-plane readings in unsolved IMG_3131; pivot end inferred",
+   "evidence": [
+    "IMG_3131.jpg"
    ]
   },
   {
@@ -27607,6 +27616,12 @@
    "relation": "possibly-in-view",
    "distance": 43.2,
    "angleOffset": 30.3
+  },
+  {
+   "from": "photo:IMG_3131.jpg",
+   "to": "picasso_car_park.json:picasso-car-park-north-barrier",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3132.jpg",

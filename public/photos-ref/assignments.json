@@ -6,9 +6,9 @@
   "needs-review": 273,
   "suggested": 369,
   "photos": 646,
-  "features": 537,
-  "photosCitedByModel": 257,
-  "modelFeaturesWithPhotoCitations": 280
+  "features": 538,
+  "photosCitedByModel": 258,
+  "modelFeaturesWithPhotoCitations": 281
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -23840,7 +23840,9 @@
      "angleOffset": 30.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "picasso_car_park.json:picasso-car-park-north-barrier"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -103.0,

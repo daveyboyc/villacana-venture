@@ -11,6 +11,10 @@
   "needs-photos": "Worth improving; more photos wanted."
  },
  "features": {
+  "picasso_car_park.json:picasso-car-park-north-barrier": {
+   "level": "estimated",
+   "why": "The barrier itself is photographed (IMG_3131): boom, rest post with fork and photocell, bollard. Its position comes from the phone pin (about 5 m) and ground-plane readings at an assumed eye height, its direction from the compass (about 10 degrees). The pivot end and drive cabinet are out of frame: the 4 m boom length and the cabinet are inferred. No camera is solved."
+  },
   "street:picasso": {
    "level": "estimated",
    "why": "Along the car park the road is placed against the long wall (aerial line; IMG_3125, IMG_3129 show asphalt to the wall foot), 6 m wide; the north and south ends are the earlier map trace."
@@ -929,6 +933,18 @@
   }
  },
  "gaps": [
+  {
+   "id": "gap:picasso-car-park-second-barrier",
+   "name": "Second barrier or exit lane at the car park's north entrance",
+   "at": [
+    -108.5,
+    -66.5
+   ],
+   "photos": [
+    "IMG_3131.jpg"
+   ],
+   "why": "IMG_3131 shows asphalt continuing about 4 m past the photographed barrier's rest post, with a white kerb nose and a brick-edged planted bed beyond it, which suggests a second (exit) lane. No photo shows whether that lane has its own barrier, so none is built."
+  },
   {
     "id": "gap:loira-outer-frontage",
     "name": "Calle Loira opposite frontage and western wall extent",

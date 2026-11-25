@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import data from "../data/picasso_car_park.json";
+import { barrierBollard, carParkBarrier, BARRIER_POST_RADIUS, CABINET } from "./car-park-barrier";
 import { plasterMaterial } from "./materials";
 import { siteY } from "./terrain";
 import type { Vec2 } from "./types";
@@ -7,10 +8,12 @@ import type { Vec2 } from "./types";
 /**
  * The main (Picasso) car park's structure, estimated from the aerial and the photos
  * (data/picasso_car_park.json): the long white wall between the car park and Calle Pintor
- * Picasso, and the round island's white kerb and raised bed. Planting on the island is left
- * for the detail stage.
+ * Picasso, the round island's white kerb and raised bed, and the security barrier at the north entrance
+ * (src/car-park-barrier.ts). Planting on the island is left for the detail stage.
  */
 const wall = data.wall, island = data.island;
+type Barrier = { id: string; restPost: Vec2; pivot: Vec2; armLength: number; bollard: Vec2; cabinetSide: string };
+const barriers = data.barriers as unknown as Barrier[];
 /** The car-park and road paving is drawn this far above the terrain (boundaries.ts); kerb and wall heights are measured from it. */
 const PAVING = 0.27;
 const wallPoints = wall.points as Vec2[];
@@ -21,21 +24,36 @@ function strip(a: Vec2, b: Vec2, thickness: number): Vec2[] {
   return [[a[0] + nx, a[1] + nz], [b[0] + nx, b[1] + nz], [b[0] - nx, b[1] - nz], [a[0] - nx, a[1] - nz]];
 }
 
-function circle(radius: number, steps = 48): Vec2[] {
+function circle(radius: number, steps = 48, centre: Vec2 = island.centre as Vec2): Vec2[] {
   return Array.from({ length: steps }, (_, i) => {
     const t = i / steps * Math.PI * 2;
-    return [island.centre[0] + Math.cos(t) * radius, island.centre[1] + Math.sin(t) * radius] as Vec2;
+    return [centre[0] + Math.cos(t) * radius, centre[1] + Math.sin(t) * radius] as Vec2;
   });
 }
 
-/** Collision for the wall and the island (kerb and bed together). */
-export function picassoCarParkRings(): Vec2[][] {
-  return [...wallPoints.slice(1).map((b, i) => strip(wallPoints[i], b, wall.thickness)), circle(island.radius, 24)];
+/** Where a barrier's drive cabinet stands: beside the pivot, on the side the data names. */
+function cabinetCentre(b: Barrier): Vec2 {
+  const [px, pz] = b.pivot, l = Math.hypot(b.restPost[0] - px, b.restPost[1] - pz);
+  const ux = (b.restPost[0] - px) / l, uz = (b.restPost[1] - pz) / l;
+  // Normal to the boom pointing to the named side (north is -z).
+  let nx = -uz, nz = ux;
+  if ((b.cabinetSide === "north" && nz > 0) || (b.cabinetSide === "south" && nz < 0)) { nx = -nx; nz = -nz; }
+  const back = CABINET.width / 2 + 0.02, off = CABINET.depth / 2 + 0.05;
+  return [px - ux * back + nx * off, pz - uz * back + nz * off];
 }
 
-/** Plan outlines for the map: the wall strip and the island. */
-export function picassoCarParkPlan(): { wall: Vec2[][]; island: Vec2[] } {
-  return { wall: wallPoints.slice(1).map((b, i) => strip(wallPoints[i], b, wall.thickness)), island: circle(island.radius) };
+/** Collision for the wall, the island (kerb and bed together) and the barrier's fixed posts and cabinet; the boom lifts, so it is left open. */
+export function picassoCarParkRings(): Vec2[][] {
+  const posts = barriers.flatMap((b) => [b.restPost, b.bollard, cabinetCentre(b)].map((c) => circle(BARRIER_POST_RADIUS, 8, c)));
+  return [...wallPoints.slice(1).map((b, i) => strip(wallPoints[i], b, wall.thickness)), circle(island.radius, 24), ...posts];
+}
+
+/** Plan outlines for the map: the wall strip, the island and each barrier's boom line with its posts. */
+export function picassoCarParkPlan(): { wall: Vec2[][]; island: Vec2[]; barriers: { id: string; boom: Vec2[]; posts: Vec2[] }[] } {
+  return {
+    wall: wallPoints.slice(1).map((b, i) => strip(wallPoints[i], b, wall.thickness)), island: circle(island.radius),
+    barriers: barriers.map((b) => ({ id: b.id, boom: [b.pivot, b.restPost], posts: [b.restPost, b.bollard, cabinetCentre(b)] })),
+  };
 }
 
 export function addPicassoCarPark(scene: THREE.Scene): void {
@@ -89,5 +107,22 @@ export function addPicassoCarPark(scene: THREE.Scene): void {
   bed.rotation.x = -Math.PI / 2;
   bed.position.set(cx, ground + island.kerbHeight - 0.02, cz);
   for (const m of [kerb, kerbSide, bed]) { m.name = island.id; m.receiveShadow = true; group.add(m); }
+  // The north-entrance barrier, closed as photographed (IMG_3131): pivot and cabinet at one end, the boom
+  // in the rest post's fork at the other, the bollard just beyond. Each piece stands on the paving.
+  for (const b of barriers) {
+    const [px, pz] = b.pivot, dx = b.restPost[0] - px, dz = b.restPost[1] - pz;
+    // Local +x runs from pivot to rest post; the cabinet sits on local -z (side 1) or +z (side -1).
+    // With rotation.y = turn, local -z points to world (-sin turn, -cos turn); north is world -z.
+    const turn = Math.atan2(-dz, dx), minusZIsNorth = -Math.cos(turn) < 0;
+    const side: 1 | -1 = minusZIsNorth === (b.cabinetSide === "north") ? 1 : -1;
+    const barrier = carParkBarrier({ armLength: Math.hypot(dx, dz), name: b.id, side });
+    barrier.rotation.y = turn;
+    // The boom stays level at the photographed rest post's height; the cabinet runs down into the paving.
+    barrier.position.set(px, siteY(b.restPost[0], b.restPost[1]) + PAVING, pz);
+    group.add(barrier);
+    const bollard = barrierBollard(`${b.id}-bollard`);
+    bollard.position.set(b.bollard[0], siteY(b.bollard[0], b.bollard[1]) + PAVING, b.bollard[1]);
+    group.add(bollard);
+  }
   scene.add(group);
 }

@@ -24307,7 +24307,7 @@
    "signage",
    "levels"
   ],
-  "note": "A red-and-white barrier arm (with a fixed red-white post) across the asphalt; beyond, a terracotta path with a brick edge, a white plinth lettered CALLE DE PICASSO on a lawn, a hedged garden wall, lantern post and a ramp rising between white walls with a tiled name plaque. Which side of the car park the barrier stands on is not settled from this photo.",
+  "note": "A red-and-white barrier arm (with a fixed red-white post) across the asphalt; beyond, a terracotta path with a brick edge, a white plinth lettered CALLE DE PICASSO on a lawn, a hedged garden wall, lantern post and a ramp rising between white walls with a tiled name plaque. Which side of the car park the barrier stands on is not settled from this photo. The barrier is closed and its boom rests in the fork of a red rest post with a black photocell box; it is built from this photo, placed from the pin and compass heading (data/picasso_car_park.json barriers).",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1wBbT9JzfXNGK0FBs4Ty9p228bea7CXkH/view?usp=drivesdk",
@@ -24319,7 +24319,9 @@
    "altitude": 5.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_car_park.json:picasso-car-park-north-barrier"
+  ],
   "looksAt": [
    -110,
    -66

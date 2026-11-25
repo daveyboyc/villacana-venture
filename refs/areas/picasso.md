@@ -8,12 +8,13 @@ Calle Pintor Picasso, the inner car-park access aisle and the Picasso car park.
 
 - IMG_2345 supports bounded utility fronts/brown doors, boundary wall, stone plinth/railings, short ramp and Details-only bins. Frontage offsets and dimensions remain estimated at the existing Picasso road; registry houses, asphalt route and site levels are retained. Ramp is solid inaccessible private-frontage geometry; no new walkable elevated platform or unseen wall continuation is asserted.
 - 24 November 2026 (photo coverage, IMG_3097-3131 and 3184-3203): the car park is bounded on the east by a plain white wall with a level top (laser survey: about 1.4 m high at the uphill north end, 3.1 m at the south end), about 107 m long, from (-91.4, -67.8) to (-35.7, 23.9) on the aerial, with the Calle Pintor Picasso service road and a cypress hedge outside it (IMG_3125, IMG_3129). Inside: a west row of angled bays against a hedge, a central nose-to-nose row with palms, a hedge-ringed round palm island near the south end (IMG_3100), and two accessible bays at the south end facing a low azulejo-tiled step onto the terracotta walk to the community office (IMG_3097, 3098, 3189, 3194). In the south-east corner stand the bin store (RUBBISH COLLECTION / DEPOSITO BASURA, IMG_3099, 3101) with a walled yard of yellow containers (IMG_3103) and recycling igloos at the hotel wall (IMG_3104). The service road continues south-east between the hotel's ground floor (ramps, sliding gate, IMG_3121) and white utility buildings with maroon substation doors (IMG_3106, 3123). The model has none of the wall, island planting or south step, and its car-park outline, central row and access line are off the aerial: see the picasso-car-park-* and picasso-access-off-aisle discrepancies and docs/reviews/picasso-car-park. No camera is solved yet.
+- 25 November 2026 (picasso-car-park-barrier): the security barrier at the north entrance is built from IMG_3131 as a shared asset (src/car-park-barrier.ts), closed: a white boom with red edges at about 1 m resting in the V fork of a red rest post with a black photocell box, and a red-white bollard just beyond. Ground-plane readings at an assumed 1.5 m eye height put the rest post 2.6 m ahead and 0.7 m right of the camera, so with the phone pin and compass it stands at about (-105.7, -64.8), good to about 5 m and 10 degrees. The pivot end and drive cabinet are out of frame (inferred). Open: the ground there is asphalt in the photo but terracotta in the model; the brick path, CALLE DE PICASSO plinth, lane separator and whether the other lane has a second barrier are not built (picasso-car-park-north-entrance-apron, gap:picasso-car-park-second-barrier, task picasso-car-park-north-entrance). IMG_3131's reviewed looksAt points about 23 degrees right of its compass heading; the brick path edge in the photo runs parallel to the car-park aisles only with the compass heading.
 
 ## Read first
 
 - docs: `docs/STREET_LAYOUT.md`, `docs/reviews/picasso-car-park/README.md`
-- data: `data/street_layout.json`, `data/picasso_service_road.json`
-- src: `src/picasso-service-road.ts`
+- data: `data/street_layout.json`, `data/picasso_service_road.json`, `data/picasso_car_park.json`
+- src: `src/picasso-service-road.ts`, `src/picasso-car-park.ts`, `src/car-park-barrier.ts`
 - contact sheet: `reference/contact-sheets/picasso.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
@@ -29,6 +30,8 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | --- | --- | --- | --- | --- |
 | P2 | `ground-plan-picasso` | Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries (after ground-plan-framework) | open · placement: not-verified |  |
 | P2 | `path-network-inventory-picasso` [#132](https://github.com/daveyboyc/villacana-venture/issues/132) | Pintor Picasso and the car park: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P2 | `picasso-car-park-barrier` | Main car park: the security barrier at the north entrance (asset and placement) | in-progress · Claude · placement: not-verified | [IMG_3131](../../public/photos-ref/IMG_3131.jpg) |
+| P2 | `picasso-car-park-north-entrance` | Main car park north entrance: asphalt apron, lanes, separator and the CALLE DE PICASSO plinth | open · placement: not-verified | [IMG_3131](../../public/photos-ref/IMG_3131.jpg), [IMG_3130](../../public/photos-ref/IMG_3130.jpg) |
 
 ## Built from these photos
 
@@ -63,6 +66,15 @@ graph LR
 | `picasso_service_road.json:picasso-boundary-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `picasso_service_road.json:picasso-stone-plinth` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `picasso_service_road.json:picasso-utility-front` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+
+## Photo checks
+
+Renders from each photo's camera compared with the photo (`data/photo_checks.json`).
+
+| Task | Photo | Result | Render | Notes |
+| --- | --- | --- | --- | --- |
+| `picasso-car-park-barrier` | [IMG_3131](../../public/photos-ref/IMG_3131.jpg) | **differs** → `picasso-car-park-north-entrance` | [after](../../docs/reviews/picasso-car-park-barrier/IMG_3131-after.png) | Layout, through the unsolved starting pose (pin, compass heading 258, 15 degrees down, 1.5 m eye height): the rest post, its fork and photocell, the bollard beyond it and the boom running back past the camera's right stand where the photo has them (side by side in IMG_3131-pair.jpg). This agreement follows from reading the photo with the same camera, so it checks the build, not the position. Still different: the post is bent in the photo and straight in the model; the ground is terracotta where the photo has asphalt; the brick path, lawn, plinth, garden wall, ramp and the kerb nose and bed beyond the rest post are missing (picasso-car-park-north-entrance-apron). A photographic diagnostic, not placement approval. |
+| `picasso-car-park-barrier` | [IMG_3131](../../public/photos-ref/IMG_3131.jpg) | **differs** → `picasso-car-park-north-entrance` | [after](../../docs/reviews/picasso-car-park-barrier/IMG_3131-after-details.png) | Show details, same starting pose: the barrier, bollard and photocell are drawn as in Layout. The surroundings differ as in the Layout check. A photographic diagnostic, not placement approval. |
 
 **Built without complete newer photo-check records:** `picasso-service-road`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 

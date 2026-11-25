@@ -1953,6 +1953,28 @@
    "result": "differs",
    "followUp": "elena-junction-lawns-roof",
    "notes": "Through the solved roof camera with Show details: clipped domes, cypresses against the far wall, bougainvillea on the west wall, vines on the cypress wall, the east hedge beds with the lamp post and the CALLE ELENA plaques now stand where the photo has them. Still different: the clipped standard stands about 1 m south of the photographed one (the lawn's north edge, discrepancy elena-lawn-north-edge), shrubs at the west wall's foot, the corner house's ledge and porch. A photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "picasso-car-park-barrier",
+   "checked": "2026-11-25",
+   "by": "Claude",
+   "feature": "picasso_car_park.json:picasso-car-park-north-barrier",
+   "photo": "IMG_3131.jpg",
+   "render": "docs/reviews/picasso-car-park-barrier/IMG_3131-after.png",
+   "result": "differs",
+   "followUp": "picasso-car-park-north-entrance",
+   "notes": "Layout, through the unsolved starting pose (pin, compass heading 258, 15 degrees down, 1.5 m eye height): the rest post, its fork and photocell, the bollard beyond it and the boom running back past the camera's right stand where the photo has them (side by side in IMG_3131-pair.jpg). This agreement follows from reading the photo with the same camera, so it checks the build, not the position. Still different: the post is bent in the photo and straight in the model; the ground is terracotta where the photo has asphalt; the brick path, lawn, plinth, garden wall, ramp and the kerb nose and bed beyond the rest post are missing (picasso-car-park-north-entrance-apron). A photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "picasso-car-park-barrier",
+   "checked": "2026-11-25",
+   "by": "Claude",
+   "feature": "picasso_car_park.json:picasso-car-park-north-barrier",
+   "photo": "IMG_3131.jpg",
+   "render": "docs/reviews/picasso-car-park-barrier/IMG_3131-after-details.png",
+   "result": "differs",
+   "followUp": "picasso-car-park-north-entrance",
+   "notes": "Show details, same starting pose: the barrier, bollard and photocell are drawn as in Layout. The surroundings differ as in the Layout check. A photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [
