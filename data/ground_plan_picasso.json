@@ -158,6 +158,9 @@
       "raise": 0.365,
       "above": [
         "picasso-north-entrance-asphalt"
+      ],
+      "cut": [
+        "surface:picasso-gatehouse-lawn"
       ]
     },
     {

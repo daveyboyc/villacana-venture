@@ -279,6 +279,11 @@ generic terracotta ground.
 - **Gatehouse (`picasso_car_park.json` `gatehouse`).** About 3.4 m square and 2.9 m high, white and flat-roofed. It is
   not in the land registry. It is built as a plain block: the window grille, door and signs are left for the detail
   stage.
+- **Framework.** The island and planter are cut out of the asphalt (`cut: surface:<id>`, new) and stand raised on
+  their kerbs (`raise`, and the new edge `base` puts a kerb on the road asphalt). A raised lawn is drawn as a mesh.
+- **Map.** The barriers are drawn thicker (0.6 m line, white posts), so they show at normal zoom. The photo request
+  `picasso-car-park-north-entrance` is marked answered by the Google imagery, which removes its red badge from the
+  entrance.
 - All are graded `estimated`. `check_ground_plan.py` passes.
 
 | View | Layout / Show details |
@@ -286,6 +291,7 @@ generic terracotta ground.
 | From above | [ne-overhead-pair.jpg](../picasso-car-park-barrier/ne-overhead-pair.jpg) |
 | From Calle Loira, as Street View 03 | [ne-loira-pair.jpg](../picasso-car-park-barrier/ne-loira-pair.jpg) |
 | From Calle Bolivia, as Street View 04 | [ne-bolivia-pair.jpg](../picasso-car-park-barrier/ne-bolivia-pair.jpg) |
+| The map (Map & photos), zoomed to the entrance | [map-north-entrance.png](../picasso-car-park-barrier/map-north-entrance.png) |
 
 Still open, on `picasso-car-park-north-entrance-apron`:
 - the brick path, lawn strip and CALLE DE PICASSO plinth west of the entry lane;

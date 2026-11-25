@@ -4706,7 +4706,7 @@
    "id": "ground_plan_picasso.json:picasso-north-entrance-asphalt",
    "name": "Car park north entrance: asphalt round the gatehouse island",
    "kind": "reference feature",
-   "source": "Both lanes either side of the gatehouse island and the strip west of the narrow planter are asphalt in the photos (IMG_3131, Street View) and the Google view, joining Calle Loira and Calle Bolivia to the car park. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8), good to about 1.5 m. Its north edge runs just under the road ribbons; its south edge is the car-park outline's north edge, its east edge the long wall's inner face, its west edge the brick strip's east edge. The model drew this as generic terracotta before.",
+   "source": "Both lanes either side of the gatehouse island and the strip west of the narrow planter are asphalt in the photos (IMG_3131, Street View) and the Google view, joining Calle Loira and Calle Bolivia to the car park. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8), good to about 1.5 m. Its north edge runs just under the road ribbons; its south edge is the car-park outline's north edge, its east edge the long wall's inner face, its west edge the brick strip's east edge. The model drew this as generic terracotta before. The gatehouse island and the narrow planter are cut out of it and stand raised in the holes.",
    "evidence": [
     "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
     "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",
@@ -4718,7 +4718,7 @@
    "id": "ground_plan_picasso.json:picasso-gatehouse-island",
    "name": "Gatehouse island: terracotta apron on a white kerb",
    "kind": "reference feature",
-   "source": "The island between the entry and exit lanes: a round lawn bed to the north, the gatehouse in the middle and a terracotta apron to the south and east, where both barrier cabinets stand. White kerbs in Street View from Calle Loira. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8), good to about 1.5 m.",
+   "source": "The island between the entry and exit lanes: a round lawn bed to the north, the gatehouse in the middle and a terracotta apron to the south and east, where both barrier cabinets stand. White kerbs in Street View from Calle Loira. Traced from Dave's Google 3D top-down screenshot (Imagery © Google 2026) registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8), good to about 1.5 m. The apron stands at the kerb top, about 0.15 m above the asphalt.",
    "evidence": [
     "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
     "ref:google-maps/03-street-view-loira-entry-barrier-2024-10.jpg",

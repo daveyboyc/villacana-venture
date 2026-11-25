@@ -325,10 +325,10 @@ async function boot(): Promise<void> {
     const title = el("title", {}); title.textContent = "Gatehouse on the car park's entrance island · Street View Oct 2024, Google 3D (Imagery © Google); about 1.5 m"; house.append(title); traced.append(house); }
   // The security barriers at the north entrance (entry west, exit east), closed: the boom from its pivot to the rest post, and its posts.
   for (const b of picassoCarParkPlan().barriers) {
-    const boom = el("polyline", { points: b.boom.map((p) => p.join(",")).join(" "), fill: "none", stroke: "#c3242a", "stroke-width": 0.18, "stroke-dasharray": "0.5 0.3", "data-picasso-car-park": "barrier" });
+    const boom = el("polyline", { points: b.boom.map((p) => p.join(",")).join(" "), fill: "none", stroke: "#c3242a", "stroke-width": 0.6, "stroke-linecap": "round", "data-picasso-car-park": "barrier" });
     const title = el("title", {}); title.textContent = `Car-park ${b.id.includes("exit") ? "exit" : "entry"} barrier, closed · IMG_3131, Street View Oct 2024 and Google 3D (Imagery © Google); about 1.5 m`; boom.append(title);
     traced.append(boom);
-    for (const [x, z] of b.posts) traced.append(el("circle", { cx: x, cy: z, r: 0.15, fill: "#c3242a", "data-picasso-car-park": "barrier-post" }));
+    for (const [x, z] of b.posts) traced.append(el("circle", { cx: x, cy: z, r: 0.45, fill: "#ffffff", stroke: "#c3242a", "stroke-width": 0.2, "data-picasso-car-park": "barrier-post" }));
   }
   for (const kerb of skeleton.kerbs) {
     traced.append(el("path", { d: "M" + kerb.map((p) => `${p[0]} ${p[1]}`).join("L"), fill: "none", stroke: "#e9e4da", "stroke-width": 0.6 }));

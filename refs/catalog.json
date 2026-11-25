@@ -24283,6 +24283,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "ground_plan_picasso.json:picasso-north-entrance-asphalt",
    "backdrop.json:aerial-trees",
    "street:bolivia",
    "street:picasso"
@@ -24317,7 +24318,9 @@
    "trust": "checked against photo content"
   },
   "citedBy": [
-   "picasso_car_park.json:picasso-car-park-north-barrier"
+   "picasso_car_park.json:picasso-car-park-north-barrier",
+   "ground_plan_picasso.json:picasso-north-entrance-asphalt",
+   "ground_plan_picasso.json:picasso-entry-planter"
   ],
   "looksAt": [
    -115.6,
@@ -24325,7 +24328,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "ground_plan_picasso.json:picasso-north-entrance-asphalt"
   ],
   "subject": "barrier and CALLE DE PICASSO plinth at the north end"
  },
@@ -26479,7 +26483,12 @@
   "sourceRevision": null,
   "note": "Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south into the car park's west (entry) lane: the red-and-white boom closed from a plain white drive cabinet about 1 m high on the gatehouse island (left) to a red rest post with a red-white bollard beyond it (right), a lane arrow by the rest post. Left: the gatehouse's grilled window, STOP sign, ACCESO PLAYA / TO THE BEACH sign, lawn with a brick-edged white kerb. Right: a white pillar with notices and a ZONA VIDEOVIGILADA sign, bougainvillea over the brick-edged narrow planter.",
   "citedBy": [
-   "picasso_car_park.json:picasso-car-park-north-barrier"
+   "picasso_car_park.json:picasso-car-park-gatehouse",
+   "picasso_car_park.json:picasso-car-park-north-barrier",
+   "ground_plan_picasso.json:picasso-north-entrance-asphalt",
+   "ground_plan_picasso.json:picasso-gatehouse-island",
+   "ground_plan_picasso.json:picasso-gatehouse-lawn",
+   "ground_plan_picasso.json:picasso-entry-planter"
   ]
  },
  {
@@ -26500,7 +26509,10 @@
   "sourceRevision": null,
   "note": "Google Street View, image capture Oct 2024 (Imagery © Google), screenshot sent by Dave on 25 Nov 2026. Looks south-west from Calle Bolivia: on the left the Calle Pintor Picasso service road runs down beside the long white wall; in the centre the east (exit) lane is closed by a red-and-white boom from a white drive cabinet on the gatehouse island, under a no-entry sign, to the wall's north end with a blue sign. Right: the gatehouse with its grilled window and the round island lawn on a brick-edged kerb; the entry barrier shows beyond it with its red-white posts and STOP sign.",
   "citedBy": [
-   "picasso_car_park.json:picasso-car-park-exit-barrier"
+   "picasso_car_park.json:picasso-car-park-gatehouse",
+   "picasso_car_park.json:picasso-car-park-exit-barrier",
+   "ground_plan_picasso.json:picasso-north-entrance-asphalt",
+   "ground_plan_picasso.json:picasso-gatehouse-island"
   ]
  },
  {
@@ -26520,8 +26532,13 @@
   "sourceRevision": null,
   "note": "Google Maps 3D view, nearly top-down and north-up, screenshot sent by Dave on 25 Nov 2026 (Imagery © Google 2026; capture date not shown). Shows the Calle Loira / Bolivia / Pintor Picasso junction, the gatehouse island (Villacana pin) with its round bed and terracotta apron, the narrow planter, the brick-and-lawn strip west of the entry lane, the long wall, and both closed booms as thin lines with their cabinets and post shadows. Registered to the Esri aerial at 0.0385 m per pixel with the long wall's north end on (-91.4, -67.8); features agree to about 1-2 m (data/picasso_car_park.json barriers).",
   "citedBy": [
+   "picasso_car_park.json:picasso-car-park-gatehouse",
    "picasso_car_park.json:picasso-car-park-north-barrier",
-   "picasso_car_park.json:picasso-car-park-exit-barrier"
+   "picasso_car_park.json:picasso-car-park-exit-barrier",
+   "ground_plan_picasso.json:picasso-north-entrance-asphalt",
+   "ground_plan_picasso.json:picasso-gatehouse-island",
+   "ground_plan_picasso.json:picasso-gatehouse-lawn",
+   "ground_plan_picasso.json:picasso-entry-planter"
   ]
  },
  {
