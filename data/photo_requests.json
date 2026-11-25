@@ -2,6 +2,24 @@
   "about": "Photos wanted, one request per spot. at: where to stand ([x, z] map metres, +x east, +z south); look: what to point at (null for a roof station: several directions); radius: how close a photo's camera must be (plus up to 5 m of its GPS accuracy). status: open until photos taken on or after `since` are matched by scripts/photo_requests.py (it reports them as received); an agent who has looked at them sets status answered with answeredBy photo ids and a note, or keeps it open and says what is still missing. The scorecard colours an area red while it has open requests, amber while received or reviewed photos and open build tasks wait, green when nothing is open. See docs/SCORECARD.md.",
   "requests": [
     {
+      "id": "north-pool-dali-approach",
+      "area": "north-pool",
+      "at": [
+        -180,
+        31
+      ],
+      "look": [
+        -208,
+        44
+      ],
+      "priority": 2,
+      "radius": 8,
+      "since": "2026-11-25",
+      "status": "open",
+      "ask": "From the south-west crazy-paving path at the north pool, photograph the approach towards Pintor Dalí. Include the west patio corner and adjacent house fronts. Take overlapping views from the Dalí side looking back, including any boundaries or openings.",
+      "why": "Determine whether a path connects these points and locate its edges. The previously cited tiled-lane photos show Calle Eva at the middle pool."
+    },
+    {
       "id": "juan-gris-house-side",
       "area": "north-lanes",
       "at": [

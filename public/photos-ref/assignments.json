@@ -6,9 +6,9 @@
   "needs-review": 273,
   "suggested": 369,
   "photos": 646,
-  "features": 537,
-  "photosCitedByModel": 257,
-  "modelFeaturesWithPhotoCitations": 280
+  "features": 536,
+  "photosCitedByModel": 254,
+  "modelFeaturesWithPhotoCitations": 279
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -10373,8 +10373,7 @@
    "inViewCandidates": [],
    "citedBy": [
     "eva_lane.json:eva-lane-west",
-    "eva_lane.json:eva-lane-west-edges",
-    "ground_plan_north_pool.json:north-pool-dali-link"
+    "eva_lane.json:eva-lane-west-edges"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -10403,8 +10402,7 @@
    "inViewCandidates": [],
    "citedBy": [
     "eva_lane.json:eva-lane-west",
-    "eva_lane.json:eva-lane-west-edges",
-    "ground_plan_north_pool.json:north-pool-dali-link"
+    "eva_lane.json:eva-lane-west-edges"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -10445,8 +10443,7 @@
    "inViewCandidates": [],
    "citedBy": [
     "eva_lane.json:eva-lane-west",
-    "eva_lane.json:eva-lane-west-edges",
-    "ground_plan_north_pool.json:north-pool-dali-link"
+    "eva_lane.json:eva-lane-west-edges"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -16497,9 +16494,7 @@
      "angleOffset": 29.1
     }
    ],
-   "citedBy": [
-    "ground_plan_north_pool.json:north-pool-dali-link"
-   ],
+   "citedBy": [],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -170.4,
@@ -16537,9 +16532,7 @@
      "angleOffset": 34.3
     }
    ],
-   "citedBy": [
-    "ground_plan_north_pool.json:north-pool-dali-link"
-   ],
+   "citedBy": [],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -170.1,
@@ -16571,9 +16564,7 @@
      "angleOffset": 17.4
     }
    ],
-   "citedBy": [
-    "ground_plan_north_pool.json:north-pool-dali-link"
-   ],
+   "citedBy": [],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -164.2,

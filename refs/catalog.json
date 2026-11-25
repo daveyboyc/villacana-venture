@@ -10365,8 +10365,7 @@
   },
   "citedBy": [
    "eva_lane.json:eva-lane-west",
-   "eva_lane.json:eva-lane-west-edges",
-   "ground_plan_north_pool.json:north-pool-dali-link"
+   "eva_lane.json:eva-lane-west-edges"
   ],
   "looksAt": [
    -161.5,
@@ -10411,8 +10410,7 @@
   },
   "citedBy": [
    "eva_lane.json:eva-lane-west",
-   "eva_lane.json:eva-lane-west-edges",
-   "ground_plan_north_pool.json:north-pool-dali-link"
+   "eva_lane.json:eva-lane-west-edges"
   ],
   "looksAt": [
    -168.0,
@@ -10457,8 +10455,7 @@
   },
   "citedBy": [
    "eva_lane.json:eva-lane-west",
-   "eva_lane.json:eva-lane-west-edges",
-   "ground_plan_north_pool.json:north-pool-dali-link"
+   "eva_lane.json:eva-lane-west-edges"
   ],
   "looksAt": [
    -161.4,
@@ -16414,9 +16411,7 @@
    "altitude": 9.4,
    "trust": "phone location"
   },
-  "citedBy": [
-   "ground_plan_north_pool.json:north-pool-dali-link"
-  ],
+  "citedBy": [],
   "looksAt": [
    -168.2,
    114.7
@@ -16453,9 +16448,7 @@
    "altitude": 9.9,
    "trust": "phone location"
   },
-  "citedBy": [
-   "ground_plan_north_pool.json:north-pool-dali-link"
-  ],
+  "citedBy": [],
   "looksAt": [
    -164.9,
    113.3
@@ -16492,9 +16485,7 @@
    "altitude": 8.9,
    "trust": "phone location"
   },
-  "citedBy": [
-   "ground_plan_north_pool.json:north-pool-dali-link"
-  ],
+  "citedBy": [],
   "looksAt": [
    -158.3,
    112.6
