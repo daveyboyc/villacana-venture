@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { asset } from "./asset";
 import layout from "../data/main_pool.json";
 import paseoWall from "../data/paseo_wall.json";
 import { closestOnSegment, pointInRing } from "./geom";
@@ -8,7 +9,6 @@ import { paseoSurfaceMaterial } from "./paseo-surface";
 const levels = layout.levels.seafront;
 /** The seaside starts this far inland of the paseo's centre line. */
 const EDGE = 1.8;
-const SAND = "#e1c99c";
 
 /**
  * Ground heights seaward of the paseo. The paseo follows `profile` (level with
@@ -118,12 +118,26 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
     geometry.computeVertexNormals();
     if (uvs) geometry.setAttribute("uv", new THREE.Float32BufferAttribute(uvs, 2));
     const m = new THREE.Mesh(geometry, typeof color === "string" ? new THREE.MeshStandardMaterial({ color, roughness: 0.95, side: THREE.DoubleSide }) : color);
-    if (uvs) m.name = "paseo-stamped-walk";
     // The seaside has its own heights, as the player's ground does in its zone: not draped over siteY.
     m.receiveShadow = shadow; m.userData.referenceSurface = true; m.userData.noDrape = true; scene.add(m);
     return m;
   };
-  mesh(sand, SAND);
+  // Poly Haven Gravelly Sand (CC0), tiled in metres across the existing beach.
+  const sandMap = new THREE.TextureLoader().load(asset("/textures/coast/gravelly-sand.webp"));
+  sandMap.wrapS = sandMap.wrapT = THREE.RepeatWrapping;
+  sandMap.colorSpace = THREE.SRGBColorSpace;
+  const sandUv: number[] = [], tones: number[] = [];
+  for (let i = 0; i < sand.length; i += 3) {
+    sandUv.push(sand[i] / 2, sand[i + 2] / 2);
+    const dry = THREE.MathUtils.smoothstep(sand[i + 1] - seaside.seaY, 0, 0.32);
+    const tone = THREE.MathUtils.lerp(0.52, 1, dry);
+    tones.push(tone, tone, tone);
+  }
+  const beach = mesh(sand, new THREE.MeshStandardMaterial({
+    map: sandMap, vertexColors: true, roughness: 0.95, side: THREE.DoubleSide,
+  }), true, sandUv);
+  beach.name = "barraka-beach-sand";
+  beach.geometry.setAttribute("color", new THREE.Float32BufferAttribute(tones, 3));
 
   // Walk a line in short steps so ribbons and banks follow the heights.
   const steps = (line: Vec2[]): Vec2[] => line.flatMap((a, i) => {
@@ -154,6 +168,7 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
     new THREE.MeshStandardMaterial({ color: paseoWall.surface.color, roughness: .95, side: THREE.DoubleSide }),
     paseoSurfaceMaterial(),
   ], true, ribbonUv);
+  walk.name = "paseo-stamped-walk";
   // Limit the observed finish to the existing retaining-wall frontage; eastern
   // surfaces retain their previous material pending their own source review.
   stamped.forEach((observed, i) => {
