@@ -134,6 +134,7 @@ export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant
   sea.position.y = seaside?.seaY ?? 0.12;
   sea.name = "Mediterranean";
   sea.userData.noDrape = true;
+  sea.userData.noOcclusion = true;
   scene.add(sea);
   // A translucent swash just offshore follows the same trace as the sea polygon.
   const vertices: number[] = [], uv: number[] = [], indices: number[] = [];
@@ -170,6 +171,7 @@ export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant
   surf.name = "shoreline-swash";
   surf.position.y = sea.position.y + 0.015;
   surf.userData.noDrape = true;
+  surf.userData.noOcclusion = true;
   scene.add(surf);
   if (!seaside) {
     flat(scene, sf.beach.ring, "#e1c99c", 0.14);
