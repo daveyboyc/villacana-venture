@@ -326,6 +326,7 @@ ready: 23, needs-evidence: 15, needs-source-access: 0, awaiting-review: 3, accep
 - Ready task: `north-pool-unresolved-plan` — North pool: resolve concealed ground edges, lane widths and remaining roof projections
 - Ready task: `retexture-surfaces` — Retexture plaster, terracotta and crazy paving from the photos
 - Ready task: `silvia-covered-passage-reference-audit` — Resolve the Silvia tunnel entrance, its components and connection to the lane
+- Ready task: `tools-shoot-views-photo-camera` — scripts/shoot_views.cjs renders the whole-resort overview instead of the photo camera
 - Ready task: `elena-25-passage` — Elena south: register the CALLE ELENA 25 covered passage and where it leads
 - Ready task: `enrique-shop-storey` — Enrique's: the shop storey above the street-level terrace at the head of the steps
 - Ready task: `ground-plan-cervantes` — Calle Miguel de Cervantes: smooth paths, patios and green spaces with their edges and boundaries
