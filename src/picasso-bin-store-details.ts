@@ -11,7 +11,7 @@ import type { Vec2 } from "./types";
  * The car-park front: the RUBBISH COLLECTION / DEPOSITO BASURA board, the motorbike-parking sign, the red fire-hose box
  * and EXTINTOR sign, the glazed cabinet and roundels by the doorway, the green double doors (north leaf open) and the
  * bougainvillea along its top. The street face: the shut green sliding door on its rail, the yellow warning sign,
- * switch box, lamp and the concrete ramp. Inside, seen through the doorway: the row of yellow containers.
+ * switch box, lamp and the concrete ramp. Inside: four yellow containers against the long wall (placed by Dave).
  * Positions are along each wall, measured from the photos at the wall's own scale (about 0.3 m).
  */
 const PAVING = 0.27;
@@ -177,16 +177,20 @@ export function addPicassoBinStoreDetails(into: THREE.Scene, keep: (x: number, z
       ramp.name = "bin-store-ramp"; ramp.receiveShadow = true; root.add(ramp);
     } else omit("bin-store-ramp"); }
 
-  // Inside: the yellow wheeled containers along the front's inner face (IMG_3103).
-  { const c = det.containers, yellow = new THREE.MeshStandardMaterial({ color: c.colour, roughness: 0.6 }), dark = new THREE.MeshStandardMaterial({ color: "#1d1d1d", roughness: 0.8 });
+  // Inside: four yellow 1100 l wheeled containers side by side against the long wall's inner face in the yard's north
+  // half (Dave, 26 Nov 2026), lids towards the front.
+  { const c = det.containers, [cw, cd, ch] = c.size, yellow = new THREE.MeshStandardMaterial({ color: c.colour, roughness: 0.6 }), dark = new THREE.MeshStandardMaterial({ color: "#1d1d1d", roughness: 0.8 });
     for (let i = 0; i < c.count; i++) {
       const t = c.from + ((c.to - c.from) * i) / Math.max(1, c.count - 1);
-      const [x, z] = onFace(yard.front, t, -(half + 0.65), frontOut);
+      const [x, z] = onFace(yard.front, t, -c.inward, frontOut);
       if (!keep(x, z)) { omit(`container@${t}`); continue; }
       const bin = new THREE.Group(); bin.name = "bin-store-container";
-      const body = new THREE.Mesh(new THREE.BoxGeometry(1.0, 1.1, 1.2), yellow); body.position.y = 0.72; bin.add(body);
-      const lid = new THREE.Mesh(new THREE.BoxGeometry(1.06, 0.06, 1.26), yellow); lid.position.y = 1.3; bin.add(lid);
-      for (const [wx, wz] of [[-0.4, -0.5], [0.4, -0.5], [-0.4, 0.5], [0.4, 0.5]]) { const w = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 0.1, 0.06, 10), dark); w.rotation.z = Math.PI / 2; w.position.set(wx, 0.1, wz); bin.add(w); }
+      const body = new THREE.Mesh(new THREE.BoxGeometry(cw - 0.06, ch - 0.3, cd - 0.08), yellow); body.position.y = 0.2 + (ch - 0.3) / 2; bin.add(body);
+      const lid = new THREE.Mesh(new THREE.BoxGeometry(cw, 0.08, cd), yellow); lid.position.y = ch - 0.06; bin.add(lid);
+      const rim = new THREE.Mesh(new THREE.BoxGeometry(cw, 0.06, 0.06), yellow); rim.position.set(0, ch - 0.16, cd / 2); bin.add(rim);
+      for (const [wx, wz] of [[-cw / 2 + 0.15, -cd / 2 + 0.15], [cw / 2 - 0.15, -cd / 2 + 0.15], [-cw / 2 + 0.15, cd / 2 - 0.15], [cw / 2 - 0.15, cd / 2 - 0.15]]) {
+        const w = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 0.1, 0.06, 10), dark); w.rotation.z = Math.PI / 2; w.position.set(wx, 0.1, wz); bin.add(w);
+      }
       bin.position.set(x, frontBase, z); bin.rotation.y = turn(frontOut); bin.traverse((o) => { o.castShadow = true; }); root.add(bin);
     } }
   into.add(root);

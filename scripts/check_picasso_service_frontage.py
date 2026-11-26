@@ -109,6 +109,9 @@ assert any(i['kind'] == 'rubbish-sign' for i in bd['front']['items']), 'the RUBB
 assert 2 * bd['front']['doors']['leafWidth'] <= y['doorway']['width'] + 1e-6, 'door leaves fit the doorway'
 assert abs(bd['street']['door']['t'] - y['streetDoor']['at']) < 1e-6 and bd['street']['door']['width'] <= y['streetDoor']['width'] + 1e-6, 'the sliding door fills the street opening'
 c = bd['containers']
+assert c['count'] == 4, 'Dave: four containers in the yard'
+assert all(t + c['size'][0] / 2 <= front_len - 0.2 for t in (c['from'], c['to'])), 'containers inside the north end wall'
+assert abs((math.dist(*y['northEnd']) - y['thickness'] / 2) - (c['inward'] + c['size'][1] / 2)) < 0.1, 'containers stand against the long wall'
 assert all(t > y['doorway']['at'] + y['doorway']['width'] / 2 + 0.5 for t in (c['from'], c['to'])), 'containers stand clear of the doorway inside'
 src = (ROOT / 'src/slice.ts').read_text()
 assert 'if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addPicassoBinStoreDetails(into,keep)})' in src, 'bin store details are Show-details only'
