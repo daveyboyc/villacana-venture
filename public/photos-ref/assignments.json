@@ -6,9 +6,9 @@
   "needs-review": 275,
   "suggested": 367,
   "photos": 646,
-  "features": 564,
+  "features": 565,
   "photosCitedByModel": 268,
-  "modelFeaturesWithPhotoCitations": 304
+  "modelFeaturesWithPhotoCitations": 305
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -22901,7 +22901,8 @@
    ],
    "citedBy": [
     "picasso_service_frontage.json:picasso-hotel-lower-wing",
-    "picasso_service_frontage.json:picasso-bin-yard"
+    "picasso_service_frontage.json:picasso-bin-yard",
+    "picasso_service_frontage.json:picasso-bin-store-details"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -22936,7 +22937,8 @@
    "inViewCandidates": [],
    "citedBy": [
     "picasso_car_park.json:picasso-car-park-island",
-    "picasso_service_frontage.json:picasso-bin-yard"
+    "picasso_service_frontage.json:picasso-bin-yard",
+    "picasso_service_frontage.json:picasso-bin-store-details"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -22981,7 +22983,8 @@
     }
    ],
    "citedBy": [
-    "picasso_service_frontage.json:picasso-bin-yard"
+    "picasso_service_frontage.json:picasso-bin-yard",
+    "picasso_service_frontage.json:picasso-bin-store-details"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -23015,7 +23018,8 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
-    "picasso_service_frontage.json:picasso-bin-yard"
+    "picasso_service_frontage.json:picasso-bin-yard",
+    "picasso_service_frontage.json:picasso-bin-store-details"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -23620,6 +23624,7 @@
    "citedBy": [
     "picasso_service_frontage.json:picasso-bin-yard",
     "picasso_service_frontage.json:picasso-substation",
+    "picasso_service_frontage.json:picasso-bin-store-details",
     "picasso_service_frontage.json:picasso-recess-wall",
     "ground_plan_picasso.json:picasso-service-pavement"
    ],
@@ -23651,6 +23656,7 @@
    "citedBy": [
     "picasso_car_park.json:picasso-car-park-wall",
     "picasso_service_frontage.json:picasso-bin-yard",
+    "picasso_service_frontage.json:picasso-bin-store-details",
     "picasso_service_frontage.json:picasso-recess-wall",
     "ground_plan_picasso.json:picasso-service-pavement"
    ],

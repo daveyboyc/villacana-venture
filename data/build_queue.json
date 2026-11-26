@@ -4153,6 +4153,7 @@
     "Structure signed off by a reviewer subagent"
    ],
    "features": [
+    "picasso_service_frontage.json:picasso-bin-store-details",
     "picasso_service_frontage.json:picasso-hotel-lower-wing",
     "picasso_service_frontage.json:picasso-bin-yard",
     "picasso_service_frontage.json:picasso-service-gate",

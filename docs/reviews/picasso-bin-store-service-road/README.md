@@ -143,3 +143,44 @@ renders show the whole-resort overview instead of the photo camera, so it was no
 - Stage 3 (levels) and stage 4 (generated filler: the lawn patches and generic trees on the raised garden west of
   the row) are not done. Stage 5 (detail) waits for the layout's sign-off.
 - No camera is solved, so nothing here is a measured placement.
+
+## Detail: the bin store's outside (26 November 2026)
+
+Dave asked for detail on the outside, including the sign. The data is `binStoreDetails` in
+`data/picasso_service_frontage.json` and the code is `src/picasso-bin-store-details.ts`. It is Show details only and
+graded `estimated`. Positions are read along each wall at its own pixel scale: about 137 px a metre for the front in
+IMG_3099, from the doorway's centre. That is good to about 0.3 m.
+
+**Car-park front**, north to south (IMG_3099, IMG_3100):
+
+| Item | Centre height |
+| --- | --- |
+| Red EXTINTOR sign | 2.06 m |
+| Red fire-hose box | 1.28 m |
+| Blue P sign with a motorbike | 1.69 m |
+| RUBBISH COLLECTION / DEPOSITO BASURA board, 0.71 × 0.95 m | 1.93 m |
+| Doorway: green boarded doors, north leaf open into the yard, south leaf shut | |
+| Two prohibition roundels | |
+| Glazed cabinet with a red fitting | |
+
+Bougainvillea runs along the top. The doorway is narrowed to 1.2 × 2.15 m, as read against the 2.6 m front; the
+first pass had it at 1.6 m.
+
+**Street face** (IMG_3124, IMG_3123): the shut green sliding door, its rail and hood running on north-west over the
+long wall, a yellow warning sign, a switch box and a lamp, and a concrete ramp down along the wall.
+
+**Inside:** five yellow 1100 l containers along the front (IMG_3103).
+
+| View | Image |
+| --- | --- |
+| IMG_3099 beside the model, Show details | [IMG_3099-details-pair.jpg](IMG_3099-details-pair.jpg) |
+| The sign and doorway, close | [details-front-close.jpg](details-front-close.jpg) |
+| IMG_3124 beside the model, Show details | [IMG_3124-details-pair.jpg](IMG_3124-details-pair.jpg) |
+
+**Not built:**
+- the BASURA / RUBBISH BINS sign and recycling sign inside (IMG_3101);
+- the conduit and low white box on the set-back wall;
+- the motorbike-bay markings;
+- the shrub at the front's south end.
+
+The bougainvillea is drawn as separate sprites; the photo shows one continuous green mass.

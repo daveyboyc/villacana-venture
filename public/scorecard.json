@@ -1852,8 +1852,8 @@
     "tagged": 25,
     "placed": 26,
     "checks": {
-     "matches": 1,
-     "differs": 8,
+     "matches": 2,
+     "differs": 9,
      "not-comparable": 0
     },
     "camerasSolved": 0,
@@ -1866,9 +1866,9 @@
     "generated": 274
    },
    "placement": {
-    "features": 30,
+    "features": 31,
     "verified": 0,
-    "disputed": 7
+    "disputed": 8
    },
    "discrepancies": [
     {
@@ -1906,6 +1906,10 @@
     {
      "id": "photo-discrepancy:2f90b3dfbbaacd95",
      "feature": "picasso_service_frontage.json:picasso-slatted-gate"
+    },
+    {
+     "id": "photo-discrepancy:7bfbc6139380caa0",
+     "feature": "picasso_service_frontage.json:picasso-bin-store-details"
     }
    ],
    "tasks": {
@@ -1919,7 +1923,7 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 30,
+    "estimated": 31,
     "inferred": 0,
     "registry": 0,
     "gaps": 3
@@ -1929,8 +1933,8 @@
     "Footprints: 46% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 26, 26 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
-    "How sure: 0 photographed, 30 estimated, 0 inferred, 3 known gaps.",
-    "Placement: 0 of 30 features verified, 9 open discrepancies.",
+    "How sure: 0 photographed, 31 estimated, 0 inferred, 3 known gaps.",
+    "Placement: 0 of 31 features verified, 10 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 13 still open; 8 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -3487,8 +3491,8 @@
     "tagged": 618,
     "placed": 642,
     "checks": {
-     "matches": 56,
-     "differs": 56,
+     "matches": 57,
+     "differs": 57,
      "not-comparable": 67
     },
     "camerasSolved": 8,
@@ -3515,9 +3519,9 @@
     "generated": 2452
    },
    "placement": {
-    "features": 564,
+    "features": 565,
     "verified": 0,
-    "disputed": 69
+    "disputed": 70
    },
    "discrepancies": [
     {
@@ -3767,6 +3771,10 @@
     {
      "id": "photo-discrepancy:2f90b3dfbbaacd95",
      "feature": "picasso_service_frontage.json:picasso-slatted-gate"
+    },
+    {
+     "id": "photo-discrepancy:7bfbc6139380caa0",
+     "feature": "picasso_service_frontage.json:picasso-bin-store-details"
     }
    ],
    "tasks": {
@@ -3780,7 +3788,7 @@
    },
    "confidence": {
     "photographed": 95,
-    "estimated": 214,
+    "estimated": 215,
     "inferred": 23,
     "registry": 232,
     "gaps": 45
@@ -3790,8 +3798,8 @@
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 662, 642 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 95 photographed, 214 estimated, 23 inferred, 45 known gaps.",
-    "Placement: 0 of 564 features verified, 62 open discrepancies.",
+    "How sure: 95 photographed, 215 estimated, 23 inferred, 45 known gaps.",
+    "Placement: 0 of 565 features verified, 63 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 41 still open; 57 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {

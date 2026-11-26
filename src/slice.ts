@@ -16,6 +16,7 @@ import {paintSeawardPaving} from "./seaward-paving";
 import {addPicassoServiceRoad,picassoServiceRings} from "./picasso-service-road";
 import { addPicassoCarPark, picassoCarParkRings } from "./picasso-car-park";
 import { addPicassoServiceFrontage, picassoServiceFrontageRings } from "./picasso-service-frontage";
+import { addPicassoBinStoreDetails } from "./picasso-bin-store-details";
 import { addPicassoWestLawn, picassoWestLawnRings } from "./picasso-west-lawn";
 import { addPicassoEntranceDetails, addPicassoEntranceStructure, picassoEntranceRings } from "./picasso-entrance-details";
 import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-lawn";
@@ -363,6 +364,7 @@ async function boot(): Promise<void> {
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   addPicassoCarPark(scene); // main car park: long east wall and round island kerb (data/picasso_car_park.json)
   addPicassoServiceFrontage(scene); // south of the car park: hotel lower wing, bin yard and the utility row (data/picasso_service_frontage.json)
+  if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addPicassoBinStoreDetails(into,keep)}); // bin store signs, doors, fire boxes, bougainvillea, ramp and containers (data/picasso_service_frontage.json binStoreDetails)
   addPicassoWestLawn(scene); // the raised grass strip beside Calle de Picasso and its wall at the back of the west bays (data/picasso_west_lawn.json)
   addPicassoEntranceStructure(scene); // north entrance: gatehouse wing walls and the CALLE DE PICASSO plinth (data/picasso_entrance_details.json)
   if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addPicassoEntranceDetails(into,keep)}); // north entrance windows, signs, pillar, lantern and planting
