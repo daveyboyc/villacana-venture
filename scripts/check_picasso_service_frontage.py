@@ -98,4 +98,19 @@ for f in service_road['features']:
 src = (ROOT / 'src/picasso-service-road.ts').read_text()
 assert '!("superseded" in f)' in src and 'for(const f of picassoFeatures)' in src, 'superseded features must not be built'
 
+# Bin store details (Show details): every item on its wall, signs at a readable height, evidence catalogued.
+bd = d['binStoreDetails']
+assert set(bd['evidence']) <= photos and confidence.get('picasso_service_frontage.json:' + bd['id'], {}).get('level') == 'estimated'
+front_len = math.dist(*y['front'])
+for item in bd['front']['items']:
+    assert 0 < item['t'] < front_len and 0.5 < item['y'] < y['height'] and item['w'] < 1.2 and item['h'] < 1.2, f'{item["id"]}: on the front, below its top'
+    assert not (y['doorway']['at'] - y['doorway']['width'] / 2 < item['t'] < y['doorway']['at'] + y['doorway']['width'] / 2), f'{item["id"]}: not in the doorway'
+assert any(i['kind'] == 'rubbish-sign' for i in bd['front']['items']), 'the RUBBISH COLLECTION / DEPOSITO BASURA sign is built'
+assert 2 * bd['front']['doors']['leafWidth'] <= y['doorway']['width'] + 1e-6, 'door leaves fit the doorway'
+assert abs(bd['street']['door']['t'] - y['streetDoor']['at']) < 1e-6 and bd['street']['door']['width'] <= y['streetDoor']['width'] + 1e-6, 'the sliding door fills the street opening'
+c = bd['containers']
+assert all(t > y['doorway']['at'] + y['doorway']['width'] / 2 + 0.5 for t in (c['from'], c['to'])), 'containers stand clear of the doorway inside'
+src = (ROOT / 'src/slice.ts').read_text()
+assert 'if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addPicassoBinStoreDetails(into,keep)})' in src, 'bin store details are Show-details only'
+
 print(f'Picasso service frontage: hotel lower wing on its registry ring, bin yard against the long wall, {len(d["buildings"])} utility buildings, set-back wall and gates clear of routes, all estimated PASS')

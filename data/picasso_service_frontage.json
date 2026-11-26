@@ -112,9 +112,9 @@
   "height": 2.6,
   "doorway": {
    "at": 4.5,
-   "width": 1.6,
+   "width": 1.2,
    "height": 2.1,
-   "note": "Double doors under the RUBBISH COLLECTION / DEPOSITO BASURA sign (IMG_3099), about 3 m from the front's south corner and opposite the street door (IMG_3101 is taken from inside the doorway); metres from the front's south end."
+   "note": "Double doors under the RUBBISH COLLECTION / DEPOSITO BASURA sign (IMG_3099), about 3 m from the front's south corner and opposite the street door (IMG_3101 is taken from inside the doorway); metres from the front's south end. Width 1.2 m and height 2.15 m read from IMG_3099 against the front's 2.6 m height (about 137 px a metre at the wall), 26 Nov 2026 detail pass."
   },
   "evidence": [
    "IMG_3099.jpg",
@@ -284,5 +284,145 @@
    "IMG_2345.jpg"
   ],
   "trust": "A grey panel gate set back about 1 m between the substation and the meter box: IMG_3106 (x 665-740), IMG_3120 (x 235-258) and a dark slot in IMG_2345 (x 455-478), found by the independent review. The surface model is low (-0.7 to 0.6 m) at about 14 m south-east of the wall's end. Width about 1.2 m and set-back judged."
+ },
+ "binStoreDetails": {
+  "id": "picasso-bin-store-details",
+  "name": "Bin store: signs, doors, fire-safety boxes, bougainvillea and containers",
+  "evidence": [
+   "IMG_3099.jpg",
+   "IMG_3100.jpg",
+   "IMG_3101.jpg",
+   "IMG_3103.jpg",
+   "IMG_3124.jpg",
+   "IMG_3123.jpg"
+  ],
+  "trust": "Estimated. Show details only. Positions along each face are read from IMG_3099 (car-park front) and IMG_3124 (street face) at the wall's own pixel scale, about 137 px a metre for the front, measured from the doorway's centre, so each is good to about 0.3 m along the wall and 0.1-0.2 m in height relative to the door; the door itself is placed to about 1 m. Sign wording is as photographed.",
+  "front": {
+   "about": "On the car-park face. t: metres along the front from its south end (the doorway is at 4.5); y: height of the item's centre above the car-park paving; w, h: size in metres.",
+   "items": [
+    {
+     "id": "rubbish-collection-sign",
+     "kind": "rubbish-sign",
+     "t": 5.5,
+     "y": 1.93,
+     "w": 0.71,
+     "h": 0.95,
+     "note": "White board with a thin black frame: RUBBISH COLLECTION over DEPOSITO BASURA, black capitals (IMG_3099 x 488-585; IMG_3100 right edge)."
+    },
+    {
+     "id": "motorbike-parking-sign",
+     "kind": "parking-sign",
+     "t": 7.6,
+     "y": 1.69,
+     "w": 0.53,
+     "h": 0.53,
+     "note": "Blue square with a white P and a motorbike, for the motorbike bays in front (IMG_3099 x 213-286)."
+    },
+    {
+     "id": "fire-hose-box",
+     "kind": "red-box",
+     "t": 8.9,
+     "y": 1.28,
+     "w": 0.37,
+     "h": 0.76,
+     "note": "Red fire-hose box with a round window (IMG_3099 x 50-101; IMG_3100 red box along the front)."
+    },
+    {
+     "id": "extintor-sign",
+     "kind": "extintor-sign",
+     "t": 8.95,
+     "y": 2.06,
+     "w": 0.26,
+     "h": 0.34,
+     "note": "Red EXTINTOR sign over the box (IMG_3099 x 50-85)."
+    },
+    {
+     "id": "no-entry-roundels",
+     "kind": "roundels",
+     "t": 3.72,
+     "y": 1.85,
+     "w": 0.14,
+     "h": 0.4,
+     "note": "Two small white roundels with red rings beside the doorway (IMG_3099 x 750-762)."
+    },
+    {
+     "id": "glazed-cabinet",
+     "kind": "glazed-cabinet",
+     "t": 3.24,
+     "y": 1.97,
+     "w": 0.3,
+     "h": 0.46,
+     "note": "Glazed cabinet with a red fitting inside, south of the doorway (IMG_3099 x 828-865)."
+    }
+   ],
+   "doors": {
+    "leafWidth": 0.6,
+    "height": 2.15,
+    "colour": "#2f4a3a",
+    "openLeaf": "north",
+    "note": "Dark green vertical-boarded double doors; the north leaf is folded open into the yard and the south one shut in IMG_3099."
+   },
+   "bougainvillea": {
+    "from": 0.6,
+    "to": 13.6,
+    "step": 1.6,
+    "scale": 0.62,
+    "note": "Bougainvillea grows along the whole top of the front and spills over it, thickest from the doorway north (IMG_3099, IMG_3100, IMG_3103 left wall)."
+   }
+  },
+  "street": {
+   "about": "On the street face. t: metres along it from its north-west end at the long wall's end; y as above but over the road paving.",
+   "door": {
+    "t": 0.75,
+    "width": 1.5,
+    "height": 2.2,
+    "colour": "#2f4a3a",
+    "railTo": -1.6,
+    "note": "Dark green vertical-boarded sliding door, shut, under a steel rail and hood that runs on north-west over the long wall (IMG_3124, IMG_3123)."
+   },
+   "items": [
+    {
+     "id": "warning-sign",
+     "kind": "yellow-sign",
+     "t": 1.75,
+     "y": 1.7,
+     "w": 0.14,
+     "h": 0.26,
+     "note": "Small yellow warning sign beside the door (IMG_3124)."
+    },
+    {
+     "id": "switch-box",
+     "kind": "white-box",
+     "t": 1.85,
+     "y": 1.25,
+     "w": 0.12,
+     "h": 0.2,
+     "note": "Small white switch or intercom box below it (IMG_3124)."
+    },
+    {
+     "id": "door-lamp",
+     "kind": "black-box",
+     "t": 1.7,
+     "y": 2.45,
+     "w": 0.14,
+     "h": 0.12,
+     "note": "Black wall lamp over the door's south-east side (IMG_3124)."
+    }
+   ],
+   "ramp": {
+    "from": 0.0,
+    "to": -2.2,
+    "width": 1.0,
+    "rise": 0.22,
+    "note": "Concrete ramp from the door's sill down north-west along the long wall to the road (IMG_3124, IMG_3123); length and rise judged."
+   }
+  },
+  "containers": {
+   "from": 10.6,
+   "to": 6.2,
+   "count": 5,
+   "colour": "#f2c81e",
+   "note": "Yellow 1100 l wheeled containers in a row along the inside of the front, as IMG_3103 shows them; seen from outside only through the doorway. Their count and spacing are judged from that photo."
+  }
  }
 }

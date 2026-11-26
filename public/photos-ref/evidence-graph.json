@@ -6,9 +6,9 @@
   "needs-review": 275,
   "suggested": 367,
   "photos": 646,
-  "features": 564,
+  "features": 565,
   "photosCitedByModel": 268,
-  "modelFeaturesWithPhotoCitations": 304
+  "modelFeaturesWithPhotoCitations": 305
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -4442,6 +4442,20 @@
    "source": "laser surface model (2 m grid, about 1 m) and unsolved photos",
    "evidence": [
     "IMG_2345.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_frontage.json:picasso-bin-store-details",
+   "name": "Bin store: signs, doors, fire-safety boxes, bougainvillea and containers",
+   "kind": "reference feature",
+   "source": "positions read along each wall at its own scale in unsolved photos, about 0.3 m",
+   "evidence": [
+    "IMG_3099.jpg",
+    "IMG_3100.jpg",
+    "IMG_3101.jpg",
+    "IMG_3103.jpg",
+    "IMG_3124.jpg",
+    "IMG_3123.jpg"
    ]
   },
   {
@@ -27573,6 +27587,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_3099.jpg",
+   "to": "picasso_service_frontage.json:picasso-bin-store-details",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3100.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
@@ -27593,6 +27613,12 @@
   {
    "from": "photo:IMG_3100.jpg",
    "to": "picasso_service_frontage.json:picasso-bin-yard",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3100.jpg",
+   "to": "picasso_service_frontage.json:picasso-bin-store-details",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -27629,6 +27655,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_3101.jpg",
+   "to": "picasso_service_frontage.json:picasso-bin-store-details",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3103.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
@@ -27643,6 +27675,12 @@
   {
    "from": "photo:IMG_3103.jpg",
    "to": "picasso_service_frontage.json:picasso-bin-yard",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3103.jpg",
+   "to": "picasso_service_frontage.json:picasso-bin-store-details",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -28003,6 +28041,12 @@
   },
   {
    "from": "photo:IMG_3123.jpg",
+   "to": "picasso_service_frontage.json:picasso-bin-store-details",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3123.jpg",
    "to": "picasso_service_frontage.json:picasso-recess-wall",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -28028,6 +28072,12 @@
   {
    "from": "photo:IMG_3124.jpg",
    "to": "picasso_service_frontage.json:picasso-bin-yard",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3124.jpg",
+   "to": "picasso_service_frontage.json:picasso-bin-store-details",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

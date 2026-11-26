@@ -309,6 +309,7 @@ def features(s):
     y=sf['binYard'];add('picasso_service_frontage.json:'+y['id'],y['name'],'reference feature','laser surface model (2 m grid, about 1 m) and unsolved photos',evidence=y['evidence'],points=[y['front'][0],y['front'][1],y['northEnd'][1],y['roadFace'][0]])
     for f in sf['buildings']:
         add('picasso_service_frontage.json:'+f['id'],f['name'],'reference feature','laser surface model (2 m grid, about 1 m) and unsolved photos',evidence=f['evidence'],ring=f['ring'])
+    bd=sf['binStoreDetails'];add('picasso_service_frontage.json:'+bd['id'],bd['name'],'reference feature','positions read along each wall at its own scale in unsolved photos, about 0.3 m',evidence=bd['evidence'],points=[y['front'][0],y['front'][1],y['roadFace'][0],y['roadFace'][1]])
     for f in [sf['recess'],sf['slattedGate'],sf['serviceGate']]:
         add('picasso_service_frontage.json:'+f['id'],f['name'],'reference feature','photo order and judged offsets; unsolved photos',evidence=f['evidence'],points=f['points'])
     lawn=json.loads((ROOT/'data/picasso_west_lawn.json').read_text()) # Calle de Picasso's raised grass strip and retaining wall

@@ -23255,7 +23255,8 @@
   },
   "citedBy": [
    "picasso_service_frontage.json:picasso-hotel-lower-wing",
-   "picasso_service_frontage.json:picasso-bin-yard"
+   "picasso_service_frontage.json:picasso-bin-yard",
+   "picasso_service_frontage.json:picasso-bin-store-details"
   ],
   "looksAt": [
    -42,
@@ -23265,6 +23266,7 @@
   "looksAtFeatures": [
    "parking:Picasso car park",
    "backdrop.json:aerial-trees",
+   "picasso_service_frontage.json:picasso-bin-store-details",
    "picasso_service_frontage.json:picasso-bin-yard"
   ],
   "subject": "bin store front wall on the car park's south-east corner"
@@ -23298,7 +23300,8 @@
   },
   "citedBy": [
    "picasso_car_park.json:picasso-car-park-island",
-   "picasso_service_frontage.json:picasso-bin-yard"
+   "picasso_service_frontage.json:picasso-bin-yard",
+   "picasso_service_frontage.json:picasso-bin-store-details"
   ],
   "looksAt": [
    -55,
@@ -23340,7 +23343,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "picasso_service_frontage.json:picasso-bin-yard"
+   "picasso_service_frontage.json:picasso-bin-yard",
+   "picasso_service_frontage.json:picasso-bin-store-details"
   ],
   "looksAt": [
    -38,
@@ -23349,9 +23353,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
+   "picasso_service_frontage.json:picasso-bin-store-details",
    "picasso_service_frontage.json:picasso-bin-yard",
-   "backdrop.json:aerial-trees",
-   "picasso_car_park.json:picasso-car-park-wall"
+   "backdrop.json:aerial-trees"
   ],
   "subject": "bin store side wall and green door",
   "headingOff": 56
@@ -23383,7 +23387,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "picasso_service_frontage.json:picasso-bin-yard"
+   "picasso_service_frontage.json:picasso-bin-yard",
+   "picasso_service_frontage.json:picasso-bin-store-details"
   ],
   "looksAt": [
    -40,
@@ -24053,6 +24058,7 @@
   "citedBy": [
    "picasso_service_frontage.json:picasso-bin-yard",
    "picasso_service_frontage.json:picasso-substation",
+   "picasso_service_frontage.json:picasso-bin-store-details",
    "picasso_service_frontage.json:picasso-recess-wall",
    "ground_plan_picasso.json:picasso-service-pavement"
   ],
@@ -24098,6 +24104,7 @@
   "citedBy": [
    "picasso_car_park.json:picasso-car-park-wall",
    "picasso_service_frontage.json:picasso-bin-yard",
+   "picasso_service_frontage.json:picasso-bin-store-details",
    "picasso_service_frontage.json:picasso-recess-wall",
    "ground_plan_picasso.json:picasso-service-pavement"
   ],
@@ -24109,7 +24116,8 @@
   "looksAtFeatures": [
    "street:picasso",
    "backdrop.json:aerial-trees",
-   "ground_plan_picasso.json:picasso-service-pavement"
+   "ground_plan_picasso.json:picasso-service-pavement",
+   "picasso_service_frontage.json:picasso-bin-store-details"
   ],
   "subject": "utility building at the south end of the long wall"
  },

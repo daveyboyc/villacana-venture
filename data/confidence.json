@@ -83,6 +83,10 @@
    "level": "estimated",
    "why": "Single-storey white wing with vent grilles seen from the road (IMG_3104, 3105, 3120-3122), the hotel block set back above. Footprint is the registry's (6465301UF1366N_part3, 0 storeys there), matching the aerial's red flat roof to about 1 m; flat top from the laser survey (3.78 m over the datum, about 4.4 m above the road). Openings, ramps and railings at its foot not built yet."
   },
+  "picasso_service_frontage.json:picasso-bin-store-details": {
+   "level": "estimated",
+   "why": "Show details on the bin store, photographed in IMG_3099, 3100, 3101, 3103 and 3124: the RUBBISH COLLECTION / DEPOSITO BASURA board, motorbike P sign, fire-hose box and EXTINTOR sign, glazed cabinet, roundels, green double and sliding doors, warning sign, lamp, ramp, bougainvillea and the yellow containers. Positions along each wall read at the wall's own scale, about 0.3 m; sign faces redrawn, not photo textures."
+  },
   "picasso_service_frontage.json:picasso-bin-yard": {
    "level": "estimated",
    "why": "Open-topped bin yard (IMG_3099, 3100, 3101, 3103, 3123, 3124): its front with the DEPOSITO BASURA doorway on the car park, its street face with the green sliding door flush with the long wall's. Extent from the 2 m laser surface model (about 1 m) and the photos; no camera is solved. The doorway and street door are placed from the photos and an independent review, about 1-1.5 m."

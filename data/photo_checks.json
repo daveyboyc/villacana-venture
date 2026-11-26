@@ -2073,6 +2073,27 @@
    "result": "differs",
    "followUp": "picasso-bin-store-service-road",
    "notes": "The slatted gate, meter box, recessed gate, substation and the bin store's street face stand in the photo's order on the left, the hotel side on the right. The pin is about 4 m south-east of the photo's camera, so the gate fills less of the frame; the plinth, railings, igloos and plane trees are not compared. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-service-road",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-store-details",
+   "photo": "IMG_3099.jpg",
+   "render": "docs/reviews/picasso-bin-store-service-road/IMG_3099-details-pair.jpg",
+   "result": "matches",
+   "notes": "Show details, Inspect from the car park west of the front: north to south the EXTINTOR sign over the red fire-hose box, the blue motorbike P sign, the RUBBISH COLLECTION / DEPOSITO BASURA board, the doorway with its north leaf open and south leaf shut, two roundels and the glazed cabinet, bougainvillea along the top, in the photo's order and heights. Differences: the bougainvillea is drawn as separate sprites where the photo has one continuous green mass with few flowers; the motorbike bays' markings, the shrub at the south end and the hotel's balconies are not compared. A photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-service-road",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-store-details",
+   "photo": "IMG_3124.jpg",
+   "render": "docs/reviews/picasso-bin-store-service-road/IMG_3124-details-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-service-road-levels-and-beach",
+   "notes": "Show details from the road south-east of the street face: the shut green sliding door with its rail running on north-west over the long wall, the yellow warning sign, switch box and lamp beside it and the ramp down along the wall agree with the photo. The pavement still climbs towards the row (picasso-service-pavement-level), and the conduit and low white box on the set-back wall are not built. A photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [
