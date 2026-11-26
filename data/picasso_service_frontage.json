@@ -293,10 +293,10 @@
    "IMG_3100.jpg",
    "IMG_3101.jpg",
    "IMG_3103.jpg",
-   "IMG_3124.jpg",
-   "IMG_3123.jpg"
+   "IMG_3123.jpg",
+   "IMG_3124.jpg"
   ],
-  "trust": "Estimated. Show details only. Positions along each face are read from IMG_3099 (car-park front) and IMG_3124 (street face) at the wall's own pixel scale, about 137 px a metre for the front, measured from the doorway's centre, so each is good to about 0.3 m along the wall and 0.1-0.2 m in height relative to the door; the door itself is placed to about 1 m. Sign wording is as photographed.",
+  "trust": "Estimated. Show details only. Positions along each face are read from IMG_3099 (car-park front) and IMG_3124 (street face) at the wall's own pixel scale, about 137 px a metre for the front, measured from the doorway's centre, so each is good to about 0.3 m along the wall and 0.1-0.2 m in height relative to the door; the door itself is placed to about 1 m. Sign wording is as photographed. The containers' count and position are Dave's (26 Nov 2026).",
   "front": {
    "about": "On the car-park face. t: metres along the front from its south end (the doorway is at 4.5); y: height of the item's centre above the car-park paving; w, h: size in metres.",
    "items": [
@@ -418,11 +418,17 @@
    }
   },
   "containers": {
-   "from": 10.6,
-   "to": 6.2,
-   "count": 5,
+   "from": 13.1,
+   "to": 8.6,
+   "count": 4,
+   "inward": 2.165,
+   "size": [
+    1.37,
+    1.07,
+    1.47
+   ],
    "colour": "#f2c81e",
-   "note": "Yellow 1100 l wheeled containers in a row along the inside of the front, as IMG_3103 shows them; seen from outside only through the doorway. Their count and spacing are judged from that photo."
+   "note": "Four yellow 1100 l wheeled containers side by side against the long wall's inner face in the yard's north half, from about 0.3 m off the north end wall (Dave, 26 Nov 2026, marked on an Inspect screenshot). t is metres along the front from its south end; inward is metres from the front's centre line towards the long wall, putting each container 0.05 m off the long wall. Standard 1100 l size (1.37 m wide, 1.07 m deep, 1.47 m high). IMG_3103 shows a row of yellow containers but, read from its unsolved pin, along the other wall; Dave's placement is used."
   }
  }
 }

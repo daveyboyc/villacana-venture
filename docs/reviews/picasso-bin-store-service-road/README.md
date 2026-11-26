@@ -169,7 +169,10 @@ first pass had it at 1.6 m.
 **Street face** (IMG_3124, IMG_3123): the shut green sliding door, its rail and hood running on north-west over the
 long wall, a yellow warning sign, a switch box and a lamp, and a concrete ramp down along the wall.
 
-**Inside:** five yellow 1100 l containers along the front (IMG_3103).
+**Inside:** four yellow 1100 l containers stand side by side against the long wall's inner face in the yard's north
+half. They are at the standard 1.37 × 1.07 × 1.47 m size and 0.05 m off the wall. Dave placed them on an Inspect
+screenshot on 26 November 2026. The first detail pass had five along the front, read from IMG_3103's unsolved pin.
+From above: [bins-top-details.jpg](bins-top-details.jpg). Over the front: [bins-oblique-details.jpg](bins-oblique-details.jpg).
 
 | View | Image |
 | --- | --- |
