@@ -145537,27 +145537,21 @@
   },
   {
    "from": "ref:IMG_2613.jpg",
-   "to": "model:picasso_beach_lane.json:picasso-lane-east-terrace",
+   "to": "model:ground_plan_picasso.json:picasso-beach-lane-concrete",
    "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
+   "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2613.jpg",
-   "to": "model:ground_plan_picasso.json:picasso-beach-lane-concrete",
+   "to": "model:picasso_beach_lane.json:picasso-lane-east-terrace",
    "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
+   "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2613.jpg",
    "to": "model:street:picasso-beach-lane",
    "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
-  },
-  {
-   "from": "ref:IMG_2613.jpg",
-   "to": "model:area:paseo",
-   "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
+   "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2614.jpg",

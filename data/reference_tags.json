@@ -5097,7 +5097,12 @@
    "facades",
    "materials"
   ],
-  "note": "Which wall belongs to which property is uncertain; the left wall appears to be the boundary of the lawn's north-east side and the right wall the neighbouring red-roofed building. Stone blocks under black sheeting are temporary."
+  "note": "Which wall belongs to which property is uncertain; the left wall appears to be the boundary of the lawn's north-east side and the right wall the neighbouring red-roofed building. Stone blocks under black sheeting are temporary.",
+  "looksAt": [
+   22.0,
+   86.0
+  ],
+  "subject": "the service lane north from the paseo: white walls with doors on the left, the long building's low terrace wall and eaves on the right"
  },
  "IMG_2614.jpg": {
   "title": "Seaward aisle beside Barraka's north-east wall with strelitzia pots and stacked sunloungers",

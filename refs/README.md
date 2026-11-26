@@ -47,7 +47,6 @@ Photo checks (`data/photo_checks.json`): 193 photo-check records, 57 match, 60 d
 ## Needs attention
 
 - photo check picasso-service-road-levels-and-beach / IMG_3118.jpg: photo is not cited by this specific feature
-- photo check picasso-service-road-levels-and-beach / IMG_2613.jpg: set looksAt and subject for the photo in data/reference_tags.json, so the render faces what the photo shows
 
 Continuous build/validation work and scoped evidence requests: [LOOP.md](LOOP.md).
 

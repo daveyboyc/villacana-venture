@@ -39397,12 +39397,12 @@
     "altitude": 6.2,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "the service lane north from the paseo: white walls with doors on the left, the long building's low terrace wall and eaves on the right",
    "looksAt": [
-    28.1,
-    92.5
+    22.0,
+    86.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2613.jpg",

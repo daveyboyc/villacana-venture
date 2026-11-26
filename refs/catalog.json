@@ -12869,16 +12869,16 @@
    "ground_plan_picasso.json:picasso-beach-lane-concrete"
   ],
   "looksAt": [
-   28.1,
-   92.5
+   22.0,
+   86.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "picasso_beach_lane.json:picasso-lane-east-terrace",
    "ground_plan_picasso.json:picasso-beach-lane-concrete",
-   "street:picasso-beach-lane",
-   "area:paseo"
-  ]
+   "picasso_beach_lane.json:picasso-lane-east-terrace",
+   "street:picasso-beach-lane"
+  ],
+  "subject": "the service lane north from the paseo: white walls with doors on the left, the long building's low terrace wall and eaves on the right"
  },
  {
   "id": "IMG_2614.jpg",
