@@ -3811,7 +3811,7 @@
     }
    ],
    "tasks": {
-    "open": 61,
+    "open": 60,
     "inProgress": 62,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
@@ -4686,7 +4686,7 @@
       "state": "open"
      }
     ],
-    "readyTasks": 47
+    "readyTasks": 46
    },
    "light": {
     "colour": "red",

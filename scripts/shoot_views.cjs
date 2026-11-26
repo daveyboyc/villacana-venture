@@ -4,9 +4,10 @@
 //   node scripts/shoot_views.cjs --model     only writes layout-checks.local/model.json (scripts/lidar_check.py)
 //   node scripts/shoot_views.cjs --kit       only writes layout-checks.local/kit.json, the facade kit as placed (scripts/build_scorecard.py)
 // Stands the player at each photo's camera pin, facing its compass heading, and writes
-// layout-checks.local/views/<photo>.png. The game camera is third-person at walking height,
-// so a roof or upper-floor photo is matched in position and direction only (use --high to
-// look down from above instead). GPS pins are good to a few metres.
+// layout-checks.local/views/<photo>.png. The page opens in Walk (view=walk; Inspect's overview is
+// now the default) with the first-person camera at eye height, and the page's buttons are hidden
+// (--controls keeps them). A roof or upper-floor photo is matched in position and direction only
+// (use --high to look down from above instead). GPS pins are good to a few metres.
 // With --task and --as the render is also saved as docs/reviews/<task>/<photo>-<as>.png, the path a
 // data/photo_checks.json record points at. Set the photo's looksAt (data/reference_tags.json) first:
 // without it the view follows the phone compass from the raw pin, which can face the wrong way.
@@ -82,7 +83,7 @@ const path = require("node:path");
     if (entry(photo.file)?.looksAtBasis !== "reviewed") console.log(name, "WARNING: no reviewed looksAt; aiming along the phone heading from the pin. Set looksAt/subject in data/reference_tags.json and rebuild refs before recording a photo check.");
     const h = ((photo.heading ?? 0) * Math.PI) / 180;
     const look = subject(photo.file) ?? [photo.x + Math.sin(h) * 12, photo.z - Math.cos(h) * 12];
-    const query = `pool=${pool}&at=${turned(photo.x, photo.z)}&look=${turned(look[0], look[1])}${flags.includes("--details") ? "&details=1" : ""}`;
+    const query = `pool=${pool}&view=walk&camera=first&at=${turned(photo.x, photo.z)}&look=${turned(look[0], look[1])}${flags.includes("--details") ? "&details=1" : ""}`;
     const page = await browser.newPage({ viewport: { width: 1200, height: 900 } }), errors = [];
     page.setDefaultTimeout(120000);
     page.on("pageerror", (e) => errors.push(e.message));
@@ -93,6 +94,8 @@ const path = require("node:path");
       await page.mouse.move(600, 450); await page.mouse.down(); await page.mouse.move(600, 700, { steps: 10 }); await page.mouse.up();
       for (let i = 0; i < 8; i++) await page.mouse.wheel(0, 100);
     }
+    // Only the scene: hide the page's buttons and panels so the render compares cleanly with the photo.
+    if (!flags.includes("--controls")) await page.addStyleTag({ content: "body > *:not(#scene):not(canvas) { visibility: hidden !important }" });
     await page.waitForTimeout(2000);
     const file = path.join(out, photo.file.replace(/\.jpg$/, ".png"));
     await page.screenshot({ path: file });

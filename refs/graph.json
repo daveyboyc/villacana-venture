@@ -57440,7 +57440,7 @@
    "kind": "build-task",
    "name": "scripts/shoot_views.cjs renders the whole-resort overview instead of the photo camera",
    "priority": 1,
-   "status": "open",
+   "status": "done",
    "verification": "not-applicable",
    "photoVerification": "not-applicable (tooling)",
    "placement": {

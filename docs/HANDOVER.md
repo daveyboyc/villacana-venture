@@ -77,6 +77,10 @@ follows [ACCEPTANCE_STANDARD.md](ACCEPTANCE_STANDARD.md), not task completion al
    roof shots). Note how it differs from the photo. For a render that lines up with
    the photo pixel for pixel, solve its camera first and add `--pose`
    (`docs/PHOTO_ALIGNMENT.md`); held-out points then measure the model in metres.
+   The pin render opens Walk's first-person camera at eye height (`view=walk&camera=first`)
+   with the page's buttons hidden (`--controls` keeps them). It must ask for `view=walk`:
+   since the page began opening in Inspect's overview, a render without it showed the whole
+   resort instead of the photo's view (fixed 26 Nov 2026, task `tools-shoot-views-photo-camera`).
 5. Measure the photo, not just the scene: with a known width (a gate opening,
    0.2 m tiles, a 1.2 m lane) and the horizon, read how far along the path each
    part sits and in what order (gate, planter, bench...). Write those distances into
