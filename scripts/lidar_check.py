@@ -427,6 +427,23 @@ def grid(step=2.0, extent=(-270.0, -160.0, 130.0, 270.0)):
     hold(None, 0.0, 0, 4.0, inside=along([q[:2] for q in face], 4.0))
     for pid, ring in pools.items():
         smooth = np.where(within(ring, 3.0), deck_level[pid], smooth)
+    # Calle de Picasso's raised grass strip (data/picasso_west_lawn.json): the survey's 1 m ground blurs its
+    # retaining wall into a 2-4 m bank, so the car park is held at its own level (read 'carParkAt' metres west
+    # of the bays' car line) from there to 'width' metres beyond the wall's face, under the grass, which
+    # src/picasso-west-lawn.ts draws at the path's level.
+    strip = json.loads((ROOT / 'data/picasso_west_lawn.json').read_text())
+    so, st = np.array(strip['frame']['origin']), np.array(strip['frame']['toward'])
+    su = (st - so) / np.linalg.norm(st - so)
+    along_s = (gx - so[0]) * su[0] + (gz - so[1]) * su[1]
+    west = (gx - so[0]) * -su[1] + (gz - so[1]) * su[0]
+    held = strip['hold']
+    car = ground.at(so[0] + su[0] * along_s - su[1] * held['carParkAt'], so[1] + su[1] * along_s + su[0] * held['carParkAt']) - datum
+    for s0, s1 in strip['spans']:
+        weight = np.clip(np.minimum(along_s - s0 + held['blend'], s1 + held['blend'] - along_s) / held['blend'], 0, 1)
+        weight *= np.clip((west - held['carParkAt']) / (held['from'] - held['carParkAt']), 0, 1)
+        weight *= west <= strip['wall']['offset'] + held['width']
+        weight = np.where(np.isfinite(car), weight, 0)
+        smooth = np.where(weight > 0, smooth + (np.nan_to_num(car) - smooth) * weight, smooth)
     k = int(round(step))
     coarse = smooth[::k, ::k]
     # Photographed flights of steps stay exact: siteY lays each as level ground, a straight rise over

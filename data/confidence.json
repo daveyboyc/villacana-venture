@@ -89,7 +89,7 @@
   },
   "parking:Picasso car park": {
    "level": "estimated",
-   "why": "East edge on the long wall's inner face (aerial). West edge at the back of the west bays, 4 m west of their car line, with a gap where Calle Cervantes comes in (aerial and laser survey, 25 Nov 2026). The south edge and the north end are still the earlier map trace; the central bay row is read from car positions on the aerial (±1.5 m)."
+   "why": "East edge on the long wall's inner face (aerial). West edge at the face of the grass strip's retaining wall at the back of the west bays, 3.1 m west of their car line, with a gap where Calle Cervantes comes in (laser survey, 26 Nov 2026). The south edge and the north end are still the earlier map trace; the central bay row is read from car positions on the aerial (±1.5 m)."
   },
   "lane_walls.json:juan-gris-east-hedge": {
    "level": "estimated",
@@ -994,6 +994,10 @@
   "steps:picasso-path-upper-steps": {
    "level": "inferred",
    "why": "The 0.45 m drop and where it is come from the laser survey; steps beside a ramp is the resort's usual form, not seen. Number, side and spacing of the risers are guesses."
+  },
+  "picasso_west_lawn.json:picasso-west-lawn": {
+   "level": "inferred",
+   "why": "Not photographed. The laser survey holds the grass strip at the path's level, up to 0.84 m above the car park; the retaining wall stands where the survey changes level, 3.1 m west of the bays' car line, about 0.5 m. Its white render and coping follow the resort's other walls; the aerial's green edge at about 4.0 m and a pale band in front of it leave the wall's exact line and top open; the 2014-15 surface model shows no hedge on it."
   },
   "steps:picasso-path-cervantes-steps": {
    "level": "inferred",

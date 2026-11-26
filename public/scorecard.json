@@ -2078,7 +2078,7 @@
        -101.9,
        -26.9
       ],
-      "ask": "On Calle de Picasso, the footpath behind the hedge at the back of the car park's west bays: stand on the path below each place where it steps down (about 40 m south of the CALLE DE PICASSO plinth, and just north of where Calle Cervantes crosses it) and photograph up the path at the steps or ramp, then one from the side; also one photo along the path showing the hedge strip and the drop to the parked cars.",
+      "ask": "On Calle de Picasso, the footpath behind the hedge at the back of the car park's west bays: stand on the path below each place where it steps down (about 40 m south of the CALLE DE PICASSO plinth, and just north of where Calle Cervantes crosses it) and photograph up the path at the steps or ramp, then one from the side; also one photo along the path showing the grass strip and the drop to the parked cars, and one square-on from the bays to the wall at the back of the bays (is the pale band in front of the grass a wide coping, a verge or a bank?).",
       "why": "the laser survey shows the path on three level stretches with two drops of about 0.45 m and 0.42 m, but no photo shows whether each is steps, a ramp or both, or how the hedge strip is held up above the car park",
       "priority": 2,
       "state": "open",
@@ -3378,7 +3378,7 @@
     "generated": 2452
    },
    "placement": {
-    "features": 554,
+    "features": 555,
     "verified": 0,
     "disputed": 64
    },
@@ -3612,7 +3612,7 @@
    "confidence": {
     "photographed": 95,
     "estimated": 205,
-    "inferred": 22,
+    "inferred": 23,
     "registry": 232,
     "gaps": 42
    },
@@ -3621,8 +3621,8 @@
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 662, 642 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 95 photographed, 205 estimated, 22 inferred, 42 known gaps.",
-    "Placement: 0 of 554 features verified, 54 open discrepancies.",
+    "How sure: 95 photographed, 205 estimated, 23 inferred, 42 known gaps.",
+    "Placement: 0 of 555 features verified, 54 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 39 still open; 54 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -5043,7 +5043,7 @@
        -101.9,
        -26.9
       ],
-      "ask": "On Calle de Picasso, the footpath behind the hedge at the back of the car park's west bays: stand on the path below each place where it steps down (about 40 m south of the CALLE DE PICASSO plinth, and just north of where Calle Cervantes crosses it) and photograph up the path at the steps or ramp, then one from the side; also one photo along the path showing the hedge strip and the drop to the parked cars.",
+      "ask": "On Calle de Picasso, the footpath behind the hedge at the back of the car park's west bays: stand on the path below each place where it steps down (about 40 m south of the CALLE DE PICASSO plinth, and just north of where Calle Cervantes crosses it) and photograph up the path at the steps or ramp, then one from the side; also one photo along the path showing the grass strip and the drop to the parked cars, and one square-on from the bays to the wall at the back of the bays (is the pale band in front of the grass a wide coping, a verge or a bank?).",
       "why": "the laser survey shows the path on three level stretches with two drops of about 0.45 m and 0.42 m, but no photo shows whether each is steps, a ramp or both, or how the hedge strip is held up above the car park",
       "priority": 2,
       "state": "open",

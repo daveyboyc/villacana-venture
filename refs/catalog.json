@@ -26065,6 +26065,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "picasso_west_lawn.json:picasso-west-lawn",
    "parking:Picasso car park",
    "backdrop.json:aerial-trees"
   ],

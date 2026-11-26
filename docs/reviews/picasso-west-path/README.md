@@ -112,3 +112,28 @@ Google-traced lawn strip leave a 0.2-1.0 m gap (both in discrepancy `picasso-wes
 garden wall along the path's north end, seen in IMG_3131, is recorded as a gap; the retaining edge at the
 back of the bays is not, because no photo shows it (gaps need one), so it stays in the discrepancy. The upper
 flight's three 0.15 m risers read faintly in Inspect from above.
+
+## The raised grass strip (26 November 2026)
+
+Dave: the grass area beside the path is not at ground level. The survey agrees: the strip between the path
+and the bays stands at the path's level, up to 0.84 m above the car park about 30 m along, 0.45-0.6 m in the
+middle stretch and 0.1-0.3 m south of Cervantes. Sampled every 3 m across the strip, the change of level is
+at a median 3.0 m west of the bays' car line (2.25-3.5 m north of Cervantes); on the aerial a straight green edge
+runs at about 4.0 m north of Cervantes, with a pale band from the car rears to it and a bright line at
+3.5-4.0 m (the review's finding; open whether it is a coping, a verge or a bank).
+
+- `data/picasso_west_lawn.json` and `src/picasso-west-lawn.ts`: grass from a 0.2 m white retaining wall,
+  its face 3.1 m west of the car line, to the path's edge, 3 cm below the paving and stepping down with it;
+  broken from 74.5 to 78.5 m along the car line where Cervantes comes in. The wall is solid and on the map.
+- `scripts/lidar_check.py grid` holds the car park at its own level (read 0.5 m west of the car line) up to
+  1.5 m beyond the wall's face, under the grass, so the asphalt meets the wall foot instead of riding up the
+  survey's 2 m blur. Only the 103 grid cells of this strip were taken from the regenerated grid.
+- The car-park outline's west edge moves from 4.0 m to the wall's face at 3.1 m (the reviewer's bank note).
+- `scripts/check_picasso_west_lawn.py` checks the grass is at the path's level, the car park level up to the
+  wall foot, the wall's height against the survey's step, the outline edge and the wiring.
+
+Independent review: levels approved, layout approved with notes ([REVIEW-grass-strip.md](REVIEW-grass-strip.md)): the pale band
+north of Cervantes and the strip's continuation south of the car park (to about 112-115 m) are recorded in
+discrepancy `picasso-west-path-open-levels`. Inferred: not photographed. The wall's finish and coping are guesses; photo
+request `picasso-west-path-drops` asks for a view along the strip. [inspect-grass-strip.jpg](inspect-grass-strip.jpg)
+(Layout): from the car park at the upper flight, and south towards Cervantes.
