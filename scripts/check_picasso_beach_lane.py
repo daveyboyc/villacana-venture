@@ -42,7 +42,7 @@ for coll in (sk['streets'], sk['boundaryReference']['roads']):
 assert lane['name'] == road['name'] == 'Calle Pintor Picasso'
 assert lane['points'][0] == road['points'][-1], 'the lane starts where the road ends'
 paseo = sk['seafront']['paseo']['points']
-assert line_distance(lane['points'][-1], paseo) < 0.05, 'the lane ends on the paseo'
+assert line_distance(lane['points'][-1], paseo) <= sk['seafront']['paseo']['width'] / 2 + 0.3, 'the lane ends at the paseo\'s edge (the grate)'
 
 # Clear of standing houses (half-width plus 0.3 m) and of the lawn wall's face.
 houses = [b for b in sk['buildings'] if b.get('floors', 0) > 0 and not b.get('passage')]
@@ -55,10 +55,17 @@ for name, s in (('lane', lane), ('road extension', {'points': road['points'][-4:
 wall_gap = min(line_distance(p, lane['points']) for p in samples(lawn_wall['points'], closed=False))
 assert wall_gap - lawn_wall['thickness'] / 2 >= lane['width'] / 2 + 0.25, f'lane too close to the lawn wall ({wall_gap:.2f} m)'
 
+# The west footway's kerb keeps clear of the roadway.
+gp = json.loads((ROOT / 'data/ground_plan_picasso.json').read_text())
+fw = next(x for x in gp['surfaces'] if x['id'] == 'picasso-beach-lane-footway')
+kerb = fw['outline'][fw['edges'][0]['from']:]
+assert min(line_distance(p, lane['points']) for p in samples(kerb, closed=False)) >= lane['width'] / 2 - 0.02, 'footway clear of the roadway'
+
 # Tower: off the lane and the road, on its surveyed top.
 t = d['tower']
 assert min(line_distance(t['centre'], s['points']) for s in (lane, road)) > t['size'] / math.sqrt(2) + 3.0, 'tower stands off the road'
-assert 4.8 <= t['top'] <= 6.0, 'tower top inside the surveyed 5.2-5.7 m'
+assert 9.0 <= t['top'] <= 10.2, 'tower top inside the surveyed 9.6-9.7 m'
+assert math.dist(t['centre'], (-16.5, 54.5)) < 1.5, 'tower on the survey block at the bend by the low block (not the palm at (-6.5, 73.5))'
 
 # Terrace: the registry strip exactly; its wall on the lane side, clear of the lane.
 reg = {b['id']: b for b in sk['buildings']}['6465801UF1366N_part2']
@@ -76,7 +83,7 @@ for p in (m['bollard'], m['grate']['centre']):
 for f in (t, d['eastTerrace'], m):
     assert f['evidence'] and set(f['evidence']) <= photos and len(f['trust']) > 60
     assert confidence.get('picasso_beach_lane.json:' + f['id'], {}).get('level') == 'estimated'
-for key in ('street:picasso-beach-lane', 'ground_plan_picasso.json:picasso-beach-road-forecourt'):
+for key in ('street:picasso-beach-lane', 'ground_plan_picasso.json:picasso-beach-road-forecourt', 'ground_plan_picasso.json:picasso-beach-lane-footway'):
     assert confidence.get(key, {}).get('level') == 'estimated', key
 src = (ROOT / 'src/slice.ts').read_text()
 assert 'if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addPicassoBeachLaneDetails(into,keep)})' in src, 'lane details are Show-details only'

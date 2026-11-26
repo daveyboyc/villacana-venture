@@ -98,85 +98,67 @@ graph LR
   F6 --> PIMG_2613_jpg(["IMG_2613"])
   F6 --> PIMG_3067_jpg(["IMG_3067"])
   F6 --> PIMG_3118_jpg(["IMG_3118"])
-  A --> F7["Calle Guillermo paving beside the planter: squares at the junction, octagons beyond, covers · unreviewed"]
-  F7 --> PIMG_2773_jpg(["IMG_2773"])
-  F7 --> PIMG_2774_jpg(["IMG_2774"])
-  F7 --> PIMG_2822_jpg(["IMG_2822"])
-  F7 --> PIMG_2823_jpg(["IMG_2823"])
-  A --> F8["Lantana planter wall along Calle Guillermo behind the Calle de Jorge plinth · unreviewed"]
-  F8 --> PIMG_2597_jpg(["IMG_2597"])
+  A --> F7["Kerbed concrete footway along the west walls of the lane to the beach · unreviewed"]
+  F7 --> PIMG_2613_jpg(["IMG_2613"])
+  F7 --> PIMG_3067_jpg(["IMG_3067"])
+  F7 --> PIMG_3118_jpg(["IMG_3118"])
+  A --> F8["Calle Guillermo paving beside the planter: squares at the junction, octagons beyond, covers · unreviewed"]
   F8 --> PIMG_2773_jpg(["IMG_2773"])
   F8 --> PIMG_2774_jpg(["IMG_2774"])
-  A --> F9["West of Calle Guillermo: plain lawn wall, patio wall, hedged planters, lamp posts and brick border · disputed"]
+  F8 --> PIMG_2822_jpg(["IMG_2822"])
+  F8 --> PIMG_2823_jpg(["IMG_2823"])
+  A --> F9["Lantana planter wall along Calle Guillermo behind the Calle de Jorge plinth · unreviewed"]
+  F9 --> PIMG_2597_jpg(["IMG_2597"])
   F9 --> PIMG_2773_jpg(["IMG_2773"])
   F9 --> PIMG_2774_jpg(["IMG_2774"])
-  A --> F10["Tall slender palm on the main-pool lawn below Calle Jorge · unreviewed"]
-  F10 --> PIMG_2764_jpg(["IMG_2764"])
-  F10 --> PIMG_2765_jpg(["IMG_2765"])
-  A --> F11["Clubhouse upper-storey glazing, blue lettered awnings and dark awnings · unreviewed"]
+  A --> F10["West of Calle Guillermo: plain lawn wall, patio wall, hedged planters, lamp posts and brick border · disputed"]
+  F10 --> PIMG_2773_jpg(["IMG_2773"])
+  F10 --> PIMG_2774_jpg(["IMG_2774"])
+  A --> F11["Tall slender palm on the main-pool lawn below Calle Jorge · unreviewed"]
   F11 --> PIMG_2764_jpg(["IMG_2764"])
   F11 --> PIMG_2765_jpg(["IMG_2765"])
-  F11 --> PIMG_3073_jpg(["IMG_3073"])
-  F11 --> PIMG_3076_jpg(["IMG_3076"])
-  F11 --> PIMG_3077_jpg(["IMG_3077"])
-  A --> F12["Signed awning, menu board and wall lantern at the head of Enrique's steps · disputed"]
-  F12 --> PIMG_2775_jpg(["IMG_2775"])
-  F12 --> PIMG_2776_jpg(["IMG_2776"])
-  A --> F13["Marble nosings, blue tile risers and handrail on the steps to Enrique's · disputed"]
+  A --> F12["Clubhouse upper-storey glazing, blue lettered awnings and dark awnings · unreviewed"]
+  F12 --> PIMG_2764_jpg(["IMG_2764"])
+  F12 --> PIMG_2765_jpg(["IMG_2765"])
+  F12 --> PIMG_3073_jpg(["IMG_3073"])
+  F12 --> PIMG_3076_jpg(["IMG_3076"])
+  F12 --> PIMG_3077_jpg(["IMG_3077"])
+  A --> F13["Signed awning, menu board and wall lantern at the head of Enrique's steps · disputed"]
+  F13 --> PIMG_2775_jpg(["IMG_2775"])
   F13 --> PIMG_2776_jpg(["IMG_2776"])
-  F13 --> PIMG_2777_jpg(["IMG_2777"])
-  A --> F14["Bollard lights, slatted bins and slot drains on the main-pool lawn · disputed"]
-  F14 --> PIMG_2603_jpg(["IMG_2603"])
-  F14 --> PIMG_2761_jpg(["IMG_2761"])
-  F14 --> PIMG_2764_jpg(["IMG_2764"])
-  F14 --> PIMG_2765_jpg(["IMG_2765"])
-  F14 --> PIMG_2775_jpg(["IMG_2775"])
+  A --> F14["Marble nosings, blue tile risers and handrail on the steps to Enrique's · disputed"]
   F14 --> PIMG_2776_jpg(["IMG_2776"])
-  A --> F15["Plain white kiosk at the lawn's sea corner · unreviewed"]
-  F15 --> PIMG_2759_jpg(["IMG_2759"])
-  F15 --> PIMG_2762_jpg(["IMG_2762"])
-  F15 --> PIMG_2763_jpg(["IMG_2763"])
-  A --> F16["Shower on the lawn face of the white wing east of the beach gate (the hedge along the railing is in the ground plan) · unreviewed"]
+  F14 --> PIMG_2777_jpg(["IMG_2777"])
+  A --> F15["Bollard lights, slatted bins and slot drains on the main-pool lawn · disputed"]
+  F15 --> PIMG_2603_jpg(["IMG_2603"])
+  F15 --> PIMG_2761_jpg(["IMG_2761"])
+  F15 --> PIMG_2764_jpg(["IMG_2764"])
+  F15 --> PIMG_2765_jpg(["IMG_2765"])
+  F15 --> PIMG_2775_jpg(["IMG_2775"])
+  F15 --> PIMG_2776_jpg(["IMG_2776"])
+  A --> F16["Plain white kiosk at the lawn's sea corner · unreviewed"]
   F16 --> PIMG_2759_jpg(["IMG_2759"])
-  F16 --> PIMG_2761_jpg(["IMG_2761"])
-  F16 --> PIMG_3077_jpg(["IMG_3077"])
-  A --> F17["White walls, door and strelitzia bed on the main-pool lawn · disputed"]
+  F16 --> PIMG_2762_jpg(["IMG_2762"])
+  F16 --> PIMG_2763_jpg(["IMG_2763"])
+  A --> F17["Shower on the lawn face of the white wing east of the beach gate (the hedge along the railing is in the ground plan) · unreviewed"]
   F17 --> PIMG_2759_jpg(["IMG_2759"])
-  F17 --> PIMG_2762_jpg(["IMG_2762"])
-  F17 --> PIMG_2763_jpg(["IMG_2763"])
-  F17 --> PIMG_2765_jpg(["IMG_2765"])
-  A --> F18["Terracotta paving and green mat at the foot of the steps to Enrique's · unreviewed"]
-  F18 --> PIMG_2764_jpg(["IMG_2764"])
-  F18 --> PIMG_2777_jpg(["IMG_2777"])
-  A --> F19["Raised terrace and eaves along the long building on the lane's east side (registry 6465801UF1366N_part2) · disputed"]
-  F19 --> PIMG_2613_jpg(["IMG_2613"])
-  F19 --> PIMG_3067_jpg(["IMG_3067"])
-  A --> F20["White wall along Calle Pintor Picasso enclosing the big-pool lawn · unreviewed"]
-  F20 --> PIMG_2764_jpg(["IMG_2764"])
-  F20 --> PIMG_2765_jpg(["IMG_2765"])
-  A --> F21["Beach gateway from the big-pool lawn · disputed"]
-  F21 --> PIMG_2226_jpg(["IMG_2226"])
-  F21 --> PIMG_2227_jpg(["IMG_2227"])
-  F21 --> PIMG_2484_jpg(["IMG_2484"])
-  F21 --> PIMG_2485_jpg(["IMG_2485"])
-  F21 --> PIMG_2488_jpg(["IMG_2488"])
-  F21 --> PIMG_2600_jpg(["IMG_2600"])
-  F21 --> PIMG_2601_jpg(["IMG_2601"])
-  F21 --> PIMG_2602_jpg(["IMG_2602"])
-  F21 --> PIMG_2604_jpg(["IMG_2604"])
-  F21 --> PIMG_2609_jpg(["IMG_2609"])
-  F21 --> PIMG_2610_jpg(["IMG_2610"])
-  F21 --> PIMG_2630_jpg(["IMG_2630"])
-  F21 --> PIMG_2631_jpg(["IMG_2631"])
-  F21 --> PIMG_2759_jpg(["IMG_2759"])
-  F21 --> PIMG_2760_jpg(["IMG_2760"])
-  F21 --> PIMG_2761_jpg(["IMG_2761"])
-  F21 --> PIMG_2763_jpg(["IMG_2763"])
-  F21 --> PIMG_2766_jpg(["IMG_2766"])
-  F21 --> PIMG_2767_jpg(["IMG_2767"])
-  F21 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
-  F21 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
-  A --> F22["White wall beside the paseo ramp · unreviewed"]
+  F17 --> PIMG_2761_jpg(["IMG_2761"])
+  F17 --> PIMG_3077_jpg(["IMG_3077"])
+  A --> F18["White walls, door and strelitzia bed on the main-pool lawn · disputed"]
+  F18 --> PIMG_2759_jpg(["IMG_2759"])
+  F18 --> PIMG_2762_jpg(["IMG_2762"])
+  F18 --> PIMG_2763_jpg(["IMG_2763"])
+  F18 --> PIMG_2765_jpg(["IMG_2765"])
+  A --> F19["Terracotta paving and green mat at the foot of the steps to Enrique's · unreviewed"]
+  F19 --> PIMG_2764_jpg(["IMG_2764"])
+  F19 --> PIMG_2777_jpg(["IMG_2777"])
+  A --> F20["Raised terrace and eaves along the long building on the lane's east side (registry 6465801UF1366N_part2) · disputed"]
+  F20 --> PIMG_2613_jpg(["IMG_2613"])
+  F20 --> PIMG_3067_jpg(["IMG_3067"])
+  A --> F21["White wall along Calle Pintor Picasso enclosing the big-pool lawn · unreviewed"]
+  F21 --> PIMG_2764_jpg(["IMG_2764"])
+  F21 --> PIMG_2765_jpg(["IMG_2765"])
+  A --> F22["Beach gateway from the big-pool lawn · disputed"]
   F22 --> PIMG_2226_jpg(["IMG_2226"])
   F22 --> PIMG_2227_jpg(["IMG_2227"])
   F22 --> PIMG_2484_jpg(["IMG_2484"])
@@ -198,7 +180,7 @@ graph LR
   F22 --> PIMG_2767_jpg(["IMG_2767"])
   F22 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
   F22 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
-  A --> F23["Green bar railing on a sandstone plinth along the big-pool lawn · unreviewed"]
+  A --> F23["White wall beside the paseo ramp · unreviewed"]
   F23 --> PIMG_2226_jpg(["IMG_2226"])
   F23 --> PIMG_2227_jpg(["IMG_2227"])
   F23 --> PIMG_2484_jpg(["IMG_2484"])
@@ -220,6 +202,28 @@ graph LR
   F23 --> PIMG_2767_jpg(["IMG_2767"])
   F23 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
   F23 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
+  A --> F24["Green bar railing on a sandstone plinth along the big-pool lawn · unreviewed"]
+  F24 --> PIMG_2226_jpg(["IMG_2226"])
+  F24 --> PIMG_2227_jpg(["IMG_2227"])
+  F24 --> PIMG_2484_jpg(["IMG_2484"])
+  F24 --> PIMG_2485_jpg(["IMG_2485"])
+  F24 --> PIMG_2488_jpg(["IMG_2488"])
+  F24 --> PIMG_2600_jpg(["IMG_2600"])
+  F24 --> PIMG_2601_jpg(["IMG_2601"])
+  F24 --> PIMG_2602_jpg(["IMG_2602"])
+  F24 --> PIMG_2604_jpg(["IMG_2604"])
+  F24 --> PIMG_2609_jpg(["IMG_2609"])
+  F24 --> PIMG_2610_jpg(["IMG_2610"])
+  F24 --> PIMG_2630_jpg(["IMG_2630"])
+  F24 --> PIMG_2631_jpg(["IMG_2631"])
+  F24 --> PIMG_2759_jpg(["IMG_2759"])
+  F24 --> PIMG_2760_jpg(["IMG_2760"])
+  F24 --> PIMG_2761_jpg(["IMG_2761"])
+  F24 --> PIMG_2763_jpg(["IMG_2763"])
+  F24 --> PIMG_2766_jpg(["IMG_2766"])
+  F24 --> PIMG_2767_jpg(["IMG_2767"])
+  F24 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
+  F24 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
 ```
 
 ## Placement evidence
@@ -235,6 +239,7 @@ graph LR
 | `ground_plan_main_pool.json:main-lawn` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `ground_plan_main_pool.json:main-pool-deck-band` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `ground_plan_picasso.json:picasso-beach-lane-concrete` | disputed | differs | open discrepancy photo-discrepancy:bd1a1210b0abfd53 |
+| `ground_plan_picasso.json:picasso-beach-lane-footway` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-guillermo-paving` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-guillermo-planter` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-guillermo-west` | disputed | differs | open discrepancy photo-discrepancy:74cead97dc4c963c; open discrepancy photo-discrepancy:f89b5484edc8b5c0 |
@@ -295,12 +300,12 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2761.jpg](../../public/photos-ref/IMG_2761.jpg) | ground | layout, materials, view | Lawn and pink path towards the seafront railing **Looks at:** lawn beside the pink path: square service lid, bin and bollard, the hedge along the sea railing. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing, main_pool_lawn.json:lawn-bollards-bins, main_pool_lawn.json:lawn-sea-hedge, ground_plan_main_pool.json:main-lawn, ground_plan_main_pool.json:lawn-pink-paths._ |
 | [IMG_2773.jpg](../../public/photos-ref/IMG_2773.jpg) | ground | layout, materials, planting | Lane beside the main pool with a lantana planter wall **Looks at:** Calle Guillermo north of the Jorge junction: octagon and square tiles, the lantana planter wall on the east side. **Note:** Read 2026-11-11. A white planter wall about waist high with orange and yellow lantana runs along the east side; the lawn of the CALLE DE JORGE plinth and a lamp post are on the left. Read 2026-11-12: the wall along the lawn is plain, with no door or window, bougainvillea trained along it and plants showing above it; its top falls to about 1.9 m at the lane, where a no-dogs sign hangs; a small broad-leaved tree and a rose stand on the lawn. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-planter, jorge_lane.json:jorge-lane-guillermo-paving, jorge_lane.json:jorge-lane-guillermo-west, jorge_lane.json:jorge-lane-planting._ |
 | [IMG_2602.jpg](../../public/photos-ref/IMG_2602.jpg) | ground | layout, facades, signage, materials | Arched white gate pillar with iron gate, signs and bollard light at the lawn corner **Looks at:** coastal lawn gate pier and iron gate. **Note:** 13 Nov: looksAt moved onto the gateway as now modelled (it was a rough 5 m inland estimate). looksAt is a rough estimate of the gate position from the aerial (not measured). _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing, ground_plan_main_pool.json:lawn-inner-path, ground_plan_main_pool.json:lawn-flagstone-apron._ |
+| [IMG_2613.jpg](../../public/photos-ref/IMG_2613.jpg) | ground | layout, facades, materials | Service lane between the main-pool lawn walls and the neighbouring building, looking north-west **Looks at:** the service lane north from the paseo: white walls with doors on the left, the long building's low terrace wall and eaves on the right. **Note:** Which wall belongs to which property is uncertain; the left wall appears to be the boundary of the lawn's north-east side and the right wall the neighbouring red-roofed building. Stone blocks under black sheeting are temporary. _Used by: picasso_beach_lane.json:picasso-lane-tower, picasso_beach_lane.json:picasso-lane-east-terrace, picasso_beach_lane.json:picasso-lane-mouth, ground_plan_picasso.json:picasso-beach-lane-concrete, ground_plan_picasso.json:picasso-beach-lane-footway._ |
 | [IMG_2774.jpg](../../public/photos-ref/IMG_2774.jpg) | ground | layout, materials, levels | Octagonal-paved lane beside the lantana planter **Looks at:** the lantana planter wall along Calle Guillermo, about a metre high, with the yucca clump behind it. **Note:**  Read 2026-11-12: left of the lane, low white planters with clipped hedges between battered piers, a gateway with a dark iron gate, a taller white patio wall behind with strelitzia above it, two lamp posts; a row of bricks on edge borders the lane. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-planter, jorge_lane.json:jorge-lane-guillermo-paving, jorge_lane.json:jorge-lane-guillermo-west._ |
 | [IMG_2600.jpg](../../public/photos-ref/IMG_2600.jpg) | ground | layout, levels, materials | From the foot of Calle Guillermo: tiled path down past the white wall towards the beach **Looks at:** The lawn corner and fence at the foot of the path. **Compass:** the subject is 47° from the phone heading; trust looksAt, not the heading. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing, ground_plan_main_pool.json:lawn-inner-path._ |
 | [IMG_2760.jpg](../../public/photos-ref/IMG_2760.jpg) | ground | layout, view | Large lawn towards the Barraka building **Looks at:** the big lawn towards Barraka, the hedge along the sea railing and the service lid. **Note:** Pin is vague (+/-10.8 m); the lawn and the Barraka building beyond place it on the main pool lawn. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing, ground_plan_main_pool.json:main-lawn._ |
 | [IMG_2762.jpg](../../public/photos-ref/IMG_2762.jpg) | ground | planting, facades | Strelitzia in a white walled corner on the lawn **Looks at:** strelitzia and silver bush in a white walled corner on the lawn. _Used by: main_pool_lawn.json:lawn-white-rooms, main_pool_lawn.json:lawn-kiosk-plain, ground_plan_main_pool.json:lawn-strip-guillermo, ground_plan_main_pool.json:lawn-pink-paths._ |
 | [IMG_2603.jpg](../../public/photos-ref/IMG_2603.jpg) | ground | layout, view, facades, planting | Pink lawn path with bollard lights and a pool-side white curved-roof building **Looks at:** pink lawn path to the main pool with bollards and a slatted bin beside it. **Note:** Which pool-side building this is (Bistro Enrique's or 90 Miles) is not confirmed from the image. _Used by: main_pool_lawn.json:lawn-bollards-bins, ground_plan_main_pool.json:main-lawn, ground_plan_main_pool.json:lawn-pink-paths._ |
-| [IMG_2613.jpg](../../public/photos-ref/IMG_2613.jpg) | ground | layout, facades, materials | Service lane between the main-pool lawn walls and the neighbouring building, looking north-west **Looks at:** the service lane north from the paseo: white walls with doors on the left, the long building's low terrace wall and eaves on the right. **Note:** Which wall belongs to which property is uncertain; the left wall appears to be the boundary of the lawn's north-east side and the right wall the neighbouring red-roofed building. Stone blocks under black sheeting are temporary. _Used by: picasso_beach_lane.json:picasso-lane-east-terrace, picasso_beach_lane.json:picasso-lane-mouth, ground_plan_picasso.json:picasso-beach-lane-concrete._ |
 | [IMG_2776.jpg](../../public/photos-ref/IMG_2776.jpg) | ground | layout, levels | Steps and ramp at the foot of the lane by the pool building **Looks at:** marble-nosed blue-tiled steps up to Enrique's shop beside the lantana planter. _Used by: main_pool_lawn.json:lawn-bollards-bins, main_pool_lawn.json:enrique-step-finish, main_pool_lawn.json:enrique-shop-front._ |
 | `reference/apple-maps/11-3d-guillermo-slope-to-paseo.png` | aerial | layout, levels | Apple Maps 3D: Calle Guillermo sloping down beside the pool lawn to the paseo **Note:** Dave, 2026-10-21. The lane runs down continuously from the restaurant's west end to the paseo between the house gardens and a long white wall on the pool-lawn side; the wall's lawn face gets lower towards the sea. Calle Jorge joins part-way down with no visible steps. The single-storey white kiosk at the foot stands at lawn and paseo level; the lane passes west of it to the beach gate and zebra crossing. Heights are not measurable from the mesh. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | `reference/apple-maps/05-top-down-main-pool-and-lawn.png` | aerial | layout | Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
@@ -321,12 +326,12 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2630.jpg](../../public/photos-ref/IMG_2630.jpg) | ground | facades, signage, materials, layout | Barraka's glazed north-west frontage with sandbags along the slot drain **Looks at:** Barraka north-west glazed frontage. **Note:** Pin +-6.8 m is at the building corner; looksAt by eye. Sandbags are temporary. _Used by: barraka_facade.json:barraka-facade, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2766.jpg](../../public/photos-ref/IMG_2766.jpg) | ground | layout, materials, planting | Painted crossing and blue plumbago at a gated wall **Looks at:** the beach gateway with plumbago either side and the painted crossing in front of it. _Used by: barraka_frontage.json:paseo-painted-crossing, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2767.jpg](../../public/photos-ref/IMG_2767.jpg) | ground | layout, materials, planting | Painted crossing at the gated wall, looking south-west **Looks at:** the painted crossing right outside the beach gateway, the paseo running on south-west. _Used by: barraka_frontage.json:paseo-painted-crossing, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
+| [IMG_3118.jpg](../../public/photos-ref/IMG_3118.jpg) | ground | layout, facades, view | Calle Pintor Picasso looking north-west from the lane's north end: tower and white buildings left, hotel and plane trees right **Looks at:** the road north-west from the lane past the forecourt. **Note:** Reviewed 26 Nov 2026: asphalt road; on the left a two-storey white building with a black 90 MILES sign, the white tower with a TV aerial and white walls with doors, a cement mixer and a blue lorry; on the right the hotel block, plane trees and low white buildings, a parked van. _Used by: picasso_beach_lane.json:picasso-lane-tower, ground_plan_picasso.json:picasso-beach-road-forecourt, ground_plan_picasso.json:picasso-beach-lane-concrete, ground_plan_picasso.json:picasso-beach-lane-footway._ |
 | [IMG_2823.jpg](../../public/photos-ref/IMG_2823.jpg) | ground | layout, materials, planting, view | Octagonal-paved lane with a lantana planter wall _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-paving._ |
 | [IMG_2485.jpg](../../public/photos-ref/IMG_2485.jpg) | ground | signage, facades, planting | Comunidad Villacana gate sign at the end of Calle Guillermo **Looks at:** Comunidad Villacana sign on the Guillermo gate wall. **Note:** 13 Nov: looksAt moved onto the sign beside the gate pier as now modelled. Subject offset (~2 m) from the pin is approximate. **Compass:** the subject is 120° from the phone heading; trust looksAt, not the heading. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2610.jpg](../../public/photos-ref/IMG_2610.jpg) | ground | materials, layout, levels | Barraka terrace paving, slot drain and curved sandstone wall under green railings **Looks at:** Curved sandstone wall and green railing at Barraka's west corner. **Note:** Pin +-4 m sits at Barraka's west corner; looksAt is a by-eye estimate of the curved wall about 8 m away. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
-| [IMG_3118.jpg](../../public/photos-ref/IMG_3118.jpg) | ground | layout, facades, view | Calle Pintor Picasso looking north-west from the lane's north end: tower and white buildings left, hotel and plane trees right **Looks at:** the road north-west from the lane past the forecourt. **Note:** Reviewed 26 Nov 2026: asphalt road; on the left a two-storey white building with a black 90 MILES sign, the white tower with a TV aerial and white walls with doors, a cement mixer and a blue lorry; on the right the hotel block, plane trees and low white buildings, a parked van. _Used by: picasso_beach_lane.json:picasso-lane-tower, ground_plan_picasso.json:picasso-beach-road-forecourt, ground_plan_picasso.json:picasso-beach-lane-concrete._ |
-| [IMG_3119.jpg](../../public/photos-ref/IMG_3119.jpg) | ground | layout, facades | Calle Pintor Picasso forecourt looking north-west: blue lorry by the tower, grey containers and utility sheds on the right **Looks at:** the forecourt between the pool building and the hotel's low block. **Note:** Reviewed 26 Nov 2026: the tower's base and white walls on the left with a blue lorry and building materials; on the right two big grey containers, small white utility sheds with brown doors and a low white wall; palms and plane trees beyond. _Used by: picasso_beach_lane.json:picasso-lane-tower, ground_plan_picasso.json:picasso-beach-road-forecourt._ |
 | [IMG_2611.jpg](../../public/photos-ref/IMG_2611.jpg) | ground | layout, materials, facades, signage | Paseo lane beside Barraka's north-west wall looking north-east **Looks at:** Barraka north-west wall. **Note:** Sandbags on black sheeting along the drain look temporary (flood protection), not a permanent feature. looksAt is the point 6 m along the phone heading from the pin at the west corner, beside the north-west wall; the same point the unsolved render already aimed at. Not a solved camera. _Used by: barraka_facade.json:barraka-facade._ |
+| [IMG_3119.jpg](../../public/photos-ref/IMG_3119.jpg) | ground | layout, facades | Calle Pintor Picasso forecourt looking north-west: blue lorry by the tower, grey containers and utility sheds on the right **Looks at:** the forecourt between the pool building and the hotel's low block. **Note:** Reviewed 26 Nov 2026: the tower's base and white walls on the left with a blue lorry and building materials; on the right two big grey containers, small white utility sheds with brown doors and a low white wall; palms and plane trees beyond. _Used by: ground_plan_picasso.json:picasso-beach-road-forecourt._ |
 | [IMG_2772.jpg](../../public/photos-ref/IMG_2772.jpg) | ground | layout, materials, planting, facades | Calle Guillermo looking north-north-west past the kiosk and lantana planter **Looks at:** Calle Guillermo looking north-north-west past the kiosk, Calle de Jorge plinth corner and lantana planter wall toward the main pool building. |
 | [IMG_2725.jpg](../../public/photos-ref/IMG_2725.jpg) | ground | layout, signage, levels | Barred gate view into a laundry corridor with a red studded ramp **Note:** Pin is on Calle Patricia/Guillermo beside a large white roofed block with +/-4.7 m; the heading looks into the block, but which building is not identifiable from the photo. |
 | [IMG_3068.jpg](../../public/photos-ref/IMG_3068.jpg) | ground | layout, materials, planting | Green bar fence on a sandstone base at the white pillar, palms and bananas behind |

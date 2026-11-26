@@ -81,7 +81,7 @@
   },
   "picasso_beach_lane.json:picasso-lane-tower": {
    "level": "estimated",
-   "why": "White tower with slits and an aerial in IMG_3105, 3106, 3118 and 3119; placed on the surface model's 5.2-5.7 m peak (2 m grid, about 1 m), footprint judged."
+   "why": "White tower with slits and an aerial in IMG_3105, 3106, 3118, 2613 and 3067; placed on the surface model's 9.6-9.7 m block at the bend by the hotel's low block, which the photos' bearings agree with (2 m grid, about 1 m), footprint judged."
   },
   "picasso_beach_lane.json:picasso-lane-east-terrace": {
    "level": "estimated",
@@ -93,11 +93,15 @@
   },
   "street:picasso-beach-lane": {
    "level": "estimated",
-   "why": "The lane between the pool building's sheds and lawn wall and the long eaved building, traced midway between their faces on the aerial (about 1 m); seen in IMG_2613, 3067, 3118, 3119. Width 4 m kept inside the 5.4-9.5 m between the faces; the photographed concrete is drawn as asphalt."
+   "why": "The lane between the pool building's sheds and lawn wall and the long eaved building on the aerial (about 1 m), seen in IMG_2613, 3067, 3118, 3119: a 3.2 m roadway from the west footway's kerb to the terrace wall, ending at the grate. The photographed concrete roadway is drawn as asphalt."
   },
   "ground_plan_picasso.json:picasso-beach-lane-concrete": {
    "level": "estimated",
    "why": "Concrete lane wall to wall in IMG_2613 and IMG_3067; bounded by the shed strip, the lawn wall and the terrace wall, about 1 m."
+  },
+  "ground_plan_picasso.json:picasso-beach-lane-footway": {
+   "level": "estimated",
+   "why": "Kerbed concrete footway along the west walls in IMG_2613 and IMG_3067, 1.3 m wide along the shed strip and lawn wall, about 1 m; kerb height judged."
   },
   "street:picasso": {
    "level": "estimated",

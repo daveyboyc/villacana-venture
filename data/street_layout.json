@@ -134,35 +134,31 @@
     {
       "id": "picasso-beach-lane",
       "name": "Calle Pintor Picasso",
-      "width": 4.0,
+      "width": 3.2,
       "points": [
         [
           3.5,
           70.0
         ],
         [
-          11.0,
-          78.0
+          11.15,
+          77.85
         ],
         [
-          18.5,
-          86.0
+          18.93,
+          85.59
         ],
         [
-          25.8,
-          94.0
+          26.4,
+          93.43
         ],
         [
-          27.05,
-          95.3
-        ],
-        [
-          27.6,
-          97.24
+          27.9,
+          95.75
         ]
       ],
       "surface": "asphalt",
-      "trust": "26 Nov 2026: the seaward end of Calle Pintor Picasso, the service lane between the pool building's sheds and the big-pool lawn wall on the west and the long eaved building (registry 6465801UF1366N parts 1-3) on the east, from the forecourt at (3.5, 70.0) through its mouth between the lawn wall's end and the terrace corner (about 5.4 m apart) to the paseo at (27.6, 97.24). Centreline midway between those faces on the aerial (they stand 9.5 m apart at the north end and 5.4 m at the paseo), about 1 m. 4 m wide so the lawn wall keeps clear; IMG_2613 and IMG_3067 show a concrete lane about 4-5 m wide with a drain grate and a bollard at the paseo, IMG_3118 and IMG_3119 the wider asphalt north of it. Levels from the laser survey: -1.44 m at the forecourt falling to -1.96 m at the paseo.",
+      "trust": "26 Nov 2026: the seaward end of Calle Pintor Picasso, the service lane between the pool building's sheds and the big-pool lawn wall on the west and the long eaved building (registry 6465801UF1366N parts 1-3) on the east, from the forecourt at (3.5, 70.0) to the drain grate at the paseo's edge, (27.9, 95.75). The faces either side stand 9.5 m apart at the north end and 5.3 m at the mouth (aerial, about 1 m). IMG_2613 and IMG_3067 show a kerbed concrete footway about 1.2-1.5 m wide along the west walls and the roadway, about 3.5 m, from its kerb to the terrace wall; so the ribbon is 3.2 m (the walls stand only 4.7 m apart face to face near the mouth, leaving room for the 1.3 m footway), shifted 0.6-0.75 m east of the midline from about z 80, and ends at the grate (the red paseo paving runs up to it). Levels from the laser survey: -1.44 m at the forecourt falling to about -1.95 m at the grate. Independent review 26 Nov 2026.",
       "aliases": [
         "Calle Picasso"
       ]

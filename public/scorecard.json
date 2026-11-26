@@ -727,7 +727,7 @@
     "generated": 32
    },
    "placement": {
-    "features": 24,
+    "features": 25,
     "verified": 0,
     "disputed": 12
    },
@@ -820,7 +820,7 @@
    },
    "confidence": {
     "photographed": 2,
-    "estimated": 21,
+    "estimated": 22,
     "inferred": 1,
     "registry": 0,
     "gaps": 2
@@ -830,8 +830,8 @@
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 39, 39 placed; no camera solved.",
     "Facades: 0 of 32 kit parts traced from photos.",
-    "How sure: 2 photographed, 21 estimated, 1 inferred, 2 known gaps.",
-    "Placement: 0 of 24 features verified, 19 open discrepancies.",
+    "How sure: 2 photographed, 22 estimated, 1 inferred, 2 known gaps.",
+    "Placement: 0 of 25 features verified, 19 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 0 still open; 8 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -1870,7 +1870,7 @@
     "generated": 274
    },
    "placement": {
-    "features": 34,
+    "features": 35,
     "verified": 0,
     "disputed": 10
    },
@@ -1935,7 +1935,7 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 34,
+    "estimated": 35,
     "inferred": 0,
     "registry": 0,
     "gaps": 4
@@ -1945,8 +1945,8 @@
     "Footprints: 46% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 28, 28 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
-    "How sure: 0 photographed, 34 estimated, 0 inferred, 4 known gaps.",
-    "Placement: 0 of 34 features verified, 12 open discrepancies.",
+    "How sure: 0 photographed, 35 estimated, 0 inferred, 4 known gaps.",
+    "Placement: 0 of 35 features verified, 12 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 13 still open; 8 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -3368,7 +3368,7 @@
     "generated": 106
    },
    "placement": {
-    "features": 20,
+    "features": 21,
     "verified": 0,
     "disputed": 2
    },
@@ -3393,7 +3393,7 @@
    },
    "confidence": {
     "photographed": 5,
-    "estimated": 15,
+    "estimated": 16,
     "inferred": 0,
     "registry": 0,
     "gaps": 3
@@ -3403,8 +3403,8 @@
     "Footprints: 66% stand on surveyed roof; best fit moves them 1.5 m.",
     "Photos: 101, 100 placed; no camera solved.",
     "Facades: 0 of 106 kit parts traced from photos.",
-    "How sure: 5 photographed, 15 estimated, 0 inferred, 3 known gaps.",
-    "Placement: 0 of 20 features verified, 2 open discrepancies.",
+    "How sure: 5 photographed, 16 estimated, 0 inferred, 3 known gaps.",
+    "Placement: 0 of 21 features verified, 2 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 0 still open; 1 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -3540,7 +3540,7 @@
     "generated": 2452
    },
    "placement": {
-    "features": 571,
+    "features": 572,
     "verified": 0,
     "disputed": 73
    },
@@ -3821,7 +3821,7 @@
    },
    "confidence": {
     "photographed": 95,
-    "estimated": 221,
+    "estimated": 222,
     "inferred": 23,
     "registry": 232,
     "gaps": 45
@@ -3831,8 +3831,8 @@
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 662, 642 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 95 photographed, 221 estimated, 23 inferred, 45 known gaps.",
-    "Placement: 0 of 571 features verified, 66 open discrepancies.",
+    "How sure: 95 photographed, 222 estimated, 23 inferred, 45 known gaps.",
+    "Placement: 0 of 572 features verified, 66 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 41 still open; 57 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {

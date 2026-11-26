@@ -12864,9 +12864,11 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "picasso_beach_lane.json:picasso-lane-tower",
    "picasso_beach_lane.json:picasso-lane-east-terrace",
    "picasso_beach_lane.json:picasso-lane-mouth",
-   "ground_plan_picasso.json:picasso-beach-lane-concrete"
+   "ground_plan_picasso.json:picasso-beach-lane-concrete",
+   "ground_plan_picasso.json:picasso-beach-lane-footway"
   ],
   "looksAt": [
    22.0,
@@ -22132,9 +22134,11 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "picasso_beach_lane.json:picasso-lane-tower",
    "picasso_beach_lane.json:picasso-lane-east-terrace",
    "picasso_beach_lane.json:picasso-lane-mouth",
-   "ground_plan_picasso.json:picasso-beach-lane-concrete"
+   "ground_plan_picasso.json:picasso-beach-lane-concrete",
+   "ground_plan_picasso.json:picasso-beach-lane-footway"
   ],
   "looksAt": [
    32.4,
@@ -22179,8 +22183,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "area:paseo",
-   "ground_plan_picasso.json:picasso-beach-lane-concrete",
    "street:picasso-beach-lane",
+   "ground_plan_picasso.json:picasso-beach-lane-concrete",
    "picasso_beach_lane.json:picasso-lane-east-terrace"
   ]
  },
@@ -23890,7 +23894,8 @@
   "citedBy": [
    "picasso_beach_lane.json:picasso-lane-tower",
    "ground_plan_picasso.json:picasso-beach-road-forecourt",
-   "ground_plan_picasso.json:picasso-beach-lane-concrete"
+   "ground_plan_picasso.json:picasso-beach-lane-concrete",
+   "ground_plan_picasso.json:picasso-beach-lane-footway"
   ],
   "looksAt": [
    -2.0,
@@ -23932,7 +23937,6 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "picasso_beach_lane.json:picasso-lane-tower",
    "ground_plan_picasso.json:picasso-beach-road-forecourt"
   ],
   "looksAt": [

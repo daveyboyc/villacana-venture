@@ -29,14 +29,15 @@ datum.
 | --- | --- | --- |
 | Road (`picasso`) | Continues from (-13.66, 45.75) round the low block's corner, (-9.5, 53.5), (-2.0, 63.0), to (3.5, 70.0); 6 m | Aerial's pale road surface; IMG_3118, 3119 |
 | Forecourt (ground plan, asphalt) | Between the low block, the pool building's north-east face and the plane-tree garden | Aerial; IMG_3118, 3119 |
-| Lane (`picasso-beach-lane`, new street) | (3.5, 70) to the paseo at (27.6, 97.24), midway between the faces either side; 4 m | Aerial; IMG_2613, 3067 |
+| Lane (`picasso-beach-lane`, new street) | (3.5, 70) to the drain grate at the paseo's edge, (27.9, 95.75); 3.2 m roadway shifted east of the midline from z ≈ 80 | Aerial; IMG_2613, 3067 |
+| West footway (ground plan, kerbed concrete) | 1.3 m along the shed strip's face and the lawn wall, kerb 0.12 m | IMG_2613, 3067, 3118 |
 | Lane concrete (ground plan) | Wall to wall either side of the ribbon | IMG_2613, 3067 |
-| Tower | 2.4 m square at (-6.5, 73.5), top 5.5 m over the datum, about 7 m above the road | Survey peak; IMG_3105, 3106, 3118, 3119 |
+| Tower | 2.6 m square at (-16.4, 54.7), at the bend by the hotel's low block; top 9.6 m over the datum, about 10.5 m above the road | Survey block (9.6-9.7 m); bearings from IMG_2613 and 3067; IMG_3105, 3106, 3118 |
 | East terrace | Low white wall, 0.9 m with a red coping, on the lane edge of registry strip `6465801UF1366N_part2`, which has 0 storeys; deep eaves over the strip at the long building's roofline in the model | IMG_2613; survey reads 2.33 m across the strip |
 | Lane mouth (Show details) | Blue-and-white bollard and a drain grate across the lane | IMG_3066, 3067, 2613 |
 
-**Widths.** The faces either side stand 9.5 m apart at the lane's north end and 5.4 m at its mouth, so the street
-ribbon is 4 m and the concrete fills the rest.
+**Widths.** The faces either side stand 9.5 m apart at the lane's north end. Near the mouth they are 4.7 m apart face to
+face. That leaves the 1.3 m footway and a 3.2 m roadway; the photos give about 3.5 m. The concrete fills the rest.
 
 **Levels.** The survey has the road at:
 
@@ -81,3 +82,25 @@ measurements.
 
 The lane's concrete was first drawn 0.02 m under the street ribbon. Where the terrain bends it broke through the
 asphalt, so it now sits at the ground plan's usual concrete height.
+
+## Independent review (26 November 2026)
+
+A reviewer agent that did not make the change checked the layout against the nine photos at full size, the aerial and
+the survey.
+
+- **Signed off:** the road round the low block, the forecourt and the east terrace.
+- **Fixed after review:**
+  - **Tower.** The survey spike first used at (-6.5, 73.5) is a palm behind the lawn wall; the aerial shows no tower
+    there. The tower is the 9.6-9.7 m block at x -17..-16, z 53..56, at the shared corner of registry parts
+    `6364501UF1366S_part1` and `part5`, on the road's west edge. The photos' bearings agree:
+    - IMG_2613 about 312° (313° to the new spot, 302° to the old one);
+    - IMG_3067 about 318° (314° new, 305° old).
+
+    IMG_3106's top against the sea horizon gives about 10 m.
+  - **Lane end.** The lane ran on to the paseo; it now ends at the grate, where the red paseo paving begins.
+  - **West footway.** The kerbed concrete footway along the west walls was missing. It is added, and the roadway is
+    narrowed and shifted east to suit.
+- **Not blocking:**
+  - The lane's roadway is concrete in the photos but drawn as asphalt.
+  - The red the photo shows on the terrace is mostly its tiled top, not only a coping.
+  - The bollard is on the paseo side of the grate (now moved there).

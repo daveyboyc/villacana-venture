@@ -17,21 +17,22 @@
  ],
  "tower": {
   "id": "picasso-lane-tower",
-  "name": "White tower with three slit openings and a television aerial, at the north-west end of the pool building's shed strip",
+  "name": "White tower with three slit openings and a television aerial, at the bend by the hotel's low block",
   "centre": [
-   -6.5,
-   73.5
+   -16.4,
+   54.7
   ],
-  "size": 2.4,
-  "turn": 44.5,
-  "top": 5.5,
+  "size": 2.6,
+  "turn": 46.0,
+  "top": 9.6,
   "evidence": [
    "IMG_3105.jpg",
    "IMG_3106.jpg",
    "IMG_3118.jpg",
-   "IMG_3119.jpg"
+   "IMG_2613.jpg",
+   "IMG_3067.jpg"
   ],
-  "trust": "IMG_3105 and IMG_3106 (looking south-east) and IMG_3118 and IMG_3119 (looking north-west) show a plain white square tower, about two storeys above its neighbours, with three narrow vertical slits near the top and a TV aerial, on the lane's west side where the pool building's sheds begin. The surface model has a 5.2-5.7 m top (over the datum) on a 2 m cell at about (-6.5, 73.5), about 7 m above the road; footprint 2.4 m square, turned to the shed strip, judged from the photos."
+  "trust": "IMG_3105 and IMG_3106 (looking south-east), IMG_3118 (just behind the lorry, about 27 m from the lane's north end) and IMG_2613 and IMG_3067 (bearings about 312-318 degrees from the lane's mouth) show a plain white square tower, about two storeys above its neighbours, with three narrow vertical slits near the top and a TV aerial, on the road's west side where it bends past the hotel's low block. The 2014-15 surface model has it as a 2 x 2-cell block reading 9.6-9.7 m over the datum at x -17..-16, z 53..56, standing above 4.2 m roofs at the shared corner of registry parts 6364501UF1366S_part1 and part5; the road there is at -1.0 m, so the tower stands about 10.5 m. IMG_3106's top against the sea horizon gives about 10 m at about 31 m. Footprint 2.6 m square, turned to part 1's road face, judged. (A first placement at (-6.5, 73.5) used a survey spike that is a palm behind the lawn wall; the independent review found it, 26 Nov 2026.)"
  },
  "eastTerrace": {
   "id": "picasso-lane-east-terrace",
@@ -72,8 +73,8 @@
   "id": "picasso-lane-mouth",
   "name": "The lane's mouth at the paseo: bollard and drain grate",
   "bollard": [
-   26.3,
-   95.7
+   26.9,
+   96.25
   ],
   "grate": {
    "centre": [
@@ -88,6 +89,6 @@
    "IMG_3067.jpg",
    "IMG_2613.jpg"
   ],
-  "trust": "IMG_3066, IMG_3067 and IMG_2613 show a blue bollard with white bands just inside the lane's mouth and a steel drain grate across the lane at the paseo's edge; positions read from those photos and the lane line, about 1 m. Show details only."
+  "trust": "IMG_3066, IMG_3067 and IMG_2613 show a blue bollard with white bands at the lane's mouth on the paseo side of the grate (IMG_3067) and a steel drain grate across the lane at the paseo's edge; positions read from those photos and the lane line, about 1 m. Show details only."
  }
 }

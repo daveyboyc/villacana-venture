@@ -714,6 +714,92 @@
         "IMG_3118.jpg"
       ],
       "traced": "map:ground"
+    },
+    {
+      "id": "picasso-beach-lane-footway",
+      "name": "Kerbed concrete footway along the west walls of the lane to the beach",
+      "kind": "apron",
+      "finish": "concrete",
+      "outline": [
+        [
+          0.25,
+          71.45
+        ],
+        [
+          8.2,
+          79.3
+        ],
+        [
+          9.35,
+          80.35
+        ],
+        [
+          15.1,
+          86.1
+        ],
+        [
+          24.6,
+          96.05
+        ],
+        [
+          25.54,
+          95.15
+        ],
+        [
+          16.03,
+          85.19
+        ],
+        [
+          10.25,
+          79.41
+        ],
+        [
+          9.1,
+          78.36
+        ],
+        [
+          1.16,
+          70.52
+        ]
+      ],
+      "corners": 0.1,
+      "hard": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "raise": 0.34,
+      "above": [
+        "picasso-beach-lane-concrete"
+      ],
+      "edges": [
+        {
+          "kind": "kerb",
+          "from": 5,
+          "to": 9,
+          "height": 0.12,
+          "base": 0.27,
+          "note": "Kerb along the footway's road side (IMG_2613, IMG_3067); its height is judged and left for the levels stage.",
+          "evidence": [
+            "IMG_2613.jpg",
+            "IMG_3067.jpg"
+          ]
+        }
+      ],
+      "note": "IMG_2613 (x 200-420) and IMG_3067 (x 0-560) show a kerbed concrete footway about 1.2-1.5 m wide along the white walls on the lane's west side, from the shed strip down to the paseo; IMG_3118 shows it continuing north beside the pool building. Drawn 1.3 m wide along the shed strip's face and the lawn wall, about 1 m; found by the independent review, 26 Nov 2026.",
+      "evidence": [
+        "IMG_2613.jpg",
+        "IMG_3067.jpg",
+        "IMG_3118.jpg"
+      ],
+      "traced": "map:ground"
     }
   ]
 }

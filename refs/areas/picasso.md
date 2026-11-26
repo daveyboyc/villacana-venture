@@ -16,7 +16,7 @@ Calle Pintor Picasso, the inner car-park access aisle and the Picasso car park.
 - 26 November 2026 (Dave: the grass area beside Calle Picasso is not at ground level): the grass strip between Calle de Picasso and the west bays is built raised, level with the path and stepping down with it, on a white retaining wall at the back of the bays (data/picasso_west_lawn.json, src/picasso-west-lawn.ts). The laser survey puts the wall's face 3.1 m west of the bays' car line and the grass up to 0.84 m above the cars about 30 m along, 0.45-0.6 m in the middle stretch and 0.1-0.3 m south of Cervantes, where the strip is broken for the lane. The terrain grid holds the car park at its own level up to the wall, and the car-park outline's west edge is the wall's face. Inferred: not photographed; the wall's finish, coping and any hedge on it are guesses.
 - 26 November 2026 (Dave circled the bin store and the road from it down to the beach; task picasso-bin-store-service-road, stages 1-2, docs/reviews/picasso-bin-store-service-road): south of the car park, Calle Pintor Picasso runs between the hotel's lower wing (east) and a utility row (west). The lower wing is registry part 6465301UF1366N_part3, given 0 storeys by the registry and so never built; the aerial shows its red flat roof on the registry line and the laser survey a flat top at 3.78 m over the datum, about 4.4 m above the road, so it is built as a single storey (IMG_3104, 3105, 3120-3122). The bin store is an open-topped walled yard about 2.8 m deep and 14 m long against the long wall's inner face and running on 2.5 m past its end: its front on the car park has the DEPOSITO BASURA doorway (IMG_3099, 3100), and its street face, flush with the wall's, the green sliding door (IMG_3124); IMG_3101 is taken from inside, looking at that door. West of the road, after the bin store's street face: a set-back wall, the Ormazabal substation with maroon doors (IMG_3123, 3106), a recessed grey gate, a white meter box and a dark slatted gate (IMG_2345, 3106, 3120), on a kerbed pavement that narrows to nothing at the street door. The ground west of the row is the raised garden, about 1.2 m above the road (2020-21 ground model). The earlier IMG_2345-only wall and brown-door front are replaced. All estimated; no camera solved. Open: the road on to the beach (gap:picasso-service-road-to-beach), whether part of the bin store is roofed, the row's exact lengths, and detail (signs, doors, igloos, ramps and railings at the wing's foot).
 - 26 November 2026 (Dave: add details to the outside, including the sign; Show details, data/picasso_service_frontage.json binStoreDetails, src/picasso-bin-store-details.ts): on the bin store's car-park front, north to south, the red EXTINTOR sign over a red fire-hose box, the blue motorbike-parking P sign, the white RUBBISH COLLECTION / DEPOSITO BASURA board, the green boarded double doors (north leaf open into the yard, south leaf shut), two prohibition roundels and a glazed cabinet, with bougainvillea along the top (IMG_3099, 3100). The doorway is 1.2 m wide and 2.15 m high, read against the 2.6 m front. On the street face: the shut green sliding door on a rail and hood running on north-west over the long wall, a yellow warning sign, switch box and lamp, and a concrete ramp down along the wall (IMG_3124, 3123). Inside, four yellow 1100 l containers side by side against the inner face of the car-park front in the yard's north half (Dave marked four bins on an Inspect screenshot and corrected the side, 26 Nov 2026; IMG_3103 shows the row). Positions read along each wall at its own scale, about 0.3 m. Still open: the conduit and low box on the set-back wall, the motorbike-bay markings, the shrub at the front's south end, the BASURA / RUBBISH BINS sign inside (IMG_3101).
-- 26 November 2026 (Dave circled the road on to the beach; task picasso-service-road-levels-and-beach, docs/reviews/picasso-beach-lane): Calle Pintor Picasso now runs on past the hotel's low block, round its corner and across an asphalt forecourt by the pool building (IMG_3118, 3119), then narrows into a 4 m lane (street picasso-beach-lane) between the pool building's sheds and the big-pool lawn wall on the west and the long eaved building (registry 6465801UF1366N parts 1-3) on the east, to the paseo at (27.6, 97.2) (IMG_2613, 3065-3068). The faces stand 9.5 m apart at the lane's north end and 5.4 m at its mouth. The laser survey has the road falling from -0.85 m at the low block to -1.96 m at the paseo; the terrain grid already follows it. Built as estimates: the white tower with slits and an aerial at the sheds' north-west end (top 5.5 m over the datum, about 7 m above the road), a low white wall with a red coping and deep eaves along the east building on its 0-storey registry strip (IMG_2613), and in Show details the blue-and-white bollard and drain grate at the mouth. Open: the forecourt's utility sheds and grey containers (IMG_3119), the 90 MILES building (IMG_3118), the lane's concrete finish (drawn as asphalt), and the level of the pavement by the utility row (picasso-service-pavement-level).
+- 26 November 2026 (Dave circled the road on to the beach; task picasso-service-road-levels-and-beach, docs/reviews/picasso-beach-lane): Calle Pintor Picasso now runs on past the hotel's low block, round its corner and across an asphalt forecourt by the pool building (IMG_3118, 3119), then narrows into a lane (street picasso-beach-lane, 3.2 m roadway) between the pool building's sheds and the big-pool lawn wall on the west and the long eaved building (registry 6465801UF1366N parts 1-3) on the east, with a kerbed 1.3 m concrete footway along the west walls, to the drain grate at the paseo's edge (IMG_2613, 3065-3068). The faces stand 9.5 m apart at the lane's north end and 4.7 m near its mouth. The laser survey has the road falling from -0.85 m at the low block to -1.96 m at the paseo; the terrain grid already follows it. Built as estimates: the white tower with slits and an aerial at the bend by the hotel's low block, on the road's west edge (survey block 9.6-9.7 m over the datum, about 10.5 m above the road; a first placement on a survey spike at (-6.5, 73.5) was a palm, found by the independent review), a low white wall with a red coping and deep eaves along the east building on its 0-storey registry strip (IMG_2613), and in Show details the blue-and-white bollard and drain grate at the mouth. Open: the forecourt's utility sheds and grey containers (IMG_3119), the 90 MILES building (IMG_3118), the lane's concrete finish (drawn as asphalt), and the level of the pavement by the utility row (picasso-service-pavement-level).
 
 ## Read first
 
@@ -55,75 +55,72 @@ graph LR
   F0 --> PIMG_2613_jpg(["IMG_2613"])
   F0 --> PIMG_3067_jpg(["IMG_3067"])
   F0 --> PIMG_3118_jpg(["IMG_3118"])
-  A --> F1["Asphalt forecourt where Calle Pintor Picasso passes the hotel's low block and the pool building · disputed"]
+  A --> F1["Kerbed concrete footway along the west walls of the lane to the beach · unreviewed"]
+  F1 --> PIMG_2613_jpg(["IMG_2613"])
+  F1 --> PIMG_3067_jpg(["IMG_3067"])
   F1 --> PIMG_3118_jpg(["IMG_3118"])
-  F1 --> PIMG_3119_jpg(["IMG_3119"])
-  A --> F2["Narrow planter west of the entry lane · unreviewed"]
-  F2 --> PIMG_3131_jpg(["IMG_3131"])
-  F2 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
-  F2 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  A --> F3["Gatehouse island: terracotta apron on a white kerb · unreviewed"]
+  A --> F2["Asphalt forecourt where Calle Pintor Picasso passes the hotel's low block and the pool building · disputed"]
+  F2 --> PIMG_3118_jpg(["IMG_3118"])
+  F2 --> PIMG_3119_jpg(["IMG_3119"])
+  A --> F3["Narrow planter west of the entry lane · unreviewed"]
+  F3 --> PIMG_3131_jpg(["IMG_3131"])
   F3 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
-  F3 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
   F3 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  A --> F4["Gatehouse island: round lawn bed · unreviewed"]
+  A --> F4["Gatehouse island: terracotta apron on a white kerb · unreviewed"]
   F4 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F4 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
   F4 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  A --> F5["Asphalt between Calle Pintor Picasso and the hotel's lower wing · unreviewed"]
-  F5 --> PIMG_3104_jpg(["IMG_3104"])
-  F5 --> PIMG_3105_jpg(["IMG_3105"])
-  F5 --> PIMG_3120_jpg(["IMG_3120"])
-  F5 --> PIMG_3121_jpg(["IMG_3121"])
-  F5 --> PIMG_3122_jpg(["IMG_3122"])
-  A --> F6["Car park north entrance: asphalt round the gatehouse island · unreviewed"]
-  F6 --> PIMG_3131_jpg(["IMG_3131"])
-  F6 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
-  F6 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
-  F6 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  A --> F7["Kerbed pavement along the utility row, west side of Calle Pintor Picasso south of the car park · unreviewed"]
-  F7 --> PIMG_2345_jpg(["IMG_2345"])
-  F7 --> PIMG_3105_jpg(["IMG_3105"])
-  F7 --> PIMG_3106_jpg(["IMG_3106"])
-  F7 --> PIMG_3123_jpg(["IMG_3123"])
-  F7 --> PIMG_3124_jpg(["IMG_3124"])
-  A --> F8["Terracotta path between the entry lane and the lawn strip · unreviewed"]
-  F8 --> PIMG_3131_jpg(["IMG_3131"])
-  F8 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  A --> F9["Lawn strip west of the entry lane, with the CALLE DE PICASSO plinth · unreviewed"]
+  A --> F5["Gatehouse island: round lawn bed · unreviewed"]
+  F5 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F5 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  A --> F6["Asphalt between Calle Pintor Picasso and the hotel's lower wing · unreviewed"]
+  F6 --> PIMG_3104_jpg(["IMG_3104"])
+  F6 --> PIMG_3105_jpg(["IMG_3105"])
+  F6 --> PIMG_3120_jpg(["IMG_3120"])
+  F6 --> PIMG_3121_jpg(["IMG_3121"])
+  F6 --> PIMG_3122_jpg(["IMG_3122"])
+  A --> F7["Car park north entrance: asphalt round the gatehouse island · unreviewed"]
+  F7 --> PIMG_3131_jpg(["IMG_3131"])
+  F7 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F7 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  F7 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  A --> F8["Kerbed pavement along the utility row, west side of Calle Pintor Picasso south of the car park · unreviewed"]
+  F8 --> PIMG_2345_jpg(["IMG_2345"])
+  F8 --> PIMG_3105_jpg(["IMG_3105"])
+  F8 --> PIMG_3106_jpg(["IMG_3106"])
+  F8 --> PIMG_3123_jpg(["IMG_3123"])
+  F8 --> PIMG_3124_jpg(["IMG_3124"])
+  A --> F9["Terracotta path between the entry lane and the lawn strip · unreviewed"]
   F9 --> PIMG_3131_jpg(["IMG_3131"])
   F9 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  A --> F10["White tower with three slit openings and a television aerial, at the north-west end of the pool building's shed strip · unreviewed"]
-  F10 --> PIMG_3105_jpg(["IMG_3105"])
-  F10 --> PIMG_3106_jpg(["IMG_3106"])
-  F10 --> PIMG_3118_jpg(["IMG_3118"])
-  F10 --> PIMG_3119_jpg(["IMG_3119"])
-  A --> F11["Exit barrier, east lane of the car park's north entrance, between the gatehouse island and the long wall · disputed"]
-  F11 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
-  F11 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  A --> F12["Gatehouse on the island between the car park's entry and exit lanes · unreviewed"]
-  F12 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  A --> F10["Lawn strip west of the entry lane, with the CALLE DE PICASSO plinth · unreviewed"]
+  F10 --> PIMG_3131_jpg(["IMG_3131"])
+  F10 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  A --> F11["White tower with three slit openings and a television aerial, at the bend by the hotel's low block · unreviewed"]
+  F11 --> PIMG_2613_jpg(["IMG_2613"])
+  F11 --> PIMG_3067_jpg(["IMG_3067"])
+  F11 --> PIMG_3105_jpg(["IMG_3105"])
+  F11 --> PIMG_3106_jpg(["IMG_3106"])
+  F11 --> PIMG_3118_jpg(["IMG_3118"])
+  A --> F12["Exit barrier, east lane of the car park's north entrance, between the gatehouse island and the long wall · disputed"]
   F12 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
   F12 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  A --> F13["Round hedged palm island in the main car park · unreviewed"]
-  F13 --> PIMG_3100_jpg(["IMG_3100"])
-  F13 --> PIMG_3189_jpg(["IMG_3189"])
-  A --> F14["Entry barrier, west lane of the car park's north entrance (boom, rest post and bollard) · disputed"]
-  F14 --> PIMG_3131_jpg(["IMG_3131"])
-  F14 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
-  F14 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  A --> F15["Long white wall between the car park and Calle Pintor Picasso · unreviewed"]
-  F15 --> PIMG_3124_jpg(["IMG_3124"])
-  F15 --> PIMG_3125_jpg(["IMG_3125"])
-  F15 --> PIMG_3129_jpg(["IMG_3129"])
-  A --> F16["North entrance · lantern by the plinth · unreviewed"]
-  F16 --> PIMG_3131_jpg(["IMG_3131"])
-  F16 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
-  F16 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
-  F16 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
-  F16 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
-  F16 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
-  F16 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
-  A --> F17["North entrance · notice pillar at the narrow planter · unreviewed"]
+  A --> F13["Gatehouse on the island between the car park's entry and exit lanes · unreviewed"]
+  F13 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F13 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  F13 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  A --> F14["Round hedged palm island in the main car park · unreviewed"]
+  F14 --> PIMG_3100_jpg(["IMG_3100"])
+  F14 --> PIMG_3189_jpg(["IMG_3189"])
+  A --> F15["Entry barrier, west lane of the car park's north entrance (boom, rest post and bollard) · disputed"]
+  F15 --> PIMG_3131_jpg(["IMG_3131"])
+  F15 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F15 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  A --> F16["Long white wall between the car park and Calle Pintor Picasso · unreviewed"]
+  F16 --> PIMG_3124_jpg(["IMG_3124"])
+  F16 --> PIMG_3125_jpg(["IMG_3125"])
+  F16 --> PIMG_3129_jpg(["IMG_3129"])
+  A --> F17["North entrance · lantern by the plinth · unreviewed"]
   F17 --> PIMG_3131_jpg(["IMG_3131"])
   F17 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
   F17 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
@@ -131,7 +128,7 @@ graph LR
   F17 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
   F17 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
   F17 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
-  A --> F18["North entrance · island strelitzias, cycads, tree and palm, planter bougainvillea · unreviewed"]
+  A --> F18["North entrance · notice pillar at the narrow planter · unreviewed"]
   F18 --> PIMG_3131_jpg(["IMG_3131"])
   F18 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
   F18 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
@@ -139,7 +136,7 @@ graph LR
   F18 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
   F18 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
   F18 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
-  A --> F19["North entrance · CALLE DE PICASSO plinth · unreviewed"]
+  A --> F19["North entrance · island strelitzias, cycads, tree and palm, planter bougainvillea · unreviewed"]
   F19 --> PIMG_3131_jpg(["IMG_3131"])
   F19 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
   F19 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
@@ -147,7 +144,7 @@ graph LR
   F19 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
   F19 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
   F19 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
-  A --> F20["North entrance · STOP, beach, no-entry and dead-end signs and the community board · unreviewed"]
+  A --> F20["North entrance · CALLE DE PICASSO plinth · unreviewed"]
   F20 --> PIMG_3131_jpg(["IMG_3131"])
   F20 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
   F20 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
@@ -155,7 +152,7 @@ graph LR
   F20 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
   F20 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
   F20 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
-  A --> F21["North entrance · gatehouse arched grilled windows · unreviewed"]
+  A --> F21["North entrance · STOP, beach, no-entry and dead-end signs and the community board · unreviewed"]
   F21 --> PIMG_3131_jpg(["IMG_3131"])
   F21 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
   F21 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
@@ -163,7 +160,7 @@ graph LR
   F21 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
   F21 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
   F21 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
-  A --> F22["North entrance · gatehouse wing walls · unreviewed"]
+  A --> F22["North entrance · gatehouse arched grilled windows · unreviewed"]
   F22 --> PIMG_3131_jpg(["IMG_3131"])
   F22 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
   F22 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
@@ -171,50 +168,58 @@ graph LR
   F22 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
   F22 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
   F22 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
-  A --> F23["Bin store: signs, doors, fire-safety boxes, bougainvillea and containers · disputed"]
-  F23 --> PIMG_3099_jpg(["IMG_3099"])
-  F23 --> PIMG_3100_jpg(["IMG_3100"])
-  F23 --> PIMG_3101_jpg(["IMG_3101"])
-  F23 --> PIMG_3103_jpg(["IMG_3103"])
-  F23 --> PIMG_3123_jpg(["IMG_3123"])
-  F23 --> PIMG_3124_jpg(["IMG_3124"])
-  A --> F24["Bin store: walled bin yard at the car park's south-east corner (DEPOSITO BASURA), open to the street through a green sliding door · disputed"]
+  A --> F23["North entrance · gatehouse wing walls · unreviewed"]
+  F23 --> PIMG_3131_jpg(["IMG_3131"])
+  F23 --> Pref_google_maps_03_street_view_loira_entry_barrier_2024_10_jpg(["03-street-view-loira-entry-barrier-2024-10"])
+  F23 --> Pref_google_maps_04_street_view_bolivia_exit_barrier_2024_10_jpg(["04-street-view-bolivia-exit-barrier-2024-10"])
+  F23 --> Pref_google_maps_05_3d_top_down_car_park_north_entrance_jpg(["05-3d-top-down-car-park-north-entrance"])
+  F23 --> Pref_google_maps_06_street_view_bolivia_gatehouse_north_2024_10_jpg(["06-street-view-bolivia-gatehouse-north-2024-10"])
+  F23 --> Pref_google_maps_07_street_view_bolivia_gatehouse_window_2024_10_jpg(["07-street-view-bolivia-gatehouse-window-2024-10"])
+  F23 --> Pref_google_maps_08_street_view_bolivia_exit_lane_2024_10_jpg(["08-street-view-bolivia-exit-lane-2024-10"])
+  A --> F24["Bin store: signs, doors, fire-safety boxes, bougainvillea and containers · disputed"]
   F24 --> PIMG_3099_jpg(["IMG_3099"])
   F24 --> PIMG_3100_jpg(["IMG_3100"])
   F24 --> PIMG_3101_jpg(["IMG_3101"])
   F24 --> PIMG_3103_jpg(["IMG_3103"])
   F24 --> PIMG_3123_jpg(["IMG_3123"])
   F24 --> PIMG_3124_jpg(["IMG_3124"])
-  A --> F25["Hotel's lower wing along Calle Pintor Picasso (registry 6465301UF1366N_part3) · disputed"]
-  F25 --> PIMG_2345_jpg(["IMG_2345"])
+  A --> F25["Bin store: walled bin yard at the car park's south-east corner (DEPOSITO BASURA), open to the street through a green sliding door · disputed"]
   F25 --> PIMG_3099_jpg(["IMG_3099"])
-  F25 --> PIMG_3104_jpg(["IMG_3104"])
-  F25 --> PIMG_3105_jpg(["IMG_3105"])
-  F25 --> PIMG_3120_jpg(["IMG_3120"])
-  F25 --> PIMG_3121_jpg(["IMG_3121"])
-  F25 --> PIMG_3122_jpg(["IMG_3122"])
-  A --> F26["White meter cabinet building beside the substation · unreviewed"]
+  F25 --> PIMG_3100_jpg(["IMG_3100"])
+  F25 --> PIMG_3101_jpg(["IMG_3101"])
+  F25 --> PIMG_3103_jpg(["IMG_3103"])
+  F25 --> PIMG_3123_jpg(["IMG_3123"])
+  F25 --> PIMG_3124_jpg(["IMG_3124"])
+  A --> F26["Hotel's lower wing along Calle Pintor Picasso (registry 6465301UF1366N_part3) · disputed"]
   F26 --> PIMG_2345_jpg(["IMG_2345"])
-  A --> F27["Set-back white wall between the bin store's street face and the substation · disputed"]
-  F27 --> PIMG_3123_jpg(["IMG_3123"])
-  F27 --> PIMG_3124_jpg(["IMG_3124"])
-  A --> F28["Narrow recessed grey gate between the substation and the meter box · unreviewed"]
-  F28 --> PIMG_2345_jpg(["IMG_2345"])
-  F28 --> PIMG_3106_jpg(["IMG_3106"])
-  F28 --> PIMG_3120_jpg(["IMG_3120"])
-  A --> F29["Dark slatted gate and fence beside the meter box · disputed"]
+  F26 --> PIMG_3099_jpg(["IMG_3099"])
+  F26 --> PIMG_3104_jpg(["IMG_3104"])
+  F26 --> PIMG_3105_jpg(["IMG_3105"])
+  F26 --> PIMG_3120_jpg(["IMG_3120"])
+  F26 --> PIMG_3121_jpg(["IMG_3121"])
+  F26 --> PIMG_3122_jpg(["IMG_3122"])
+  A --> F27["White meter cabinet building beside the substation · unreviewed"]
+  F27 --> PIMG_2345_jpg(["IMG_2345"])
+  A --> F28["Set-back white wall between the bin store's street face and the substation · disputed"]
+  F28 --> PIMG_3123_jpg(["IMG_3123"])
+  F28 --> PIMG_3124_jpg(["IMG_3124"])
+  A --> F29["Narrow recessed grey gate between the substation and the meter box · unreviewed"]
   F29 --> PIMG_2345_jpg(["IMG_2345"])
-  A --> F30["Electricity substation (Ormazabal kiosk) with maroon doors · disputed"]
+  F29 --> PIMG_3106_jpg(["IMG_3106"])
+  F29 --> PIMG_3120_jpg(["IMG_3120"])
+  A --> F30["Dark slatted gate and fence beside the meter box · disputed"]
   F30 --> PIMG_2345_jpg(["IMG_2345"])
-  F30 --> PIMG_3105_jpg(["IMG_3105"])
-  F30 --> PIMG_3106_jpg(["IMG_3106"])
-  F30 --> PIMG_3123_jpg(["IMG_3123"])
-  A --> F31["picasso boundary wall · unreviewed"]
+  A --> F31["Electricity substation (Ormazabal kiosk) with maroon doors · disputed"]
   F31 --> PIMG_2345_jpg(["IMG_2345"])
-  A --> F32["picasso stone plinth · unreviewed"]
+  F31 --> PIMG_3105_jpg(["IMG_3105"])
+  F31 --> PIMG_3106_jpg(["IMG_3106"])
+  F31 --> PIMG_3123_jpg(["IMG_3123"])
+  A --> F32["picasso boundary wall · unreviewed"]
   F32 --> PIMG_2345_jpg(["IMG_2345"])
-  A --> F33["picasso utility front · unreviewed"]
+  A --> F33["picasso stone plinth · unreviewed"]
   F33 --> PIMG_2345_jpg(["IMG_2345"])
+  A --> F34["picasso utility front · unreviewed"]
+  F34 --> PIMG_2345_jpg(["IMG_2345"])
 ```
 
 ## Placement evidence
@@ -224,6 +229,7 @@ graph LR
 | Feature | Placement | Photo diagnostics | Blockers |
 | --- | --- | --- | --- |
 | `ground_plan_picasso.json:picasso-beach-lane-concrete` | disputed | differs | open discrepancy photo-discrepancy:bd1a1210b0abfd53 |
+| `ground_plan_picasso.json:picasso-beach-lane-footway` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `ground_plan_picasso.json:picasso-beach-road-forecourt` | disputed | differs | open discrepancy photo-discrepancy:7cff269e7712cae1 |
 | `ground_plan_picasso.json:picasso-entry-planter` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `ground_plan_picasso.json:picasso-gatehouse-island` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -298,18 +304,18 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_3123.jpg](../../public/photos-ref/IMG_3123.jpg) | ground | facades, layout | Electrical substation doors and white utility building beside the service road **Looks at:** substation and utility building west of the service road. **Note:** Maroon steel doors with high-voltage signs and floor grilles, then a white flat-roofed utility building with a dark green door, a low rounded white block and a sloping door ramp; the long white wall continues north. _Used by: picasso_service_frontage.json:picasso-bin-yard, picasso_service_frontage.json:picasso-substation, picasso_service_frontage.json:picasso-bin-store-details, picasso_service_frontage.json:picasso-recess-wall, ground_plan_picasso.json:picasso-service-pavement._ |
 | [IMG_3124.jpg](../../public/photos-ref/IMG_3124.jpg) | ground | facades, layout | White utility building and the start of the long boundary wall **Looks at:** utility building at the south end of the long wall. **Note:** Flat-roofed white building with dark green door, a low rounded white block beside a sloping door ramp, and a kerbed footway; the long plain white wall runs on north-west along the road. _Used by: picasso_car_park.json:picasso-car-park-wall, picasso_service_frontage.json:picasso-bin-yard, picasso_service_frontage.json:picasso-bin-store-details, picasso_service_frontage.json:picasso-recess-wall, ground_plan_picasso.json:picasso-service-pavement._ |
 | [IMG_3106.jpg](../../public/photos-ref/IMG_3106.jpg) | ground | layout, facades, view | Service road south-east: maroon utility doors and the white tower **Looks at:** utility doors along the service road. **Note:** White utility buildings with maroon panelled doors (warning signs, graffiti) and drain grilles along a kerbed footway; the white tower and beach buildings at the end. _Used by: picasso_service_frontage.json:picasso-substation, picasso_service_frontage.json:picasso-service-gate, picasso_beach_lane.json:picasso-lane-tower, ground_plan_picasso.json:picasso-service-pavement._ |
+| [IMG_3118.jpg](../../public/photos-ref/IMG_3118.jpg) | ground | layout, facades, view | Calle Pintor Picasso looking north-west from the lane's north end: tower and white buildings left, hotel and plane trees right **Looks at:** the road north-west from the lane past the forecourt. **Note:** Reviewed 26 Nov 2026: asphalt road; on the left a two-storey white building with a black 90 MILES sign, the white tower with a TV aerial and white walls with doors, a cement mixer and a blue lorry; on the right the hotel block, plane trees and low white buildings, a parked van. _Used by: picasso_beach_lane.json:picasso-lane-tower, ground_plan_picasso.json:picasso-beach-road-forecourt, ground_plan_picasso.json:picasso-beach-lane-concrete, ground_plan_picasso.json:picasso-beach-lane-footway._ |
 | [IMG_3099.jpg](../../public/photos-ref/IMG_3099.jpg) | ground | layout, facades, signage | Bin store front: RUBBISH COLLECTION / DEPOSITO BASURA, hotel block behind **Looks at:** bin store front wall on the car park's south-east corner. **Note:** Low white building with bougainvillea along its top, a blue bicycle-parking sign, red fire-extinguisher box, a dark doorway under the RUBBISH COLLECTION / DEPOSITO BASURA sign, and painted bays in front. The long four-storey hotel block with balconies stands behind it to the east. _Used by: picasso_service_frontage.json:picasso-hotel-lower-wing, picasso_service_frontage.json:picasso-bin-yard, picasso_service_frontage.json:picasso-bin-store-details._ |
 | [IMG_3100.jpg](../../public/photos-ref/IMG_3100.jpg) | ground | layout, planting, view | From the bin store looking north-west across the car park to the round palm island **Looks at:** round hedged palm island in the car park. **Note:** Round island ringed by a clipped hedge on a white kerb, with tall Canary/date palms, a candelabra euphorbia and a fan palm clump; cars parked round it. The bin store wall with its sign is at the right edge. _Used by: picasso_car_park.json:picasso-car-park-island, picasso_service_frontage.json:picasso-bin-yard, picasso_service_frontage.json:picasso-bin-store-details._ |
-| [IMG_3118.jpg](../../public/photos-ref/IMG_3118.jpg) | ground | layout, facades, view | Calle Pintor Picasso looking north-west from the lane's north end: tower and white buildings left, hotel and plane trees right **Looks at:** the road north-west from the lane past the forecourt. **Note:** Reviewed 26 Nov 2026: asphalt road; on the left a two-storey white building with a black 90 MILES sign, the white tower with a TV aerial and white walls with doors, a cement mixer and a blue lorry; on the right the hotel block, plane trees and low white buildings, a parked van. _Used by: picasso_beach_lane.json:picasso-lane-tower, ground_plan_picasso.json:picasso-beach-road-forecourt, ground_plan_picasso.json:picasso-beach-lane-concrete._ |
 | [IMG_3120.jpg](../../public/photos-ref/IMG_3120.jpg) | ground | layout, view | Service road looking back north-west to the car park, hotel on the right **Looks at:** service road between hotel and utility buildings. **Note:** From the seaward end: hotel ground floor with loading ramps, a sliding gate and stacked materials on the right; maroon utility doors on the left; plane trees and palms beyond. GPS ±14 m. _Used by: picasso_service_frontage.json:picasso-hotel-lower-wing, picasso_service_frontage.json:picasso-service-gate, ground_plan_picasso.json:picasso-hotel-apron._ |
 | [IMG_3101.jpg](../../public/photos-ref/IMG_3101.jpg) | ground | facades, signage, materials | BASURA / RUBBISH BINS sign and green door of the bin store **Looks at:** bin store side wall and green door. **Note:** White wall over a grey-painted plinth band, BASURA RUBBISH BINS sign with arrow pointing left, recycling sign, green steel door under an arch. **Compass:** the subject is 56° from the phone heading; trust looksAt, not the heading. _Used by: picasso_service_frontage.json:picasso-bin-yard, picasso_service_frontage.json:picasso-bin-store-details._ |
 | [IMG_3121.jpg](../../public/photos-ref/IMG_3121.jpg) | ground | facades, layout, levels | Hotel ground floor along the service road: ramps, sliding gate, vent panels **Looks at:** hotel ground-floor frontage on the service road. **Note:** Four-storey hotel block with continuous balconies above a white ground-floor wall with pierced vent panels, two concrete ramps with red rails, a corrugated canopy over a grey sliding gate, and a street lamp. _Used by: picasso_service_frontage.json:picasso-hotel-lower-wing, ground_plan_picasso.json:picasso-hotel-apron._ |
 | [IMG_3103.jpg](../../public/photos-ref/IMG_3103.jpg) | ground | layout, materials | Inside the walled bin yard: yellow wheeled containers **Looks at:** walled bin yard. **Note:** Open-topped yard between white walls with grey plinth band, gravelly concrete floor, a row of yellow wheeled containers, a wall lantern on the right wall. Not a roofed building. _Used by: picasso_service_frontage.json:picasso-bin-yard, picasso_service_frontage.json:picasso-bin-store-details._ |
 | [IMG_3104.jpg](../../public/photos-ref/IMG_3104.jpg) | ground | layout, facades | Recycling igloos against the hotel's lower wall **Looks at:** recycling bins at the foot of the hotel wall. **Note:** Green glass igloos and grey/blue containers on the asphalt in front of a low stone base and steel rail, under the hotel's white ground-floor wall with two pierced vent panels. _Used by: picasso_service_frontage.json:picasso-hotel-lower-wing, ground_plan_picasso.json:picasso-hotel-apron._ |
-| [IMG_3119.jpg](../../public/photos-ref/IMG_3119.jpg) | ground | layout, facades | Calle Pintor Picasso forecourt looking north-west: blue lorry by the tower, grey containers and utility sheds on the right **Looks at:** the forecourt between the pool building and the hotel's low block. **Note:** Reviewed 26 Nov 2026: the tower's base and white walls on the left with a blue lorry and building materials; on the right two big grey containers, small white utility sheds with brown doors and a low white wall; palms and plane trees beyond. _Used by: picasso_beach_lane.json:picasso-lane-tower, ground_plan_picasso.json:picasso-beach-road-forecourt._ |
 | [IMG_3122.jpg](../../public/photos-ref/IMG_3122.jpg) | ground | layout, view | Service road looking north-north-west, hotel ramps right, utility doors left **Looks at:** service road towards the car park. _Used by: picasso_service_frontage.json:picasso-hotel-lower-wing, ground_plan_picasso.json:picasso-hotel-apron._ |
 | [IMG_3129.jpg](../../public/photos-ref/IMG_3129.jpg) | ground | layout, materials, planting | Service road looking north: long white wall left, cypress hedge right **Looks at:** service road along the long wall. **Note:** The wall continues straight and plain to a white building at the north end; tall cypress and pine hedge on the right. _Used by: picasso_car_park.json:picasso-car-park-wall._ |
 | [IMG_3189.jpg](../../public/photos-ref/IMG_3189.jpg) | ground | layout, levels, materials | Kerbed tiled path meeting the accessible bay, hedged palm island with bollard **Looks at:** kerb and tiled path at the accessible bays. **Note:** Terracotta walk between white kerbs ends at the asphalt; a kerb ramp and a tiled azulejo riser beside the accessible bay; a hedge-ringed bed with fan palms and a red-white bollard. Houses behind. _Used by: picasso_car_park.json:picasso-car-park-island._ |
+| [IMG_3119.jpg](../../public/photos-ref/IMG_3119.jpg) | ground | layout, facades | Calle Pintor Picasso forecourt looking north-west: blue lorry by the tower, grey containers and utility sheds on the right **Looks at:** the forecourt between the pool building and the hotel's low block. **Note:** Reviewed 26 Nov 2026: the tower's base and white walls on the left with a blue lorry and building materials; on the right two big grey containers, small white utility sheds with brown doors and a low white wall; palms and plane trees beyond. _Used by: ground_plan_picasso.json:picasso-beach-road-forecourt._ |
 | [IMG_3125.jpg](../../public/photos-ref/IMG_3125.jpg) | ground | layout, materials | Long white wall between the car park and Calle Pintor Picasso, cypress hedge opposite **Looks at:** long boundary wall along the service road. **Note:** Plain white rendered wall about 2.5-3 m high, no openings, running straight to the north end; asphalt road with a cypress hedge on its east side. The car park is behind the wall. _Used by: picasso_car_park.json:picasso-car-park-wall._ |
 | [IMG_3097.jpg](../../public/photos-ref/IMG_3097.jpg) | ground | layout, levels, materials, signage | Car park south end: accessible bays and the tiled step up to the office walk **Looks at:** accessible bays and tiled plaza edge at the car park's south end. **Note:** Two accessible bays (blue symbol, white lines) nose south to a low step with blue-and-white azulejo risers onto a terracotta-tiled walk that leads between clipped hedges to the community office; Canary and fan palms, resort directory sign and a solar lamp beside it. GPS pin ±17 m. |
 | [IMG_3098.jpg](../../public/photos-ref/IMG_3098.jpg) | ground | layout, levels, materials, planting | Car park south end: accessible bays, tiled step and hedged palm beds **Looks at:** tiled step and hedged palm beds at the car park's south end. **Note:** Same step as IMG_3097 from closer: two tiled risers with a blue-and-white azulejo band, red-white bollard by the east bed, hedged beds with palms and a Norfolk pine behind the office. |
