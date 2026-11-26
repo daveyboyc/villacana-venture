@@ -57394,7 +57394,7 @@
    "kind": "build-task",
    "name": "Bin store and Calle Pintor Picasso south of the car park: bin yard, utility row, hotel lower wing (layout)",
    "priority": 2,
-   "status": "in-progress",
+   "status": "open",
    "verification": "not-verified",
    "photoVerification": "unchecked",
    "placement": {
@@ -57416,9 +57416,9 @@
   {
    "id": "task:picasso-service-road-levels-and-beach",
    "kind": "build-task",
-   "name": "Calle Pintor Picasso south of the car park: levels behind the utility row, and the road on to the beach",
+   "name": "Calle Pintor Picasso south of the car park: levels behind the utility row and along the lane (the road on to the beach is built)",
    "priority": 2,
-   "status": "in-progress",
+   "status": "open",
    "verification": "not-verified",
    "photoVerification": "unchecked",
    "placement": {
@@ -57432,6 +57432,119 @@
      "picasso_beach_lane.json:picasso-lane-tower",
      "picasso_beach_lane.json:picasso-lane-east-terrace",
      "picasso_beach_lane.json:picasso-lane-mouth"
+    ]
+   }
+  },
+  {
+   "id": "task:tools-shoot-views-photo-camera",
+   "kind": "build-task",
+   "name": "scripts/shoot_views.cjs renders the whole-resort overview instead of the photo camera",
+   "priority": 1,
+   "status": "open",
+   "verification": "not-applicable",
+   "photoVerification": "not-applicable (tooling)",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   }
+  },
+  {
+   "id": "task:picasso-beach-forecourt-buildings",
+   "kind": "build-task",
+   "name": "Forecourt by the pool building: the utility sheds and grey containers, and the 90 MILES building",
+   "priority": 2,
+   "status": "open",
+   "verification": "not-verified",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-verified",
+    "features": [
+     "ground_plan_picasso.json:picasso-beach-road-forecourt",
+     "picasso_beach_lane.json:picasso-lane-tower"
+    ]
+   }
+  },
+  {
+   "id": "task:picasso-hotel-wing-detail",
+   "kind": "build-task",
+   "name": "Hotel lower wing along Calle Pintor Picasso: vent grilles, doors, sliding gate, ramps and railings, igloos",
+   "priority": 2,
+   "status": "open",
+   "verification": "not-verified",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-verified",
+    "features": [
+     "picasso_service_frontage.json:picasso-hotel-lower-wing",
+     "ground_plan_picasso.json:picasso-hotel-apron"
+    ]
+   }
+  },
+  {
+   "id": "task:picasso-utility-row-detail",
+   "kind": "build-task",
+   "name": "West utility row on Calle Pintor Picasso: substation doors and trellis, gates, meter box, conduit and grates",
+   "priority": 2,
+   "status": "open",
+   "verification": "not-verified",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-verified",
+    "features": [
+     "picasso_service_frontage.json:picasso-substation",
+     "picasso_service_frontage.json:picasso-service-gate",
+     "picasso_service_frontage.json:picasso-meter-box",
+     "picasso_service_frontage.json:picasso-slatted-gate",
+     "picasso_service_frontage.json:picasso-recess-wall"
+    ]
+   }
+  },
+  {
+   "id": "task:picasso-bin-store-finish",
+   "kind": "build-task",
+   "name": "Bin store: inside signs, terrazzo floor, lantern, motorbike bays, shrub and continuous bougainvillea",
+   "priority": 3,
+   "status": "open",
+   "verification": "not-verified",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-verified",
+    "features": [
+     "picasso_service_frontage.json:picasso-bin-store-details",
+     "picasso_service_frontage.json:picasso-bin-yard"
+    ]
+   }
+  },
+  {
+   "id": "task:picasso-beach-lane-finish",
+   "kind": "build-task",
+   "name": "Lane to the beach: concrete roadway, full-width grate and darker strip, eaves beams, terrace tiles, doors",
+   "priority": 3,
+   "status": "open",
+   "verification": "not-verified",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-verified",
+    "features": [
+     "street:picasso-beach-lane",
+     "picasso_beach_lane.json:picasso-lane-east-terrace",
+     "picasso_beach_lane.json:picasso-lane-mouth",
+     "ground_plan_picasso.json:picasso-beach-lane-concrete"
+    ]
+   }
+  },
+  {
+   "id": "task:picasso-service-road-planting",
+   "kind": "build-task",
+   "name": "Calle Pintor Picasso south of the car park: plane trees, cypress hedge, palms, and generated filler off",
+   "priority": 3,
+   "status": "open",
+   "verification": "not-verified",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-verified",
+    "features": [
+     "street:picasso"
     ]
    }
   },
@@ -151126,6 +151239,41 @@
    "relation": "in-area"
   },
   {
+   "from": "task:tools-shoot-views-photo-camera",
+   "to": "area:whole-resort",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:picasso-beach-forecourt-buildings",
+   "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:picasso-hotel-wing-detail",
+   "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:picasso-utility-row-detail",
+   "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:picasso-bin-store-finish",
+   "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:picasso-beach-lane-finish",
+   "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:picasso-service-road-planting",
+   "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
    "from": "task:calle-loira",
    "to": "ref:IMG_3133.jpg",
    "relation": "builds-from"
@@ -153456,6 +153604,166 @@
    "relation": "builds-from"
   },
   {
+   "from": "task:picasso-beach-forecourt-buildings",
+   "to": "ref:IMG_3118.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-beach-forecourt-buildings",
+   "to": "ref:IMG_3119.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-beach-forecourt-buildings",
+   "to": "ref:IMG_3105.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-hotel-wing-detail",
+   "to": "ref:IMG_3104.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-hotel-wing-detail",
+   "to": "ref:IMG_3120.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-hotel-wing-detail",
+   "to": "ref:IMG_3121.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-hotel-wing-detail",
+   "to": "ref:IMG_3122.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-hotel-wing-detail",
+   "to": "ref:IMG_2345.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-hotel-wing-detail",
+   "to": "ref:IMG_3105.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-utility-row-detail",
+   "to": "ref:IMG_3123.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-utility-row-detail",
+   "to": "ref:IMG_3106.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-utility-row-detail",
+   "to": "ref:IMG_3105.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-utility-row-detail",
+   "to": "ref:IMG_3124.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-utility-row-detail",
+   "to": "ref:IMG_2345.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-bin-store-finish",
+   "to": "ref:IMG_3099.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-bin-store-finish",
+   "to": "ref:IMG_3100.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-bin-store-finish",
+   "to": "ref:IMG_3101.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-bin-store-finish",
+   "to": "ref:IMG_3103.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-beach-lane-finish",
+   "to": "ref:IMG_2613.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-beach-lane-finish",
+   "to": "ref:IMG_3065.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-beach-lane-finish",
+   "to": "ref:IMG_3066.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-beach-lane-finish",
+   "to": "ref:IMG_3067.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-beach-lane-finish",
+   "to": "ref:IMG_3068.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-service-road-planting",
+   "to": "ref:IMG_3120.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-service-road-planting",
+   "to": "ref:IMG_3121.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-service-road-planting",
+   "to": "ref:IMG_3122.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-service-road-planting",
+   "to": "ref:IMG_2345.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-service-road-planting",
+   "to": "ref:IMG_3105.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-service-road-planting",
+   "to": "ref:IMG_3118.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-service-road-planting",
+   "to": "ref:IMG_3125.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-service-road-planting",
+   "to": "ref:IMG_3126.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-service-road-planting",
+   "to": "ref:IMG_3129.jpg",
+   "relation": "builds-from"
+  },
+  {
    "from": "task:calle-loira",
    "to": "task:ground-plan-framework",
    "relation": "depends-on"
@@ -153918,6 +154226,11 @@
   {
    "from": "task:picasso-service-road-levels-and-beach",
    "to": "task:picasso-bin-store-service-road",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:picasso-utility-row-detail",
+   "to": "task:picasso-service-road-levels-and-beach",
    "relation": "depends-on"
   },
   {
@@ -156378,6 +156691,86 @@
   {
    "from": "task:picasso-service-road-levels-and-beach",
    "to": "model:picasso_beach_lane.json:picasso-lane-mouth",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-beach-forecourt-buildings",
+   "to": "model:ground_plan_picasso.json:picasso-beach-road-forecourt",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-beach-forecourt-buildings",
+   "to": "model:picasso_beach_lane.json:picasso-lane-tower",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-hotel-wing-detail",
+   "to": "model:picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-hotel-wing-detail",
+   "to": "model:ground_plan_picasso.json:picasso-hotel-apron",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-utility-row-detail",
+   "to": "model:picasso_service_frontage.json:picasso-substation",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-utility-row-detail",
+   "to": "model:picasso_service_frontage.json:picasso-service-gate",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-utility-row-detail",
+   "to": "model:picasso_service_frontage.json:picasso-meter-box",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-utility-row-detail",
+   "to": "model:picasso_service_frontage.json:picasso-slatted-gate",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-utility-row-detail",
+   "to": "model:picasso_service_frontage.json:picasso-recess-wall",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-bin-store-finish",
+   "to": "model:picasso_service_frontage.json:picasso-bin-store-details",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-bin-store-finish",
+   "to": "model:picasso_service_frontage.json:picasso-bin-yard",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-beach-lane-finish",
+   "to": "model:street:picasso-beach-lane",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-beach-lane-finish",
+   "to": "model:picasso_beach_lane.json:picasso-lane-east-terrace",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-beach-lane-finish",
+   "to": "model:picasso_beach_lane.json:picasso-lane-mouth",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-beach-lane-finish",
+   "to": "model:ground_plan_picasso.json:picasso-beach-lane-concrete",
+   "relation": "changes-feature"
+  },
+  {
+   "from": "task:picasso-service-road-planting",
+   "to": "model:street:picasso",
    "relation": "changes-feature"
   },
   {

@@ -142,6 +142,12 @@ ready: 4, needs-evidence: 9, needs-source-access: 0, awaiting-review: 0, accepte
 - **photo open** `picasso-service-road-to-beach`: Photos along the service road every 15-20 m from the hotel's low block to the paseo, both directions. Why: the road's seaward half is seen only from 40-70 m away
 - Ready task: `ground-plan-picasso` — Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries
 - Ready task: `path-network-inventory-picasso` — Pintor Picasso and the car park: full-source path, tunnel and boundary inventory
+- Ready task: `picasso-beach-forecourt-buildings` — Forecourt by the pool building: the utility sheds and grey containers, and the 90 MILES building
+- Ready task: `picasso-bin-store-service-road` — Bin store and Calle Pintor Picasso south of the car park: bin yard, utility row, hotel lower wing (layout)
+- Ready task: `picasso-hotel-wing-detail` — Hotel lower wing along Calle Pintor Picasso: vent grilles, doors, sliding gate, ramps and railings, igloos
+- Ready task: `picasso-beach-lane-finish` — Lane to the beach: concrete roadway, full-width grate and darker strip, eaves beams, terrace tiles, doors
+- Ready task: `picasso-bin-store-finish` — Bin store: inside signs, terrazzo floor, lantern, motorbike bays, shrub and continuous bougainvillea
+- Ready task: `picasso-service-road-planting` — Calle Pintor Picasso south of the car park: plane trees, cypress hedge, palms, and generated filler off
 
 ## Loira, Bolivia, Alberto and Isabel
 
@@ -320,6 +326,7 @@ ready: 23, needs-evidence: 15, needs-source-access: 0, awaiting-review: 3, accep
 - Ready task: `north-pool-unresolved-plan` — North pool: resolve concealed ground edges, lane widths and remaining roof projections
 - Ready task: `retexture-surfaces` — Retexture plaster, terracotta and crazy paving from the photos
 - Ready task: `silvia-covered-passage-reference-audit` — Resolve the Silvia tunnel entrance, its components and connection to the lane
+- Ready task: `tools-shoot-views-photo-camera` — scripts/shoot_views.cjs renders the whole-resort overview instead of the photo camera
 - Ready task: `elena-25-passage` — Elena south: register the CALLE ELENA 25 covered passage and where it leads
 - Ready task: `enrique-shop-storey` — Enrique's: the shop storey above the street-level terrace at the head of the steps
 - Ready task: `ground-plan-cervantes` — Calle Miguel de Cervantes: smooth paths, patios and green spaces with their edges and boundaries
@@ -346,4 +353,10 @@ ready: 23, needs-evidence: 15, needs-source-access: 0, awaiting-review: 3, accep
 - Ready task: `path-network-inventory-south-pool` — South pool: full-source path, tunnel and boundary inventory
 - Ready task: `path-network-inventory-whole-resort` — The whole resort: full-source path, tunnel and boundary inventory
 - Ready task: `patricia-passage-reference-pack` — Patricia covered passage: trace the arch chain from the CALLE DE PATRICIA arch to the Silvia 22-44 mouth
+- Ready task: `picasso-beach-forecourt-buildings` — Forecourt by the pool building: the utility sheds and grey containers, and the 90 MILES building
+- Ready task: `picasso-bin-store-service-road` — Bin store and Calle Pintor Picasso south of the car park: bin yard, utility row, hotel lower wing (layout)
+- Ready task: `picasso-hotel-wing-detail` — Hotel lower wing along Calle Pintor Picasso: vent grilles, doors, sliding gate, ramps and railings, igloos
 - Ready task: `jorge-south-arcade-identity` — Eva-side covered passages: establish identity and position
+- Ready task: `picasso-beach-lane-finish` — Lane to the beach: concrete roadway, full-width grate and darker strip, eaves beams, terrace tiles, doors
+- Ready task: `picasso-bin-store-finish` — Bin store: inside signs, terrazzo floor, lantern, motorbike bays, shrub and continuous bougainvillea
+- Ready task: `picasso-service-road-planting` — Calle Pintor Picasso south of the car park: plane trees, cypress hedge, palms, and generated filler off

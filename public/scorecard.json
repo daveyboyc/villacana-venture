@@ -1925,8 +1925,8 @@
     }
    ],
    "tasks": {
-    "open": 2,
-    "inProgress": 5,
+    "open": 10,
+    "inProgress": 3,
     "titles": [
      "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory",
      "Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries",
@@ -2103,7 +2103,7 @@
       "state": "open"
      }
     ],
-    "readyTasks": 2
+    "readyTasks": 8
    },
    "light": {
     "colour": "red",
@@ -3811,8 +3811,8 @@
     }
    ],
    "tasks": {
-    "open": 52,
-    "inProgress": 64,
+    "open": 61,
+    "inProgress": 62,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -4686,7 +4686,7 @@
       "state": "open"
      }
     ],
-    "readyTasks": 40
+    "readyTasks": 47
    },
    "light": {
     "colour": "red",
