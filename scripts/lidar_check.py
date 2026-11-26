@@ -444,6 +444,20 @@ def grid(step=2.0, extent=(-270.0, -160.0, 130.0, 270.0)):
         weight *= west <= strip['wall']['offset'] + held['width']
         weight = np.where(np.isfinite(car), weight, 0)
         smooth = np.where(weight > 0, smooth + (np.nan_to_num(car) - smooth) * weight, smooth)
+    # Calle Pintor Picasso's kerbed pavement along the west utility row (data/picasso_service_frontage.json
+    # pavementHold): the ground behind the row stands 1.2-1.4 m over the road and the grid smooths that step
+    # across the pavement. Hold the pavement, and 'behind' metres past the row's faces, at the road's own level
+    # (read 'roadAt' metres out from the kerb), so the pavement is drawn flat its kerb height above the road.
+    ph = json.loads((ROOT / 'data/picasso_service_frontage.json').read_text())['pavementHold']
+    plan = {s['id']: s for s in json.loads((ROOT / 'data/ground_plan_picasso.json').read_text())['surfaces']}
+    kerb = np.asarray(ph['kerb'], float)
+    ku = (kerb[-1] - kerb[0]) / np.linalg.norm(kerb[-1] - kerb[0])
+    kn = np.array([ku[1], -ku[0]])  # the road side of the kerb
+    ks = np.clip((gx - kerb[0][0]) * ku[0] + (gz - kerb[0][1]) * ku[1], 0, np.linalg.norm(kerb[-1] - kerb[0]))
+    road = np.mean([ground.at(kerb[0][0] + ku[0] * ks + kn[0] * r, kerb[0][1] + ku[1] * ks + kn[1] * r) for r in ph['roadAt']], axis=0) - datum
+    pave = within(plan[ph['surface']]['outline'], ph['behind'])
+    weight = np.clip(distance_transform_edt(~pave) / ph['blend'], 0, 1)
+    smooth = np.where(np.isfinite(road), road + (smooth - np.nan_to_num(road)) * weight, smooth)
     k = int(round(step))
     coarse = smooth[::k, ::k]
     # Photographed flights of steps stay exact: siteY lays each as level ground, a straight rise over

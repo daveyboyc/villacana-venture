@@ -2127,6 +2127,42 @@
    "result": "differs",
    "followUp": "picasso-service-road-levels-and-beach",
    "notes": "Looking north up the lane: the low white terrace wall with its red coping, the deep eaves and the long building on the right and white walls on the left agree with the photo; the eaves' cantilever beams, the bicycles, the darker concrete strip and the lane's doors are not built. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-service-road-levels-and-beach",
+   "feature": "ground_plan_picasso.json:picasso-service-pavement",
+   "photo": "IMG_3124.jpg",
+   "render": "docs/reviews/picasso-service-road-levels-and-beach/IMG_3124-after.png",
+   "before": "docs/reviews/picasso-service-road-levels-and-beach/IMG_3124-before.png",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "result": "differs",
+   "followUp": "picasso-utility-row-detail",
+   "notes": "Levels: before, the pavement in front of the set-back wall humped up over the sloping terrain (up to about 1.2 m over the road at the wall foot); after, it runs flat one kerb (0.10-0.14 m) over the road to the wall, as the photo shows, with the level change behind the wall. Still differs in detail: the low white box with its dark opening at the wall foot, the conduit and the pavement's grates are not built (package 5). The render stands at the photo's pin (unsolved), so the framing differs from the photo; a photographic diagnostic of the levels, not placement approval."
+  },
+  {
+   "task": "picasso-service-road-levels-and-beach",
+   "feature": "ground_plan_picasso.json:picasso-service-pavement",
+   "photo": "IMG_3123.jpg",
+   "render": "docs/reviews/picasso-service-road-levels-and-beach/IMG_3123-after.png",
+   "before": "docs/reviews/picasso-service-road-levels-and-beach/IMG_3123-before.png",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "result": "differs",
+   "followUp": "picasso-utility-row-detail",
+   "notes": "Levels: before, the pavement rose in a bank into the recess beside the substation; after, it is flat over the road along the substation and into the recess, with the kerb line straight, as photographed. A slight rise of up to about 0.2 m remains in the corner by the bin store's street door, where the 2 m grid's nodes stand inside the yard. Still differs in detail: the substation's maroon doors, signs and mesh trellis, the low box and the grates (package 5). The render stands at the photo's pin (unsolved), so the framing differs from the photo; a photographic diagnostic of the levels, not placement approval."
+  },
+  {
+   "task": "picasso-service-road-levels-and-beach",
+   "feature": "ground_plan_picasso.json:picasso-service-pavement",
+   "photo": "IMG_3105.jpg",
+   "render": "docs/reviews/picasso-service-road-levels-and-beach/IMG_3105-after.png",
+   "before": "docs/reviews/picasso-service-road-levels-and-beach/IMG_3105-before.png",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "result": "differs",
+   "followUp": "picasso-hotel-wing-detail",
+   "notes": "Looking south down the road: before, the right-hand pavement banked up towards the utility row; after, it is a flat kerbed strip beside the road, as in the photo. The hotel side (left) is unchanged and agrees in level; the wing's vents, ramps, railings and the planting are not built (packages 4 and 8). The render stands at the photo's pin (unsolved), so the framing differs from the photo; a photographic diagnostic of the levels, not placement approval."
   }
  ],
  "legacyUnchecked": [

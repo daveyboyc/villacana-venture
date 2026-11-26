@@ -30,6 +30,35 @@
    -0.5191
   ]
  },
+ "pavementHold": {
+  "surface": "picasso-service-pavement",
+  "kerb": [
+   [
+    -35.59,
+    23.84
+   ],
+   [
+    -30.48,
+    30.08
+   ],
+   [
+    -25.33,
+    36.33
+   ],
+   [
+    -20.06,
+    42.71
+   ]
+  ],
+  "roadAt": [
+   1.0,
+   1.5,
+   2.0
+  ],
+  "behind": 2.0,
+  "blend": 1.0,
+  "note": "Read by scripts/lidar_check.py grid (task picasso-service-road-levels-and-beach, discrepancy picasso-service-pavement-level). The ground behind the utility row stands 1.2-1.4 m over the road (2020-21 ground model: +0.4 to +0.7 m against -0.6 to -0.85 m) and the 2 m terrain grid smoothed that step across the kerbed pavement, so the pavement rose towards the row's faces. The grid now holds the pavement's outline, grown by 'behind' metres (one 2 m grid cell past the row's faces, so no grid node behind a wall lifts the pavement's edge; also onto the road and round the bin yard's street-face corner), at the road's own level, read from the survey ground at 'roadAt' metres out from the kerb line (the outline's road edge, points 12-15) and averaged; it blends back to the survey over 'blend' metre more, so the raised garden behind the walls keeps its surveyed level. The pavement surface is drawn 0.34 m over the terrain plus the concrete's 0.05 m, and the road 0.27 m, so it stands flat 0.12 m over the road, as IMG_3123, IMG_3124 and IMG_3105 show. The level change to the raised garden is then behind the row's walls."
+ },
  "hotelWing": {
   "id": "picasso-hotel-lower-wing",
   "name": "Hotel's lower wing along Calle Pintor Picasso (registry 6465301UF1366N_part3)",

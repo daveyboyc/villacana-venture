@@ -1857,7 +1857,7 @@
     "placed": 28,
     "checks": {
      "matches": 2,
-     "differs": 11,
+     "differs": 14,
      "not-comparable": 0
     },
     "camerasSolved": 0,
@@ -1872,7 +1872,7 @@
    "placement": {
     "features": 35,
     "verified": 0,
-    "disputed": 10
+    "disputed": 11
    },
    "discrepancies": [
     {
@@ -1922,11 +1922,23 @@
     {
      "id": "photo-discrepancy:7cff269e7712cae1",
      "feature": "ground_plan_picasso.json:picasso-beach-road-forecourt"
+    },
+    {
+     "id": "photo-discrepancy:6f7e259da979a7bc",
+     "feature": "ground_plan_picasso.json:picasso-service-pavement"
+    },
+    {
+     "id": "photo-discrepancy:5e80078816244ebc",
+     "feature": "ground_plan_picasso.json:picasso-service-pavement"
+    },
+    {
+     "id": "photo-discrepancy:496aff94c91dd943",
+     "feature": "ground_plan_picasso.json:picasso-service-pavement"
     }
    ],
    "tasks": {
-    "open": 10,
-    "inProgress": 3,
+    "open": 9,
+    "inProgress": 4,
     "titles": [
      "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory",
      "Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries",
@@ -1938,15 +1950,15 @@
     "estimated": 35,
     "inferred": 0,
     "registry": 0,
-    "gaps": 4
+    "gaps": 5
    },
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey.",
     "Footprints: 46% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 28, 28 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
-    "How sure: 0 photographed, 35 estimated, 0 inferred, 4 known gaps.",
-    "Placement: 0 of 35 features verified, 12 open discrepancies.",
+    "How sure: 0 photographed, 35 estimated, 0 inferred, 5 known gaps.",
+    "Placement: 0 of 35 features verified, 15 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 13 still open; 8 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -3513,7 +3525,7 @@
     "placed": 642,
     "checks": {
      "matches": 57,
-     "differs": 60,
+     "differs": 63,
      "not-comparable": 67
     },
     "camerasSolved": 8,
@@ -3542,7 +3554,7 @@
    "placement": {
     "features": 572,
     "verified": 0,
-    "disputed": 73
+    "disputed": 74
    },
    "discrepancies": [
     {
@@ -3808,11 +3820,23 @@
     {
      "id": "photo-discrepancy:258c2534e7bd88df",
      "feature": "picasso_beach_lane.json:picasso-lane-east-terrace"
+    },
+    {
+     "id": "photo-discrepancy:6f7e259da979a7bc",
+     "feature": "ground_plan_picasso.json:picasso-service-pavement"
+    },
+    {
+     "id": "photo-discrepancy:5e80078816244ebc",
+     "feature": "ground_plan_picasso.json:picasso-service-pavement"
+    },
+    {
+     "id": "photo-discrepancy:496aff94c91dd943",
+     "feature": "ground_plan_picasso.json:picasso-service-pavement"
     }
    ],
    "tasks": {
-    "open": 60,
-    "inProgress": 62,
+    "open": 59,
+    "inProgress": 63,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -3824,15 +3848,15 @@
     "estimated": 222,
     "inferred": 23,
     "registry": 232,
-    "gaps": 45
+    "gaps": 46
    },
    "status": [
     "Ground: 95% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 662, 642 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 95 photographed, 222 estimated, 23 inferred, 45 known gaps.",
-    "Placement: 0 of 572 features verified, 66 open discrepancies.",
+    "How sure: 95 photographed, 222 estimated, 23 inferred, 46 known gaps.",
+    "Placement: 0 of 572 features verified, 69 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 41 still open; 57 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
