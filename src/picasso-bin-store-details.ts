@@ -11,7 +11,7 @@ import type { Vec2 } from "./types";
  * The car-park front: the RUBBISH COLLECTION / DEPOSITO BASURA board, the motorbike-parking sign, the red fire-hose box
  * and EXTINTOR sign, the glazed cabinet and roundels by the doorway, the green double doors (north leaf open) and the
  * bougainvillea along its top. The street face: the shut green sliding door on its rail, the yellow warning sign,
- * switch box, lamp and the concrete ramp. Inside: four yellow containers against the long wall (placed by Dave).
+ * switch box, lamp and the concrete ramp. Inside: four yellow containers against the front wall (placed by Dave).
  * Positions are along each wall, measured from the photos at the wall's own scale (about 0.3 m).
  */
 const PAVING = 0.27;
@@ -177,8 +177,8 @@ export function addPicassoBinStoreDetails(into: THREE.Scene, keep: (x: number, z
       ramp.name = "bin-store-ramp"; ramp.receiveShadow = true; root.add(ramp);
     } else omit("bin-store-ramp"); }
 
-  // Inside: four yellow 1100 l wheeled containers side by side against the long wall's inner face in the yard's north
-  // half (Dave, 26 Nov 2026), lids towards the front.
+  // Inside: four yellow 1100 l wheeled containers side by side against the front wall's inner face in the yard's north
+  // half (Dave, 26 Nov 2026; IMG_3103), lids towards the long wall.
   { const c = det.containers, [cw, cd, ch] = c.size, yellow = new THREE.MeshStandardMaterial({ color: c.colour, roughness: 0.6 }), dark = new THREE.MeshStandardMaterial({ color: "#1d1d1d", roughness: 0.8 });
     for (let i = 0; i < c.count; i++) {
       const t = c.from + ((c.to - c.from) * i) / Math.max(1, c.count - 1);
@@ -191,7 +191,7 @@ export function addPicassoBinStoreDetails(into: THREE.Scene, keep: (x: number, z
       for (const [wx, wz] of [[-cw / 2 + 0.15, -cd / 2 + 0.15], [cw / 2 - 0.15, -cd / 2 + 0.15], [-cw / 2 + 0.15, cd / 2 - 0.15], [cw / 2 - 0.15, cd / 2 - 0.15]]) {
         const w = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 0.1, 0.06, 10), dark); w.rotation.z = Math.PI / 2; w.position.set(wx, 0.1, wz); bin.add(w);
       }
-      bin.position.set(x, frontBase, z); bin.rotation.y = turn(frontOut); bin.traverse((o) => { o.castShadow = true; }); root.add(bin);
+      bin.position.set(x, frontBase, z); bin.rotation.y = turn([-frontOut[0], -frontOut[1]]); bin.traverse((o) => { o.castShadow = true; }); root.add(bin);
     } }
   into.add(root);
 }

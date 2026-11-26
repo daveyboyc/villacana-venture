@@ -111,7 +111,7 @@ assert abs(bd['street']['door']['t'] - y['streetDoor']['at']) < 1e-6 and bd['str
 c = bd['containers']
 assert c['count'] == 4, 'Dave: four containers in the yard'
 assert all(t + c['size'][0] / 2 <= front_len - 0.2 for t in (c['from'], c['to'])), 'containers inside the north end wall'
-assert abs((math.dist(*y['northEnd']) - y['thickness'] / 2) - (c['inward'] + c['size'][1] / 2)) < 0.1, 'containers stand against the long wall'
+assert abs(c['inward'] - (y['thickness'] / 2 + 0.05 + c['size'][1] / 2)) < 0.05, 'containers stand against the front wall inside the yard (Dave: the long-wall side was wrong)'
 assert all(t > y['doorway']['at'] + y['doorway']['width'] / 2 + 0.5 for t in (c['from'], c['to'])), 'containers stand clear of the doorway inside'
 src = (ROOT / 'src/slice.ts').read_text()
 assert 'if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addPicassoBinStoreDetails(into,keep)})' in src, 'bin store details are Show-details only'
