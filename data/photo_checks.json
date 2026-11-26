@@ -1975,6 +1975,104 @@
    "result": "differs",
    "followUp": "picasso-car-park-north-entrance",
    "notes": "Show details, same starting pose: the barrier, bollard and photocell are drawn as in Layout. The surroundings differ as in the Layout check. A photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-service-road",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-yard",
+   "photo": "IMG_3099.jpg",
+   "render": "docs/reviews/picasso-bin-store-service-road/IMG_3099-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-bin-store-service-road",
+   "notes": "Inspect from the phone pin: the bin store front faces the car park with its doorway, its street face and the long wall beyond, as in the photo. The pin (±3.1 m) stands closer to the front than the photo's camera, so the framing differs; the signs, bougainvillea, doors and the hotel's balconies are detail not built yet. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-service-road",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-yard",
+   "photo": "IMG_3101.jpg",
+   "render": "docs/reviews/picasso-bin-store-service-road/IMG_3101-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-bin-store-service-road",
+   "notes": "The photo is taken from inside the bin store's doorway looking at its street face and green sliding door; the pin is about 4 m off and outside the yard, so the render shows the front from the car park. The arch, door and BASURA sign are detail not built yet. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-service-road",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-yard",
+   "photo": "IMG_3103.jpg",
+   "render": "docs/reviews/picasso-bin-store-service-road/IMG_3103-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-bin-store-service-road",
+   "notes": "The pin stands on the road side of the long wall, so the render sees the yard from outside rather than from its gate looking along it; the open-topped yard between the front and the long wall is as built. The yellow containers are detail. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-service-road",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-substation",
+   "photo": "IMG_3105.jpg",
+   "render": "docs/reviews/picasso-bin-store-service-road/IMG_3105-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-service-road-levels-and-beach",
+   "notes": "Order and sides agree: the hotel's lower wing on the left with asphalt to its foot, the substation and the pavement close on the right. The pavement rises towards the row where the photo has it flat (picasso-service-pavement-level), and the road beyond the hotel's low block is not built (gap:picasso-service-road-to-beach). A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-service-road",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-substation",
+   "photo": "IMG_3106.jpg",
+   "render": "docs/reviews/picasso-bin-store-service-road/IMG_3106-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-bin-store-service-road",
+   "notes": "The substation with its brown cap stands close on the right, the road running on south-east. Its doors, louvres and trellis and the far utility buildings and tower are not built. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-service-road",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "photo": "IMG_3120.jpg",
+   "render": "docs/reviews/picasso-bin-store-service-road/IMG_3120-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-bin-store-service-road",
+   "notes": "Looking north-west up the road: the hotel's lower wing as a plain white storey on the right and the utility row on the left, in the photo's order. Its vent grilles, ramps, railings, sliding gate and the plane trees are not built. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-service-road",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-recess-wall",
+   "photo": "IMG_3123.jpg",
+   "render": "docs/reviews/picasso-bin-store-service-road/IMG_3123-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-service-road-levels-and-beach",
+   "notes": "The substation, the set-back wall and the bin store's street face stand in the photo's order with the long wall beyond. The pavement climbs into the recess where the photo has it flat (picasso-service-pavement-level); doors, louvres, the low box and the trellis are detail. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-service-road",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-yard",
+   "photo": "IMG_3124.jpg",
+   "render": "docs/reviews/picasso-bin-store-service-road/IMG_3124-pair.jpg",
+   "result": "matches",
+   "notes": "The bin store's street face continues the long wall's, with the kerbed pavement closing in on it and the long wall running on north-west, as in the photo. The door, ramp and conduit are detail. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-service-road",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-slatted-gate",
+   "photo": "IMG_2345.jpg",
+   "render": "docs/reviews/picasso-bin-store-service-road/IMG_2345-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-bin-store-service-road",
+   "notes": "The slatted gate, meter box, recessed gate, substation and the bin store's street face stand in the photo's order on the left, the hotel side on the right. The pin is about 4 m south-east of the photo's camera, so the gate fills less of the frame; the plinth, railings, igloos and plane trees are not compared. A photographic diagnostic from an unsolved pin, not placement approval."
   }
  ],
  "legacyUnchecked": [

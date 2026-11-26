@@ -815,14 +815,14 @@
     "estimated": 19,
     "inferred": 1,
     "registry": 0,
-    "gaps": 2
+    "gaps": 3
    },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey.",
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 39, 39 placed; no camera solved.",
     "Facades: 0 of 32 kit parts traced from photos.",
-    "How sure: 2 photographed, 19 estimated, 1 inferred, 2 known gaps.",
+    "How sure: 2 photographed, 19 estimated, 1 inferred, 3 known gaps.",
     "Placement: 0 of 22 features verified, 17 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 0 still open; 8 evidence requests. This is not whole-area acceptance."
    ],
@@ -1852,8 +1852,8 @@
     "tagged": 25,
     "placed": 26,
     "checks": {
-     "matches": 0,
-     "differs": 0,
+     "matches": 1,
+     "differs": 8,
      "not-comparable": 0
     },
     "camerasSolved": 0,
@@ -1866,19 +1866,51 @@
     "generated": 274
    },
    "placement": {
-    "features": 21,
+    "features": 30,
     "verified": 0,
-    "disputed": 2
+    "disputed": 7
    },
    "discrepancies": [
     {
      "id": "photo-discrepancy:00bed1bbb938338a",
      "feature": "picasso_car_park.json:picasso-car-park-north-barrier"
+    },
+    {
+     "id": "photo-discrepancy:72c914a52ae0ef8a",
+     "feature": "picasso_service_frontage.json:picasso-bin-yard"
+    },
+    {
+     "id": "photo-discrepancy:f94a522ab42d7c7e",
+     "feature": "picasso_service_frontage.json:picasso-bin-yard"
+    },
+    {
+     "id": "photo-discrepancy:4e5ced70d5d25718",
+     "feature": "picasso_service_frontage.json:picasso-bin-yard"
+    },
+    {
+     "id": "photo-discrepancy:50ccb60427e6794c",
+     "feature": "picasso_service_frontage.json:picasso-substation"
+    },
+    {
+     "id": "photo-discrepancy:b79af6717d7b8544",
+     "feature": "picasso_service_frontage.json:picasso-substation"
+    },
+    {
+     "id": "photo-discrepancy:4337caafbfe22f3b",
+     "feature": "picasso_service_frontage.json:picasso-hotel-lower-wing"
+    },
+    {
+     "id": "photo-discrepancy:0e02fa1062edc4c0",
+     "feature": "picasso_service_frontage.json:picasso-recess-wall"
+    },
+    {
+     "id": "photo-discrepancy:2f90b3dfbbaacd95",
+     "feature": "picasso_service_frontage.json:picasso-slatted-gate"
     }
    ],
    "tasks": {
-    "open": 2,
-    "inProgress": 3,
+    "open": 3,
+    "inProgress": 4,
     "titles": [
      "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory",
      "Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries",
@@ -1887,24 +1919,24 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 21,
+    "estimated": 30,
     "inferred": 0,
     "registry": 0,
-    "gaps": 1
+    "gaps": 3
    },
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey; streets within 0.23 m.",
     "Footprints: 46% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 26, 26 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
-    "How sure: 0 photographed, 21 estimated, 0 inferred, 1 known gap.",
-    "Placement: 0 of 21 features verified, 1 open discrepancy.",
-    "Model loop: 0 tracked findings accepted, 11 still open; 5 evidence requests. This is not whole-area acceptance."
+    "How sure: 0 photographed, 30 estimated, 0 inferred, 3 known gaps.",
+    "Placement: 0 of 30 features verified, 9 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 13 still open; 8 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
      "ready": 4,
-     "needs-evidence": 7,
+     "needs-evidence": 9,
      "needs-source-access": 0,
      "awaiting-review": 0,
      "accepted": 0
@@ -1996,14 +2028,87 @@
        "map:ground"
       ],
       "state": "open"
+     },
+     {
+      "id": "picasso-bin-store-front",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the car park, 6-8 m in front of the bin store, its whole front square-on with both ends in frame, one along it from the north end, and one through the doorway.",
+      "why": "the bin yard's length and south end are read from the 2 m laser grid and photos taken at its ends; whether part of it is roofed is not seen",
+      "photoRequest": "picasso-bin-store-front",
+      "features": [
+       "picasso_service_frontage.json:picasso-bin-yard",
+       "picasso_service_frontage.json:picasso-service-gate"
+      ],
+      "status": "open",
+      "sources": [
+       "IMG_3099.jpg",
+       "IMG_3103.jpg"
+      ],
+      "state": "open"
+     },
+     {
+      "id": "picasso-service-road-west-row",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the hotel side of the service road, square-on views of the bin store's street face, the substation and the meter box with the slatted gate, each with the kerb in frame, and one along the gate to its end.",
+      "why": "the row's lengths, its faces' set-back from the kerb and the pavement's level are judged from oblique views",
+      "photoRequest": "picasso-service-road-west-row",
+      "features": [
+       "picasso_service_frontage.json:picasso-substation",
+       "picasso_service_frontage.json:picasso-recess-wall",
+       "picasso_service_frontage.json:picasso-meter-box",
+       "picasso_service_frontage.json:picasso-slatted-gate",
+       "ground_plan_picasso.json:picasso-service-pavement"
+      ],
+      "status": "open",
+      "sources": [
+       "IMG_2345.jpg",
+       "IMG_3123.jpg",
+       "IMG_3124.jpg"
+      ],
+      "state": "open"
+     },
+     {
+      "id": "picasso-service-road-to-beach",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "Photos along the service road every 15-20 m from the hotel's low block to the paseo, both directions.",
+      "why": "the road's seaward half is seen only from 40-70 m away",
+      "photoRequest": "picasso-service-road-to-beach",
+      "features": [
+       "street:picasso"
+      ],
+      "status": "open",
+      "sources": [
+       "IMG_3105.jpg",
+       "IMG_3106.jpg"
+      ],
+      "state": "open"
      }
     ],
     "readyTasks": 2
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 5 spots",
+    "headline": "Photos needed: 8 spots",
     "requests": [
+     {
+      "id": "picasso-bin-store-front",
+      "at": [
+       -48.0,
+       19.0
+      ],
+      "look": [
+       -40.0,
+       17.0
+      ],
+      "ask": "From the car park, 6-8 m in front of the bin store (DEPOSITO BASURA), photograph its whole front square-on with both ends in frame and the long wall's end beyond; then one from the north end looking along the front to its south end, and one through the open doorway.",
+      "why": "the bin yard's length, where it ends north-west, and whether part of it is roofed are read from the 2 m laser grid and photos taken at its ends; one square-on view fixes the front's length and openings",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
      {
       "id": "picasso-car-park-centre-row",
       "at": [
@@ -2064,6 +2169,38 @@
       ],
       "ask": "From the middle aisle, photograph square-on to the west row of angled bays and the hedge behind them, then along the row in both directions; if there is a path behind the hedge, one photo along it.",
       "why": "no photo shows the west side of the car park, its hedge, or whether a footpath runs behind it",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-service-road-to-beach",
+      "at": [
+       0.0,
+       62.0
+      ],
+      "look": [
+       20.0,
+       90.0
+      ],
+      "ask": "Walk the service road from the hotel's low block to the beach and photograph along it every 15-20 m in both directions, with the buildings on both sides, the white tower with the aerial, and where the road meets the paseo.",
+      "why": "IMG_3105 and IMG_3106 only see the road's seaward half from 40-70 m away; the mapped road stops at the hotel's low block",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-service-road-west-row",
+      "at": [
+       -24.0,
+       30.0
+      ],
+      "look": [
+       -30.0,
+       34.0
+      ],
+      "ask": "From the hotel side of the service road, photograph square-on across to the west side at three spots: the bin store's street face with its green door, the substation with its maroon doors, and the meter box and slatted gate, each with the kerb in frame; then one along the slatted gate to where it ends.",
+      "why": "the row's order is clear but its lengths and how far each face stands back from the kerb are judged from oblique views; where the slatted gate ends is not seen",
       "priority": 2,
       "state": "open",
       "photos": []
@@ -3350,8 +3487,8 @@
     "tagged": 618,
     "placed": 642,
     "checks": {
-     "matches": 55,
-     "differs": 48,
+     "matches": 56,
+     "differs": 56,
      "not-comparable": 67
     },
     "camerasSolved": 8,
@@ -3378,9 +3515,9 @@
     "generated": 2452
    },
    "placement": {
-    "features": 555,
+    "features": 564,
     "verified": 0,
-    "disputed": 64
+    "disputed": 69
    },
    "discrepancies": [
     {
@@ -3598,11 +3735,43 @@
     {
      "id": "photo-discrepancy:00bed1bbb938338a",
      "feature": "picasso_car_park.json:picasso-car-park-north-barrier"
+    },
+    {
+     "id": "photo-discrepancy:72c914a52ae0ef8a",
+     "feature": "picasso_service_frontage.json:picasso-bin-yard"
+    },
+    {
+     "id": "photo-discrepancy:f94a522ab42d7c7e",
+     "feature": "picasso_service_frontage.json:picasso-bin-yard"
+    },
+    {
+     "id": "photo-discrepancy:4e5ced70d5d25718",
+     "feature": "picasso_service_frontage.json:picasso-bin-yard"
+    },
+    {
+     "id": "photo-discrepancy:50ccb60427e6794c",
+     "feature": "picasso_service_frontage.json:picasso-substation"
+    },
+    {
+     "id": "photo-discrepancy:b79af6717d7b8544",
+     "feature": "picasso_service_frontage.json:picasso-substation"
+    },
+    {
+     "id": "photo-discrepancy:4337caafbfe22f3b",
+     "feature": "picasso_service_frontage.json:picasso-hotel-lower-wing"
+    },
+    {
+     "id": "photo-discrepancy:0e02fa1062edc4c0",
+     "feature": "picasso_service_frontage.json:picasso-recess-wall"
+    },
+    {
+     "id": "photo-discrepancy:2f90b3dfbbaacd95",
+     "feature": "picasso_service_frontage.json:picasso-slatted-gate"
     }
    ],
    "tasks": {
-    "open": 52,
-    "inProgress": 62,
+    "open": 53,
+    "inProgress": 63,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -3611,24 +3780,24 @@
    },
    "confidence": {
     "photographed": 95,
-    "estimated": 205,
+    "estimated": 214,
     "inferred": 23,
     "registry": 232,
-    "gaps": 42
+    "gaps": 45
    },
    "status": [
     "Ground: 95% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 662, 642 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 95 photographed, 205 estimated, 23 inferred, 42 known gaps.",
-    "Placement: 0 of 555 features verified, 54 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 39 still open; 54 evidence requests. This is not whole-area acceptance."
+    "How sure: 95 photographed, 214 estimated, 23 inferred, 45 known gaps.",
+    "Placement: 0 of 564 features verified, 62 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 41 still open; 57 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
      "ready": 23,
-     "needs-evidence": 13,
+     "needs-evidence": 15,
      "needs-source-access": 0,
      "awaiting-review": 3,
      "accepted": 0
@@ -3817,6 +3986,63 @@
       "status": "open",
       "sources": [
        "map:ground"
+      ],
+      "state": "open"
+     },
+     {
+      "id": "picasso-bin-store-front",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the car park, 6-8 m in front of the bin store, its whole front square-on with both ends in frame, one along it from the north end, and one through the doorway.",
+      "why": "the bin yard's length and south end are read from the 2 m laser grid and photos taken at its ends; whether part of it is roofed is not seen",
+      "photoRequest": "picasso-bin-store-front",
+      "features": [
+       "picasso_service_frontage.json:picasso-bin-yard",
+       "picasso_service_frontage.json:picasso-service-gate"
+      ],
+      "status": "open",
+      "sources": [
+       "IMG_3099.jpg",
+       "IMG_3103.jpg"
+      ],
+      "state": "open"
+     },
+     {
+      "id": "picasso-service-road-west-row",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the hotel side of the service road, square-on views of the bin store's street face, the substation and the meter box with the slatted gate, each with the kerb in frame, and one along the gate to its end.",
+      "why": "the row's lengths, its faces' set-back from the kerb and the pavement's level are judged from oblique views",
+      "photoRequest": "picasso-service-road-west-row",
+      "features": [
+       "picasso_service_frontage.json:picasso-substation",
+       "picasso_service_frontage.json:picasso-recess-wall",
+       "picasso_service_frontage.json:picasso-meter-box",
+       "picasso_service_frontage.json:picasso-slatted-gate",
+       "ground_plan_picasso.json:picasso-service-pavement"
+      ],
+      "status": "open",
+      "sources": [
+       "IMG_2345.jpg",
+       "IMG_3123.jpg",
+       "IMG_3124.jpg"
+      ],
+      "state": "open"
+     },
+     {
+      "id": "picasso-service-road-to-beach",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "Photos along the service road every 15-20 m from the hotel's low block to the paseo, both directions.",
+      "why": "the road's seaward half is seen only from 40-70 m away",
+      "photoRequest": "picasso-service-road-to-beach",
+      "features": [
+       "street:picasso"
+      ],
+      "status": "open",
+      "sources": [
+       "IMG_3105.jpg",
+       "IMG_3106.jpg"
       ],
       "state": "open"
      },
@@ -4423,7 +4649,7 @@
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 43 spots",
+    "headline": "Photos needed: 46 spots",
     "requests": [
      {
       "id": "alberto",
@@ -4645,6 +4871,22 @@
       ],
       "ask": "Where the Calle Silvia lane crosses: one photo along Calle Jorge towards the sea showing the second white portal seen through the gateway, and one down each arm of the cross lane.",
       "why": "The second portal is photographed only through the gateway; where it stands is a guess",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-bin-store-front",
+      "at": [
+       -48.0,
+       19.0
+      ],
+      "look": [
+       -40.0,
+       17.0
+      ],
+      "ask": "From the car park, 6-8 m in front of the bin store (DEPOSITO BASURA), photograph its whole front square-on with both ends in frame and the long wall's end beyond; then one from the north end looking along the front to its south end, and one through the open doorway.",
+      "why": "the bin yard's length, where it ends north-west, and whether part of it is roofed are read from the 2 m laser grid and photos taken at its ends; one square-on view fixes the front's length and openings",
       "priority": 1,
       "state": "open",
       "photos": []
@@ -5029,6 +5271,38 @@
       ],
       "ask": "From the middle aisle, photograph square-on to the west row of angled bays and the hedge behind them, then along the row in both directions; if there is a path behind the hedge, one photo along it.",
       "why": "no photo shows the west side of the car park, its hedge, or whether a footpath runs behind it",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-service-road-to-beach",
+      "at": [
+       0.0,
+       62.0
+      ],
+      "look": [
+       20.0,
+       90.0
+      ],
+      "ask": "Walk the service road from the hotel's low block to the beach and photograph along it every 15-20 m in both directions, with the buildings on both sides, the white tower with the aerial, and where the road meets the paseo.",
+      "why": "IMG_3105 and IMG_3106 only see the road's seaward half from 40-70 m away; the mapped road stops at the hotel's low block",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-service-road-west-row",
+      "at": [
+       -24.0,
+       30.0
+      ],
+      "look": [
+       -30.0,
+       34.0
+      ],
+      "ask": "From the hotel side of the service road, photograph square-on across to the west side at three spots: the bin store's street face with its green door, the substation with its maroon doors, and the meter box and slatted gate, each with the kerb in frame; then one along the slatted gate to where it ends.",
+      "why": "the row's order is clear but its lengths and how far each face stands back from the kerb are judged from oblique views; where the slatted gate ends is not seen",
       "priority": 2,
       "state": "open",
       "photos": []

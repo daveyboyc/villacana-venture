@@ -5,8 +5,8 @@
     "wall": 27,
     "kerb": 4,
     "enclosure": 23,
-    "gap": 22,
-    "context": 43
+    "gap": 24,
+    "context": 45
   },
   "records": [
     {
@@ -4202,6 +4202,76 @@
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {
+      "id": "picasso_service_frontage.json:picasso-bin-yard",
+      "name": "Bin store: walled bin yard at the car park's south-east corner (DEPOSITO BASURA), open to the street through a green sliding door",
+      "kind": "context",
+      "points": [
+        [
+          -36.86,
+          27.53
+        ],
+        [
+          -44.13,
+          15.56
+        ],
+        [
+          -41.78,
+          14.14
+        ],
+        [
+          -35.59,
+          23.84
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "picasso"
+      ],
+      "evidence": [
+        "IMG_3099.jpg",
+        "IMG_3100.jpg",
+        "IMG_3101.jpg",
+        "IMG_3103.jpg",
+        "IMG_3123.jpg",
+        "IMG_3124.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. Open-topped bin yard (IMG_3099, 3100, 3101, 3103, 3123, 3124): its front with the DEPOSITO BASURA doorway on the car park, its street face with the green sliding door flush with the long wall's. Extent from the 2 m laser surface model (about 1 m) and the photos; no camera is solved. The doorway and street door are placed from the photos and an independent review, about 1-1.5 m.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "picasso_service_frontage.json:picasso-recess-wall",
+      "name": "Set-back white wall between the bin store's street face and the substation",
+      "kind": "context",
+      "points": [
+        [
+          -36.62,
+          27.39
+        ],
+        [
+          -33.15,
+          33.11
+        ],
+        [
+          -32.45,
+          32.69
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "picasso"
+      ],
+      "evidence": [
+        "IMG_3123.jpg",
+        "IMG_3124.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. Set-back white wall with a low box at its foot between the bin store's street face and the substation (IMG_3123, IMG_3124). The step back is judged from the photos, about 1 m.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
       "id": "picasso_west_lawn.json:picasso-west-lawn",
       "name": "Calle de Picasso · raised grass strip and its retaining wall at the back of the west bays",
       "kind": "context",
@@ -5854,6 +5924,45 @@
       "confidence": "gap",
       "placement": "unreviewed",
       "basis": "IMG_3131 shows a low white garden wall with a clipped hedge on top behind the CALLE DE PICASSO plinth, along the house side of the path, and IMG_3134 the same kind of wall at the east end of Juan Gris; it probably turns the corner between the two (discrepancy juan-gris-east-walls-order). Its line and length along the path are not traced, so it is not built.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:picasso-utility-row-part1-face",
+      "name": "Frontage along registry part 6364501UF1366S_part1 beside the service road",
+      "kind": "gap",
+      "points": [
+        [
+          -20.0,
+          50.0
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2345.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "IMG_2345's slatted gate runs out of frame towards this building; whether the gate, a wall or the building's own face lines the road here is not seen. The earlier brown-door utility front placed here was the substation's doors misplaced and is removed.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:picasso-bin-store-roofed-part",
+      "name": "Whether part of the bin store is roofed",
+      "kind": "gap",
+      "points": [
+        [
+          -40.0,
+          17.0
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_3099.jpg",
+        "IMG_3103.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "IMG_3099's doorway is dark, as if into a roofed room, while IMG_3103 and IMG_3101 show the yard open to the sky; IMG_3103's far wall reads only 6-7 m from its camera, so the open yard may end about 7 m north-west of the long wall's end with a separate bay beyond (independent review, 26 Nov 2026). Built as one open yard; a square-on view of the front and one from inside the doorway would settle it.",
       "levelState": "Evidence required before tracing or levelling."
     }
   ]

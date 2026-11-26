@@ -1962,7 +1962,13 @@
    "layout",
    "materials",
    "levels"
-  ]
+  ],
+  "looksAt": [
+   -21.0,
+   40.7
+  ],
+  "subject": "the service road north-west from the hotel's low block: slatted gate, meter box, substation and green-door building on the left, the hotel wing's plinth and ramp on the right",
+  "note": "Reviewed 26 Nov 2026: left, from near to far, a dark slatted gate, a white meter box, the maroon substation doors under a brown cap, the white building with a green door and the long wall; right, the hotel wing with a stone plinth, railings, a ramp and recycling bins under plane trees. The pin (±5.5 m) reads about 4 m south-east of the camera."
  },
  "IMG_2364.jpg": {
   "shows": [

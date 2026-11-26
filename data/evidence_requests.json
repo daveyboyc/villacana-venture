@@ -166,6 +166,60 @@
       "sources": [
         "map:ground"
       ]
+    },
+    {
+      "id": "picasso-bin-store-front",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the car park, 6-8 m in front of the bin store, its whole front square-on with both ends in frame, one along it from the north end, and one through the doorway.",
+      "why": "the bin yard's length and south end are read from the 2 m laser grid and photos taken at its ends; whether part of it is roofed is not seen",
+      "photoRequest": "picasso-bin-store-front",
+      "features": [
+        "picasso_service_frontage.json:picasso-bin-yard",
+        "picasso_service_frontage.json:picasso-service-gate"
+      ],
+      "status": "open",
+      "sources": [
+        "IMG_3099.jpg",
+        "IMG_3103.jpg"
+      ]
+    },
+    {
+      "id": "picasso-service-road-west-row",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the hotel side of the service road, square-on views of the bin store's street face, the substation and the meter box with the slatted gate, each with the kerb in frame, and one along the gate to its end.",
+      "why": "the row's lengths, its faces' set-back from the kerb and the pavement's level are judged from oblique views",
+      "photoRequest": "picasso-service-road-west-row",
+      "features": [
+        "picasso_service_frontage.json:picasso-substation",
+        "picasso_service_frontage.json:picasso-recess-wall",
+        "picasso_service_frontage.json:picasso-meter-box",
+        "picasso_service_frontage.json:picasso-slatted-gate",
+        "ground_plan_picasso.json:picasso-service-pavement"
+      ],
+      "status": "open",
+      "sources": [
+        "IMG_3123.jpg",
+        "IMG_3124.jpg",
+        "IMG_2345.jpg"
+      ]
+    },
+    {
+      "id": "picasso-service-road-to-beach",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "Photos along the service road every 15-20 m from the hotel's low block to the paseo, both directions.",
+      "why": "the road's seaward half is seen only from 40-70 m away",
+      "photoRequest": "picasso-service-road-to-beach",
+      "features": [
+        "street:picasso"
+      ],
+      "status": "open",
+      "sources": [
+        "IMG_3105.jpg",
+        "IMG_3106.jpg"
+      ]
     }
   ]
 }

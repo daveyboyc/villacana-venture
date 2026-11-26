@@ -14,7 +14,7 @@
  "evidence": [
   "IMG_2345.jpg"
  ],
- "trust": "Existing asphalt road retained. GPS camera uncertainty ±5.5 m; single-view frontage extents are estimates.",
+ "trust": "Existing asphalt road retained. GPS camera uncertainty ±5.5 m; single-view frontage extents are estimates. 26 Nov 2026: the boundary wall and utility front read from IMG_2345 alone are superseded by the utility row in data/picasso_service_frontage.json (IMG_3105, 3106, 3123, 3124).",
  "features": [
   {
    "id": "picasso-utility-front",
@@ -35,7 +35,9 @@
    "evidence": [
     "IMG_2345.jpg"
    ],
-   "trust": "Arrangement and materials visible in IMG_2345; bounded plan offsets and dimensions estimated from existing Picasso road and registry. No unseen continuation asserted."
+   "trust": "Arrangement and materials visible in IMG_2345; bounded plan offsets and dimensions estimated from existing Picasso road and registry. No unseen continuation asserted.",
+   "supersededBy": "picasso_service_frontage.json",
+   "superseded": "26 Nov 2026: not built. IMG_3105, 3106, 3123 and 3124 show the substation, meter box and slatted gate where this stood (see data/picasso_service_frontage.json supersededNote). Kept as a record for the placement graph, which has no retirement support yet."
   },
   {
    "id": "picasso-boundary-wall",
@@ -56,7 +58,9 @@
    "evidence": [
     "IMG_2345.jpg"
    ],
-   "trust": "Arrangement and materials visible in IMG_2345; bounded plan offsets and dimensions estimated from existing Picasso road and registry. No unseen continuation asserted."
+   "trust": "Arrangement and materials visible in IMG_2345; bounded plan offsets and dimensions estimated from existing Picasso road and registry. No unseen continuation asserted.",
+   "supersededBy": "picasso_service_frontage.json",
+   "superseded": "26 Nov 2026: not built. IMG_3105, 3106, 3123 and 3124 show the substation, meter box and slatted gate where this stood (see data/picasso_service_frontage.json supersededNote). Kept as a record for the placement graph, which has no retirement support yet."
   },
   {
    "id": "picasso-stone-plinth",

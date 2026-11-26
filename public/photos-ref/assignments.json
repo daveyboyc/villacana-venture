@@ -6,9 +6,9 @@
   "needs-review": 275,
   "suggested": 367,
   "photos": 646,
-  "features": 555,
-  "photosCitedByModel": 258,
-  "modelFeaturesWithPhotoCitations": 295
+  "features": 564,
+  "photosCitedByModel": 268,
+  "modelFeaturesWithPhotoCitations": 304
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -5408,7 +5408,13 @@
    "citedBy": [
     "picasso_service_road.json:picasso-utility-front",
     "picasso_service_road.json:picasso-boundary-wall",
-    "picasso_service_road.json:picasso-stone-plinth"
+    "picasso_service_road.json:picasso-stone-plinth",
+    "picasso_service_frontage.json:picasso-hotel-lower-wing",
+    "picasso_service_frontage.json:picasso-substation",
+    "picasso_service_frontage.json:picasso-meter-box",
+    "picasso_service_frontage.json:picasso-slatted-gate",
+    "picasso_service_frontage.json:picasso-service-gate",
+    "ground_plan_picasso.json:picasso-service-pavement"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -22893,7 +22899,10 @@
      "angleOffset": 22.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "picasso_service_frontage.json:picasso-hotel-lower-wing",
+    "picasso_service_frontage.json:picasso-bin-yard"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -50.7,
@@ -22926,7 +22935,8 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
-    "picasso_car_park.json:picasso-car-park-island"
+    "picasso_car_park.json:picasso-car-park-island",
+    "picasso_service_frontage.json:picasso-bin-yard"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -22970,7 +22980,9 @@
      "angleOffset": 2.9
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "picasso_service_frontage.json:picasso-bin-yard"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -40.5,
@@ -23002,7 +23014,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "picasso_service_frontage.json:picasso-bin-yard"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -36.6,
@@ -23045,7 +23059,10 @@
      "angleOffset": 3.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "picasso_service_frontage.json:picasso-hotel-lower-wing",
+    "ground_plan_picasso.json:picasso-hotel-apron"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -36.8,
@@ -23088,7 +23105,12 @@
      "angleOffset": 14.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "picasso_service_frontage.json:picasso-hotel-lower-wing",
+    "picasso_service_frontage.json:picasso-substation",
+    "ground_plan_picasso.json:picasso-service-pavement",
+    "ground_plan_picasso.json:picasso-hotel-apron"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -36.1,
@@ -23136,7 +23158,11 @@
      "angleOffset": 26.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "picasso_service_frontage.json:picasso-substation",
+    "picasso_service_frontage.json:picasso-service-gate",
+    "ground_plan_picasso.json:picasso-service-pavement"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -31.1,
@@ -23486,7 +23512,11 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "picasso_service_frontage.json:picasso-hotel-lower-wing",
+    "picasso_service_frontage.json:picasso-service-gate",
+    "ground_plan_picasso.json:picasso-hotel-apron"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -18.9,
@@ -23523,7 +23553,10 @@
      "angleOffset": 2.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "picasso_service_frontage.json:picasso-hotel-lower-wing",
+    "ground_plan_picasso.json:picasso-hotel-apron"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -16.9,
@@ -23555,7 +23588,10 @@
      "angleOffset": 25.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "picasso_service_frontage.json:picasso-hotel-lower-wing",
+    "ground_plan_picasso.json:picasso-hotel-apron"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -18.2,
@@ -23581,7 +23617,12 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "picasso_service_frontage.json:picasso-bin-yard",
+    "picasso_service_frontage.json:picasso-substation",
+    "picasso_service_frontage.json:picasso-recess-wall",
+    "ground_plan_picasso.json:picasso-service-pavement"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -23.1,
@@ -23608,7 +23649,10 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
-    "picasso_car_park.json:picasso-car-park-wall"
+    "picasso_car_park.json:picasso-car-park-wall",
+    "picasso_service_frontage.json:picasso-bin-yard",
+    "picasso_service_frontage.json:picasso-recess-wall",
+    "ground_plan_picasso.json:picasso-service-pavement"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {

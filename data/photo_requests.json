@@ -1050,6 +1050,60 @@
       "radius": 8,
       "since": "2026-11-25",
       "status": "open"
+    },
+    {
+      "id": "picasso-bin-store-front",
+      "area": "picasso",
+      "at": [
+        -48.0,
+        19.0
+      ],
+      "look": [
+        -40.0,
+        17.0
+      ],
+      "ask": "From the car park, 6-8 m in front of the bin store (DEPOSITO BASURA), photograph its whole front square-on with both ends in frame and the long wall's end beyond; then one from the north end looking along the front to its south end, and one through the open doorway.",
+      "why": "the bin yard's length, where it ends north-west, and whether part of it is roofed are read from the 2 m laser grid and photos taken at its ends; one square-on view fixes the front's length and openings",
+      "priority": 1,
+      "radius": 6,
+      "since": "2026-11-26",
+      "status": "open"
+    },
+    {
+      "id": "picasso-service-road-west-row",
+      "area": "picasso",
+      "at": [
+        -24.0,
+        30.0
+      ],
+      "look": [
+        -30.0,
+        34.0
+      ],
+      "ask": "From the hotel side of the service road, photograph square-on across to the west side at three spots: the bin store's street face with its green door, the substation with its maroon doors, and the meter box and slatted gate, each with the kerb in frame; then one along the slatted gate to where it ends.",
+      "why": "the row's order is clear but its lengths and how far each face stands back from the kerb are judged from oblique views; where the slatted gate ends is not seen",
+      "priority": 2,
+      "radius": 6,
+      "since": "2026-11-26",
+      "status": "open"
+    },
+    {
+      "id": "picasso-service-road-to-beach",
+      "area": "picasso",
+      "at": [
+        0.0,
+        62.0
+      ],
+      "look": [
+        20.0,
+        90.0
+      ],
+      "ask": "Walk the service road from the hotel's low block to the beach and photograph along it every 15-20 m in both directions, with the buildings on both sides, the white tower with the aerial, and where the road meets the paseo.",
+      "why": "IMG_3105 and IMG_3106 only see the road's seaward half from 40-70 m away; the mapped road stops at the hotel's low block",
+      "priority": 2,
+      "radius": 10,
+      "since": "2026-11-26",
+      "status": "open"
     }
   ]
 }
