@@ -1,4 +1,4 @@
-# Calle Pintor Picasso south of the car park: levels behind the utility row, and the road on to the beach
+# Calle Pintor Picasso south of the car park: levels behind the utility row and along the lane (the road on to the beach is built)
 
 Task `picasso-service-road-levels-and-beach` · area **Pintor Picasso and the car park** · priority P2 · layout
 
@@ -6,7 +6,7 @@ Task `picasso-service-road-levels-and-beach` · area **Pintor Picasso and the ca
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/picasso.md` and the contact sheet `reference/contact-sheets/picasso.jpg`
-- docs: `docs/STREET_LAYOUT.md`, `docs/reviews/picasso-car-park/README.md`, `docs/reviews/picasso-bin-store-service-road/README.md`, `docs/reviews/picasso-beach-lane/README.md`
+- docs: `docs/STREET_LAYOUT.md`, `docs/reviews/picasso-car-park/README.md`, `docs/reviews/picasso-bin-store-service-road/README.md`, `docs/reviews/picasso-beach-lane/README.md`, `docs/PICASSO_SOUTH_HANDOVER.md`
 - data: `data/street_layout.json`, `data/picasso_service_road.json`, `data/picasso_car_park.json`, `data/ground_plan_picasso.json`, `data/picasso_entrance_details.json`, `data/picasso_path_steps.json`, `data/picasso_west_lawn.json`, `data/picasso_service_frontage.json`, `data/picasso_beach_lane.json`, `data/terrain.json`
 - src: `src/picasso-service-road.ts`, `src/picasso-car-park.ts`, `src/car-park-barrier.ts`, `src/picasso-entrance-details.ts`, `src/ramp-steps.ts`, `src/picasso-west-lawn.ts`, `src/picasso-service-frontage.ts`, `src/picasso-beach-lane.ts`
 
@@ -23,7 +23,7 @@ Task `picasso-service-road-levels-and-beach` · area **Pintor Picasso and the ca
 
 ## Build
 
-Stage 3 for the stretch built in picasso-bin-store-service-road: hold the terrain grid at road level up to the utility row's faces so the kerbed pavement is flat (discrepancy picasso-service-pavement-level; regenerate data/terrain.json with scripts/lidar_check.py grid, do not hand-edit it), and check the bin yard floor and the hotel apron against the survey. Then lay out the road from the hotel's low block (registry 6465301UF1366N_part2) to the paseo: its line and width from the aerial, the buildings either side, the white tower, once the requested photos (picasso-service-road-to-beach) arrive.
+The road on to the beach was laid out in #311 (docs/reviews/picasso-beach-lane). Remaining, stage 3: hold the terrain grid at road level up to the utility row's faces so the kerbed pavement is flat about 0.12 m over the road (discrepancy picasso-service-pavement-level; regenerate data/terrain.json with scripts/lidar_check.py grid, as the car park is held to the west lawn's wall; do not hand-edit it). Then check against the survey the bin-yard floor, the hotel apron, the forecourt, the lane and its footway kerb, and the 2.0 m dip behind the low box at s about 4, e about -1.5. Package 2 in docs/PICASSO_SOUTH_HANDOVER.md.
 
 ## Do not
 
@@ -31,8 +31,8 @@ No change to Walk. No detail before the layout is signed off. Do not grade anyth
 
 ## Done when
 
-- [ ] Visible in Inspect in Layout and with Show details
-- [ ] Pavement flat about 0.12 m over the road in the IMG_3123 and IMG_3105 views
+- [ ] Pavement flat about 0.12 m over the road in Inspect from IMG_3123 and IMG_3105
+- [ ] picasso-service-pavement-level closed with before/after Inspect pairs
 - [ ] Structure signed off by a reviewer subagent
 - [ ] Standard checks in `docs/HANDOVER.md` pass (source checks, build, both browser tests)
 - [ ] New features cite their photos in `evidence`; area notes updated; `build_references.py --check` passes

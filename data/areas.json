@@ -419,7 +419,8 @@
     "docs/STREET_LAYOUT.md",
     "docs/reviews/picasso-car-park/README.md",
     "docs/reviews/picasso-bin-store-service-road/README.md",
-    "docs/reviews/picasso-beach-lane/README.md"
+    "docs/reviews/picasso-beach-lane/README.md",
+    "docs/PICASSO_SOUTH_HANDOVER.md"
    ],
    "data": [
     "data/street_layout.json",

@@ -6,7 +6,7 @@ Task `picasso-bin-store-service-road` · area **Pintor Picasso and the car park*
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/picasso.md` and the contact sheet `reference/contact-sheets/picasso.jpg`
-- docs: `docs/STREET_LAYOUT.md`, `docs/reviews/picasso-car-park/README.md`, `docs/reviews/picasso-bin-store-service-road/README.md`, `docs/reviews/picasso-beach-lane/README.md`
+- docs: `docs/STREET_LAYOUT.md`, `docs/reviews/picasso-car-park/README.md`, `docs/reviews/picasso-bin-store-service-road/README.md`, `docs/reviews/picasso-beach-lane/README.md`, `docs/PICASSO_SOUTH_HANDOVER.md`
 - data: `data/street_layout.json`, `data/picasso_service_road.json`, `data/picasso_car_park.json`, `data/ground_plan_picasso.json`, `data/picasso_entrance_details.json`, `data/picasso_path_steps.json`, `data/picasso_west_lawn.json`, `data/picasso_service_frontage.json`, `data/picasso_beach_lane.json`, `data/terrain.json`
 - src: `src/picasso-service-road.ts`, `src/picasso-car-park.ts`, `src/car-park-barrier.ts`, `src/picasso-entrance-details.ts`, `src/ramp-steps.ts`, `src/picasso-west-lawn.ts`, `src/picasso-service-frontage.ts`, `src/picasso-beach-lane.ts`
 
@@ -28,7 +28,7 @@ Task `picasso-bin-store-service-road` · area **Pintor Picasso and the car park*
 
 ## Build
 
-Dave (26 Nov 2026) circled the bin store (DEPOSITO BASURA) at the car park's south-east corner and the service road that leads from it to the beach. Stage 1 and 2 of the structure-first order: list the photo coverage, then lay out the bin yard against the long wall, the utility row on the road's west side (set-back wall, substation, recessed gate, meter box, slatted gate) with its kerbed pavement, and the hotel's lower wing on the east side with the asphalt to its foot. Heights from the laser survey.
+Stages 1-2 and the bin store's detail are built (#307-#310, docs/reviews/picasso-bin-store-service-road). Remaining before this task can be marked done: photo checks for IMG_3100, IMG_3104, IMG_3121 and IMG_3122 (render each with scripts/shoot_views.cjs once tools-shoot-views-photo-camera is fixed). Further detail is split into picasso-hotel-wing-detail, picasso-utility-row-detail and picasso-bin-store-finish (docs/PICASSO_SOUTH_HANDOVER.md).
 
 ## Do not
 

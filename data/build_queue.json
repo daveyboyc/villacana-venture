@@ -4145,7 +4145,7 @@
     "IMG_3124.jpg",
     "IMG_2345.jpg"
    ],
-   "build": "Dave (26 Nov 2026) circled the bin store (DEPOSITO BASURA) at the car park's south-east corner and the service road that leads from it to the beach. Stage 1 and 2 of the structure-first order: list the photo coverage, then lay out the bin yard against the long wall, the utility row on the road's west side (set-back wall, substation, recessed gate, meter box, slatted gate) with its kerbed pavement, and the hotel's lower wing on the east side with the asphalt to its foot. Heights from the laser survey.",
+   "build": "Stages 1-2 and the bin store's detail are built (#307-#310, docs/reviews/picasso-bin-store-service-road). Remaining before this task can be marked done: photo checks for IMG_3100, IMG_3104, IMG_3121 and IMG_3122 (render each with scripts/shoot_views.cjs once tools-shoot-views-photo-camera is fixed). Further detail is split into picasso-hotel-wing-detail, picasso-utility-row-detail and picasso-bin-store-finish (docs/PICASSO_SOUTH_HANDOVER.md).",
    "avoid": "No change to Walk. Do not grade anything photographed or measured: no camera here is solved. No detail (signs, doors, igloos, planting) before the layout is signed off.",
    "accept": [
     "Visible in Inspect in Layout and with Show details",
@@ -4165,15 +4165,14 @@
     "ground_plan_picasso.json:picasso-hotel-apron"
    ],
    "dependsOn": [],
-   "status": "in-progress",
-   "owner": "Claude"
+   "status": "open"
   },
   {
    "id": "picasso-service-road-levels-and-beach",
    "area": "picasso",
    "priority": 2,
    "kind": "layout",
-   "title": "Calle Pintor Picasso south of the car park: levels behind the utility row, and the road on to the beach",
+   "title": "Calle Pintor Picasso south of the car park: levels behind the utility row and along the lane (the road on to the beach is built)",
    "photos": [
     "IMG_3118.jpg",
     "IMG_3119.jpg",
@@ -4184,11 +4183,11 @@
     "IMG_3123.jpg",
     "IMG_3124.jpg"
    ],
-   "build": "Stage 3 for the stretch built in picasso-bin-store-service-road: hold the terrain grid at road level up to the utility row's faces so the kerbed pavement is flat (discrepancy picasso-service-pavement-level; regenerate data/terrain.json with scripts/lidar_check.py grid, do not hand-edit it), and check the bin yard floor and the hotel apron against the survey. Then lay out the road from the hotel's low block (registry 6465301UF1366N_part2) to the paseo: its line and width from the aerial, the buildings either side, the white tower, once the requested photos (picasso-service-road-to-beach) arrive.",
+   "build": "The road on to the beach was laid out in #311 (docs/reviews/picasso-beach-lane). Remaining, stage 3: hold the terrain grid at road level up to the utility row's faces so the kerbed pavement is flat about 0.12 m over the road (discrepancy picasso-service-pavement-level; regenerate data/terrain.json with scripts/lidar_check.py grid, as the car park is held to the west lawn's wall; do not hand-edit it). Then check against the survey the bin-yard floor, the hotel apron, the forecourt, the lane and its footway kerb, and the 2.0 m dip behind the low box at s about 4, e about -1.5. Package 2 in docs/PICASSO_SOUTH_HANDOVER.md.",
    "avoid": "No change to Walk. No detail before the layout is signed off. Do not grade anything photographed or measured without a solved camera.",
    "accept": [
-    "Visible in Inspect in Layout and with Show details",
-    "Pavement flat about 0.12 m over the road in the IMG_3123 and IMG_3105 views",
+    "Pavement flat about 0.12 m over the road in Inspect from IMG_3123 and IMG_3105",
+    "picasso-service-pavement-level closed with before/after Inspect pairs",
     "Structure signed off by a reviewer subagent"
    ],
    "features": [
@@ -4204,8 +4203,193 @@
    "dependsOn": [
     "picasso-bin-store-service-road"
    ],
-   "status": "in-progress",
-   "owner": "Claude"
+   "status": "open"
+  },
+  {
+   "id": "tools-shoot-views-photo-camera",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "scripts/shoot_views.cjs renders the whole-resort overview instead of the photo camera",
+   "photos": [],
+   "build": "node scripts/shoot_views.cjs IMG_xxxx (with or without --task/--as or --pose) now renders the whole-resort overview rather than the view from the photo's pin, on main as well (found 26 Nov 2026). Find which query parameter src/slice.ts no longer honours (compare the at=/look= and photocam= URLs the script builds with what slice.ts reads), fix the script or the page, prove it on IMG_3124 and IMG_2613, and note the fix in docs/HANDOVER.md. Package 1 in docs/PICASSO_SOUTH_HANDOVER.md.",
+   "avoid": "No geometry change. Do not change Walk.",
+   "accept": [
+    "shoot_views.cjs IMG_3124 shows the green sliding door and the long wall, not the overview",
+    "--pose --initial works for IMG_3099"
+   ],
+   "features": [],
+   "dependsOn": [],
+   "status": "open"
+  },
+  {
+   "id": "picasso-beach-forecourt-buildings",
+   "area": "picasso",
+   "priority": 2,
+   "kind": "layout",
+   "title": "Forecourt by the pool building: the utility sheds and grey containers, and the 90 MILES building",
+   "photos": [
+    "IMG_3118.jpg",
+    "IMG_3119.jpg",
+    "IMG_3105.jpg"
+   ],
+   "build": "Between the hotel's low block and the pool building (about x -10..8, z 50..68): the small white utility sheds with brown doors and two big grey containers on the forecourt's east side (IMG_3119), and the two-storey white building with the black 90 MILES sign beside the tower on the west side (IMG_3118). Footprints from the aerial and scripts/lidar_grid.py --surface; build as estimates with confidence entries and gaps for what the photos cannot fix. Package 3 in docs/PICASSO_SOUTH_HANDOVER.md.",
+   "avoid": "No change to Walk. Do not grade anything photographed or measured without a solved camera. Check every survey spike on the aerial: trees read as spikes.",
+   "accept": [
+    "Visible in Inspect in Layout",
+    "Structure signed off by a reviewer subagent"
+   ],
+   "features": [
+    "ground_plan_picasso.json:picasso-beach-road-forecourt",
+    "picasso_beach_lane.json:picasso-lane-tower"
+   ],
+   "dependsOn": [],
+   "status": "open"
+  },
+  {
+   "id": "picasso-hotel-wing-detail",
+   "area": "picasso",
+   "priority": 2,
+   "kind": "detail",
+   "title": "Hotel lower wing along Calle Pintor Picasso: vent grilles, doors, sliding gate, ramps and railings, igloos",
+   "photos": [
+    "IMG_3104.jpg",
+    "IMG_3120.jpg",
+    "IMG_3121.jpg",
+    "IMG_3122.jpg",
+    "IMG_2345.jpg",
+    "IMG_3105.jpg"
+   ],
+   "build": "Detail on the hotel's lower wing (data/picasso_service_frontage.json hotelWing): square vent grilles, doors and the sliding gate, the ramps, steps and railings on a stone plinth at its foot, and the recycling igloos and grey containers against it. The existing picasso-stone-plinth and picasso-ramp (data/picasso_service_road.json) stand inside registry part 6465301UF1366N_part2: re-place them on the wing's face from the photos and mark the old records superseded rather than deleting them. Package 4 in docs/PICASSO_SOUTH_HANDOVER.md.",
+   "avoid": "No change to Walk. Keep the wing's registry footprint and surveyed top. Detail goes in Show details; ramps and plinths that are structure go in Layout.",
+   "accept": [
+    "Visible in Inspect in Layout and with Show details",
+    "Photo checks recorded for the listed photos",
+    "Reviewed by a reviewer subagent against the full-size photos"
+   ],
+   "features": [
+    "picasso_service_frontage.json:picasso-hotel-lower-wing",
+    "ground_plan_picasso.json:picasso-hotel-apron"
+   ],
+   "dependsOn": [],
+   "status": "open"
+  },
+  {
+   "id": "picasso-utility-row-detail",
+   "area": "picasso",
+   "priority": 2,
+   "kind": "detail",
+   "title": "West utility row on Calle Pintor Picasso: substation doors and trellis, gates, meter box, conduit and grates",
+   "photos": [
+    "IMG_3123.jpg",
+    "IMG_3106.jpg",
+    "IMG_3105.jpg",
+    "IMG_3124.jpg",
+    "IMG_2345.jpg"
+   ],
+   "build": "Detail on the utility row (data/picasso_service_frontage.json): the substation's maroon doors with louvres, high-voltage signs, ORMAZABAL plate and the arched mesh trellis over its roof; the recessed gate's grey panels; the meter box's cabinet door; the slatted gate's boards; the white conduit and the low white box at the set-back wall's foot; the steel grates in the pavement. Package 5 in docs/PICASSO_SOUTH_HANDOVER.md.",
+   "avoid": "No change to Walk. Do not move the row's faces without a solved camera or the requested square-on photos (picasso-service-road-west-row).",
+   "accept": [
+    "Visible in Inspect with Show details",
+    "Photo checks recorded for the listed photos",
+    "Reviewed by a reviewer subagent against the full-size photos"
+   ],
+   "features": [
+    "picasso_service_frontage.json:picasso-substation",
+    "picasso_service_frontage.json:picasso-service-gate",
+    "picasso_service_frontage.json:picasso-meter-box",
+    "picasso_service_frontage.json:picasso-slatted-gate",
+    "picasso_service_frontage.json:picasso-recess-wall"
+   ],
+   "dependsOn": [
+    "picasso-service-road-levels-and-beach"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "picasso-bin-store-finish",
+   "area": "picasso",
+   "priority": 3,
+   "kind": "detail",
+   "title": "Bin store: inside signs, terrazzo floor, lantern, motorbike bays, shrub and continuous bougainvillea",
+   "photos": [
+    "IMG_3099.jpg",
+    "IMG_3100.jpg",
+    "IMG_3101.jpg",
+    "IMG_3103.jpg"
+   ],
+   "build": "Finish the bin store (data/picasso_service_frontage.json binStoreDetails, src/picasso-bin-store-details.ts): inside, the BASURA / RUBBISH BINS sign with its arrow and the recycling sign on the street-face wall (IMG_3101), the terrazzo floor and the wall lantern (IMG_3103); outside, the motorbike-bay markings (IMG_3099) and the shrub at the front's south end; the bougainvillea as one continuous green mass with few flowers. Discrepancy picasso-bin-yard-far-wall needs photo request picasso-bin-store-front before the yard's structure changes. Package 6 in docs/PICASSO_SOUTH_HANDOVER.md.",
+   "avoid": "Keep the four containers where Dave placed them (against the front wall, north half). No structural change without the requested photos.",
+   "accept": [
+    "Visible in Inspect with Show details",
+    "Photo checks recorded for the listed photos",
+    "Reviewed by a reviewer subagent against the full-size photos"
+   ],
+   "features": [
+    "picasso_service_frontage.json:picasso-bin-store-details",
+    "picasso_service_frontage.json:picasso-bin-yard"
+   ],
+   "dependsOn": [],
+   "status": "open"
+  },
+  {
+   "id": "picasso-beach-lane-finish",
+   "area": "picasso",
+   "priority": 3,
+   "kind": "detail",
+   "title": "Lane to the beach: concrete roadway, full-width grate and darker strip, eaves beams, terrace tiles, doors",
+   "photos": [
+    "IMG_2613.jpg",
+    "IMG_3065.jpg",
+    "IMG_3066.jpg",
+    "IMG_3067.jpg",
+    "IMG_3068.jpg"
+   ],
+   "build": "Finish the lane (street picasso-beach-lane, data/picasso_beach_lane.json, ground plan picasso-beach-lane-*): the roadway as photographed concrete rather than asphalt, the darker strip and the drain grate across the full width at the mouth, the eaves' cantilevered beams and the terrace's red-tiled top, and the doors in the west walls. Check whether the white pillar on the west corner and the chain-link on sandstone on the east corner are already in data/seafront_fence.json or data/paseo_wall.json before adding them. Package 7 in docs/PICASSO_SOUTH_HANDOVER.md.",
+   "avoid": "Street surfaces are asphalt or terracotta only; do it through the ground plan, keeping fills clear of the street ribbon's height so they do not break through it.",
+   "accept": [
+    "Visible in Inspect in Layout and with Show details",
+    "Photo checks recorded for the listed photos",
+    "Reviewed by a reviewer subagent against the full-size photos"
+   ],
+   "features": [
+    "street:picasso-beach-lane",
+    "picasso_beach_lane.json:picasso-lane-east-terrace",
+    "picasso_beach_lane.json:picasso-lane-mouth",
+    "ground_plan_picasso.json:picasso-beach-lane-concrete"
+   ],
+   "dependsOn": [],
+   "status": "open"
+  },
+  {
+   "id": "picasso-service-road-planting",
+   "area": "picasso",
+   "priority": 3,
+   "kind": "planting",
+   "title": "Calle Pintor Picasso south of the car park: plane trees, cypress hedge, palms, and generated filler off",
+   "photos": [
+    "IMG_3120.jpg",
+    "IMG_3121.jpg",
+    "IMG_3122.jpg",
+    "IMG_2345.jpg",
+    "IMG_3105.jpg",
+    "IMG_3118.jpg",
+    "IMG_3125.jpg",
+    "IMG_3126.jpg",
+    "IMG_3129.jpg"
+   ],
+   "build": "The big plane trees on the hotel side of the road, the cypress hedge on the road's east side along the long car-park wall, and the palms. Stage 4 first: list the generated filler on this stretch (the generic lawn patches and trees on the raised garden west of the utility row) and switch off what the photos contradict, with a photo-backed record. Trees whose canopy overhangs the road are marked canopyOverhangs in data/objects.json. Package 8 in docs/PICASSO_SOUTH_HANDOVER.md.",
+   "avoid": "Planting keeps the shared route-clearance guard (trunk 0.3 m for canopyOverhangs trees). No change to Walk.",
+   "accept": [
+    "Visible in Inspect with Show details",
+    "Photo checks recorded for the listed photos",
+    "Reviewed by a reviewer subagent against the full-size photos"
+   ],
+   "features": [
+    "street:picasso"
+   ],
+   "dependsOn": [],
+   "status": "open"
   }
 ]
 }

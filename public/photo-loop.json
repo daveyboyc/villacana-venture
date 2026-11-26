@@ -3982,9 +3982,70 @@
      "priority": 2,
      "dependencies": [],
      "requests": []
+    },
+    {
+     "id": "picasso-beach-forecourt-buildings",
+     "title": "Forecourt by the pool building: the utility sheds and grey containers, and the 90 MILES building",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "picasso-bin-store-service-road",
+     "title": "Bin store and Calle Pintor Picasso south of the car park: bin yard, utility row, hotel lower wing (layout)",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "picasso-hotel-wing-detail",
+     "title": "Hotel lower wing along Calle Pintor Picasso: vent grilles, doors, sliding gate, ramps and railings, igloos",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "picasso-beach-lane-finish",
+     "title": "Lane to the beach: concrete roadway, full-width grate and darker strip, eaves beams, terrace tiles, doors",
+     "priority": 3,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "picasso-bin-store-finish",
+     "title": "Bin store: inside signs, terrazzo floor, lantern, motorbike bays, shrub and continuous bougainvillea",
+     "priority": 3,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "picasso-service-road-planting",
+     "title": "Calle Pintor Picasso south of the car park: plane trees, cypress hedge, palms, and generated filler off",
+     "priority": 3,
+     "dependencies": [],
+     "requests": []
     }
    ],
-   "waitingTasks": []
+   "waitingTasks": [
+    {
+     "id": "picasso-service-road-levels-and-beach",
+     "title": "Calle Pintor Picasso south of the car park: levels behind the utility row and along the lane (the road on to the beach is built)",
+     "priority": 2,
+     "dependencies": [
+      "picasso-bin-store-service-road"
+     ],
+     "requests": []
+    },
+    {
+     "id": "picasso-utility-row-detail",
+     "title": "West utility row on Calle Pintor Picasso: substation doors and trellis, gates, meter box, conduit and grates",
+     "priority": 2,
+     "dependencies": [
+      "picasso-service-road-levels-and-beach"
+     ],
+     "requests": []
+    }
+   ]
   },
   {
    "id": "north-lanes",
@@ -12000,6 +12061,13 @@
      "requests": []
     },
     {
+     "id": "tools-shoot-views-photo-camera",
+     "title": "scripts/shoot_views.cjs renders the whole-resort overview instead of the photo camera",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
      "id": "elena-25-passage",
      "title": "Elena south: register the CALLE ELENA 25 covered passage and where it leads",
      "priority": 2,
@@ -12182,8 +12250,50 @@
      "requests": []
     },
     {
+     "id": "picasso-beach-forecourt-buildings",
+     "title": "Forecourt by the pool building: the utility sheds and grey containers, and the 90 MILES building",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "picasso-bin-store-service-road",
+     "title": "Bin store and Calle Pintor Picasso south of the car park: bin yard, utility row, hotel lower wing (layout)",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "picasso-hotel-wing-detail",
+     "title": "Hotel lower wing along Calle Pintor Picasso: vent grilles, doors, sliding gate, ramps and railings, igloos",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
      "id": "jorge-south-arcade-identity",
      "title": "Eva-side covered passages: establish identity and position",
+     "priority": 3,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "picasso-beach-lane-finish",
+     "title": "Lane to the beach: concrete roadway, full-width grate and darker strip, eaves beams, terrace tiles, doors",
+     "priority": 3,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "picasso-bin-store-finish",
+     "title": "Bin store: inside signs, terrazzo floor, lantern, motorbike bays, shrub and continuous bougainvillea",
+     "priority": 3,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "picasso-service-road-planting",
+     "title": "Calle Pintor Picasso south of the car park: plane trees, cypress hedge, palms, and generated filler off",
      "priority": 3,
      "dependencies": [],
      "requests": []
@@ -12301,6 +12411,24 @@
      "priority": 2,
      "dependencies": [
       "eva-lane-details"
+     ],
+     "requests": []
+    },
+    {
+     "id": "picasso-service-road-levels-and-beach",
+     "title": "Calle Pintor Picasso south of the car park: levels behind the utility row and along the lane (the road on to the beach is built)",
+     "priority": 2,
+     "dependencies": [
+      "picasso-bin-store-service-road"
+     ],
+     "requests": []
+    },
+    {
+     "id": "picasso-utility-row-detail",
+     "title": "West utility row on Calle Pintor Picasso: substation doors and trellis, gates, meter box, conduit and grates",
+     "priority": 2,
+     "dependencies": [
+      "picasso-service-road-levels-and-beach"
      ],
      "requests": []
     }
