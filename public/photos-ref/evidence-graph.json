@@ -6,9 +6,9 @@
   "needs-review": 275,
   "suggested": 367,
   "photos": 646,
-  "features": 555,
-  "photosCitedByModel": 258,
-  "modelFeaturesWithPhotoCitations": 295
+  "features": 564,
+  "photosCitedByModel": 268,
+  "modelFeaturesWithPhotoCitations": 304
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -4395,6 +4395,84 @@
    ]
   },
   {
+   "id": "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "name": "Hotel's lower wing along Calle Pintor Picasso (registry 6465301UF1366N_part3)",
+   "kind": "reference feature",
+   "source": "registry footprint; laser-survey top; unsolved photos",
+   "evidence": [
+    "IMG_3099.jpg",
+    "IMG_3104.jpg",
+    "IMG_3105.jpg",
+    "IMG_3120.jpg",
+    "IMG_3121.jpg",
+    "IMG_3122.jpg",
+    "IMG_2345.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_frontage.json:picasso-bin-yard",
+   "name": "Bin store: walled bin yard at the car park's south-east corner (DEPOSITO BASURA)",
+   "kind": "reference feature",
+   "source": "laser surface model (2 m grid, about 1 m) and unsolved photos",
+   "evidence": [
+    "IMG_3099.jpg",
+    "IMG_3100.jpg",
+    "IMG_3101.jpg",
+    "IMG_3103.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_frontage.json:picasso-green-door-building",
+   "name": "White utility building with a green sliding door, at the long wall's south end",
+   "kind": "reference feature",
+   "source": "laser surface model (2 m grid, about 1 m) and unsolved photos",
+   "evidence": [
+    "IMG_3124.jpg",
+    "IMG_3123.jpg",
+    "IMG_2345.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_frontage.json:picasso-substation",
+   "name": "Electricity substation (Ormazabal kiosk) with maroon doors",
+   "kind": "reference feature",
+   "source": "laser surface model (2 m grid, about 1 m) and unsolved photos",
+   "evidence": [
+    "IMG_3123.jpg",
+    "IMG_3106.jpg",
+    "IMG_3105.jpg",
+    "IMG_2345.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_frontage.json:picasso-meter-box",
+   "name": "White meter cabinet building beside the substation",
+   "kind": "reference feature",
+   "source": "laser surface model (2 m grid, about 1 m) and unsolved photos",
+   "evidence": [
+    "IMG_2345.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_frontage.json:picasso-recess-wall",
+   "name": "Set-back white wall between the green-door building and the substation",
+   "kind": "reference feature",
+   "source": "photo order and judged offsets; unsolved photos",
+   "evidence": [
+    "IMG_3123.jpg",
+    "IMG_3124.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_frontage.json:picasso-slatted-gate",
+   "name": "Dark slatted gate and fence beside the meter box",
+   "kind": "reference feature",
+   "source": "photo order and judged offsets; unsolved photos",
+   "evidence": [
+    "IMG_2345.jpg"
+   ]
+  },
+  {
    "id": "picasso_west_lawn.json:picasso-west-lawn",
    "name": "Calle de Picasso · raised grass strip and its retaining wall at the back of the west bays",
    "kind": "reference feature",
@@ -4890,6 +4968,32 @@
    "evidence": [
     "ref:google-maps/05-3d-top-down-car-park-north-entrance.jpg",
     "IMG_3131.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_picasso.json:picasso-service-pavement",
+   "name": "Kerbed pavement along the utility row, west side of Calle Pintor Picasso south of the car park",
+   "kind": "reference feature",
+   "source": "Between the utility row's faces (data/picasso_service_frontage.json) and the road's mapped west edge, from the long wall's south end to the north corner of registry part 6364501UF1366S_part1. IMG_3124 shows the kerb closing in on the green-door building and the pavement ending at the wall foot, which is where the mapped road edge meets the wall's line; IMG_3123 and IMG_3105 show it about 1 m wide at the substation and running in to the set-back wall; IMG_2345 shows a wide paved apron in front of the slatted gate. Drawn as one raised concrete apron; whether the apron at the gate is raised is not seen.",
+   "evidence": [
+    "IMG_3123.jpg",
+    "IMG_3124.jpg",
+    "IMG_3105.jpg",
+    "IMG_3106.jpg",
+    "IMG_2345.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_picasso.json:picasso-hotel-apron",
+   "name": "Asphalt between Calle Pintor Picasso and the hotel's lower wing",
+   "kind": "reference feature",
+   "source": "The road's asphalt reaches the foot of the hotel's lower wing (IMG_3104 recycling igloos on asphalt against the wall; IMG_3105, IMG_3120-3122 asphalt to the ramps and railings at the wing's foot). Between the mapped road's east edge and the wing's registry face (6465301UF1366N_part3) up to registry part 6465301UF1366N_part2, 2.5-4.6 m wide. On the aerial the pale road surface runs to a dark band of railings and igloos along the red roof's edge. The model drew this as terracotta and lawn.",
+   "evidence": [
+    "IMG_3104.jpg",
+    "IMG_3105.jpg",
+    "IMG_3120.jpg",
+    "IMG_3121.jpg",
+    "IMG_3122.jpg"
    ]
   },
   {
@@ -15192,6 +15296,42 @@
   {
    "from": "photo:IMG_2345.jpg",
    "to": "picasso_service_road.json:picasso-stone-plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2345.jpg",
+   "to": "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2345.jpg",
+   "to": "picasso_service_frontage.json:picasso-green-door-building",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2345.jpg",
+   "to": "picasso_service_frontage.json:picasso-substation",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2345.jpg",
+   "to": "picasso_service_frontage.json:picasso-meter-box",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2345.jpg",
+   "to": "picasso_service_frontage.json:picasso-slatted-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2345.jpg",
+   "to": "ground_plan_picasso.json:picasso-service-pavement",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -27419,6 +27559,18 @@
    "angleOffset": 22.8
   },
   {
+   "from": "photo:IMG_3099.jpg",
+   "to": "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3099.jpg",
+   "to": "picasso_service_frontage.json:picasso-bin-yard",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3100.jpg",
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
@@ -27433,6 +27585,12 @@
   {
    "from": "photo:IMG_3100.jpg",
    "to": "picasso_car_park.json:picasso-car-park-island",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3100.jpg",
+   "to": "picasso_service_frontage.json:picasso-bin-yard",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -27463,6 +27621,12 @@
    "angleOffset": 2.9
   },
   {
+   "from": "photo:IMG_3101.jpg",
+   "to": "picasso_service_frontage.json:picasso-bin-yard",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3103.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
@@ -27473,6 +27637,12 @@
    "to": "parking:Picasso car park",
    "relation": "camera-nearby",
    "gap": 0.7
+  },
+  {
+   "from": "photo:IMG_3103.jpg",
+   "to": "picasso_service_frontage.json:picasso-bin-yard",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3104.jpg",
@@ -27501,6 +27671,18 @@
    "angleOffset": 3.8
   },
   {
+   "from": "photo:IMG_3104.jpg",
+   "to": "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3104.jpg",
+   "to": "ground_plan_picasso.json:picasso-hotel-apron",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3105.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
@@ -27525,6 +27707,30 @@
    "relation": "possibly-in-view",
    "distance": 32.9,
    "angleOffset": 14.5
+  },
+  {
+   "from": "photo:IMG_3105.jpg",
+   "to": "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3105.jpg",
+   "to": "picasso_service_frontage.json:picasso-substation",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3105.jpg",
+   "to": "ground_plan_picasso.json:picasso-service-pavement",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3105.jpg",
+   "to": "ground_plan_picasso.json:picasso-hotel-apron",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3106.jpg",
@@ -27558,6 +27764,18 @@
    "relation": "possibly-in-view",
    "distance": 36.8,
    "angleOffset": 26.2
+  },
+  {
+   "from": "photo:IMG_3106.jpg",
+   "to": "picasso_service_frontage.json:picasso-substation",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3106.jpg",
+   "to": "ground_plan_picasso.json:picasso-service-pavement",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3107.jpg",
@@ -27683,6 +27901,18 @@
    "gap": 4.4
   },
   {
+   "from": "photo:IMG_3120.jpg",
+   "to": "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3120.jpg",
+   "to": "ground_plan_picasso.json:picasso-hotel-apron",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3121.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
@@ -27703,6 +27933,18 @@
    "angleOffset": 2.6
   },
   {
+   "from": "photo:IMG_3121.jpg",
+   "to": "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3121.jpg",
+   "to": "ground_plan_picasso.json:picasso-hotel-apron",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3122.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
@@ -27716,10 +27958,46 @@
    "angleOffset": 25.1
   },
   {
+   "from": "photo:IMG_3122.jpg",
+   "to": "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3122.jpg",
+   "to": "ground_plan_picasso.json:picasso-hotel-apron",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_3123.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_3123.jpg",
+   "to": "picasso_service_frontage.json:picasso-green-door-building",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3123.jpg",
+   "to": "picasso_service_frontage.json:picasso-substation",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3123.jpg",
+   "to": "picasso_service_frontage.json:picasso-recess-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3123.jpg",
+   "to": "ground_plan_picasso.json:picasso-service-pavement",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3124.jpg",
@@ -27730,6 +28008,24 @@
   {
    "from": "photo:IMG_3124.jpg",
    "to": "picasso_car_park.json:picasso-car-park-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3124.jpg",
+   "to": "picasso_service_frontage.json:picasso-green-door-building",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3124.jpg",
+   "to": "picasso_service_frontage.json:picasso-recess-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3124.jpg",
+   "to": "ground_plan_picasso.json:picasso-service-pavement",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

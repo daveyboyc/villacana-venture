@@ -4123,6 +4123,78 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude"
+  },
+  {
+   "id": "picasso-bin-store-service-road",
+   "area": "picasso",
+   "priority": 2,
+   "kind": "layout",
+   "title": "Bin store and Calle Pintor Picasso south of the car park: bin yard, utility row, hotel lower wing (layout)",
+   "photos": [
+    "IMG_3099.jpg",
+    "IMG_3100.jpg",
+    "IMG_3101.jpg",
+    "IMG_3103.jpg",
+    "IMG_3104.jpg",
+    "IMG_3105.jpg",
+    "IMG_3106.jpg",
+    "IMG_3120.jpg",
+    "IMG_3121.jpg",
+    "IMG_3122.jpg",
+    "IMG_3123.jpg",
+    "IMG_3124.jpg",
+    "IMG_2345.jpg"
+   ],
+   "build": "Dave (26 Nov 2026) circled the bin store (DEPOSITO BASURA) at the car park's south-east corner and the service road that leads from it to the beach. Stage 1 and 2 of the structure-first order: list the photo coverage, then lay out the bin yard against the long wall, the utility row on the road's west side (green-door building, set-back wall, substation, meter box, slatted gate) with its kerbed pavement, and the hotel's lower wing on the east side with the asphalt to its foot. Heights from the laser survey.",
+   "avoid": "No change to Walk. Do not grade anything photographed or measured: no camera here is solved. No detail (signs, doors, igloos, planting) before the layout is signed off.",
+   "accept": [
+    "Visible in Inspect in Layout and with Show details",
+    "Photo checks recorded for the cameras built from",
+    "Structure signed off by a reviewer subagent"
+   ],
+   "features": [
+    "picasso_service_frontage.json:picasso-hotel-lower-wing",
+    "picasso_service_frontage.json:picasso-bin-yard",
+    "picasso_service_frontage.json:picasso-green-door-building",
+    "picasso_service_frontage.json:picasso-recess-wall",
+    "picasso_service_frontage.json:picasso-substation",
+    "picasso_service_frontage.json:picasso-meter-box",
+    "picasso_service_frontage.json:picasso-slatted-gate",
+    "ground_plan_picasso.json:picasso-service-pavement",
+    "ground_plan_picasso.json:picasso-hotel-apron"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude"
+  },
+  {
+   "id": "picasso-service-road-levels-and-beach",
+   "area": "picasso",
+   "priority": 2,
+   "kind": "layout",
+   "title": "Calle Pintor Picasso south of the car park: levels behind the utility row, and the road on to the beach",
+   "photos": [
+    "IMG_3105.jpg",
+    "IMG_3106.jpg",
+    "IMG_3123.jpg",
+    "IMG_3124.jpg"
+   ],
+   "build": "Stage 3 for the stretch built in picasso-bin-store-service-road: hold the terrain grid at road level up to the utility row's faces so the kerbed pavement is flat (discrepancy picasso-service-pavement-level; regenerate data/terrain.json with scripts/lidar_check.py grid, do not hand-edit it), and check the bin yard floor and the hotel apron against the survey. Then lay out the road from the hotel's low block (registry 6465301UF1366N_part2) to the paseo: its line and width from the aerial, the buildings either side, the white tower, once the requested photos (picasso-service-road-to-beach) arrive.",
+   "avoid": "No change to Walk. No detail before the layout is signed off. Do not grade anything photographed or measured without a solved camera.",
+   "accept": [
+    "Visible in Inspect in Layout and with Show details",
+    "Pavement flat about 0.12 m over the road in the IMG_3123 and IMG_3105 views",
+    "Structure signed off by a reviewer subagent"
+   ],
+   "features": [
+    "ground_plan_picasso.json:picasso-service-pavement",
+    "picasso_service_frontage.json:picasso-recess-wall",
+    "street:picasso"
+   ],
+   "dependsOn": [
+    "picasso-bin-store-service-road"
+   ],
+   "status": "open"
   }
 ]
 }

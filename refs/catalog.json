@@ -5331,7 +5331,7 @@
    "materials",
    "levels"
   ],
-  "note": null,
+  "note": "Reviewed 26 Nov 2026: left, from near to far, a dark slatted gate, a white meter box, the maroon substation doors under a brown cap, the white building with a green door and the long wall; right, the hotel wing with a stone plinth, railings, a ramp and recycling bins under plane trees. The pin (±5.5 m) reads about 4 m south-east of the camera.",
   "observation": "Looking north-west up the asphalt service road off Calle Pintor Picasso. Left: a dark slatted fence, then low white utility sheds with brown doors and a meter box, then a long plain white boundary wall. Right: a low white building on a rough stone plinth with black tubular railings and a short concrete ramp, green and grey recycling bins, and large plane trees. Palms and the mountains beyond.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1erDqbTnA6AY154GoieIxUfI8mvb5lecH/view?usp=drivesdk",
@@ -5346,17 +5346,25 @@
   "citedBy": [
    "picasso_service_road.json:picasso-utility-front",
    "picasso_service_road.json:picasso-boundary-wall",
-   "picasso_service_road.json:picasso-stone-plinth"
+   "picasso_service_road.json:picasso-stone-plinth",
+   "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "picasso_service_frontage.json:picasso-green-door-building",
+   "picasso_service_frontage.json:picasso-substation",
+   "picasso_service_frontage.json:picasso-meter-box",
+   "picasso_service_frontage.json:picasso-slatted-gate",
+   "ground_plan_picasso.json:picasso-service-pavement"
   ],
   "looksAt": [
-   -18.4,
-   43.7
+   -21.0,
+   40.7
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
-   "backdrop.json:aerial-trees"
-  ]
+   "backdrop.json:aerial-trees",
+   "ground_plan_picasso.json:picasso-service-pavement"
+  ],
+  "subject": "the service road north-west from the hotel's low block: slatted gate, meter box, substation and green-door building on the left, the hotel wing's plinth and ramp on the right"
  },
  {
   "id": "IMG_2346.jpg",
@@ -23245,7 +23253,10 @@
    "altitude": 6.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "picasso_service_frontage.json:picasso-bin-yard"
+  ],
   "looksAt": [
    -42,
    21
@@ -23253,7 +23264,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "picasso_service_frontage.json:picasso-bin-yard"
   ],
   "subject": "bin store front wall on the car park's south-east corner"
  },
@@ -23285,7 +23297,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "picasso_car_park.json:picasso-car-park-island"
+   "picasso_car_park.json:picasso-car-park-island",
+   "picasso_service_frontage.json:picasso-bin-yard"
   ],
   "looksAt": [
    -55,
@@ -23326,7 +23339,9 @@
    "altitude": 6.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_service_frontage.json:picasso-bin-yard"
+  ],
   "looksAt": [
    -38,
    24
@@ -23334,9 +23349,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
+   "picasso_service_frontage.json:picasso-green-door-building",
    "backdrop.json:aerial-trees",
-   "picasso_car_park.json:picasso-car-park-wall",
-   "street:picasso"
+   "picasso_car_park.json:picasso-car-park-wall"
   ],
   "subject": "bin store side wall and green door",
   "headingOff": 56
@@ -23367,7 +23382,9 @@
    "altitude": 5.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_service_frontage.json:picasso-bin-yard"
+  ],
   "looksAt": [
    -40,
    17
@@ -23407,7 +23424,10 @@
    "altitude": 6.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "ground_plan_picasso.json:picasso-hotel-apron"
+  ],
   "looksAt": [
    -33,
    18
@@ -23415,7 +23435,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "ground_plan_picasso.json:picasso-hotel-apron"
   ],
   "subject": "recycling bins at the foot of the hotel wall"
  },
@@ -23446,7 +23467,12 @@
    "altitude": 5.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "picasso_service_frontage.json:picasso-substation",
+   "ground_plan_picasso.json:picasso-service-pavement",
+   "ground_plan_picasso.json:picasso-hotel-apron"
+  ],
   "looksAt": [
    -20,
    40
@@ -23454,7 +23480,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "ground_plan_picasso.json:picasso-service-pavement"
   ],
   "subject": "service road south of the bin store"
  },
@@ -23485,7 +23512,10 @@
    "altitude": 4.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_service_frontage.json:picasso-substation",
+   "ground_plan_picasso.json:picasso-service-pavement"
+  ],
   "looksAt": [
    -22,
    45
@@ -23493,6 +23523,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
+   "ground_plan_picasso.json:picasso-service-pavement",
    "picasso_service_road.json:picasso-utility-front",
    "picasso_service_road.json:picasso-boundary-wall"
   ],
@@ -23889,16 +23920,20 @@
    "altitude": 6.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "ground_plan_picasso.json:picasso-hotel-apron"
+  ],
   "looksAt": [
    -30,
    33
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "picasso_service_frontage.json:picasso-substation",
    "backdrop.json:aerial-trees",
-   "picasso_service_road.json:picasso-boundary-wall",
-   "street:picasso"
+   "ground_plan_picasso.json:picasso-service-pavement",
+   "picasso_service_road.json:picasso-boundary-wall"
   ],
   "subject": "service road between hotel and utility buildings"
  },
@@ -23929,7 +23964,10 @@
    "altitude": 5.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "ground_plan_picasso.json:picasso-hotel-apron"
+  ],
   "looksAt": [
    -12,
    38
@@ -23937,6 +23975,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
+   "picasso_service_frontage.json:picasso-hotel-lower-wing",
    "picasso_service_road.json:picasso-stone-plinth"
   ],
   "subject": "hotel ground-floor frontage on the service road"
@@ -23967,7 +24006,10 @@
    "altitude": 5.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_service_frontage.json:picasso-hotel-lower-wing",
+   "ground_plan_picasso.json:picasso-hotel-apron"
+  ],
   "looksAt": [
    -26,
    30
@@ -23975,7 +24017,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "ground_plan_picasso.json:picasso-hotel-apron"
   ],
   "subject": "service road towards the car park"
  },
@@ -24005,7 +24048,12 @@
    "altitude": 6.0,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_service_frontage.json:picasso-green-door-building",
+   "picasso_service_frontage.json:picasso-substation",
+   "picasso_service_frontage.json:picasso-recess-wall",
+   "ground_plan_picasso.json:picasso-service-pavement"
+  ],
   "looksAt": [
    -30,
    30
@@ -24013,7 +24061,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "ground_plan_picasso.json:picasso-service-pavement",
+   "picasso_service_frontage.json:picasso-substation"
   ],
   "subject": "substation and utility building west of the service road"
  },
@@ -24044,7 +24094,10 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "picasso_car_park.json:picasso-car-park-wall"
+   "picasso_car_park.json:picasso-car-park-wall",
+   "picasso_service_frontage.json:picasso-green-door-building",
+   "picasso_service_frontage.json:picasso-recess-wall",
+   "ground_plan_picasso.json:picasso-service-pavement"
   ],
   "looksAt": [
    -32,
@@ -24053,7 +24106,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:picasso",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "ground_plan_picasso.json:picasso-service-pavement",
+   "picasso_service_frontage.json:picasso-green-door-building"
   ],
   "subject": "utility building at the south end of the long wall"
  },

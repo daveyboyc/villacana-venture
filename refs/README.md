@@ -42,7 +42,7 @@ Use the canonical app root (`/?view=map`) and search a photo ID, place or visibl
 
 Here “reviewed references” means content/area tags were inspected; it does not certify model placement. Placement approval is separate from photo diagnostics: see [graph.json](graph.json) v2, [placement records](../data/placement_reviews.json) and [placement policy](../docs/PLACEMENT_VERIFICATION.md). Citation links and software results do not grant placement approval. Open discrepancies block it.
 
-Photo checks (`data/photo_checks.json`): 179 photo-check records, 55 match, 48 differ. 28 of 43 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).
+Photo checks (`data/photo_checks.json`): 188 photo-check records, 56 match, 56 differ. 28 of 43 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).
 
 Continuous build/validation work and scoped evidence requests: [LOOP.md](LOOP.md).
 

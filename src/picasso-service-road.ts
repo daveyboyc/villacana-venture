@@ -2,13 +2,14 @@ import * as THREE from "three";
 import data from "../data/picasso_service_road.json";
 import type { Vec2 } from "./types";
 
-export const picassoFeatures = data.features;
+/** Features still built: the two IMG_2345-only pieces marked `superseded` are kept as records for the placement graph only (data/picasso_service_frontage.json replaces them). */
+export const picassoFeatures = data.features.filter((f) => !("superseded" in f));
 export const picassoRamp = data.ramp;
 export function picassoStrip(points: number[][], width: number): Vec2[] {
   const [a,b]=points,l=Math.hypot(b[0]-a[0],b[1]-a[1]),nx=(b[1]-a[1])/l*width/2,nz=(a[0]-b[0])/l*width/2;
   return [[a[0]+nx,a[1]+nz],[b[0]+nx,b[1]+nz],[b[0]-nx,b[1]-nz],[a[0]-nx,a[1]-nz]];
 }
-export const picassoServiceRings = ():Vec2[][] => [...data.features.map(f=>picassoStrip(f.points,f.thickness)),data.ramp.ring as Vec2[]];
+export const picassoServiceRings = ():Vec2[][] => [...picassoFeatures.map(f=>picassoStrip(f.points,f.thickness)),data.ramp.ring as Vec2[]];
 
 /** Bounded frontage detail, retaining all original road/house geometry and site levels. */
 export function addPicassoServiceRoad(scene:THREE.Scene,details:boolean,clear:(x:number,z:number,r:number)=>boolean):void {
@@ -21,7 +22,7 @@ export function addPicassoServiceRoad(scene:THREE.Scene,details:boolean,clear:(x
     mesh.position.set((a[0]+b[0])/2,y+h/2,(a[1]+b[1])/2);mesh.rotation.y=-Math.atan2(b[1]-a[1],b[0]-a[0]);
     mesh.name=name;mesh.castShadow=mesh.receiveShadow=true;scene.add(mesh);return mesh;
   }
-  for(const f of data.features){
+  for(const f of picassoFeatures){
     const [a,b]=f.points;
     beam(a,b,f.thickness,f.height,0,f.kind==='plinth'?stone:white,f.id);
     if(f.kind==='utility'){

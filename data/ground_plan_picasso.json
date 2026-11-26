@@ -1,5 +1,5 @@
 {
-  "about": "Ground plan for the Picasso area (docs/SMOOTH_PATHS.md, drawn by src/ground-plan.ts, checked by scripts/check_ground_plan.py). World metres: x east, z south. So far the car park's north entrance: its asphalt, the gatehouse island and the narrow planter.",
+  "about": "Ground plan for the Picasso area (docs/SMOOTH_PATHS.md, drawn by src/ground-plan.ts, checked by scripts/check_ground_plan.py). World metres: x east, z south. So far the car park's north entrance (its asphalt, the gatehouse island and the narrow planter) and, south of the car park, the service road's pavement and asphalt apron (data/picasso_service_frontage.json).",
   "area": "picasso",
   "trust": "The north entrance is traced from Dave's Google 3D top-down screenshot registered to the aerial (about 1.5 m) and read against Street View from Calle Loira and Calle Bolivia (Oct 2024) and IMG_3131. The apron's road-side edges follow the mapped Loira and Bolivia ribbons.",
   "surfaces": [
@@ -407,6 +407,178 @@
           ]
         }
       ]
+    },
+    {
+      "id": "picasso-service-pavement",
+      "name": "Kerbed pavement along the utility row, west side of Calle Pintor Picasso south of the car park",
+      "kind": "apron",
+      "finish": "concrete",
+      "outline": [
+        [
+          -35.59,
+          23.84
+        ],
+        [
+          -34.3,
+          25.97
+        ],
+        [
+          -36.62,
+          27.39
+        ],
+        [
+          -33.15,
+          33.11
+        ],
+        [
+          -30.41,
+          31.45
+        ],
+        [
+          -28.1,
+          35.26
+        ],
+        [
+          -28.18,
+          35.32
+        ],
+        [
+          -26.86,
+          37.49
+        ],
+        [
+          -27.8,
+          38.06
+        ],
+        [
+          -24.59,
+          45.47
+        ],
+        [
+          -20.06,
+          42.71
+        ],
+        [
+          -25.33,
+          36.33
+        ],
+        [
+          -30.48,
+          30.08
+        ]
+      ],
+      "corners": 0.1,
+      "hard": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "raise": 0.34,
+      "edges": [
+        {
+          "kind": "kerb",
+          "from": 10,
+          "to": 13,
+          "height": 0.12,
+          "base": 0.27,
+          "note": "Stone kerb about 0.12 m on the asphalt along the road side (IMG_3123, IMG_3124, IMG_3105, IMG_3106); its height is judged.",
+          "evidence": [
+            "IMG_3123.jpg",
+            "IMG_3124.jpg",
+            "IMG_3105.jpg",
+            "IMG_3106.jpg"
+          ]
+        }
+      ],
+      "note": "Between the utility row's faces (data/picasso_service_frontage.json) and the road's mapped west edge, from the long wall's south end to the north corner of registry part 6364501UF1366S_part1. IMG_3124 shows the kerb closing in on the green-door building and the pavement ending at the wall foot, which is where the mapped road edge meets the wall's line; IMG_3123 and IMG_3105 show it about 1 m wide at the substation and running in to the set-back wall; IMG_2345 shows a wide paved apron in front of the slatted gate. Drawn as one raised concrete apron; whether the apron at the gate is raised is not seen.",
+      "evidence": [
+        "IMG_3123.jpg",
+        "IMG_3124.jpg",
+        "IMG_3105.jpg",
+        "IMG_3106.jpg",
+        "IMG_2345.jpg"
+      ],
+      "traced": "map:ground"
+    },
+    {
+      "id": "picasso-hotel-apron",
+      "name": "Asphalt between Calle Pintor Picasso and the hotel's lower wing",
+      "kind": "apron",
+      "finish": "asphalt",
+      "outline": [
+        [
+          -37.21,
+          9.61
+        ],
+        [
+          -33.58,
+          15.59
+        ],
+        [
+          -30.47,
+          20.72
+        ],
+        [
+          -26.9,
+          25.0
+        ],
+        [
+          -23.08,
+          29.63
+        ],
+        [
+          -20.85,
+          32.32
+        ],
+        [
+          -18.42,
+          33.05
+        ],
+        [
+          -17.0,
+          31.95
+        ],
+        [
+          -16.1,
+          31.08
+        ],
+        [
+          -34.2,
+          9.8
+        ]
+      ],
+      "corners": 0.3,
+      "hard": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "note": "The road's asphalt reaches the foot of the hotel's lower wing (IMG_3104 recycling igloos on asphalt against the wall; IMG_3105, IMG_3120-3122 asphalt to the ramps and railings at the wing's foot). Between the mapped road's east edge and the wing's registry face (6465301UF1366N_part3) up to registry part 6465301UF1366N_part2, 2.5-4.6 m wide. On the aerial the pale road surface runs to a dark band of railings and igloos along the red roof's edge. The model drew this as terracotta and lawn.",
+      "evidence": [
+        "IMG_3104.jpg",
+        "IMG_3105.jpg",
+        "IMG_3120.jpg",
+        "IMG_3121.jpg",
+        "IMG_3122.jpg"
+      ],
+      "traced": "map:ground"
     }
   ]
 }

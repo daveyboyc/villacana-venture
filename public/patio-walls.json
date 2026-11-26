@@ -5,8 +5,8 @@
     "wall": 27,
     "kerb": 4,
     "enclosure": 23,
-    "gap": 22,
-    "context": 43
+    "gap": 24,
+    "context": 46
   },
   "records": [
     {
@@ -4202,6 +4202,106 @@
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {
+      "id": "picasso_service_frontage.json:picasso-bin-yard",
+      "name": "Bin store: walled bin yard at the car park's south-east corner (DEPOSITO BASURA)",
+      "kind": "context",
+      "points": [
+        [
+          -39.71,
+          22.83
+        ],
+        [
+          -44.13,
+          15.56
+        ],
+        [
+          -41.78,
+          14.14
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "picasso"
+      ],
+      "evidence": [
+        "IMG_3099.jpg",
+        "IMG_3100.jpg",
+        "IMG_3101.jpg",
+        "IMG_3103.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. Open-topped bin yard with the RUBBISH COLLECTION / DEPOSITO BASURA and BASURA / RUBBISH BINS signs (IMG_3099, 3100, 3101, 3103), against the long wall's inner face. Extent from the 2 m laser surface model (about 1 m) and the photos; no camera is solved. Door and gate positions along the front are from the photos' order.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "picasso_service_frontage.json:picasso-green-door-building",
+      "name": "White utility building with a green sliding door, at the long wall's south end",
+      "kind": "context",
+      "points": [
+        [
+          -40.25,
+          23.15
+        ],
+        [
+          -37.39,
+          27.85
+        ],
+        [
+          -34.3,
+          25.97
+        ],
+        [
+          -37.15,
+          21.27
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "picasso"
+      ],
+      "evidence": [
+        "IMG_3124.jpg",
+        "IMG_3123.jpg",
+        "IMG_2345.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Photographed from the road (IMG_3124, IMG_3123): flat-roofed white block with a green sliding door, its face continuing the long wall's. Length, depth and height from the laser surface model (2 m grid, about 1 m).",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "picasso_service_frontage.json:picasso-recess-wall",
+      "name": "Set-back white wall between the green-door building and the substation",
+      "kind": "context",
+      "points": [
+        [
+          -36.62,
+          27.39
+        ],
+        [
+          -33.15,
+          33.11
+        ],
+        [
+          -32.45,
+          32.69
+        ]
+      ],
+      "closed": false,
+      "areas": [
+        "picasso"
+      ],
+      "evidence": [
+        "IMG_3123.jpg",
+        "IMG_3124.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. Set-back white wall with a low box at its foot between the green-door building and the substation (IMG_3123, IMG_3124). The step back is judged from the photos, about 1 m.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
       "id": "picasso_west_lawn.json:picasso-west-lawn",
       "name": "Calle de Picasso · raised grass strip and its retaining wall at the back of the west bays",
       "kind": "context",
@@ -5854,6 +5954,45 @@
       "confidence": "gap",
       "placement": "unreviewed",
       "basis": "IMG_3131 shows a low white garden wall with a clipped hedge on top behind the CALLE DE PICASSO plinth, along the house side of the path, and IMG_3134 the same kind of wall at the east end of Juan Gris; it probably turns the corner between the two (discrepancy juan-gris-east-walls-order). Its line and length along the path are not traced, so it is not built.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:picasso-utility-row-part1-face",
+      "name": "Frontage along registry part 6364501UF1366S_part1 beside the service road",
+      "kind": "gap",
+      "points": [
+        [
+          -20.0,
+          50.0
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_2345.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "IMG_2345's slatted gate runs out of frame towards this building; whether the gate, a wall or the building's own face lines the road here is not seen. The earlier brown-door utility front placed here was the substation's doors misplaced and is removed.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:picasso-bin-store-roofed-part",
+      "name": "Whether part of the bin store is roofed",
+      "kind": "gap",
+      "points": [
+        [
+          -40.0,
+          17.0
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_3099.jpg",
+        "IMG_3103.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "IMG_3099's doorway is dark, as if into a roofed room, while IMG_3103 shows the yard open to the sky. Built as one open yard; a view over the wall or from inside the doorway would settle it.",
       "levelState": "Evidence required before tracing or levelling."
     }
   ]

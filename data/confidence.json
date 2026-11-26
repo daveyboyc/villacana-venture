@@ -79,6 +79,42 @@
    "level": "estimated",
    "why": "Along the car park the road is placed against the long wall (aerial line; IMG_3125, IMG_3129 show asphalt to the wall foot), 6 m wide; the north and south ends are the earlier map trace."
   },
+  "picasso_service_frontage.json:picasso-hotel-lower-wing": {
+   "level": "estimated",
+   "why": "Single-storey white wing with vent grilles seen from the road (IMG_3104, 3105, 3120-3122), the hotel block set back above. Footprint is the registry's (6465301UF1366N_part3, 0 storeys there), matching the aerial's red flat roof to about 1 m; flat top from the laser survey (3.78 m over the datum, about 4.4 m above the road). Openings, ramps and railings at its foot not built yet."
+  },
+  "picasso_service_frontage.json:picasso-bin-yard": {
+   "level": "estimated",
+   "why": "Open-topped bin yard with the RUBBISH COLLECTION / DEPOSITO BASURA and BASURA / RUBBISH BINS signs (IMG_3099, 3100, 3101, 3103), against the long wall's inner face. Extent from the 2 m laser surface model (about 1 m) and the photos; no camera is solved. Door and gate positions along the front are from the photos' order."
+  },
+  "picasso_service_frontage.json:picasso-green-door-building": {
+   "level": "estimated",
+   "why": "Photographed from the road (IMG_3124, IMG_3123): flat-roofed white block with a green sliding door, its face continuing the long wall's. Length, depth and height from the laser surface model (2 m grid, about 1 m)."
+  },
+  "picasso_service_frontage.json:picasso-recess-wall": {
+   "level": "estimated",
+   "why": "Set-back white wall with a low box at its foot between the green-door building and the substation (IMG_3123, IMG_3124). The step back is judged from the photos, about 1 m."
+  },
+  "picasso_service_frontage.json:picasso-substation": {
+   "level": "estimated",
+   "why": "Ormazabal kiosk with maroon doors, louvres and a brown tiled cap (IMG_3123, 3106, 3105, 2345). Size is the maker's standard kiosk; position from the laser surface model, about 1 m."
+  },
+  "picasso_service_frontage.json:picasso-meter-box": {
+   "level": "estimated",
+   "why": "Small white block with a meter cabinet door in IMG_2345 only, between the substation and the slatted gate; size judged."
+  },
+  "picasso_service_frontage.json:picasso-slatted-gate": {
+   "level": "estimated",
+   "why": "Dark slatted gate in IMG_2345's foreground; its far end is out of frame, so it is stopped at registry part 6364501UF1366S_part1's north corner. Height judged."
+  },
+  "ground_plan_picasso.json:picasso-service-pavement": {
+   "level": "estimated",
+   "why": "Kerbed concrete pavement in IMG_3123, 3124, 3105 and 3106, narrowing to nothing at the green-door building; bounded by the frontage and the mapped road edge, about 1 m. Whether the wide apron at the slatted gate is raised is not seen."
+  },
+  "ground_plan_picasso.json:picasso-hotel-apron": {
+   "level": "estimated",
+   "why": "Asphalt to the hotel wing's foot in IMG_3104, 3105 and 3120-3122; between the mapped road edge and the registry face, about 1 m."
+  },
   "picasso_car_park.json:picasso-car-park-wall": {
    "level": "estimated",
    "why": "Plain white wall photographed from the road (IMG_3125, IMG_3129, IMG_3124). Line read from the aerial to about 0.3-1 m. Level top from the laser survey (2014-15 surface model, 2.57 m in model metres): about 1.4 m high at the uphill north end, 3.1 m at the south end. No camera is solved."
@@ -1562,6 +1598,47 @@
     "IMG_3134.jpg"
    ],
    "why": "IMG_3131 shows a low white garden wall with a clipped hedge on top behind the CALLE DE PICASSO plinth, along the house side of the path, and IMG_3134 the same kind of wall at the east end of Juan Gris; it probably turns the corner between the two (discrepancy juan-gris-east-walls-order). Its line and length along the path are not traced, so it is not built.",
+   "decision": "needs-photos"
+  },
+  {
+   "id": "gap:picasso-service-road-to-beach",
+   "name": "Calle Pintor Picasso from the hotel's lower block down to the beach",
+   "at": [
+    5.0,
+    70.0
+   ],
+   "photos": [
+    "IMG_3105.jpg",
+    "IMG_3106.jpg"
+   ],
+   "why": "IMG_3105 and IMG_3106 look down the service road to the sea past more white utility buildings, a white tower with an aerial, a parked lorry and a skip, but only from 40-70 m away. The mapped road stops at (-13.7, 45.8); the aerial shows it running on about 60 m to the paseo between the big-pool lawn and the grey flat-roofed buildings. Not built in this pass.",
+   "decision": "needs-photos"
+  },
+  {
+   "id": "gap:picasso-utility-row-part1-face",
+   "name": "Frontage along registry part 6364501UF1366S_part1 beside the service road",
+   "at": [
+    -20.0,
+    50.0
+   ],
+   "photos": [
+    "IMG_2345.jpg"
+   ],
+   "why": "IMG_2345's slatted gate runs out of frame towards this building; whether the gate, a wall or the building's own face lines the road here is not seen. The earlier brown-door utility front placed here was the substation's doors misplaced and is removed.",
+   "decision": "needs-photos"
+  },
+  {
+   "id": "gap:picasso-bin-store-roofed-part",
+   "name": "Whether part of the bin store is roofed",
+   "at": [
+    -40.0,
+    17.0
+   ],
+   "photos": [
+    "IMG_3099.jpg",
+    "IMG_3103.jpg"
+   ],
+   "why": "IMG_3099's doorway is dark, as if into a roofed room, while IMG_3103 shows the yard open to the sky. Built as one open yard; a view over the wall or from inside the doorway would settle it.",
    "decision": "needs-photos"
   }
  ]

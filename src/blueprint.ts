@@ -44,6 +44,7 @@ import { seafrontFenceRings } from "./seafront-fence";
 import { lawnSolidRings } from "./main-pool-lawn";
 import { picassoLawnWallRings } from "./picasso-lawn-wall";
 import { picassoCarParkPlan } from "./picasso-car-park";
+import { picassoServiceFrontagePlan } from "./picasso-service-frontage";
 import { picassoWestLawnPlan, picassoWestLawnRings } from "./picasso-west-lawn";
 import { picassoEntranceRings } from "./picasso-entrance-details";
 import { EDGES, FINISHES, groundEdges, groundPlanSolidRings, groundSurfaces } from "./ground-plan";
@@ -315,6 +316,11 @@ async function boot(): Promise<void> {
   world.append(traced);
   for (const area of skeleton.areas) {
     traced.append(el("path", { d: path(area.ring), fill: areaFill[area.kind] ?? "#ccc", stroke: "#8a8172", "stroke-width": 0.2 }));
+  }
+  // South of the car park: the hotel's lower wing, the bin yard and the utility row (data/picasso_service_frontage.json), estimated.
+  for (const f of picassoServiceFrontagePlan()) {
+    const node = el("path", { d: path(f.ring), fill: f.fill, stroke: "#5d5a52", "stroke-width": 0.05, "data-picasso-frontage": f.id });
+    const title = el("title", {}); title.textContent = `${f.name} · estimated (data/picasso_service_frontage.json)`; node.append(title); traced.append(node);
   }
   // The main car park's long east wall (data/picasso_car_park.json), estimated from the aerial and IMG_3125/3129.
   for (const ring of picassoCarParkPlan().wall) {
