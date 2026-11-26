@@ -104,3 +104,14 @@ the survey.
   - The lane's roadway is concrete in the photos but drawn as asphalt.
   - The red the photo shows on the terrace is mostly its tiled top, not only a coping.
   - The bollard is on the paseo side of the grate (now moved there).
+
+**Second pass (same reviewer, after the fixes):** "SIGN-OFF: stage 2 layout satisfactory".
+
+- **Tower:** it now stands where IMG_3118 and IMG_2613 show it.
+- **Lane mouth:** the lane ends on the grate line, and the bollard is on the paseo side.
+- **Footway and roadway:** they match IMG_2613 and IMG_3067. Clearances are tight but checked.
+- **Not blocking:**
+  - The grate spans only part of the mouth; the photo has it across the whole width.
+  - The roadway is drawn as asphalt where the photos show concrete.
+- **A tall white block beside the pool building:** the reviewer asked for one glance. It is not this change's: the
+  lane data holds one tower only, at (-16.4, 54.7), and nothing is left at the old spot.

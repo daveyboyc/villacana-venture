@@ -6,7 +6,7 @@
     "kerb": 4,
     "enclosure": 23,
     "gap": 24,
-    "context": 45
+    "context": 48
   },
   "records": [
     {
@@ -4272,6 +4272,46 @@
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {
+      "id": "picasso_beach_lane.json:picasso-lane-east-terrace",
+      "name": "Raised terrace and eaves along the long building on the lane's east side (registry 6465801UF1366N_part2)",
+      "kind": "context",
+      "points": [
+        [
+          29.57,
+          94.54
+        ],
+        [
+          14.69,
+          77.22
+        ],
+        [
+          12.29,
+          74.48
+        ],
+        [
+          13.18,
+          73.74
+        ],
+        [
+          30.52,
+          93.74
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "main-pool",
+        "paseo"
+      ],
+      "evidence": [
+        "IMG_2613.jpg",
+        "IMG_3067.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. Low white terrace wall with a red coping and deep eaves in IMG_2613, on the registry strip 6465801UF1366N_part2 between the long building and the lane; wall height judged against bicycles, eaves level with the building's modelled roof.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
       "id": "picasso_west_lawn.json:picasso-west-lawn",
       "name": "Calle de Picasso · raised grass strip and its retaining wall at the back of the west bays",
       "kind": "context",
@@ -4597,6 +4637,134 @@
       "confidence": "photographed",
       "placement": "disputed",
       "basis": "Model group context, not a traced wall axis or quantity. The walls, gates and terracotta patio are photographed in IMG_2206 and IMG_2208 and measured on the wall planes through the solved camera: the west wall (x -187) with its 1.0 m gate, and the east wall running south-south-east through its 0.88 m gate. The walls' ends and the patio's north and south sides are estimated.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "ground_plan_picasso.json:picasso-beach-lane-concrete",
+      "name": "Concrete lane between the pool building's sheds and lawn wall and the east building's terrace",
+      "kind": "context",
+      "points": [
+        [
+          3.0,
+          71.4
+        ],
+        [
+          0.25,
+          71.45
+        ],
+        [
+          8.2,
+          79.3
+        ],
+        [
+          9.35,
+          80.35
+        ],
+        [
+          15.1,
+          86.1
+        ],
+        [
+          24.6,
+          96.05
+        ],
+        [
+          29.49,
+          94.6
+        ],
+        [
+          14.59,
+          77.3
+        ],
+        [
+          12.19,
+          74.6
+        ],
+        [
+          6.19,
+          67.6
+        ],
+        [
+          6.0,
+          67.4
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "main-pool",
+        "paseo",
+        "picasso"
+      ],
+      "evidence": [
+        "IMG_2613.jpg",
+        "IMG_3067.jpg",
+        "IMG_3118.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "disputed",
+      "basis": "Model group context, not a traced wall axis or quantity. Concrete lane wall to wall in IMG_2613 and IMG_3067; bounded by the shed strip, the lawn wall and the terrace wall, about 1 m.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "ground_plan_picasso.json:picasso-beach-lane-footway",
+      "name": "Kerbed concrete footway along the west walls of the lane to the beach",
+      "kind": "context",
+      "points": [
+        [
+          0.25,
+          71.45
+        ],
+        [
+          8.2,
+          79.3
+        ],
+        [
+          9.35,
+          80.35
+        ],
+        [
+          15.1,
+          86.1
+        ],
+        [
+          24.6,
+          96.05
+        ],
+        [
+          25.54,
+          95.15
+        ],
+        [
+          16.03,
+          85.19
+        ],
+        [
+          10.25,
+          79.41
+        ],
+        [
+          9.1,
+          78.36
+        ],
+        [
+          1.16,
+          70.52
+        ]
+      ],
+      "closed": true,
+      "areas": [
+        "main-pool",
+        "paseo",
+        "picasso"
+      ],
+      "evidence": [
+        "IMG_2613.jpg",
+        "IMG_3067.jpg",
+        "IMG_3118.jpg"
+      ],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Kerbed concrete footway along the west walls in IMG_2613 and IMG_3067, 1.3 m wide along the shed strip and lawn wall, about 1 m; kerb height judged.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {
