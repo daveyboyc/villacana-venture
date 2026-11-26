@@ -85,15 +85,15 @@
   },
   "picasso_service_frontage.json:picasso-bin-yard": {
    "level": "estimated",
-   "why": "Open-topped bin yard with the RUBBISH COLLECTION / DEPOSITO BASURA and BASURA / RUBBISH BINS signs (IMG_3099, 3100, 3101, 3103), against the long wall's inner face. Extent from the 2 m laser surface model (about 1 m) and the photos; no camera is solved. Door and gate positions along the front are from the photos' order."
+   "why": "Open-topped bin yard (IMG_3099, 3100, 3101, 3103, 3123, 3124): its front with the DEPOSITO BASURA doorway on the car park, its street face with the green sliding door flush with the long wall's. Extent from the 2 m laser surface model (about 1 m) and the photos; no camera is solved. The doorway and street door are placed from the photos and an independent review, about 1-1.5 m."
   },
-  "picasso_service_frontage.json:picasso-green-door-building": {
+  "picasso_service_frontage.json:picasso-service-gate": {
    "level": "estimated",
-   "why": "Photographed from the road (IMG_3124, IMG_3123): flat-roofed white block with a green sliding door, its face continuing the long wall's. Length, depth and height from the laser surface model (2 m grid, about 1 m)."
+   "why": "Recessed grey panel gate in IMG_3106, IMG_3120 and as a dark slot in IMG_2345, between the substation and the meter box; width and set-back judged, about 1 m."
   },
   "picasso_service_frontage.json:picasso-recess-wall": {
    "level": "estimated",
-   "why": "Set-back white wall with a low box at its foot between the green-door building and the substation (IMG_3123, IMG_3124). The step back is judged from the photos, about 1 m."
+   "why": "Set-back white wall with a low box at its foot between the bin store's street face and the substation (IMG_3123, IMG_3124). The step back is judged from the photos, about 1 m."
   },
   "picasso_service_frontage.json:picasso-substation": {
    "level": "estimated",
@@ -109,7 +109,7 @@
   },
   "ground_plan_picasso.json:picasso-service-pavement": {
    "level": "estimated",
-   "why": "Kerbed concrete pavement in IMG_3123, 3124, 3105 and 3106, narrowing to nothing at the green-door building; bounded by the frontage and the mapped road edge, about 1 m. Whether the wide apron at the slatted gate is raised is not seen."
+   "why": "Kerbed concrete pavement in IMG_3123, 3124, 3105 and 3106, narrowing to nothing at the bin store's street door; bounded by the frontage and the mapped road edge, about 1 m. Whether the wide apron at the slatted gate is raised is not seen."
   },
   "ground_plan_picasso.json:picasso-hotel-apron": {
    "level": "estimated",
@@ -1638,7 +1638,7 @@
     "IMG_3099.jpg",
     "IMG_3103.jpg"
    ],
-   "why": "IMG_3099's doorway is dark, as if into a roofed room, while IMG_3103 shows the yard open to the sky. Built as one open yard; a view over the wall or from inside the doorway would settle it.",
+   "why": "IMG_3099's doorway is dark, as if into a roofed room, while IMG_3103 and IMG_3101 show the yard open to the sky; IMG_3103's far wall reads only 6-7 m from its camera, so the open yard may end about 7 m north-west of the long wall's end with a separate bay beyond (independent review, 26 Nov 2026). Built as one open yard; a square-on view of the front and one from inside the doorway would settle it.",
    "decision": "needs-photos"
   }
  ]

@@ -8,8 +8,8 @@ import type { Vec2 } from "./types";
  * Calle Pintor Picasso south of the car park (data/picasso_service_frontage.json), stage 2 of the
  * structure-first order: the hotel's lower wing on the east side (registry 6465301UF1366N_part3, which the
  * registry gives 0 storeys), the walled bin yard at the car park's south-east corner, and the utility row on
- * the west side: the green-door building, the set-back wall, the substation, the meter box and the slatted
- * gate. Heights are laser-survey tops over the datum, drawn above the visible paving as the long wall is.
+ * the west side: the bin store's street face, the set-back wall, the substation, a recessed grey gate, the meter
+ * box and the slatted gate. Heights are laser-survey tops over the datum, drawn above the visible paving as the long wall is.
  * The pavement and the asphalt apron are ground-plan surfaces (data/ground_plan_picasso.json).
  */
 /** Road and car-park paving is drawn this far above the terrain (src/boundaries.ts); survey tops are lifted by it. */
@@ -17,12 +17,21 @@ const PAVING = 0.27;
 type Building = { id: string; ring: Vec2[]; top: number; roof: string };
 const buildings = data.buildings as unknown as Building[];
 const wing = data.hotelWing as unknown as { id: string; ring: Vec2[]; top: number };
+type Opening = { at: number; width: number; height: number };
 const yard = data.binYard as unknown as {
-  id: string; front: Vec2[]; northEnd: Vec2[]; thickness: number; height: number;
-  doorway: { at: number; width: number; height: number }; gate: { at: number; width: number; height: number };
+  id: string; front: Vec2[]; northEnd: Vec2[]; southEnd: Vec2[]; roadFace: Vec2[]; thickness: number; height: number;
+  doorway: Opening; streetDoor: Opening;
 };
+/** The bin yard's walls: its car-park front with the doorway, its road face with the green sliding door, and its two ends. The long wall is its east side north-west of the wall's end. */
+const yardWalls: { line: Vec2[]; openings: Opening[] }[] = [
+  { line: yard.front, openings: [yard.doorway] },
+  { line: yard.roadFace, openings: [yard.streetDoor] },
+  { line: yard.southEnd, openings: [] },
+  { line: yard.northEnd, openings: [] },
+];
 const recess = data.recess as unknown as { id: string; points: Vec2[]; thickness: number; top: number };
 const gate = data.slattedGate as unknown as { id: string; points: Vec2[]; thickness: number; height: number };
+const serviceGate = data.serviceGate as unknown as { id: string; points: Vec2[]; thickness: number; height: number };
 
 function strip(a: Vec2, b: Vec2, thickness: number): Vec2[] {
   const length = Math.hypot(b[0] - a[0], b[1] - a[1]) || 1;
@@ -34,23 +43,22 @@ const along = (a: Vec2, b: Vec2, t: number): Vec2 => {
   return [a[0] + (b[0] - a[0]) * t / l, a[1] + (b[1] - a[1]) * t / l];
 };
 
-/** The bin yard's front split round its doorway and gate: [start, end] metres from its south end. */
-function frontPieces(): { solid: [number, number][]; openings: { from: number; to: number; height: number }[] } {
-  const [a, b] = yard.front, length = Math.hypot(b[0] - a[0], b[1] - a[1]);
-  const openings = [yard.gate, yard.doorway].map((o) => ({ from: o.at - o.width / 2, to: o.at + o.width / 2, height: o.height })).sort((p, q) => p.from - q.from);
+/** A wall split round its openings: solid [start, end] runs and the openings, metres from its first point. */
+function pieces(line: Vec2[], openings: Opening[]): { solid: [number, number][]; openings: { from: number; to: number; height: number }[] } {
+  const [a, b] = line, length = Math.hypot(b[0] - a[0], b[1] - a[1]);
+  const gaps = openings.map((o) => ({ from: o.at - o.width / 2, to: o.at + o.width / 2, height: o.height })).sort((p, q) => p.from - q.from);
   const solid: [number, number][] = [];
   let at = 0;
-  for (const o of openings) { solid.push([at, o.from]); at = o.to; }
+  for (const o of gaps) { solid.push([at, o.from]); at = o.to; }
   solid.push([at, length]);
-  return { solid, openings };
+  return { solid: solid.filter(([s, t]) => t - s > 0.01), openings: gaps };
 }
+const yardStrips = (): Vec2[][] => yardWalls.flatMap((w) => pieces(w.line, w.openings).solid.map(([s, t]) => strip(along(w.line[0], w.line[1], s), along(w.line[0], w.line[1], t), yard.thickness)));
 
 /** Collision: every building and wall; the yard's doorway and gate are left open. */
 export function picassoServiceFrontageRings(): Vec2[][] {
-  const [a, b] = yard.front;
-  const front = frontPieces().solid.map(([s, t]) => strip(along(a, b, s), along(a, b, t), yard.thickness));
   return [
-    wing.ring, ...buildings.map((x) => x.ring), ...front, strip(yard.northEnd[0], yard.northEnd[1], yard.thickness),
+    wing.ring, ...buildings.map((x) => x.ring), ...yardStrips(), strip(serviceGate.points[0], serviceGate.points[1], serviceGate.thickness),
     ...recess.points.slice(1).map((p, i) => strip(recess.points[i], p, recess.thickness)),
     strip(gate.points[0], gate.points[1], gate.thickness),
   ];
@@ -58,13 +66,12 @@ export function picassoServiceFrontageRings(): Vec2[][] {
 
 /** Plan outlines for the map. */
 export function picassoServiceFrontagePlan(): { id: string; name: string; ring: Vec2[]; fill: string }[] {
-  const named = (id: string) => [data.hotelWing, data.binYard, data.recess, data.slattedGate, ...data.buildings].find((x) => x.id === id)!.name;
-  const [a, b] = yard.front;
+  const named = (id: string) => [data.hotelWing, data.binYard, data.recess, data.slattedGate, data.serviceGate, ...data.buildings].find((x) => x.id === id)!.name;
   return [
     { id: wing.id, name: named(wing.id), ring: wing.ring, fill: "#efe6da" },
     ...buildings.map((x) => ({ id: x.id, name: named(x.id), ring: x.ring, fill: x.roof === "brown" ? "#8a5a44" : "#f7f4ee" })),
-    ...frontPieces().solid.map(([s, t]) => ({ id: yard.id, name: named(yard.id), ring: strip(along(a, b, s), along(a, b, t), yard.thickness), fill: "#f7f4ee" })),
-    { id: yard.id, name: named(yard.id), ring: strip(yard.northEnd[0], yard.northEnd[1], yard.thickness), fill: "#f7f4ee" },
+    ...yardStrips().map((ring) => ({ id: yard.id, name: named(yard.id), ring, fill: "#f7f4ee" })),
+    { id: serviceGate.id, name: named(serviceGate.id), ring: strip(serviceGate.points[0], serviceGate.points[1], serviceGate.thickness), fill: "#8a9094" },
     ...recess.points.slice(1).map((p, i) => ({ id: recess.id, name: named(recess.id), ring: strip(recess.points[i], p, recess.thickness), fill: "#f7f4ee" })),
     { id: gate.id, name: named(gate.id), ring: strip(gate.points[0], gate.points[1], gate.thickness), fill: "#2f3532" },
   ];
@@ -109,7 +116,7 @@ export function addPicassoServiceFrontage(scene: THREE.Scene): void {
   // The hotel's lower wing: white walls, a flat red roof (aerial) at the surveyed top.
   block(wing.id, wing.ring, wing.top + PAVING, roofs.red);
 
-  // The utility row: green-door building, substation (brown tiled cap a little proud of its walls), meter box.
+  // The utility row: substation (brown tiled cap a little proud of its walls), meter box.
   for (const b of buildings) {
     block(b.id, b.ring, b.top + PAVING, roofs[b.roof] ?? white);
     if (b.roof === "brown") {
@@ -123,21 +130,26 @@ export function addPicassoServiceFrontage(scene: THREE.Scene): void {
     }
   }
 
-  // The bin yard: front wall with its doorway and arched gate left open (lintels over them), and the north end.
-  // The long wall is its east side and the green-door building its south end.
-  const [fa, fb] = yard.front;
-  const floor = groundAt(fa, fb) + PAVING, top = floor + yard.height;
-  const pieces = frontPieces();
-  for (const [s, t] of pieces.solid) wallPiece(yard.id, along(fa, fb, s), along(fa, fb, t), yard.thickness, floor - 0.3, top);
-  for (const o of pieces.openings) wallPiece(`${yard.id}-lintel`, along(fa, fb, o.from), along(fa, fb, o.to), yard.thickness, floor + o.height, top);
-  wallPiece(yard.id, yard.northEnd[0], yard.northEnd[1], yard.thickness, floor - 0.3, top);
+  // The bin yard: level-topped walls 2.6 m over the car-park paving, open to the sky, its doorway and street door
+  // left open under lintels. On the road side the walls stand on the lower road.
+  const floor = groundAt(yard.front[0], yard.front[1]) + PAVING, top = floor + yard.height;
+  for (const w of yardWalls) {
+    const [a, b] = w.line, foot = groundAt(a, b) + PAVING;
+    const cut = pieces(w.line, w.openings);
+    for (const [s, t] of cut.solid) wallPiece(yard.id, along(a, b, s), along(a, b, t), yard.thickness, foot - 0.3, top);
+    for (const o of cut.openings) wallPiece(`${yard.id}-lintel`, along(a, b, o.from), along(a, b, o.to), yard.thickness, foot + o.height, top);
+  }
 
-  // The set-back wall between the green-door building and the substation, level-topped.
+  // The set-back wall between the bin store's street face and the substation, level-topped.
   recess.points.slice(1).forEach((p, i) => wallPiece(recess.id, recess.points[i], p, recess.thickness, groundAt(recess.points[i], p) - 0.2, recess.top + PAVING));
 
   // The dark slatted gate beside the meter box.
   const [ga, gb] = gate.points, gFoot = groundAt(ga, gb) + PAVING;
   wallPiece(gate.id, ga, gb, gate.thickness, gFoot - 0.3, gFoot + gate.height, dark);
+
+  // The narrow grey gate set back between the substation and the meter box.
+  const [sa, sb] = serviceGate.points, sFoot = groundAt(sa, sb) + PAVING;
+  wallPiece(serviceGate.id, sa, sb, serviceGate.thickness, sFoot - 0.3, sFoot + serviceGate.height, new THREE.MeshStandardMaterial({ color: "#8a9094", roughness: 0.7 }));
 
   scene.add(group);
 }

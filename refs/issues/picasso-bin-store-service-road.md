@@ -28,7 +28,7 @@ Task `picasso-bin-store-service-road` · area **Pintor Picasso and the car park*
 
 ## Build
 
-Dave (26 Nov 2026) circled the bin store (DEPOSITO BASURA) at the car park's south-east corner and the service road that leads from it to the beach. Stage 1 and 2 of the structure-first order: list the photo coverage, then lay out the bin yard against the long wall, the utility row on the road's west side (green-door building, set-back wall, substation, meter box, slatted gate) with its kerbed pavement, and the hotel's lower wing on the east side with the asphalt to its foot. Heights from the laser survey.
+Dave (26 Nov 2026) circled the bin store (DEPOSITO BASURA) at the car park's south-east corner and the service road that leads from it to the beach. Stage 1 and 2 of the structure-first order: list the photo coverage, then lay out the bin yard against the long wall, the utility row on the road's west side (set-back wall, substation, recessed gate, meter box, slatted gate) with its kerbed pavement, and the hotel's lower wing on the east side with the asphalt to its foot. Heights from the laser survey.
 
 ## Do not
 

@@ -4411,25 +4411,16 @@
   },
   {
    "id": "picasso_service_frontage.json:picasso-bin-yard",
-   "name": "Bin store: walled bin yard at the car park's south-east corner (DEPOSITO BASURA)",
+   "name": "Bin store: walled bin yard at the car park's south-east corner (DEPOSITO BASURA), open to the street through a green sliding door",
    "kind": "reference feature",
    "source": "laser surface model (2 m grid, about 1 m) and unsolved photos",
    "evidence": [
     "IMG_3099.jpg",
     "IMG_3100.jpg",
     "IMG_3101.jpg",
-    "IMG_3103.jpg"
-   ]
-  },
-  {
-   "id": "picasso_service_frontage.json:picasso-green-door-building",
-   "name": "White utility building with a green sliding door, at the long wall's south end",
-   "kind": "reference feature",
-   "source": "laser surface model (2 m grid, about 1 m) and unsolved photos",
-   "evidence": [
-    "IMG_3124.jpg",
+    "IMG_3103.jpg",
     "IMG_3123.jpg",
-    "IMG_2345.jpg"
+    "IMG_3124.jpg"
    ]
   },
   {
@@ -4455,7 +4446,7 @@
   },
   {
    "id": "picasso_service_frontage.json:picasso-recess-wall",
-   "name": "Set-back white wall between the green-door building and the substation",
+   "name": "Set-back white wall between the bin store's street face and the substation",
    "kind": "reference feature",
    "source": "photo order and judged offsets; unsolved photos",
    "evidence": [
@@ -4469,6 +4460,17 @@
    "kind": "reference feature",
    "source": "photo order and judged offsets; unsolved photos",
    "evidence": [
+    "IMG_2345.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_frontage.json:picasso-service-gate",
+   "name": "Narrow recessed grey gate between the substation and the meter box",
+   "kind": "reference feature",
+   "source": "photo order and judged offsets; unsolved photos",
+   "evidence": [
+    "IMG_3106.jpg",
+    "IMG_3120.jpg",
     "IMG_2345.jpg"
    ]
   },
@@ -4974,7 +4976,7 @@
    "id": "ground_plan_picasso.json:picasso-service-pavement",
    "name": "Kerbed pavement along the utility row, west side of Calle Pintor Picasso south of the car park",
    "kind": "reference feature",
-   "source": "Between the utility row's faces (data/picasso_service_frontage.json) and the road's mapped west edge, from the long wall's south end to the north corner of registry part 6364501UF1366S_part1. IMG_3124 shows the kerb closing in on the green-door building and the pavement ending at the wall foot, which is where the mapped road edge meets the wall's line; IMG_3123 and IMG_3105 show it about 1 m wide at the substation and running in to the set-back wall; IMG_2345 shows a wide paved apron in front of the slatted gate. Drawn as one raised concrete apron; whether the apron at the gate is raised is not seen.",
+   "source": "Between the utility row's faces (data/picasso_service_frontage.json) and the road's mapped west edge, from the long wall's south end to the north corner of registry part 6364501UF1366S_part1. IMG_3124 shows the kerb closing in on the bin store's street door and the pavement ending at the wall foot, which is where the mapped road edge meets the wall's line; IMG_3123 and IMG_3105 show it about 1 m wide at the substation and running in to the set-back wall; IMG_2345 shows a wide paved apron in front of the slatted gate. Drawn as one raised concrete apron; whether the apron at the gate is raised is not seen.",
    "evidence": [
     "IMG_3123.jpg",
     "IMG_3124.jpg",
@@ -15307,12 +15309,6 @@
   },
   {
    "from": "photo:IMG_2345.jpg",
-   "to": "picasso_service_frontage.json:picasso-green-door-building",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2345.jpg",
    "to": "picasso_service_frontage.json:picasso-substation",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -15326,6 +15322,12 @@
   {
    "from": "photo:IMG_2345.jpg",
    "to": "picasso_service_frontage.json:picasso-slatted-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2345.jpg",
+   "to": "picasso_service_frontage.json:picasso-service-gate",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -27773,6 +27775,12 @@
   },
   {
    "from": "photo:IMG_3106.jpg",
+   "to": "picasso_service_frontage.json:picasso-service-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3106.jpg",
    "to": "ground_plan_picasso.json:picasso-service-pavement",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -27908,6 +27916,12 @@
   },
   {
    "from": "photo:IMG_3120.jpg",
+   "to": "picasso_service_frontage.json:picasso-service-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3120.jpg",
    "to": "ground_plan_picasso.json:picasso-hotel-apron",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -27977,7 +27991,7 @@
   },
   {
    "from": "photo:IMG_3123.jpg",
-   "to": "picasso_service_frontage.json:picasso-green-door-building",
+   "to": "picasso_service_frontage.json:picasso-bin-yard",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -28013,7 +28027,7 @@
   },
   {
    "from": "photo:IMG_3124.jpg",
-   "to": "picasso_service_frontage.json:picasso-green-door-building",
+   "to": "picasso_service_frontage.json:picasso-bin-yard",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

@@ -176,7 +176,7 @@
       "photoRequest": "picasso-bin-store-front",
       "features": [
         "picasso_service_frontage.json:picasso-bin-yard",
-        "picasso_service_frontage.json:picasso-green-door-building"
+        "picasso_service_frontage.json:picasso-service-gate"
       ],
       "status": "open",
       "sources": [
@@ -188,7 +188,7 @@
       "id": "picasso-service-road-west-row",
       "area": "picasso",
       "kind": "photo",
-      "ask": "From the hotel side of the service road, square-on views of the green-door building, the substation and the meter box with the slatted gate, each with the kerb in frame, and one along the gate to its end.",
+      "ask": "From the hotel side of the service road, square-on views of the bin store's street face, the substation and the meter box with the slatted gate, each with the kerb in frame, and one along the gate to its end.",
       "why": "the row's lengths, its faces' set-back from the kerb and the pavement's level are judged from oblique views",
       "photoRequest": "picasso-service-road-west-row",
       "features": [

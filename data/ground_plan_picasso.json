@@ -439,16 +439,24 @@
           35.26
         ],
         [
-          -28.18,
-          35.32
+          -28.95,
+          35.78
         ],
         [
-          -26.86,
-          37.49
+          -28.33,
+          36.81
         ],
         [
-          -27.8,
-          38.06
+          -27.56,
+          36.34
+        ],
+        [
+          -26.24,
+          38.51
+        ],
+        [
+          -27.18,
+          39.08
         ],
         [
           -24.59,
@@ -481,14 +489,16 @@
         9,
         10,
         11,
-        12
+        12,
+        13,
+        14
       ],
       "raise": 0.34,
       "edges": [
         {
           "kind": "kerb",
-          "from": 10,
-          "to": 13,
+          "from": 12,
+          "to": 15,
           "height": 0.12,
           "base": 0.27,
           "note": "Stone kerb about 0.12 m on the asphalt along the road side (IMG_3123, IMG_3124, IMG_3105, IMG_3106); its height is judged.",
@@ -500,7 +510,7 @@
           ]
         }
       ],
-      "note": "Between the utility row's faces (data/picasso_service_frontage.json) and the road's mapped west edge, from the long wall's south end to the north corner of registry part 6364501UF1366S_part1. IMG_3124 shows the kerb closing in on the green-door building and the pavement ending at the wall foot, which is where the mapped road edge meets the wall's line; IMG_3123 and IMG_3105 show it about 1 m wide at the substation and running in to the set-back wall; IMG_2345 shows a wide paved apron in front of the slatted gate. Drawn as one raised concrete apron; whether the apron at the gate is raised is not seen.",
+      "note": "Between the utility row's faces (data/picasso_service_frontage.json) and the road's mapped west edge, from the long wall's south end to the north corner of registry part 6364501UF1366S_part1. IMG_3124 shows the kerb closing in on the bin store's street door and the pavement ending at the wall foot, which is where the mapped road edge meets the wall's line; IMG_3123 and IMG_3105 show it about 1 m wide at the substation and running in to the set-back wall; IMG_2345 shows a wide paved apron in front of the slatted gate. Drawn as one raised concrete apron; whether the apron at the gate is raised is not seen.",
       "evidence": [
         "IMG_3123.jpg",
         "IMG_3124.jpg",

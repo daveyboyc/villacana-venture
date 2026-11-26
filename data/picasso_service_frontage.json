@@ -87,11 +87,11 @@
  },
  "binYard": {
   "id": "picasso-bin-yard",
-  "name": "Bin store: walled bin yard at the car park's south-east corner (DEPOSITO BASURA)",
+  "name": "Bin store: walled bin yard at the car park's south-east corner (DEPOSITO BASURA), open to the street through a green sliding door",
   "front": [
    [
-    -39.71,
-    22.83
+    -36.86,
+    27.53
    ],
    [
     -44.13,
@@ -114,53 +114,45 @@
    "at": 4.5,
    "width": 1.6,
    "height": 2.1,
-   "note": "Double doors under the RUBBISH COLLECTION / DEPOSITO BASURA sign (IMG_3099), about the middle of the front; metres from the front's south end."
-  },
-  "gate": {
-   "at": 1.0,
-   "width": 1.3,
-   "height": 2.3,
-   "note": "Arched opening with a green steel door at the front's south end, beside the BASURA / RUBBISH BINS sign (IMG_3101); metres from the front's south end."
+   "note": "Double doors under the RUBBISH COLLECTION / DEPOSITO BASURA sign (IMG_3099), about 3 m from the front's south corner and opposite the street door (IMG_3101 is taken from inside the doorway); metres from the front's south end."
   },
   "evidence": [
    "IMG_3099.jpg",
    "IMG_3100.jpg",
    "IMG_3101.jpg",
-   "IMG_3103.jpg"
+   "IMG_3103.jpg",
+   "IMG_3123.jpg",
+   "IMG_3124.jpg"
   ],
-  "trust": "An open-topped yard (IMG_3103 shows sky over yellow wheeled containers between two walls) against the inside of the long wall, which is its east side. The surface model has walls about 2.6-2.9 m over the datum from about 3 to 11.5 m north-west of the long wall's south end and up to about 3 m west of it, and the car park's paving beyond; IMG_3103's yard is about 2.5-3 m wide and 6-8 m deep. Front height 2.6 m judged against the parked Fiat 500 in IMG_3099 (bougainvillea grows over its top). The front faces the car park: IMG_3100 and IMG_3101 stand at its south end, one looking along it and one at it. The doorway and gate positions along it are read from the photos' order, about 1 m."
+  "trust": "Estimated. An open-topped yard (IMG_3103 shows sky over yellow wheeled containers between two walls; IMG_3101 sky over the street door) against the inside of the long wall, which is its east side, running on south-east of the wall's end to a road face flush with the wall's (IMG_3124). Its front faces the car park with one doorway (IMG_3099, IMG_3100). IMG_3101 is taken from inside that doorway: the wall it faces is the yard's road side, white over a grey plinth band on the yard's terrazzo floor, with the green sliding door to the street under an arch, and its recycling sign sends people to the street on the other side of the wall. The surface model has walls about 2.3-2.9 m over the datum from about 11.5 m north-west to 2.5 m south-east of the long wall's end and up to about 3 m west of it (2 m grid, about 1 m). Front height 2.6 m judged against the parked Fiat 500 in IMG_3099. Independent review 26 Nov 2026 placed the openings. Open: IMG_3103's far wall reads only 6-7 m from its camera, so the open yard may end about 7 m north-west of the wall's end with a separate bay beyond (gap:picasso-bin-store-roofed-part).",
+  "southEnd": [
+   [
+    -36.86,
+    27.53
+   ],
+   [
+    -34.3,
+    25.97
+   ]
+  ],
+  "roadFace": [
+   [
+    -35.59,
+    23.84
+   ],
+   [
+    -34.3,
+    25.97
+   ]
+  ],
+  "streetDoor": {
+   "at": 0.75,
+   "width": 1.5,
+   "height": 2.3,
+   "note": "Dark green sliding door on a rail in the road face, with a short ramp up to it (IMG_3124, IMG_3123); seen from inside under an arch beside the BASURA / RUBBISH BINS sign (IMG_3101). Read by rough triangulation at about 0 +/- 1.5 m from the long wall's end; placed just south-east of the wall's end, inside that range, so the wall's own end is kept. Metres from the road face's north-west end."
+  }
  },
  "buildings": [
-  {
-   "id": "picasso-green-door-building",
-   "name": "White utility building with a green sliding door, at the long wall's south end",
-   "ring": [
-    [
-     -40.25,
-     23.15
-    ],
-    [
-     -37.39,
-     27.85
-    ],
-    [
-     -34.3,
-     25.97
-    ],
-    [
-     -37.15,
-     21.27
-    ]
-   ],
-   "top": 2.8,
-   "roof": "white",
-   "evidence": [
-    "IMG_3124.jpg",
-    "IMG_3123.jpg",
-    "IMG_2345.jpg"
-   ],
-   "trust": "IMG_3124 and IMG_3123: a plain white flat-roofed block whose road face continues the long wall's, with a dark green sliding door on a rail and a short ramp up to it. The surface model has it about 2.3-2.9 m over the datum from about 3 m north-west to 2.5 m south-east of the wall's end, and about 3.5 m deep; the wall's last 3 m run into it. The bin yard's south end is its north side."
-  },
   {
    "id": "picasso-substation",
    "name": "Electricity substation (Ormazabal kiosk) with maroon doors",
@@ -190,27 +182,27 @@
     "IMG_3105.jpg",
     "IMG_2345.jpg"
    ],
-   "trust": "IMG_3123, 3106 and 3105: a prefabricated kiosk (maker's plate ORMAZABAL) with maroon steel doors and louvres, high-voltage signs and a brown tiled cap, an arched mesh trellis above it, on a narrow kerbed pavement. Sized as Ormazabal's standard kiosk, 4.46 by 2.38 m. The surface model has a 1.8-2.1 m top (about 2.6 m over the road) 9-14 m south-east of the wall's end, which places it; IMG_2345 shows it between the green-door building and a white meter box."
+   "trust": "IMG_3123, 3106 and 3105: a prefabricated kiosk (maker's plate ORMAZABAL) with maroon steel doors and louvres, high-voltage signs and a brown tiled cap, an arched mesh trellis above it, on a narrow kerbed pavement. Sized as Ormazabal's standard kiosk, 4.46 by 2.38 m. The surface model has a 1.8-2.1 m top (about 2.6 m over the road) 9-14 m south-east of the wall's end, which places it; IMG_2345 shows it between the bin store's street face and a recessed grey gate and white meter box."
   },
   {
    "id": "picasso-meter-box",
    "name": "White meter cabinet building beside the substation",
    "ring": [
     [
-     -29.21,
-     35.94
+     -28.58,
+     36.96
     ],
     [
-     -27.89,
-     38.11
+     -27.27,
+     39.14
     ],
     [
-     -26.86,
-     37.49
+     -26.24,
+     38.51
     ],
     [
-     -28.18,
-     35.32
+     -27.56,
+     36.34
     ]
    ],
    "top": 1.6,
@@ -218,12 +210,12 @@
    "evidence": [
     "IMG_2345.jpg"
    ],
-   "trust": "IMG_2345: a small white block with a grey meter cabinet door, between the maroon doors and the slatted gate. Length and depth judged from that photo; the surface model has 1.5-2.6 m tops here."
+   "trust": "IMG_2345: a small white block with a grey meter cabinet door, between the recessed grey gate beside the substation and the slatted gate. Length and depth judged from that photo; the surface model has 1.5-2.6 m tops here."
   }
  ],
  "recess": {
   "id": "picasso-recess-wall",
-  "name": "Set-back white wall between the green-door building and the substation",
+  "name": "Set-back white wall between the bin store's street face and the substation",
   "points": [
    [
     -36.62,
@@ -244,15 +236,15 @@
    "IMG_3123.jpg",
    "IMG_3124.jpg"
   ],
-  "trust": "IMG_3123 and IMG_3124: between the two buildings the frontage steps back about 2.5 m to a plain white wall with a conduit and a low white box at its foot, the pavement running in to it. Depth of the step judged from the photos (the surface model is low here, 0.1-0.6 m, at the road line). The ground behind is the raised garden, about 1.2 m above the road (2020-21 ground model)."
+  "trust": "IMG_3123 and IMG_3124: between the bin store's street face and the substation the frontage steps back about 2.5 m to a plain white wall with a conduit and a low white box at its foot, the pavement running in to it. Depth of the step judged from the photos (the surface model is low here, 0.1-0.6 m, at the road line). The ground behind is the raised garden, about 1.2 m above the road (2020-21 ground model)."
  },
  "slattedGate": {
   "id": "picasso-slatted-gate",
   "name": "Dark slatted gate and fence beside the meter box",
   "points": [
    [
-    -27.8,
-    38.06
+    -27.18,
+    39.08
    ],
    [
     -24.59,
@@ -270,5 +262,27 @@
   "picasso-boundary-wall",
   "picasso-utility-front"
  ],
- "supersededNote": "The earlier single-photo features from IMG_2345 (data/picasso_service_road.json) put a plain 2.1 m wall where the substation, meter box and slatted gate stand, and a brown-door utility front further south-east where IMG_2345 shows the slatted fence. IMG_3105, 3106, 3123 and 3124 show the row in order, so those two are replaced by the row above: they stay in that file marked superseded (the placement graph has no retirement support yet) and src/picasso-service-road.ts no longer builds them. The stone plinth, ramp and bins on the hotel side are kept."
+ "supersededNote": "The earlier single-photo features from IMG_2345 (data/picasso_service_road.json) put a plain 2.1 m wall where the substation, meter box and slatted gate stand, and a brown-door utility front further south-east where IMG_2345 shows the slatted fence. IMG_3105, 3106, 3123 and 3124 show the row in order, so those two are replaced by the row above: they stay in that file marked superseded (the placement graph has no retirement support yet) and src/picasso-service-road.ts no longer builds them. The stone plinth, ramp and bins on the hotel side are kept. The first pass of this file also had a separate 'green-door building' at the wall's end; the independent review showed it is the bin store's south bay, so it is now part of the bin yard.",
+ "serviceGate": {
+  "id": "picasso-service-gate",
+  "name": "Narrow recessed grey gate between the substation and the meter box",
+  "points": [
+   [
+    -28.95,
+    35.78
+   ],
+   [
+    -28.33,
+    36.81
+   ]
+  ],
+  "thickness": 0.08,
+  "height": 2.0,
+  "evidence": [
+   "IMG_3106.jpg",
+   "IMG_3120.jpg",
+   "IMG_2345.jpg"
+  ],
+  "trust": "A grey panel gate set back about 1 m between the substation and the meter box: IMG_3106 (x 665-740), IMG_3120 (x 235-258) and a dark slot in IMG_2345 (x 455-478), found by the independent review. The surface model is low (-0.7 to 0.6 m) at about 14 m south-east of the wall's end. Width about 1.2 m and set-back judged."
+ }
 }

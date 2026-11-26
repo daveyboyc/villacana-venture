@@ -306,10 +306,10 @@ def features(s):
         add('steps:'+steps['id'],steps['name'],'reference feature','authored photo/map interpretation',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])
     sf=json.loads((ROOT/'data/picasso_service_frontage.json').read_text()) # south of the car park: hotel lower wing, bin yard, utility row
     w=sf['hotelWing'];add('picasso_service_frontage.json:'+w['id'],w['name'],'reference feature','registry footprint; laser-survey top; unsolved photos',evidence=w['evidence'],ring=w['ring'])
-    y=sf['binYard'];add('picasso_service_frontage.json:'+y['id'],y['name'],'reference feature','laser surface model (2 m grid, about 1 m) and unsolved photos',evidence=y['evidence'],points=[y['front'][0],y['front'][1],y['northEnd'][1]])
+    y=sf['binYard'];add('picasso_service_frontage.json:'+y['id'],y['name'],'reference feature','laser surface model (2 m grid, about 1 m) and unsolved photos',evidence=y['evidence'],points=[y['front'][0],y['front'][1],y['northEnd'][1],y['roadFace'][0]])
     for f in sf['buildings']:
         add('picasso_service_frontage.json:'+f['id'],f['name'],'reference feature','laser surface model (2 m grid, about 1 m) and unsolved photos',evidence=f['evidence'],ring=f['ring'])
-    for f in [sf['recess'],sf['slattedGate']]:
+    for f in [sf['recess'],sf['slattedGate'],sf['serviceGate']]:
         add('picasso_service_frontage.json:'+f['id'],f['name'],'reference feature','photo order and judged offsets; unsolved photos',evidence=f['evidence'],points=f['points'])
     lawn=json.loads((ROOT/'data/picasso_west_lawn.json').read_text()) # Calle de Picasso's raised grass strip and retaining wall
     o,w=lawn['frame']['origin'],lawn['frame']['toward'];l=math.dist(o,w);U=[(w[0]-o[0])/l,(w[1]-o[1])/l];at=lambda s,q:[round(o[0]+U[0]*s-U[1]*q,2),round(o[1]+U[1]*s+U[0]*q,2)]

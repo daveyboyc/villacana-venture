@@ -5410,10 +5410,10 @@
     "picasso_service_road.json:picasso-boundary-wall",
     "picasso_service_road.json:picasso-stone-plinth",
     "picasso_service_frontage.json:picasso-hotel-lower-wing",
-    "picasso_service_frontage.json:picasso-green-door-building",
     "picasso_service_frontage.json:picasso-substation",
     "picasso_service_frontage.json:picasso-meter-box",
     "picasso_service_frontage.json:picasso-slatted-gate",
+    "picasso_service_frontage.json:picasso-service-gate",
     "ground_plan_picasso.json:picasso-service-pavement"
    ],
    "geometryReview": "observed; geometry comparison pending",
@@ -23160,6 +23160,7 @@
    ],
    "citedBy": [
     "picasso_service_frontage.json:picasso-substation",
+    "picasso_service_frontage.json:picasso-service-gate",
     "ground_plan_picasso.json:picasso-service-pavement"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -23513,6 +23514,7 @@
    "inViewCandidates": [],
    "citedBy": [
     "picasso_service_frontage.json:picasso-hotel-lower-wing",
+    "picasso_service_frontage.json:picasso-service-gate",
     "ground_plan_picasso.json:picasso-hotel-apron"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -23616,7 +23618,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
-    "picasso_service_frontage.json:picasso-green-door-building",
+    "picasso_service_frontage.json:picasso-bin-yard",
     "picasso_service_frontage.json:picasso-substation",
     "picasso_service_frontage.json:picasso-recess-wall",
     "ground_plan_picasso.json:picasso-service-pavement"
@@ -23648,7 +23650,7 @@
    "inViewCandidates": [],
    "citedBy": [
     "picasso_car_park.json:picasso-car-park-wall",
-    "picasso_service_frontage.json:picasso-green-door-building",
+    "picasso_service_frontage.json:picasso-bin-yard",
     "picasso_service_frontage.json:picasso-recess-wall",
     "ground_plan_picasso.json:picasso-service-pavement"
    ],
