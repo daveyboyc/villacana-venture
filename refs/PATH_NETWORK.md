@@ -13,8 +13,8 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 - sourcePixelLocators: 32
 - sources: 683
 - uninspectedSources: 613
-- routes: 24
-- segments: 172
+- routes: 25
+- segments: 180
 - tracedSides: 0
 - tunnelCandidates: 11
 - confirmedUniqueTunnels: unresolved
@@ -31,13 +31,13 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 | Calle Elena | 117 / 78 | 2 | 2 | partial |
 | Calle Miguel de Cervantes | 89 / 61 | 1 | 1 | partial |
 | Calle Pintor Dalí | 68 / 68 | 3 | 0 | uninspected |
-| Pintor Picasso and the car park | 34 / 34 | 2 | 0 | uninspected |
+| Pintor Picasso and the car park | 36 / 36 | 2 | 0 | uninspected |
 | Loira, Bolivia, Alberto and Isabel | 42 / 42 | 4 | 6 | uninspected |
 | Calle Eva | 61 / 61 | 2 | 0 | uninspected |
 | Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 162 / 162 | 6 | 2 | uninspected |
 | Barraka and the beach | 88 / 88 | 1 | 0 | uninspected |
 | The paseo | 104 / 104 | 4 | 0 | uninspected |
-| The whole resort | 34 / 34 | 0 | 0 | uninspected |
+| The whole resort | 34 / 34 | 1 | 0 | uninspected |
 
 Inspection is scoped to its named area; inspecting a shared source for Elena does not complete another area. Source-pixel traces remain separate from registered map edges. Source totals deduplicate IDs globally; area totals overlap. Unknown intervals are not traced sides. Tunnel candidates may overlap; this is not a count of unique real tunnels. All portal positions and physical widths remain unresolved.
 

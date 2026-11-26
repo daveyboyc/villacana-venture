@@ -3883,6 +3883,16 @@
      "station": null
     },
     {
+     "photo": "IMG_3118.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_3119.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_3120.jpg",
      "state": "needs-solving",
      "station": null
@@ -3974,17 +3984,7 @@
      "requests": []
     }
    ],
-   "waitingTasks": [
-    {
-     "id": "picasso-service-road-levels-and-beach",
-     "title": "Calle Pintor Picasso south of the car park: levels behind the utility row, and the road on to the beach",
-     "priority": 2,
-     "dependencies": [
-      "picasso-bin-store-service-road"
-     ],
-     "requests": []
-    }
-   ]
+   "waitingTasks": []
   },
   {
    "id": "north-lanes",
@@ -12301,15 +12301,6 @@
      "priority": 2,
      "dependencies": [
       "eva-lane-details"
-     ],
-     "requests": []
-    },
-    {
-     "id": "picasso-service-road-levels-and-beach",
-     "title": "Calle Pintor Picasso south of the car park: levels behind the utility row, and the road on to the beach",
-     "priority": 2,
-     "dependencies": [
-      "picasso-bin-store-service-road"
      ],
      "requests": []
     }

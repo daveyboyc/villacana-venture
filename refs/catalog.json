@@ -12829,7 +12829,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "area:paseo"
+   "area:paseo",
+   "street:picasso-beach-lane",
+   "ground_plan_picasso.json:picasso-beach-lane-concrete",
+   "picasso_beach_lane.json:picasso-lane-east-terrace"
   ]
  },
  {
@@ -12860,13 +12863,20 @@
    "altitude": 6.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_beach_lane.json:picasso-lane-east-terrace",
+   "picasso_beach_lane.json:picasso-lane-mouth",
+   "ground_plan_picasso.json:picasso-beach-lane-concrete"
+  ],
   "looksAt": [
    28.1,
    92.5
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "picasso_beach_lane.json:picasso-lane-east-terrace",
+   "ground_plan_picasso.json:picasso-beach-lane-concrete",
+   "street:picasso-beach-lane",
    "area:paseo"
   ]
  },
@@ -22081,14 +22091,17 @@
    "altitude": 4.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_beach_lane.json:picasso-lane-mouth"
+  ],
   "looksAt": [
    31.8,
    93.0
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "area:paseo"
+   "area:paseo",
+   "picasso_beach_lane.json:picasso-lane-east-terrace"
   ]
  },
  {
@@ -22118,7 +22131,11 @@
    "altitude": 4.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_beach_lane.json:picasso-lane-east-terrace",
+   "picasso_beach_lane.json:picasso-lane-mouth",
+   "ground_plan_picasso.json:picasso-beach-lane-concrete"
+  ],
   "looksAt": [
    32.4,
    90.3
@@ -22161,7 +22178,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "area:paseo"
+   "area:paseo",
+   "ground_plan_picasso.json:picasso-beach-lane-concrete",
+   "street:picasso-beach-lane",
+   "picasso_beach_lane.json:picasso-lane-east-terrace"
   ]
  },
  {
@@ -22199,7 +22219,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "area:paseo"
+   "area:paseo",
+   "street:picasso-beach-lane"
   ]
  },
  {
@@ -23475,6 +23496,7 @@
   "citedBy": [
    "picasso_service_frontage.json:picasso-hotel-lower-wing",
    "picasso_service_frontage.json:picasso-substation",
+   "picasso_beach_lane.json:picasso-lane-tower",
    "ground_plan_picasso.json:picasso-service-pavement",
    "ground_plan_picasso.json:picasso-hotel-apron"
   ],
@@ -23520,6 +23542,7 @@
   "citedBy": [
    "picasso_service_frontage.json:picasso-substation",
    "picasso_service_frontage.json:picasso-service-gate",
+   "picasso_beach_lane.json:picasso-lane-tower",
    "ground_plan_picasso.json:picasso-service-pavement"
   ],
   "looksAt": [
@@ -23840,14 +23863,19 @@
   "id": "IMG_3118.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3118.jpg",
-  "title": "IMG_3118",
+  "title": "Calle Pintor Picasso looking north-west from the lane's north end: tower and white buildings left, hotel and plane trees right",
   "shows": [
+   "picasso",
    "main-pool"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "view"
+  ],
+  "note": "Reviewed 26 Nov 2026: asphalt road; on the left a two-storey white building with a black 90 MILES sign, the white tower with a TV aerial and white walls with doors, a cement mixer and a blue lorry; on the right the hotel block, plane trees and low white buildings, a parked van.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1yxxG7qTlVYHvRapPx27mMFmSTHmb6Oso/view?usp=drivesdk",
@@ -23859,28 +23887,39 @@
    "altitude": 5.4,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   3.5,
-   69.7
+  "citedBy": [
+   "picasso_beach_lane.json:picasso-lane-tower",
+   "ground_plan_picasso.json:picasso-beach-road-forecourt",
+   "ground_plan_picasso.json:picasso-beach-lane-concrete"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -2.0,
+   63.0
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "ground_plan_picasso.json:picasso-beach-road-forecourt",
+   "street:picasso",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "the road north-west from the lane past the forecourt"
  },
  {
   "id": "IMG_3119.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3119.jpg",
-  "title": "IMG_3119",
+  "title": "Calle Pintor Picasso forecourt looking north-west: blue lorry by the tower, grey containers and utility sheds on the right",
   "shows": [
+   "picasso",
    "main-pool"
   ],
-  "areasBasis": "camera position",
-  "viewpoint": null,
-  "useFor": [],
-  "note": null,
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": "Reviewed 26 Nov 2026: the tower's base and white walls on the left with a blue lorry and building materials; on the right two big grey containers, small white utility sheds with brown doors and a low white wall; palms and plane trees beyond.",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/16aylIAQykewhcW1YU-5XRz0Ribi3IQ8f/view?usp=drivesdk",
@@ -23892,13 +23931,21 @@
    "altitude": 4.8,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   2.6,
-   65.0
+  "citedBy": [
+   "picasso_beach_lane.json:picasso-lane-tower",
+   "ground_plan_picasso.json:picasso-beach-road-forecourt"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAt": [
+   -3.0,
+   57.5
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "ground_plan_picasso.json:picasso-beach-road-forecourt",
+   "street:picasso",
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "the forecourt between the pool building and the hotel's low block"
  },
  {
   "id": "IMG_3120.jpg",

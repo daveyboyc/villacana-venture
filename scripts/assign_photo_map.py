@@ -312,6 +312,10 @@ def features(s):
     bd=sf['binStoreDetails'];add('picasso_service_frontage.json:'+bd['id'],bd['name'],'reference feature','positions read along each wall at its own scale in unsolved photos, about 0.3 m',evidence=bd['evidence'],points=[y['front'][0],y['front'][1],y['roadFace'][0],y['roadFace'][1]])
     for f in [sf['recess'],sf['slattedGate'],sf['serviceGate']]:
         add('picasso_service_frontage.json:'+f['id'],f['name'],'reference feature','photo order and judged offsets; unsolved photos',evidence=f['evidence'],points=f['points'])
+    bl=json.loads((ROOT/'data/picasso_beach_lane.json').read_text()) # the road on to the beach: tower, east terrace, lane mouth
+    add('picasso_beach_lane.json:'+bl['tower']['id'],bl['tower']['name'],'reference feature','laser surface model peak (2 m grid, about 1 m) and unsolved photos',evidence=bl['tower']['evidence'],points=[bl['tower']['centre']])
+    add('picasso_beach_lane.json:'+bl['eastTerrace']['id'],bl['eastTerrace']['name'],'reference feature','registry strip; unsolved IMG_2613',evidence=bl['eastTerrace']['evidence'],ring=bl['eastTerrace']['ring'])
+    add('picasso_beach_lane.json:'+bl['mouth']['id'],bl['mouth']['name'],'reference feature','read from unsolved photos, about 1 m',evidence=bl['mouth']['evidence'],points=[bl['mouth']['bollard'],bl['mouth']['grate']['centre']])
     lawn=json.loads((ROOT/'data/picasso_west_lawn.json').read_text()) # Calle de Picasso's raised grass strip and retaining wall
     o,w=lawn['frame']['origin'],lawn['frame']['toward'];l=math.dist(o,w);U=[(w[0]-o[0])/l,(w[1]-o[1])/l];at=lambda s,q:[round(o[0]+U[0]*s-U[1]*q,2),round(o[1]+U[1]*s+U[0]*q,2)]
     add('picasso_west_lawn.json:'+lawn['id'],lawn['name'],'reference feature','laser-survey levels; wall line where the survey steps, not photographed',evidence=lawn['evidence'],points=[at(s,lawn['wall']['offset']) for span in lawn['spans'] for s in span])
