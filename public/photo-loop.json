@@ -12061,13 +12061,6 @@
      "requests": []
     },
     {
-     "id": "tools-shoot-views-photo-camera",
-     "title": "scripts/shoot_views.cjs renders the whole-resort overview instead of the photo camera",
-     "priority": 1,
-     "dependencies": [],
-     "requests": []
-    },
-    {
      "id": "elena-25-passage",
      "title": "Elena south: register the CALLE ELENA 25 covered passage and where it leads",
      "priority": 2,

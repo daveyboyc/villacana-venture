@@ -65,8 +65,8 @@ and deleting one fails the placement gate.
   bearing = 360 − h. Pitch asin(1.7/d) gives eye height.
 - *Time.* Each view takes 3-5 minutes, so run batches in the background. Set
   `PLAYWRIGHT_CHROMIUM_EXECUTABLE=/opt/pw-browsers/chromium` and run `npm ci` first.
-- **`scripts/shoot_views.cjs` is broken.** Its renders show the whole-resort overview instead of the photo camera, on
-  `main` as well. Fixing it is package 1.
+- **`scripts/shoot_views.cjs`** renders from the photo again (package 1, fixed 26 Nov 2026: it now asks for
+  `view=walk`). `--pose` was never affected.
 
 **Ground plan.** `check_ground_plan.py` refuses:
 - a surface inside a standing house;
