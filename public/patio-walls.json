@@ -6,7 +6,7 @@
     "kerb": 4,
     "enclosure": 23,
     "gap": 22,
-    "context": 42
+    "context": 43
   },
   "records": [
     {
@@ -4199,6 +4199,36 @@
       "confidence": "inferred",
       "placement": "unreviewed",
       "basis": "Model group context, not a traced wall axis or quantity. The wall is photographed, but where it stands is guessed (about 4 m): the photo GPS is off by 47 m.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "picasso_west_lawn.json:picasso-west-lawn",
+      "name": "Calle de Picasso · raised grass strip and its retaining wall at the back of the west bays",
+      "kind": "context",
+      "points": [
+        [
+          -112.63,
+          -55.21
+        ],
+        [
+          -75.34,
+          8.72
+        ],
+        [
+          -73.33,
+          12.17
+        ],
+        [
+          -59.73,
+          35.49
+        ]
+      ],
+      "closed": false,
+      "areas": [],
+      "evidence": [],
+      "confidence": "inferred",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Not photographed. The laser survey holds the grass strip at the path's level, up to 0.84 m above the car park; the retaining wall stands where the survey changes level, 3.1 m west of the bays' car line, about 0.5 m. Its white render and coping follow the resort's other walls; whether a hedge stands on it is not seen.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {

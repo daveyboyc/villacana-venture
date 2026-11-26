@@ -1,0 +1,12 @@
+{
+ "id": "picasso-west-lawn",
+ "name": "Calle de Picasso · raised grass strip and its retaining wall at the back of the west bays",
+ "about": "The grass strip between Calle de Picasso and the main car park's west bays, drawn by src/picasso-west-lawn.ts. Positions are in the frame of the west bays' car line, from 'origin' towards 'toward' (s, metres along it) with offsets in metres west of it (the side the path is on). The grass runs from the wall's inner face to the path's east edge and stands level with the path, stepping down with it at its two flights; the wall's outer face stands 'wall.offset' west of the car line, its foot on the car park. 'spans' are the stretches the grass runs, broken where Calle Cervantes comes through into the car park. The terrain grid holds the car park at its own level up to the wall (scripts/lidar_check.py grid, 'hold'), so the asphalt meets the wall foot instead of riding up the survey's 2 m blur.",
+ "frame": {"origin": [-110.2, -57.2], "toward": [-61.5, 26.3]},
+ "wall": {"offset": 3.1, "thickness": 0.2, "coping": 0.05, "below": 0.15},
+ "lawnBelowPath": 0.03,
+ "spans": [[0.5, 74.5], [78.5, 105.5]],
+ "hold": {"from": 1.6, "width": 1.5, "carParkAt": 0.5, "blend": 2.0},
+ "evidence": [],
+ "trust": "Inferred, Dave (26 Nov 2026): the grass area beside Calle Picasso is not at ground level. The laser survey (PNOA-LiDAR 2020-21, 1 m) holds the strip between the path and the bays at the path's level, above the car park by about 0.1 m at the north end, 0.84 m about 30 m along (the most), 0.45-0.6 m in the middle stretch and 0.1-0.3 m south of Calle Cervantes. Where it changes level, sampled every 3 m across the strip, puts the retaining face about 3.0 m west of the bays' car line (median of 3.0, range 2.25-3.5 m north of Cervantes); 3.1 m is used. The aerial shows dark green hedge or shrub canopy overhanging to 3.5-4.5 m and no clear coping line, so the wall's finish (white render, as elsewhere in the resort), its coping and whether a hedge stands on it are not seen. Not photographed; photo request picasso-west-path-drops asks for it."
+}

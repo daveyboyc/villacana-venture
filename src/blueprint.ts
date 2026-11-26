@@ -44,6 +44,7 @@ import { seafrontFenceRings } from "./seafront-fence";
 import { lawnSolidRings } from "./main-pool-lawn";
 import { picassoLawnWallRings } from "./picasso-lawn-wall";
 import { picassoCarParkPlan } from "./picasso-car-park";
+import { picassoWestLawnPlan, picassoWestLawnRings } from "./picasso-west-lawn";
 import { picassoEntranceRings } from "./picasso-entrance-details";
 import { EDGES, FINISHES, groundEdges, groundPlanSolidRings, groundSurfaces } from "./ground-plan";
 import elenaNorth from "../data/elena_north.json";
@@ -319,6 +320,13 @@ async function boot(): Promise<void> {
   for (const ring of picassoCarParkPlan().wall) {
     const wallPath = el("path", { d: path(ring), fill: "#f7f4ee", stroke: "#5d5a52", "stroke-width": 0.06, "data-picasso-car-park": "wall" });
     const title = el("title", {}); title.textContent = "Long white wall between the car park and Calle Pintor Picasso · estimated from the aerial; IMG_3125, IMG_3129"; wallPath.append(title);
+    traced.append(wallPath);
+  }
+  // The raised grass strip beside Calle de Picasso and its retaining wall at the back of the west bays (laser survey; inferred).
+  for (const ring of picassoWestLawnPlan()) traced.append(el("path", { d: path(ring), fill: "#9db37a", stroke: "none", "data-picasso-car-park": "west-lawn" }));
+  for (const ring of picassoWestLawnRings()) {
+    const wallPath = el("path", { d: path(ring), fill: "#f7f4ee", stroke: "#5d5a52", "stroke-width": 0.05, "data-picasso-car-park": "west-lawn-wall" });
+    const title = el("title", {}); title.textContent = "Retaining wall under the grass strip beside Calle de Picasso · from the laser survey, inferred (not photographed)"; wallPath.append(title);
     traced.append(wallPath);
   }
   // The gatehouse on the entrance island (Street View Oct 2024, Google 3D; not in the registry).
