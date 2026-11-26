@@ -89,7 +89,7 @@ graph LR
   F4 --> PIMG_2631_jpg(["IMG_2631"])
   F4 --> PIMG_2633_jpg(["IMG_2633"])
   F4 --> PIMG_2770_jpg(["IMG_2770"])
-  A --> F5["Concrete lane between the pool building's sheds and lawn wall and the east building's terrace · unreviewed"]
+  A --> F5["Concrete lane between the pool building's sheds and lawn wall and the east building's terrace · disputed"]
   F5 --> PIMG_2613_jpg(["IMG_2613"])
   F5 --> PIMG_3067_jpg(["IMG_3067"])
   F5 --> PIMG_3118_jpg(["IMG_3118"])
@@ -171,7 +171,7 @@ graph LR
 | `barraka_frontage.json:paseo-painted-crossing` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `beach_verge.json:barraka-front-shrubs` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `beach_verge.json:barraka-front-verge` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `ground_plan_picasso.json:picasso-beach-lane-concrete` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `ground_plan_picasso.json:picasso-beach-lane-concrete` | disputed | differs | open discrepancy photo-discrepancy:bd1a1210b0abfd53 |
 | `paseo_details.json:paseo-east-windbreak` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_details.json:paseo-pool-hedge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_details.json:paseo-service-cover` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |

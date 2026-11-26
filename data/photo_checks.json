@@ -2099,7 +2099,7 @@
    "task": "picasso-service-road-levels-and-beach",
    "checked": "2026-11-26",
    "by": "Claude",
-   "feature": "street:picasso-beach-lane",
+   "feature": "ground_plan_picasso.json:picasso-beach-lane-concrete",
    "photo": "IMG_3118.jpg",
    "render": "docs/reviews/picasso-beach-lane/IMG_3118-details-pair.jpg",
    "result": "differs",

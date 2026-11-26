@@ -51,7 +51,7 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Pintor Picasso and the car park"]
-  A --> F0["Concrete lane between the pool building's sheds and lawn wall and the east building's terrace · unreviewed"]
+  A --> F0["Concrete lane between the pool building's sheds and lawn wall and the east building's terrace · disputed"]
   F0 --> PIMG_2613_jpg(["IMG_2613"])
   F0 --> PIMG_3067_jpg(["IMG_3067"])
   F0 --> PIMG_3118_jpg(["IMG_3118"])
@@ -223,7 +223,7 @@ graph LR
 
 | Feature | Placement | Photo diagnostics | Blockers |
 | --- | --- | --- | --- |
-| `ground_plan_picasso.json:picasso-beach-lane-concrete` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `ground_plan_picasso.json:picasso-beach-lane-concrete` | disputed | differs | open discrepancy photo-discrepancy:bd1a1210b0abfd53 |
 | `ground_plan_picasso.json:picasso-beach-road-forecourt` | disputed | differs | open discrepancy photo-discrepancy:7cff269e7712cae1 |
 | `ground_plan_picasso.json:picasso-entry-planter` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `ground_plan_picasso.json:picasso-gatehouse-island` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |

@@ -729,7 +729,7 @@
    "placement": {
     "features": 24,
     "verified": 0,
-    "disputed": 11
+    "disputed": 12
    },
    "discrepancies": [
     {
@@ -801,6 +801,10 @@
      "feature": "ground_plan_main_pool.json:lawn-strip-guillermo"
     },
     {
+     "id": "photo-discrepancy:bd1a1210b0abfd53",
+     "feature": "ground_plan_picasso.json:picasso-beach-lane-concrete"
+    },
+    {
      "id": "photo-discrepancy:258c2534e7bd88df",
      "feature": "picasso_beach_lane.json:picasso-lane-east-terrace"
     }
@@ -827,7 +831,7 @@
     "Photos: 39, 39 placed; no camera solved.",
     "Facades: 0 of 32 kit parts traced from photos.",
     "How sure: 2 photographed, 21 estimated, 1 inferred, 2 known gaps.",
-    "Placement: 0 of 24 features verified, 18 open discrepancies.",
+    "Placement: 0 of 24 features verified, 19 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 0 still open; 8 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -1868,7 +1872,7 @@
    "placement": {
     "features": 34,
     "verified": 0,
-    "disputed": 9
+    "disputed": 10
    },
    "discrepancies": [
     {
@@ -1912,6 +1916,10 @@
      "feature": "picasso_service_frontage.json:picasso-bin-store-details"
     },
     {
+     "id": "photo-discrepancy:bd1a1210b0abfd53",
+     "feature": "ground_plan_picasso.json:picasso-beach-lane-concrete"
+    },
+    {
      "id": "photo-discrepancy:7cff269e7712cae1",
      "feature": "ground_plan_picasso.json:picasso-beach-road-forecourt"
     }
@@ -1938,7 +1946,7 @@
     "Photos: 28, 28 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
     "How sure: 0 photographed, 34 estimated, 0 inferred, 4 known gaps.",
-    "Placement: 0 of 34 features verified, 11 open discrepancies.",
+    "Placement: 0 of 34 features verified, 12 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 13 still open; 8 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -3362,9 +3370,13 @@
    "placement": {
     "features": 20,
     "verified": 0,
-    "disputed": 1
+    "disputed": 2
    },
    "discrepancies": [
+    {
+     "id": "photo-discrepancy:bd1a1210b0abfd53",
+     "feature": "ground_plan_picasso.json:picasso-beach-lane-concrete"
+    },
     {
      "id": "photo-discrepancy:258c2534e7bd88df",
      "feature": "picasso_beach_lane.json:picasso-lane-east-terrace"
@@ -3392,7 +3404,7 @@
     "Photos: 101, 100 placed; no camera solved.",
     "Facades: 0 of 106 kit parts traced from photos.",
     "How sure: 5 photographed, 15 estimated, 0 inferred, 3 known gaps.",
-    "Placement: 0 of 20 features verified, 1 open discrepancy.",
+    "Placement: 0 of 20 features verified, 2 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 0 still open; 1 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -3786,8 +3798,8 @@
      "feature": "picasso_service_frontage.json:picasso-bin-store-details"
     },
     {
-     "id": "photo-discrepancy:6b75d1ecdce651ee",
-     "feature": "street:picasso-beach-lane"
+     "id": "photo-discrepancy:bd1a1210b0abfd53",
+     "feature": "ground_plan_picasso.json:picasso-beach-lane-concrete"
     },
     {
      "id": "photo-discrepancy:7cff269e7712cae1",

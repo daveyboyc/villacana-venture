@@ -94,7 +94,7 @@ graph LR
   A --> F5["Main pool deck: its outer edge towards the lawn · unreviewed"]
   F5 --> PIMG_2764_jpg(["IMG_2764"])
   F5 --> PIMG_2765_jpg(["IMG_2765"])
-  A --> F6["Concrete lane between the pool building's sheds and lawn wall and the east building's terrace · unreviewed"]
+  A --> F6["Concrete lane between the pool building's sheds and lawn wall and the east building's terrace · disputed"]
   F6 --> PIMG_2613_jpg(["IMG_2613"])
   F6 --> PIMG_3067_jpg(["IMG_3067"])
   F6 --> PIMG_3118_jpg(["IMG_3118"])
@@ -234,7 +234,7 @@ graph LR
 | `ground_plan_main_pool.json:lawn-strip-guillermo` | disputed | differs | open discrepancy photo-discrepancy:c6145e80226c59a5; open discrepancy photo-discrepancy:2e3a3145c82ea16f; open discrepancy photo-discrepancy:57684c9d7786277b |
 | `ground_plan_main_pool.json:main-lawn` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `ground_plan_main_pool.json:main-pool-deck-band` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `ground_plan_picasso.json:picasso-beach-lane-concrete` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `ground_plan_picasso.json:picasso-beach-lane-concrete` | disputed | differs | open discrepancy photo-discrepancy:bd1a1210b0abfd53 |
 | `jorge_lane.json:jorge-lane-guillermo-paving` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-guillermo-planter` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-guillermo-west` | disputed | differs | open discrepancy photo-discrepancy:74cead97dc4c963c; open discrepancy photo-discrepancy:f89b5484edc8b5c0 |

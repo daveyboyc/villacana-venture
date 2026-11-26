@@ -2932,15 +2932,13 @@
     {
      "id": "model:street:picasso-beach-lane",
      "placement": {
-      "status": "disputed",
+      "status": "unreviewed",
       "scope": "placement only",
       "blockers": [
-       "open discrepancy photo-discrepancy:6b75d1ecdce651ee"
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
       ],
       "reviewIds": [],
-      "reportIds": [
-       "photo-discrepancy:6b75d1ecdce651ee"
-      ],
+      "reportIds": [],
       "modelDigest": "c73af82af87b140f22dc6ca0c0b48a9019a5e338ef477d5ef1944a2286e372bc",
       "contextDigest": "2daeb417691739a0ef57ef964437626573db7014f875777fe07d206de399767a"
      },
@@ -37038,17 +37036,19 @@
     {
      "id": "model:ground_plan_picasso.json:picasso-beach-lane-concrete",
      "placement": {
-      "status": "unreviewed",
+      "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+       "open discrepancy photo-discrepancy:bd1a1210b0abfd53"
       ],
       "reviewIds": [],
-      "reportIds": [],
+      "reportIds": [
+       "photo-discrepancy:bd1a1210b0abfd53"
+      ],
       "modelDigest": "5234a30a2cc3d1423bb6416eddd7103c0a485ddc2b6662f830782cda92bdd0e1",
       "contextDigest": "2daeb417691739a0ef57ef964437626573db7014f875777fe07d206de399767a"
      },
-     "photoVerification": "unchecked"
+     "photoVerification": "differs"
     }
    ]
   },

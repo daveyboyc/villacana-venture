@@ -39474,16 +39474,18 @@
     {
      "id": "ground_plan_picasso.json:picasso-beach-lane-concrete",
      "name": "Concrete lane between the pool building's sheds and lawn wall and the east building's terrace",
-     "verification": "unreviewed",
-     "photoVerification": "unchecked",
+     "verification": "disputed",
+     "photoVerification": "differs",
      "placement": {
-      "status": "unreviewed",
+      "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+       "open discrepancy photo-discrepancy:bd1a1210b0abfd53"
       ],
       "reviewIds": [],
-      "reportIds": [],
+      "reportIds": [
+       "photo-discrepancy:bd1a1210b0abfd53"
+      ],
       "modelDigest": "5234a30a2cc3d1423bb6416eddd7103c0a485ddc2b6662f830782cda92bdd0e1",
       "contextDigest": "2daeb417691739a0ef57ef964437626573db7014f875777fe07d206de399767a"
      }
@@ -62124,16 +62126,18 @@
     {
      "id": "ground_plan_picasso.json:picasso-beach-lane-concrete",
      "name": "Concrete lane between the pool building's sheds and lawn wall and the east building's terrace",
-     "verification": "unreviewed",
-     "photoVerification": "unchecked",
+     "verification": "disputed",
+     "photoVerification": "differs",
      "placement": {
-      "status": "unreviewed",
+      "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+       "open discrepancy photo-discrepancy:bd1a1210b0abfd53"
       ],
       "reviewIds": [],
-      "reportIds": [],
+      "reportIds": [
+       "photo-discrepancy:bd1a1210b0abfd53"
+      ],
       "modelDigest": "5234a30a2cc3d1423bb6416eddd7103c0a485ddc2b6662f830782cda92bdd0e1",
       "contextDigest": "2daeb417691739a0ef57ef964437626573db7014f875777fe07d206de399767a"
      }
@@ -66323,16 +66327,18 @@
     {
      "id": "ground_plan_picasso.json:picasso-beach-lane-concrete",
      "name": "Concrete lane between the pool building's sheds and lawn wall and the east building's terrace",
-     "verification": "unreviewed",
-     "photoVerification": "unchecked",
+     "verification": "disputed",
+     "photoVerification": "differs",
      "placement": {
-      "status": "unreviewed",
+      "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+       "open discrepancy photo-discrepancy:bd1a1210b0abfd53"
       ],
       "reviewIds": [],
-      "reportIds": [],
+      "reportIds": [
+       "photo-discrepancy:bd1a1210b0abfd53"
+      ],
       "modelDigest": "5234a30a2cc3d1423bb6416eddd7103c0a485ddc2b6662f830782cda92bdd0e1",
       "contextDigest": "2daeb417691739a0ef57ef964437626573db7014f875777fe07d206de399767a"
      }
@@ -66379,7 +66385,7 @@
      "task": "picasso-service-road-levels-and-beach",
      "checked": "2026-11-26",
      "by": "Claude",
-     "feature": "street:picasso-beach-lane",
+     "feature": "ground_plan_picasso.json:picasso-beach-lane-concrete",
      "photo": "IMG_3118.jpg",
      "render": "docs/reviews/picasso-beach-lane/IMG_3118-details-pair.jpg",
      "result": "differs",

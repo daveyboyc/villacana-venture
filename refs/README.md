@@ -44,10 +44,6 @@ Here “reviewed references” means content/area tags were inspected; it does n
 
 Photo checks (`data/photo_checks.json`): 193 photo-check records, 57 match, 60 differ. 28 of 43 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).
 
-## Needs attention
-
-- photo check picasso-service-road-levels-and-beach / IMG_3118.jpg: photo is not cited by this specific feature
-
 Continuous build/validation work and scoped evidence requests: [LOOP.md](LOOP.md).
 
 Path-network baseline and per-area gaps: [PATH_NETWORK.md](PATH_NETWORK.md). Canonical inspector: `/?view=map&network=1`.

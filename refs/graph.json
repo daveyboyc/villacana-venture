@@ -50954,16 +50954,18 @@
    "featureId": "ground_plan_picasso.json:picasso-beach-lane-concrete",
    "kind": "model-feature",
    "name": "Concrete lane between the pool building's sheds and lawn wall and the east building's terrace",
-   "verification": "unreviewed",
-   "photoVerification": "unchecked",
+   "verification": "disputed",
+   "photoVerification": "differs",
    "placement": {
-    "status": "unreviewed",
+    "status": "disputed",
     "scope": "placement only",
     "blockers": [
-     "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+     "open discrepancy photo-discrepancy:bd1a1210b0abfd53"
     ],
     "reviewIds": [],
-    "reportIds": [],
+    "reportIds": [
+     "photo-discrepancy:bd1a1210b0abfd53"
+    ],
     "modelDigest": "5234a30a2cc3d1423bb6416eddd7103c0a485ddc2b6662f830782cda92bdd0e1",
     "contextDigest": "2daeb417691739a0ef57ef964437626573db7014f875777fe07d206de399767a"
    }
@@ -54827,18 +54829,16 @@
    "featureId": "street:picasso-beach-lane",
    "kind": "model-feature",
    "name": "Calle Pintor Picasso",
-   "verification": "disputed",
+   "verification": "unreviewed",
    "photoVerification": "unchecked",
    "placement": {
-    "status": "disputed",
+    "status": "unreviewed",
     "scope": "placement only",
     "blockers": [
-     "open discrepancy photo-discrepancy:6b75d1ecdce651ee"
+     "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
     ],
     "reviewIds": [],
-    "reportIds": [
-     "photo-discrepancy:6b75d1ecdce651ee"
-    ],
+    "reportIds": [],
     "modelDigest": "c73af82af87b140f22dc6ca0c0b48a9019a5e338ef477d5ef1944a2286e372bc",
     "contextDigest": "2daeb417691739a0ef57ef964437626573db7014f875777fe07d206de399767a"
    }
@@ -58125,9 +58125,9 @@
    "resolutionReview": null
   },
   {
-   "id": "placement-discrepancy:photo-discrepancy:6b75d1ecdce651ee",
+   "id": "placement-discrepancy:photo-discrepancy:bd1a1210b0abfd53",
    "kind": "placement-discrepancy",
-   "feature": "street:picasso-beach-lane",
+   "feature": "ground_plan_picasso.json:picasso-beach-lane-concrete",
    "status": "open",
    "notes": "Inspect from the phone pin (±7.5 m) looking north-west: the road continues past the tower and white buildings on the left and the hotel and low white buildings on the right, in the photo's order. The 90 MILES building's form, the parked vehicles and the plane trees are not compared; the pin puts the camera further from the tower than the photo. A photographic diagnostic from an unsolved pin, not placement approval.",
    "reportedBy": "Claude",
@@ -61518,15 +61518,13 @@
     {
      "id": "model:street:picasso-beach-lane",
      "placement": {
-      "status": "disputed",
+      "status": "unreviewed",
       "scope": "placement only",
       "blockers": [
-       "open discrepancy photo-discrepancy:6b75d1ecdce651ee"
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
       ],
       "reviewIds": [],
-      "reportIds": [
-       "photo-discrepancy:6b75d1ecdce651ee"
-      ],
+      "reportIds": [],
       "modelDigest": "c73af82af87b140f22dc6ca0c0b48a9019a5e338ef477d5ef1944a2286e372bc",
       "contextDigest": "2daeb417691739a0ef57ef964437626573db7014f875777fe07d206de399767a"
      },
@@ -95624,17 +95622,19 @@
     {
      "id": "model:ground_plan_picasso.json:picasso-beach-lane-concrete",
      "placement": {
-      "status": "unreviewed",
+      "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+       "open discrepancy photo-discrepancy:bd1a1210b0abfd53"
       ],
       "reviewIds": [],
-      "reportIds": [],
+      "reportIds": [
+       "photo-discrepancy:bd1a1210b0abfd53"
+      ],
       "modelDigest": "5234a30a2cc3d1423bb6416eddd7103c0a485ddc2b6662f830782cda92bdd0e1",
       "contextDigest": "2daeb417691739a0ef57ef964437626573db7014f875777fe07d206de399767a"
      },
-     "photoVerification": "unchecked"
+     "photoVerification": "differs"
     }
    ]
   },
@@ -140658,7 +140658,7 @@
    "render": "docs/reviews/picasso-bin-store-service-road/IMG_3124-details-pair.jpg"
   },
   {
-   "from": "model:street:picasso-beach-lane",
+   "from": "model:ground_plan_picasso.json:picasso-beach-lane-concrete",
    "to": "ref:IMG_3118.jpg",
    "relation": "checked-against",
    "scope": "photographic diagnostic, not placement approval",
@@ -154852,17 +154852,17 @@
    "relation": "discrepancy-source"
   },
   {
-   "from": "model:street:picasso-beach-lane",
-   "to": "placement-discrepancy:photo-discrepancy:6b75d1ecdce651ee",
+   "from": "model:ground_plan_picasso.json:picasso-beach-lane-concrete",
+   "to": "placement-discrepancy:photo-discrepancy:bd1a1210b0abfd53",
    "relation": "has-discrepancy"
   },
   {
-   "from": "placement-discrepancy:photo-discrepancy:6b75d1ecdce651ee",
+   "from": "placement-discrepancy:photo-discrepancy:bd1a1210b0abfd53",
    "to": "task:picasso-service-road-levels-and-beach",
    "relation": "follow-up"
   },
   {
-   "from": "placement-discrepancy:photo-discrepancy:6b75d1ecdce651ee",
+   "from": "placement-discrepancy:photo-discrepancy:bd1a1210b0abfd53",
    "to": "ref:IMG_3118.jpg",
    "relation": "discrepancy-source"
   },
