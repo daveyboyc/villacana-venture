@@ -53143,7 +53143,8 @@
     "blockers": [
      "open discrepancy photo-discrepancy:72c914a52ae0ef8a",
      "open discrepancy photo-discrepancy:f94a522ab42d7c7e",
-     "open discrepancy photo-discrepancy:4e5ced70d5d25718"
+     "open discrepancy photo-discrepancy:4e5ced70d5d25718",
+     "open model-loop discrepancy picasso-bin-yard-far-wall"
     ],
     "reviewIds": [],
     "reportIds": [
@@ -96424,7 +96425,8 @@
       "blockers": [
        "open discrepancy photo-discrepancy:72c914a52ae0ef8a",
        "open discrepancy photo-discrepancy:f94a522ab42d7c7e",
-       "open discrepancy photo-discrepancy:4e5ced70d5d25718"
+       "open discrepancy photo-discrepancy:4e5ced70d5d25718",
+       "open model-loop discrepancy picasso-bin-yard-far-wall"
       ],
       "reviewIds": [],
       "reportIds": [
@@ -116634,6 +116636,31 @@
     "From the hotel side of the service road, square-on views of the bin store's street face, the substation and the meter box with the slatted gate, each with the kerb in frame, and one along the gate to its end."
    ],
    "discrepancyKind": "height"
+  },
+  {
+   "id": "discrepancy:picasso-bin-yard-far-wall",
+   "area": "picasso",
+   "kind": "model-discrepancy",
+   "task": "picasso-bin-store-service-road",
+   "status": "open",
+   "requests": [
+    "picasso-bin-store-front"
+   ],
+   "description": "IMG_3103 looks north-west along the open bin yard from its south end; judged from the yard's 3 m width and a 1100 l container, its far wall is only about 6-7 m from the camera, so the open yard may end about 7 m north-west of the long wall's end, with a separate (possibly roofed, IMG_3099's dark doorway) bay beyond. The model builds one open yard from 11.5 m north-west of the wall's end, where the laser surface model still has 2.5-2.9 m walls. The yard's floor is light terrazzo in IMG_3101 and IMG_3103; the model shows the generic ground.",
+   "sources": [
+    "IMG_3103.jpg",
+    "IMG_3099.jpg",
+    "IMG_3101.jpg"
+   ],
+   "features": [
+    "picasso_service_frontage.json:picasso-bin-yard"
+   ],
+   "note": "26 Nov 2026: raised by the independent review of the layout (not blocking). See gap:picasso-bin-store-roofed-part; a square-on photo of the front and one through the doorway (photo request picasso-bin-store-front) would settle it.",
+   "state": "needs-evidence",
+   "blockers": [
+    "From the car park, 6-8 m in front of the bin store, its whole front square-on with both ends in frame, one along it from the north end, and one through the doorway."
+   ],
+   "discrepancyKind": "completeness"
   }
  ],
  "edges": [
@@ -177082,6 +177109,46 @@
   {
    "from": "discrepancy:picasso-service-pavement-level",
    "to": "evidence-request:picasso-service-road-west-row",
+   "relation": "needs-evidence"
+  },
+  {
+   "from": "discrepancy:picasso-bin-yard-far-wall",
+   "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "discrepancy:picasso-bin-yard-far-wall",
+   "to": "standard:villacana-evidence-v1",
+   "relation": "judged-against"
+  },
+  {
+   "from": "discrepancy:picasso-bin-yard-far-wall",
+   "to": "task:picasso-bin-store-service-road",
+   "relation": "follow-up"
+  },
+  {
+   "from": "discrepancy:picasso-bin-yard-far-wall",
+   "to": "ref:IMG_3103.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:picasso-bin-yard-far-wall",
+   "to": "ref:IMG_3099.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:picasso-bin-yard-far-wall",
+   "to": "ref:IMG_3101.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "model:picasso_service_frontage.json:picasso-bin-yard",
+   "to": "discrepancy:picasso-bin-yard-far-wall",
+   "relation": "has-discrepancy"
+  },
+  {
+   "from": "discrepancy:picasso-bin-yard-far-wall",
+   "to": "evidence-request:picasso-bin-store-front",
    "relation": "needs-evidence"
   }
  ]

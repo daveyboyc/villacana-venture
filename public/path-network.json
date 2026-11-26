@@ -38289,7 +38289,8 @@
       "blockers": [
        "open discrepancy photo-discrepancy:72c914a52ae0ef8a",
        "open discrepancy photo-discrepancy:f94a522ab42d7c7e",
-       "open discrepancy photo-discrepancy:4e5ced70d5d25718"
+       "open discrepancy photo-discrepancy:4e5ced70d5d25718",
+       "open model-loop discrepancy picasso-bin-yard-far-wall"
       ],
       "reviewIds": [],
       "reportIds": [

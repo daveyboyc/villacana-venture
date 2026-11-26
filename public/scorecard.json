@@ -1931,12 +1931,12 @@
     "Facades: 0 of 274 kit parts traced from photos.",
     "How sure: 0 photographed, 30 estimated, 0 inferred, 3 known gaps.",
     "Placement: 0 of 30 features verified, 9 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 12 still open; 8 evidence requests. This is not whole-area acceptance."
+    "Model loop: 0 tracked findings accepted, 13 still open; 8 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
      "ready": 4,
-     "needs-evidence": 8,
+     "needs-evidence": 9,
      "needs-source-access": 0,
      "awaiting-review": 0,
      "accepted": 0
@@ -3792,12 +3792,12 @@
     "Facades: 30 of 2482 kit parts traced from photos.",
     "How sure: 95 photographed, 214 estimated, 23 inferred, 45 known gaps.",
     "Placement: 0 of 564 features verified, 62 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 40 still open; 57 evidence requests. This is not whole-area acceptance."
+    "Model loop: 0 tracked findings accepted, 41 still open; 57 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
      "ready": 23,
-     "needs-evidence": 14,
+     "needs-evidence": 15,
      "needs-source-access": 0,
      "awaiting-review": 3,
      "accepted": 0

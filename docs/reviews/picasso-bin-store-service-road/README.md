@@ -98,8 +98,11 @@ survey plot and the aerial, and resampled the survey itself in the s/e frame.
     door.
   - A narrow recessed grey gate between the substation and the meter box was missing (IMG_3106, 3120, 2345). It is
     added, and the meter box and slatted gate move 1.2 m south-east.
+- **Second pass (same reviewer, after the fixes):** "SIGN-OFF: stage 2 layout satisfactory". The street door at s 0-1.5 is
+  about 0.75 m from where IMG_3124 suggests, inside the ±1.5 m read.
 - **Not blocking, recorded:** IMG_3103's far wall reads 6-7 m from its camera, so the open yard may end about
-  s = -7 (`gap:picasso-bin-store-roofed-part`). The 2021 ground model dips to -2.0 m behind the low box at s ≈ 4,
+  s = -7 (discrepancy `picasso-bin-yard-far-wall`, `gap:picasso-bin-store-roofed-part`). The yard's terrazzo floor shows as generic
+  ground (detail stage). The 2021 ground model dips to -2.0 m behind the low box at s ≈ 4,
   possibly a light well; this is for stage 3.
 
 ## Inspect

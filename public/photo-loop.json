@@ -3378,7 +3378,7 @@
    "name": "Pintor Picasso and the car park",
    "counts": {
     "ready": 4,
-    "needs-evidence": 8,
+    "needs-evidence": 9,
     "needs-source-access": 0,
     "awaiting-review": 0,
     "accepted": 0
@@ -3653,6 +3653,30 @@
      "state": "needs-evidence",
      "blockers": [
       "From the hotel side of the service road, square-on views of the bin store's street face, the substation and the meter box with the slatted gate, each with the kerb in frame, and one along the gate to its end."
+     ]
+    },
+    {
+     "id": "picasso-bin-yard-far-wall",
+     "area": "picasso",
+     "kind": "completeness",
+     "task": "picasso-bin-store-service-road",
+     "status": "open",
+     "requests": [
+      "picasso-bin-store-front"
+     ],
+     "description": "IMG_3103 looks north-west along the open bin yard from its south end; judged from the yard's 3 m width and a 1100 l container, its far wall is only about 6-7 m from the camera, so the open yard may end about 7 m north-west of the long wall's end, with a separate (possibly roofed, IMG_3099's dark doorway) bay beyond. The model builds one open yard from 11.5 m north-west of the wall's end, where the laser surface model still has 2.5-2.9 m walls. The yard's floor is light terrazzo in IMG_3101 and IMG_3103; the model shows the generic ground.",
+     "sources": [
+      "IMG_3103.jpg",
+      "IMG_3099.jpg",
+      "IMG_3101.jpg"
+     ],
+     "features": [
+      "picasso_service_frontage.json:picasso-bin-yard"
+     ],
+     "note": "26 Nov 2026: raised by the independent review of the layout (not blocking). See gap:picasso-bin-store-roofed-part; a square-on photo of the front and one through the doorway (photo request picasso-bin-store-front) would settle it.",
+     "state": "needs-evidence",
+     "blockers": [
+      "From the car park, 6-8 m in front of the bin store, its whole front square-on with both ends in frame, one along it from the north end, and one through the doorway."
      ]
     }
    ],
@@ -6777,7 +6801,7 @@
    "name": "The whole resort",
    "counts": {
     "ready": 23,
-    "needs-evidence": 14,
+    "needs-evidence": 15,
     "needs-source-access": 0,
     "awaiting-review": 3,
     "accepted": 0
@@ -7701,6 +7725,30 @@
      "state": "needs-evidence",
      "blockers": [
       "From the hotel side of the service road, square-on views of the bin store's street face, the substation and the meter box with the slatted gate, each with the kerb in frame, and one along the gate to its end."
+     ]
+    },
+    {
+     "id": "picasso-bin-yard-far-wall",
+     "area": "picasso",
+     "kind": "completeness",
+     "task": "picasso-bin-store-service-road",
+     "status": "open",
+     "requests": [
+      "picasso-bin-store-front"
+     ],
+     "description": "IMG_3103 looks north-west along the open bin yard from its south end; judged from the yard's 3 m width and a 1100 l container, its far wall is only about 6-7 m from the camera, so the open yard may end about 7 m north-west of the long wall's end, with a separate (possibly roofed, IMG_3099's dark doorway) bay beyond. The model builds one open yard from 11.5 m north-west of the wall's end, where the laser surface model still has 2.5-2.9 m walls. The yard's floor is light terrazzo in IMG_3101 and IMG_3103; the model shows the generic ground.",
+     "sources": [
+      "IMG_3103.jpg",
+      "IMG_3099.jpg",
+      "IMG_3101.jpg"
+     ],
+     "features": [
+      "picasso_service_frontage.json:picasso-bin-yard"
+     ],
+     "note": "26 Nov 2026: raised by the independent review of the layout (not blocking). See gap:picasso-bin-store-roofed-part; a square-on photo of the front and one through the doorway (photo request picasso-bin-store-front) would settle it.",
+     "state": "needs-evidence",
+     "blockers": [
+      "From the car park, 6-8 m in front of the bin store, its whole front square-on with both ends in frame, one along it from the north end, and one through the doorway."
      ]
     }
    ],

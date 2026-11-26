@@ -222,7 +222,7 @@ graph LR
 | `picasso_entrance_details.json:signs` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `picasso_entrance_details.json:windows` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `picasso_entrance_details.json:wings` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `picasso_service_frontage.json:picasso-bin-yard` | disputed | differs | open discrepancy photo-discrepancy:72c914a52ae0ef8a; open discrepancy photo-discrepancy:f94a522ab42d7c7e; open discrepancy photo-discrepancy:4e5ced70d5d25718 |
+| `picasso_service_frontage.json:picasso-bin-yard` | disputed | differs | open discrepancy photo-discrepancy:72c914a52ae0ef8a; open discrepancy photo-discrepancy:f94a522ab42d7c7e; open discrepancy photo-discrepancy:4e5ced70d5d25718; open model-loop discrepancy picasso-bin-yard-far-wall |
 | `picasso_service_frontage.json:picasso-hotel-lower-wing` | disputed | differs | open discrepancy photo-discrepancy:4337caafbfe22f3b |
 | `picasso_service_frontage.json:picasso-meter-box` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `picasso_service_frontage.json:picasso-recess-wall` | disputed | differs | open discrepancy photo-discrepancy:0e02fa1062edc4c0 |

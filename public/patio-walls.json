@@ -6,7 +6,7 @@
     "kerb": 4,
     "enclosure": 23,
     "gap": 24,
-    "context": 46
+    "context": 45
   },
   "records": [
     {
@@ -4203,12 +4203,12 @@
     },
     {
       "id": "picasso_service_frontage.json:picasso-bin-yard",
-      "name": "Bin store: walled bin yard at the car park's south-east corner (DEPOSITO BASURA)",
+      "name": "Bin store: walled bin yard at the car park's south-east corner (DEPOSITO BASURA), open to the street through a green sliding door",
       "kind": "context",
       "points": [
         [
-          -39.71,
-          22.83
+          -36.86,
+          27.53
         ],
         [
           -44.13,
@@ -4217,6 +4217,10 @@
         [
           -41.78,
           14.14
+        ],
+        [
+          -35.59,
+          23.84
         ]
       ],
       "closed": false,
@@ -4227,52 +4231,18 @@
         "IMG_3099.jpg",
         "IMG_3100.jpg",
         "IMG_3101.jpg",
-        "IMG_3103.jpg"
+        "IMG_3103.jpg",
+        "IMG_3123.jpg",
+        "IMG_3124.jpg"
       ],
       "confidence": "estimated",
       "placement": "disputed",
-      "basis": "Model group context, not a traced wall axis or quantity. Open-topped bin yard with the RUBBISH COLLECTION / DEPOSITO BASURA and BASURA / RUBBISH BINS signs (IMG_3099, 3100, 3101, 3103), against the long wall's inner face. Extent from the 2 m laser surface model (about 1 m) and the photos; no camera is solved. Door and gate positions along the front are from the photos' order.",
-      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
-    },
-    {
-      "id": "picasso_service_frontage.json:picasso-green-door-building",
-      "name": "White utility building with a green sliding door, at the long wall's south end",
-      "kind": "context",
-      "points": [
-        [
-          -40.25,
-          23.15
-        ],
-        [
-          -37.39,
-          27.85
-        ],
-        [
-          -34.3,
-          25.97
-        ],
-        [
-          -37.15,
-          21.27
-        ]
-      ],
-      "closed": true,
-      "areas": [
-        "picasso"
-      ],
-      "evidence": [
-        "IMG_3124.jpg",
-        "IMG_3123.jpg",
-        "IMG_2345.jpg"
-      ],
-      "confidence": "estimated",
-      "placement": "unreviewed",
-      "basis": "Model group context, not a traced wall axis or quantity. Photographed from the road (IMG_3124, IMG_3123): flat-roofed white block with a green sliding door, its face continuing the long wall's. Length, depth and height from the laser surface model (2 m grid, about 1 m).",
+      "basis": "Model group context, not a traced wall axis or quantity. Open-topped bin yard (IMG_3099, 3100, 3101, 3103, 3123, 3124): its front with the DEPOSITO BASURA doorway on the car park, its street face with the green sliding door flush with the long wall's. Extent from the 2 m laser surface model (about 1 m) and the photos; no camera is solved. The doorway and street door are placed from the photos and an independent review, about 1-1.5 m.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {
       "id": "picasso_service_frontage.json:picasso-recess-wall",
-      "name": "Set-back white wall between the green-door building and the substation",
+      "name": "Set-back white wall between the bin store's street face and the substation",
       "kind": "context",
       "points": [
         [
@@ -4298,7 +4268,7 @@
       ],
       "confidence": "estimated",
       "placement": "disputed",
-      "basis": "Model group context, not a traced wall axis or quantity. Set-back white wall with a low box at its foot between the green-door building and the substation (IMG_3123, IMG_3124). The step back is judged from the photos, about 1 m.",
+      "basis": "Model group context, not a traced wall axis or quantity. Set-back white wall with a low box at its foot between the bin store's street face and the substation (IMG_3123, IMG_3124). The step back is judged from the photos, about 1 m.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {
@@ -5992,7 +5962,7 @@
       ],
       "confidence": "gap",
       "placement": "unreviewed",
-      "basis": "IMG_3099's doorway is dark, as if into a roofed room, while IMG_3103 shows the yard open to the sky. Built as one open yard; a view over the wall or from inside the doorway would settle it.",
+      "basis": "IMG_3099's doorway is dark, as if into a roofed room, while IMG_3103 and IMG_3101 show the yard open to the sky; IMG_3103's far wall reads only 6-7 m from its camera, so the open yard may end about 7 m north-west of the long wall's end with a separate bay beyond (independent review, 26 Nov 2026). Built as one open yard; a square-on view of the front and one from inside the doorway would settle it.",
       "levelState": "Evidence required before tracing or levelling."
     }
   ]
