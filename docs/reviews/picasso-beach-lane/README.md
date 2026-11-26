@@ -65,3 +65,19 @@ The terrain grid is already the survey, so the ribbon follows it.
 - the white pillar and chain-link corners at the paseo, if not already in the seafront fence;
 - the pavement level by the utility row further up (`picasso-service-pavement-level`);
 - no camera solved.
+
+## Inspect
+
+| View | Layout | Show details |
+| --- | --- | --- |
+| Overhead | [lane-over-layout.jpg](lane-over-layout.jpg) (before the concrete was lowered) | [lane-over-details.jpg](lane-over-details.jpg) |
+| The lane's mouth | [lane-mouth-layout.jpg](lane-mouth-layout.jpg) | [lane-mouth-details.jpg](lane-mouth-details.jpg) |
+| IMG_3118 from its pin | [IMG_3118-layout-pair.jpg](IMG_3118-layout-pair.jpg) | [IMG_3118-details-pair.jpg](IMG_3118-details-pair.jpg) |
+| IMG_3119 from its pin | [IMG_3119-layout-pair.jpg](IMG_3119-layout-pair.jpg) | [IMG_3119-details-pair.jpg](IMG_3119-details-pair.jpg) |
+| IMG_2613 from its pin | [IMG_2613-layout-pair.jpg](IMG_2613-layout-pair.jpg) | [IMG_2613-details-pair.jpg](IMG_2613-details-pair.jpg) |
+
+The pairs put the photo on the left and an Inspect render from the phone pin on the right. They are diagnostics, not
+measurements.
+
+The lane's concrete was first drawn 0.02 m under the street ribbon. Where the terrain bends it broke through the
+asphalt, so it now sits at the ground plan's usual concrete height.

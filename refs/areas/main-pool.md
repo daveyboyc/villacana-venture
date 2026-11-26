@@ -148,7 +148,7 @@ graph LR
   A --> F18["Terracotta paving and green mat at the foot of the steps to Enrique's · unreviewed"]
   F18 --> PIMG_2764_jpg(["IMG_2764"])
   F18 --> PIMG_2777_jpg(["IMG_2777"])
-  A --> F19["Raised terrace and eaves along the long building on the lane's east side (registry 6465801UF1366N_part2) · unreviewed"]
+  A --> F19["Raised terrace and eaves along the long building on the lane's east side (registry 6465801UF1366N_part2) · disputed"]
   F19 --> PIMG_2613_jpg(["IMG_2613"])
   F19 --> PIMG_3067_jpg(["IMG_3067"])
   A --> F20["White wall along Calle Pintor Picasso enclosing the big-pool lawn · unreviewed"]
@@ -247,7 +247,7 @@ graph LR
 | `main_pool_lawn.json:lawn-sea-hedge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `main_pool_lawn.json:lawn-white-rooms` | disputed | differs | open discrepancy photo-discrepancy:f0c43f8955aabe66; open discrepancy photo-discrepancy:4187d7425a4ae65c |
 | `main_pool_lawn.json:main-pool-deck-tiles` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `picasso_beach_lane.json:picasso-lane-east-terrace` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `picasso_beach_lane.json:picasso-lane-east-terrace` | disputed | differs | open discrepancy photo-discrepancy:258c2534e7bd88df |
 | `picasso_lawn_wall.json:picasso-lawn-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `seafront_fence.json:guillermo-beach-gate` | disputed | differs | open discrepancy photo-discrepancy:58170dc8a5dd3aaa; open discrepancy photo-discrepancy:4d29ca0cdc7d5d41 |
 | `seafront_fence.json:guillermo-ramp-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |

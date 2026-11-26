@@ -148,7 +148,7 @@ graph LR
   F16 --> PIMG_2351_jpg(["IMG_2351"])
   F16 --> PIMG_2352_jpg(["IMG_2352"])
   F16 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F17["Raised terrace and eaves along the long building on the lane's east side (registry 6465801UF1366N_part2) · unreviewed"]
+  A --> F17["Raised terrace and eaves along the long building on the lane's east side (registry 6465801UF1366N_part2) · disputed"]
   F17 --> PIMG_2613_jpg(["IMG_2613"])
   F17 --> PIMG_3067_jpg(["IMG_3067"])
   A --> F18["The lane's mouth at the paseo: bollard and drain grate · unreviewed"]
@@ -183,7 +183,7 @@ graph LR
 | `paseo_details.json:paseo-white-lamp-4` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_wall.json:paseo-retaining-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_wall.json:paseo-timber-edge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `picasso_beach_lane.json:picasso-lane-east-terrace` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `picasso_beach_lane.json:picasso-lane-east-terrace` | disputed | differs | open discrepancy photo-discrepancy:258c2534e7bd88df |
 | `picasso_beach_lane.json:picasso-lane-mouth` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `south_pool.json:south-pool-seaward-level` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 

@@ -714,7 +714,7 @@
     "placed": 39,
     "checks": {
      "matches": 14,
-     "differs": 17,
+     "differs": 20,
      "not-comparable": 7
     },
     "camerasSolved": 0,
@@ -729,7 +729,7 @@
    "placement": {
     "features": 24,
     "verified": 0,
-    "disputed": 10
+    "disputed": 11
    },
    "discrepancies": [
     {
@@ -799,6 +799,10 @@
     {
      "id": "photo-discrepancy:57684c9d7786277b",
      "feature": "ground_plan_main_pool.json:lawn-strip-guillermo"
+    },
+    {
+     "id": "photo-discrepancy:258c2534e7bd88df",
+     "feature": "picasso_beach_lane.json:picasso-lane-east-terrace"
     }
    ],
    "tasks": {
@@ -823,7 +827,7 @@
     "Photos: 39, 39 placed; no camera solved.",
     "Facades: 0 of 32 kit parts traced from photos.",
     "How sure: 2 photographed, 21 estimated, 1 inferred, 2 known gaps.",
-    "Placement: 0 of 24 features verified, 17 open discrepancies.",
+    "Placement: 0 of 24 features verified, 18 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 0 still open; 8 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -1849,7 +1853,7 @@
     "placed": 28,
     "checks": {
      "matches": 2,
-     "differs": 9,
+     "differs": 11,
      "not-comparable": 0
     },
     "camerasSolved": 0,
@@ -1864,7 +1868,7 @@
    "placement": {
     "features": 34,
     "verified": 0,
-    "disputed": 8
+    "disputed": 9
    },
    "discrepancies": [
     {
@@ -1906,6 +1910,10 @@
     {
      "id": "photo-discrepancy:7bfbc6139380caa0",
      "feature": "picasso_service_frontage.json:picasso-bin-store-details"
+    },
+    {
+     "id": "photo-discrepancy:7cff269e7712cae1",
+     "feature": "ground_plan_picasso.json:picasso-beach-road-forecourt"
     }
    ],
    "tasks": {
@@ -1930,7 +1938,7 @@
     "Photos: 28, 28 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
     "How sure: 0 photographed, 34 estimated, 0 inferred, 4 known gaps.",
-    "Placement: 0 of 34 features verified, 10 open discrepancies.",
+    "Placement: 0 of 34 features verified, 11 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 13 still open; 8 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -3339,7 +3347,7 @@
     "placed": 100,
     "checks": {
      "matches": 5,
-     "differs": 7,
+     "differs": 8,
      "not-comparable": 19
     },
     "camerasSolved": 0,
@@ -3354,9 +3362,14 @@
    "placement": {
     "features": 20,
     "verified": 0,
-    "disputed": 0
+    "disputed": 1
    },
-   "discrepancies": [],
+   "discrepancies": [
+    {
+     "id": "photo-discrepancy:258c2534e7bd88df",
+     "feature": "picasso_beach_lane.json:picasso-lane-east-terrace"
+    }
+   ],
    "tasks": {
     "open": 1,
     "inProgress": 2,
@@ -3379,7 +3392,7 @@
     "Photos: 101, 100 placed; no camera solved.",
     "Facades: 0 of 106 kit parts traced from photos.",
     "How sure: 5 photographed, 15 estimated, 0 inferred, 3 known gaps.",
-    "Placement: 0 of 20 features verified.",
+    "Placement: 0 of 20 features verified, 1 open discrepancy.",
     "Model loop: 0 tracked findings accepted, 0 still open; 1 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -3488,7 +3501,7 @@
     "placed": 642,
     "checks": {
      "matches": 57,
-     "differs": 57,
+     "differs": 60,
      "not-comparable": 67
     },
     "camerasSolved": 8,
@@ -3517,7 +3530,7 @@
    "placement": {
     "features": 571,
     "verified": 0,
-    "disputed": 70
+    "disputed": 73
    },
    "discrepancies": [
     {
@@ -3771,6 +3784,18 @@
     {
      "id": "photo-discrepancy:7bfbc6139380caa0",
      "feature": "picasso_service_frontage.json:picasso-bin-store-details"
+    },
+    {
+     "id": "photo-discrepancy:6b75d1ecdce651ee",
+     "feature": "street:picasso-beach-lane"
+    },
+    {
+     "id": "photo-discrepancy:7cff269e7712cae1",
+     "feature": "ground_plan_picasso.json:picasso-beach-road-forecourt"
+    },
+    {
+     "id": "photo-discrepancy:258c2534e7bd88df",
+     "feature": "picasso_beach_lane.json:picasso-lane-east-terrace"
     }
    ],
    "tasks": {
@@ -3795,7 +3820,7 @@
     "Photos: 662, 642 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
     "How sure: 95 photographed, 221 estimated, 23 inferred, 45 known gaps.",
-    "Placement: 0 of 571 features verified, 63 open discrepancies.",
+    "Placement: 0 of 571 features verified, 66 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 41 still open; 57 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {

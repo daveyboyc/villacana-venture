@@ -2094,6 +2094,39 @@
    "result": "differs",
    "followUp": "picasso-service-road-levels-and-beach",
    "notes": "Show details from the road south-east of the street face: the shut green sliding door with its rail running on north-west over the long wall, the yellow warning sign, switch box and lamp beside it and the ramp down along the wall agree with the photo. The pavement still climbs towards the row (picasso-service-pavement-level), and the conduit and low white box on the set-back wall are not built. A photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "picasso-service-road-levels-and-beach",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "street:picasso-beach-lane",
+   "photo": "IMG_3118.jpg",
+   "render": "docs/reviews/picasso-beach-lane/IMG_3118-details-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-service-road-levels-and-beach",
+   "notes": "Inspect from the phone pin (±7.5 m) looking north-west: the road continues past the tower and white buildings on the left and the hotel and low white buildings on the right, in the photo's order. The 90 MILES building's form, the parked vehicles and the plane trees are not compared; the pin puts the camera further from the tower than the photo. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-service-road-levels-and-beach",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "ground_plan_picasso.json:picasso-beach-road-forecourt",
+   "photo": "IMG_3119.jpg",
+   "render": "docs/reviews/picasso-beach-lane/IMG_3119-details-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-service-road-levels-and-beach",
+   "notes": "The forecourt's asphalt runs to the buildings either side as in the photo; the grey containers and utility sheds on its east side are not built. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-service-road-levels-and-beach",
+   "checked": "2026-11-26",
+   "by": "Claude",
+   "feature": "picasso_beach_lane.json:picasso-lane-east-terrace",
+   "photo": "IMG_2613.jpg",
+   "render": "docs/reviews/picasso-beach-lane/IMG_2613-details-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-service-road-levels-and-beach",
+   "notes": "Looking north up the lane: the low white terrace wall with its red coping, the deep eaves and the long building on the right and white walls on the left agree with the photo; the eaves' cantilever beams, the bicycles, the darker concrete strip and the lane's doors are not built. A photographic diagnostic from an unsolved pin, not placement approval."
   }
  ],
  "legacyUnchecked": [
