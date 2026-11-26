@@ -282,6 +282,7 @@ async function boot(): Promise<void> {
   // the scene is draped; it loads its models and appears when they arrive.
   const startKit=()=>{if(kitWalls.size)void addFacadeKit(scene, houses, kitWalls, skeleton.floorHeight).then(kitReady);else kitReady([]);};
   if(!layoutOnly)detailSteps.push({build:(into)=>{addShutters(into, houses, skeleton.floorHeight, kitWalls);addPorches(into, houses, skeleton.floorHeight);}});
+  let sea: ReturnType<typeof addSeafrontOutlines> | undefined;
   let coast = new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]);
   if (mainPool) {
     // Face the big pool itself: `pool` is the first pool shown (north when every pool is loaded), which put
@@ -291,13 +292,13 @@ async function boot(): Promise<void> {
     addClubhouseFront(scene, buildings, bigPool, !layoutOnly);
     addRoofFins(scene);
     const map = await (await fetch(asset("/map/villacana.json"))).json();
-    if (skeleton.seafront) addSeafrontOutlines(scene, skeleton.seafront, true, seaside);
+    if (skeleton.seafront) sea = addSeafrontOutlines(scene, skeleton.seafront, true, seaside);
     else addSeafront(scene, map.coast);
     coast = new CoastField(map.coast, map.landRef);
   } else if (shown.some((p) => p.id === "south") && skeleton.seafront) {
     // The south lawn looks out over its wall to the paseo, the beach and the sea.
     const map = await (await fetch(asset("/map/villacana.json"))).json();
-    addSeafrontOutlines(scene, skeleton.seafront, false, seaside);
+    sea = addSeafrontOutlines(scene, skeleton.seafront, false, seaside);
     coast = new CoastField(map.coast, map.landRef);
   }
   // The paseo's sandstone retaining wall; along the south lawn it is the sea wall, drawn once.
@@ -925,6 +926,7 @@ async function boot(): Promise<void> {
     // Looking through a photo's camera replaces the walking camera (src/photo-camera.ts).
     if (photoView) { photoView.apply(camera, innerWidth, innerHeight); player.group.visible = false; }
     pools.update(clock.elapsedTime);
+    if (sea) sea.material.uniforms.time.value = clock.elapsedTime * 0.35;
     camera.updateMatrixWorld();
     shotgun?.update(dt,moving);
     document.querySelector<HTMLElement>(".reference-tools")!.style.bottom=`calc(${controls.offsetHeight+24}px + env(safe-area-inset-bottom))`;

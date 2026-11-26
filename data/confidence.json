@@ -11,6 +11,10 @@
   "needs-photos": "Worth improving; more photos wanted."
  },
  "features": {
+  "area:beach": {
+   "level": "estimated",
+   "why": "Mapped outline with independent aerial shoreline review; width and edges approximate. IMG_2300 shows gravelly sand and a narrow breaking wave. The tiling sand texture, wet band and animated ripples approximate that appearance."
+  },
   "ground_plan_picasso.json:picasso-west-lawn-strip": {
    "level": "estimated",
    "why": "Lawn strip with the plinth in IMG_3131; outline from the registered Google top-down view (about 1.5 m), cut short at the car-park outline."

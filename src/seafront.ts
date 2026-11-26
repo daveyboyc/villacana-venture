@@ -1,4 +1,6 @@
 import * as THREE from "three";
+import { Water } from "three/addons/objects/Water.js";
+import { asset } from "./asset";
 import { centroid, closestOnSegment } from "./geom";
 import type { Seaside } from "./seaside";
 import type { Seafront, Vec2 } from "./types";
@@ -114,10 +116,63 @@ function addBarrakaDeck(scene: THREE.Scene, terrace: Vec2[], ring: Vec2[], groun
 }
 
 /** Shared seaside geometry: the blueprint and walk use the same outlines. */
-export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant = true, seaside?: Seaside): void {
+export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant = true, seaside?: Seaside): Water {
   // With seaside heights the sand and paseo are drawn by addSeaside; only the sea is flat.
   // The sea stays at sea level: it is not draped over the land's heights.
-  flat(scene, [...sf.coast, [1500, 1500], [-1500, 1500]], "#147ba8", seaside ? seaside.seaY : 0.12, true);
+  const ring: Vec2[] = [...sf.coast, [1500, 1500], [-1500, 1500]];
+  const shape = new THREE.Shape(ring.map(([x,z]) => new THREE.Vector2(x, -z)));
+  const normals = new THREE.TextureLoader().load(asset("/textures/coast/ripple-normal.png"));
+  normals.wrapS = normals.wrapT = THREE.RepeatWrapping;
+  const sea = new Water(new THREE.ShapeGeometry(shape), {
+    textureWidth: 256, textureHeight: 256, waterNormals: normals,
+    waterColor: 0x187d94, sunColor: 0xfff1d6,
+    sunDirection: new THREE.Vector3(-60, 90, 40).normalize(),
+    distortionScale: 1.4, fog: !!scene.fog,
+  });
+  // Water computes its reflection plane from the object's local +Z axis.
+  sea.rotation.x = -Math.PI / 2;
+  sea.position.y = seaside?.seaY ?? 0.12;
+  sea.name = "Mediterranean";
+  sea.userData.noDrape = true;
+  sea.userData.noOcclusion = true;
+  scene.add(sea);
+  // A translucent swash just offshore follows the same trace as the sea polygon.
+  const vertices: number[] = [], uv: number[] = [], indices: number[] = [];
+  let distance = 0;
+  for (let i = 0; i < sf.coast.length; i++) {
+    const [x, z] = sf.coast[i];
+    const a = sf.coast[Math.max(0, i - 1)], b = sf.coast[Math.min(i + 1, sf.coast.length - 1)];
+    const dx = b[0] - a[0], dz = b[1] - a[1], length = Math.hypot(dx, dz) || 1;
+    if (i) distance += Math.hypot(x - a[0], z - a[1]);
+    vertices.push(x, 0, z, x - dz / length * 1.5, 0, z + dx / length * 1.5);
+    uv.push(distance, 0, distance, 1);
+    const k = 2 * i;
+    if (i) indices.push(k - 2, k - 1, k, k, k - 1, k + 1);
+  }
+  const surfGeometry = new THREE.BufferGeometry();
+  surfGeometry.setAttribute("position", new THREE.Float32BufferAttribute(vertices, 3));
+  surfGeometry.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
+  surfGeometry.setIndex(indices);
+  const surf = new THREE.Mesh(surfGeometry, new THREE.ShaderMaterial({
+    uniforms: { time: sea.material.uniforms.time },
+    transparent: true, depthWrite: false,
+    vertexShader: `varying vec2 coastUv;
+      void main() { coastUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+    fragmentShader: `varying vec2 coastUv; uniform float time;
+      void main() {
+        float phase = time * 2.0 + coastUv.x * 0.22;
+        float crest = 0.46 + 0.24 * sin(phase) + 0.08 * sin(coastUv.x * 1.6);
+        float band = 1.0 - smoothstep(0.03, 0.18, abs(coastUv.y - crest));
+        float breaks = smoothstep(-0.45, 0.65, sin(phase * 0.7) + 0.42 * sin(coastUv.x * 2.2));
+        gl_FragColor = vec4(0.85, 0.94, 0.93, band * breaks * 0.72);
+        #include <colorspace_fragment>
+      }`,
+  }));
+  surf.name = "shoreline-swash";
+  surf.position.y = sea.position.y + 0.015;
+  surf.userData.noDrape = true;
+  surf.userData.noOcclusion = true;
+  scene.add(surf);
   if (!seaside) {
     flat(scene, sf.beach.ring, "#e1c99c", 0.14);
     outline(scene, sf.coast, "#e2f9f5", 0.17);
@@ -132,11 +187,12 @@ export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant
     flat(scene,path,"#ce9878",0.18);
     outline(scene,path,"#f2debb",0.2,true);
   }
-  if (!restaurant) return;
+  if (!restaurant) return sea;
   // The restaurant stands on the sand, at whatever height the beach has there.
   // That height is final: the survey grid is not added again, or the pad sinks.
   const c = centroid(sf.restaurant.ring), base = seaside ? seaside.y(c.x, c.z) : 0;
   // Timber deck along the seaward wall (IMG_2606). Each vertex sits on the beach there, so the east end is not buried.
   addBarrakaDeck(scene, sf.restaurant.terrace, sf.restaurant.ring, (x, z) => seaside ? seaside.y(x, z) : base, !!seaside);
   // The parapet, clerestory, awnings and thatched eaves are the building itself (src/barraka-facade.ts).
+  return sea;
 }
