@@ -5097,7 +5097,12 @@
    "facades",
    "materials"
   ],
-  "note": "Which wall belongs to which property is uncertain; the left wall appears to be the boundary of the lawn's north-east side and the right wall the neighbouring red-roofed building. Stone blocks under black sheeting are temporary."
+  "note": "Which wall belongs to which property is uncertain; the left wall appears to be the boundary of the lawn's north-east side and the right wall the neighbouring red-roofed building. Stone blocks under black sheeting are temporary.",
+  "looksAt": [
+   22.0,
+   86.0
+  ],
+  "subject": "the service lane north from the paseo: white walls with doors on the left, the long building's low terrace wall and eaves on the right"
  },
  "IMG_2614.jpg": {
   "title": "Seaward aisle beside Barraka's north-east wall with strelitzia pots and stacked sunloungers",
@@ -9510,5 +9515,42 @@
   ],
   "subject": "octagon-tiled path",
   "note": "Same octagon-and-square tiling as IMG_3202, between a low white wall and brick-edged steps; no door is in frame. The phone pin is ±104 m, so the location is not established; probably near IMG_3202."
+ },
+ "IMG_3118.jpg": {
+  "title": "Calle Pintor Picasso looking north-west from the lane's north end: tower and white buildings left, hotel and plane trees right",
+  "shows": [
+   "picasso",
+   "main-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "view"
+  ],
+  "looksAt": [
+   -2.0,
+   63.0
+  ],
+  "subject": "the road north-west from the lane past the forecourt",
+  "note": "Reviewed 26 Nov 2026: asphalt road; on the left a two-storey white building with a black 90 MILES sign, the white tower with a TV aerial and white walls with doors, a cement mixer and a blue lorry; on the right the hotel block, plane trees and low white buildings, a parked van."
+ },
+ "IMG_3119.jpg": {
+  "title": "Calle Pintor Picasso forecourt looking north-west: blue lorry by the tower, grey containers and utility sheds on the right",
+  "shows": [
+   "picasso",
+   "main-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "looksAt": [
+   -3.0,
+   57.5
+  ],
+  "subject": "the forecourt between the pool building and the hotel's low block",
+  "note": "Reviewed 26 Nov 2026: the tower's base and white walls on the left with a blue lorry and building materials; on the right two big grey containers, small white utility sheds with brown doors and a low white wall; palms and plane trees beyond."
  }
 }

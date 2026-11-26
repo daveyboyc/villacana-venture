@@ -75,9 +75,37 @@
    "level": "estimated",
    "why": "Exit barrier: boom, white cabinet and no-entry sign in Street View from Calle Bolivia (Oct 2024); ends from the registered Google 3D top-down screenshot, about 1.5 m. Its rest post is not seen close up and is drawn like the entry barrier's."
   },
+  "ground_plan_picasso.json:picasso-beach-road-forecourt": {
+   "level": "estimated",
+   "why": "Asphalt in IMG_3118 and IMG_3119; outline traced on the aerial's pale road surface, about 1-1.5 m, with the tree garden's curved edge generalised."
+  },
+  "picasso_beach_lane.json:picasso-lane-tower": {
+   "level": "estimated",
+   "why": "White tower with slits and an aerial in IMG_3105, 3106, 3118, 2613 and 3067; placed on the surface model's 9.6-9.7 m block at the bend by the hotel's low block, which the photos' bearings agree with (2 m grid, about 1 m), footprint judged."
+  },
+  "picasso_beach_lane.json:picasso-lane-east-terrace": {
+   "level": "estimated",
+   "why": "Low white terrace wall with a red coping and deep eaves in IMG_2613, on the registry strip 6465801UF1366N_part2 between the long building and the lane; wall height judged against bicycles, eaves level with the building's modelled roof."
+  },
+  "picasso_beach_lane.json:picasso-lane-mouth": {
+   "level": "estimated",
+   "why": "Blue-and-white bollard and a drain grate at the lane's paseo end in IMG_3066, 3067 and 2613; positions about 1 m."
+  },
+  "street:picasso-beach-lane": {
+   "level": "estimated",
+   "why": "The lane between the pool building's sheds and lawn wall and the long eaved building on the aerial (about 1 m), seen in IMG_2613, 3067, 3118, 3119: a 3.2 m roadway from the west footway's kerb to the terrace wall, ending at the grate. The photographed concrete roadway is drawn as asphalt."
+  },
+  "ground_plan_picasso.json:picasso-beach-lane-concrete": {
+   "level": "estimated",
+   "why": "Concrete lane wall to wall in IMG_2613 and IMG_3067; bounded by the shed strip, the lawn wall and the terrace wall, about 1 m."
+  },
+  "ground_plan_picasso.json:picasso-beach-lane-footway": {
+   "level": "estimated",
+   "why": "Kerbed concrete footway along the west walls in IMG_2613 and IMG_3067, 1.3 m wide along the shed strip and lawn wall, about 1 m; kerb height judged."
+  },
   "street:picasso": {
    "level": "estimated",
-   "why": "Along the car park the road is placed against the long wall (aerial line; IMG_3125, IMG_3129 show asphalt to the wall foot), 6 m wide; the north and south ends are the earlier map trace."
+   "why": "Along the car park the road is placed against the long wall (aerial line; IMG_3125, IMG_3129 show asphalt to the wall foot), 6 m wide; the north end is the earlier map trace. South of the hotel's low block it runs on across the forecourt by the pool building on the aerial's pale road surface (IMG_3118, IMG_3119), about 1-1.5 m, into the lane to the beach (street:picasso-beach-lane)."
   },
   "picasso_service_frontage.json:picasso-hotel-lower-wing": {
    "level": "estimated",
@@ -1615,7 +1643,7 @@
     "IMG_3105.jpg",
     "IMG_3106.jpg"
    ],
-   "why": "IMG_3105 and IMG_3106 look down the service road to the sea past more white utility buildings, a white tower with an aerial, a parked lorry and a skip, but only from 40-70 m away. The mapped road stops at (-13.7, 45.8); the aerial shows it running on about 60 m to the paseo between the big-pool lawn and the grey flat-roofed buildings. Not built in this pass.",
+   "why": "Built 26 Nov 2026 as estimates (street picasso-beach-lane, the forecourt, the tower and the east terrace) from IMG_3118, 3119, 2613 and 3065-3068 and the aerial. Still not seen close up: the utility sheds and grey containers on the forecourt's east side (IMG_3119), the two-storey building with the 90 MILES sign west of the tower (IMG_3118), and the lane's middle stretch; no camera is solved.",
    "decision": "needs-photos"
   },
   {

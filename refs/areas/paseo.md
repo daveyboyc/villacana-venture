@@ -89,64 +89,79 @@ graph LR
   F4 --> PIMG_2631_jpg(["IMG_2631"])
   F4 --> PIMG_2633_jpg(["IMG_2633"])
   F4 --> PIMG_2770_jpg(["IMG_2770"])
-  A --> F5["Paseo · east green windbreak · unreviewed"]
-  F5 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F6["Paseo · south-pool clipped hedge · unreviewed"]
-  F6 --> PIMG_2349_jpg(["IMG_2349"])
-  F6 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F7["Paseo · flush square service cover · unreviewed"]
-  F7 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F8["Paseo · west clipped hedge · unreviewed"]
-  F8 --> PIMG_2352_jpg(["IMG_2352"])
-  F8 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F9["Paseo · west green windbreak · unreviewed"]
-  F9 --> PIMG_2352_jpg(["IMG_2352"])
-  A --> F10["Paseo · white lamp 1 · unreviewed"]
+  A --> F5["Concrete lane between the pool building's sheds and lawn wall and the east building's terrace · disputed"]
+  F5 --> PIMG_2613_jpg(["IMG_2613"])
+  F5 --> PIMG_3067_jpg(["IMG_3067"])
+  F5 --> PIMG_3118_jpg(["IMG_3118"])
+  A --> F6["Kerbed concrete footway along the west walls of the lane to the beach · unreviewed"]
+  F6 --> PIMG_2613_jpg(["IMG_2613"])
+  F6 --> PIMG_3067_jpg(["IMG_3067"])
+  F6 --> PIMG_3118_jpg(["IMG_3118"])
+  A --> F7["Paseo · east green windbreak · unreviewed"]
+  F7 --> PIMG_2350_jpg(["IMG_2350"])
+  A --> F8["Paseo · south-pool clipped hedge · unreviewed"]
+  F8 --> PIMG_2349_jpg(["IMG_2349"])
+  F8 --> PIMG_2350_jpg(["IMG_2350"])
+  A --> F9["Paseo · flush square service cover · unreviewed"]
+  F9 --> PIMG_2354_jpg(["IMG_2354"])
+  A --> F10["Paseo · west clipped hedge · unreviewed"]
   F10 --> PIMG_2352_jpg(["IMG_2352"])
   F10 --> PIMG_2354_jpg(["IMG_2354"])
-  F10 --> PIMG_2480_jpg(["IMG_2480"])
-  F10 --> PIMG_2604_jpg(["IMG_2604"])
-  F10 --> PIMG_2609_jpg(["IMG_2609"])
-  F10 --> PIMG_2618_jpg(["IMG_2618"])
-  F10 --> PIMG_2637_jpg(["IMG_2637"])
-  A --> F11["Paseo · white lamp 2 · unreviewed"]
+  A --> F11["Paseo · west green windbreak · unreviewed"]
   F11 --> PIMG_2352_jpg(["IMG_2352"])
-  F11 --> PIMG_2354_jpg(["IMG_2354"])
-  F11 --> PIMG_2480_jpg(["IMG_2480"])
-  F11 --> PIMG_2604_jpg(["IMG_2604"])
-  F11 --> PIMG_2609_jpg(["IMG_2609"])
-  F11 --> PIMG_2618_jpg(["IMG_2618"])
-  F11 --> PIMG_2637_jpg(["IMG_2637"])
-  A --> F12["Paseo · white lamp 3 · unreviewed"]
-  F12 --> PIMG_2350_jpg(["IMG_2350"])
+  A --> F12["Paseo · white lamp 1 · unreviewed"]
+  F12 --> PIMG_2352_jpg(["IMG_2352"])
+  F12 --> PIMG_2354_jpg(["IMG_2354"])
   F12 --> PIMG_2480_jpg(["IMG_2480"])
   F12 --> PIMG_2604_jpg(["IMG_2604"])
   F12 --> PIMG_2609_jpg(["IMG_2609"])
   F12 --> PIMG_2618_jpg(["IMG_2618"])
   F12 --> PIMG_2637_jpg(["IMG_2637"])
-  A --> F13["Paseo · white lamp 4 · unreviewed"]
-  F13 --> PIMG_2350_jpg(["IMG_2350"])
+  A --> F13["Paseo · white lamp 2 · unreviewed"]
+  F13 --> PIMG_2352_jpg(["IMG_2352"])
+  F13 --> PIMG_2354_jpg(["IMG_2354"])
   F13 --> PIMG_2480_jpg(["IMG_2480"])
   F13 --> PIMG_2604_jpg(["IMG_2604"])
   F13 --> PIMG_2609_jpg(["IMG_2609"])
   F13 --> PIMG_2618_jpg(["IMG_2618"])
   F13 --> PIMG_2637_jpg(["IMG_2637"])
-  A --> F14["Paseo · sandstone retaining wall and mesh fence · unreviewed"]
-  F14 --> PIMG_2227_jpg(["IMG_2227"])
-  F14 --> PIMG_2298_jpg(["IMG_2298"])
-  F14 --> PIMG_2299_jpg(["IMG_2299"])
-  F14 --> PIMG_2349_jpg(["IMG_2349"])
+  A --> F14["Paseo · white lamp 3 · unreviewed"]
   F14 --> PIMG_2350_jpg(["IMG_2350"])
-  F14 --> PIMG_2352_jpg(["IMG_2352"])
-  F14 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F15["Paseo · timber edge onto the beach · unreviewed"]
+  F14 --> PIMG_2480_jpg(["IMG_2480"])
+  F14 --> PIMG_2604_jpg(["IMG_2604"])
+  F14 --> PIMG_2609_jpg(["IMG_2609"])
+  F14 --> PIMG_2618_jpg(["IMG_2618"])
+  F14 --> PIMG_2637_jpg(["IMG_2637"])
+  A --> F15["Paseo · white lamp 4 · unreviewed"]
   F15 --> PIMG_2350_jpg(["IMG_2350"])
-  F15 --> PIMG_2351_jpg(["IMG_2351"])
-  F15 --> PIMG_2352_jpg(["IMG_2352"])
-  F15 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F16["South lawn above the paseo · unreviewed"]
-  F16 --> PIMG_2188_jpg(["IMG_2188"])
+  F15 --> PIMG_2480_jpg(["IMG_2480"])
+  F15 --> PIMG_2604_jpg(["IMG_2604"])
+  F15 --> PIMG_2609_jpg(["IMG_2609"])
+  F15 --> PIMG_2618_jpg(["IMG_2618"])
+  F15 --> PIMG_2637_jpg(["IMG_2637"])
+  A --> F16["Paseo · sandstone retaining wall and mesh fence · unreviewed"]
+  F16 --> PIMG_2227_jpg(["IMG_2227"])
+  F16 --> PIMG_2298_jpg(["IMG_2298"])
+  F16 --> PIMG_2299_jpg(["IMG_2299"])
   F16 --> PIMG_2349_jpg(["IMG_2349"])
+  F16 --> PIMG_2350_jpg(["IMG_2350"])
+  F16 --> PIMG_2352_jpg(["IMG_2352"])
+  F16 --> PIMG_2354_jpg(["IMG_2354"])
+  A --> F17["Paseo · timber edge onto the beach · unreviewed"]
+  F17 --> PIMG_2350_jpg(["IMG_2350"])
+  F17 --> PIMG_2351_jpg(["IMG_2351"])
+  F17 --> PIMG_2352_jpg(["IMG_2352"])
+  F17 --> PIMG_2354_jpg(["IMG_2354"])
+  A --> F18["Raised terrace and eaves along the long building on the lane's east side (registry 6465801UF1366N_part2) · disputed"]
+  F18 --> PIMG_2613_jpg(["IMG_2613"])
+  F18 --> PIMG_3067_jpg(["IMG_3067"])
+  A --> F19["The lane's mouth at the paseo: bollard and drain grate · unreviewed"]
+  F19 --> PIMG_2613_jpg(["IMG_2613"])
+  F19 --> PIMG_3066_jpg(["IMG_3066"])
+  F19 --> PIMG_3067_jpg(["IMG_3067"])
+  A --> F20["South lawn above the paseo · unreviewed"]
+  F20 --> PIMG_2188_jpg(["IMG_2188"])
+  F20 --> PIMG_2349_jpg(["IMG_2349"])
 ```
 
 ## Placement evidence
@@ -160,6 +175,8 @@ graph LR
 | `barraka_frontage.json:paseo-painted-crossing` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `beach_verge.json:barraka-front-shrubs` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `beach_verge.json:barraka-front-verge` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `ground_plan_picasso.json:picasso-beach-lane-concrete` | disputed | differs | open discrepancy photo-discrepancy:bd1a1210b0abfd53 |
+| `ground_plan_picasso.json:picasso-beach-lane-footway` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_details.json:paseo-east-windbreak` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_details.json:paseo-pool-hedge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_details.json:paseo-service-cover` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -171,6 +188,8 @@ graph LR
 | `paseo_details.json:paseo-white-lamp-4` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_wall.json:paseo-retaining-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_wall.json:paseo-timber-edge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `picasso_beach_lane.json:picasso-lane-east-terrace` | disputed | differs | open discrepancy photo-discrepancy:258c2534e7bd88df |
+| `picasso_beach_lane.json:picasso-lane-mouth` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `south_pool.json:south-pool-seaward-level` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 ## Photo checks
@@ -194,6 +213,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2352.jpg](../../public/photos-ref/IMG_2352.jpg) | ground | layout, levels, materials | Paseo looking west: sandstone wall, mesh fence, lamp posts _Used by: area:paseo, paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge, paseo_details.json:paseo-west-hedge, paseo_details.json:paseo-west-windbreak, paseo_details.json:paseo-white-lamp-1, paseo_details.json:paseo-white-lamp-2._ |
 | [IMG_2354.jpg](../../public/photos-ref/IMG_2354.jpg) | ground | layout, levels | Paseo curving north-east beside the sandstone wall _Used by: area:paseo, paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge, paseo_details.json:paseo-west-hedge, paseo_details.json:paseo-white-lamp-1, paseo_details.json:paseo-white-lamp-2, paseo_details.json:paseo-service-cover._ |
 | [IMG_2484.jpg](../../public/photos-ref/IMG_2484.jpg) | ground | layout, materials, view | Paseo near Calle Guillermo with painted crossing **Looks at:** Painted crossing across the paseo beside the beach gateway. **Note:** looksAt is about 10 m ahead along the heading, where the red and white bars cross the paving (position read to about 2 m). _Used by: barraka_frontage.json:barraka-lounge-garden, barraka_frontage.json:paseo-painted-crossing, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
+| [IMG_3067.jpg](../../public/photos-ref/IMG_3067.jpg) | ground | layout, materials | Paseo lane between a white wall with doors and the sandstone wall and fence **Note:** The lane meets the paseo; check against the Calle Guillermo end before naming it. _Used by: picasso_beach_lane.json:picasso-lane-tower, picasso_beach_lane.json:picasso-lane-east-terrace, picasso_beach_lane.json:picasso-lane-mouth, ground_plan_picasso.json:picasso-beach-lane-concrete, ground_plan_picasso.json:picasso-beach-lane-footway._ |
 | [IMG_2480.jpg](../../public/photos-ref/IMG_2480.jpg) | ground | materials, layout, view | Paseo looking east with solar lamp and sandstone wall **Looks at:** Solar-head lamp post at the wall foot beside the paseo. **Note:** looksAt is the nearest lamp, about 6 m ahead along the heading, by eye from the pin (+-3.6 m). _Used by: paseo_details.json:paseo-white-lamp-1, paseo_details.json:paseo-white-lamp-2, paseo_details.json:paseo-white-lamp-3, paseo_details.json:paseo-white-lamp-4._ |
 | [IMG_2637.jpg](../../public/photos-ref/IMG_2637.jpg) | ground | layout, materials, planting | Paseo end by the Calle Pintor Dali car park with hedge behind mesh fence **Looks at:** Dali end of the paseo: wall end, mesh fence and lamp. **Note:** looksAt is the wall end about 6 m ahead along the heading, by eye from the pin (+-4.7 m). _Used by: paseo_details.json:paseo-white-lamp-1, paseo_details.json:paseo-white-lamp-2, paseo_details.json:paseo-white-lamp-3, paseo_details.json:paseo-white-lamp-4._ |
 | [IMG_2766.jpg](../../public/photos-ref/IMG_2766.jpg) | ground | layout, materials, planting | Painted crossing and blue plumbago at a gated wall **Looks at:** the beach gateway with plumbago either side and the painted crossing in front of it. _Used by: barraka_frontage.json:paseo-painted-crossing, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
@@ -209,6 +229,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2608.jpg](../../public/photos-ref/IMG_2608.jpg) | ground | view, facades, layout, materials | From the Barraka terrace looking SW along the paseo to the white houses **Looks at:** Paseo and lawn railing towards the white houses. **Note:** Pin (+/-12.6 m) on the lawn; camera is really on the restaurant terrace. looksAt is 25 m along the phone heading from the terrace spot of IMG_2631 (21.1, 108.5), by eye; the +-12.6 m pin is not used. _Used by: barraka_frontage.json:barraka-lounge-garden._ |
 | [IMG_2611.jpg](../../public/photos-ref/IMG_2611.jpg) | ground | layout, materials, facades, signage | Paseo lane beside Barraka's north-west wall looking north-east **Looks at:** Barraka north-west wall. **Note:** Sandbags on black sheeting along the drain look temporary (flood protection), not a permanent feature. looksAt is the point 6 m along the phone heading from the pin at the west corner, beside the north-west wall; the same point the unsolved render already aimed at. Not a solved camera. _Used by: barraka_facade.json:barraka-facade._ |
 | [IMG_2607.jpg](../../public/photos-ref/IMG_2607.jpg) | ground | view, layout, planting | From the Barraka terrace over rattan lounge seating and the paseo **Looks at:** Roped rattan lounge set on the beach-side verge. **Note:** Pin (+/-18.8 m) is on the lawn but the photo is taken from under the Barraka terrace awning; the pin looks displaced several metres from the real camera. looksAt is the seating centre of data/barraka_frontage.json (bearings of IMG_2604 and IMG_2631), by eye; the pin is not used. **Compass:** the subject is 52° from the phone heading; trust looksAt, not the heading. _Used by: barraka_frontage.json:barraka-lounge-garden._ |
+| [IMG_3066.jpg](../../public/photos-ref/IMG_3066.jpg) | ground | layout, materials, planting | Sandstone wall topped with green bars and a white wall with double doors, paseo corner **Note:** Material and section of the paseo wall are visible; compare with the open paseo-wall-east-end request. _Used by: picasso_beach_lane.json:picasso-lane-mouth._ |
 | [IMG_2632.jpg](../../public/photos-ref/IMG_2632.jpg) | ground | layout, materials, planting, levels | West paseo curving south-west under the sandstone wall **Note:** Pin is in a numbered photo-request spot (11) on the aerial. |
 | [IMG_2634.jpg](../../public/photos-ref/IMG_2634.jpg) | ground | layout, planting, materials, view | West paseo with agave verge, sandstone wall and white house in the distance |
 | [IMG_2768.jpg](../../public/photos-ref/IMG_2768.jpg) | ground | layout, materials, facades, view | Paseo towards Barraka beside the green bar fence and solar lamp **Looks at:** The paseo, sandstone wall with green bar fence, white solar lamp and Barraka Beach frontage ahead. |
@@ -232,7 +253,6 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_3057.jpg](../../public/photos-ref/IMG_3057.jpg) | ground | layout, materials, view | Paseo and fenced lawn, white two-storey beach building with a hut on the sand ahead |
 | [IMG_3059.jpg](../../public/photos-ref/IMG_3059.jpg) | ground | layout, facades, materials | Closed beach restaurant behind chain-link: flat-roofed glazed pavilion and terrace **Note:** Fenced and derelict-looking; neighbouring plot east of the resort paseo. |
 | [IMG_3065.jpg](../../public/photos-ref/IMG_3065.jpg) | ground | layout, signage, materials | Beach building end and a rubble sandstone wall topped by chain-link, with a lamp pole and a restaurant sign |
-| [IMG_3066.jpg](../../public/photos-ref/IMG_3066.jpg) | ground | layout, materials, planting | Sandstone wall topped with green bars and a white wall with double doors, paseo corner **Note:** Material and section of the paseo wall are visible; compare with the open paseo-wall-east-end request. |
 | [IMG_3068.jpg](../../public/photos-ref/IMG_3068.jpg) | ground | layout, materials, planting | Green bar fence on a sandstone base at the white pillar, palms and bananas behind |
 | [IMG_3069.jpg](../../public/photos-ref/IMG_3069.jpg) | ground | layout, materials, facades | Paseo beside the wooden Barraka building, sandstone wall and green bars on the right |
 | [IMG_2628.jpg](../../public/photos-ref/IMG_2628.jpg) | ground | layout, view | Paseo far north-east of Barraka towards lamp posts and palms |
@@ -250,7 +270,6 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_3062.jpg](../../public/photos-ref/IMG_3062.jpg) | ground | facades, materials | Glazed restaurant pavilion with stepped roof edge and sandstone kerb |
 | [IMG_3063.jpg](../../public/photos-ref/IMG_3063.jpg) | ground | layout, view | Paseo to a white two-storey beach building and a thatched hut on the sand **Looks at:** beach building east of Barraka. **Compass:** the subject is 169° from the phone heading; trust looksAt, not the heading. |
 | [IMG_3064.jpg](../../public/photos-ref/IMG_3064.jpg) | ground | layout, materials | Paseo with a sandstone wall and fence on the right leading to the white beach building |
-| [IMG_3067.jpg](../../public/photos-ref/IMG_3067.jpg) | ground | layout, materials | Paseo lane between a white wall with doors and the sandstone wall and fence **Note:** The lane meets the paseo; check against the Calle Guillermo end before naming it. |
 | [IMG_3072.jpg](../../public/photos-ref/IMG_3072.jpg) | ground | layout, materials | Paseo curving between the sandstone wall with green bars and grass, white buildings beyond |
 | [IMG_3074.jpg](../../public/photos-ref/IMG_3074.jpg) | ground | layout, materials | Paseo bending south-west with a crossing marking and the gateway of the lawn side **Looks at:** paseo bend and gate pillar. |
 | [IMG_3071.jpg](../../public/photos-ref/IMG_3071.jpg) | ground | materials | Pink stamped paving with a slot drain and the sandstone planter edge |
@@ -262,6 +281,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2226.jpg](../../public/photos-ref/IMG_2226.jpg) | ground | view, facades, layout, levels | From the beach looking back at the resort frontage **Looks at:** big-pool lawn frontage: white railings, Guillermo gateway at left. **Note:** Read 2026-10-21 at full size. West to east (left to right): corner houses with a white wall and tiled panel, a white round-arched gateway at paseo level (the foot of Calle Guillermo), a short white wall, then white railings along the big-pool lawn up to Barraka's raised deck at right; the restaurant's blue awnings behind. The lawn and the gateway's foot are about level with the paseo. Built as data/seafront_fence.json. _Used by: beach_verge.json:barraka-front-verge, beach_verge.json:barraka-front-shrubs, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2602.jpg](../../public/photos-ref/IMG_2602.jpg) | ground | layout, facades, signage, materials | Arched white gate pillar with iron gate, signs and bollard light at the lawn corner **Looks at:** coastal lawn gate pier and iron gate. **Note:** 13 Nov: looksAt moved onto the gateway as now modelled (it was a rough 5 m inland estimate). looksAt is a rough estimate of the gate position from the aerial (not measured). _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing, ground_plan_main_pool.json:lawn-inner-path, ground_plan_main_pool.json:lawn-flagstone-apron._ |
 | [IMG_2618.jpg](../../public/photos-ref/IMG_2618.jpg) | ground | facades, layout, signage, materials | Barraka's north-east facade seen from the beach side of the paseo **Looks at:** Barraka restaurant, north-east and north-west faces. **Note:** looksAt is the building centre taken from the aerial outline (consistent with IMG_2482 looksAt [28.8,110.5]). _Used by: paseo_details.json:paseo-white-lamp-1, paseo_details.json:paseo-white-lamp-2, paseo_details.json:paseo-white-lamp-3, paseo_details.json:paseo-white-lamp-4, barraka_facade.json:barraka-facade._ |
+| [IMG_2613.jpg](../../public/photos-ref/IMG_2613.jpg) | ground | layout, facades, materials | Service lane between the main-pool lawn walls and the neighbouring building, looking north-west **Looks at:** the service lane north from the paseo: white walls with doors on the left, the long building's low terrace wall and eaves on the right. **Note:** Which wall belongs to which property is uncertain; the left wall appears to be the boundary of the lawn's north-east side and the right wall the neighbouring red-roofed building. Stone blocks under black sheeting are temporary. _Used by: picasso_beach_lane.json:picasso-lane-tower, picasso_beach_lane.json:picasso-lane-east-terrace, picasso_beach_lane.json:picasso-lane-mouth, ground_plan_picasso.json:picasso-beach-lane-concrete, ground_plan_picasso.json:picasso-beach-lane-footway._ |
 | [IMG_2601.jpg](../../public/photos-ref/IMG_2601.jpg) | ground | layout, materials, view, planting | Tiled landing at the foot of the lane with hedge and green fence to the beach **Looks at:** the inner tiled path ending at a lawn strip, the hedge and the mesh fence. **Note:** Foot of Calle Guillermo. Tile joints change to a fan pattern at the far left. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing, ground_plan_main_pool.json:lawn-inner-path._ |
 | [IMG_2630.jpg](../../public/photos-ref/IMG_2630.jpg) | ground | facades, signage, materials, layout | Barraka's glazed north-west frontage with sandbags along the slot drain **Looks at:** Barraka north-west glazed frontage. **Note:** Pin +-6.8 m is at the building corner; looksAt by eye. Sandbags are temporary. _Used by: barraka_facade.json:barraka-facade, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades, levels | From the beach looking west along the white seafront houses **Looks at:** east end of the sandstone wall and the corner house by Calle Guillermo. **Note:** Read 2026-10-21 at full size. The sandstone wall with mesh fence is low (under 1 m above the sand) all the way to its east end, where a white wall with a tiled panel takes over; the corner house there stands about 1 m above the beach, not 3 m. _Used by: paseo_wall.json:paseo-retaining-wall, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
@@ -281,7 +301,6 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2644.jpg](../../public/photos-ref/IMG_2644.jpg) | ground | planting, layout, view, facades | South lawn seaward edge: hedges, palms and mesh fence above the paseo **Note:** Good GPS (+-2 m) at the seaward corner of the south lawn. |
 | [IMG_2989.jpg](../../public/photos-ref/IMG_2989.jpg) | ground | layout, signage, materials, view | Seaward end of Pintor Dalí: yellow kerb line, no-parking sign and mesh fence to the sea **Looks at:** seaward end of Pintor Dalí where it meets the beach fence. |
 | [IMG_2486.jpg](../../public/photos-ref/IMG_2486.jpg) | ground | layout, materials, facades | Tiled apron at the foot of Calle Guillermo with curved wall **Note:** Pin accuracy about 4 m; heading 217 points back down the seafront end of Guillermo. |
-| [IMG_2613.jpg](../../public/photos-ref/IMG_2613.jpg) | ground | layout, facades, materials | Service lane between the main-pool lawn walls and the neighbouring building, looking north-west **Note:** Which wall belongs to which property is uncertain; the left wall appears to be the boundary of the lawn's north-east side and the right wall the neighbouring red-roofed building. Stone blocks under black sheeting are temporary. |
 | [IMG_2990.jpg](../../public/photos-ref/IMG_2990.jpg) | ground | view, layout, materials | From the beach grass west of the paseo end, looking along the paseo toward La Concha **Looks at:** paseo and seafront wall seen from the beach west of their end. **Note:** The EXIF heading of 138 degrees disagrees with the picture, which looks roughly east-north-east along the coast (sea on the right, mountains ahead); treat the heading as unreliable. |
 | [IMG_3033.jpg](../../public/photos-ref/IMG_3033.jpg) | ground | layout, facades, planting | South pool lawn from the beach-side grass: clover pool, flower bed and white terraced houses **Looks at:** south pool lawn and its seaward house row. **Compass:** the subject is 55° from the phone heading; trust looksAt, not the heading. |
 | [IMG_3034.jpg](../../public/photos-ref/IMG_3034.jpg) | ground | layout, facades, planting | South pool lawn corner: white house with round tiled turret, tall cactus and clipped hedges **Note:** Taken from the same spot as IMG_3033 turned about 70 degrees. |

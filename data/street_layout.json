@@ -110,11 +110,55 @@
         [
           -13.66,
           45.75
+        ],
+        [
+          -9.5,
+          53.5
+        ],
+        [
+          -2.0,
+          63.0
+        ],
+        [
+          3.5,
+          70.0
         ]
       ],
       "surface": "asphalt",
-      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision); 24 Nov 2026: the whole stretch along the car park, to the wall's south end, moved onto a line 3.1 m east of the long wall's centreline, so the 6 m asphalt meets the wall foot as IMG_3125 and IMG_3129 show (estimated, data/picasso_car_park.json). The aerial puts the cypress hedge 7-8 m from the wall; street width is one value for the whole street, and 7.5 m would cut the photographed service-road ramp further south, so the 1-2 m strip towards the hedge is a known shortfall",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision); 24 Nov 2026: the whole stretch along the car park, to the wall's south end, moved onto a line 3.1 m east of the long wall's centreline, so the 6 m asphalt meets the wall foot as IMG_3125 and IMG_3129 show (estimated, data/picasso_car_park.json). The aerial puts the cypress hedge 7-8 m from the wall; street width is one value for the whole street, and 7.5 m would cut the photographed service-road ramp further south, so the 1-2 m strip towards the hedge is a known shortfall 26 Nov 2026 (task picasso-service-road-levels-and-beach; Dave circled the road on to the beach): continued past the hotel's low block, round its corner and across the forecourt by the pool building, to (3.5, 70.0) where it narrows into the lane to the paseo (street picasso-beach-lane), on the pale road surface of the Esri aerial between the registry buildings either side, about 1-1.5 m (IMG_3118, IMG_3119, IMG_3105, IMG_3106).",
       "referenceId": "street-Calle Pintor Picasso",
+      "aliases": [
+        "Calle Picasso"
+      ]
+    },
+    {
+      "id": "picasso-beach-lane",
+      "name": "Calle Pintor Picasso",
+      "width": 3.2,
+      "points": [
+        [
+          3.5,
+          70.0
+        ],
+        [
+          11.15,
+          77.85
+        ],
+        [
+          18.93,
+          85.59
+        ],
+        [
+          26.4,
+          93.43
+        ],
+        [
+          27.9,
+          95.75
+        ]
+      ],
+      "surface": "asphalt",
+      "trust": "26 Nov 2026: the seaward end of Calle Pintor Picasso, the service lane between the pool building's sheds and the big-pool lawn wall on the west and the long eaved building (registry 6465801UF1366N parts 1-3) on the east, from the forecourt at (3.5, 70.0) to the drain grate at the paseo's edge, (27.9, 95.75). The faces either side stand 9.5 m apart at the north end and 5.3 m at the mouth (aerial, about 1 m). IMG_2613 and IMG_3067 show a kerbed concrete footway about 1.2-1.5 m wide along the west walls and the roadway, about 3.5 m, from its kerb to the terrace wall; so the ribbon is 3.2 m (the walls stand only 4.7 m apart face to face near the mouth, leaving room for the 1.3 m footway), shifted 0.6-0.75 m east of the midline from about z 80, and ends at the grate (the red paseo paving runs up to it). Levels from the laser survey: -1.44 m at the forecourt falling to about -1.95 m at the grate. Independent review 26 Nov 2026.",
       "aliases": [
         "Calle Picasso"
       ]

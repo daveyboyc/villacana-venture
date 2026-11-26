@@ -4175,6 +4175,10 @@
    "kind": "layout",
    "title": "Calle Pintor Picasso south of the car park: levels behind the utility row, and the road on to the beach",
    "photos": [
+    "IMG_3118.jpg",
+    "IMG_3119.jpg",
+    "IMG_2613.jpg",
+    "IMG_3067.jpg",
     "IMG_3105.jpg",
     "IMG_3106.jpg",
     "IMG_3123.jpg",
@@ -4190,12 +4194,18 @@
    "features": [
     "ground_plan_picasso.json:picasso-service-pavement",
     "picasso_service_frontage.json:picasso-recess-wall",
-    "street:picasso"
+    "street:picasso",
+    "street:picasso-beach-lane",
+    "ground_plan_picasso.json:picasso-beach-road-forecourt",
+    "picasso_beach_lane.json:picasso-lane-tower",
+    "picasso_beach_lane.json:picasso-lane-east-terrace",
+    "picasso_beach_lane.json:picasso-lane-mouth"
    ],
    "dependsOn": [
     "picasso-bin-store-service-road"
    ],
-   "status": "open"
+   "status": "in-progress",
+   "owner": "Claude"
   }
 ]
 }

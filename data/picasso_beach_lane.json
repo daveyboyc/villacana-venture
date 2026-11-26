@@ -1,0 +1,94 @@
+{
+ "id": "picasso-beach-lane",
+ "area": "picasso",
+ "name": "Calle Pintor Picasso from the hotel's low block to the paseo: tower, the east building's terrace and eaves, and the lane's mouth",
+ "about": "Task picasso-service-road-levels-and-beach (Dave circled this stretch, 26 Nov 2026). The road and lane themselves are streets picasso and picasso-beach-lane in data/street_layout.json; the forecourt asphalt is in data/ground_plan_picasso.json. Built by src/picasso-beach-lane.ts. World metres, x east, z south. Heights over the datum (the middle pool deck, 5.00 m in the survey) are drawn above the visible paving as the long car-park wall is (+0.27 m).",
+ "trust": "Estimated. No camera here is solved; IMG_3118 and IMG_3119 stand on the road (pins 4-8 m), IMG_2613 and IMG_3065-3068 at the paseo end (2.5-4.7 m). Outlines from the registry, the Esri aerial and the PNOA-LiDAR 2014-15 2 m surface model, about 1 m.",
+ "evidence": [
+  "IMG_3118.jpg",
+  "IMG_3119.jpg",
+  "IMG_3105.jpg",
+  "IMG_3106.jpg",
+  "IMG_2613.jpg",
+  "IMG_3065.jpg",
+  "IMG_3066.jpg",
+  "IMG_3067.jpg",
+  "IMG_3068.jpg"
+ ],
+ "tower": {
+  "id": "picasso-lane-tower",
+  "name": "White tower with three slit openings and a television aerial, at the bend by the hotel's low block",
+  "centre": [
+   -16.4,
+   54.7
+  ],
+  "size": 2.6,
+  "turn": 46.0,
+  "top": 9.6,
+  "evidence": [
+   "IMG_3105.jpg",
+   "IMG_3106.jpg",
+   "IMG_3118.jpg",
+   "IMG_2613.jpg",
+   "IMG_3067.jpg"
+  ],
+  "trust": "IMG_3105 and IMG_3106 (looking south-east), IMG_3118 (just behind the lorry, about 27 m from the lane's north end) and IMG_2613 and IMG_3067 (bearings about 312-318 degrees from the lane's mouth) show a plain white square tower, about two storeys above its neighbours, with three narrow vertical slits near the top and a TV aerial, on the road's west side where it bends past the hotel's low block. The 2014-15 surface model has it as a 2 x 2-cell block reading 9.6-9.7 m over the datum at x -17..-16, z 53..56, standing above 4.2 m roofs at the shared corner of registry parts 6364501UF1366S_part1 and part5; the road there is at -1.0 m, so the tower stands about 10.5 m. IMG_3106's top against the sea horizon gives about 10 m at about 31 m. Footprint 2.6 m square, turned to part 1's road face, judged. (A first placement at (-6.5, 73.5) used a survey spike that is a palm behind the lawn wall; the independent review found it, 26 Nov 2026.)"
+ },
+ "eastTerrace": {
+  "id": "picasso-lane-east-terrace",
+  "name": "Raised terrace and eaves along the long building on the lane's east side (registry 6465801UF1366N_part2)",
+  "ring": [
+   [
+    29.57,
+    94.54
+   ],
+   [
+    14.69,
+    77.22
+   ],
+   [
+    12.29,
+    74.48
+   ],
+   [
+    13.18,
+    73.74
+   ],
+   [
+    30.52,
+    93.74
+   ]
+  ],
+  "wallHeight": 0.9,
+  "wallThickness": 0.25,
+  "coping": "#a5583f",
+  "eavesThickness": 0.18,
+  "evidence": [
+   "IMG_2613.jpg",
+   "IMG_3067.jpg"
+  ],
+  "trust": "IMG_2613, looking north up the lane from the paseo end, shows the long white building on the east side standing on a raised terrace behind a low white wall with a red coping, about 0.9 m judged against the bicycles, with deep eaves on cantilevered beams over it. The registry strip 6465801UF1366N_part2 (0 storeys) lies exactly there, between the building (parts 1 and 3) and the lane; the surface model reads 2.33 m over the datum across it, the eaves, and the 2020-21 ground model barely 0.1 m above the lane, so the terrace is shallow. The wall is built along the strip's lane edge and the eaves over the whole strip, level with the building's roof in the model (the building is drawn at its registry storey height, about 1 m lower than the survey's roof)."
+ },
+ "mouth": {
+  "id": "picasso-lane-mouth",
+  "name": "The lane's mouth at the paseo: bollard and drain grate",
+  "bollard": [
+   26.9,
+   96.25
+  ],
+  "grate": {
+   "centre": [
+    27.15,
+    95.75
+   ],
+   "length": 4.0,
+   "width": 0.45
+  },
+  "evidence": [
+   "IMG_3066.jpg",
+   "IMG_3067.jpg",
+   "IMG_2613.jpg"
+  ],
+  "trust": "IMG_3066, IMG_3067 and IMG_2613 show a blue bollard with white bands at the lane's mouth on the paseo side of the grate (IMG_3067) and a steel drain grate across the lane at the paseo's edge; positions read from those photos and the lane line, about 1 m. Show details only."
+ }
+}
