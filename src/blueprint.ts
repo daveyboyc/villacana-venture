@@ -772,7 +772,31 @@ async function boot(): Promise<void> {
   // Screen-sized labels remain readable at every zoom and rotation.
   names.querySelectorAll("text").forEach(t=>t.style.display="none");
   seafrontNames.querySelectorAll("text").forEach(t=>t.style.display="none");
+  let scorecardGrid: { x0: number; z0: number; step: number; nx: number; nz: number; rows: string[]; areas: string[] } | null = null;
+  const mapCurrentArea = () => {
+    const ctm = world.getScreenCTM();
+    if (!scorecardGrid || !ctm) return new URLSearchParams(location.search).get("area") ?? "";
+    const p = new DOMPoint(innerWidth / 2, innerHeight / 2).matrixTransform(ctm.inverse());
+    const i = Math.floor((p.x - scorecardGrid.x0) / scorecardGrid.step), k = Math.floor((p.y - scorecardGrid.z0) / scorecardGrid.step);
+    const code = i >= 0 && i < scorecardGrid.nx && k >= 0 && k < scorecardGrid.nz ? scorecardGrid.rows[k]?.[i] : ".";
+    const id = !code || code === "." ? "" : scorecardGrid.areas[code.charCodeAt(0) - 97] ?? "";
+    return id === "whole-resort" ? "" : id;
+  };
   const references=referenceEditor({surface:svg,labels:mapLabels(skeleton),enabled:()=>!document.querySelector<HTMLElement>("#map-page")?.hidden,
+    mode:"map",
+    currentArea:mapCurrentArea,
+    onFocusSpot:(at,look)=>{
+      const points = look ? [at, look] : [at];
+      const theta = rotation * Math.PI / 180;
+      const ps = points.map(([x, z]) => [x * Math.cos(theta) - z * Math.sin(theta), x * Math.sin(theta) + z * Math.cos(theta)]);
+      const minX = Math.min(...ps.map(p => p[0])), maxX = Math.max(...ps.map(p => p[0])), minY = Math.min(...ps.map(p => p[1])), maxY = Math.max(...ps.map(p => p[1]));
+      const availableW = innerWidth > 760 ? innerWidth - 375 : innerWidth;
+      const availableH = innerHeight * (innerWidth > 760 ? 0.72 : 0.45);
+      const unit = Math.max((maxX - minX + 35) / availableW, (maxY - minY + 35) / availableH);
+      view.w = innerWidth * unit; view.h = innerHeight * unit;
+      view.x = (minX + maxX) / 2 - availableW * unit / 2; view.y = (minY + maxY) / 2 - innerHeight * 0.42 * unit;
+      apply();
+    },
     project:(x,z)=>{const p=new DOMPoint(x,z).matrixTransform(world.getScreenCTM()!);return {x:p.x,y:p.y,visible:p.x>0&&p.x<(innerWidth>760?innerWidth-375:innerWidth)&&p.y>(innerWidth>760?115:215)&&p.y<(innerWidth>760?innerHeight-150:innerHeight*.52)};},
     unproject:(x,y)=>{const p=new DOMPoint(x,y).matrixTransform(world.getScreenCTM()!.inverse());return [p.x,p.y];},
     onArm:()=>{editing=false;$("#editbar").hidden=true;$("#edit").setAttribute("aria-pressed","false");}
@@ -838,9 +862,10 @@ async function boot(): Promise<void> {
   let spotsKey: HTMLElement | undefined;
   world.append(spotsLayer);
   const LIGHTS: Record<string, string> = { red: "#c8352b", amber: "#e09a00", green: "#2f8a3e" };
-  void fetch(asset("/scorecard.json")).then((r) => r.json()).then((card: { grid: { x0: number; z0: number; step: number; nx: number; rows: string[]; areas: string[] };
+  void fetch(asset("/scorecard.json")).then((r) => r.json()).then((card: { grid: { x0: number; z0: number; step: number; nx: number; nz: number; rows: string[]; areas: string[] };
     areas: { id: string; name: string; light: { colour: string; headline: string; requests: { id: string; at: [number, number]; look: [number, number] | null; ask: string; state: string }[] } }[] }) => {
     const g = card.grid, byId = new Map(card.areas.map((a) => [a.id, a]));
+    scorecardGrid = g;
     g.rows.forEach((row, k) => {
       let i = 0;
       while (i < row.length) {

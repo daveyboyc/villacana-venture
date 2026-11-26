@@ -39,7 +39,7 @@ function setView(view: View, history = true): void {
     const phone=navigator.maxTouchPoints>0&&matchMedia("(max-width:900px), (max-height:500px)").matches;
     if(view==="overview"&&phone&&!url.searchParams.has("details"))scene.searchParams.set("details","1");
     // Preserve old bookmarked scene focus/coordinates when opening the canonical app.
-    for (const key of ["details", "at", "look", "study", "place", "camera", "area", "scorecard", "wallGuides", "wall"]) if (url.searchParams.has(key)) scene.searchParams.set(key, url.searchParams.get(key)!);
+    for (const key of ["details", "at", "look", "study", "place", "camera", "area", "scorecard", "wallGuides", "wall", "coverage", "coverageArea", "requests"]) if (url.searchParams.has(key)) scene.searchParams.set(key, url.searchParams.get(key)!);
     if (view === "fps") {
       for (const key of ["photo", "at", "look", "study", "place", "scorecard"]) scene.searchParams.delete(key);
       scene.searchParams.set("pool", "north");

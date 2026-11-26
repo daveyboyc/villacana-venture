@@ -11,7 +11,7 @@
 #scene-page {position:fixed;inset:54px 0 0;background:#c5e3ed;}
 #resort-scene {width:100%;height:100%;border:0;display:block;}
 #map-controls {top:64px !important;right:378px !important;max-width:calc(100vw - 410px);flex-wrap:wrap;}
-body[data-app-view="overview"]>.reference-tools,body[data-app-view="overview"]>.reference-layer,body[data-app-view="walk"]>.reference-tools,body[data-app-view="walk"]>.reference-layer {display:none;}
+body[data-app-view="overview"]>.reference-tools,body[data-app-view="overview"]>.reference-layer,body[data-app-view="overview"]>.coverage-layer,body[data-app-view="overview"]>.coverage-legend,body[data-app-view="walk"]>.reference-tools,body[data-app-view="walk"]>.reference-layer,body[data-app-view="walk"]>.coverage-layer,body[data-app-view="walk"]>.coverage-legend {display:none;}
 #photo-library {position:fixed;top:64px;right:10px;bottom:70px;width:348px;z-index:6;background:#fffdf8;border:1px solid #c9bfae;border-radius:12px;display:flex;flex-direction:column;box-shadow:0 3px 15px #0002;overflow:hidden;color:#26352e;}
 #photo-finder-toggle {display:none;}
 .photo-library-head {padding:12px;border-bottom:1px solid #ded7cb;display:grid;gap:8px;}
@@ -105,7 +105,7 @@ body[data-app-view="map"]>.reference-tools {right:378px;bottom:68px;}
  #path-network p {margin:6px 0;}#network-results {max-height:18dvh;}
 }
 
-body[data-app-view="fps"]>.reference-tools,body[data-app-view="fps"]>.reference-layer {display:none;}
+body[data-app-view="fps"]>.reference-tools,body[data-app-view="fps"]>.reference-layer,body[data-app-view="fps"]>.coverage-layer,body[data-app-view="fps"]>.coverage-legend {display:none;}
 
 #patio-walls {position:fixed;top:110px;right:10px;bottom:70px;width:348px;z-index:8;background:#fffdf8;color:#26352e;border:1px solid #c9bfae;border-radius:12px;padding:12px;box-sizing:border-box;overflow:auto;font:13px system-ui;}
 #patio-walls header {display:flex;justify-content:space-between;align-items:center;}

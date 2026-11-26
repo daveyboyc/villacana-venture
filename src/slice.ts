@@ -90,6 +90,7 @@ import { exportModel, photoCamera } from "./photo-camera";
 import { setupLook } from "./look";
 import { addFacadeKit, facadeKitWalls } from "./facade-kit";
 import { areaScorecard } from "./scorecard";
+import { coverageSpots3D } from "./coverage-3d";
 import { detectDeviceType, initAnalytics, trackEvent } from "./analytics";
 
 initAnalytics();
@@ -543,7 +544,23 @@ async function boot(): Promise<void> {
       }
     }
   };
+  let currentAreaId = pageQuery.get("area") ?? "";
+  if (currentAreaId === "whole-resort") currentAreaId = "";
+  const mobileRequests = document.querySelector<HTMLButtonElement>("#mobile-requests");
+  const spots3D = coverageSpots3D({ scene, groundY: liveGroundY, onTap: (id) => references.openRequest(id) });
   const references=referenceEditor({surface:canvas,labels:mapLabels(skeleton),enabled:()=>overview,
+    mode:"inspect",
+    currentArea:()=>currentAreaId,
+    onFocusSpot:(at,look)=>{
+      overview=true;inspectionStarted=true;savedInspection=null;resetPointers();resetInspectAnchor();
+      overviewCentre.set(at[0],liveGroundY(at[0],at[1])+0.5,at[1]);
+      if(look)camYaw=Math.atan2(look[0]-at[0],-(look[1]-at[1]));
+      distance=28;pitch=0.72;
+    },
+    onSpotsChange:(spots,visible)=>{
+      spots3D.sync(spots,visible&&overview);
+      if(mobileRequests)mobileRequests.setAttribute("aria-pressed",String(visible));
+    },
     project:(x,z)=>{const p=new THREE.Vector3(x,liveGroundY(x,z)+1,z).project(camera),y=(1-p.y)*innerHeight/2;
       const areas=document.querySelector("#areas")!.getBoundingClientRect();
       const tools=document.querySelector(".reference-tools")?.getBoundingClientRect();
@@ -552,6 +569,28 @@ async function boot(): Promise<void> {
       return {x:(p.x+1)*innerWidth/2,y,visible:p.z>-1&&p.z<1&&p.x>-1&&p.x<1&&y>top&&y<bottom-12};},
     unproject:(x,y)=>{raycaster.setFromCamera(new THREE.Vector2(x/innerWidth*2-1,1-y/innerHeight*2),camera);const hit=raycaster.intersectObjects(scene.children,true).find(h=>h.object.userData.referenceSurface);const p=hit?.point??raycaster.ray.intersectPlane(refPlane,new THREE.Vector3());return p&&Math.abs(p.x)<500&&Math.abs(p.z)<500?[p.x,p.z]:null;}
   });
+  if(mobileRequests){
+    mobileRequests.setAttribute("aria-pressed",String(references.requestsVisible()));
+    mobileRequests.addEventListener("click",()=>{references.toggleRequests();mobileRequests.setAttribute("aria-pressed",String(references.requestsVisible()));});
+  }
+  const activeSpotPointers=new Set<number>();
+  let spotTap:{id:number;x:number;y:number}|null=null;
+  canvas.addEventListener("pointerdown",(e)=>{
+    activeSpotPointers.add(e.pointerId);
+    if(activeSpotPointers.size===1&&overview&&spots3D.isVisible()&&!references.active()){
+      spotTap={id:e.pointerId,x:e.clientX,y:e.clientY};
+    }else{spotTap=null;}
+  });
+  canvas.addEventListener("pointerup",(e)=>{
+    activeSpotPointers.delete(e.pointerId);
+    if(spotTap&&spotTap.id===e.pointerId&&Math.hypot(e.clientX-spotTap.x,e.clientY-spotTap.y)<8&&overview&&spots3D.isVisible()&&!references.active()){
+      spots3D.pick(e.clientX,e.clientY,camera,innerWidth,innerHeight);
+    }
+    spotTap=null;
+  });
+  for(const ev of ["pointercancel","lostpointercapture"] as const){
+    canvas.addEventListener(ev,(e)=>{activeSpotPointers.delete((e as PointerEvent).pointerId);spotTap=null;});
+  }
   // Map targets stay in the same world coordinates at every zoom and bearing.
   const checks = new THREE.Group();
   checks.name="map-alignment-checks"; checks.userData.noDrape=true; checks.userData.dynamic=true;
@@ -809,7 +848,7 @@ async function boot(): Promise<void> {
     if (document.visibilityState === "hidden") stroll.flush("hidden", overview);
   });
   window.addEventListener("pagehide", () => stroll.flush("pagehide", overview));
-  const scorecard=areaScorecard(scene,liveGroundY,(id)=>stroll.visitArea(id));
+  const scorecard=areaScorecard(scene,liveGroundY,(id)=>{stroll.visitArea(id);const clean=id==="whole-resort"?"":id;if(clean!==currentAreaId){currentAreaId=clean;references.setCurrentArea(clean);}});
   const gateButton=document.querySelector<HTMLButtonElement>("#gate-control")!;
   gateButton.addEventListener("click",()=>{gate.setOpen(!gate.open);gateButton.textContent=gate.open?"Close coastal gate":"Open coastal gate";});
   trackEvent("scene_loaded", {
@@ -861,6 +900,7 @@ async function boot(): Promise<void> {
       document.querySelector<HTMLElement>("#help")!.hidden=overview;
       backdrop.visible=!overview&&!layoutOnly;
       document.querySelector("#help")!.textContent=overview?inspectHelp():"WASD or left thumb to walk · drag to look";
+      spots3D.setVisible(overview&&references.requestsVisible());
       if(overview && !inspectionStarted){
         camYaw=0;inspectionStarted=true;
         if(inspectAt){camYaw=inspectYaw;overviewCentre.set(inspectAt.x,inspectQuery?liveGroundY(inspectAt.x,inspectAt.z)+0.5:0.5,inspectAt.z);distance=inspectAt.distance;pitch=inspectAt.pitch;}
