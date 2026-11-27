@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { shoreline, crossings } from "./shoreline";
+import { shoreline, crossings, SEABED_FADE_END } from "./shoreline";
 import { asset } from "./asset";
 import layout from "../data/main_pool.json";
 import paseoWall from "../data/paseo_wall.json";
@@ -98,9 +98,10 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
   // Sand: a grid that follows the heights. It reaches a cell inland of the zone, hidden under the ground there.
   const coast = shoreline(sf);
   const cell = 2, originX = centre.x - span, originZ = centre.z - span;
-  // The 8 m clear-water band spans up to 18 m on the map Z axis at diagonal
-  // shore segments. Allow extra grid cells beneath its outer edge.
-  const seabedMargin = 24;
+  // Cross-shore metres span more grid rows where the coast runs diagonally.
+  const maxScale = Math.max(...coast.slice(1).map(([x,z], i) =>
+    Math.hypot(1, (z - coast[i][1]) / (x - coast[i][0]))));
+  const seabedMargin = (SEABED_FADE_END + 2 * cell) * maxScale;
   const first = Math.min(0, Math.floor((coast[0][0] - originX) / cell));
   const last = Math.max(Math.ceil(2 * span / cell), Math.ceil((coast.at(-1)![0] - originX) / cell));
   const sand: number[] = [], sandIndices: number[] = [];

@@ -1,6 +1,6 @@
 import { applyBeachWaves } from "./beach-waves";
 import * as THREE from "three";
-import { shoreline } from "./shoreline";
+import { shoreline, SEABED_FADE_END } from "./shoreline";
 import { Water } from "three/addons/objects/Water.js";
 import { asset } from "./asset";
 import { centroid, closestOnSegment } from "./geom";
@@ -132,7 +132,7 @@ export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant
     }
   }
   const positions: number[] = [], shoreUV: number[] = [], triangles: number[] = [];
-  const offsets = [-2.5, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12];
+  const offsets = [-2.5, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, SEABED_FADE_END];
   let along = 0;
   for (let i = 0; i < coast.length; i++) {
     const [x,z] = coast[i];

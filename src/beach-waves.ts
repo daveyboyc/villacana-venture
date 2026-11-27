@@ -1,3 +1,4 @@
+import { SEABED_FADE_END } from "./shoreline";
 import type { ShaderMaterial } from "three";
 
 // Phase increases seaward, so each low crest travels towards the sand.
@@ -33,7 +34,7 @@ export function applyBeachWaves(material: ShaderMaterial): void {
       surfaceNormal = normalize(surfaceNormal + vec3(swellNormal.x, 0.0, swellNormal.z));
       vec3 diffuseLight = `)
     .replace("gl_FragColor = vec4( outgoingLight, alpha );", `
-      if (shoreCoord.y > 12.0) {
+      if (shoreCoord.y >= ${SEABED_FADE_END.toFixed(1)}) {
         gl_FragColor = vec4(outgoingLight, alpha);
       } else {
         float along = shoreCoord.x;
@@ -45,7 +46,12 @@ export function applyBeachWaves(material: ShaderMaterial): void {
         float covered = smoothstep(-aa, aa, depth);
         // Cross-shore distance tracks the sloping seabed. Keep the fade anchored
         // to that bed while the foam and advancing edge move above it.
-        float deepWater = smoothstep(0.5, 8.0, offshore);
+        float path = max(0.0, offshore);
+        // Light returning from the sand attenuates continuously. Ease the faint
+        // remaining signal to zero before reaching the end of the seabed.
+        float transmission = exp(-0.085 * path)
+                           * (1.0 - smoothstep(28.0, ${SEABED_FADE_END.toFixed(1)}, path));
+        float deepWater = 1.0 - transmission;
 
         // Short broken crests form just offshore, spread onto sand, then dissolve.
         float localPhase = phase + 1.05*offshore;
@@ -61,7 +67,7 @@ export function applyBeachWaves(material: ShaderMaterial): void {
         float recentEdge = min(waterline(phase - 0.65, along), waterline(phase - 1.4, along));
         float film = (1.0-covered) * smoothstep(-0.18, 0.20, offshore - recentEdge);
         vec3 shallow = mix(outgoingLight, vec3(0.12,0.36,0.36), 0.28);
-        vec3 water = mix(shallow, outgoingLight, smoothstep(1.5, 8.0, depth));
+        vec3 water = mix(shallow, outgoingLight, deepWater);
         float surfaceTint = mix(0.06, 0.14, pow(1.0 - theta, 3.0));
         float waterAlpha = covered * mix(surfaceTint, 1.0, deepWater);
         float filmAlpha = 0.23*film;
