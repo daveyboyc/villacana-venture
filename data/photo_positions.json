@@ -263,13 +263,13 @@
   }
  },
  "IMG_3103.jpg": {
-  "x": -38.6,
-  "z": 22.6,
+  "x": -38.2,
+  "z": 22.4,
   "accuracy": 1.5,
   "heading": 329,
   "headingBasis": "read from the photo: looks straight along the bin yard to its north-west end wall (the yard runs at bearing 329)",
   "trust": "checked against photo content",
-  "locationBasis": "Moved into the bin yard just north-west of its car-park doorway, about 0.9 m from the front's inner face (the open north door leaf's edge stands at the left, the containers along the left wall, the long wall on the right). The phone pin was 2.1 m east, on the road side of the long wall. The far wall reads about 7 m ahead in the photo against 8.8 m in the model (discrepancy picasso-bin-yard-far-wall).",
+  "locationBasis": "Moved into the middle of the bin yard just north-west of its car-park doorway, about 1.4 m in from the front's inner face (the open north door leaf's edge stands at the left, the container row recedes along the left wall at an angle, the far wall's centre is near mid-frame, the long wall on the right; independent review 27 Nov 2026). The phone pin was 1.9 m east, on the road side of the long wall. The far wall reads about 7 m ahead in the photo against 8.8 m in the model (discrepancy picasso-bin-yard-far-wall).",
   "gps": {
    "x": -36.6,
    "z": 21.3,

@@ -34,8 +34,9 @@ door's motor box) is left for the yard's structural revision.
 
 - **IMG_3101** moved 1.6 m from the car park into the car-park doorway (-39.1, 23.6), heading 75 read from the photo
   (the north jamb at the left edge, the sign central, the door at the right).
-- **IMG_3103** moved 2.1 m from the road side of the long wall into the yard just north-west of the doorway
-  (-38.6, 22.6), heading 329 along the yard.
+- **IMG_3103** moved 1.9 m from the road side of the long wall into the middle of the yard just north-west of the
+  doorway (-38.2, 22.4), about 1.4 m in from the front's inner face, heading 329 along the yard. (First placed at
+  (-38.6, 22.6), in line with the container row; moved after the review, below.)
 
 Both in `data/photo_positions.json` with the GPS kept, the manifest updated, and `looksAt` set in
 `data/reference_tags.json`. The before renders already use the corrected pins.
@@ -56,8 +57,9 @@ The pin renders were taken with a copy of `shoot_views.cjs` whose 120 s page tim
   model. IMG_3099 also puts the front's south corner only about 2-2.5 m south of the doorway, where the model has
   4.5 m; both belong to that request. The lantern is tied to the end wall so it follows any correction.
 - **Level:** the yard floor is drawn level with the doorway's sill (car-park paving height); the terrain inside the
-  walls is 0.1-0.8 m lower, and the street door's foot is about 0.55 m below the floor. The yard floor against the
-  survey is part of `picasso-service-road-levels-and-beach`.
+  walls is 0.1-0.8 m lower, and the street door's foot is about 0.55 m below the floor, against the ramp up from the
+  road in IMG_3123/IMG_3124. Open discrepancy `picasso-bin-yard-floor-level`, for `picasso-service-road-levels-and-beach`.
+- IMG_3103 may show a fifth container across the far wall; the model keeps Dave's four (open question).
 - The arch over the street door inside and the door's motor box (gap above).
 
 ## Review packet (for the independent reviewer)
@@ -83,4 +85,13 @@ Record the verdict (sign-off or a list of errors) below.
 
 ### Verdict
 
-Pending.
+Independent review, 27 Nov 2026: **changes needed**.
+1. The IMG_3103 pin sat in line with the container row (1.07 m from the front's centre line), so a container blocked
+   the after render. Fixed: the pin is moved about 0.5 m into the middle of the yard and IMG_3103 is re-shot
+   (`IMG_3103-after.png`, `IMG_3103-pair.jpg`); its photo-check note is corrected.
+2. The floor-level conflict was recorded only here. Fixed: discrepancy `picasso-bin-yard-floor-level` (linked to
+   `picasso-service-road-levels-and-beach`), and the confidence entry's `why` mentions it.
+Minor: the possible fifth container is recorded as an open question (area note, photo check); the terrazzo is warmer
+beige (`#e3d5bb`).
+
+Final sign-off after these fixes: pending.

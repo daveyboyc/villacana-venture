@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "b0207396df49387701f328806bcc5c53c0a6624016ff72ac3b82dc5eed4ba561",
+ "inputDigest": "008623113be7f1363e9815b70565ea318387f279dd6ca3b333d55f014ad973e6",
  "summary": {
   "unplaced": 4,
   "needs-review": 273,
@@ -27875,7 +27875,7 @@
    "from": "photo:IMG_3103.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
-   "gap": 1.9
+   "gap": 1.5
   },
   {
    "from": "photo:IMG_3103.jpg",
