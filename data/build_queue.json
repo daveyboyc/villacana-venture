@@ -4243,9 +4243,37 @@
    ],
    "features": [
     "ground_plan_picasso.json:picasso-beach-road-forecourt",
-    "picasso_beach_lane.json:picasso-lane-tower"
+    "picasso_beach_lane.json:picasso-lane-tower",
+    "picasso_forecourt.json:picasso-90-miles-upper",
+    "picasso_forecourt.json:picasso-90-miles-sign",
+    "picasso_forecourt.json:picasso-forecourt-garden-wall",
+    "picasso_forecourt.json:picasso-forecourt-containers"
    ],
    "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude"
+  },
+  {
+   "id": "picasso-90-miles-front",
+   "area": "picasso",
+   "priority": 2,
+   "kind": "levels",
+   "title": "The 90 MILES building's lower front and stepped wall on the forecourt (pool building part 4 drawn sunk)",
+   "photos": [
+    "IMG_3118.jpg"
+   ],
+   "build": "IMG_3118 shows, in front of the 90 MILES upper block (data/picasso_forecourt.json), a one-storey white front with a black awning and a menu board and, nearer the road, a white wall with a stepped parapet and a door. Both stand on registry part 6364501UF1366S_part4, which the model draws from its centroid's ground about 2.8 m below the road (roof about 0.2 m over the datum), while the 2014-15 surface model reads 3.2-3.3 m over the datum at x -16..-12, z 70 and 0.7-1.4 m along the stepped wall (x -12..-4, z 66-70). Measure the levels against the survey, decide with the registry rules how to draw the front, and add a photo request for a square-on view (gap:picasso-90-miles-front).",
+   "avoid": "No change to Walk. Keep part 4's registry footprint. Do not grade anything photographed or measured without a solved camera.",
+   "accept": [
+    "Visible in Inspect in Layout",
+    "Structure signed off by a reviewer subagent"
+   ],
+   "features": [
+    "picasso_forecourt.json:picasso-90-miles-upper"
+   ],
+   "dependsOn": [
+    "picasso-beach-forecourt-buildings"
+   ],
    "status": "open"
   },
   {

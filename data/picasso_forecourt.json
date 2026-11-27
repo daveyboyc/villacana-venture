@@ -1,0 +1,113 @@
+{
+ "id": "picasso-forecourt",
+ "area": "picasso",
+ "name": "Forecourt of Calle Pintor Picasso by the pool building: the 90 MILES building's upper block, the plane-tree garden's low wall, and the grey containers",
+ "about": "Task picasso-beach-forecourt-buildings (package 3 in docs/PICASSO_SOUTH_HANDOVER.md). Built by src/picasso-forecourt.ts. World metres, x east, z south. Heights over the datum (the middle pool deck, 5.00 m in the survey) are drawn above the visible paving as in the other Picasso modules (+0.27 m). Review: docs/reviews/picasso-beach-forecourt-buildings.",
+ "trust": "Estimated. No camera here is solved. IMG_3118 (pin 7.5 m) and IMG_3119 (4.2 m) look north-west across the forecourt from the lane's north end, IMG_3105 and IMG_3106 (4.7 m) south-east down the road towards it. Outlines from the registry, the Esri aerial and the PNOA-LiDAR 2014-15 2 m surface model, about 1 m; positions read from the photos by bearing and by apparent size (a 1.6 m eye height, 26 mm and 52 mm equivalent lenses), about 2-4 m. Two readings in the task brief do not hold: the white sheds with brown doors in the middle of IMG_3119 are the utility row's Ormazabal substation, meter box and slatted gate about 50 m away (data/picasso_service_frontage.json, already built), and the white shed with a flat overhanging slab roof behind the grey containers is the face of the hotel's low block (registry 6465301UF1366N_part2, already standing). The 2015 surface model has nothing standing on the forecourt itself between x -6 and 8, z 54 and 67.",
+ "evidence": [
+  "IMG_3118.jpg",
+  "IMG_3119.jpg",
+  "IMG_3105.jpg",
+  "IMG_3106.jpg"
+ ],
+ "ninetyMiles": {
+  "id": "picasso-90-miles-upper",
+  "name": "Upper storey of the 90 MILES building: the pool building's road end, two storeys above the forecourt",
+  "hostId": "6364501UF1366S_part5",
+  "ring": [
+   [
+    -7.33,
+    64.06
+   ],
+   [
+    -13.83,
+    68.06
+   ],
+   [
+    -16.83,
+    69.76
+   ],
+   [
+    -18.28,
+    67.19
+   ],
+   [
+    -15.33,
+    65.52
+   ],
+   [
+    -9.48,
+    61.92
+   ]
+  ],
+  "top": 5.6,
+  "evidence": [
+   "IMG_3118.jpg",
+   "IMG_3105.jpg",
+   "IMG_3106.jpg"
+  ],
+  "trust": "IMG_3118 shows, left of the tower and in front of it, a plain white block facing south-east over the forecourt with the black 90 MILES sign at its top, standing about two storeys above the road and above a lower white front with an awning and a stepped wall (x 0-330). Its face is the south-east edge of registry part 6364501UF1366S_part5 (the pool building, 1 storey in the registry): the photo's bearings from the pin put the face 19-20 m away on that edge, its right-hand corner within about 3 degrees of the registry corner (-7.3, 64.1), and the tower about 10 m behind it. The 2014-15 surface model reads 5.6-5.7 m over the datum in a band about 2-3 m deep along that edge from x -8 to -16.5, against 4.2 m over the rest of the pool building and -1.0 to -1.2 m on the road, so the block stands about 6.7 m above the forecourt; IMG_3118's roofline (y 350) against the tower's surveyed top gives about 5.5 m over the datum at 19.7 m. Built as an upper block 3 m deep inside the registry ring, from the building's modelled roof to 5.6 m; the registry footprint is unchanged. Its depth into the building and how its roof meets the 4.2 m roof behind are judged."
+ },
+ "sign": {
+  "id": "picasso-90-miles-sign",
+  "name": "Black 90 MILES sign board at the top of the upper block's south-east face",
+  "along": 1.6,
+  "width": 1.8,
+  "height": 0.9,
+  "below": 0.45,
+  "evidence": [
+   "IMG_3118.jpg"
+  ],
+  "trust": "IMG_3118 (x 183-275, y 350-405): a black board with white lettering just under the parapet, near the block's north-east corner; its bearing (about 298 degrees) meets the face about 1.6 m from the corner. Size from its 55 px height at about 19.7 m, width judged for the foreshortening. Show details only."
+ },
+ "gardenWall": {
+  "id": "picasso-forecourt-garden-wall",
+  "name": "Low white wall along the plane-tree garden's forecourt edge",
+  "points": [
+   [
+    -5.2,
+    50.6
+   ],
+   [
+    -2.6,
+    52.2
+   ],
+   [
+    1.0,
+    52.0
+   ]
+  ],
+  "height": 1.5,
+  "thickness": 0.25,
+  "evidence": [
+   "IMG_3119.jpg",
+   "IMG_3118.jpg"
+  ],
+  "trust": "IMG_3119 (x 980-1200) shows a plain white wall about 1.5 m high in front of the low block's railing, beginning just right of the grey containers (bearing about 329 degrees, 21-25 m from the pin by its foot below the horizon) and running on out of frame to the right; IMG_3118 (x 820-1080) shows the same wall in front of the low block, nearing the camera to the right. The 2014-15 surface model reads about 0.8 m above the ground in the 2 m cells at (-4, 50) and (-2, 52), and the aerial has a pale curved band along the plane-tree garden's south edge at z 52-53. Traced along those, 0.35 m outside the forecourt's asphalt; its east end, where the aerial's band meets the parked cars, is judged, and how the garden is entered is not seen."
+ },
+ "containers": {
+  "id": "picasso-forecourt-containers",
+  "name": "Two large grey wheeled refuse containers at the low block's south corner",
+  "centres": [
+   [
+    -8.0,
+    48.9
+   ],
+   [
+    -6.6,
+    49.6
+   ]
+  ],
+  "size": [
+   1.5,
+   1.1,
+   1.45
+  ],
+  "evidence": [
+   "IMG_3119.jpg",
+   "IMG_3118.jpg",
+   "IMG_3105.jpg"
+  ],
+  "trust": "IMG_3119 (x 735-905): two big grey wheeled containers with lids side by side in front of the low block's south-east face, left of the garden wall's end, about 23-28 m from the pin by their size and their foot below the horizon; IMG_3118 (x 715-790) and IMG_3105 (x 580-645, beyond the low block's corner from the north) show the same pair. Placed about 1.8 m in front of the face, between its south corner and the wall; about 2-3 m. Movable: Show details only."
+ }
+}

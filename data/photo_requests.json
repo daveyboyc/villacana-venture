@@ -1104,6 +1104,24 @@
       "radius": 10,
       "since": "2026-11-26",
       "status": "open"
+    },
+    {
+      "id": "picasso-forecourt-square-on",
+      "area": "picasso",
+      "at": [
+        -1.0,
+        58.0
+      ],
+      "look": [
+        -11.0,
+        66.0
+      ],
+      "ask": "From the middle of the forecourt by the pool building, photograph square-on: the 90 MILES building's front (its sign, awning, stepped wall and door) looking south-west, the hotel's low block with the grey containers and the low white garden wall looking north-east, and the low walls and parking on the east side by the plane-tree garden.",
+      "why": "IMG_3118 and IMG_3119 see the forecourt only along the road from 20-30 m; the 90 MILES block's depth and lower front, the garden wall's ends and the east side's low walls are read from bearings and the 2015 survey (task picasso-beach-forecourt-buildings)",
+      "priority": 2,
+      "radius": 8,
+      "since": "2026-11-27",
+      "status": "open"
     }
   ]
 }

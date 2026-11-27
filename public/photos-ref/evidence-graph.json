@@ -6,9 +6,9 @@
   "needs-review": 273,
   "suggested": 369,
   "photos": 646,
-  "features": 572,
+  "features": 576,
   "photosCitedByModel": 273,
-  "modelFeaturesWithPhotoCitations": 311
+  "modelFeaturesWithPhotoCitations": 315
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -4526,6 +4526,47 @@
     "IMG_3066.jpg",
     "IMG_3067.jpg",
     "IMG_2613.jpg"
+   ]
+  },
+  {
+   "id": "picasso_forecourt.json:picasso-90-miles-upper",
+   "name": "Upper storey of the 90 MILES building: the pool building's road end, two storeys above the forecourt",
+   "kind": "reference feature",
+   "source": "registry edge, laser surface band (2 m grid, about 1 m) and unsolved IMG_3118",
+   "evidence": [
+    "IMG_3118.jpg",
+    "IMG_3105.jpg",
+    "IMG_3106.jpg"
+   ]
+  },
+  {
+   "id": "picasso_forecourt.json:picasso-90-miles-sign",
+   "name": "Black 90 MILES sign board at the top of the upper block's south-east face",
+   "kind": "reference feature",
+   "source": "bearing from unsolved IMG_3118 onto the upper block, about 1 m",
+   "evidence": [
+    "IMG_3118.jpg"
+   ]
+  },
+  {
+   "id": "picasso_forecourt.json:picasso-forecourt-garden-wall",
+   "name": "Low white wall along the plane-tree garden's forecourt edge",
+   "kind": "reference feature",
+   "source": "bearings and horizon distance in unsolved photos, survey cells and aerial band, 2-3 m",
+   "evidence": [
+    "IMG_3119.jpg",
+    "IMG_3118.jpg"
+   ]
+  },
+  {
+   "id": "picasso_forecourt.json:picasso-forecourt-containers",
+   "name": "Two large grey wheeled refuse containers at the low block's south corner",
+   "kind": "reference feature",
+   "source": "bearings and apparent size in unsolved photos, 2-3 m",
+   "evidence": [
+    "IMG_3119.jpg",
+    "IMG_3118.jpg",
+    "IMG_3105.jpg"
    ]
   },
   {
@@ -27966,6 +28007,18 @@
   },
   {
    "from": "photo:IMG_3105.jpg",
+   "to": "picasso_forecourt.json:picasso-90-miles-upper",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3105.jpg",
+   "to": "picasso_forecourt.json:picasso-forecourt-containers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3105.jpg",
    "to": "ground_plan_picasso.json:picasso-service-pavement",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -28024,6 +28077,12 @@
   {
    "from": "photo:IMG_3106.jpg",
    "to": "picasso_beach_lane.json:picasso-lane-tower",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3106.jpg",
+   "to": "picasso_forecourt.json:picasso-90-miles-upper",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -28156,6 +28215,30 @@
   },
   {
    "from": "photo:IMG_3118.jpg",
+   "to": "picasso_forecourt.json:picasso-90-miles-upper",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3118.jpg",
+   "to": "picasso_forecourt.json:picasso-90-miles-sign",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3118.jpg",
+   "to": "picasso_forecourt.json:picasso-forecourt-garden-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3118.jpg",
+   "to": "picasso_forecourt.json:picasso-forecourt-containers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3118.jpg",
    "to": "ground_plan_picasso.json:picasso-beach-road-forecourt",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -28197,6 +28280,18 @@
    "relation": "possibly-in-view",
    "distance": 35.9,
    "angleOffset": 6.6
+  },
+  {
+   "from": "photo:IMG_3119.jpg",
+   "to": "picasso_forecourt.json:picasso-forecourt-garden-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_3119.jpg",
+   "to": "picasso_forecourt.json:picasso-forecourt-containers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_3119.jpg",
