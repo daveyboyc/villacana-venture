@@ -116,9 +116,11 @@ const NEAR_RIDGE: [number, number][] = [
   [4.0, 0.0],
 ];
 
+export const DAYLIGHT_SKY = "#77b4ed";
+
 export function addRidge(scene: THREE.Scene): void {
   const [cx, cz] = RESORT_CENTRE;
-  const cSky = new THREE.Color("#bfe3f2");
+  const cSky = new THREE.Color(DAYLIGHT_SKY);
   const cHorizon = new THREE.Color("#9db4c4");
 
   const farPos: number[] = [], farCol: number[] = [];
