@@ -3635,7 +3635,7 @@
      "area": "picasso",
      "kind": "height",
      "task": "picasso-bin-store-service-road",
-     "status": "open",
+     "status": "fixed",
      "requests": [
       "picasso-service-road-west-row"
      ],
@@ -3650,9 +3650,20 @@
       "picasso_service_frontage.json:picasso-recess-wall"
      ],
      "note": "26 Nov 2026: found in the photo-camera Inspect pairs (docs/reviews/picasso-bin-store-service-road/IMG_3123-pair.jpg, IMG_3105-pair.jpg). Stage 3 (levels): hold the grid at road level up to the row's faces, as the car park is held up to the west lawn's retaining wall, and regenerate the grid; the terrain file is generated and is not edited by hand.",
+     "resolution": "26 Nov 2026, task picasso-service-road-levels-and-beach: scripts/lidar_check.py grid holds the pavement, the road beside it and the ground under the substation and meter box at the road's surveyed level, never a node behind the row's faces (data/picasso_service_frontage.json pavementHold), and makes the row's faces a step line in the terrain (data/terrain.json steps, src/terrain.ts), so the pavement is drawn flat 0.08-0.13 m over the road (ground within -0.04..+0.01 m of the road 1.5 m out over 1656 samples) while no grid node behind the walls changes and the raised garden keeps its level up to the walls. The first version (hold grown 2 m past the faces) dented the garden by 1.1-1.35 m along the walls; the independent review caught it and it was replaced. Before/after renders from IMG_3124, IMG_3123 and IMG_3105: docs/reviews/picasso-service-road-levels-and-beach/*-pair.jpg; levels recorded in data/levels_survey.json picasso-service-pavement-kerb. The kerb height stays photo-judged (below the survey's resolution). Independent review: docs/reviews/picasso-service-road-levels-and-beach/README.md.",
      "state": "needs-evidence",
      "blockers": [
-      "From the hotel side of the service road, square-on views of the bin store's street face, the substation and the meter box with the slatted gate, each with the kerb in frame, and one along the gate to its end."
+      "From the hotel side of the service road, square-on views of the bin store's street face, the substation and the meter box with the slatted gate, each with the kerb in frame, and one along the gate to its end.",
+      "a different reviewer must inspect the actual sources and comparisons",
+      "review needs date, accepted decision and notes",
+      "review packet digest missing or changed; independent reviewer must attest this exact packet",
+      "review must inspect every declared source at full size",
+      "acceptance snapshot missing or stale; re-render and re-review",
+      "render: file paths must be relative to the public repository",
+      "comparison: file paths must be relative to the public repository",
+      "overlay: file paths must be relative to the public repository",
+      "height review needs finite nonnegative rmsM, uncertaintyM and toleranceM",
+      "height tolerance needs a source-backed basis and held-out measurements"
      ]
     },
     {
@@ -4027,15 +4038,6 @@
     }
    ],
    "waitingTasks": [
-    {
-     "id": "picasso-service-road-levels-and-beach",
-     "title": "Calle Pintor Picasso south of the car park: levels behind the utility row and along the lane (the road on to the beach is built)",
-     "priority": 2,
-     "dependencies": [
-      "picasso-bin-store-service-road"
-     ],
-     "requests": []
-    },
     {
      "id": "picasso-utility-row-detail",
      "title": "West utility row on Calle Pintor Picasso: substation doors and trellis, gates, meter box, conduit and grates",
@@ -7768,7 +7770,7 @@
      "area": "picasso",
      "kind": "height",
      "task": "picasso-bin-store-service-road",
-     "status": "open",
+     "status": "fixed",
      "requests": [
       "picasso-service-road-west-row"
      ],
@@ -7783,9 +7785,20 @@
       "picasso_service_frontage.json:picasso-recess-wall"
      ],
      "note": "26 Nov 2026: found in the photo-camera Inspect pairs (docs/reviews/picasso-bin-store-service-road/IMG_3123-pair.jpg, IMG_3105-pair.jpg). Stage 3 (levels): hold the grid at road level up to the row's faces, as the car park is held up to the west lawn's retaining wall, and regenerate the grid; the terrain file is generated and is not edited by hand.",
+     "resolution": "26 Nov 2026, task picasso-service-road-levels-and-beach: scripts/lidar_check.py grid holds the pavement, the road beside it and the ground under the substation and meter box at the road's surveyed level, never a node behind the row's faces (data/picasso_service_frontage.json pavementHold), and makes the row's faces a step line in the terrain (data/terrain.json steps, src/terrain.ts), so the pavement is drawn flat 0.08-0.13 m over the road (ground within -0.04..+0.01 m of the road 1.5 m out over 1656 samples) while no grid node behind the walls changes and the raised garden keeps its level up to the walls. The first version (hold grown 2 m past the faces) dented the garden by 1.1-1.35 m along the walls; the independent review caught it and it was replaced. Before/after renders from IMG_3124, IMG_3123 and IMG_3105: docs/reviews/picasso-service-road-levels-and-beach/*-pair.jpg; levels recorded in data/levels_survey.json picasso-service-pavement-kerb. The kerb height stays photo-judged (below the survey's resolution). Independent review: docs/reviews/picasso-service-road-levels-and-beach/README.md.",
      "state": "needs-evidence",
      "blockers": [
-      "From the hotel side of the service road, square-on views of the bin store's street face, the substation and the meter box with the slatted gate, each with the kerb in frame, and one along the gate to its end."
+      "From the hotel side of the service road, square-on views of the bin store's street face, the substation and the meter box with the slatted gate, each with the kerb in frame, and one along the gate to its end.",
+      "a different reviewer must inspect the actual sources and comparisons",
+      "review needs date, accepted decision and notes",
+      "review packet digest missing or changed; independent reviewer must attest this exact packet",
+      "review must inspect every declared source at full size",
+      "acceptance snapshot missing or stale; re-render and re-review",
+      "render: file paths must be relative to the public repository",
+      "comparison: file paths must be relative to the public repository",
+      "overlay: file paths must be relative to the public repository",
+      "height review needs finite nonnegative rmsM, uncertaintyM and toleranceM",
+      "height tolerance needs a source-backed basis and held-out measurements"
      ]
     },
     {
@@ -12404,15 +12417,6 @@
      "priority": 2,
      "dependencies": [
       "eva-lane-details"
-     ],
-     "requests": []
-    },
-    {
-     "id": "picasso-service-road-levels-and-beach",
-     "title": "Calle Pintor Picasso south of the car park: levels behind the utility row and along the lane (the road on to the beach is built)",
-     "priority": 2,
-     "dependencies": [
-      "picasso-bin-store-service-road"
      ],
      "requests": []
     },

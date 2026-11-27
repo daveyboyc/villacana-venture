@@ -444,6 +444,66 @@ def grid(step=2.0, extent=(-270.0, -160.0, 130.0, 270.0)):
         weight *= west <= strip['wall']['offset'] + held['width']
         weight = np.where(np.isfinite(car), weight, 0)
         smooth = np.where(weight > 0, smooth + (np.nan_to_num(car) - smooth) * weight, smooth)
+    # Calle Pintor Picasso's kerbed pavement along the west utility row (data/picasso_service_frontage.json
+    # pavementHold): the ground behind the row stands 1.2-1.4 m over the road and the grid smooths that step
+    # across the pavement. Hold the pavement and the road beside it at the road's own level, but not past the row's faces
+    # (read 'roadAt' metres out from the kerb), so the pavement is drawn flat its kerb height above the road.
+    ph = json.loads((ROOT / 'data/picasso_service_frontage.json').read_text())['pavementHold']
+    plan = {s['id']: s for s in json.loads((ROOT / 'data/ground_plan_picasso.json').read_text())['surfaces']}
+    kerb = np.asarray(ph['kerb'], float)
+    ku = (kerb[-1] - kerb[0]) / np.linalg.norm(kerb[-1] - kerb[0])
+    kn = np.array([ku[1], -ku[0]])  # the road side of the kerb
+    ks = np.clip((gx - kerb[0][0]) * ku[0] + (gz - kerb[0][1]) * ku[1], 0, np.linalg.norm(kerb[-1] - kerb[0]))
+    road = np.mean([ground.at(kerb[0][0] + ku[0] * ks + kn[0] * r, kerb[0][1] + ku[1] * ks + kn[1] * r) for r in ph['roadAt']], axis=0) - datum
+    outline = plan[ph['surface']]['outline']
+    pave = within(outline, ph['behind'])
+    weight = np.clip(distance_transform_edt(~pave) / ph['blend'], 0, 1)
+    # The 2 m grid cannot step at a wall by itself: src/terrain.ts reads a cell's nodes across a step line as
+    # the near side's, so the pavement stays flat to the faces and the garden level to the walls behind.
+    # Each line is set 'stepInset' metres off the pavement, inside the wall or building, so the pavement's own edge
+    # (on the face) reads the pavement's side and the step itself falls inside the wall.
+    from matplotlib.path import Path as MPath
+
+    def inset(points, away, closed):
+        p = np.asarray(points, float)
+        segs = list(zip(p, np.roll(p, -1, 0))) if closed else list(zip(p[:-1], p[1:]))
+        normals = []
+        for a, b in segs:
+            d = (b - a) / np.linalg.norm(b - a)
+            g = np.array([-d[1], d[0]])
+            normals.append(g if away((a + b) / 2 + g * 0.05) else -g)
+        out, n, gap = [], len(segs), ph['stepInset']
+        for k in range(len(p)):
+            ins = [i for i in ((k - 1) % n if closed else k - 1, k if closed or k < n else -1) if 0 <= i < n]
+            if len(ins) == 1:
+                out.append(p[k] + normals[ins[0]] * gap)
+                continue
+            g1, g2 = normals[ins[0]], normals[ins[1]]
+            m = (g1 + g2) / max(1 + float(g1 @ g2), 0.2)  # mitre, limited at sharp corners
+            out.append(p[k] + m * gap)
+        if closed:
+            out.append(out[0])
+        return [[round(float(v), 3) for v in q] for q in out]
+    paved = MPath(outline)
+    a, b = ph['stepLine']
+    steps = [{'id': 'picasso-service-row-faces', 'why': 'data/picasso_service_frontage.json pavementHold: the utility row retains the raised garden; the faces and the held buildings\' outlines, set into the walls',
+              'lines': [inset(outline[a:b + 1], lambda q: not paved.contains_point(q), False)]
+              + [inset(ring, lambda q, r=MPath(ring): r.contains_point(q), True) for ring in ph['buildingsHeld']]}]
+    # The row's faces are the outline's west edge (points faces[0]..faces[1]); every node on their far side
+    # (the raised garden, the bin yard, under the buildings) keeps its own level.
+    a, b = ph['faces']
+    # Measured from the faces as set into the walls (the step line), so a node inside a wall's thickness is held with the pavement.
+    face = np.asarray(inset(outline[a:b + 1], lambda q: not paved.contains_point(q), False), float)
+    garden = within(face.tolist() + [(face[-1] - kn * ph['garden']).tolist(), (face[0] - kn * ph['garden']).tolist()]) & ~within(outline)
+    # The row's own buildings stand on the pavement's level (their doors open on to it), so the ground under them is held too.
+    for ring in ph['buildingsHeld']:
+        garden &= ~within(ring)
+    # Beyond the pavement's two ends only the road side is held (south of the slatted gate the ground is not seen).
+    kraw = (gx - kerb[0][0]) * ku[0] + (gz - kerb[0][1]) * ku[1]
+    kside = (gx - kerb[0][0]) * kn[0] + (gz - kerb[0][1]) * kn[1]
+    garden |= ((kraw < 0) | (kraw > np.linalg.norm(kerb[-1] - kerb[0]))) & (kside < 0) & ~within(outline)
+    weight = np.where(garden, 1.0, weight)
+    smooth = np.where(np.isfinite(road), road + (smooth - np.nan_to_num(road)) * weight, smooth)
     k = int(round(step))
     coarse = smooth[::k, ::k]
     # Photographed flights of steps stay exact: siteY lays each as level ground, a straight rise over
@@ -491,7 +551,7 @@ def grid(step=2.0, extent=(-270.0, -160.0, 130.0, 270.0)):
                     'heights take over and the grid fades to zero, as before.'),
            'source': 'PNOA-LiDAR (c) Instituto Geografico Nacional de Espana, CC BY 4.0, via REDIAM, Junta de Andalucia (2020-21 V226 MDT 1 m).',
            'datum': {'surveyHeight': round(datum, 2), 'meaning': 'survey ground at the middle pool deck, the model zero (orthometric metres)'},
-           'decks': decks, 'ramps': ramps, 'loweredDrop': levels['drop'], 'fade': [150, 158],
+           'decks': decks, 'ramps': ramps, 'steps': steps, 'loweredDrop': levels['drop'], 'fade': [150, 158],
            'x0': x0, 'z0': z0, 'step': float(k), 'nx': coarse.shape[1], 'nz': coarse.shape[0]}
     rows = ['[' + ','.join(str(int(round(v * 100))) for v in row) + ']' for row in coarse]
     text = json.dumps(out, indent=1, ensure_ascii=False)[:-2] + ',\n "cm": [\n  ' + ',\n  '.join(rows) + '\n ]\n}\n'

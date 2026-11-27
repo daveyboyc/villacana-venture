@@ -5,13 +5,34 @@ import { centroid, clamp, closestOnSegment, pointInRing } from "./geom";
 import type { Vec2 } from "./types";
 
 type Ramp = { foot: number[]; toward: number[]; start: number; run: number; halfWidth: number; behind: number; base: number; rise: number };
-type Grid = { x0: number; z0: number; step: number; nx: number; nz: number; fade: number[]; ramps: Ramp[]; cm: number[][] };
+type Step = { id: string; lines: number[][][] };
+type Grid = { x0: number; z0: number; step: number; nx: number; nz: number; fade: number[]; ramps: Ramp[]; steps?: Step[]; cm: number[][] };
 const grid = data as unknown as Grid;
 const COS = Math.cos(26 * Math.PI / 180), SIN = Math.sin(26 * Math.PI / 180);
 const ramps = grid.ramps.map((r) => {
   const dx = r.toward[0] - r.foot[0], dz = r.toward[1] - r.foot[1], length = Math.hypot(dx, dz);
   return { ...r, up: [dx / length, dz / length] };
 });
+/**
+ * Step lines (data/terrain.json steps, written by scripts/lidar_check.py grid): walls that retain ground on one
+ * side, such as the Calle Pintor Picasso utility row in front of the raised garden. A 2 m cell across such a line
+ * would slope the step over the whole cell, so a point reads each node whose straight line to it crosses a step
+ * line as the mean of the nodes on its own side: the ground steps at the wall.
+ */
+const stepSegments = (grid.steps ?? []).flatMap((s) => s.lines.flatMap((l) => l.slice(1).map((q, k) => [l[k][0], l[k][1], q[0], q[1]])));
+const stepBox = stepSegments.length ? {
+  minX: Math.min(...stepSegments.flatMap((s) => [s[0], s[2]])) - grid.step, maxX: Math.max(...stepSegments.flatMap((s) => [s[0], s[2]])) + grid.step,
+  minZ: Math.min(...stepSegments.flatMap((s) => [s[1], s[3]])) - grid.step, maxZ: Math.max(...stepSegments.flatMap((s) => [s[1], s[3]])) + grid.step,
+} : null;
+const cross2 = (ax: number, az: number, bx: number, bz: number, cx: number, cz: number) => (bx - ax) * (cz - az) - (bz - az) * (cx - ax);
+/** Whether the straight line from (px, pz) to (qx, qz) crosses a step line. */
+function crossesStep(px: number, pz: number, qx: number, qz: number): boolean {
+  for (const [ax, az, bx, bz] of stepSegments) {
+    const d1 = cross2(ax, az, bx, bz, px, pz), d2 = cross2(ax, az, bx, bz, qx, qz), d3 = cross2(px, pz, qx, qz, ax, az), d4 = cross2(px, pz, qx, qz, bx, bz);
+    if ((d1 > 0) !== (d2 > 0) && Math.abs(d1) > 1e-9 && Math.abs(d2) > 1e-9 && (d3 > 0) !== (d4 > 0)) return true;
+  }
+  return false;
+}
 /** How far a photographed flight's own profile reaches beside and above it before giving way to the survey grid (below its foot: behind). */
 const RAMP_BLEND = 3;
 
@@ -58,7 +79,17 @@ function surveyed(x: number, z: number, sunk = inLoweredArea(x, z)): number {
     const moved = v + (sunk ? DROP_CM : -DROP_CM);
     return Number.isNaN(ref) || Math.abs(moved - ref) < Math.abs(v - ref) ? moved : v;
   };
-  const y = fu >= fv ? at(i, j) + fu * (at(i + 1, j) - at(i, j)) + fv * (at(i + 1, j + 1) - at(i + 1, j)) : at(i, j) + fv * (at(i, j + 1) - at(i, j)) + fu * (at(i + 1, j + 1) - at(i, j + 1));
+  let a = at(i, j), b = at(i + 1, j), c = at(i, j + 1), d = at(i + 1, j + 1);
+  if (stepBox && x >= stepBox.minX && x <= stepBox.maxX && z >= stepBox.minZ && z <= stepBox.maxZ) {
+    const nx = (k: number) => grid.x0 + k * grid.step, nz = (k: number) => grid.z0 + k * grid.step;
+    const far = [crossesStep(x, z, nx(i), nz(j)), crossesStep(x, z, nx(i + 1), nz(j)), crossesStep(x, z, nx(i), nz(j + 1)), crossesStep(x, z, nx(i + 1), nz(j + 1))];
+    const values = [a, b, c, d], near = values.filter((_, k) => !far[k]);
+    if (near.length && near.length < 4) {
+      const mean = near.reduce((s, v) => s + v, 0) / near.length;
+      [a, b, c, d] = values.map((v, k) => far[k] ? mean : v);
+    }
+  }
+  const y = fu >= fv ? a + fu * (b - a) + fv * (d - b) : a + fv * (c - a) + fu * (d - c);
   return y / 100;
 }
 
@@ -69,6 +100,7 @@ const curved = ramps.map((r) => {
   for (const a of ends) for (const c of [-half, half]) { xs.push(r.foot[0] + r.up[0] * a + side[0] * c); zs.push(r.foot[1] + r.up[1] * a + side[1] * c); }
   return { minX: Math.min(...xs), maxX: Math.max(...xs), minZ: Math.min(...zs), maxZ: Math.max(...zs) };
 });
+if (stepBox) curved.push(stepBox);
 /** Whether siteY is flat on the survey's triangles over this box. */
 function facetted(minX: number, maxX: number, minZ: number, maxZ: number): boolean {
   if (curved.some((b) => minX <= b.maxX && maxX >= b.minX && minZ <= b.maxZ && maxZ >= b.minZ)) return false;
@@ -202,6 +234,18 @@ export function refine(geometry: THREE.BufferGeometry, heightAt: (x: number, z: 
     const exact = facetGround.has(heightAt) && facetted(Math.min(...xs), Math.max(...xs), Math.min(...zs), Math.max(...zs));
     for (let k = 1; k < poly.length - 1; k++) emit(poly[0], poly[k], poly[k + 1], exact ? 0 : 8);
   };
+  /** Split a piece along every step line it straddles, so no draped triangle spans a wall's step. */
+  const stepped = (poly: P[]): void => {
+    if (poly.length < 3 || !stepBox) { piece(poly); return; }
+    const xs = poly.map((q) => q.w[0]), zs = poly.map((q) => q.w[1]);
+    for (const [ax, az, bx, bz] of stepSegments) {
+      if (Math.max(ax, bx) < Math.min(...xs) || Math.min(ax, bx) > Math.max(...xs) || Math.max(az, bz) < Math.min(...zs) || Math.min(az, bz) > Math.max(...zs)) continue;
+      const side = (w: number[]) => cross2(ax, az, bx, bz, w[0], w[1]) / Math.hypot(bx - ax, bz - az);
+      const s = poly.map((q) => side(q.w));
+      if (Math.max(...s) > 1e-4 && Math.min(...s) < -1e-4) { stepped(clip(poly, side)); stepped(clip(poly, (w) => -side(w))); return; }
+    }
+    piece(poly);
+  };
   const cut = (a: P, b: P, c: P): void => {
     if (!facetGround.has(heightAt)) { emit(a, b, c, 8); return; }
     const xs = [a.w[0], b.w[0], c.w[0]], zs = [a.w[1], b.w[1], c.w[1]];
@@ -236,7 +280,7 @@ export function refine(geometry: THREE.BufferGeometry, heightAt: (x: number, z: 
         if (i < 0 || j < 0 || i > grid.nx - 2 || j > grid.nz - 2) { piece(square); continue; }
         // The cell's diagonal: fu = fv.
         const diagonal = (w: number[]) => (w[0] - left) - (w[1] - top);
-        piece(clip(square, diagonal)); piece(clip(square, (w) => -diagonal(w)));
+        stepped(clip(square, diagonal)); stepped(clip(square, (w) => -diagonal(w)));
       }
     }
   };
