@@ -43,7 +43,9 @@ export function applyBeachWaves(material: ShaderMaterial): void {
         float depth = offshore - edge;
         float aa = max(0.08, fwidth(depth));
         float covered = smoothstep(-aa, aa, depth);
-        float wash = smoothstep(0.0, 2.6, depth);
+        // Cross-shore distance tracks the sloping seabed. Keep the fade anchored
+        // to that bed while the foam and advancing edge move above it.
+        float deepWater = smoothstep(0.5, 8.0, offshore);
 
         // Short broken crests form just offshore, spread onto sand, then dissolve.
         float localPhase = phase + 1.05*offshore;
@@ -60,7 +62,8 @@ export function applyBeachWaves(material: ShaderMaterial): void {
         float film = (1.0-covered) * smoothstep(-0.18, 0.20, offshore - recentEdge);
         vec3 shallow = mix(outgoingLight, vec3(0.12,0.36,0.36), 0.28);
         vec3 water = mix(shallow, outgoingLight, smoothstep(1.5, 8.0, depth));
-        float waterAlpha = covered * mix(0.09,1.0,wash);
+        float surfaceTint = mix(0.06, 0.14, pow(1.0 - theta, 3.0));
+        float waterAlpha = covered * mix(surfaceTint, 1.0, deepWater);
         float filmAlpha = 0.23*film;
         float opacity = max(waterAlpha, foam) + filmAlpha;
         vec3 sheen = mix(vec3(0.095,0.080,0.064), reflectionSample, 0.22);

@@ -98,6 +98,9 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
   // Sand: a grid that follows the heights. It reaches a cell inland of the zone, hidden under the ground there.
   const coast = shoreline(sf);
   const cell = 2, originX = centre.x - span, originZ = centre.z - span;
+  // The 8 m clear-water band spans up to 18 m on the map Z axis at diagonal
+  // shore segments. Allow extra grid cells beneath its outer edge.
+  const seabedMargin = 24;
   const first = Math.min(0, Math.floor((coast[0][0] - originX) / cell));
   const last = Math.max(Math.ceil(2 * span / cell), Math.ceil((coast.at(-1)![0] - originX) / cell));
   const sand: number[] = [], sandIndices: number[] = [];
@@ -112,14 +115,15 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
     const beachEdges = crossings(sf.beach.ring, x, true);
     // Include all mapped beach and a submerged margin under the transparent shallows.
     const lo = Math.min(...beachEdges, shore - 12, local ? originZ : Infinity);
-    const hi = Math.max(...beachEdges, shore + 12, local ? centre.z + span : -Infinity);
+    const hi = Math.max(...beachEdges, shore + seabedMargin, local ? centre.z + span : -Infinity);
     const column = new Map<number, number>();
     for (let j = Math.floor((lo - originZ) / cell); j <= Math.ceil((hi - originZ) / cell); j++) {
       const z = originZ + j * cell;
       const inLocalGrid = local && z >= originZ && z <= centre.z + span + cell;
       const inZone = seaside.inZone(x, z);
-      if (!inLocalGrid && !pointInRing(x,z,sf.beach.ring) && Math.abs(z - shore) > 12) continue;
-      if (inLocalGrid && !inZone && !pointInRing(x,z,sf.beach.ring) && Math.abs(z - shore) > 12 &&
+      const outsideShoreBand = z < shore - 12 || z > shore + seabedMargin;
+      if (!inLocalGrid && !pointInRing(x,z,sf.beach.ring) && outsideShoreBand) continue;
+      if (inLocalGrid && !inZone && !pointInRing(x,z,sf.beach.ring) && outsideShoreBand &&
           !seaside.inZone(x + cell,z + cell) && !seaside.inZone(x - cell,z + cell)) continue;
       let y = seaside.y(x,z) - 0.03;
       if (inLocalGrid && !inZone) y = Math.min(y - 0.57, inlandY(x,z) - 0.15);
