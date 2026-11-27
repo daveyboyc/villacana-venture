@@ -14,8 +14,8 @@ Task `picasso-bin-store-service-road` · area **Pintor Picasso and the car park*
 
 - `public/photos-ref/IMG_3099.jpg`: Bin store front: RUBBISH COLLECTION / DEPOSITO BASURA, hotel block behind (ground — pin ±3.1 m; looks at bin store front wall on the car park's south-east corner)
 - `public/photos-ref/IMG_3100.jpg`: From the bin store looking north-west across the car park to the round palm island (ground — pin ±4.7 m; looks at round hedged palm island in the car park)
-- `public/photos-ref/IMG_3101.jpg`: BASURA / RUBBISH BINS sign and green door of the bin store (ground — pin ±4.7 m; looks at bin store side wall and green door)
-- `public/photos-ref/IMG_3103.jpg`: Inside the walled bin yard: yellow wheeled containers (ground — pin ±4.7 m; looks at walled bin yard)
+- `public/photos-ref/IMG_3101.jpg`: BASURA / RUBBISH BINS sign and green door of the bin store (ground — pin ±1.0 m; looks at bin store side wall and green door)
+- `public/photos-ref/IMG_3103.jpg`: Inside the walled bin yard: yellow wheeled containers (ground — pin ±1.5 m; looks at walled bin yard)
 - `public/photos-ref/IMG_3104.jpg`: Recycling igloos against the hotel's lower wall (ground — pin ±4.7 m; looks at recycling bins at the foot of the hotel wall)
 - `public/photos-ref/IMG_3105.jpg`: Calle Pintor Picasso service road looking south-east towards the sea (ground — pin ±4.7 m; looks at service road south of the bin store)
 - `public/photos-ref/IMG_3106.jpg`: Service road south-east: maroon utility doors and the white tower (ground — pin ±4.7 m; looks at utility doors along the service road)

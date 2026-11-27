@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "b4e8473a9ac5f368bada2560a44c75878b3d135dccec8fffbecfee592b608343",
+ "inputDigest": "008623113be7f1363e9815b70565ea318387f279dd6ca3b333d55f014ad973e6",
  "summary": {
   "unplaced": 4,
   "needs-review": 273,
@@ -23041,19 +23041,24 @@
      "id": "street:picasso",
      "name": "Calle Pintor Picasso",
      "kind": "street",
-     "gap": 3.7
+     "gap": 2.9
     }
    ],
    "inViewCandidates": [
     {
      "id": "building:6465301UF1366N_part3",
-     "distance": 25.0,
-     "angleOffset": 11.3
+     "distance": 24.0,
+     "angleOffset": 8.4
     },
     {
      "id": "building:6465301UF1366N_part1",
-     "distance": 38.3,
-     "angleOffset": 2.9
+     "distance": 37.6,
+     "angleOffset": 22.0
+    },
+    {
+     "id": "building:6465301UF1366N_part4",
+     "distance": 42.5,
+     "angleOffset": 21.5
     }
    ],
    "citedBy": [
@@ -23062,12 +23067,12 @@
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
-    "x": -40.5,
-    "z": 22.9,
-    "basis": "phone location",
-    "reportedAccuracy": 4.7,
-    "heading": 58,
-    "headingBasis": "EXIF true north"
+    "x": -39.1,
+    "z": 23.6,
+    "basis": "checked against photo content",
+    "reportedAccuracy": 1.0,
+    "heading": 75,
+    "headingBasis": "read from the photo: square on to the bin yard's east wall (bearing 59) and turned a little south, so the BASURA sign is central and the street door and arch are at the right edge"
    }
   },
   {
@@ -23078,16 +23083,16 @@
    ],
    "nearby": [
     {
-     "id": "street:picasso",
-     "name": "Calle Pintor Picasso",
-     "kind": "street",
-     "gap": 0
-    },
-    {
      "id": "parking:Picasso car park",
      "name": "Picasso car park",
      "kind": "parking",
-     "gap": 0.7
+     "gap": 0
+    },
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 1.5
     }
    ],
    "inViewCandidates": [],
@@ -23097,12 +23102,12 @@
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
-    "x": -36.6,
-    "z": 21.3,
-    "basis": "phone location",
-    "reportedAccuracy": 4.7,
-    "heading": 320,
-    "headingBasis": "EXIF true north"
+    "x": -38.2,
+    "z": 22.4,
+    "basis": "checked against photo content",
+    "reportedAccuracy": 1.5,
+    "heading": 329,
+    "headingBasis": "read from the photo: looks straight along the bin yard to its north-west end wall (the yard runs at bearing 329)"
    }
   },
   {

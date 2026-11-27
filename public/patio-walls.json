@@ -5,7 +5,7 @@
     "wall": 27,
     "kerb": 4,
     "enclosure": 23,
-    "gap": 28,
+    "gap": 29,
     "context": 49
   },
   "records": [
@@ -6196,12 +6196,12 @@
       ],
       "areas": [],
       "evidence": [
-        "IMG_3124.jpg",
-        "IMG_3123.jpg"
+        "IMG_3123.jpg",
+        "IMG_3124.jpg"
       ],
       "confidence": "gap",
       "placement": "unreviewed",
-      "basis": "The 2020-21 ground model dips to -1.4..-2.0 m over the datum (0.7-1.3 m below the road, about 2 m below the garden) over about 2 by 2 m behind the low white box (long-wall frame s 3-5, e -1 to -2), where the 2014-15 surface model reads the box's top at +0.55-0.59 m. IMG_3124 shows a dark low opening at the wall's foot behind the box's parapet, so it is most likely a light well to a basement, but its depth, extent and what it serves are not seen. Not built; the pavement in front of it is held at road level (task picasso-service-road-levels-and-beach).",
+      "basis": "The 2020-21 ground model dips to -1.4..-2.0 m over the datum (0.7-1.3 m below the road, about 2 m below the garden) over about 2 by 2 m behind the low white box (long-wall frame s 3-5, e -1 to -2), where the 2014-15 surface model reads the box's top at +0.55-0.59 m. IMG_3124 shows a dark low opening at the wall's foot behind the box's parapet, so it is most likely a light well to a basement, but its depth, extent and what it serves are not seen. Not built; the pavement in front of it is held at road level (task picasso-service-road-levels-and-beach). The 2020-21 ground model dips to -1.4..-2.0 m over the datum (0.7-1.3 m below the road, about 2 m below the garden) over about 2 by 2 m behind the low white box (long-wall frame s 3-5, e -1 to -2), where the 2014-15 surface model reads the box's top at +0.55-0.59 m. IMG_3124 shows a dark low opening at the wall's foot behind the box's parapet, so it is most likely a light well to a basement, but its depth, extent and what it serves are not seen. Not built; the pavement in front of it is held at road level (task picasso-service-road-levels-and-beach).",
       "levelState": "Evidence required before tracing or levelling."
     },
     {
@@ -6241,6 +6241,25 @@
       "confidence": "gap",
       "placement": "unreviewed",
       "basis": "IMG_3099's doorway is dark, as if into a roofed room, while IMG_3103 and IMG_3101 show the yard open to the sky; IMG_3103's far wall reads only 6-7 m from its camera, so the open yard may end about 7 m north-west of the long wall's end with a separate bay beyond (independent review, 26 Nov 2026). Built as one open yard; a square-on view of the front and one from inside the doorway would settle it.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:picasso-bin-store-inside-arch",
+      "name": "Bin yard: the arch over the street door and the door's motor box, inside",
+      "kind": "gap",
+      "points": [
+        [
+          -35.3,
+          24.3
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_3101.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "Inside, the green sliding door stands under a white arched head with a moulded edge, and a small dark motor or lock box sits on the floor beside it (IMG_3101). The yard walls are built level-topped with a flat lintel, and the arch is structure, so it is left for the yard's structural revision with photo request picasso-bin-store-front; the box is a small fitting not built.",
       "levelState": "Evidence required before tracing or levelling."
     }
   ]

@@ -1856,8 +1856,8 @@
     "tagged": 27,
     "placed": 28,
     "checks": {
-     "matches": 3,
-     "differs": 16,
+     "matches": 5,
+     "differs": 18,
      "not-comparable": 0
     },
     "camerasSolved": 0,
@@ -1942,11 +1942,19 @@
     {
      "id": "photo-discrepancy:463d1eb433e28f99",
      "feature": "picasso_forecourt.json:picasso-forecourt-containers"
+    },
+    {
+     "id": "photo-discrepancy:338c11c152b80b76",
+     "feature": "picasso_service_frontage.json:picasso-bin-store-details"
+    },
+    {
+     "id": "photo-discrepancy:3654c1035815d2ad",
+     "feature": "picasso_service_frontage.json:picasso-bin-store-details"
     }
    ],
    "tasks": {
-    "open": 9,
-    "inProgress": 5,
+    "open": 8,
+    "inProgress": 6,
     "titles": [
      "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory",
      "Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries",
@@ -1958,20 +1966,20 @@
     "estimated": 39,
     "inferred": 0,
     "registry": 0,
-    "gaps": 7
+    "gaps": 8
    },
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey.",
     "Footprints: 46% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 28, 28 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
-    "How sure: 0 photographed, 39 estimated, 0 inferred, 7 known gaps.",
-    "Placement: 0 of 39 features verified, 17 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 13 still open; 9 evidence requests. This is not whole-area acceptance."
+    "How sure: 0 photographed, 39 estimated, 0 inferred, 8 known gaps.",
+    "Placement: 0 of 39 features verified, 19 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 14 still open; 9 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 4,
+     "ready": 5,
      "needs-evidence": 9,
      "needs-source-access": 0,
      "awaiting-review": 0,
@@ -2136,7 +2144,7 @@
       "state": "open"
      }
     ],
-    "readyTasks": 7
+    "readyTasks": 6
    },
    "light": {
     "colour": "red",
@@ -3561,8 +3569,8 @@
     "tagged": 620,
     "placed": 642,
     "checks": {
-     "matches": 58,
-     "differs": 65,
+     "matches": 60,
+     "differs": 67,
      "not-comparable": 67
     },
     "camerasSolved": 8,
@@ -3877,11 +3885,19 @@
     {
      "id": "photo-discrepancy:463d1eb433e28f99",
      "feature": "picasso_forecourt.json:picasso-forecourt-containers"
+    },
+    {
+     "id": "photo-discrepancy:338c11c152b80b76",
+     "feature": "picasso_service_frontage.json:picasso-bin-store-details"
+    },
+    {
+     "id": "photo-discrepancy:3654c1035815d2ad",
+     "feature": "picasso_service_frontage.json:picasso-bin-store-details"
     }
    ],
    "tasks": {
-    "open": 59,
-    "inProgress": 64,
+    "open": 58,
+    "inProgress": 65,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -3893,20 +3909,20 @@
     "estimated": 226,
     "inferred": 23,
     "registry": 232,
-    "gaps": 49
+    "gaps": 50
    },
    "status": [
     "Ground: 95% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 662, 642 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 95 photographed, 226 estimated, 23 inferred, 49 known gaps.",
-    "Placement: 0 of 576 features verified, 71 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 41 still open; 58 evidence requests. This is not whole-area acceptance."
+    "How sure: 95 photographed, 226 estimated, 23 inferred, 50 known gaps.",
+    "Placement: 0 of 576 features verified, 73 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 42 still open; 58 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 23,
+     "ready": 24,
      "needs-evidence": 15,
      "needs-source-access": 0,
      "awaiting-review": 3,
@@ -4768,7 +4784,7 @@
       "state": "open"
      }
     ],
-    "readyTasks": 45
+    "readyTasks": 44
    },
    "light": {
     "colour": "red",
