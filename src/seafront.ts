@@ -132,7 +132,10 @@ export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant
     if (i) along += Math.hypot(x-a[0], z-a[1]);
     const rows = [...offsets, (1500-z)/scale];
     for (let j = 0; j < rows.length; j++) {
-      positions.push(x, -(z + rows[j]*scale), 0);
+      const horizon = j === rows.length - 1;
+      const horizontalFraction = (x - coast[0][0]) / (coast.at(-1)![0] - coast[0][0]);
+      const columnX = horizon ? THREE.MathUtils.lerp(-1500, 1500, horizontalFraction) : x;
+      positions.push(columnX, -(z + rows[j] * scale), 0);
       shoreUV.push(along, rows[j]);
       if (i && j) {
         const k = i * rows.length + j, left = k - rows.length;
@@ -185,6 +188,7 @@ export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant
   const reflect = sea.onBeforeRender.bind(sea);
   let nextReflection = 0;
   sea.onBeforeRender = (...args) => {
+    material.uniforms.eye.value.setFromMatrixPosition(args[2].matrixWorld);
     const now = performance.now();
     if (now >= nextReflection) {
       nextReflection = now + 125;
