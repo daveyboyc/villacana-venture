@@ -6,9 +6,9 @@
   "needs-review": 273,
   "suggested": 369,
   "photos": 646,
-  "features": 572,
+  "features": 576,
   "photosCitedByModel": 273,
-  "modelFeaturesWithPhotoCitations": 311
+  "modelFeaturesWithPhotoCitations": 315
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -23187,6 +23187,8 @@
     "picasso_service_frontage.json:picasso-hotel-lower-wing",
     "picasso_service_frontage.json:picasso-substation",
     "picasso_beach_lane.json:picasso-lane-tower",
+    "picasso_forecourt.json:picasso-90-miles-upper",
+    "picasso_forecourt.json:picasso-forecourt-containers",
     "ground_plan_picasso.json:picasso-service-pavement",
     "ground_plan_picasso.json:picasso-hotel-apron"
    ],
@@ -23241,6 +23243,7 @@
     "picasso_service_frontage.json:picasso-substation",
     "picasso_service_frontage.json:picasso-service-gate",
     "picasso_beach_lane.json:picasso-lane-tower",
+    "picasso_forecourt.json:picasso-90-miles-upper",
     "ground_plan_picasso.json:picasso-service-pavement"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -23550,6 +23553,10 @@
    ],
    "citedBy": [
     "picasso_beach_lane.json:picasso-lane-tower",
+    "picasso_forecourt.json:picasso-90-miles-upper",
+    "picasso_forecourt.json:picasso-90-miles-sign",
+    "picasso_forecourt.json:picasso-forecourt-garden-wall",
+    "picasso_forecourt.json:picasso-forecourt-containers",
     "ground_plan_picasso.json:picasso-beach-road-forecourt",
     "ground_plan_picasso.json:picasso-beach-lane-concrete",
     "ground_plan_picasso.json:picasso-beach-lane-footway"
@@ -23597,6 +23604,8 @@
     }
    ],
    "citedBy": [
+    "picasso_forecourt.json:picasso-forecourt-garden-wall",
+    "picasso_forecourt.json:picasso-forecourt-containers",
     "ground_plan_picasso.json:picasso-beach-road-forecourt"
    ],
    "geometryReview": "No recorded photo-to-model comparison",

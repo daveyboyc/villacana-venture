@@ -46,6 +46,7 @@ import { picassoLawnWallRings } from "./picasso-lawn-wall";
 import { picassoCarParkPlan } from "./picasso-car-park";
 import { picassoServiceFrontagePlan } from "./picasso-service-frontage";
 import { picassoBeachLanePlan } from "./picasso-beach-lane";
+import { picassoForecourtPlan } from "./picasso-forecourt";
 import { picassoWestLawnPlan, picassoWestLawnRings } from "./picasso-west-lawn";
 import { picassoEntranceRings } from "./picasso-entrance-details";
 import { EDGES, FINISHES, groundEdges, groundPlanSolidRings, groundSurfaces } from "./ground-plan";
@@ -322,6 +323,10 @@ async function boot(): Promise<void> {
   for (const f of picassoBeachLanePlan()) {
     const node = el("path", { d: path(f.ring), fill: f.fill, stroke: "#5d5a52", "stroke-width": 0.05, "data-picasso-frontage": f.id });
     const title = el("title", {}); title.textContent = `${f.name} · estimated (data/picasso_beach_lane.json)`; node.append(title); traced.append(node);
+  }
+  for (const f of picassoForecourtPlan()) {
+    const node = el("path", { d: path(f.ring), fill: f.fill, stroke: "#5d5a52", "stroke-width": 0.05, "data-picasso-frontage": f.id });
+    const title = el("title", {}); title.textContent = `${f.name} · estimated (data/picasso_forecourt.json)`; node.append(title); traced.append(node);
   }
   for (const f of picassoServiceFrontagePlan()) {
     const node = el("path", { d: path(f.ring), fill: f.fill, stroke: "#5d5a52", "stroke-width": 0.05, "data-picasso-frontage": f.id });

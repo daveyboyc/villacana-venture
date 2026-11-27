@@ -23501,6 +23501,8 @@
    "picasso_service_frontage.json:picasso-hotel-lower-wing",
    "picasso_service_frontage.json:picasso-substation",
    "picasso_beach_lane.json:picasso-lane-tower",
+   "picasso_forecourt.json:picasso-90-miles-upper",
+   "picasso_forecourt.json:picasso-forecourt-containers",
    "ground_plan_picasso.json:picasso-service-pavement",
    "ground_plan_picasso.json:picasso-hotel-apron"
   ],
@@ -23547,6 +23549,7 @@
    "picasso_service_frontage.json:picasso-substation",
    "picasso_service_frontage.json:picasso-service-gate",
    "picasso_beach_lane.json:picasso-lane-tower",
+   "picasso_forecourt.json:picasso-90-miles-upper",
    "ground_plan_picasso.json:picasso-service-pavement"
   ],
   "looksAt": [
@@ -23893,6 +23896,10 @@
   },
   "citedBy": [
    "picasso_beach_lane.json:picasso-lane-tower",
+   "picasso_forecourt.json:picasso-90-miles-upper",
+   "picasso_forecourt.json:picasso-90-miles-sign",
+   "picasso_forecourt.json:picasso-forecourt-garden-wall",
+   "picasso_forecourt.json:picasso-forecourt-containers",
    "ground_plan_picasso.json:picasso-beach-road-forecourt",
    "ground_plan_picasso.json:picasso-beach-lane-concrete",
    "ground_plan_picasso.json:picasso-beach-lane-footway"
@@ -23913,7 +23920,7 @@
   "id": "IMG_3119.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_3119.jpg",
-  "title": "Calle Pintor Picasso forecourt looking north-west: blue lorry by the tower, grey containers and utility sheds on the right",
+  "title": "Calle Pintor Picasso forecourt looking north-west: blue lorry by the tower, grey containers by the hotel's low block on the right, the utility row beyond",
   "shows": [
    "picasso",
    "main-pool"
@@ -23924,7 +23931,7 @@
    "layout",
    "facades"
   ],
-  "note": "Reviewed 26 Nov 2026: the tower's base and white walls on the left with a blue lorry and building materials; on the right two big grey containers, small white utility sheds with brown doors and a low white wall; palms and plane trees beyond.",
+  "note": "Reviewed 26 Nov 2026: the tower's base and white walls on the left with a blue lorry and building materials; on the right two big grey containers in front of the hotel's low block (white, flat overhanging slab roof, louvre, pipe railing) and a low white wall along the plane-tree garden; in the middle distance, about 50 m off, the utility row's white meter box, slatted gate and the Ormazabal substation's maroon doors, then the bin store's green door in the long wall; palms and plane trees beyond (identities re-read 26 Nov 2026, task picasso-beach-forecourt-buildings).",
   "observation": null,
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/16aylIAQykewhcW1YU-5XRz0Ribi3IQ8f/view?usp=drivesdk",
@@ -23937,6 +23944,8 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "picasso_forecourt.json:picasso-forecourt-garden-wall",
+   "picasso_forecourt.json:picasso-forecourt-containers",
    "ground_plan_picasso.json:picasso-beach-road-forecourt"
   ],
   "looksAt": [

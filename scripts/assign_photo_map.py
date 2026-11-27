@@ -316,6 +316,12 @@ def features(s):
     add('picasso_beach_lane.json:'+bl['tower']['id'],bl['tower']['name'],'reference feature','laser surface model peak (2 m grid, about 1 m) and unsolved photos',evidence=bl['tower']['evidence'],points=[bl['tower']['centre']])
     add('picasso_beach_lane.json:'+bl['eastTerrace']['id'],bl['eastTerrace']['name'],'reference feature','registry strip; unsolved IMG_2613',evidence=bl['eastTerrace']['evidence'],ring=bl['eastTerrace']['ring'])
     add('picasso_beach_lane.json:'+bl['mouth']['id'],bl['mouth']['name'],'reference feature','read from unsolved photos, about 1 m',evidence=bl['mouth']['evidence'],points=[bl['mouth']['bollard'],bl['mouth']['grate']['centre']])
+    fc=json.loads((ROOT/'data/picasso_forecourt.json').read_text()) # the forecourt by the pool building: 90 MILES upper block, garden wall, containers
+    up=fc['ninetyMiles'];a,b=up['ring'][0],up['ring'][1];l=math.dist(a,b);sg=fc['sign']
+    add('picasso_forecourt.json:'+up['id'],up['name'],'reference feature','registry edge, laser surface band (2 m grid, about 1 m) and unsolved IMG_3118',evidence=up['evidence'],ring=up['ring'])
+    add('picasso_forecourt.json:'+sg['id'],sg['name'],'reference feature','bearing from unsolved IMG_3118 onto the upper block, about 1 m',evidence=sg['evidence'],points=[[round(a[0]+(b[0]-a[0])*sg['along']/l,2),round(a[1]+(b[1]-a[1])*sg['along']/l,2)]])
+    add('picasso_forecourt.json:'+fc['gardenWall']['id'],fc['gardenWall']['name'],'reference feature','bearings and horizon distance in unsolved photos, survey cells and aerial band, 2-3 m',evidence=fc['gardenWall']['evidence'],points=fc['gardenWall']['points'])
+    add('picasso_forecourt.json:'+fc['containers']['id'],fc['containers']['name'],'reference feature','bearings and apparent size in unsolved photos, 2-3 m',evidence=fc['containers']['evidence'],points=fc['containers']['centres'])
     lawn=json.loads((ROOT/'data/picasso_west_lawn.json').read_text()) # Calle de Picasso's raised grass strip and retaining wall
     o,w=lawn['frame']['origin'],lawn['frame']['toward'];l=math.dist(o,w);U=[(w[0]-o[0])/l,(w[1]-o[1])/l];at=lambda s,q:[round(o[0]+U[0]*s-U[1]*q,2),round(o[1]+U[1]*s+U[0]*q,2)]
     add('picasso_west_lawn.json:'+lawn['id'],lawn['name'],'reference feature','laser-survey levels; wall line where the survey steps, not photographed',evidence=lawn['evidence'],points=[at(s,lawn['wall']['offset']) for span in lawn['spans'] for s in span])

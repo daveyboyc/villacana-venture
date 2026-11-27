@@ -2163,6 +2163,38 @@
    "result": "differs",
    "followUp": "picasso-hotel-wing-detail",
    "notes": "Looking south down the road: before, the right-hand pavement banked up towards the utility row; after, it is a flat kerbed strip beside the road, as in the photo. The hotel side (left) is unchanged and agrees in level; the wing's vents, ramps, railings and the planting are not built (packages 4 and 8). The render stands at the photo's pin (unsolved), so the framing differs from the photo; a photographic diagnostic of the levels, not placement approval."
+  },
+  {
+   "task": "picasso-beach-forecourt-buildings",
+   "checked": "2026-11-27",
+   "by": "Claude",
+   "feature": "picasso_forecourt.json:picasso-90-miles-upper",
+   "photo": "IMG_3118.jpg",
+   "render": "docs/reviews/picasso-beach-forecourt-buildings/IMG_3118-details-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-90-miles-front",
+   "notes": "Inspect from the phone pin (±7.5 m) looking north-west, Layout and Show details: the pool building's road end now rises above its neighbours left of the tower, and on the right the grey containers stand in front of the low block with the low white garden wall to their right, in the photo's order. The pin stands too close to the left-hand buildings, so the 90 MILES face and sign are seen end-on; the lower front with the awning and the stepped wall (registry part 4, drawn sunk) do not match. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-beach-forecourt-buildings",
+   "checked": "2026-11-27",
+   "by": "Claude",
+   "feature": "picasso_forecourt.json:picasso-forecourt-containers",
+   "photo": "IMG_3119.jpg",
+   "render": "docs/reviews/picasso-beach-forecourt-buildings/IMG_3119-details-pair.jpg",
+   "result": "matches",
+   "notes": "Inspect from the phone pin (±4.2 m), Show details: two grey containers in front of the hotel's low block, the low white garden wall starting just to their right and running out of frame, the tower and the pool building's upper block on the left, the utility row in the distance, in the photo's order and on the same sides. The render's field of view is wider than the 52 mm photo's and the low block wears generated arched doors the photo does not show (stage-4 filler, not this task). A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-beach-forecourt-buildings",
+   "checked": "2026-11-27",
+   "by": "Claude",
+   "feature": "picasso_forecourt.json:picasso-forecourt-containers",
+   "photo": "IMG_3105.jpg",
+   "render": "docs/reviews/picasso-beach-forecourt-buildings/IMG_3105-details-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-beach-forecourt-buildings",
+   "notes": "Inspect from the phone pin (±4.7 m) looking south-east: the low block's road face and the tower stand as in the photo, but the new containers are hidden behind the low block's corner, where the photo shows them just beyond it (x 580-645); their 2-3 m position uncertainty covers both. The green and grey containers in the render are the existing bin-store set at the hotel wing. The upper block and garden wall are out of view. A photographic diagnostic from an unsolved pin, not placement approval."
   }
  ],
  "legacyUnchecked": [

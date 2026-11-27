@@ -1,5 +1,6 @@
 // Render Inspect (Layout, or Show details with --details) from a fixed orbit camera, to check a build
-// without switching to Walk. Coordinates are turned-frame metres, as the game uses.
+// without switching to Walk. Coordinates are map metres (x east, z south), as data files use (checked 27 Nov 2026: the
+// target is not turned by the map's view rotation, whatever the slice.ts comment once said).
 //   node scripts/shoot_inspect.cjs <name> <x,z,distance,pitchDeg,bearingDeg> [<name> <x,z,...> ...] [--details] [--both] [--pool=main] [--out=dir] [--size=1600x1000]
 // --both renders each view in Layout and with Show details.
 // Writes <out>/<name>-layout.png or <name>-details.png (default out: layout-checks.local/inspect).

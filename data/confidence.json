@@ -87,6 +87,22 @@
    "level": "estimated",
    "why": "White tower with slits and an aerial in IMG_3105, 3106, 3118, 2613 and 3067; placed on the surface model's 9.6-9.7 m block at the bend by the hotel's low block, which the photos' bearings agree with (2 m grid, about 1 m), footprint judged."
   },
+  "picasso_forecourt.json:picasso-90-miles-upper": {
+   "level": "estimated",
+   "why": "The 90 MILES building's upper storey in IMG_3118, on the south-east edge of registry part 6364501UF1366S_part5 by the photo's bearings (about 3 degrees); its 5.6 m top and 2-3 m depth from the 2014-15 surface model's band along that edge (2 m grid, about 1 m). Its depth into the building and its roof behind the parapet are judged; registry footprint unchanged."
+  },
+  "picasso_forecourt.json:picasso-90-miles-sign": {
+   "level": "estimated",
+   "why": "Black 90 MILES board in IMG_3118, placed by its bearing on the upper block's face, about 1 m; size from the photo. Show details."
+  },
+  "picasso_forecourt.json:picasso-forecourt-garden-wall": {
+   "level": "estimated",
+   "why": "Low white wall in IMG_3119 and IMG_3118 in front of the hotel's low block; line from the photos' bearings and distance below the horizon (2-3 m), two 2 m survey cells about 0.8 m above the ground and the aerial's pale band along the plane-tree garden. Its east end is judged."
+  },
+  "picasso_forecourt.json:picasso-forecourt-containers": {
+   "level": "estimated",
+   "why": "Two big grey wheeled containers in IMG_3119, IMG_3118 and IMG_3105, placed by bearing and apparent size in front of the low block's south-east face, about 2-3 m. Movable; Show details."
+  },
   "picasso_beach_lane.json:picasso-lane-east-terrace": {
    "level": "estimated",
    "why": "Low white terrace wall with a red coping and deep eaves in IMG_2613, on the registry strip 6465801UF1366N_part2 between the long building and the lane; wall height judged against bicycles, eaves level with the building's modelled roof."
@@ -1647,7 +1663,48 @@
     "IMG_3105.jpg",
     "IMG_3106.jpg"
    ],
-   "why": "Built 26 Nov 2026 as estimates (street picasso-beach-lane, the forecourt, the tower and the east terrace) from IMG_3118, 3119, 2613 and 3065-3068 and the aerial. Still not seen close up: the utility sheds and grey containers on the forecourt's east side (IMG_3119), the two-storey building with the 90 MILES sign west of the tower (IMG_3118), and the lane's middle stretch; no camera is solved.",
+   "why": "Built 26 Nov 2026 as estimates (street picasso-beach-lane, the forecourt, the tower and the east terrace) from IMG_3118, 3119, 2613 and 3065-3068 and the aerial. The forecourt's 90 MILES upper block, garden wall and grey containers followed (task picasso-beach-forecourt-buildings, data/picasso_forecourt.json). Still not seen close up: the forecourt's east side square-on, the 90 MILES building's lower front, and the lane's middle stretch; no camera is solved.",
+   "decision": "needs-photos"
+  },
+  {
+   "id": "gap:picasso-90-miles-front",
+   "name": "The 90 MILES building's lower front and stepped wall on the forecourt (registry 6364501UF1366S_part4's road end)",
+   "at": [
+    -10.0,
+    69.0
+   ],
+   "photos": [
+    "IMG_3118.jpg"
+   ],
+   "why": "IMG_3118 shows in front of the 90 MILES upper block a one-storey white front with a black awning and a menu board, and nearer the road a white wall with a stepped parapet and a door. They stand on registry part 6364501UF1366S_part4, which the model draws at its centroid's ground about 2.8 m below the road (roof about 0.2 m over the datum), while the surface model reads 3.2-3.3 m over the datum at x -16..-12, z 70 and 0.7-1.4 m along the stepped wall. Correcting a registry part's level is beyond this layout pass and no photo shows the front square-on.",
+   "decision": "needs-photos"
+  },
+  {
+   "id": "gap:picasso-forecourt-east-enclosure",
+   "name": "Low walls and parking on the forecourt's east side, south of the plane-tree garden",
+   "at": [
+    3.5,
+    57.5
+   ],
+   "photos": [
+    "IMG_3118.jpg",
+    "IMG_3119.jpg"
+   ],
+   "why": "The aerial shows an L-shaped low wall or kerb at about (2..5, 55.5..59) and parked cars at (2.5..6, 60..66); IMG_3118 has two vans there but no view of the walls behind them, and IMG_3119 does not reach that far right. The 2014-15 surface model has nothing standing there. No free-standing utility sheds stand on the forecourt: the brown-door sheds in IMG_3119 are the utility row about 50 m away and the shed behind the containers is the hotel's low block. Not built.",
+   "decision": "needs-photos"
+  },
+  {
+   "id": "gap:picasso-low-box-light-well",
+   "name": "Sunken pit behind the low white box at the foot of the set-back wall, west of Calle Pintor Picasso",
+   "at": [
+    -34.6,
+    28.3
+   ],
+   "photos": [
+    "IMG_3124.jpg",
+    "IMG_3123.jpg"
+   ],
+   "why": "The 2020-21 ground model dips to -1.4..-2.0 m over the datum (0.7-1.3 m below the road, about 2 m below the garden) over about 2 by 2 m behind the low white box (long-wall frame s 3-5, e -1 to -2), where the 2014-15 surface model reads the box's top at +0.55-0.59 m. IMG_3124 shows a dark low opening at the wall's foot behind the box's parapet, so it is most likely a light well to a basement, but its depth, extent and what it serves are not seen. Not built; the pavement in front of it is held at road level (task picasso-service-road-levels-and-beach).",
    "decision": "needs-photos"
   },
   {

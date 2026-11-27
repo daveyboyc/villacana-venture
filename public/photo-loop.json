@@ -3835,6 +3835,19 @@
       "IMG_3106.jpg"
      ],
      "state": "open"
+    },
+    {
+     "id": "photo-picasso-forecourt-square-on",
+     "area": "picasso",
+     "kind": "photo",
+     "ask": "From the middle of the forecourt by the pool building, photograph square-on: the 90 MILES building's front (its sign, awning, stepped wall and door) looking south-west, the hotel's low block with the grey containers and the low white garden wall looking north-east, and the low walls and parking on the east side by the plane-tree garden.",
+     "why": "IMG_3118 and IMG_3119 see the forecourt only along the road from 20-30 m; the 90 MILES block's depth and lower front, the garden wall's ends and the east side's low walls are read from bearings and the 2015 survey (task picasso-beach-forecourt-buildings)",
+     "photoRequest": "picasso-forecourt-square-on",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
     }
    ],
    "cameras": [
@@ -3995,13 +4008,6 @@
      "requests": []
     },
     {
-     "id": "picasso-beach-forecourt-buildings",
-     "title": "Forecourt by the pool building: the utility sheds and grey containers, and the 90 MILES building",
-     "priority": 2,
-     "dependencies": [],
-     "requests": []
-    },
-    {
      "id": "picasso-bin-store-service-road",
      "title": "Bin store and Calle Pintor Picasso south of the car park: bin yard, utility row, hotel lower wing (layout)",
      "priority": 2,
@@ -4038,6 +4044,15 @@
     }
    ],
    "waitingTasks": [
+    {
+     "id": "picasso-90-miles-front",
+     "title": "The 90 MILES building's lower front and stepped wall on the forecourt (pool building part 4 drawn sunk)",
+     "priority": 2,
+     "dependencies": [
+      "picasso-beach-forecourt-buildings"
+     ],
+     "requests": []
+    },
     {
      "id": "picasso-utility-row-detail",
      "title": "West utility row on Calle Pintor Picasso: substation doors and trellis, gates, meter box, conduit and grates",
@@ -8667,6 +8682,19 @@
      "features": [],
      "tasks": [],
      "state": "open"
+    },
+    {
+     "id": "photo-picasso-forecourt-square-on",
+     "area": "picasso",
+     "kind": "photo",
+     "ask": "From the middle of the forecourt by the pool building, photograph square-on: the 90 MILES building's front (its sign, awning, stepped wall and door) looking south-west, the hotel's low block with the grey containers and the low white garden wall looking north-east, and the low walls and parking on the east side by the plane-tree garden.",
+     "why": "IMG_3118 and IMG_3119 see the forecourt only along the road from 20-30 m; the 90 MILES block's depth and lower front, the garden wall's ends and the east side's low walls are read from bearings and the 2015 survey (task picasso-beach-forecourt-buildings)",
+     "photoRequest": "picasso-forecourt-square-on",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
     }
    ],
    "cameras": [
@@ -12256,13 +12284,6 @@
      "requests": []
     },
     {
-     "id": "picasso-beach-forecourt-buildings",
-     "title": "Forecourt by the pool building: the utility sheds and grey containers, and the 90 MILES building",
-     "priority": 2,
-     "dependencies": [],
-     "requests": []
-    },
-    {
      "id": "picasso-bin-store-service-road",
      "title": "Bin store and Calle Pintor Picasso south of the car park: bin yard, utility row, hotel lower wing (layout)",
      "priority": 2,
@@ -12417,6 +12438,15 @@
      "priority": 2,
      "dependencies": [
       "eva-lane-details"
+     ],
+     "requests": []
+    },
+    {
+     "id": "picasso-90-miles-front",
+     "title": "The 90 MILES building's lower front and stepped wall on the forecourt (pool building part 4 drawn sunk)",
+     "priority": 2,
+     "dependencies": [
+      "picasso-beach-forecourt-buildings"
      ],
      "requests": []
     },
