@@ -94,4 +94,10 @@ Independent review, 27 Nov 2026: **changes needed**.
 Minor: the possible fifth container is recorded as an open question (area note, photo check); the terrazzo is warmer
 beige (`#e3d5bb`).
 
-Final sign-off after these fixes: pending.
+Final sign-off after these fixes: **APPROVED** (27 Nov 2026, the same independent reviewer subagent, which made
+neither revision). The new IMG_3103 pin (-38.2, 22.4) sits about 1.4 m in from the front's inner face with the
+original GPS kept; the far wall's centre falls at 0.51 of the frame width against the photo's 0.52. The far wall
+still looks narrower than in the photo (22% of the frame against 43%), which belongs to the open
+`picasso-bin-yard-far-wall` discrepancy, so that check stays `differs`. The floor-level discrepancy
+`picasso-bin-yard-floor-level` is honest and routed to the levels stage. Open: yard length, floor level, the
+possible fifth container, the inside arch and the small motor box.

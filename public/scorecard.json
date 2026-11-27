@@ -713,8 +713,8 @@
     "tagged": 39,
     "placed": 39,
     "checks": {
-     "matches": 14,
-     "differs": 20,
+     "matches": 15,
+     "differs": 21,
      "not-comparable": 7
     },
     "camerasSolved": 0,
@@ -823,14 +823,14 @@
     "estimated": 22,
     "inferred": 1,
     "registry": 0,
-    "gaps": 2
+    "gaps": 3
    },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey.",
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 39, 39 placed; no camera solved.",
     "Facades: 0 of 32 kit parts traced from photos.",
-    "How sure: 2 photographed, 22 estimated, 1 inferred, 2 known gaps.",
+    "How sure: 2 photographed, 22 estimated, 1 inferred, 3 known gaps.",
     "Placement: 0 of 25 features verified, 19 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 0 still open; 8 evidence requests. This is not whole-area acceptance."
    ],
@@ -1856,8 +1856,8 @@
     "tagged": 27,
     "placed": 28,
     "checks": {
-     "matches": 4,
-     "differs": 13,
+     "matches": 5,
+     "differs": 18,
      "not-comparable": 0
     },
     "camerasSolved": 0,
@@ -1870,9 +1870,9 @@
     "generated": 274
    },
    "placement": {
-    "features": 35,
+    "features": 39,
     "verified": 0,
-    "disputed": 10
+    "disputed": 13
    },
    "discrepancies": [
     {
@@ -1924,6 +1924,26 @@
      "feature": "ground_plan_picasso.json:picasso-beach-road-forecourt"
     },
     {
+     "id": "photo-discrepancy:6f7e259da979a7bc",
+     "feature": "ground_plan_picasso.json:picasso-service-pavement"
+    },
+    {
+     "id": "photo-discrepancy:5e80078816244ebc",
+     "feature": "ground_plan_picasso.json:picasso-service-pavement"
+    },
+    {
+     "id": "photo-discrepancy:496aff94c91dd943",
+     "feature": "ground_plan_picasso.json:picasso-service-pavement"
+    },
+    {
+     "id": "photo-discrepancy:7712bcf94fb3e575",
+     "feature": "picasso_forecourt.json:picasso-90-miles-upper"
+    },
+    {
+     "id": "photo-discrepancy:463d1eb433e28f99",
+     "feature": "picasso_forecourt.json:picasso-forecourt-containers"
+    },
+    {
      "id": "photo-discrepancy:338c11c152b80b76",
      "feature": "picasso_service_frontage.json:picasso-bin-store-details"
     },
@@ -1933,8 +1953,8 @@
     }
    ],
    "tasks": {
-    "open": 9,
-    "inProgress": 4,
+    "open": 8,
+    "inProgress": 6,
     "titles": [
      "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory",
      "Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries",
@@ -1943,19 +1963,19 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 35,
+    "estimated": 39,
     "inferred": 0,
     "registry": 0,
-    "gaps": 5
+    "gaps": 8
    },
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey.",
     "Footprints: 46% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 28, 28 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
-    "How sure: 0 photographed, 35 estimated, 0 inferred, 5 known gaps.",
-    "Placement: 0 of 35 features verified, 14 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 14 still open; 8 evidence requests. This is not whole-area acceptance."
+    "How sure: 0 photographed, 39 estimated, 0 inferred, 8 known gaps.",
+    "Placement: 0 of 39 features verified, 19 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 14 still open; 9 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
@@ -2109,13 +2129,26 @@
        "IMG_3106.jpg"
       ],
       "state": "open"
+     },
+     {
+      "id": "photo-picasso-forecourt-square-on",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the middle of the forecourt by the pool building, photograph square-on: the 90 MILES building's front (its sign, awning, stepped wall and door) looking south-west, the hotel's low block with the grey containers and the low white garden wall looking north-east, and the low walls and parking on the east side by the plane-tree garden.",
+      "why": "IMG_3118 and IMG_3119 see the forecourt only along the road from 20-30 m; the 90 MILES block's depth and lower front, the garden wall's ends and the east side's low walls are read from bearings and the 2015 survey (task picasso-beach-forecourt-buildings)",
+      "photoRequest": "picasso-forecourt-square-on",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
+      "state": "open"
      }
     ],
-    "readyTasks": 7
+    "readyTasks": 6
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 8 spots",
+    "headline": "Photos needed: 9 spots",
     "requests": [
      {
       "id": "picasso-bin-store-front",
@@ -2193,6 +2226,22 @@
       ],
       "ask": "From the middle aisle, photograph square-on to the west row of angled bays and the hedge behind them, then along the row in both directions; if there is a path behind the hedge, one photo along it.",
       "why": "no photo shows the west side of the car park, its hedge, or whether a footpath runs behind it",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-forecourt-square-on",
+      "at": [
+       -1.0,
+       58.0
+      ],
+      "look": [
+       -11.0,
+       66.0
+      ],
+      "ask": "From the middle of the forecourt by the pool building, photograph square-on: the 90 MILES building's front (its sign, awning, stepped wall and door) looking south-west, the hotel's low block with the grey containers and the low white garden wall looking north-east, and the low walls and parking on the east side by the plane-tree garden.",
+      "why": "IMG_3118 and IMG_3119 see the forecourt only along the road from 20-30 m; the 90 MILES block's depth and lower front, the garden wall's ends and the east side's low walls are read from bearings and the 2015 survey (task picasso-beach-forecourt-buildings)",
       "priority": 2,
       "state": "open",
       "photos": []
@@ -3520,8 +3569,8 @@
     "tagged": 620,
     "placed": 642,
     "checks": {
-     "matches": 59,
-     "differs": 62,
+     "matches": 60,
+     "differs": 67,
      "not-comparable": 67
     },
     "camerasSolved": 8,
@@ -3548,9 +3597,9 @@
     "generated": 2452
    },
    "placement": {
-    "features": 572,
+    "features": 576,
     "verified": 0,
-    "disputed": 73
+    "disputed": 76
    },
    "discrepancies": [
     {
@@ -3818,6 +3867,26 @@
      "feature": "picasso_beach_lane.json:picasso-lane-east-terrace"
     },
     {
+     "id": "photo-discrepancy:6f7e259da979a7bc",
+     "feature": "ground_plan_picasso.json:picasso-service-pavement"
+    },
+    {
+     "id": "photo-discrepancy:5e80078816244ebc",
+     "feature": "ground_plan_picasso.json:picasso-service-pavement"
+    },
+    {
+     "id": "photo-discrepancy:496aff94c91dd943",
+     "feature": "ground_plan_picasso.json:picasso-service-pavement"
+    },
+    {
+     "id": "photo-discrepancy:7712bcf94fb3e575",
+     "feature": "picasso_forecourt.json:picasso-90-miles-upper"
+    },
+    {
+     "id": "photo-discrepancy:463d1eb433e28f99",
+     "feature": "picasso_forecourt.json:picasso-forecourt-containers"
+    },
+    {
      "id": "photo-discrepancy:338c11c152b80b76",
      "feature": "picasso_service_frontage.json:picasso-bin-store-details"
     },
@@ -3827,8 +3896,8 @@
     }
    ],
    "tasks": {
-    "open": 59,
-    "inProgress": 63,
+    "open": 58,
+    "inProgress": 65,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -3837,19 +3906,19 @@
    },
    "confidence": {
     "photographed": 95,
-    "estimated": 222,
+    "estimated": 226,
     "inferred": 23,
     "registry": 232,
-    "gaps": 46
+    "gaps": 50
    },
    "status": [
     "Ground: 95% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 82% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 662, 642 placed; 8 cameras solved, 3 stations holding.",
     "Facades: 30 of 2482 kit parts traced from photos.",
-    "How sure: 95 photographed, 222 estimated, 23 inferred, 46 known gaps.",
-    "Placement: 0 of 572 features verified, 68 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 42 still open; 57 evidence requests. This is not whole-area acceptance."
+    "How sure: 95 photographed, 226 estimated, 23 inferred, 50 known gaps.",
+    "Placement: 0 of 576 features verified, 73 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 42 still open; 58 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
@@ -4700,13 +4769,26 @@
       "features": [],
       "tasks": [],
       "state": "open"
+     },
+     {
+      "id": "photo-picasso-forecourt-square-on",
+      "area": "picasso",
+      "kind": "photo",
+      "ask": "From the middle of the forecourt by the pool building, photograph square-on: the 90 MILES building's front (its sign, awning, stepped wall and door) looking south-west, the hotel's low block with the grey containers and the low white garden wall looking north-east, and the low walls and parking on the east side by the plane-tree garden.",
+      "why": "IMG_3118 and IMG_3119 see the forecourt only along the road from 20-30 m; the 90 MILES block's depth and lower front, the garden wall's ends and the east side's low walls are read from bearings and the 2015 survey (task picasso-beach-forecourt-buildings)",
+      "photoRequest": "picasso-forecourt-square-on",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
+      "state": "open"
      }
     ],
-    "readyTasks": 45
+    "readyTasks": 44
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 46 spots",
+    "headline": "Photos needed: 47 spots",
     "requests": [
      {
       "id": "alberto",
@@ -5328,6 +5410,22 @@
       ],
       "ask": "From the middle aisle, photograph square-on to the west row of angled bays and the hedge behind them, then along the row in both directions; if there is a path behind the hedge, one photo along it.",
       "why": "no photo shows the west side of the car park, its hedge, or whether a footpath runs behind it",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-forecourt-square-on",
+      "at": [
+       -1.0,
+       58.0
+      ],
+      "look": [
+       -11.0,
+       66.0
+      ],
+      "ask": "From the middle of the forecourt by the pool building, photograph square-on: the 90 MILES building's front (its sign, awning, stepped wall and door) looking south-west, the hotel's low block with the grey containers and the low white garden wall looking north-east, and the low walls and parking on the east side by the plane-tree garden.",
+      "why": "IMG_3118 and IMG_3119 see the forecourt only along the road from 20-30 m; the 90 MILES block's depth and lower front, the garden wall's ends and the east side's low walls are read from bearings and the 2015 survey (task picasso-beach-forecourt-buildings)",
       "priority": 2,
       "state": "open",
       "photos": []
