@@ -4205,7 +4205,7 @@
    ],
    "status": "in-progress",
    "owner": "Claude (branch pkg2-levels)",
-   "notes": "26 Nov 2026: the terrain grid holds the kerbed pavement at the road's level (data/picasso_service_frontage.json pavementHold, read by scripts/lidar_check.py grid), so it is drawn flat 0.10-0.14 m over the road; the survey readings for the bin-yard floor, the hotel apron, the forecourt, the lane and its footway kerb and the dip behind the low box are in data/levels_survey.json (picasso-service-pavement-kerb, picasso-bin-yard-floor, picasso-hotel-apron-level, picasso-forecourt-to-lane). Before/after renders and the review packet: docs/reviews/picasso-service-road-levels-and-beach/. Stays in progress until a reviewer that did not make the change signs it off there."
+   "notes": "26 Nov 2026: the terrain grid holds the kerbed pavement at the road's level (data/picasso_service_frontage.json pavementHold, read by scripts/lidar_check.py grid) with the row's faces as a terrain step line (src/terrain.ts), so it is drawn flat 0.08-0.13 m over the road and no grid node behind the walls changes; the survey readings for the bin-yard floor, the hotel apron, the forecourt, the lane and its footway kerb and the dip behind the low box are in data/levels_survey.json (picasso-service-pavement-kerb, picasso-bin-yard-floor, picasso-hotel-apron-level, picasso-forecourt-to-lane). Before/after renders and the review packet: docs/reviews/picasso-service-road-levels-and-beach/. Stays in progress until a reviewer that did not make the change signs it off there."
   },
   {
    "id": "tools-shoot-views-photo-camera",

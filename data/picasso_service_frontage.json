@@ -57,7 +57,55 @@
   ],
   "behind": 2.0,
   "blend": 1.0,
-  "note": "Read by scripts/lidar_check.py grid (task picasso-service-road-levels-and-beach, discrepancy picasso-service-pavement-level). The ground behind the utility row stands 1.2-1.4 m over the road (2020-21 ground model: +0.4 to +0.7 m against -0.6 to -0.85 m) and the 2 m terrain grid smoothed that step across the kerbed pavement, so the pavement rose towards the row's faces. The grid now holds the pavement's outline, grown by 'behind' metres (one 2 m grid cell past the row's faces, so no grid node behind a wall lifts the pavement's edge; also onto the road and round the bin yard's street-face corner), at the road's own level, read from the survey ground at 'roadAt' metres out from the kerb line (the outline's road edge, points 12-15) and averaged; it blends back to the survey over 'blend' metre more, so the raised garden behind the walls keeps its surveyed level. The pavement surface is drawn 0.34 m over the terrain plus the concrete's 0.05 m, and the road 0.27 m, so it stands flat 0.12 m over the road, as IMG_3123, IMG_3124 and IMG_3105 show. The level change to the raised garden is then behind the row's walls."
+  "faces": [
+   0,
+   11
+  ],
+  "garden": 20.0,
+  "stepLine": [
+   0,
+   12
+  ],
+  "stepInset": 0.1,
+  "buildingsHeld": [
+   [
+    [
+     -32.45,
+     32.69
+    ],
+    [
+     -30.13,
+     36.5
+    ],
+    [
+     -28.1,
+     35.26
+    ],
+    [
+     -30.41,
+     31.45
+    ]
+   ],
+   [
+    [
+     -28.58,
+     36.96
+    ],
+    [
+     -27.27,
+     39.14
+    ],
+    [
+     -26.24,
+     38.51
+    ],
+    [
+     -27.56,
+     36.34
+    ]
+   ]
+  ],
+  "note": "Read by scripts/lidar_check.py grid (task picasso-service-road-levels-and-beach, discrepancy picasso-service-pavement-level). The ground behind the utility row stands 1.2-1.4 m over the road (2020-21 ground model: +0.4 to +0.7 m against -0.6 to -0.85 m) and the 2 m terrain grid smoothed that step across the kerbed pavement, so the pavement rose towards the row's faces. The grid now holds the pavement's outline, grown by 'behind' metres onto the road and along it, at the road's own level, but never past the row's faces: grid nodes on the far side of the outline's west edge (points 'faces', the bin yard's street face, the set-back wall, the substation, the gates and the meter box, extended 'garden' metres back) keep their own level, so the raised garden, the bin yard and the ground under the buildings are not dented, read from the survey ground at 'roadAt' metres out from the kerb line (the outline's road edge, points 12-15) and averaged; it blends back to the survey over 'blend' metre more. Nodes under the row's own buildings ('buildingsHeld', the substation and the meter box, which stand on the pavement's level) are held too. A 2 m grid cannot step at a wall, so the grid also writes the outline's face edge (points 'stepLine', the faces and the pavement's south end) and the held buildings' outlines, each set 'stepInset' metres into the wall or building, as step lines (data/terrain.json steps): src/terrain.ts reads a cell's nodes across a step line as the mean of the nodes on the point's own side, so the pavement is flat to the faces and the garden keeps its surveyed level up to the walls, and no grid node behind the walls changes. The pavement surface is drawn 0.34 m over the terrain plus the concrete's 0.05 m, and the road 0.27 m, so it stands flat 0.12 m over the road, as IMG_3123, IMG_3124 and IMG_3105 show. The level change to the raised garden is then behind the row's walls."
  },
  "hotelWing": {
   "id": "picasso-hotel-lower-wing",

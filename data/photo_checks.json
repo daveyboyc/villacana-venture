@@ -2138,7 +2138,7 @@
    "by": "Claude",
    "result": "differs",
    "followUp": "picasso-utility-row-detail",
-   "notes": "Levels: before, the pavement in front of the set-back wall humped up over the sloping terrain (up to about 1.2 m over the road at the wall foot); after, it runs flat one kerb (0.10-0.14 m) over the road to the wall, as the photo shows, with the level change behind the wall. Still differs in detail: the low white box with its dark opening at the wall foot, the conduit and the pavement's grates are not built (package 5). The render stands at the photo's pin (unsolved), so the framing differs from the photo; a photographic diagnostic of the levels, not placement approval."
+   "notes": "Levels: before, the pavement in front of the set-back wall humped up over the sloping terrain (up to about 1.2 m over the road at the wall foot); after, it runs flat one kerb (0.08-0.13 m) over the road to the wall, as the photo shows, with the level change behind the wall. Still differs in detail: the low white box with its dark opening at the wall foot, the conduit and the pavement's grates are not built (package 5). The render stands at the photo's pin (unsolved), so the framing differs from the photo; a photographic diagnostic of the levels, not placement approval."
   },
   {
    "task": "picasso-service-road-levels-and-beach",
@@ -2150,7 +2150,7 @@
    "by": "Claude",
    "result": "differs",
    "followUp": "picasso-utility-row-detail",
-   "notes": "Levels: before, the pavement rose in a bank into the recess beside the substation; after, it is flat over the road along the substation and into the recess, with the kerb line straight, as photographed. A slight rise of up to about 0.2 m remains in the corner by the bin store's street door, where the 2 m grid's nodes stand inside the yard. Still differs in detail: the substation's maroon doors, signs and mesh trellis, the low box and the grates (package 5). The render stands at the photo's pin (unsolved), so the framing differs from the photo; a photographic diagnostic of the levels, not placement approval."
+   "notes": "Levels: before, the pavement rose in a bank into the recess beside the substation; after, it is flat over the road along the substation and into the recess, with the kerb line straight, as photographed. The raised garden behind the walls keeps its level (revision 2: step lines at the faces; the first version dented it). Still differs in detail: the substation's maroon doors, signs and mesh trellis, the low box and the grates (package 5). The render stands at the photo's pin (unsolved), so the framing differs from the photo; a photographic diagnostic of the levels, not placement approval."
   },
   {
    "task": "picasso-service-road-levels-and-beach",
