@@ -4183,7 +4183,7 @@
     "IMG_3123.jpg",
     "IMG_3124.jpg"
    ],
-   "build": "The road on to the beach was laid out in #311 (docs/reviews/picasso-beach-lane). Remaining, stage 3: hold the terrain grid at road level up to the utility row's faces so the kerbed pavement is flat about 0.12 m over the road (discrepancy picasso-service-pavement-level; regenerate data/terrain.json with scripts/lidar_check.py grid, as the car park is held to the west lawn's wall; do not hand-edit it). Then check against the survey the bin-yard floor, the hotel apron, the forecourt, the lane and its footway kerb, and the 2.0 m dip behind the low box at s about 4, e about -1.5. Package 2 in docs/PICASSO_SOUTH_HANDOVER.md.",
+   "build": "The road on to the beach was laid out in #311 (docs/reviews/picasso-beach-lane). Remaining, stage 3: hold the terrain grid at road level up to the utility row's faces so the kerbed pavement is flat about 0.12 m over the road (discrepancy picasso-service-pavement-level; regenerate data/terrain.json with scripts/lidar_check.py grid, as the car park is held to the west lawn's wall; do not hand-edit it). Then check against the survey (record the readings in data/levels_survey.json) the bin-yard floor, the hotel apron, the forecourt, the lane and its footway kerb, and the 2.0 m dip behind the low box at s about 4, e about -1.5. Package 2 in docs/PICASSO_SOUTH_HANDOVER.md.",
    "avoid": "No change to Walk. No detail before the layout is signed off. Do not grade anything photographed or measured without a solved camera.",
    "accept": [
     "Pavement flat about 0.12 m over the road in Inspect from IMG_3123 and IMG_3105",
@@ -4203,7 +4203,9 @@
    "dependsOn": [
     "picasso-bin-store-service-road"
    ],
-   "status": "open"
+   "status": "in-progress",
+   "owner": "Claude (branch pkg2-levels)",
+   "notes": "26 Nov 2026: the terrain grid holds the kerbed pavement at the road's level (data/picasso_service_frontage.json pavementHold, read by scripts/lidar_check.py grid) with the row's faces as a terrain step line (src/terrain.ts), so it is drawn flat 0.08-0.13 m over the road and no grid node behind the walls changes; the survey readings for the bin-yard floor, the hotel apron, the forecourt, the lane and its footway kerb and the dip behind the low box are in data/levels_survey.json (picasso-service-pavement-kerb, picasso-bin-yard-floor, picasso-hotel-apron-level, picasso-forecourt-to-lane). Before/after renders and the review packet: docs/reviews/picasso-service-road-levels-and-beach/. Stays in progress until a reviewer that did not make the change signs it off there."
   },
   {
    "id": "tools-shoot-views-photo-camera",

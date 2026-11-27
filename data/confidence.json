@@ -145,7 +145,7 @@
   },
   "ground_plan_picasso.json:picasso-service-pavement": {
    "level": "estimated",
-   "why": "Kerbed concrete pavement in IMG_3123, 3124, 3105 and 3106, narrowing to nothing at the bin store's street door; bounded by the frontage and the mapped road edge, about 1 m. Whether the wide apron at the slatted gate is raised is not seen."
+   "why": "Kerbed concrete pavement in IMG_3123, 3124, 3105 and 3106, narrowing to nothing at the bin store's street door; bounded by the frontage and the mapped road edge, about 1 m. Whether the wide apron at the slatted gate is raised is not seen. Level (26 Nov 2026): held flat one kerb over the road by the terrain grid (pavementHold in data/picasso_service_frontage.json), as the photos show; the road level is the 2020-21 survey's, the kerb height judged."
   },
   "ground_plan_picasso.json:picasso-hotel-apron": {
    "level": "estimated",
@@ -1648,6 +1648,20 @@
     "IMG_3106.jpg"
    ],
    "why": "Built 26 Nov 2026 as estimates (street picasso-beach-lane, the forecourt, the tower and the east terrace) from IMG_3118, 3119, 2613 and 3065-3068 and the aerial. Still not seen close up: the utility sheds and grey containers on the forecourt's east side (IMG_3119), the two-storey building with the 90 MILES sign west of the tower (IMG_3118), and the lane's middle stretch; no camera is solved.",
+   "decision": "needs-photos"
+  },
+  {
+   "id": "gap:picasso-low-box-light-well",
+   "name": "Sunken pit behind the low white box at the foot of the set-back wall, west of Calle Pintor Picasso",
+   "at": [
+    -34.6,
+    28.3
+   ],
+   "photos": [
+    "IMG_3124.jpg",
+    "IMG_3123.jpg"
+   ],
+   "why": "The 2020-21 ground model dips to -1.4..-2.0 m over the datum (0.7-1.3 m below the road, about 2 m below the garden) over about 2 by 2 m behind the low white box (long-wall frame s 3-5, e -1 to -2), where the 2014-15 surface model reads the box's top at +0.55-0.59 m. IMG_3124 shows a dark low opening at the wall's foot behind the box's parapet, so it is most likely a light well to a basement, but its depth, extent and what it serves are not seen. Not built; the pavement in front of it is held at road level (task picasso-service-road-levels-and-beach).",
    "decision": "needs-photos"
   },
   {
