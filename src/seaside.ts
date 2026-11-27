@@ -162,6 +162,9 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
   const sandMap = new THREE.TextureLoader().load(asset("/textures/coast/gravelly-sand.webp"));
   sandMap.wrapS = sandMap.wrapT = THREE.RepeatWrapping;
   sandMap.colorSpace = THREE.SRGBColorSpace;
+  const pebbles = new THREE.TextureLoader().load(asset("/textures/coast/rounded-pebbles.webp"));
+  pebbles.wrapS = pebbles.wrapT = THREE.RepeatWrapping;
+  pebbles.colorSpace = THREE.SRGBColorSpace;
   const sandUv: number[] = [], tones: number[] = [];
   for (let i = 0; i < sand.length; i += 3) {
     sandUv.push(sand[i] / 2, sand[i + 2] / 2);
@@ -188,11 +191,23 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
     }
   }
   beachMaterial.onBeforeCompile = shader => {
+    shader.uniforms.pebbles = { value: pebbles };
     shader.uniforms.inlandColor = { value: (distantLand.material as THREE.MeshBasicMaterial).color };
     shader.vertexShader = "attribute float inlandBlend; varying float vInlandBlend;\n" +
       shader.vertexShader.replace("#include <begin_vertex>", "#include <begin_vertex>\nvInlandBlend = inlandBlend;");
-    shader.fragmentShader = "uniform vec3 inlandColor; varying float vInlandBlend;\n" +
-      shader.fragmentShader.replace("#include <opaque_fragment>",
+    shader.fragmentShader = "uniform sampler2D pebbles; uniform vec3 inlandColor; varying float vInlandBlend;\n" +
+      shader.fragmentShader.replace("#include <map_fragment>", `
+        #include <map_fragment>
+        // Metre-scale deposits vary in extent. The scan resolves individual stones up close.
+        vec2 metres = 2.0 * vMapUv;
+        float deposit = sin(dot(metres,vec2(0.37,0.23)) + 1.4*sin(metres.y*0.41))
+                      + 0.62*sin(dot(metres,vec2(-0.76,0.89)));
+        float pebbly = smoothstep(0.30, 1.15, deposit);
+        float neutral = dot(diffuseColor.rgb, vec3(0.21,0.72,0.07));
+        vec3 sandColor = mix(diffuseColor.rgb, vec3(neutral), 0.36);
+        vec3 stones = texture2D(pebbles, metres / 1.3).rgb;
+        diffuseColor.rgb = mix(sandColor, stones, 0.75*pebbly);
+      `).replace("#include <opaque_fragment>",
         "outgoingLight = mix(outgoingLight, inlandColor, smoothstep(0.0, 1.0, vInlandBlend));\n#include <opaque_fragment>");
   };
   const beach = mesh(sand, beachMaterial, true, sandUv, sandIndices);
