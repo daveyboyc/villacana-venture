@@ -101,6 +101,8 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
   const first = Math.min(0, Math.floor((coast[0][0] - originX) / cell));
   const last = Math.max(Math.ceil(2 * span / cell), Math.ceil((coast.at(-1)![0] - originX) / cell));
   const sand: number[] = [], sandIndices: number[] = [];
+  const columns = new Map<number, Map<number, number>>();
+  const shoreHeights = new Map<number, number>();
   let previous = new Map<number, number>();
   for (let i = first; i <= last; i++) {
     const x = originX + i * cell;
@@ -127,6 +129,8 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
       const a = previous.get(j - 1), b = previous.get(j), c = column.get(j - 1);
       if (a !== undefined && b !== undefined && c !== undefined) sandIndices.push(a,b,c,c,b,index);
     }
+    columns.set(i, column);
+    shoreHeights.set(i, shore);
     previous = column;
   }
   const mesh = (positions: number[], color: string | THREE.Material | THREE.Material[], shadow = true, uvs?: number[], indices?: number[]) => {
@@ -165,11 +169,36 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
     const tone = THREE.MathUtils.lerp(0.52, 1, dry);
     tones.push(tone, tone, tone);
   }
-  const beach = mesh(sand, new THREE.MeshStandardMaterial({
+  const beachMaterial = new THREE.MeshStandardMaterial({
     map: sandMap, vertexColors: true, roughness: 0.95, side: THREE.DoubleSide,
-  }), true, sandUv, sandIndices);
+  });
+  // Feather the outer sand grid into distant land. Use the actual grid margin
+  // so the oblique view does not expose square steps at the edge of coverage.
+  const margin = new Float32Array(sand.length / 3);
+  for (const [i, column] of columns) {
+    for (const [j, index] of column) {
+      if (sand[3 * index + 2] >= shoreHeights.get(i)! - 4) continue;
+      for (let step = 1; step <= 3; step++) {
+        if (!columns.get(i-step)?.has(j) || !columns.get(i+step)?.has(j) ||
+            !column.has(j-step) || !column.has(j+step)) {
+          margin[index] = (4-step) / 3;
+          break;
+        }
+      }
+    }
+  }
+  beachMaterial.onBeforeCompile = shader => {
+    shader.uniforms.inlandColor = { value: (distantLand.material as THREE.MeshBasicMaterial).color };
+    shader.vertexShader = "attribute float inlandBlend; varying float vInlandBlend;\n" +
+      shader.vertexShader.replace("#include <begin_vertex>", "#include <begin_vertex>\nvInlandBlend = inlandBlend;");
+    shader.fragmentShader = "uniform vec3 inlandColor; varying float vInlandBlend;\n" +
+      shader.fragmentShader.replace("#include <opaque_fragment>",
+        "outgoingLight = mix(outgoingLight, inlandColor, smoothstep(0.0, 1.0, vInlandBlend));\n#include <opaque_fragment>");
+  };
+  const beach = mesh(sand, beachMaterial, true, sandUv, sandIndices);
   beach.name = "barraka-beach-sand";
   beach.geometry.setAttribute("color", new THREE.Float32BufferAttribute(tones, 3));
+  beach.geometry.setAttribute("inlandBlend", new THREE.BufferAttribute(margin, 1));
 
   // Walk a line in short steps so ribbons and banks follow the heights.
   const steps = (line: Vec2[]): Vec2[] => line.flatMap((a, i) => {
