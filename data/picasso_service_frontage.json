@@ -287,7 +287,7 @@
  },
  "binStoreDetails": {
   "id": "picasso-bin-store-details",
-  "name": "Bin store: signs, doors, fire-safety boxes, bougainvillea and containers",
+  "name": "Bin store: signs, doors, fire-safety boxes, bougainvillea, shrub, planter, motorbike bay, inside signs, terrazzo floor, lantern and containers",
   "evidence": [
    "IMG_3099.jpg",
    "IMG_3100.jpg",
@@ -296,7 +296,7 @@
    "IMG_3123.jpg",
    "IMG_3124.jpg"
   ],
-  "trust": "Estimated. Show details only. Positions along each face are read from IMG_3099 (car-park front) and IMG_3124 (street face) at the wall's own pixel scale, about 137 px a metre for the front, measured from the doorway's centre, so each is good to about 0.3 m along the wall and 0.1-0.2 m in height relative to the door; the door itself is placed to about 1 m. Sign wording is as photographed. The containers' count and position are Dave's (26 Nov 2026).",
+  "trust": "Estimated. Show details only. Positions along each face are read from IMG_3099 (car-park front) and IMG_3124 (street face) at the wall's own pixel scale, about 137 px a metre for the front, measured from the doorway's centre, so each is good to about 0.3 m along the wall and 0.1-0.2 m in height relative to the door; the door itself is placed to about 1 m. Sign wording is as photographed. The containers' count and position are Dave's (26 Nov 2026). The 27 Nov 2026 finish (task picasso-bin-store-finish) adds, also estimated: the inside BASURA / RUBBISH BINS and recycling signs placed from IMG_3101 relative to the street door's north edge (about 520 px a metre at the wall, about 0.2 m); the grey plinth band, terrazzo floor and slot drain from IMG_3101 and IMG_3103; the lantern from IMG_3103, tied to the yard's north-west end wall because the yard's length is open (picasso-bin-yard-far-wall); the bougainvillea as one continuous leafy mass with its trunk, the clipped shrub south of the doorway and the planter under the fire-hose box from IMG_3099 and IMG_3100; and the motorbike-bay lines from IMG_3099 with an unsolved camera, good to about 0.5 m.",
   "front": {
    "about": "On the car-park face. t: metres along the front from its south end (the doorway is at 4.5); y: height of the item's centre above the car-park paving; w, h: size in metres.",
    "items": [
@@ -363,11 +363,97 @@
     "note": "Dark green vertical-boarded double doors; the north leaf is folded open into the yard and the south one shut in IMG_3099."
    },
    "bougainvillea": {
-    "from": 0.6,
-    "to": 13.6,
-    "step": 1.6,
-    "scale": 0.62,
-    "note": "Bougainvillea grows along the whole top of the front and spills over it, thickest from the doorway north (IMG_3099, IMG_3100, IMG_3103 left wall)."
+    "from": 0.4,
+    "to": 13.8,
+    "piece": 1.35,
+    "heights": [
+     0.75,
+     1.05
+    ],
+    "depth": 0.95,
+    "sink": 0.2,
+    "toCarPark": 0.12,
+    "flowers": 5,
+    "colour": "#b4358a",
+    "drapes": [
+     {
+      "side": "car-park",
+      "from": 8.3,
+      "to": 10.2,
+      "drop": 0.3
+     },
+     {
+      "side": "car-park",
+      "from": 6.0,
+      "to": 7.2,
+      "drop": 0.35
+     },
+     {
+      "side": "car-park",
+      "from": 3.6,
+      "to": 4.9,
+      "drop": 0.42
+     },
+     {
+      "side": "yard",
+      "from": 9.2,
+      "to": 12.2,
+      "drop": 0.4
+     }
+    ],
+    "trunk": {
+     "t": 3.75,
+     "out": 0.3,
+     "radius": 0.085
+    },
+    "note": "One continuous dark-green mass along the whole top of the front, 0.75-1.05 m over the coping and spilling over both faces, with few magenta bracts (IMG_3099, IMG_3100; over the yard side in IMG_3103). Its thick grey trunk rises from the bed just south of the doorway (IMG_3099 x 790-810, about t 3.75). Replaces the separate pink sprites. A shallow skirt of leaves hangs about 0.25 m down the car-park face all along, deeper in the drapes, which stop above the signs as photographed. Piece heights and the drapes' lengths are judged from IMG_3099.",
+    "skirt": 0.25
+   },
+   "shrub": {
+    "id": "bin-store-front-shrub",
+    "from": 2.75,
+    "to": 3.85,
+    "depth": 0.75,
+    "height": 1.45,
+    "note": "Dark clipped shrub against the front just south of the doorway, round the bougainvillea's trunk and under the glazed cabinet (IMG_3099 x 765-900, its top level with the cabinet's foot). The last part of the front, south of it, is out of IMG_3099's view behind the Fiat."
+   },
+   "planter": {
+    "id": "bin-store-planter",
+    "t": 9.1,
+    "length": 1.0,
+    "depth": 0.5,
+    "height": 0.45,
+    "plantHeight": 0.65,
+    "flowerColour": "#c98bc4",
+    "note": "Low white rendered planter at the foot of the front under the fire-hose box, with a loose shrub in lilac-pink flower (IMG_3099 x 0-75, IMG_3100 by the red box)."
+   },
+   "motorbikeBay": {
+    "id": "bin-store-motorbike-bay",
+    "lineWidth": 0.1,
+    "colour": "#eceae2",
+    "lines": [
+     {
+      "from": [
+       5.2,
+       2.3
+      ],
+      "to": [
+       7.3,
+       2.3
+      ]
+     },
+     {
+      "from": [
+       7.3,
+       1.9
+      ],
+      "to": [
+       7.3,
+       2.75
+      ]
+     }
+    ],
+    "note": "White painted lines on the car-park asphalt in front of the motorbike-parking sign (IMG_3099 x 250-420, y 1185-1240): a line parallel to the front about 2.3 m out, running south under the parked Fiat, crossed at its north end by a short end mark. Points are [t along the front from its south end, metres out from its face]. Depth read with an assumed 1.5 m eye height from an unsolved camera, about 0.5 m; the line's south end is hidden by the car and stopped at the doorway's north jamb (inferred)."
    }
   },
   "street": {
@@ -429,6 +515,53 @@
    ],
    "colour": "#f2c81e",
    "note": "Four yellow 1100 l wheeled containers side by side against the inner face of the bin store's car-park front, in the yard's north half from about 0.3 m off the north end wall (Dave, 26 Nov 2026: four bins where he marked, then 'the bins are on the wrong side', so on the front wall, not the long wall). This agrees with IMG_3103, which shows the row along the wall with the bougainvillea on top. t is metres along the front from its south end; inward is metres from the front's centre line into the yard, putting each container 0.05 m off the wall. Standard 1100 l size (1.37 m wide, 1.07 m deep, 1.47 m high)."
+  },
+  "inside": {
+   "about": "Inside the yard. s: metres along the long wall's frame (data frame, negative north-west of the long wall's end); y: height of an item's centre over the yard floor, which is drawn level with the car-park doorway's sill.",
+   "items": [
+    {
+     "id": "basura-rubbish-bins-sign",
+     "kind": "basura-sign",
+     "s": -0.75,
+     "y": 1.45,
+     "w": 0.7,
+     "h": 0.68,
+     "note": "White board: BASURA over a thin rule, RUBBISH BINS, and a left-pointing (north-west, towards the containers) outlined maroon arrow; a small BURGER COMIC mark at its foot (IMG_3101 x 435-800). On the yard side of the long wall, 0.72 m north-west of the street door's north edge."
+    },
+    {
+     "id": "recycling-sign",
+     "kind": "recycling-sign",
+     "s": -0.2,
+     "y": 1.42,
+     "w": 0.25,
+     "h": 0.35,
+     "note": "Green recycling sign: white recycling arrows over 'PLEASE USE RECYCLING BINS WHICH ARE IN THE STREET ON THE OTHER SIDE OF THIS WALL' and the Spanish (IMG_3101 x 838-970), just north-west of the door's arch."
+    }
+   ],
+   "band": {
+    "height": 1.3,
+    "colour": "#b2b6b7",
+    "note": "Grey-painted plinth band round every inside face, about half the wall's height (IMG_3101, IMG_3103)."
+   },
+   "floor": {
+    "colour": "#ddd5c6",
+    "slab": 1.0,
+    "note": "Pale terrazzo slabs with mixed chips and fine joints (IMG_3101 foreground, IMG_3103)."
+   },
+   "drain": {
+    "e": -1.6,
+    "from": -3.0,
+    "toNorthWall": 0.15,
+    "width": 0.12,
+    "note": "Slot drain along the containers' fronts to the far wall (IMG_3103)."
+   },
+   "lantern": {
+    "id": "bin-yard-lantern",
+    "fromNorthWall": 1.2,
+    "y": 2.5,
+    "out": 0.42,
+    "note": "Black carriage lantern standing on a scrolled iron bracket high on the long wall's yard face near the yard's north-west end (IMG_3103 x 805-945, about 1.2 m short of the far wall and 2.5 m up). Tied to the end wall, so it moves with it if picasso-bin-yard-far-wall is resolved."
+   }
   }
  }
 }

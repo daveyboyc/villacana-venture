@@ -5,7 +5,7 @@
     "wall": 27,
     "kerb": 4,
     "enclosure": 23,
-    "gap": 24,
+    "gap": 25,
     "context": 48
   },
   "records": [
@@ -6131,6 +6131,25 @@
       "confidence": "gap",
       "placement": "unreviewed",
       "basis": "IMG_3099's doorway is dark, as if into a roofed room, while IMG_3103 and IMG_3101 show the yard open to the sky; IMG_3103's far wall reads only 6-7 m from its camera, so the open yard may end about 7 m north-west of the long wall's end with a separate bay beyond (independent review, 26 Nov 2026). Built as one open yard; a square-on view of the front and one from inside the doorway would settle it.",
+      "levelState": "Evidence required before tracing or levelling."
+    },
+    {
+      "id": "gap:picasso-bin-store-inside-arch",
+      "name": "Bin yard: the arch over the street door and the door's motor box, inside",
+      "kind": "gap",
+      "points": [
+        [
+          -35.3,
+          24.3
+        ]
+      ],
+      "areas": [],
+      "evidence": [
+        "IMG_3101.jpg"
+      ],
+      "confidence": "gap",
+      "placement": "unreviewed",
+      "basis": "Inside, the green sliding door stands under a white arched head with a moulded edge, and a small dark motor or lock box sits on the floor beside it (IMG_3101). The yard walls are built level-topped with a flat lintel, and the arch is structure, so it is left for the yard's structural revision with photo request picasso-bin-store-front; the box is a small fitting not built.",
       "levelState": "Evidence required before tracing or levelling."
     }
   ]

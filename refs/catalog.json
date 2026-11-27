@@ -23360,30 +23360,29 @@
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1kn-44NfDQoun8HNG1XN4mMOxGeTPJF6A/view?usp=drivesdk",
   "camera": {
-   "x": -40.5,
-   "z": 22.9,
-   "heading": 58,
-   "accuracy": 4.7,
+   "x": -39.1,
+   "z": 23.6,
+   "heading": 75,
+   "accuracy": 1.0,
    "altitude": 6.2,
-   "trust": "phone location"
+   "trust": "checked against photo content"
   },
   "citedBy": [
    "picasso_service_frontage.json:picasso-bin-yard",
    "picasso_service_frontage.json:picasso-bin-store-details"
   ],
   "looksAt": [
-   -38,
-   24
+   -36.2,
+   23.4
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
    "picasso_service_frontage.json:picasso-bin-store-details",
-   "picasso_service_frontage.json:picasso-bin-yard",
-   "backdrop.json:aerial-trees"
+   "picasso_car_park.json:picasso-car-park-wall",
+   "picasso_service_frontage.json:picasso-bin-yard"
   ],
-  "subject": "bin store side wall and green door",
-  "headingOff": 56
+  "subject": "bin store side wall and green door"
  },
  {
   "id": "IMG_3103.jpg",
@@ -23404,27 +23403,27 @@
   "taken": "2026-11-19",
   "originalUrl": "https://drive.google.com/file/d/1VDmyOBFyf4naO2SvzMid-TPfAuRulVC6/view?usp=drivesdk",
   "camera": {
-   "x": -36.6,
-   "z": 21.3,
-   "heading": 320,
-   "accuracy": 4.7,
+   "x": -38.6,
+   "z": 22.6,
+   "heading": 329,
+   "accuracy": 1.5,
    "altitude": 5.9,
-   "trust": "phone location"
+   "trust": "checked against photo content"
   },
   "citedBy": [
    "picasso_service_frontage.json:picasso-bin-yard",
    "picasso_service_frontage.json:picasso-bin-store-details"
   ],
   "looksAt": [
-   -40,
-   17
+   -41.6,
+   17.0
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Picasso car park",
-   "picasso_service_frontage.json:picasso-bin-yard",
-   "picasso_car_park.json:picasso-car-park-wall",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "picasso_service_frontage.json:picasso-bin-store-details",
+   "picasso_service_frontage.json:picasso-bin-yard"
   ],
   "subject": "walled bin yard"
  },

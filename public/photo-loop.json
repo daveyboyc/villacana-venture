@@ -4012,13 +4012,6 @@
      "requests": []
     },
     {
-     "id": "picasso-bin-store-finish",
-     "title": "Bin store: inside signs, terrazzo floor, lantern, motorbike bays, shrub and continuous bougainvillea",
-     "priority": 3,
-     "dependencies": [],
-     "requests": []
-    },
-    {
      "id": "picasso-service-road-planting",
      "title": "Calle Pintor Picasso south of the car park: plane trees, cypress hedge, palms, and generated filler off",
      "priority": 3,
@@ -12273,13 +12266,6 @@
     {
      "id": "picasso-beach-lane-finish",
      "title": "Lane to the beach: concrete roadway, full-width grate and darker strip, eaves beams, terrace tiles, doors",
-     "priority": 3,
-     "dependencies": [],
-     "requests": []
-    },
-    {
-     "id": "picasso-bin-store-finish",
-     "title": "Bin store: inside signs, terrazzo floor, lantern, motorbike bays, shrub and continuous bougainvillea",
      "priority": 3,
      "dependencies": [],
      "requests": []

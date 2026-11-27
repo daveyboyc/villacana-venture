@@ -4330,7 +4330,8 @@
     "picasso_service_frontage.json:picasso-bin-yard"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "in-progress",
+   "owner": "Claude (pkg6-binstore)"
   },
   {
    "id": "picasso-beach-lane-finish",

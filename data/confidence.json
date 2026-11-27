@@ -113,7 +113,7 @@
   },
   "picasso_service_frontage.json:picasso-bin-store-details": {
    "level": "estimated",
-   "why": "Show details on the bin store, photographed in IMG_3099, 3100, 3101, 3103 and 3124: the RUBBISH COLLECTION / DEPOSITO BASURA board, motorbike P sign, fire-hose box and EXTINTOR sign, glazed cabinet, roundels, green double and sliding doors, warning sign, lamp, ramp, bougainvillea and the yellow containers. Positions along each wall read at the wall's own scale, about 0.3 m; sign faces redrawn, not photo textures."
+   "why": "Show details on the bin store, photographed in IMG_3099, 3100, 3101, 3103 and 3124: the RUBBISH COLLECTION / DEPOSITO BASURA board, motorbike P sign, fire-hose box and EXTINTOR sign, glazed cabinet, roundels, green double and sliding doors, warning sign, lamp, ramp, the yellow containers; and (task picasso-bin-store-finish) the bougainvillea as one continuous leafy mass with its trunk and drapes, the clipped shrub south of the doorway, the planter under the fire-hose box, the motorbike-bay lines (IMG_3099, about 0.5 m from an unsolved camera; their south end, hidden by a car, is inferred), and inside the BASURA / RUBBISH BINS and recycling signs (IMG_3101), the grey plinth band, terrazzo floor and slot drain, and the wall lantern (IMG_3103, tied to the yard's north-west end, which is open: picasso-bin-yard-far-wall). Positions along each wall read at the wall's own scale, about 0.3 m; sign faces redrawn, not photo textures. Nothing is photographed or measured: no camera here is solved."
   },
   "picasso_service_frontage.json:picasso-bin-yard": {
    "level": "estimated",
@@ -1671,6 +1671,19 @@
     "IMG_3103.jpg"
    ],
    "why": "IMG_3099's doorway is dark, as if into a roofed room, while IMG_3103 and IMG_3101 show the yard open to the sky; IMG_3103's far wall reads only 6-7 m from its camera, so the open yard may end about 7 m north-west of the long wall's end with a separate bay beyond (independent review, 26 Nov 2026). Built as one open yard; a square-on view of the front and one from inside the doorway would settle it.",
+   "decision": "needs-photos"
+  },
+  {
+   "id": "gap:picasso-bin-store-inside-arch",
+   "name": "Bin yard: the arch over the street door and the door's motor box, inside",
+   "at": [
+    -35.3,
+    24.3
+   ],
+   "photos": [
+    "IMG_3101.jpg"
+   ],
+   "why": "Inside, the green sliding door stands under a white arched head with a moulded edge, and a small dark motor or lock box sits on the floor beside it (IMG_3101). The yard walls are built level-topped with a flat lintel, and the arch is structure, so it is left for the yard's structural revision with photo request picasso-bin-store-front; the box is a small fitting not built.",
    "decision": "needs-photos"
   }
  ]

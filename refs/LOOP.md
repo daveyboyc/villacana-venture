@@ -146,7 +146,6 @@ ready: 4, needs-evidence: 9, needs-source-access: 0, awaiting-review: 0, accepte
 - Ready task: `picasso-bin-store-service-road` — Bin store and Calle Pintor Picasso south of the car park: bin yard, utility row, hotel lower wing (layout)
 - Ready task: `picasso-hotel-wing-detail` — Hotel lower wing along Calle Pintor Picasso: vent grilles, doors, sliding gate, ramps and railings, igloos
 - Ready task: `picasso-beach-lane-finish` — Lane to the beach: concrete roadway, full-width grate and darker strip, eaves beams, terrace tiles, doors
-- Ready task: `picasso-bin-store-finish` — Bin store: inside signs, terrazzo floor, lantern, motorbike bays, shrub and continuous bougainvillea
 - Ready task: `picasso-service-road-planting` — Calle Pintor Picasso south of the car park: plane trees, cypress hedge, palms, and generated filler off
 
 ## Loira, Bolivia, Alberto and Isabel
@@ -357,5 +356,4 @@ ready: 23, needs-evidence: 15, needs-source-access: 0, awaiting-review: 3, accep
 - Ready task: `picasso-hotel-wing-detail` — Hotel lower wing along Calle Pintor Picasso: vent grilles, doors, sliding gate, ramps and railings, igloos
 - Ready task: `jorge-south-arcade-identity` — Eva-side covered passages: establish identity and position
 - Ready task: `picasso-beach-lane-finish` — Lane to the beach: concrete roadway, full-width grate and darker strip, eaves beams, terrace tiles, doors
-- Ready task: `picasso-bin-store-finish` — Bin store: inside signs, terrazzo floor, lantern, motorbike bays, shrub and continuous bougainvillea
 - Ready task: `picasso-service-road-planting` — Calle Pintor Picasso south of the car park: plane trees, cypress hedge, palms, and generated filler off

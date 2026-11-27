@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "b4e8473a9ac5f368bada2560a44c75878b3d135dccec8fffbecfee592b608343",
+ "inputDigest": "b0207396df49387701f328806bcc5c53c0a6624016ff72ac3b82dc5eed4ba561",
  "summary": {
   "unplaced": 4,
   "needs-review": 273,
@@ -4452,7 +4452,7 @@
   },
   {
    "id": "picasso_service_frontage.json:picasso-bin-store-details",
-   "name": "Bin store: signs, doors, fire-safety boxes, bougainvillea and containers",
+   "name": "Bin store: signs, doors, fire-safety boxes, bougainvillea, shrub, planter, motorbike bay, inside signs, terrazzo floor, lantern and containers",
    "kind": "reference feature",
    "source": "positions read along each wall at its own scale in unsolved photos, about 0.3 m",
    "evidence": [
@@ -27830,21 +27830,28 @@
    "from": "photo:IMG_3101.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
-   "gap": 3.7
+   "gap": 2.9
   },
   {
    "from": "photo:IMG_3101.jpg",
    "to": "building:6465301UF1366N_part3",
    "relation": "possibly-in-view",
-   "distance": 25.0,
-   "angleOffset": 11.3
+   "distance": 24.0,
+   "angleOffset": 8.4
   },
   {
    "from": "photo:IMG_3101.jpg",
    "to": "building:6465301UF1366N_part1",
    "relation": "possibly-in-view",
-   "distance": 38.3,
-   "angleOffset": 2.9
+   "distance": 37.6,
+   "angleOffset": 22.0
+  },
+  {
+   "from": "photo:IMG_3101.jpg",
+   "to": "building:6465301UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 42.5,
+   "angleOffset": 21.5
   },
   {
    "from": "photo:IMG_3101.jpg",
@@ -27860,15 +27867,15 @@
   },
   {
    "from": "photo:IMG_3103.jpg",
-   "to": "street:picasso",
+   "to": "parking:Picasso car park",
    "relation": "camera-nearby",
    "gap": 0
   },
   {
    "from": "photo:IMG_3103.jpg",
-   "to": "parking:Picasso car park",
+   "to": "street:picasso",
    "relation": "camera-nearby",
-   "gap": 0.7
+   "gap": 1.9
   },
   {
    "from": "photo:IMG_3103.jpg",

@@ -113,6 +113,26 @@ assert c['count'] == 4, 'Dave: four containers in the yard'
 assert all(t + c['size'][0] / 2 <= front_len - 0.2 for t in (c['from'], c['to'])), 'containers inside the north end wall'
 assert abs(c['inward'] - (y['thickness'] / 2 + 0.05 + c['size'][1] / 2)) < 0.05, 'containers stand against the front wall inside the yard (Dave: the long-wall side was wrong)'
 assert all(t > y['doorway']['at'] + y['doorway']['width'] / 2 + 0.5 for t in (c['from'], c['to'])), 'containers stand clear of the doorway inside'
+# The bin store finish (task picasso-bin-store-finish): continuous bougainvillea, shrub, planter, bay lines, inside signs,
+# floor, band and lantern; no structural change.
+b = bd['front']['bougainvillea']
+assert 0 <= b['from'] < b['to'] <= front_len and b['piece'] <= 1.6 and b['flowers'] <= 8, 'bougainvillea: one continuous mass along the top with few flowers'
+assert 'step' not in b and 'scale' not in b, 'the separate bougainvillea sprites are replaced'
+for dr in b['drapes']:
+    assert dr['side'] in ('car-park', 'yard') and 0 <= dr['from'] < dr['to'] <= front_len and dr['drop'] < 1.0, 'drapes hang from the top'
+sh = bd['front']['shrub']
+assert 0 < sh['from'] < sh['to'] <= y['doorway']['at'] - y['doorway']['width'] / 2, 'the shrub stands south of the doorway, not in it'
+pl = bd['front']['planter']
+assert y['doorway']['at'] + y['doorway']['width'] / 2 < pl['t'] - pl['length'] / 2 and pl['t'] + pl['length'] / 2 < front_len, 'the planter is north of the doorway'
+for line in bd['front']['motorbikeBay']['lines']:
+    for t, out in (line['from'], line['to']):
+        assert y['doorway']['at'] + y['doorway']['width'] / 2 <= t < front_len and 0 < out < 4, 'bay lines in front of the north part, clear of the doorway'
+ins = bd['inside']
+for item in ins['items']:
+    assert -11.5 < item['s'] < 0 and 0.5 < item['y'] < y['height'] and item['w'] < 1.2, f'{item["id"]}: on the long wall inside the yard'
+assert {i['kind'] for i in ins['items']} == {'basura-sign', 'recycling-sign'}, 'IMG_3101 signs'
+assert 0.8 < ins['band']['height'] < 1.8 and 0 < ins['lantern']['fromNorthWall'] < 3 and ins['lantern']['y'] < 2.6, 'band and lantern inside the yard'
+assert y['front'] == [[-36.86, 27.53], [-44.13, 15.56]] and y['northEnd'][1] == [-41.78, 14.14], 'no structural change: the yard waits for photo request picasso-bin-store-front'
 src = (ROOT / 'src/slice.ts').read_text()
 assert 'if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addPicassoBinStoreDetails(into,keep)})' in src, 'bin store details are Show-details only'
 

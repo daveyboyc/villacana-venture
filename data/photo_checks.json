@@ -2127,6 +2127,52 @@
    "result": "differs",
    "followUp": "picasso-service-road-levels-and-beach",
    "notes": "Looking north up the lane: the low white terrace wall with its red coping, the deep eaves and the long building on the right and white walls on the left agree with the photo; the eaves' cantilever beams, the bicycles, the darker concrete strip and the lane's doors are not built. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-finish",
+   "checked": "2026-11-27",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-store-details",
+   "photo": "IMG_3099.jpg",
+   "before": "docs/reviews/picasso-bin-store-finish/IMG_3099-before.png",
+   "render": "docs/reviews/picasso-bin-store-finish/IMG_3099-pair.jpg",
+   "result": "matches",
+   "notes": "Show details from the pin and through the photo's starting pose (IMG_3099-pose-after.png): the bougainvillea now reads as one continuous dark-green mass along the whole top with a few magenta bracts and drapes stopping above the signs, its grey trunk rises south of the doorway, the clipped shrub stands under the glazed cabinet and the planter with its flowering shrub under the fire-hose box, as photographed; the motorbike-bay line with its end mark lies in front of the north part. Not checked: the front's length south of the doorway (structure, picasso-bin-yard-far-wall). A photographic diagnostic from an unsolved camera, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-finish",
+   "checked": "2026-11-27",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-store-details",
+   "photo": "IMG_3100.jpg",
+   "before": "docs/reviews/picasso-bin-store-finish/IMG_3100-before.png",
+   "render": "docs/reviews/picasso-bin-store-finish/IMG_3100-pair.jpg",
+   "result": "matches",
+   "notes": "Looking north-west along the front from the doorway: the RUBBISH COLLECTION board close on the right, the fire-hose box and the white planter with its lilac-flowered shrub beyond, the bougainvillea mass overhead. The parked scooter and cars are not modelled. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-finish",
+   "checked": "2026-11-27",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-store-details",
+   "photo": "IMG_3101.jpg",
+   "before": "docs/reviews/picasso-bin-store-finish/IMG_3101-before.png",
+   "render": "docs/reviews/picasso-bin-store-finish/IMG_3101-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-bin-store-service-road",
+   "notes": "From the corrected pin in the doorway: the BASURA / RUBBISH BINS sign with its left-pointing arrow and the green recycling sign beside the green street door, the grey plinth band about half the wall's height reaching the sign's foot, and the terrazzo floor agree with the photo. The arch over the door and the door's floor-level motor box are not built (gap:picasso-bin-store-inside-arch). A photographic diagnostic from a pin placed from photo content, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-finish",
+   "checked": "2026-11-27",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-store-details",
+   "photo": "IMG_3103.jpg",
+   "before": "docs/reviews/picasso-bin-store-finish/IMG_3103-before.png",
+   "render": "docs/reviews/picasso-bin-store-finish/IMG_3103-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-bin-store-service-road",
+   "notes": "From the corrected pin inside the yard: the grey plinth band on all three faces, the pale terrazzo floor, the black lantern on its scrolled bracket high on the right-hand wall near the far end, and the bougainvillea over the left wall's top agree with the photo. The far wall stands about 8.8 m from the camera in the model against about 7 m in the photo, so the containers and lantern sit further away (discrepancy picasso-bin-yard-far-wall, photo request picasso-bin-store-front). A photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [
