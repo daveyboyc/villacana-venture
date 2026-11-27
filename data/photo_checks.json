@@ -2195,6 +2195,52 @@
    "result": "differs",
    "followUp": "picasso-beach-forecourt-buildings",
    "notes": "Inspect from the phone pin (±4.7 m) looking south-east: the low block's road face and the tower stand as in the photo, but the new containers are hidden behind the low block's corner, where the photo shows them just beyond it (x 580-645); their 2-3 m position uncertainty covers both. The green and grey containers in the render are the existing bin-store set at the hotel wing. The upper block and garden wall are out of view. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-finish",
+   "checked": "2026-11-27",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-store-details",
+   "photo": "IMG_3099.jpg",
+   "before": "docs/reviews/picasso-bin-store-finish/IMG_3099-before.png",
+   "render": "docs/reviews/picasso-bin-store-finish/IMG_3099-pair.jpg",
+   "result": "matches",
+   "notes": "Show details from the pin and through the photo's starting pose (IMG_3099-pose-after.png): the bougainvillea now reads as one continuous dark-green mass along the whole top with a few magenta bracts and drapes stopping above the signs, its grey trunk rises south of the doorway, the clipped shrub stands under the glazed cabinet and the planter with its flowering shrub under the fire-hose box, as photographed; the motorbike-bay line with its end mark lies in front of the north part. Not checked: the front's length south of the doorway (structure, picasso-bin-yard-far-wall). A photographic diagnostic from an unsolved camera, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-finish",
+   "checked": "2026-11-27",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-store-details",
+   "photo": "IMG_3100.jpg",
+   "before": "docs/reviews/picasso-bin-store-finish/IMG_3100-before.png",
+   "render": "docs/reviews/picasso-bin-store-finish/IMG_3100-pair.jpg",
+   "result": "matches",
+   "notes": "Looking north-west along the front from the doorway: the RUBBISH COLLECTION board close on the right, the fire-hose box and the white planter with its lilac-flowered shrub beyond, the bougainvillea mass overhead. The parked scooter and cars are not modelled. A photographic diagnostic from an unsolved pin, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-finish",
+   "checked": "2026-11-27",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-store-details",
+   "photo": "IMG_3101.jpg",
+   "before": "docs/reviews/picasso-bin-store-finish/IMG_3101-before.png",
+   "render": "docs/reviews/picasso-bin-store-finish/IMG_3101-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-bin-store-service-road",
+   "notes": "From the corrected pin in the doorway: the BASURA / RUBBISH BINS sign with its left-pointing arrow and the green recycling sign beside the green street door, the grey plinth band about half the wall's height reaching the sign's foot, and the terrazzo floor agree with the photo. The arch over the door and the door's floor-level motor box are not built (gap:picasso-bin-store-inside-arch). A photographic diagnostic from a pin placed from photo content, not placement approval."
+  },
+  {
+   "task": "picasso-bin-store-finish",
+   "checked": "2026-11-27",
+   "by": "Claude",
+   "feature": "picasso_service_frontage.json:picasso-bin-store-details",
+   "photo": "IMG_3103.jpg",
+   "before": "docs/reviews/picasso-bin-store-finish/IMG_3103-before.png",
+   "render": "docs/reviews/picasso-bin-store-finish/IMG_3103-pair.jpg",
+   "result": "differs",
+   "followUp": "picasso-bin-store-service-road",
+   "notes": "From the corrected pin in the middle of the yard (moved 0.5 m off the container row after independent review; the first after render stood in line with the row and had a container blocking the view): the container row recedes along the left wall at an angle and the far wall's centre is near mid-frame, as in the photo; the grey plinth band on all three faces, the warm terrazzo floor and drain, the black lantern on its scrolled bracket high on the right-hand wall near the far end, and the bougainvillea over the left wall's top agree. The photo may show a fifth container across the far wall (open question; the model keeps Dave's four). The floor is drawn at the doorway's sill (picasso-bin-yard-floor-level). The far wall stands about 8.8 m from the camera in the model against about 7 m in the photo, so the containers and lantern sit further away (discrepancy picasso-bin-yard-far-wall, photo request picasso-bin-store-front). A photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [

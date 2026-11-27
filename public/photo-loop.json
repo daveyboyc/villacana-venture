@@ -3377,7 +3377,7 @@
    "id": "picasso",
    "name": "Pintor Picasso and the car park",
    "counts": {
-    "ready": 4,
+    "ready": 5,
     "needs-evidence": 9,
     "needs-source-access": 0,
     "awaiting-review": 0,
@@ -3689,6 +3689,28 @@
      "blockers": [
       "From the car park, 6-8 m in front of the bin store, its whole front square-on with both ends in frame, one along it from the north end, and one through the doorway."
      ]
+    },
+    {
+     "id": "picasso-bin-yard-floor-level",
+     "area": "picasso",
+     "kind": "height",
+     "task": "picasso-service-road-levels-and-beach",
+     "status": "open",
+     "requests": [],
+     "description": "The bin yard's terrazzo floor (Show details, picasso-bin-store-finish) is drawn level with the car-park doorway's sill, or on the car-park paving where that is higher, while the terrain inside the walls lies 0.1-0.8 m lower (lowest at the south-east, by the street door), so the floor floats over the ground there; and the street door's foot, on the road, is about 0.55 m below that floor. IMG_3124 and IMG_3123 show a short concrete ramp up from the road to the street door, and IMG_3101 shows the door's sill at the yard floor, so the floor's level, the road at the door and the ramp do not agree in the model.",
+     "sources": [
+      "IMG_3101.jpg",
+      "IMG_3103.jpg",
+      "IMG_3123.jpg",
+      "IMG_3124.jpg"
+     ],
+     "features": [
+      "picasso_service_frontage.json:picasso-bin-store-details",
+      "picasso_service_frontage.json:picasso-bin-yard"
+     ],
+     "note": "27 Nov 2026: found by the independent review of picasso-bin-store-finish (docs/reviews/picasso-bin-store-finish). Stage 3 (levels): check the yard floor, the street door's sill and the road at the door against the laser survey with scripts/lidar_check.py, then set the floor, the door and the ramp to one consistent level; the terrain file is generated and is not edited by hand.",
+     "state": "ready",
+     "blockers": []
     }
    ],
    "requests": [
@@ -4024,13 +4046,6 @@
     {
      "id": "picasso-beach-lane-finish",
      "title": "Lane to the beach: concrete roadway, full-width grate and darker strip, eaves beams, terrace tiles, doors",
-     "priority": 3,
-     "dependencies": [],
-     "requests": []
-    },
-    {
-     "id": "picasso-bin-store-finish",
-     "title": "Bin store: inside signs, terrazzo floor, lantern, motorbike bays, shrub and continuous bougainvillea",
      "priority": 3,
      "dependencies": [],
      "requests": []
@@ -6878,7 +6893,7 @@
    "id": "whole-resort",
    "name": "The whole resort",
    "counts": {
-    "ready": 23,
+    "ready": 24,
     "needs-evidence": 15,
     "needs-source-access": 0,
     "awaiting-review": 3,
@@ -7839,6 +7854,28 @@
      "blockers": [
       "From the car park, 6-8 m in front of the bin store, its whole front square-on with both ends in frame, one along it from the north end, and one through the doorway."
      ]
+    },
+    {
+     "id": "picasso-bin-yard-floor-level",
+     "area": "picasso",
+     "kind": "height",
+     "task": "picasso-service-road-levels-and-beach",
+     "status": "open",
+     "requests": [],
+     "description": "The bin yard's terrazzo floor (Show details, picasso-bin-store-finish) is drawn level with the car-park doorway's sill, or on the car-park paving where that is higher, while the terrain inside the walls lies 0.1-0.8 m lower (lowest at the south-east, by the street door), so the floor floats over the ground there; and the street door's foot, on the road, is about 0.55 m below that floor. IMG_3124 and IMG_3123 show a short concrete ramp up from the road to the street door, and IMG_3101 shows the door's sill at the yard floor, so the floor's level, the road at the door and the ramp do not agree in the model.",
+     "sources": [
+      "IMG_3101.jpg",
+      "IMG_3103.jpg",
+      "IMG_3123.jpg",
+      "IMG_3124.jpg"
+     ],
+     "features": [
+      "picasso_service_frontage.json:picasso-bin-store-details",
+      "picasso_service_frontage.json:picasso-bin-yard"
+     ],
+     "note": "27 Nov 2026: found by the independent review of picasso-bin-store-finish (docs/reviews/picasso-bin-store-finish). Stage 3 (levels): check the yard floor, the street door's sill and the road at the door against the laser survey with scripts/lidar_check.py, then set the floor, the door and the ramp to one consistent level; the terrain file is generated and is not edited by hand.",
+     "state": "ready",
+     "blockers": []
     }
    ],
    "requests": [
@@ -12307,13 +12344,6 @@
     {
      "id": "picasso-beach-lane-finish",
      "title": "Lane to the beach: concrete roadway, full-width grate and darker strip, eaves beams, terrace tiles, doors",
-     "priority": 3,
-     "dependencies": [],
-     "requests": []
-    },
-    {
-     "id": "picasso-bin-store-finish",
-     "title": "Bin store: inside signs, terrazzo floor, lantern, motorbike bays, shrub and continuous bougainvillea",
      "priority": 3,
      "dependencies": [],
      "requests": []
