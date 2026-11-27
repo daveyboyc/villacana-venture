@@ -124,8 +124,14 @@ found the pavement right but the garden dented: the hold, grown 2 m with a 1 m b
 (-24,46). The README's claim that the garden keeps its level was wrong. Fixed in revision 2 (step lines, no node behind
 the walls held; see above).
 
-**Re-review of revision 2: PENDING.** The task stays `in-progress` until a reviewer that did not make the change
-signs it off here.
+**Re-review of revision 2: APPROVED** (27 Nov 2026, independent reviewer subagent that made neither revision).
+- The seven flagged garden nodes are back at their `origin/main` values; 29 cells change, all on the pavement, the road,
+  under the substation and meter box, or at (-26,42) inside the slatted gate's 0.1 m inset.
+- `src/terrain.ts` step logic is correct and confined to the step lines' box plus 2 m; a point far outside reads
+  normally. Transects at z = 30, 34 and 40 step cleanly at the inset line; the garden keeps its surveyed values.
+- The Layout overhead and oblique show no trough; the IMG_3123 pair now matches the photo's flat kerbed strip.
+- The two terracotta shards are small and described accurately.
+- Two wording slips (the discrepancy's resolution and the cell count here) were corrected before merge.
 
 **Review packet.**
 - Photos at full size: `public/photos-ref/IMG_3124.jpg`, `IMG_3123.jpg`, `IMG_3105.jpg`, and for context
@@ -144,7 +150,7 @@ signs it off here.
 1. In the after renders the pavement is flat one kerb over the road all along the row, with no bank against the
    set-back wall or the substation.
 2. Nothing else visibly moved: the hotel side, the road crown and the bin store.
-3. No grid node behind the faces changed (the README lists the 28 changed cells by place), and the step lines follow
+3. No grid node behind the faces changed (the README lists the 29 changed cells by place), and the step lines follow
    the faces.
 4. In the Inspect views, the raised garden behind the walls is level up to the walls with no trough. The
    substation and meter box stand on the pavement's level.
