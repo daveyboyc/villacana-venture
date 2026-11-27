@@ -195,14 +195,30 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
     shader.uniforms.inlandColor = { value: (distantLand.material as THREE.MeshBasicMaterial).color };
     shader.vertexShader = "attribute float inlandBlend; varying float vInlandBlend;\n" +
       shader.vertexShader.replace("#include <begin_vertex>", "#include <begin_vertex>\nvInlandBlend = inlandBlend;");
-    shader.fragmentShader = "uniform sampler2D pebbles; uniform vec3 inlandColor; varying float vInlandBlend;\n" +
+    shader.fragmentShader = `
+      uniform sampler2D pebbles;
+      uniform vec3 inlandColor;
+      varying float vInlandBlend;
+      float sandHash(vec2 cell) {
+        vec3 p = fract(vec3(cell.xyx) * 0.1031);
+        p += dot(p, p.yzx + 33.33);
+        return fract((p.x + p.y) * p.z);
+      }
+      float sandNoise(vec2 point) {
+        vec2 cell = floor(point), f = fract(point);
+        f = f*f*(3.0 - 2.0*f);
+        return mix(mix(sandHash(cell), sandHash(cell + vec2(1,0)), f.x),
+                   mix(sandHash(cell + vec2(0,1)), sandHash(cell + vec2(1,1)), f.x), f.y);
+      }
+    ` +
       shader.fragmentShader.replace("#include <map_fragment>", `
         #include <map_fragment>
         // Metre-scale deposits vary in extent. The scan resolves individual stones up close.
         vec2 metres = 2.0 * vMapUv;
-        float deposit = sin(dot(metres,vec2(0.37,0.23)) + 1.4*sin(metres.y*0.41))
-                      + 0.62*sin(dot(metres,vec2(-0.76,0.89)));
-        float pebbly = smoothstep(0.30, 1.15, deposit);
+        float deposit = 0.55*sandNoise(metres*0.36) + 0.30*sandNoise(metres*1.1 + 17.0)
+                      + 0.15*sandNoise(metres*3.2);
+        float pebbly = smoothstep(0.41, 0.69, deposit);
+        pebbly *= mix(1.0, 0.65, smoothstep(0.52, 1.0, vColor.r));
         float neutral = dot(diffuseColor.rgb, vec3(0.21,0.72,0.07));
         vec3 sandColor = mix(diffuseColor.rgb, vec3(neutral), 0.36);
         vec3 stones = texture2D(pebbles, metres / 1.3).rgb;
