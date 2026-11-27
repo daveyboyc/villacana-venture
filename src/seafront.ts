@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { shoreline } from "./shoreline";
 import { Water } from "three/addons/objects/Water.js";
 import { asset } from "./asset";
 import { centroid, closestOnSegment } from "./geom";
@@ -119,11 +120,34 @@ function addBarrakaDeck(scene: THREE.Scene, terrace: Vec2[], ring: Vec2[], groun
 export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant = true, seaside?: Seaside): Water {
   // With seaside heights the sand and paseo are drawn by addSeaside; only the sea is flat.
   // The sea stays at sea level: it is not draped over the land's heights.
-  const ring: Vec2[] = [...sf.coast, [1500, 1500], [-1500, 1500]];
-  const shape = new THREE.Shape(ring.map(([x,z]) => new THREE.Vector2(x, -z)));
+  // Each column shares vertices between the moving waterline, shallows and open sea.
+  const coast = shoreline(sf), positions: number[] = [], shoreUV: number[] = [], triangles: number[] = [];
+  const offsets = [-2.5, 0, 3, 10];
+  let along = 0;
+  for (let i = 0; i < coast.length; i++) {
+    const [x,z] = coast[i];
+    const a = coast[Math.max(0,i-1)], b = coast[Math.min(coast.length-1,i+1)];
+    const slope = (b[1]-a[1]) / (b[0]-a[0]);
+    const scale = Math.hypot(1, slope);
+    if (i) along += Math.hypot(x-a[0], z-a[1]);
+    const rows = [...offsets, (1500-z)/scale];
+    for (let j = 0; j < rows.length; j++) {
+      positions.push(x, -(z + rows[j]*scale), 0);
+      shoreUV.push(along, rows[j]);
+      if (i && j) {
+        const k = i * rows.length + j, left = k - rows.length;
+        triangles.push(left-1,left,k-1,k-1,left,k);
+      }
+    }
+  }
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions,3));
+  geometry.setAttribute("uv", new THREE.Float32BufferAttribute(shoreUV,2));
+  geometry.setIndex(triangles);
+  geometry.computeVertexNormals();
   const normals = new THREE.TextureLoader().load(asset("/textures/coast/ripple-normal.png"));
   normals.wrapS = normals.wrapT = THREE.RepeatWrapping;
-  const sea = new Water(new THREE.ShapeGeometry(shape), {
+  const sea = new Water(geometry, {
     textureWidth: 256, textureHeight: 256, waterNormals: normals,
     waterColor: 0x187d94, sunColor: 0xfff1d6,
     sunDirection: new THREE.Vector3(-60, 90, 40).normalize(),
@@ -135,44 +159,39 @@ export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant
   sea.name = "Mediterranean";
   sea.userData.noDrape = true;
   sea.userData.noOcclusion = true;
+  // Blend the sand through the same pixels that draw the advancing swash.
+  const material = sea.material;
+  material.transparent = true;
+  material.depthWrite = false;
+  material.vertexShader = "varying vec2 shoreCoord;\n" + material.vertexShader.replace(
+    "mirrorCoord = modelMatrix", "shoreCoord = uv;\nmirrorCoord = modelMatrix");
+  material.fragmentShader = "varying vec2 shoreCoord;\n" + material.fragmentShader.replace(
+    "gl_FragColor = vec4( outgoingLight, alpha );", `
+      float along = shoreCoord.x;
+      float advance = 0.68*sin(time*2.4 + along*0.072 + 0.9*sin(along*0.033))
+                    + 0.18*sin(time*1.6 + along*0.43);
+      float depth = shoreCoord.y - advance;
+      float aa = max(0.12, fwidth(depth));
+      float wash = smoothstep(-aa, 1.8 + aa, depth);
+      float crest = 1.0 - smoothstep(0.0, 0.30 + aa, abs(depth - 0.25));
+      float lace = 0.55 + 0.24*sin(along*1.2 + time) + 0.17*sin(along*2.8 - time*1.9);
+      float foam = crest * lace;
+      vec3 shallow = mix(outgoingLight, vec3(0.12,0.42,0.43), 0.44);
+      vec3 water = mix(shallow, outgoingLight, smoothstep(1.0, 9.0, depth));
+      gl_FragColor = vec4(mix(water, vec3(0.85,0.92,0.91), foam),
+                          max(foam, smoothstep(-aa, aa, depth) * mix(0.12,1.0,wash)));
+    `);
+  // The ripples and swash advance every frame. Reuse the planar reflection between samples.
+  const reflect = sea.onBeforeRender.bind(sea);
+  let nextReflection = 0;
+  sea.onBeforeRender = (...args) => {
+    const now = performance.now();
+    if (now >= nextReflection) {
+      nextReflection = now + 125;
+      reflect(...args);
+    }
+  };
   scene.add(sea);
-  // A translucent swash just offshore follows the same trace as the sea polygon.
-  const vertices: number[] = [], uv: number[] = [], indices: number[] = [];
-  let distance = 0;
-  for (let i = 0; i < sf.coast.length; i++) {
-    const [x, z] = sf.coast[i];
-    const a = sf.coast[Math.max(0, i - 1)], b = sf.coast[Math.min(i + 1, sf.coast.length - 1)];
-    const dx = b[0] - a[0], dz = b[1] - a[1], length = Math.hypot(dx, dz) || 1;
-    if (i) distance += Math.hypot(x - a[0], z - a[1]);
-    vertices.push(x, 0, z, x - dz / length * 1.5, 0, z + dx / length * 1.5);
-    uv.push(distance, 0, distance, 1);
-    const k = 2 * i;
-    if (i) indices.push(k - 2, k - 1, k, k, k - 1, k + 1);
-  }
-  const surfGeometry = new THREE.BufferGeometry();
-  surfGeometry.setAttribute("position", new THREE.Float32BufferAttribute(vertices, 3));
-  surfGeometry.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
-  surfGeometry.setIndex(indices);
-  const surf = new THREE.Mesh(surfGeometry, new THREE.ShaderMaterial({
-    uniforms: { time: sea.material.uniforms.time },
-    transparent: true, depthWrite: false,
-    vertexShader: `varying vec2 coastUv;
-      void main() { coastUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
-    fragmentShader: `varying vec2 coastUv; uniform float time;
-      void main() {
-        float phase = time * 2.0 + coastUv.x * 0.22;
-        float crest = 0.46 + 0.24 * sin(phase) + 0.08 * sin(coastUv.x * 1.6);
-        float band = 1.0 - smoothstep(0.03, 0.18, abs(coastUv.y - crest));
-        float breaks = smoothstep(-0.45, 0.65, sin(phase * 0.7) + 0.42 * sin(coastUv.x * 2.2));
-        gl_FragColor = vec4(0.85, 0.94, 0.93, band * breaks * 0.72);
-        #include <colorspace_fragment>
-      }`,
-  }));
-  surf.name = "shoreline-swash";
-  surf.position.y = sea.position.y + 0.015;
-  surf.userData.noDrape = true;
-  surf.userData.noOcclusion = true;
-  scene.add(surf);
   if (!seaside) {
     flat(scene, sf.beach.ring, "#e1c99c", 0.14);
     outline(scene, sf.coast, "#e2f9f5", 0.17);
