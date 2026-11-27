@@ -1,5 +1,8 @@
 import type { Seafront, Vec2 } from "./types";
 
+// Cross-shore metres over which the sand blends into open water.
+export const SEABED_FADE_END = 48;
+
 /** Continue the local trace along the seaward side of the mapped beach polygon. */
 export function shoreline(sf: Seafront): Vec2[] {
   const beach = sf.beach.ring;
