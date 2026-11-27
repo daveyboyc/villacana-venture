@@ -13,7 +13,7 @@
  "features": {
   "area:beach": {
    "level": "estimated",
-   "why": "Mapped outline with independent aerial shoreline review; width and edges approximate. IMG_2300 shows gravelly sand and a narrow breaking wave. The tiling sand texture, wet band and animated ripples approximate that appearance."
+   "why": "Mapped outline with independent aerial shoreline review; width and edges approximate. IMG_2300 shows gravelly sand and a narrow breaking wave. Sand and pebble patches approximate the photographed beach. Swell height, timing, foam and the lingering wet sheen are visual estimates for a calm day."
   },
   "ground_plan_picasso.json:picasso-west-lawn-strip": {
    "level": "estimated",

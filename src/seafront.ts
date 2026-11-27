@@ -1,3 +1,4 @@
+import { applyBeachWaves } from "./beach-waves";
 import * as THREE from "three";
 import { shoreline } from "./shoreline";
 import { Water } from "three/addons/objects/Water.js";
@@ -118,11 +119,20 @@ function addBarrakaDeck(scene: THREE.Scene, terrace: Vec2[], ring: Vec2[], groun
 
 /** Shared seaside geometry: the blueprint and walk use the same outlines. */
 export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant = true, seaside?: Seaside): Water {
-  // With seaside heights the sand and paseo are drawn by addSeaside; only the sea is flat.
-  // The sea stays at sea level: it is not draped over the land's heights.
+  // The mapped water surface sits at sea level. Small wave displacements are visual only.
   // Each column shares vertices between the moving waterline, shallows and open sea.
-  const coast = shoreline(sf), positions: number[] = [], shoreUV: number[] = [], triangles: number[] = [];
-  const offsets = [-2.5, 0, 3, 10];
+  const trace = shoreline(sf);
+  const coast: Vec2[] = [trace[0]];
+  for (let i = 1; i < trace.length; i++) {
+    const [x,z] = trace[i-1], [endX,endZ] = trace[i];
+    const steps = Math.ceil(Math.hypot(endX-x, endZ-z) / 3);
+    for (let step = 1; step <= steps; step++) {
+      const t = step / steps;
+      coast.push([THREE.MathUtils.lerp(x,endX,t), THREE.MathUtils.lerp(z,endZ,t)]);
+    }
+  }
+  const positions: number[] = [], shoreUV: number[] = [], triangles: number[] = [];
+  const offsets = [-2.5, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12];
   let along = 0;
   for (let i = 0; i < coast.length; i++) {
     const [x,z] = coast[i];
@@ -154,7 +164,7 @@ export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant
     textureWidth: 256, textureHeight: 256, waterNormals: normals,
     waterColor: 0x187d94, sunColor: 0xfff1d6,
     sunDirection: new THREE.Vector3(-60, 90, 40).normalize(),
-    distortionScale: 1.4, fog: !!scene.fog,
+    distortionScale: 0.72, fog: !!scene.fog,
   });
   // Water computes its reflection plane from the object's local +Z axis.
   sea.rotation.x = -Math.PI / 2;
@@ -162,28 +172,8 @@ export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant
   sea.name = "Mediterranean";
   sea.userData.noDrape = true;
   sea.userData.noOcclusion = true;
-  // Blend the sand through the same pixels that draw the advancing swash.
   const material = sea.material;
-  material.transparent = true;
-  material.depthWrite = false;
-  material.vertexShader = "varying vec2 shoreCoord;\n" + material.vertexShader.replace(
-    "mirrorCoord = modelMatrix", "shoreCoord = uv;\nmirrorCoord = modelMatrix");
-  material.fragmentShader = "varying vec2 shoreCoord;\n" + material.fragmentShader.replace(
-    "gl_FragColor = vec4( outgoingLight, alpha );", `
-      float along = shoreCoord.x;
-      float advance = 0.68*sin(time*2.4 + along*0.072 + 0.9*sin(along*0.033))
-                    + 0.18*sin(time*1.6 + along*0.43);
-      float depth = shoreCoord.y - advance;
-      float aa = max(0.12, fwidth(depth));
-      float wash = smoothstep(-aa, 1.8 + aa, depth);
-      float crest = 1.0 - smoothstep(0.0, 0.30 + aa, abs(depth - 0.25));
-      float lace = 0.55 + 0.24*sin(along*1.2 + time) + 0.17*sin(along*2.8 - time*1.9);
-      float foam = crest * lace;
-      vec3 shallow = mix(outgoingLight, vec3(0.12,0.42,0.43), 0.44);
-      vec3 water = mix(shallow, outgoingLight, smoothstep(1.0, 9.0, depth));
-      gl_FragColor = vec4(mix(water, vec3(0.85,0.92,0.91), foam),
-                          max(foam, smoothstep(-aa, aa, depth) * mix(0.12,1.0,wash)));
-    `);
+  applyBeachWaves(material);
   // The ripples and swash advance every frame. Reuse the planar reflection between samples.
   const reflect = sea.onBeforeRender.bind(sea);
   let nextReflection = 0;

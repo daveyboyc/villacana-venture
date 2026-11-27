@@ -4,3 +4,7 @@ https://polyhaven.com/license
 Converted from the 1K diffuse JPEG to WebP.
 
 ripple-normal.png — original seamless normal map generated from periodic waves.
+
+rounded-pebbles.webp — Dry River Pebbles, Poly Haven, CC0.
+https://polyhaven.com/a/dry_river_pebbles
+Converted from the 1K diffuse JPEG to WebP.
