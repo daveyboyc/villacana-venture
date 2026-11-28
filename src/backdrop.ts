@@ -35,9 +35,9 @@ export function addBackdropTrees(scene: THREE.Scene, courts: { x: number; z: num
 }
 
 /**
- * A flat photographic panorama of the ranges (Sierra Crestellina, Sierra Bermeja, La Concha)
- * on Wikimedia Commons, with soft feathered edges that blend into the sky, replacing the old
- * traced polygon ridges.
+ * A flat photographic panorama of the ranges behind Villacana, built from Dave's own photo
+ * IMG_2214 and the measured skyline (scripts/build_mountain_texture.py), with soft feathered
+ * edges that blend into the sky, replacing the old traced polygon ridges.
  */
 const RESORT_CENTRE: [number, number] = [-80, 90];
 const FAR_DISTANCE = 4200;
