@@ -6,7 +6,7 @@
     "kerb": 4,
     "enclosure": 23,
     "gap": 29,
-    "context": 49
+    "context": 50
   },
   "records": [
     {
@@ -3373,6 +3373,92 @@
       "confidence": "estimated",
       "placement": "disputed",
       "basis": "Model group context, not a traced wall axis or quantity. Photos show four boundary openings from Juan Gris. The east and middle window heads are partly visible and use an estimated arch. Stations and elevations are approximate.",
+      "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
+    },
+    {
+      "id": "gregorio_surroundings.json:gregorio-surroundings",
+      "name": "Gregorio Restaurante surroundings: rising grey-sett driveway, forecourt, stone-and-brick retaining walls, BAR RESTAURANTE GREGORIO sign, lawn islands and C. de la Luz barrier",
+      "kind": "context",
+      "points": [
+        [
+          -121.9,
+          -68.4
+        ],
+        [
+          -115.9,
+          -72.0
+        ],
+        [
+          -118.2,
+          -75.2
+        ],
+        [
+          -121.0,
+          -78.2
+        ],
+        [
+          -123.0,
+          -81.0
+        ],
+        [
+          -127.5,
+          -89.2
+        ],
+        [
+          -132.0,
+          -97.5
+        ],
+        [
+          -137.0,
+          -94.5
+        ],
+        [
+          -131.46,
+          -84.35
+        ],
+        [
+          -142.02,
+          -78.9
+        ],
+        [
+          -147.8,
+          -89.8
+        ],
+        [
+          -152.5,
+          -86.8
+        ],
+        [
+          -148.0,
+          -75.5
+        ],
+        [
+          -142.0,
+          -72.0
+        ],
+        [
+          -132.5,
+          -75.0
+        ],
+        [
+          -127.6,
+          -74.5
+        ],
+        [
+          -124.2,
+          -72.8
+        ],
+        [
+          -122.2,
+          -70.6
+        ]
+      ],
+      "closed": true,
+      "areas": [],
+      "evidence": [],
+      "confidence": "estimated",
+      "placement": "unreviewed",
+      "basis": "Model group context, not a traced wall axis or quantity. Rising grey-sett driveway ramp, forecourt paving, sandstone-and-brick retaining walls along Calle Loira and Calle de la Luz, BAR / RESTAURANTE / GREGORIO monument sign, sandstone entrance pier, NE curved raised lawn island, C. de la Luz barrier arm and trees read from Google Street View Oct 2024 at 2 C. Loira (owner screenshots, not committed), registered Esri aerial (~1.5 m), OSM ways 625813541/188318996 and PNOA-LiDAR (data/terrain.json 2020-21 and 2014-15 tile 316-4038). Positions and heights are estimated (~0.5-1.5 m); no camera is solved.",
       "levelState": "Resolve individual wall runs, openings, floor and wall-top datums from this group before estimating."
     },
     {

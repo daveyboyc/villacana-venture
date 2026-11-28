@@ -9,12 +9,13 @@ The northern boundary roads and the lanes round the north pool's upper side.
 - The asphalt Calle Loira and the terracotta Calle de Juan Gris are separate. IMG_3133 reads the Juan Gris plaque and IMG_3150 looks out through the shared wall to Loira. The unsolved photos leave the west wall limit and opposite frontage open.
 - Open question (8 Nov): the CALLE ALBERTO 22 40 plaque is on a porch off Calle Eva east (IMG_2792), far from the street labelled Calle Alberto here (Google layout, 12 Oct). Either the name covers more than this lane or the label is misplaced; not resolved.
 - 28 Nov 2026: added Gregorio Restaurante (Calle Loira 2, north of Villacana across Calle Loira) in data/gregorio_restaurant.json and src/gregorio-restaurant.ts from Spanish Catastro parcel 6267302UF1366N (part1, part2, part3), PNOA-LiDAR 2014-15 (tile 316-4038), Esri/Google satellite (Imagery © 2026 Airbus, Maxar Technologies), Apple Maps 3D and May 2023 photos on gregoriobeach.com/restaurante/. SE half of part2 is modelled as the open-air raised terracotta dining terrace with white balustrade, brick piers and two ramps; NW part2 + part3 form the fieldstone-and-brick restaurant hall with terracotta barrel-tile skirt, flat roof deck and post-2016 rooftop turret carrying the RESTAURANTE GREGORIO sign; part1 is the flat-roofed rear service outbuilding. Confidence is estimated (no solved resort camera); SW/NW walls are inferred and recent satellite shows a wider rear service wing than Catastro part1.
+- 28 Nov 2026 (surroundings pass): added data/gregorio_surroundings.json and src/gregorio-surroundings.ts from Google Street View Oct 2024 at 2 C. Loira (owner screenshots, not committed), registered Esri aerial, OSM ways 625813541/188318996 and PNOA-LiDAR (terrain.json 2020-21 and tile 316-4038): rising grey-sett driveway ramp and wide forecourt (from Calle Loira at 1.29 m up to forecourt 2.23-2.56 m; restaurant terrace/hall floor ~1.65-1.75 m above Calle Loira), sandstone-and-brick retaining walls holding up the raised SW lawn (+0.7-0.85 m above Loira) with the BAR / RESTAURANTE / GREGORIO monument sign, tall sandstone entrance pier, NE curved lawn island with big tree, NE forecourt wall and Calle de la Luz asphalt/kerb/barrier arm. Villacana gatehouse and ACCESO PLAYA island remain in picasso_car_park.json / picasso_entrance_details.json.
 
 ## Read first
 
 - docs: `docs/STREET_LAYOUT.md`, `docs/reviews/calle-loira/README.md`
-- data: `data/street_layout.json`, `data/loira_boundary.json`, `data/gregorio_restaurant.json`, `data/ground_plan_north_lanes.json`
-- src: `src/loira-boundary.ts`, `src/gregorio-restaurant.ts`
+- data: `data/street_layout.json`, `data/loira_boundary.json`, `data/gregorio_restaurant.json`, `data/gregorio_surroundings.json`, `data/ground_plan_north_lanes.json`
+- src: `src/loira-boundary.ts`, `src/gregorio-restaurant.ts`, `src/gregorio-surroundings.ts`
 - contact sheet: `reference/contact-sheets/north-lanes.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage

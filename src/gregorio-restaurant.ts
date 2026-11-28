@@ -547,12 +547,12 @@ export function addGregorioRestaurant(scene: THREE.Scene): void {
   addBalustradeRun(fw - 0.22, vEdge + pW / 2, fw - 0.22, vFront * 0.52 - pW / 2);
   addBalustradeRun(fw - 0.22, vFront * 0.52 + pW / 2, fw - 0.22, vFront - 0.2);
 
-  // Two concrete/stone ramps leading up from the SE forecourt to the terrace openings.
+  // Two concrete/stone ramps leading up from the SE grey-sett forecourt (siteY + 0.275) to the terrace openings.
   for (const r of data.terrace.frontRamps) {
     const rw = r.to - r.from - pW * 0.4;
     const rc = (r.from + r.to) / 2;
     const [wx, wz] = frame.toWorld(rc, -1.7);
-    const drop = Math.max(0.28, mainDatumY - siteY(wx, wz));
+    const drop = Math.max(0.28, mainDatumY - (siteY(wx, wz) + 0.275));
     const run = 1.85;
     const rampShape = new THREE.Shape();
     rampShape.moveTo(0, 0);
@@ -572,7 +572,7 @@ export function addGregorioRestaurant(scene: THREE.Scene): void {
 
   // 4. Rear Catastro part1 outbuilding (flat-roofed white/light-grey service block).
   const p1Center = centroid(outbuildingRing);
-  const p1DatumY = siteY(p1Center.x, p1Center.z) + 0.06;
+  const p1DatumY = siteY(p1Center.x, p1Center.z) + 0.22;
   const outWallMat = plasterMaterial(data.colors.outbuildingWall);
   const outRoofMat = new THREE.MeshStandardMaterial({ color: data.colors.outbuildingRoof, roughness: 0.94 });
   const p1TotalH = data.outbuilding.height + data.outbuilding.foundationDepth;
@@ -652,7 +652,7 @@ export function addGregorioRestaurant(scene: THREE.Scene): void {
     for (let k = 0; k < count; k++) {
       const u = bu0 + ((k + 0.5) / count) * bw;
       const [wx, wz] = frame.toWorld(u, -0.65);
-      const y0 = siteY(wx, wz) - mainDatumY;
+      const y0 = siteY(wx, wz) + 0.26 - mainDatumY;
       const bush = new THREE.Mesh(shrubGeo, k % 2 ? foliageLightMat : foliageMat);
       bush.name = "gregorio-front-bed";
       bush.position.set(u, y0 + 0.34, 0.44 + (hash(u, k) - 0.5) * 0.14);
@@ -671,10 +671,10 @@ export function addGregorioRestaurant(scene: THREE.Scene): void {
   }
 
   // Four queen palms immediately in front of the SE terrace edge (site_banner.jpg, LiDAR).
-  // Added directly to `scene` at y = 0 so `drapeScene` lifts them onto siteY(x, z).
+  // Added directly to `scene` at y = 0.26 so `drapeScene` lifts them onto the forecourt paving.
   const palmPlaces: SpritePlacement[] = data.details.frontPalms.map((p) => {
     const [x, z] = frame.toWorld(p.u, p.v);
-    return { x, y: 0, z, scale: p.scale, clearance: 0.3 };
+    return { x, y: 0.26, z, scale: p.scale, clearance: 0.3 };
   });
   addSprites(scene, "palm", palmPlaces);
 }

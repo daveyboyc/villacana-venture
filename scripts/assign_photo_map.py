@@ -243,6 +243,8 @@ def features(s):
     add('loira_boundary.json:'+loira['id'],loira['name'],'reference feature',loira['trust'],evidence=loira['evidence'],points=loira['points'])
     gregorio=json.loads((ROOT/'data/gregorio_restaurant.json').read_text())
     add('gregorio_restaurant.json:'+gregorio['id'],gregorio['name'],'reference feature',gregorio['trust'],evidence=[],ring=gregorio['mainBuilding']['ring'])
+    gregorio_surr=json.loads((ROOT/'data/gregorio_surroundings.json').read_text())
+    add('gregorio_surroundings.json:'+gregorio_surr['id'],gregorio_surr['name'],'reference feature',gregorio_surr['trust'],evidence=[],ring=gregorio_surr['drivewayForecourt']['ring'])
     juan_gris=json.loads((ROOT/'data/juan_gris_pergolas.json').read_text())
     for pergola in juan_gris['pergolas']:
         a,b=pergola['wall']
