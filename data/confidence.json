@@ -219,6 +219,14 @@
    "level": "estimated",
    "why": "Photos show four boundary openings from Juan Gris. The east and middle window heads are partly visible and use an estimated arch. Stations and elevations are approximate."
   },
+  "gregorio_restaurant.json:gregorio-restaurant": {
+   "level": "estimated",
+   "why": "Footprint from Spanish Catastro parcel 6267302UF1366N (part1, part2, part3), with SE half of part2 built as the open-air raised dining terrace per Esri/Google satellite, PNOA-LiDAR 2014-15 (tile 316-4038) and May 2023 website photos (gregoriobeach.com). Main flat roof (~3.15 m), pitched terracotta skirt ridge (~3.95 m) and part1 outbuilding (2.7 m) match LiDAR to ~0.15 m; the post-2016 rooftop turret (~5.8 m peak), RESTAURANTE GREGORIO sign band, fieldstone/brick SE & NE facades, awnings and terrace balustrade are estimated from unsolved website/Google Maps photos (~0.5-1 m). SW/NW walls are inferred; recent satellite shows a wider rear service wing than Catastro part1. No solved resort camera sees it."
+  },
+  "gregorio_surroundings.json:gregorio-surroundings": {
+   "level": "estimated",
+   "why": "Rising grey-sett driveway ramp, forecourt paving, sandstone-and-brick retaining walls along Calle Loira and Calle de la Luz, BAR / RESTAURANTE / GREGORIO monument sign, sandstone entrance pier, NE curved raised lawn island, C. de la Luz barrier arm and trees read from Google Street View Oct 2024 at 2 C. Loira (owner screenshots, not committed), registered Esri aerial (~1.5 m), OSM ways 625813541/188318996 and PNOA-LiDAR (data/terrain.json 2020-21 and 2014-15 tile 316-4038). Positions and heights are estimated (~0.5-1.5 m); no camera is solved."
+  },
   "ground_plan_north_lanes.json:juan-gris-paving": {
    "level": "estimated",
    "why": "Four terracotta courses are visible inside the wall. The west extension follows the aerial path band to Dalí and reuses the adjacent lane finish."

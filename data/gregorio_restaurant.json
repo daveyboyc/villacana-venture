@@ -1,0 +1,123 @@
+{
+  "id": "gregorio-restaurant",
+  "name": "Gregorio Restaurante (Calle Loira 2)",
+  "parcelId": "6267302UF1366N",
+  "osmNodeId": 6592081222,
+  "address": "Calle Loira 2, 29688 Estepona, Málaga, Spain",
+  "website": "https://gregoriobeach.com/restaurante/",
+  "catastroParts": {
+    "part1": [[-151.85, -102.1], [-154.14, -106.46], [-147.59, -110.05], [-145.25, -105.97]],
+    "part2": [[-136.7, -94.06], [-135.89, -92.62], [-136.14, -92.48], [-131.46, -84.35], [-142.02, -78.9], [-146.09, -86.85], [-149.8, -94.07], [-147.11, -95.46], [-144.31, -90.07]],
+    "part3": [[-139.66, -99.31], [-136.7, -94.06], [-144.31, -90.07], [-147.11, -95.46], [-149.8, -94.07], [-152.09, -97.99], [-148.18, -100.16], [-142.05, -103.54], [-140.23, -100.33]]
+  },
+  "mainBuilding": {
+    "ring": [[-146.09, -86.85], [-136.14, -92.48], [-135.89, -92.62], [-136.7, -94.06], [-139.66, -99.31], [-140.23, -100.33], [-142.05, -103.54], [-148.18, -100.16], [-152.09, -97.99], [-149.8, -94.07]],
+    "floorOffset": 0.32,
+    "foundationDepth": 1.2,
+    "eaveHeight": 2.95,
+    "flatRoofHeight": 3.15,
+    "skirtRidgeHeight": 3.95,
+    "skirtDepth": 1.85,
+    "eaveOverhang": 0.35
+  },
+  "turret": {
+    "uRange": [3.0, 8.6],
+    "vRange": [14.2, 19.2],
+    "baseHeight": 3.15,
+    "eaveHeight": 5.05,
+    "peakHeight": 5.8,
+    "overhang": 0.25,
+    "signText": "RESTAURANTE GREGORIO",
+    "signBandHeight": 0.48
+  },
+  "terrace": {
+    "ring": [[-142.02, -78.9], [-131.46, -84.35], [-136.14, -92.48], [-146.09, -86.85]],
+    "slabThickness": 1.0,
+    "balustradeHeight": 0.88,
+    "pierWidth": 0.44,
+    "pierHeight": 1.08,
+    "frontRamps": [
+      { "from": 1.7, "to": 3.25 },
+      { "from": 5.75, "to": 7.55 }
+    ],
+    "awnings": [
+      { "from": 0.25, "to": 3.85 },
+      { "from": 3.95, "to": 7.55 },
+      { "from": 7.65, "to": 11.25 }
+    ],
+    "awningY": 2.84,
+    "awningDepth": 1.45
+  },
+  "frontFacade": {
+    "door": { "u": 5.75, "width": 2.1, "height": 2.35 },
+    "narrowArches": [
+      { "u": 4.05, "width": 0.78, "sill": 0.72, "height": 1.68 },
+      { "u": 7.45, "width": 0.78, "sill": 0.72, "height": 1.68 }
+    ],
+    "wideArches": [
+      { "u": 1.95, "width": 2.35, "sill": 0.62, "height": 1.82 },
+      { "u": 9.55, "width": 2.35, "sill": 0.62, "height": 1.82 }
+    ]
+  },
+  "neWindows": [
+    { "v": 11.6, "width": 1.75, "sill": 0.95, "height": 1.35 },
+    { "v": 14.9, "width": 1.75, "sill": 0.95, "height": 1.35 },
+    { "v": 18.2, "width": 1.75, "sill": 0.95, "height": 1.35 }
+  ],
+  "outbuilding": {
+    "id": "gregorio-outbuilding-part1",
+    "ring": [[-151.85, -102.1], [-154.14, -106.46], [-147.59, -110.05], [-145.25, -105.97]],
+    "height": 2.7,
+    "parapetHeight": 0.22,
+    "foundationDepth": 0.85
+  },
+  "colors": {
+    "stoneBase": "#cbb998",
+    "stoneLight": "#dfd2b7",
+    "stoneDark": "#a58e6b",
+    "mortar": "#d8cfbe",
+    "brick": "#9a543c",
+    "brickCap": "#7e432e",
+    "tile": "#c76c45",
+    "flatRoof": "#e4e0d8",
+    "awning": "#ebe4d4",
+    "balustrade": "#f4f2ec",
+    "frame": "#2b2520",
+    "glass": "#2c3a40",
+    "signBg": "#f4f3ee",
+    "signText": "#234a78",
+    "outbuildingWall": "#e8e5de",
+    "outbuildingRoof": "#d7d3cb",
+    "ramp": "#bcb7ac",
+    "table": "#dcd7cc",
+    "chair": "#c8bca8"
+  },
+  "details": {
+    "tables": [
+      [1.8, 2.5], [4.6, 2.5], [8.8, 2.5],
+      [1.8, 5.2], [4.6, 5.2], [7.4, 5.2], [9.8, 5.2],
+      [2.2, 7.6], [8.6, 7.6]
+    ],
+    "frontPalms": [
+      { "u": -0.3, "v": -1.4, "scale": 0.68 },
+      { "u": 3.7, "v": -1.35, "scale": 0.74 },
+      { "u": 8.0, "v": -1.3, "scale": 0.72 },
+      { "u": 11.5, "v": -1.25, "scale": 0.68 }
+    ]
+  },
+  "evidence": [
+    "https://gregoriobeach.com/restaurante/",
+    "https://gregoriobeach.com/wp-content/uploads/2023/05/Restaurante-Camper-park-Gregorio-Beach.jpg",
+    "https://gregoriobeach.com/wp-content/uploads/2023/05/restaurante-secundaria.jpg",
+    "https://gregoriobeach.com/wp-content/uploads/2023/05/terraza-restaurante.jpg",
+    "https://gregoriobeach.com/wp-content/uploads/2023/05/restaurante-galeria.jpg",
+    "https://gregoriobeach.com/wp-content/uploads/2023/05/Galeria-entrada.jpg",
+    "https://gregoriobeach.com/wp-content/uploads/2023/05/parking-galeria.jpg",
+    "https://www.google.com/maps/place/Gregorio's/@36.4560259,-5.0515731,17z/data=!3m1!4b1!4m6!3m5!1s0xd732b28e5afd151:0x4b2d684d5bc45a86!8m2!3d36.4560259!4d-5.0515731!16s%2Fg%2F11cnb2bwjx",
+    "Catastro parcel 6267302UF1366N (part1, part2, part3, built 1983)",
+    "OSM node 6592081222 / way 701952824 (data/villacana.osm.gz)",
+    "PNOA-LiDAR 2014-15 tile 316-4038 MDS/MDT (IGN/REDIAM)",
+    "Esri World Imagery (public/map/ground.jpg) and Apple Maps 3D (reference/apple-maps/01-3d-overview-from-north.png)"
+  ],
+  "trust": "Footprint taken directly from Spanish Catastro parcel 6267302UF1366N (part1, part2, part3). The Esri aerial, Google satellite (Imagery © 2026 Airbus, Maxar Technologies), PNOA-LiDAR 2014-15 (tile 316-4038) and May 2023 website photos all show that the SE half of Catastro part2 (south-east of the Catastro vertices (-146.09,-86.85) and (-136.14,-92.48)) is an open-air raised dining terrace, not a roofed volume; the model splits part2 on that line so the SE half is built as the open terracotta terrace with white balustrade, brick piers and two ramps while the NW half of part2 plus part3 form the roofed restaurant hall. Main flat roof (~3.15 m above terrace datum; 11.13 m orthometric), front pitched terracotta roof ridge (~3.95 m above terrace; 11.8-12.0 m orthometric) and rear outbuilding part1 (2.7 m flat roof; 11.14 m orthometric) agree with PNOA-LiDAR 2014-15 to about 0.15 m. The stone-clad rooftop turret with hipped terracotta roof and RESTAURANTE GREGORIO sign band was added after Sept 2016 (absent in the 2014-15 LiDAR and Sept 2016 Google Maps hero photo; clearly shown in May 2023 website photos, Apple Maps 3D and 2026 satellite); its plan (~5.6 x 5.0 m) and heights (eave ~5.05 m, peak ~5.8 m above terrace, ~6.2 m above forecourt, matching OSM height 6.2 m) are estimated from photo proportions and satellite imagery. SE front symmetrical arched windows, central doorway, three cream awnings, irregular stone cladding, brick pilasters and NE rectangular windows are read from unsolved website photos (about 0.5-1 m). SW and NW rear facades are not directly photographed and continue the stone cladding and pitched roof skirt by inference. Recent satellite imagery shows a wider flat-roofed camper-park service extension at the rear than the 1983 Catastro part1 ring; part1 keeps its Catastro footprint. No solved resort camera sees Gregorio's."
+}

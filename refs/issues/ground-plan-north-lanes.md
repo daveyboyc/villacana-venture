@@ -7,7 +7,8 @@ Task `ground-plan-north-lanes` · area **Loira, Bolivia, Alberto and Isabel** ·
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/north-lanes.md` and the contact sheet `reference/contact-sheets/north-lanes.jpg`
 - docs: `docs/STREET_LAYOUT.md`, `docs/reviews/calle-loira/README.md`
-- data: `data/street_layout.json`, `data/loira_boundary.json`, `data/ground_plan_north_lanes.json`
+- data: `data/street_layout.json`, `data/loira_boundary.json`, `data/gregorio_restaurant.json`, `data/gregorio_surroundings.json`, `data/ground_plan_north_lanes.json`
+- src: `src/loira-boundary.ts`, `src/gregorio-restaurant.ts`, `src/gregorio-surroundings.ts`
 
 ## Photos to build from
 

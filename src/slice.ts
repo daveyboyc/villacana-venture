@@ -76,6 +76,8 @@ import { addSeafrontFence, seafrontFenceRings } from "./seafront-fence";
 import { addPicassoLawnWall, picassoLawnWallRings } from "./picasso-lawn-wall";
 import { addJuanGrisPergolas, juanGrisPergolaPostRings } from "./juan-gris-pergolas";
 import { addLoiraBoundary, loiraWallRings } from "./loira-boundary";
+import { addGregorioRestaurant, gregorioRestaurantRings } from "./gregorio-restaurant";
+import { addGregorioSurroundings, gregorioSurroundingsRings } from "./gregorio-surroundings";
 import { addLaneWalls, laneWallRings } from "./lane-walls";
 import { addCervantesLaneEdges, addCervantesLaneEdgePlanting, cervantesLaneEdgeRings } from "./cervantes-lane-edges";
 import { addElenaJunctionDetails } from "./elena-junction-details";
@@ -360,6 +362,8 @@ async function boot(): Promise<void> {
   addSouthPoolPassage(scene);
   addJorgeLane(scene);
   addLoiraBoundary(scene);
+  addGregorioRestaurant(scene);
+  addGregorioSurroundings(scene);
   addJuanGrisPergolas(scene, liveGroundY);
   addLaneWalls(scene); // garden and patio walls along Calle Elena, Calle Jorge and Calle Cervantes (data/lane_walls.json)
   addCervantesLaneEdges(scene); // Cervantes beds and hedge planters along the lane (data/cervantes_lane_edges.json)
@@ -388,7 +392,7 @@ async function boot(): Promise<void> {
   fenceRings.push(...cervantesEastSouthRings()); // issue #89: solid closed south patio frontage
   fenceRings.push(...elenaEastPatioRings()); // issue #38: photographed patio enclosure walls are solid
   fenceRings.push(...evaWallRings());
-  fenceRings.push(...loiraWallRings(), ...juanGrisPergolaPostRings());
+  fenceRings.push(...loiraWallRings(), ...gregorioRestaurantRings(), ...gregorioSurroundingsRings(), ...juanGrisPergolaPostRings());
   fenceRings.push(...laneWallRings()); // Calle Elena and Calle Jorge garden and patio walls, doors closed
   fenceRings.push(...cervantesLaneEdgeRings()); // Cervantes beds and hedge planters
   fenceRings.push(...picassoServiceRings());
