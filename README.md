@@ -150,4 +150,7 @@ Historical photo-frame assets retain their source credits in
 Inglesa's Playa del Cristo image (CC BY-SA 4.0). These are legacy prototype assets,
 not location evidence for the current reference map.
 
+The mountain backdrop is a panorama made from photographs on Wikimedia Commons by Zarateman (CC0),
+and Larry Wentzel (CC BY 2.0); see [public/art/mountains/README.md](public/art/mountains/README.md).
+
 The historical OpenStreetMap extract is © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), [ODbL](https://opendatacommons.org/licenses/odbl/).

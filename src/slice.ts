@@ -48,6 +48,7 @@ import {addDaliStreet} from "./dali-street";
 import {addFrontageDivisions,inReviewedFrontage} from "./frontages";
 import {addPoolDecks,onPoolDeck,paintPoolDecks} from "./pool-deck";
 import {addBackdropTrees,addRidge,inResortBlock} from "./backdrop";
+import { addSky, SKY_HORIZON } from "./sky";
 import {addElenaNorth,elenaNorthRings,inElenaNorthReview} from "./elena-north";
 import {addRampSteps,stepsGroundOffset} from "./ramp-steps";
 import {addDoorSills,doorSillsGroundOffset,inDoorSillReview} from "./door-sills";
@@ -200,10 +201,11 @@ async function boot(): Promise<void> {
   const routes=skeleton.boundaryReference?protectedRoutes(skeleton.boundaryReference,undefined,[...(skeleton.seafront?.paseo.protect??[]),coastalAccess,barrakaAccess]):[];
   const canPlaceDecoration=(x:number,z:number,radius:number)=>routeClearance(routes,x,z,radius);
   scene.userData.decorationClearance=canPlaceDecoration;scene.userData.protectedRoutes=routes;scene.userData.layoutOnly=layoutOnly;
-  scene.background = new THREE.Color("#bfe3f2");
-  scene.fog = new THREE.Fog("#cfe9f3", 90, 260);
+  scene.background = new THREE.Color(SKY_HORIZON);
+  scene.fog = new THREE.Fog("#bfdcf3", 90, 260);
 
   const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 1500);
+  addSky(scene, camera);
   const resize = () => {
     renderer.setSize(window.innerWidth, window.innerHeight, false);
     camera.aspect = window.innerWidth / window.innerHeight;

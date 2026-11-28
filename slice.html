@@ -7,9 +7,12 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <style>
     #scene:focus{outline:none}
-      html, body { margin: 0; height: 100%; overflow: hidden; background: #bfe3f2; font-family: system-ui, sans-serif; }
+      html, body { margin: 0; height: 100%; overflow: hidden; background: #a9d4f2; font-family: system-ui, sans-serif; }
       canvas { display: block; width: 100vw; height: 100dvh; touch-action: none; }
       .chip { position: fixed; background: #fffdf8e6; border: 1px solid #c9bfae; border-radius: 999px; padding: 8px 14px; font-size: 14px; color: #222; text-decoration: none; }
+      #backdrop-credit { position:fixed; bottom:calc(2px + env(safe-area-inset-bottom)); left:50%; transform:translateX(-50%); max-width:calc(100vw - 16px); font:10px system-ui; color:#26425a; background:#ffffff8c; border-radius:6px; padding:1px 8px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; pointer-events:none; z-index:2; }
+      #backdrop-credit a { color:inherit; pointer-events:auto; }
+      body.mobile-inspect #backdrop-credit { display:none; }
       #title { top: 12px; left: 12px; }
       #back { top: 12px; right: 12px; }
       #areas { right:12px; max-height:100px; overflow:auto; position: fixed; top: 56px; left: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
@@ -93,6 +96,7 @@
     </style>
   </head>
   <body>
+    <div id="backdrop-credit">Mountain photos (adapted, Wikimedia Commons): <a href="https://commons.wikimedia.org/wiki/File:Sierra_Bermeja_vista.jpg" target="_blank" rel="noopener">Sierra Bermeja</a> and <a href="https://commons.wikimedia.org/wiki/File:Sierra_Crestellina2.jpg" target="_blank" rel="noopener">Crestellina</a> by Larry Wentzel (<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>) · <a href="https://commons.wikimedia.org/wiki/File:Marbella_-_Picho_de_la_Concha_(Sierra_Blanca).jpg" target="_blank" rel="noopener">La Concha</a> by Zarateman (CC0)</div>
     <canvas id="scene" tabindex="-1"></canvas>
     <div class="chip" id="title">Pool</div>
     <div id="inspection-jump"><label for="inspection-area">Jump to inspect</label><select id="inspection-area" aria-label="Jump to inspect an area"></select><span>Drag to pan · Ctrl, Shift or right-drag to rotate and tilt · scroll or pinch to zoom · arrow keys move</span><button type="button" id="wall-guides-toggle" aria-pressed="false">Wall guides</button><div id="mobile-views"><button type="button" id="mobile-map">Map</button><button type="button" id="mobile-photos" aria-pressed="false">Photos</button></div></div>
