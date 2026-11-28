@@ -8,11 +8,13 @@ The northern boundary roads and the lanes round the north pool's upper side.
 
 - The asphalt Calle Loira and the terracotta Calle de Juan Gris are separate. IMG_3133 reads the Juan Gris plaque and IMG_3150 looks out through the shared wall to Loira. The unsolved photos leave the west wall limit and opposite frontage open.
 - Open question (8 Nov): the CALLE ALBERTO 22 40 plaque is on a porch off Calle Eva east (IMG_2792), far from the street labelled Calle Alberto here (Google layout, 12 Oct). Either the name covers more than this lane or the label is misplaced; not resolved.
+- 28 Nov 2026: added Gregorio Restaurante (Calle Loira 2, north of Villacana across Calle Loira) in data/gregorio_restaurant.json and src/gregorio-restaurant.ts from Spanish Catastro parcel 6267302UF1366N (part1, part2, part3), PNOA-LiDAR 2014-15 (tile 316-4038), Esri/Google satellite (Imagery © 2026 Airbus, Maxar Technologies), Apple Maps 3D and May 2023 photos on gregoriobeach.com/restaurante/. SE half of part2 is modelled as the open-air raised terracotta dining terrace with white balustrade, brick piers and two ramps; NW part2 + part3 form the fieldstone-and-brick restaurant hall with terracotta barrel-tile skirt, flat roof deck and post-2016 rooftop turret carrying the RESTAURANTE GREGORIO sign; part1 is the flat-roofed rear service outbuilding. Confidence is estimated (no solved resort camera); SW/NW walls are inferred and recent satellite shows a wider rear service wing than Catastro part1.
 
 ## Read first
 
 - docs: `docs/STREET_LAYOUT.md`, `docs/reviews/calle-loira/README.md`
-- data: `data/street_layout.json`, `data/loira_boundary.json`, `data/ground_plan_north_lanes.json`
+- data: `data/street_layout.json`, `data/loira_boundary.json`, `data/gregorio_restaurant.json`, `data/ground_plan_north_lanes.json`
+- src: `src/loira-boundary.ts`, `src/gregorio-restaurant.ts`
 - contact sheet: `reference/contact-sheets/north-lanes.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage

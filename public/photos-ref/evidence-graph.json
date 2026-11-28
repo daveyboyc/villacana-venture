@@ -6,7 +6,7 @@
   "needs-review": 273,
   "suggested": 369,
   "photos": 646,
-  "features": 576,
+  "features": 577,
   "photosCitedByModel": 273,
   "modelFeaturesWithPhotoCitations": 315
  },
@@ -3690,6 +3690,13 @@
     "IMG_3154.jpg",
     "IMG_3155.jpg"
    ]
+  },
+  {
+   "id": "gregorio_restaurant.json:gregorio-restaurant",
+   "name": "Gregorio Restaurante (Calle Loira 2)",
+   "kind": "reference feature",
+   "source": "Footprint taken directly from Spanish Catastro parcel 6267302UF1366N (part1, part2, part3). The Esri aerial, Google satellite (Imagery © 2026 Airbus, Maxar Technologies), PNOA-LiDAR 2014-15 (tile 316-4038) and May 2023 website photos all show that the SE half of Catastro part2 (south-east of the Catastro vertices (-146.09,-86.85) and (-136.14,-92.48)) is an open-air raised dining terrace, not a roofed volume; the model splits part2 on that line so the SE half is built as the open terracotta terrace with white balustrade, brick piers and two ramps while the NW half of part2 plus part3 form the roofed restaurant hall. Main flat roof (~3.15 m above terrace datum; 11.13 m orthometric), front pitched terracotta roof ridge (~3.95 m above terrace; 11.8-12.0 m orthometric) and rear outbuilding part1 (2.7 m flat roof; 11.14 m orthometric) agree with PNOA-LiDAR 2014-15 to about 0.15 m. The stone-clad rooftop turret with hipped terracotta roof and RESTAURANTE GREGORIO sign band was added after Sept 2016 (absent in the 2014-15 LiDAR and Sept 2016 Google Maps hero photo; clearly shown in May 2023 website photos, Apple Maps 3D and 2026 satellite); its plan (~5.6 x 5.0 m) and heights (eave ~5.05 m, peak ~5.8 m above terrace, ~6.2 m above forecourt, matching OSM height 6.2 m) are estimated from photo proportions and satellite imagery. SE front symmetrical arched windows, central doorway, three cream awnings, irregular stone cladding, brick pilasters and NE rectangular windows are read from unsolved website photos (about 0.5-1 m). SW and NW rear facades are not directly photographed and continue the stone cladding and pitched roof skirt by inference. Recent satellite imagery shows a wider flat-roofed camper-park service extension at the rear than the 1983 Catastro part1 ring; part1 keeps its Catastro footprint. No solved resort camera sees Gregorio's.",
+   "evidence": []
   },
   {
    "id": "juan_gris_pergolas.json:juan-gris-pergola-east",
